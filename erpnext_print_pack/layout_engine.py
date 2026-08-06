@@ -60,6 +60,14 @@ def format_slug(profile: DocTypeProfile, layout_key: str) -> str:
 
 
 def _party_vars(profile: DocTypeProfile) -> str:
+	if profile.doc_type == "Payment Entry":
+		return """
+{% set party_label = doc.party_type or "Party" %}
+{% set ship_label = "" %}
+{% set party_name = doc.party_name or doc.party or "" %}
+{% set party_address = doc.party_address or doc.address_display or "" %}
+{% set ship_address = "" %}
+"""
 	if profile.has_party_customer:
 		return """
 {% set party_label = "Bill To" %}
@@ -119,7 +127,10 @@ def _items_table(profile: DocTypeProfile) -> str:
 def _totals_block(profile: DocTypeProfile) -> str:
 	if not profile.has_items and profile.doc_type == "Payment Entry":
 		return """
-<table class="totals"><tr><td>Received Amount</td><td class="r">{{ doc.get_formatted("paid_amount") if doc.get_formatted is defined else doc.paid_amount or "" }}</td></tr></table>
+<table class="totals"><tr><td>Amount</td><td class="r">{% set _pay_amt = doc.paid_amount or doc.received_amount or doc.base_paid_amount or 0 %}{% set _pay_cur = doc.paid_to_account_currency or doc.paid_from_account_currency or doc.company_currency or "" %}{{ frappe.utils.fmt_money(_pay_amt, currency=_pay_cur) if _pay_amt else "" }}</td></tr>
+<tr><td>Mode of Payment</td><td class="r"><strong>{{ doc.mode_of_payment or "—" }}</strong></td></tr>
+<tr><td>Account</td><td class="r">{% if doc.payment_type == "Receive" %}{{ doc.paid_to or "" }}{% elif doc.payment_type == "Pay" %}{{ doc.paid_from or "" }}{% else %}{{ doc.paid_from or "" }}{% if doc.paid_from and doc.paid_to %} → {% endif %}{{ doc.paid_to or "" }}{% endif %}</td></tr>
+</table>
 """
 	if not profile.has_taxes:
 		return """

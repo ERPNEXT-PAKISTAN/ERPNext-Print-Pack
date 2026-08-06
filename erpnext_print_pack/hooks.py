@@ -72,5 +72,6 @@ after_migrate = ["erpnext_print_pack.install.after_migrate"]
 jinja = {
 	"methods": [
 		"erpnext_print_pack.jinja_methods.print_helpers",
+		"erpnext_print_pack.jinja_methods.get_item_last_purchases",
 	],
 }

@@ -1,22 +1,21 @@
 # ERPNext Print Pack
 
-A production-ready **ERPNext / Frappe v15–v16** print-format library with **900+ Jinja templates**, regional tax invoices (Saudi ZATCA, UAE VAT, Pakistan FBR), proforma styles, thermal POS receipts, premium layouts, and a built-in **Print Format Browser**.
+A production-ready **ERPNext / Frappe v15 and v16** print-format library with **900+ Jinja templates** for **all countries and tax authorities** — regional e-invoices, proforma styles, thermal POS receipts, premium layouts, item detail sheets, and a built-in **Print Format Browser**.
 
 ![ZATCA E-Invoice specimen](docs/images/preview_zatca_invoice.svg)
 
-![FBR Pakistan sales tax invoice](docs/images/preview_fbr_pakistan_invoice.svg)
+![Regional tax invoice sample](docs/images/preview_fbr_pakistan_invoice.svg)
 
 ## Features
 
-- **900+ print formats** across sales, purchasing, stock, manufacturing, HR, and labels
+- **900+ print formats** across sales, purchasing, stock, manufacturing, HR, payments, and labels
 - **Print Format Browser** — preview, filter by region/layout, set default, print/PDF
-- **Regional tax layouts** — Saudi ZATCA, UAE VAT, Pakistan FBR, India GST, USA, Gulf
-- **FBR Pakistan-1 / 2 / 3** — adapted from FBR Integration (standalone copies, no conflict)
-- **Proforma invoices** — 4 styles (ZATCA, UAE, Modern, Classic)
+- **Global regional layouts** — Saudi ZATCA, UAE VAT, Pakistan FBR, India GST, USA, Gulf, and more
+- **Proforma invoices** — multiple styles for quotations and sales documents
 - **Thermal / POS** — 80mm receipts with word-wrapped item names
+- **Payment Entry receipts** — payment type, party, mode of payment, bank/cash account, amount
+- **Item detail reports** — item image, valuation method, barcode, last two purchases
 - **Document voucher barcodes** — Code128 of ERPNext document name on premium/specimen layouts
-- **Pakistan FBR QR** — uses `custom_fbr_invoice_no` when present
-- **Frappe v15 workspace** — **Print Pack** workspace with browser shortcut
 
 ## New installation
 
@@ -40,26 +39,6 @@ bench --site site1.local clear-cache
 ```
 
 Formats sync automatically on `migrate` via `after_migrate`. You can also use **Sync HTML (Stable)** from the Print Format Browser menu.
-
-## Frappe v15 workspace
-
-After migrate, find **Print Pack** in the desk sidebar. It links to:
-
-- Print Format Browser (main page)
-- Print Format, Letter Head, Print Settings
-- Popular documents (Sales Invoice, Delivery Note, POS Invoice, Payment Entry)
-
-## FBR Pakistan formats
-
-Three sales tax invoice layouts copied from **FBR Integration** (read-only source; original app untouched):
-
-| Format | Source |
-|--------|--------|
-| FBR Pakistan-1 Sales Invoice | Sales Invoice Tax |
-| FBR Pakistan-2 Sales Invoice | FBR Sales Invoice |
-| FBR Pakistan-3 Sales Invoice | FBR Letterhead-2 |
-
-QR and barcode use `custom_fbr_invoice_no` via `erpnext_print_pack.print_barcodes` (no dependency on FBR Integration at print time).
 
 ## Developer validation
 

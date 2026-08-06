@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-07",
-  "total_formats": 917,
+  "total_formats": 919,
   "formats": [
     {
       "name": "Barcode Enabled Batch Label",
@@ -1493,7 +1493,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "1a7946cc4f359a53f86cd9076bcd2b22426f74a45ea22475d87b336b884160ae",
+      "checksum": "2229341275b172809e6e32bf3a28be908867646cd401a13d6ae720d627c7df19",
       "description": "UAE Thermal Receipt"
     },
     {
@@ -1646,7 +1646,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "b7ddd088141835853c76856faa356fdd28af661b2f3067bdb50a09ab981a0a9e",
+      "checksum": "7379b65b16fcaa75a9a8636ff6092e34309a6f86dfd2819b138a7f114b5f3042",
       "description": "ZATCA Thermal Receipt"
     },
     {
@@ -4237,6 +4237,58 @@
       "status": "stable",
       "checksum": "ee0433af6a6260985148083c1718fc2126be4a5dc6339ae6f6794b82ffef5d9e",
       "description": "Clean blue theme, summary balance box"
+    },
+    {
+      "name": "Item Detail Report",
+      "slug": "item_detail_classic",
+      "doc_type": "Item",
+      "theme": "item_detail_classic",
+      "layout_family": "item_detail_classic",
+      "layout_type": "premium",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "item-detail",
+        "image",
+        "barcode",
+        "purchase-history"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "5eefe01e603522366d473195a392f03ff90b3a75b43f8598c4c0dba305a02809",
+      "description": "Item Detail Report"
+    },
+    {
+      "name": "Item Detail Professional",
+      "slug": "item_detail_professional",
+      "doc_type": "Item",
+      "theme": "item_detail_professional",
+      "layout_family": "item_detail_professional",
+      "layout_type": "premium",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "item-detail",
+        "image",
+        "barcode",
+        "purchase-history"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2493b15f0b046f1c54dc86f83eb0af2eebc2dafbed9168c9ad978c04983616b9",
+      "description": "Item Detail Professional"
     },
     {
       "name": "Barcode Enabled Item Label",
@@ -8287,7 +8339,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "3728d9e5bbd1da6d5be569d3b7f1c77ce8b02103b2af4a6ee8ced906499614cb",
+      "checksum": "c41803181673e509b7cb17048aa3ad5e2d2fc07681b954d5c470546062f255b1",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -8314,7 +8366,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "664b483c98b31e58a19107f969808c1bd7903472648b44d44a91cc8c3f0ebf84",
+      "checksum": "cf529c420418833066a6528a5573ac6a9caf443f5ab1968c4ac754386f8e219e",
       "description": "UAE Thermal Receipt"
     },
     {
@@ -8387,7 +8439,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "71668f0092fdbd82959a728f8c2eb2b83eee9c55aee96ed5e47d2867509d2f4b",
+      "checksum": "508c11da51cdfe75bda3da2459bb752e8e19bb43e9087150d98b680f2be2b1f8",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -8414,7 +8466,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "a00845b8258ebafc8a833a6a7e48d77d92c711b5f7c9b11de47072d0f1c36426",
+      "checksum": "03ffd7f09dd54ef8555e87f0563a2a761e6a9d81bfca79e30b16ef7f8594a273",
       "description": "ZATCA Thermal Receipt"
     },
     {
@@ -10209,7 +10261,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "fe5cae6c96a08712c462c8571b6fa19aeb7cdcdfd9cd2c7b0d81d778a3c59fb2",
+      "checksum": "f15dc9837bf3889d4a2af850ea3cd7570afd3b082b331508a9d49956b15ecb7f",
       "description": "UAE Thermal Receipt"
     },
     {
@@ -10362,7 +10414,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "cb9177f1cfc2d4ce203b4ef8dfc5ef9fe7b9ded26e95a870b8a8dc458f80838e",
+      "checksum": "8ba00392398d7b4a6368dc9fd935f0f4be16ab6007bba1bd17dae1feb5495265",
       "description": "ZATCA Thermal Receipt"
     },
     {
@@ -13621,7 +13673,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "daef4320e37a72c9171ce71fc5acb1cfdf58d52f5cb0cfb692d8f100915b9d90",
+      "checksum": "3411d31d836ec61f8f41f3e37aa64926fe8287657e419baf3fcda2194273d8dc",
       "description": "UAE Thermal Receipt"
     },
     {
@@ -13774,7 +13826,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "cb9265aeaa015a76f3de55521ce5850c5c87ca2e389b2e3ae71a228c58985a80",
+      "checksum": "8594f2ae28296cb4a6bfe9f1970d15b2dcb8f76e7409ce9e4ee416a35e56493c",
       "description": "ZATCA Thermal Receipt"
     },
     {
@@ -17245,7 +17297,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "78366ab9f6edfe2b66ab8575bfceecf7363693acbf45cf46141878d44314fc51",
+      "checksum": "aab7a81ea450fd67f49a1fbfec59d2a28d60acc65ae38f17431c437fb5609857",
       "description": "UAE Thermal Receipt"
     },
     {
@@ -17452,7 +17504,7 @@
       "source_type": "original",
       "source_license": "MIT",
       "status": "stable",
-      "checksum": "ccbf618b3778cc6675e5b3a8a298053760a546d5e048524292d215524b966ccc",
+      "checksum": "1d7e83b2384c9dcb954bea697d4b0e15ee2ab0c2aeda734530cf463e44979929",
       "description": "ZATCA Thermal Receipt"
     },
     {

@@ -1,0 +1,26 @@
+{
+  "name": "Item Detail Report",
+  "slug": "item_detail_classic",
+  "doc_type": "Item",
+  "theme": "item_detail_classic",
+  "layout_family": "item_detail_classic",
+  "layout_type": "premium",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "item-detail",
+    "image",
+    "barcode",
+    "purchase-history"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5eefe01e603522366d473195a392f03ff90b3a75b43f8598c4c0dba305a02809",
+  "description": "Item Detail Report"
+}

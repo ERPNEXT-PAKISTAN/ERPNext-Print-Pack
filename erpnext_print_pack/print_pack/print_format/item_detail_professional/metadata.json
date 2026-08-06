@@ -1,0 +1,26 @@
+{
+  "name": "Item Detail Professional",
+  "slug": "item_detail_professional",
+  "doc_type": "Item",
+  "theme": "item_detail_professional",
+  "layout_family": "item_detail_professional",
+  "layout_type": "premium",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "item-detail",
+    "image",
+    "barcode",
+    "purchase-history"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2493b15f0b046f1c54dc86f83eb0af2eebc2dafbed9168c9ad978c04983616b9",
+  "description": "Item Detail Professional"
+}

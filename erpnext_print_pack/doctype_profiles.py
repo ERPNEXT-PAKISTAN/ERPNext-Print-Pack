@@ -59,7 +59,7 @@ _register(DocTypeProfile("purchase_receipt", "Purchase Receipt", "purchasing", "
 _register(DocTypeProfile("purchase_invoice", "Purchase Invoice", "purchasing", "Purchase Invoice", True, True, False, True, True, True, True, "posting_date", "supplier", "supplier_name", THEMES_PURCHASE))
 _register(DocTypeProfile("request_for_quotation", "Request for Quotation", "purchasing", "Request for Quotation", True, False, False, True, False, False, True, "transaction_date", "supplier", "supplier", THEMES_STANDARD[:10]))
 _register(DocTypeProfile("supplier_quotation", "Supplier Quotation", "purchasing", "Supplier Quotation", True, True, False, True, True, False, True, "transaction_date", "supplier", "supplier_name", THEMES_STANDARD[:10]))
-_register(DocTypeProfile("payment_entry", "Payment Entry", "payments", "Payment Entry", False, False, True, True, False, False, False, "posting_date", "party", "party_name", THEMES_STANDARD[:10]))
+_register(DocTypeProfile("payment_entry", "Payment Entry", "payments", "Payment Entry", False, False, False, False, False, False, False, "posting_date", "party", "party_name", THEMES_STANDARD[:10]))
 _register(DocTypeProfile("journal_entry", "Journal Entry", "payments", "Journal Entry", False, False, False, False, False, False, False, "posting_date", None, None, THEMES_STANDARD[:8]))
 _register(DocTypeProfile("payment_request", "Payment Request", "payments", "Payment Request", False, False, True, False, True, False, True, "transaction_date", "party", "party_name", THEMES_STANDARD[:8]))
 _register(DocTypeProfile("dunning", "Dunning", "payments", "Dunning", False, False, True, False, True, False, True, "posting_date", "customer", "customer_name", ["minimal", "modern", "corporate", "professional_blue"]))
@@ -85,6 +85,7 @@ _register(DocTypeProfile("employee_advance", "Employee Advance", "hr", "Employee
 _register(DocTypeProfile("leave_application", "Leave Application", "hr", "Leave Application", False, False, False, False, False, False, False, "from_date", "employee", "employee_name", THEMES_HR[:6]))
 _register(DocTypeProfile("job_offer", "Job Offer", "hr", "Job Offer", False, False, False, False, False, False, True, "offer_date", "applicant_name", "applicant_name", THEMES_HR[:6]))
 _register(DocTypeProfile("item_label", "Item", "stock", "Item Label", False, False, False, False, False, False, False, "creation", "name", "item_name", THEMES_LABEL))
+_register(DocTypeProfile("item_detail", "Item", "stock", "Item Detail Report", False, False, False, False, False, False, False, "creation", "name", "item_name", THEMES_STANDARD[:8]))
 _register(DocTypeProfile("batch_label", "Batch", "stock", "Batch Label", False, False, False, False, False, False, False, "creation", "item", "item", THEMES_LABEL))
 _register(DocTypeProfile("serial_label", "Serial No", "stock", "Serial Label", False, False, False, False, False, False, False, "creation", "item_code", "item_name", THEMES_LABEL))
 
