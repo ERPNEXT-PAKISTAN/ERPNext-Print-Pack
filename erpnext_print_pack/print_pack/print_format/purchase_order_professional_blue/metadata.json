@@ -1,0 +1,25 @@
+{
+  "name": "Professional Blue Purchase Order",
+  "slug": "purchase_order_professional_blue",
+  "doc_type": "Purchase Order",
+  "theme": "professional_blue",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5ca2f1e29e3bc9b823c80ebcb92afea860380c48789108a12f188112a1dcf04b"
+}

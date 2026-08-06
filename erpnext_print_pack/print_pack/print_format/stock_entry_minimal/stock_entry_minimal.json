@@ -1,0 +1,17 @@
+{
+ "doctype": "Print Format",
+ "name": "Minimal Stock Entry",
+ "doc_type": "Stock Entry",
+ "module": "Print Pack",
+ "custom_format": 1,
+ "print_format_type": "Jinja",
+ "standard": "No",
+ "disabled": 0,
+ "default_print_language": "en",
+ "margin_top": 6.0,
+ "margin_bottom": 6.0,
+ "margin_left": 8.0,
+ "margin_right": 8.0,
+ "page_number": "Hide",
+ "css": ""
+}

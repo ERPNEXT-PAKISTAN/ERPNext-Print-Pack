@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Maintenance Schedule",
+  "slug": "maintenance_schedule_minimal",
+  "doc_type": "Maintenance Schedule",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b628c6e242ce57c557f933ebad6cff7ca475770ed5bf0c210b06a38b8956ada4"
+}

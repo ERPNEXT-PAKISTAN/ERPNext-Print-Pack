@@ -1,0 +1,25 @@
+{
+  "name": "Minimal Quotation",
+  "slug": "quotation_minimal",
+  "doc_type": "Quotation",
+  "theme": "minimal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "8cd78f5ef11e521f8e9c573a9ae97df26b080c48105746274c995c2faa6e7eb1"
+}

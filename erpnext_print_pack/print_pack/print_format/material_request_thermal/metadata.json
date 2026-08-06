@@ -1,0 +1,25 @@
+{
+  "name": "Thermal Material Request",
+  "slug": "material_request_thermal",
+  "doc_type": "Material Request",
+  "theme": "thermal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "cc18a7d55cf8d04c0c8b9a4f4b2b7af58956beb0b8a382cfd8c64486d95b9675"
+}

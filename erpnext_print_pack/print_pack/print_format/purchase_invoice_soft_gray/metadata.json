@@ -1,0 +1,26 @@
+{
+  "name": "Soft Gray Purchase Invoice",
+  "slug": "purchase_invoice_soft_gray",
+  "doc_type": "Purchase Invoice",
+  "theme": "soft_gray",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "b5c2d60c5b80926ebc7d636eaba194512c452fd8a7df098f8e77387718525352"
+}

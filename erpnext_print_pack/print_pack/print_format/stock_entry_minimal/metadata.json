@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Stock Entry",
+  "slug": "stock_entry_minimal",
+  "doc_type": "Stock Entry",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "0626cff1fed140e21e2492259ba29bb373bdd412d6902c4536390ed081ca5f04"
+}

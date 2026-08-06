@@ -1,0 +1,23 @@
+{
+  "name": "Modern Payment Request",
+  "slug": "payment_request_modern",
+  "doc_type": "Payment Request",
+  "theme": "modern",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "e22df1eebfe0d7ec4261c7e3cb55023e9340106fb04eb92f5a22da578004a0d4"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Soft Gray Quotation",
+  "slug": "quotation_soft_gray",
+  "doc_type": "Quotation",
+  "theme": "soft_gray",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5db3e941736cc3aa26a5a43ff3db23c296253ac2e53f8906d0a8de134b0e824a"
+}

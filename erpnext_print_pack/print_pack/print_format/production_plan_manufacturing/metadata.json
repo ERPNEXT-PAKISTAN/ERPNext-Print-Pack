@@ -1,0 +1,23 @@
+{
+  "name": "Manufacturing Production Plan",
+  "slug": "production_plan_manufacturing",
+  "doc_type": "Production Plan",
+  "theme": "manufacturing",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "279dc01e29449c128562f559e6aaeae13e61145a01cca254ad05fb52b74b9a15"
+}

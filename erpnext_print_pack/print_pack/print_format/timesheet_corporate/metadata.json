@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Timesheet",
+  "slug": "timesheet_corporate",
+  "doc_type": "Timesheet",
+  "theme": "corporate",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "4e57287e2b8e175aa8b11c73bbfdd3c1db03209abb5ccad84ae2ec60008c1fd8"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "QR Enabled Sales Invoice",
+  "slug": "sales_invoice_qr_enabled",
+  "doc_type": "Sales Invoice",
+  "theme": "qr_enabled",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words",
+    "qr"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "57cd1d3d5ab9e6b99544c918911526ba4b9d13adea1e237676ad92f56a6f6333"
+}

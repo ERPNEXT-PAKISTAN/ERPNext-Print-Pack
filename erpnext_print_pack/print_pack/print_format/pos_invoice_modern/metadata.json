@@ -1,0 +1,25 @@
+{
+  "name": "Modern POS Invoice",
+  "slug": "pos_invoice_modern",
+  "doc_type": "POS Invoice",
+  "theme": "modern",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "74d39a55a2c5a37479f56f61d5571d53fe601445d2d9c011da62d5303aceed1d"
+}

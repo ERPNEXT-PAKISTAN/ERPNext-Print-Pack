@@ -1,0 +1,1 @@
+{% if doc.terms %}<div class="epp-box"><div class="bold">Terms</div><div>{{ doc.terms }}</div></div>{% elif doc.tc_name %}<div class="epp-box">{{ frappe.db.get_value("Terms and Conditions", doc.tc_name, "terms") or "" }}</div>{% endif %}

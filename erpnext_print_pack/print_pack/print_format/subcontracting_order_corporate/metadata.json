@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Subcontracting Order",
+  "slug": "subcontracting_order_corporate",
+  "doc_type": "Subcontracting Order",
+  "theme": "corporate",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "400910dea720553f2010b2a3d93d27cc3cc8708f54195e6dd59833976c1ad1ea"
+}

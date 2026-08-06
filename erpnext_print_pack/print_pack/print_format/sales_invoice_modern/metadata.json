@@ -1,0 +1,26 @@
+{
+  "name": "Modern Sales Invoice",
+  "slug": "sales_invoice_modern",
+  "doc_type": "Sales Invoice",
+  "theme": "modern",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "ec80dc9984024f862838cd92f8b90e2bcc7d94966eff313621af4e01816d16bc"
+}

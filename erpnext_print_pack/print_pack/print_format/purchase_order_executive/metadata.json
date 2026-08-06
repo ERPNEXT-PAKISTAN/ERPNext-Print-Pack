@@ -1,0 +1,25 @@
+{
+  "name": "Executive Purchase Order",
+  "slug": "purchase_order_executive",
+  "doc_type": "Purchase Order",
+  "theme": "executive",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "00d087c9d41f99fc7fd0a20b71eb9427bca16bc6e1de02b00d010b1d26816f38"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Minimal Purchase Order",
+  "slug": "purchase_order_minimal",
+  "doc_type": "Purchase Order",
+  "theme": "minimal",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "ebc4f3c205cae8234e3f5b1039f9c5530f15f796043ab3d5bf0eacbb158052f2"
+}

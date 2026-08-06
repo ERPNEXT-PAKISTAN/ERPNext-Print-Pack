@@ -1,0 +1,23 @@
+{
+  "name": "Modern Pick List",
+  "slug": "pick_list_modern",
+  "doc_type": "Pick List",
+  "theme": "modern",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "30a9ded9dcb3dcf4c0827de09012b080354f0251e6419cefc1dee1356052563e"
+}

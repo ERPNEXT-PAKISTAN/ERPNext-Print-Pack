@@ -1,0 +1,23 @@
+{
+  "name": "Technical Job Card",
+  "slug": "job_card_technical",
+  "doc_type": "Job Card",
+  "theme": "technical",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "96240e169c0964de31ee9a30ca8d5bd0abe9e1cef50818f5c7f552386f93f84e"
+}

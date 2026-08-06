@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Subcontracting Receipt",
+  "slug": "subcontracting_receipt_professional_blue",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "professional_blue",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "552b394b9c3b86aa012062ff097ed1209b10877815cab419fbba763d1b7704ca"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Clean Journal Entry",
+  "slug": "journal_entry_clean",
+  "doc_type": "Journal Entry",
+  "theme": "clean",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "995b15c1320f97053712dc9297bd9a3d3ac9391bd2220ea798f23b00565478ae"
+}

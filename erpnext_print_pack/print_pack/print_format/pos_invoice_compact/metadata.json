@@ -1,0 +1,25 @@
+{
+  "name": "Compact POS Invoice",
+  "slug": "pos_invoice_compact",
+  "doc_type": "POS Invoice",
+  "theme": "compact",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b3d2b28233fb13d18abe837ccda99b74bfaaa334813659e0c214254b2a589ecc"
+}

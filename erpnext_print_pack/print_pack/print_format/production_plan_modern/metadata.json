@@ -1,0 +1,23 @@
+{
+  "name": "Modern Production Plan",
+  "slug": "production_plan_modern",
+  "doc_type": "Production Plan",
+  "theme": "modern",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "bdc39b34c18328195efcc14c21429ca7ba533626a9e9068420269bb3e048d41d"
+}

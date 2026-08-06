@@ -1,0 +1,25 @@
+{
+  "name": "Monochrome Supplier Quotation",
+  "slug": "supplier_quotation_monochrome",
+  "doc_type": "Supplier Quotation",
+  "theme": "monochrome",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "fb4fdc13a9f1eacd5b552e9dc4bfb34db0a3abed84ce22e37a89b64b50107ac6"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Minimal POS Invoice",
+  "slug": "pos_invoice_minimal",
+  "doc_type": "POS Invoice",
+  "theme": "minimal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "cdf9924a34fd9114fc94277671915e1059183c763a3d409d23743a1627688a5e"
+}

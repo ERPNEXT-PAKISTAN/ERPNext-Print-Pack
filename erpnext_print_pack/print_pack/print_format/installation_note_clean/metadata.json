@@ -1,0 +1,23 @@
+{
+  "name": "Clean Installation Note",
+  "slug": "installation_note_clean",
+  "doc_type": "Installation Note",
+  "theme": "clean",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "88b47771e14ebd01af2662dab075d13fbe0a94ab1621a8383200a3cfb92ce1cb"
+}

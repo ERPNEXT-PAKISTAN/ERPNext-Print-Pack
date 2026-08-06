@@ -1,0 +1,23 @@
+{
+  "name": "Modern Installation Note",
+  "slug": "installation_note_modern",
+  "doc_type": "Installation Note",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "af96168dbedf05891c2593e322570c1a561281ac13e271526580819bb0641671"
+}

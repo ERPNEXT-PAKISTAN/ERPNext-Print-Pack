@@ -1,0 +1,23 @@
+{
+  "name": "Industrial Material Request",
+  "slug": "material_request_industrial",
+  "doc_type": "Material Request",
+  "theme": "industrial",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "10e076d42975a1fb1d9a156819461d05c165f85e5117edc7440fadd8b007176c"
+}

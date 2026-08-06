@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Issue",
+  "slug": "issue_minimal",
+  "doc_type": "Issue",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "67e6d24de9fa7a429bf0b0d14d418db2c0aa4ab50164f0131e99176987b6220e"
+}

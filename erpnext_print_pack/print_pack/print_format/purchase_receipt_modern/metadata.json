@@ -1,0 +1,23 @@
+{
+  "name": "Modern Purchase Receipt",
+  "slug": "purchase_receipt_modern",
+  "doc_type": "Purchase Receipt",
+  "theme": "modern",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b22adea42541ccff649806a4ee5f992973a360b24f1cd49788310e38a83641ac"
+}

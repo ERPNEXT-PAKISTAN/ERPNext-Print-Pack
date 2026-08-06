@@ -1,0 +1,1 @@
+<div class="epp-box center">{% set qr = doc.get("qr_code") or doc.get("custom_qr_code") or doc.get("ksa_einv_qr") or "" %}{% if qr %}<img src="{{ qr }}" style="width:96px;height:96px">{% else %}<div style="border:1px dashed #999;width:96px;height:96px;margin:0 auto;line-height:96px">QR</div>{% endif %}</div>

@@ -1,0 +1,23 @@
+{
+  "name": "Modern Job Card",
+  "slug": "job_card_modern",
+  "doc_type": "Job Card",
+  "theme": "modern",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "c4279eea360f7645a406e03fb30c05c62705d11092531e3c091b9657d97cc7a9"
+}

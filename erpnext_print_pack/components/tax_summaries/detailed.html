@@ -1,0 +1,1 @@
+{% if doc.taxes %}<table class="epp-table"><tr><th>Description</th><th>Rate</th><th>Amount</th></tr>{% for tax in doc.taxes %}<tr><td>{{ tax.description or "" }}</td><td class="right">{{ tax.rate or "" }}</td><td class="right">{{ tax.tax_amount or "" }}</td></tr>{% endfor %}</table>{% endif %}

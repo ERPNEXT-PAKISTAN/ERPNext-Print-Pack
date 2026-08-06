@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Production Plan",
+  "slug": "production_plan_minimal",
+  "doc_type": "Production Plan",
+  "theme": "minimal",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "a9c5de519bb8c36a2f99b95b49a2830bb157167c9f459cfc2ffaaaba0fd96d2b"
+}

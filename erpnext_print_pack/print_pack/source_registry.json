@@ -1,0 +1,82 @@
+{
+  "sources": [
+    {
+      "repository": "sparksuite/simple-html-invoice-template",
+      "url": "https://github.com/sparksuite/simple-html-invoice-template",
+      "reviewed_ref": "master (layout review only, no commit copied)",
+      "license": "MIT",
+      "license_url": "https://github.com/sparksuite/simple-html-invoice-template/blob/master/LICENSE",
+      "usage": "inspired",
+      "files_used": [],
+      "concepts_used": ["basic invoice table layout", "header/total separation"],
+      "attribution_required": false,
+      "copyright_notice_included": false,
+      "notes": "No source code or assets copied."
+    },
+    {
+      "repository": "InvoicePlane/InvoicePlane",
+      "url": "https://github.com/InvoicePlane/InvoicePlane",
+      "reviewed_ref": "not copied",
+      "license": "MIT",
+      "license_url": "https://github.com/InvoicePlane/InvoicePlane/blob/develop/LICENSE.txt",
+      "usage": "rejected",
+      "files_used": [],
+      "concepts_used": [],
+      "attribution_required": false,
+      "copyright_notice_included": false,
+      "notes": "Not included. Referenced for layout research only."
+    },
+    {
+      "repository": "tabler/tabler",
+      "url": "https://github.com/tabler/tabler",
+      "reviewed_ref": "layout review only",
+      "license": "MIT",
+      "license_url": "https://github.com/tabler/tabler/blob/dev/LICENSE",
+      "usage": "inspired",
+      "files_used": [],
+      "concepts_used": ["spacing", "card-like sections"],
+      "attribution_required": false,
+      "copyright_notice_included": false,
+      "notes": "No source code or assets copied."
+    },
+    {
+      "repository": "ColorlibHQ/AdminLTE",
+      "url": "https://github.com/ColorlibHQ/AdminLTE",
+      "reviewed_ref": "layout review only",
+      "license": "MIT",
+      "license_url": "https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE",
+      "usage": "inspired",
+      "files_used": [],
+      "concepts_used": ["boxed sections"],
+      "attribution_required": false,
+      "copyright_notice_included": false,
+      "notes": "No source code or assets copied."
+    },
+    {
+      "repository": "frappe/erpnext",
+      "url": "https://github.com/frappe/erpnext",
+      "reviewed_ref": "v16.30.0 conventions",
+      "license": "GPL-3.0",
+      "license_url": "https://github.com/frappe/erpnext/blob/develop/license.txt",
+      "usage": "inspired",
+      "files_used": [],
+      "concepts_used": ["DocType field names", "Jinja print conventions", "get_formatted usage"],
+      "attribution_required": true,
+      "copyright_notice_included": true,
+      "notes": "No ERPNext template HTML copied into this app."
+    },
+    {
+      "repository": "frappe/frappe",
+      "url": "https://github.com/frappe/frappe",
+      "reviewed_ref": "v16.x validate_template API",
+      "license": "MIT",
+      "license_url": "https://github.com/frappe/frappe/blob/develop/LICENSE",
+      "usage": "inspired",
+      "files_used": [],
+      "concepts_used": ["Print Format doctype fields", "validate_template"],
+      "attribution_required": true,
+      "copyright_notice_included": true,
+      "notes": "Uses Frappe APIs at runtime; no Frappe HTML copied."
+    }
+  ]
+}

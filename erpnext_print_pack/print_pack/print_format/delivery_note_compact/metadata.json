@@ -1,0 +1,23 @@
+{
+  "name": "Compact Delivery Note",
+  "slug": "delivery_note_compact",
+  "doc_type": "Delivery Note",
+  "theme": "compact",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "34d58ce3ab87f1a85dc15dfe9dfae0562bf1d1fe7929aba16edd66ac361b028a"
+}

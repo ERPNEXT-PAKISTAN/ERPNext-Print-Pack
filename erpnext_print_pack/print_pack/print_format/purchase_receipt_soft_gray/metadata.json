@@ -1,0 +1,23 @@
+{
+  "name": "Soft Gray Purchase Receipt",
+  "slug": "purchase_receipt_soft_gray",
+  "doc_type": "Purchase Receipt",
+  "theme": "soft_gray",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "4edc96137b099e973de87c2f7286010413526e7cf9e22b8c51c89d6f78da7c1b"
+}

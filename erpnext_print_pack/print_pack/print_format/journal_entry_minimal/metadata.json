@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Journal Entry",
+  "slug": "journal_entry_minimal",
+  "doc_type": "Journal Entry",
+  "theme": "minimal",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "d7cefd850d44184a2bc52afb7622440b24ab3817e82c2cf699b70dd5ca0f4a6d"
+}

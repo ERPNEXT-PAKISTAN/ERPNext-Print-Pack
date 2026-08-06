@@ -1,0 +1,23 @@
+{
+  "name": "Premium Purchase Receipt",
+  "slug": "purchase_receipt_premium",
+  "doc_type": "Purchase Receipt",
+  "theme": "premium",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "d745b96d68f9bfc4016111c41f8387288d98b26f2b55ca17ab0afc2375ab4622"
+}

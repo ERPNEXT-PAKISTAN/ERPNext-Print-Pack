@@ -1,0 +1,50 @@
+@page {
+	size: A4 portrait;
+	margin: 8mm;
+}
+.epp-root {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #111;
+	line-height: 1.25;
+}
+.epp-primary { color: #57534e; }
+.epp-accent { color: #ca8a04; }
+.epp-header {
+	background: #fffbeb;
+	border-bottom: 2px solid #57534e;
+	padding: 8px 10px;
+	margin-bottom: 8px;
+}
+.epp-box {
+	border: 1px solid #57534e;
+	border-radius: 3px;
+	padding: 6px 8px;
+	margin-bottom: 4px;
+}
+.epp-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.epp-table th {
+	background: #fffbeb;
+	color: #57534e;
+	border: 1px solid #57534e;
+	padding: 4px;
+	font-size: 8px;
+	text-align: center;
+}
+.epp-table td {
+	border: 1px solid #57534e;
+	padding: 4px;
+	vertical-align: top;
+}
+.epp-totals td {
+	border: 1px solid #57534e;
+	padding: 4px 6px;
+}
+.epp-footer {
+	margin-top: 10px;
+	font-size: 8px;
+	color: #ca8a04;
+}

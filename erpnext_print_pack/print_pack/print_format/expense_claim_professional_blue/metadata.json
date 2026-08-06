@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Expense Claim",
+  "slug": "expense_claim_professional_blue",
+  "doc_type": "Expense Claim",
+  "theme": "professional_blue",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "f0d299ffb38c272a880943e2c42f60a49781e2f48a257a6fd50b381b4b75fa3a"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Work Order",
+  "slug": "work_order_minimal",
+  "doc_type": "Work Order",
+  "theme": "minimal",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "606dcbd631b9d5f11a9c68e02d3671b7094773a18b255c6724faada4b9747dc1"
+}

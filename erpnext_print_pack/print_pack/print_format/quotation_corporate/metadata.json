@@ -1,0 +1,25 @@
+{
+  "name": "Corporate Quotation",
+  "slug": "quotation_corporate",
+  "doc_type": "Quotation",
+  "theme": "corporate",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "22af6ff4de924c2db392118c13f1c68c1b330231b4eca8b4c5ea6882e40080de"
+}

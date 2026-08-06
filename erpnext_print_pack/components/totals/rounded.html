@@ -1,0 +1,1 @@
+<table class="epp-totals" style="width:45%;margin-left:auto"><tr><td>Rounded Total</td><td class="right">{{ doc.get_formatted("rounded_total") if doc.get_formatted is defined else doc.rounded_total or doc.grand_total or "" }}</td></tr></table>

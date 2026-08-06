@@ -1,0 +1,751 @@
+{#
+Bilingual Sales Invoice (tax invoice) print format for ERPNext/Frappe.
+DocType: Sales Invoice | Print Format Type: Jinja
+Part of erpnext_print_pack — edit HTML here, then run sync_print_formats script.
+Disable Letter Head for this format to avoid duplicate headers.
+#}
+
+{% set BLUE = "#075daa" %}
+{% set GOLD = "#bd852c" %}
+{% set company = frappe.get_doc("Company", doc.company) if doc.company else none %}
+{% set address = frappe.get_doc("Address", doc.customer_address) if doc.customer_address else none %}
+{% set company_address = frappe.get_doc("Address", doc.company_address) if doc.company_address else none %}
+
+{# ---------- Bank Account (ERPNext linked) ---------- #}
+{% set bank_doc = none %}
+{% if doc.get("custom_bank_account") %}
+	{% set bank_doc = frappe.get_doc("Bank Account", doc.custom_bank_account) %}
+{% elif company and company.get("default_bank_account") %}
+	{% set bank_doc = frappe.get_doc("Bank Account", company.default_bank_account) %}
+{% endif %}
+{% set bank_name = doc.get("custom_bank_name") or (bank_doc.get("bank") if bank_doc else "") or (bank_doc.get("account_name") if bank_doc else "") or "" %}
+{% set bank_account_no = doc.get("custom_bank_account_number") or (bank_doc.get("bank_account_no") if bank_doc else "") or "" %}
+{% set iban = doc.get("custom_iban") or (bank_doc.get("iban") if bank_doc else "") or "" %}
+
+{# ---------- Configurable assets ---------- #}
+{% set left_logo = (company.get("company_logo") if company else "") or "" %}
+{% set center_logo = doc.get("custom_branch_logo") or (company.get("company_logo") if company else "") or "" %}
+{% set right_logo = doc.get("custom_arabic_company_logo") or "" %}
+{% set watermark = doc.get("custom_watermark_logo") or center_logo or left_logo %}
+{% set brands_image = doc.get("custom_brands_footer_image") or "/files/alzahra_brands.png" %}
+
+{# ---------- Company details ---------- #}
+{% set company_vat = doc.get("company_tax_id") or (company.get("tax_id") if company else "") or "" %}
+{% set company_cr = doc.get("custom_company_cr_number") or (company.get("custom_cr_number") if company else "") or "" %}
+{% set company_postal = doc.get("custom_company_postal_code") or (company_address.pincode if company_address else none) or "" %}
+{% set company_secondary = doc.get("custom_company_additional_number") or (company_address.get("custom_additional_number") if company_address else none) or "" %}
+{% set company_building = doc.get("custom_company_building_number") or (company_address.get("custom_building_number") if company_address else none) or "" %}
+{% set company_city = doc.get("custom_company_city") or (company_address.city if company_address else none) or "" %}
+{% set company_street = doc.get("custom_company_street") or (company_address.address_line1 if company_address else none) or "" %}
+{% set company_district = doc.get("custom_company_district") or (company_address.get("custom_district") if company_address else none) or "" %}
+{% set company_phone = doc.get("custom_company_phone") or (company.get("phone_no") if company else none) or (company_address.phone if company_address else none) or "" %}
+{% set company_phone_2 = doc.get("custom_company_phone_2") or "" %}
+{% set company_tel = doc.get("custom_company_tel") or company_phone %}
+{% set company_email = doc.get("custom_company_email") or (company.get("email") if company else "") or (company_address.email_id if company_address else "") or "" %}
+{% set company_name_ar = doc.get("custom_company_name_ar") or (company.get("custom_company_name_ar") if company else "") or "" %}
+{% set company_desc = doc.get("custom_company_description") or "" %}
+{% set company_desc_ar = doc.get("custom_company_description_ar") or "" %}
+{% set branch_name = doc.get("custom_branch_name") or "" %}
+{% set footer_en = doc.get("custom_footer_address_en") or "" %}
+{% set footer_ar = doc.get("custom_footer_address_ar") or "" %}
+
+{# ---------- Customer details ---------- #}
+{% set customer_name_ar = doc.get("custom_customer_name_ar") or "" %}
+{% set customer_vat = doc.get("tax_id") or "" %}
+{% set customer_cr = doc.get("custom_customer_cr_number") or doc.get("custom_customer_cr") or (address.get("custom_cr_number") if address else "") or "" %}
+{% set customer_id = doc.get("custom_customer_id") or doc.customer or "" %}
+{% set customer_city = (address.city if address else none) or "" %}
+{% set customer_postal = (address.pincode if address else none) or "" %}
+{% set customer_additional = (address.get("custom_additional_number") if address else none) or "" %}
+{% set customer_country = (address.country if address else none) or "" %}
+{% set customer_building = (address.get("custom_building_number") if address else none) or "" %}
+{% set customer_street = (address.address_line1 if address else none) or "" %}
+{% set customer_district = (address.get("custom_district") if address else none) or "" %}
+{% set customer_contact = doc.get("contact_mobile") or doc.get("contact_phone") or (address.phone if address else none) or "" %}
+{% set old_balance = doc.get("custom_old_balance") or 0 %}
+
+{# ---------- Payment ---------- #}
+{% set payment_mode = doc.get("mode_of_payment") or "" %}
+{% if not payment_mode and doc.get("payments") %}
+	{% set payment_mode = doc.payments[0].mode_of_payment or "" %}
+{% endif %}
+{% if not payment_mode %}
+	{% if (doc.outstanding_amount or 0) > 0 %}
+		{% set payment_mode = "CREDIT" %}
+	{% else %}
+		{% set payment_mode = "PAID" %}
+	{% endif %}
+{% endif %}
+
+{# ---------- QR ---------- #}
+{% set qr_value = doc.get("ksa_einv_qr") or doc.get("qr_code") or doc.get("custom_qr_code") or "" %}
+{% set salesman = doc.get("custom_salesman_name") or doc.sales_partner or "" %}
+
+<style>
+@page {
+	size: A4 portrait;
+	margin: 6mm 8mm 6mm 8mm;
+}
+
+.print-format {
+	width: 100%;
+	padding: 0 6mm !important;
+	margin: 0 !important;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 8.4px;
+	line-height: 1.12;
+	color: #111;
+}
+
+* { box-sizing: border-box; }
+
+.invoice-sheet {
+	width: 100%;
+	min-height: 275mm;
+	position: relative;
+	overflow: hidden;
+	padding: 0 2mm;
+}
+
+table { border-collapse: separate; border-spacing: 0; width: 100%; }
+td, th { vertical-align: top; }
+
+/* kill ERPNext default .print-format td { padding: 6px !important } gap */
+.print-format .header-table > tbody > tr > td,
+.print-format .info-top > tbody > tr > td,
+.print-format .customer-grid > tbody > tr > td,
+.print-format .words-totals > tbody > tr > td,
+.print-format .payment-total-row > tbody > tr > td,
+.print-format .signatures > tbody > tr > td {
+	padding: 0 !important;
+}
+
+.ar {
+	direction: rtl;
+	text-align: right;
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+.en { direction: ltr; text-align: left; }
+.blue { color: {{ BLUE }}; }
+.gold { color: {{ GOLD }}; }
+.bold { font-weight: 700; }
+.center { text-align: center; }
+.right { text-align: right; }
+
+/* separate boxes, almost touching on all sides */
+.header-table { table-layout: fixed; margin: 0 0 1px 0; }
+.header-table > tbody > tr > td { padding: 0 1px; }
+
+.logo-left {
+	width: 100%; max-width: 285px; max-height: 68px;
+	object-fit: contain; object-position: left top;
+}
+.logo-center { width: 76px; height: 76px; object-fit: contain; }
+.logo-right {
+	width: 100%; max-width: 270px; max-height: 68px;
+	object-fit: contain; object-position: right top;
+}
+
+.company-name-fallback {
+	font-size: 22px; line-height: 1.05; font-weight: 700; color: {{ BLUE }};
+}
+.company-subtitle { font-size: 10px; font-weight: 700; color: {{ BLUE }}; }
+.phone-line { color: {{ BLUE }}; font-size: 10px; font-weight: 700; margin-top: 1px; }
+.branch-name { color: {{ GOLD }}; font-size: 12px; font-weight: 700; margin-top: 0; }
+
+.info-top {
+	table-layout: fixed;
+	margin: 0 0 2px 0;
+	border-collapse: separate;
+	border-spacing: 2px 0;
+}
+.info-top > tbody > tr > td { padding: 0 !important; vertical-align: top; }
+
+.info-box {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	padding: 3px 5px;
+	height: 76px;
+	overflow: hidden;
+}
+.info-row { width: 100%; margin-bottom: 1px; line-height: 1.1; }
+.info-row:last-child { margin-bottom: 0; }
+.label-en { color: {{ BLUE }}; font-weight: 700; display: inline-block; }
+.label-ar { color: {{ BLUE }}; font-weight: 700; float: right; direction: rtl; }
+.value { font-weight: 700; }
+
+.tax-title { font-size: 13px; font-weight: 700; text-align: center; line-height: 1.05; color: {{ BLUE }}; }
+.tax-title-ar { font-size: 14px; text-align: center; direction: rtl; margin-bottom: 2px; color: {{ BLUE }}; font-family: Tahoma, Arial, sans-serif; }
+.invoice-meta { font-size: 9.5px; line-height: 1.25; font-weight: 700; color: {{ BLUE }}; }
+
+.customer-name-row {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	padding: 3px 6px;
+	margin: 0 0 2px 0;
+	font-size: 10px;
+	font-weight: 700;
+	min-height: 22px;
+	line-height: 1.2;
+}
+
+.customer-grid {
+	table-layout: fixed;
+	margin: 0 0 2px 0;
+	border-collapse: separate;
+	border-spacing: 2px 0;
+}
+.customer-grid > tbody > tr > td { padding: 0 !important; vertical-align: top; }
+
+.qr-box {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	height: 148px;
+	padding: 4px;
+	text-align: center;
+}
+.qr-box img { width: 132px; height: 132px; object-fit: contain; }
+.qr-placeholder {
+	width: 132px; height: 132px; border: 1px dashed #888;
+	margin: 0 auto; padding-top: 50px; font-size: 9px; color: #666;
+}
+
+.customer-info-box {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	height: 148px;
+	padding: 3px 5px;
+	overflow: hidden;
+}
+.customer-info-box .info-row { font-size: 9px; line-height: 1.18; margin-bottom: 1px; }
+
+.items-wrap {
+	position: relative;
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	overflow: hidden;
+	min-height: 128mm;
+	margin: 0 0 2px 0;
+}
+
+.watermark {
+	position: absolute;
+	left: 50%; top: 54%;
+	transform: translate(-50%, -50%);
+	width: 47%; max-height: 88mm;
+	object-fit: contain;
+	opacity: .055;
+	z-index: 0;
+}
+
+.items-table {
+	table-layout: fixed;
+	position: relative;
+	z-index: 1;
+	min-height: 132mm;
+}
+.items-table thead { display: table-header-group; }
+.items-table th {
+	background: #f3e1c2;
+	color: {{ BLUE }};
+	border-right: 1.15px solid {{ BLUE }};
+	border-bottom: 1.35px solid {{ BLUE }};
+	padding: 3px 2px;
+	text-align: center;
+	font-size: 8px;
+	line-height: 1.05;
+	height: 34px;
+}
+.items-table th:last-child { border-right: 0; }
+.items-table td {
+	border-right: 1.15px solid {{ BLUE }};
+	padding: 5px 4px;
+	font-size: 9px;
+	font-weight: 700;
+	page-break-inside: avoid;
+}
+.items-table td:last-child { border-right: 0; }
+.items-table tbody tr { page-break-inside: avoid; }
+
+.item-description-en { font-weight: 700; margin-bottom: 7px; }
+.item-description-ar {
+	direction: rtl; text-align: right;
+	font-size: 10px; font-weight: 400;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.items-fill-row td { height: 103mm; padding: 0; }
+
+.vertical-note-left,
+.vertical-note-right {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	color: {{ BLUE }};
+	font-size: 8px;
+	font-weight: 700;
+	text-align: center;
+	padding: 4px 1px !important;
+}
+
+.brands {
+	position: absolute;
+	left: 5%; bottom: 4px;
+	width: 91%; height: 27px;
+	object-fit: contain;
+	opacity: .23;
+	z-index: 2;
+}
+
+/* bottom total boxes — separate, almost touching */
+.words-totals {
+	table-layout: fixed;
+	margin: 0 0 2px 0;
+	border-collapse: separate;
+	border-spacing: 2px 0;
+}
+.words-totals > tbody > tr > td { padding: 0 !important; }
+.words-box, .total-mini {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	height: 34px;
+}
+.words-box { padding: 3px 5px; }
+.words-title { color: {{ BLUE }}; font-weight: 700; font-size: 8px; }
+.words-value { font-size: 8.8px; font-weight: 700; padding-left: 18px; white-space: normal; }
+.total-mini { padding: 0; }
+.total-mini table { height: 100%; }
+.total-mini td {
+	padding: 3px 4px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.payment-total-row {
+	table-layout: fixed;
+	margin: 0 0 2px 0;
+	border-collapse: separate;
+	border-spacing: 2px 0;
+}
+.payment-total-row > tbody > tr > td { padding: 0 !important; }
+.payment-box {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	height: 67px;
+	padding: 10px 16px;
+	font-size: 10px;
+}
+.bank-line { margin-top: 11px; color: {{ BLUE }}; font-weight: 700; font-size: 9px; }
+
+.summary-wrap {
+	border: 1.35px solid {{ BLUE }};
+	border-radius: 3px;
+	overflow: hidden;
+	height: 67px;
+}
+.summary-table { table-layout: fixed; height: 67px; border-collapse: collapse; }
+.summary-table td {
+	border: 0;
+	border-right: 1.15px solid {{ BLUE }};
+	border-bottom: 1.15px solid {{ BLUE }};
+	padding: 3px 5px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 700;
+}
+.summary-table tr:last-child td { border-bottom: 0; }
+.summary-table td:last-child { border-right: 0; }
+.summary-table .sum-label { color: {{ BLUE }}; line-height: 1.0; }
+.summary-table .sum-value { font-size: 13px; color: #111; }
+
+.signatures {
+	margin: 2px 0 0 0;
+	table-layout: fixed;
+	color: {{ BLUE }};
+	font-weight: 700;
+	font-size: 10px;
+}
+.signatures td { padding: 1px 6px 2px; vertical-align: bottom; }
+.signature-name { color: #111; text-align: center; font-size: 9px; min-height: 11px; }
+.signature-line {
+	border-bottom: 1px dashed {{ BLUE }};
+	display: inline-block;
+	min-width: 118px;
+}
+
+.footer-bar {
+	background: {{ GOLD }};
+	color: #fff;
+	padding: 3px 6px;
+	font-size: 7px;
+	font-weight: 700;
+	margin: 1px 0 0 0;
+}
+.policy {
+	color: #e1262f;
+	font-size: 8px;
+	font-weight: 700;
+	padding: 2px 1px 0;
+	margin: 0;
+}
+.return-banner {
+	background: #b21f2d;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	padding: 3px;
+	margin: 0 0 1px 0;
+}
+
+@media print {
+	.invoice-sheet { page-break-after: always; }
+	.items-table tr,
+	.words-totals,
+	.payment-total-row,
+	.signatures,
+	.footer-bar { page-break-inside: avoid; }
+}
+</style>
+
+<div class="invoice-sheet">
+
+	{% if doc.is_return %}
+	<div class="return-banner">RETURN INVOICE&nbsp;&nbsp;|&nbsp;&nbsp;<span class="ar">فاتورة مرتجعة</span></div>
+	{% endif %}
+
+	<table class="header-table">
+		<colgroup>
+			<col style="width:39%">
+			<col style="width:22%">
+			<col style="width:39%">
+		</colgroup>
+		<tr>
+			<td class="en">
+				{% if left_logo %}
+					<img src="{{ left_logo }}" class="logo-left">
+				{% else %}
+					<div class="company-name-fallback">{{ doc.company or "" }}</div>
+					{% if company_desc %}<div class="company-subtitle">{{ company_desc }}</div>{% endif %}
+				{% endif %}
+				{% if company_phone %}
+				<div class="phone-line">
+					Mob: {{ company_phone }}
+					{% if company_phone_2 %}<br>{{ company_phone_2 }}{% endif %}
+				</div>
+				{% endif %}
+			</td>
+
+			<td class="center">
+				{% if center_logo %}
+					<img src="{{ center_logo }}" class="logo-center">
+				{% endif %}
+				{% if branch_name %}
+				<div class="branch-name">{{ branch_name }}</div>
+				{% endif %}
+			</td>
+
+			<td class="ar">
+				{% if right_logo %}
+					<img src="{{ right_logo }}" class="logo-right">
+				{% else %}
+					<div class="company-name-fallback ar">{{ company_name_ar or doc.company or "" }}</div>
+					{% if company_desc_ar %}<div class="company-subtitle ar">{{ company_desc_ar }}</div>{% endif %}
+				{% endif %}
+				{% if company_phone %}
+				<div class="phone-line ar">
+					جوال: {{ company_phone }}
+					{% if company_phone_2 %}<br>{{ company_phone_2 }}{% endif %}
+				</div>
+				{% endif %}
+			</td>
+		</tr>
+	</table>
+
+	<table class="info-top">
+		<colgroup>
+			<col style="width:37%">
+			<col style="width:24%">
+			<col style="width:39%">
+		</colgroup>
+		<tr>
+			<td>
+				<div class="info-box">
+					<div class="info-row"><span class="label-en">VAT No.</span> &nbsp;: &nbsp;<span class="value">{{ company_vat }}</span><span class="label-ar">الرقم الضريبي</span></div>
+					<div class="info-row"><span class="label-en">C.R No.</span> &nbsp;: &nbsp;<span class="value">{{ company_cr }}</span><span class="label-ar">رقم س.ت</span></div>
+					<div class="info-row"><span class="label-en">Postal Code</span> &nbsp;: &nbsp;<span class="value">{{ company_postal }}</span><span class="label-ar">الرمز البريدي</span></div>
+					<div class="info-row"><span class="label-en">Secondary No</span> &nbsp;: &nbsp;<span class="value">{{ company_secondary }}</span><span class="label-ar">الرقم الثانوي</span></div>
+				</div>
+			</td>
+			<td>
+				<div class="info-box">
+					<div class="tax-title">TAX INVOICE</div>
+					<div class="tax-title-ar">فاتورة ضريبية</div>
+					<div class="invoice-meta">
+						<div>Inv. No: <span class="value">{{ doc.name or "" }}</span> <span class="ar blue" style="float:right;">رقم الفاتورة</span></div>
+						<div>Date: <span class="value">{{ frappe.utils.formatdate(doc.posting_date, "dd-MM-yyyy") if doc.posting_date else "" }}{% if doc.posting_time %} {{ (doc.posting_time|string)[:8] }}{% endif %}</span><span class="ar blue" style="float:right;">التاريخ</span></div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="info-box">
+					<div class="info-row"><span class="label-en">Building No</span> &nbsp;: &nbsp;<span class="value">{{ company_building }}</span><span class="label-ar">رقم المبنى</span></div>
+					<div class="info-row"><span class="label-en">City Name</span> &nbsp;: &nbsp;<span class="value">{{ company_city }}</span><span class="label-ar">اسم المدينة</span></div>
+					<div class="info-row"><span class="label-en">Street Name</span> &nbsp;: &nbsp;<span class="value">{{ company_street }}</span><span class="label-ar">اسم الشارع</span></div>
+					<div class="info-row"><span class="label-en">District Name</span> &nbsp;: &nbsp;<span class="value">{{ company_district }}</span><span class="label-ar">اسم الحي</span></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<div class="customer-name-row">
+		<span class="label-en">Customer Name</span>
+		&nbsp;: &nbsp;
+		<span class="value">{{ doc.customer_name or doc.customer or "" }}</span>
+		{% if customer_name_ar %}<span class="value ar" style="display:inline-block; margin-left:8px;">{{ customer_name_ar }}</span>{% endif %}
+		<span class="label-ar">اسم العميل</span>
+	</div>
+
+	<table class="customer-grid">
+		<colgroup>
+			<col style="width:20%">
+			<col style="width:40%">
+			<col style="width:40%">
+		</colgroup>
+		<tr>
+			<td>
+				<div class="qr-box">
+					{% if qr_value %}
+						<img src="{{ qr_value }}">
+					{% else %}
+						<div class="qr-placeholder">ZATCA QR CODE</div>
+					{% endif %}
+				</div>
+			</td>
+			<td>
+				<div class="customer-info-box">
+					<div class="info-row"><span class="label-en">City</span> &nbsp;: &nbsp;<span class="value">{{ customer_city }}</span><span class="label-ar">المدينة</span></div>
+					<div class="info-row"><span class="label-en">Postal Code</span> &nbsp;: &nbsp;<span class="value">{{ customer_postal }}</span><span class="label-ar">الرمز البريدي</span></div>
+					<div class="info-row"><span class="label-en">Additional No</span> &nbsp;: &nbsp;<span class="value">{{ customer_additional }}</span><span class="label-ar">رقم إضافي</span></div>
+					<div class="info-row"><span class="label-en">Country</span> &nbsp;: &nbsp;<span class="value">{{ customer_country }}</span><span class="label-ar">البلد</span></div>
+					<div class="info-row"><span class="label-en">Contact No</span> &nbsp;: &nbsp;<span class="value">{{ customer_contact }}</span><span class="label-ar">رقم الاتصال</span></div>
+					<div class="info-row"><span class="label-en">Old Balance</span> &nbsp;: &nbsp;<span class="value">{{ "{:,.2f}".format(old_balance or 0) }}</span><span class="label-ar">الرصيد القديم</span></div>
+				</div>
+			</td>
+			<td>
+				<div class="customer-info-box">
+					<div class="info-row"><span class="label-en">VAT No</span> &nbsp;: &nbsp;<span class="value">{{ customer_vat }}</span><span class="label-ar">الرقم الضريبي</span></div>
+					<div class="info-row"><span class="label-en">Cust ID</span> &nbsp;: &nbsp;<span class="value">{{ customer_id }}</span><span class="label-ar">رقم العميل</span></div>
+					<div class="info-row"><span class="label-en">C.R. No</span> &nbsp;: &nbsp;<span class="value">{{ customer_cr }}</span><span class="label-ar">السجل التجاري</span></div>
+					<div class="info-row"><span class="label-en">Building No.</span> &nbsp;: &nbsp;<span class="value">{{ customer_building }}</span><span class="label-ar">رقم المبنى</span></div>
+					<div class="info-row"><span class="label-en">Street Name</span> &nbsp;: &nbsp;<span class="value">{{ customer_street }}</span><span class="label-ar">اسم الشارع</span></div>
+					<div class="info-row"><span class="label-en">District</span> &nbsp;: &nbsp;<span class="value">{{ customer_district }}</span><span class="label-ar">الحي</span></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<div class="items-wrap">
+		{% if watermark %}
+			<img src="{{ watermark }}" class="watermark">
+		{% endif %}
+
+		<table class="items-table">
+			<colgroup>
+				<col style="width:3.5%">
+				<col style="width:4%">
+				<col style="width:41.5%">
+				<col style="width:5.5%">
+				<col style="width:11%">
+				<col style="width:8%">
+				<col style="width:8%">
+				<col style="width:3%">
+				<col style="width:7%">
+				<col style="width:8.5%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="vertical-note-left">Note: Compressor and motor not accepted after welding &amp; fitting</th>
+					<th><span class="ar">رقم</span><br>Sl.No.</th>
+					<th>Description <span class="ar" style="float:right;">البيان</span></th>
+					<th><span class="ar">الوحدة</span><br>Unit</th>
+					<th><span class="ar">الكمية</span><br>Qty.</th>
+					<th><span class="ar">سعر الوحدة</span><br>Unit Price</th>
+					<th><span class="ar">لا تشمل الضريبة</span><br>Excl. VAT</th>
+					<th><span class="ar">ضريبة</span><br>VAT%</th>
+					<th><span class="ar">الريال الضريبة</span><br>VAT Rate</th>
+					<th><span class="ar">السعر الإجمالي</span><br>Total Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for item in doc.items %}
+					{% set tax = namespace(rate=0) %}
+					{% if item.item_tax_rate and item.item_tax_rate not in ("{}", "", "null", "None") %}
+						{% if item.item_tax_rate is mapping %}
+							{% for account, rate in item.item_tax_rate.items() %}
+								{% if rate and rate > tax.rate %}
+									{% set tax.rate = rate %}
+								{% endif %}
+							{% endfor %}
+						{% elif item.item_tax_rate is string and item.item_tax_rate[:1] == "{" %}
+							{% set rates = json.loads(item.item_tax_rate) %}
+							{% if rates %}
+								{% for account, rate in rates.items() %}
+									{% if rate and rate > tax.rate %}
+										{% set tax.rate = rate %}
+									{% endif %}
+								{% endfor %}
+							{% endif %}
+						{% endif %}
+					{% endif %}
+					{% if not tax.rate and doc.taxes %}
+						{% for t in doc.taxes %}
+							{% if t.rate and t.rate > tax.rate %}
+								{% set tax.rate = t.rate %}
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+
+					{% set base_amount = item.net_amount if item.net_amount is not none else (item.amount or 0) %}
+					{% set vat_amount = ((base_amount or 0) * (tax.rate or 0) / 100) %}
+					{% set line_total = (base_amount or 0) + (vat_amount or 0) %}
+
+					<tr>
+						<td class="vertical-note-left"></td>
+						<td class="center">{{ loop.index }}</td>
+						<td>
+							<div class="item-description-en">{{ item.item_name or item.item_code or "" }}</div>
+							{% if item.get("custom_item_name_ar") or item.get("custom_description_ar") %}
+								<div class="item-description-ar">{{ item.get("custom_item_name_ar") or item.get("custom_description_ar") }}</div>
+							{% endif %}
+						</td>
+						<td class="center">{{ item.uom or "" }}</td>
+						<td class="right">{{ "{:,.2f}".format(item.qty or 0) }}</td>
+						<td class="right">{{ "{:,.2f}".format(item.rate or 0) }}</td>
+						<td class="right">{{ "{:,.2f}".format(base_amount or 0) }}</td>
+						<td class="center">{{ "{:g}".format(tax.rate or 0) }}</td>
+						<td class="right">{{ "{:,.2f}".format(vat_amount or 0) }}</td>
+						<td class="right">{{ "{:,.2f}".format(line_total or 0) }}</td>
+					</tr>
+				{% endfor %}
+
+				<tr class="items-fill-row">
+					<td class="vertical-note-left"></td>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		{% if brands_image %}
+			<img src="{{ brands_image }}" class="brands">
+		{% endif %}
+	</div>
+
+	<table class="words-totals">
+		<colgroup>
+			<col style="width:64%">
+			<col style="width:6%">
+			<col style="width:9%">
+			<col style="width:9%">
+			<col style="width:12%">
+		</colgroup>
+		<tr>
+			<td>
+				<div class="words-box">
+					<div class="words-title">Amt. In Words <span class="ar" style="float:right;">المبلغ في الكلمات</span></div>
+					<div class="words-value">{{ doc.in_words or "" }}</div>
+				</div>
+			</td>
+			<td>
+				<div class="total-mini">
+					<table><tr><td class="blue">الإجمالي<br>Total</td></tr></table>
+				</div>
+			</td>
+			<td>
+				<div class="total-mini"><table><tr><td>{{ "{:,.2f}".format(doc.net_total or 0) }}</td></tr></table></div>
+			</td>
+			<td>
+				<div class="total-mini"><table><tr><td>{{ "{:,.2f}".format(doc.total_taxes_and_charges or 0) }}</td></tr></table></div>
+			</td>
+			<td>
+				<div class="total-mini"><table><tr><td>{{ "{:,.2f}".format(doc.grand_total or 0) }}</td></tr></table></div>
+			</td>
+		</tr>
+	</table>
+
+	<table class="payment-total-row">
+		<colgroup>
+			<col style="width:70%">
+			<col style="width:30%">
+		</colgroup>
+		<tr>
+			<td>
+				<div class="payment-box">
+					<div class="bold">Mode Of Payment: {{ payment_mode }}</div>
+					<div class="bank-line">
+						{% if bank_name %}{{ bank_name }}{% endif %}
+						{% if bank_account_no %}&nbsp;&nbsp; AC No : {{ bank_account_no }}{% endif %}
+						{% if iban %}&nbsp;&nbsp; IBAN No : {{ iban }}{% endif %}
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="summary-wrap">
+					<table class="summary-table">
+						<colgroup><col style="width:58%"><col style="width:42%"></colgroup>
+						<tr>
+							<td class="sum-label"><span class="ar">الخصم</span><br>Discount</td>
+							<td class="sum-value">{{ "{:,.2f}".format(doc.discount_amount or 0) }}</td>
+						</tr>
+						<tr>
+							<td class="sum-label"><span class="ar">الصافي</span><br>Net Total</td>
+							<td class="sum-value">{{ "{:,.2f}".format(doc.grand_total or 0) }}</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<table class="signatures">
+		<colgroup>
+			<col style="width:40%">
+			<col style="width:20%">
+			<col style="width:40%">
+		</colgroup>
+		<tr>
+			<td>
+				<div class="signature-name">{{ salesman }}</div>
+				Salesman <span class="signature-line"></span> <span class="ar">اسم المندوب</span>
+			</td>
+			<td class="center">
+				Seal &nbsp;&nbsp;<span class="ar">الختم</span>
+			</td>
+			<td class="right">
+				Received By <span class="signature-line"></span> <span class="ar">استلمت من قبل</span>
+			</td>
+		</tr>
+	</table>
+
+	<table class="footer-bar">
+		<tr>
+			<td style="width:42%;">
+				{{ footer_en }}
+				{% if company_tel %} - Tel: {{ company_tel }}{% endif %}
+				{% if company_phone %} - Mobile: {{ company_phone }}{% endif %}
+			</td>
+			<td class="center" style="width:22%;">{{ company_email }}</td>
+			<td class="ar" style="width:36%;">
+				{{ footer_ar }}
+				{% if company_tel %} - هاتف: {{ company_tel }}{% endif %}
+			</td>
+		</tr>
+	</table>
+
+	<div class="policy">
+		<span>View Our Return and Exchanges Policy on the Back Side.</span>
+		<span class="ar" style="float:right;">انظر للخلف لسياسة الإرجاع والاستبدال</span>
+	</div>
+</div>

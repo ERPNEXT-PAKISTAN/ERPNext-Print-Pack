@@ -1,0 +1,23 @@
+{
+  "name": "Premium Payment Entry",
+  "slug": "payment_entry_premium",
+  "doc_type": "Payment Entry",
+  "theme": "premium",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "4525c2b7dcc986bf6cdd73671f6e5c1999a8682b7b980e622a2061fc66899938"
+}

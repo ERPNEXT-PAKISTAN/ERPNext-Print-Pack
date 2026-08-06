@@ -1,0 +1,23 @@
+{
+  "name": "Compact Payment Entry",
+  "slug": "payment_entry_compact",
+  "doc_type": "Payment Entry",
+  "theme": "compact",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "31f0b31e1c44523bf1fc338059b9896ced56c647aa1585df2e14bffbf2be38f0"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Serial Label",
+  "slug": "serial_label_minimal",
+  "doc_type": "Serial No",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "0cdfd9e1b8f913b80d3b2791b64ed67a6af2df4822feef10379572c3494ff681"
+}

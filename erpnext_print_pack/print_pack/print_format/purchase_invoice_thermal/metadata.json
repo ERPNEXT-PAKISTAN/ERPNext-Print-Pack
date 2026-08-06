@@ -1,0 +1,27 @@
+{
+  "name": "Thermal Purchase Invoice",
+  "slug": "purchase_invoice_thermal",
+  "doc_type": "Purchase Invoice",
+  "theme": "thermal",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "98d7f540d273c55a85da6458e43a34d5e49008110e279d3f3d71f59f1a4d8753"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Subcontracting Order",
+  "slug": "subcontracting_order_minimal",
+  "doc_type": "Subcontracting Order",
+  "theme": "minimal",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "55c9a92c7937f7b4ac04e52580b86939eaccf1509a0c63c0cac3009fbe9de85b"
+}

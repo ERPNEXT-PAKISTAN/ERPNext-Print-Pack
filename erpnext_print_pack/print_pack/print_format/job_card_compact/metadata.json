@@ -1,0 +1,23 @@
+{
+  "name": "Compact Job Card",
+  "slug": "job_card_compact",
+  "doc_type": "Job Card",
+  "theme": "compact",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "d50295fda0ad11bc9c4b2b6ef506171457866ee734733a5a5d5c90f9e6352bb9"
+}

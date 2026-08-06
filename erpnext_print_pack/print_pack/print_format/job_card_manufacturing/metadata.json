@@ -1,0 +1,23 @@
+{
+  "name": "Manufacturing Job Card",
+  "slug": "job_card_manufacturing",
+  "doc_type": "Job Card",
+  "theme": "manufacturing",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "2a3740ec0ea3e0372d0974550369a760d89c4341ed51a90d7b23d864cbc13666"
+}

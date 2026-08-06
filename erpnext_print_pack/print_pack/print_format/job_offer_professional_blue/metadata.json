@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Job Offer",
+  "slug": "job_offer_professional_blue",
+  "doc_type": "Job Offer",
+  "theme": "professional_blue",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "43b49b6996f316de8f8ce879c67ace19b8e53b4583a0c3ebfc5314e5d956a435"
+}

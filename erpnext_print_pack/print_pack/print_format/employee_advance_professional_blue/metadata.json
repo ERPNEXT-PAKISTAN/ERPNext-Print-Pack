@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Employee Advance",
+  "slug": "employee_advance_professional_blue",
+  "doc_type": "Employee Advance",
+  "theme": "professional_blue",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "e75bfb32eed5dd89e23c62aa9686b91be5782dfcceed98448f14749e15faaa36"
+}

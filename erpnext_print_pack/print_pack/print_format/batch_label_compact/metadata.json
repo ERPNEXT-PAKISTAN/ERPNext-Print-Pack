@@ -1,0 +1,23 @@
+{
+  "name": "Compact Batch Label",
+  "slug": "batch_label_compact",
+  "doc_type": "Batch",
+  "theme": "compact",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "c3fee88cbd4b3f74872a46cdb94eb7879df547071ed2162b10696cae6f4036e1"
+}

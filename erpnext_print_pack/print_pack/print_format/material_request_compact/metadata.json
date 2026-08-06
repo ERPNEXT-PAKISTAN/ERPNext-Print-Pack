@@ -1,0 +1,23 @@
+{
+  "name": "Compact Material Request",
+  "slug": "material_request_compact",
+  "doc_type": "Material Request",
+  "theme": "compact",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "543ec9bdaffe804daf1f70bd873c6de65810ebe83def956aadc9af604f9a97a0"
+}

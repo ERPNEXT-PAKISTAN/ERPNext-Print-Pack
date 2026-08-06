@@ -1,0 +1,5 @@
+<div class="epp-header epp-box">
+	<div class="epp-primary bold">{{ doc.company or "" }}</div>
+	<div>{{ title }}</div>
+	<div>{{ doc.name or "" }} · {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div>
+</div>

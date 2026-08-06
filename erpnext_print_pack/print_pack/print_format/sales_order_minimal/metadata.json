@@ -1,0 +1,25 @@
+{
+  "name": "Minimal Sales Order",
+  "slug": "sales_order_minimal",
+  "doc_type": "Sales Order",
+  "theme": "minimal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "a6a1864bf010487787e3f5754911b514e8e5b6925cfb0fa931377c0fd8f5c274"
+}

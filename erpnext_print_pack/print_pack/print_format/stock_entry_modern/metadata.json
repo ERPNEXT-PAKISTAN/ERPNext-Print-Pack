@@ -1,0 +1,23 @@
+{
+  "name": "Modern Stock Entry",
+  "slug": "stock_entry_modern",
+  "doc_type": "Stock Entry",
+  "theme": "modern",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "a136960bb30b384bfadd7450d367a133d5f8c12ef1db6b7668a8027f02b4134e"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Professional Green Sales Invoice",
+  "slug": "sales_invoice_professional_green",
+  "doc_type": "Sales Invoice",
+  "theme": "professional_green",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "854b647d3d90c64d235eed4c3fb131c4302d8d3caa5163cffbd86c7493c1237c"
+}

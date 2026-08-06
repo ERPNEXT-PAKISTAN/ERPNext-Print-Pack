@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Subcontracting Receipt",
+  "slug": "subcontracting_receipt_minimal",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "minimal",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "5f73576f20204fa640efab9a6e5511bb52698e8f34ae5db2ae06c50d45a59a81"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Professional Blue Purchase Invoice",
+  "slug": "purchase_invoice_professional_blue",
+  "doc_type": "Purchase Invoice",
+  "theme": "professional_blue",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "ca5264481b27aa0df059e4b058674d90710af39632b3bee0c3f999804285caa8"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Technical Pick List",
+  "slug": "pick_list_technical",
+  "doc_type": "Pick List",
+  "theme": "technical",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5379abf0f868ca9279e70b9f65c9fa32aea4514cc9e304b8b7ea85d5bcbb6fc6"
+}

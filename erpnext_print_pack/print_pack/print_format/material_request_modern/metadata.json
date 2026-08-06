@@ -1,0 +1,23 @@
+{
+  "name": "Modern Material Request",
+  "slug": "material_request_modern",
+  "doc_type": "Material Request",
+  "theme": "modern",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "8b6f5ad7b6f5869de76c33d761cd2b5b416ab6a64a78c43e523a8395caf9cdce"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Material Sales Invoice",
+  "slug": "sales_invoice_material",
+  "doc_type": "Sales Invoice",
+  "theme": "material",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b0dff0e0f2991d76204a782678a51c6067d6cd2a542b09e9d5f43f938492adb3"
+}

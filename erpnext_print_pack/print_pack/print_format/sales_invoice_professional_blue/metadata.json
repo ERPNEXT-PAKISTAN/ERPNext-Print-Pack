@@ -1,0 +1,26 @@
+{
+  "name": "Professional Blue Sales Invoice",
+  "slug": "sales_invoice_professional_blue",
+  "doc_type": "Sales Invoice",
+  "theme": "professional_blue",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9df462dd52499d3a998c6f1dfa69d9c15426e19df8b07b4dd912337caddc852c"
+}

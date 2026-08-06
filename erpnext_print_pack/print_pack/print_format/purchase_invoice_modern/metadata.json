@@ -1,0 +1,26 @@
+{
+  "name": "Modern Purchase Invoice",
+  "slug": "purchase_invoice_modern",
+  "doc_type": "Purchase Invoice",
+  "theme": "modern",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "e16fcc6e15e4bedfba0e43627688778d0e670b1d2819483ed722ab037c01ad66"
+}

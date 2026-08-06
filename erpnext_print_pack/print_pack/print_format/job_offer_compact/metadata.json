@@ -1,0 +1,23 @@
+{
+  "name": "Compact Job Offer",
+  "slug": "job_offer_compact",
+  "doc_type": "Job Offer",
+  "theme": "compact",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "ad6568f1d8b1eb6b5d3a27be1131a7ebc305a0fcbcc40c26f8b751aa3e7ded1b"
+}

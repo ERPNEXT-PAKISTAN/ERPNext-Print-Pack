@@ -1,0 +1,23 @@
+{
+  "name": "Manufacturing Bill of Materials",
+  "slug": "bom_manufacturing",
+  "doc_type": "BOM",
+  "theme": "manufacturing",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "2527bea64fa1eebf9e7f9c87fe778bdd3760f13ace425067252f694737a6cb28"
+}

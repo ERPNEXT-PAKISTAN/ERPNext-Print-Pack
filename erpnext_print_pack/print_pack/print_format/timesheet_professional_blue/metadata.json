@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Timesheet",
+  "slug": "timesheet_professional_blue",
+  "doc_type": "Timesheet",
+  "theme": "professional_blue",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "b61b65d20ff5c9c6ee6a7886621949a8704193eeebcfe3490657344393cf0967"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Modern Supplier Quotation",
+  "slug": "supplier_quotation_modern",
+  "doc_type": "Supplier Quotation",
+  "theme": "modern",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b80411e162c1275d83d132d7dd56c6f89ebbd4a3c8ec9c61841868a2321cfd13"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern Project",
+  "slug": "project_modern",
+  "doc_type": "Project",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "6d3e942f7fbf8a590176127897425c7793e56530638c6bc75a75b2910afe4440"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Clean Sales Invoice",
+  "slug": "sales_invoice_clean",
+  "doc_type": "Sales Invoice",
+  "theme": "clean",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "daac0de83ef63f96b8231a84b45188cb401607a9605f0f5880667de20a573d5b"
+}

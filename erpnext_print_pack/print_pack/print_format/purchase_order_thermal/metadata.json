@@ -1,0 +1,26 @@
+{
+  "name": "Thermal Purchase Order",
+  "slug": "purchase_order_thermal",
+  "doc_type": "Purchase Order",
+  "theme": "thermal",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "7d654c473ef4eb9fe0d5734a1ef043228b1c08c9e7e41cdf9b743b5e0b731fb9"
+}

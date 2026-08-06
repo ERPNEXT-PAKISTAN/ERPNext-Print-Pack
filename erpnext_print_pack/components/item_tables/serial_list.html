@@ -1,0 +1,1 @@
+{% if doc.items %}{% for row in doc.items %}{% if row.serial_no %}<div>{{ row.item_code or "" }}: {{ row.serial_no }}</div>{% endif %}{% endfor %}{% endif %}

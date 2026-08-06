@@ -1,0 +1,26 @@
+{
+  "name": "Compact Purchase Invoice",
+  "slug": "purchase_invoice_compact",
+  "doc_type": "Purchase Invoice",
+  "theme": "compact",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "ee8707d4b53210a2e4afe30d886cb0f6b5ca25de7527dd2344c49927c7d216ff"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Clean Purchase Order",
+  "slug": "purchase_order_clean",
+  "doc_type": "Purchase Order",
+  "theme": "clean",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "829c766a57e97b0b4cb6e5494cbada6f91ca7300e71e52101f5d25224a1da5a7"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Premium Supplier Quotation",
+  "slug": "supplier_quotation_premium",
+  "doc_type": "Supplier Quotation",
+  "theme": "premium",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5863e7b8da5b51edd98371bc4a3621b99f26a02a52f2523eb37eec545d4bfdfb"
+}

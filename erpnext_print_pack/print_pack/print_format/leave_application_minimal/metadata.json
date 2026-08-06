@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Leave Application",
+  "slug": "leave_application_minimal",
+  "doc_type": "Leave Application",
+  "theme": "minimal",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "824fda50a1f07ff3a44d61743147c7e95dcef227bc63f4cad2969206b563ebc7"
+}

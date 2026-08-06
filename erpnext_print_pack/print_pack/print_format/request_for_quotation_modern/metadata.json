@@ -1,0 +1,23 @@
+{
+  "name": "Modern Request for Quotation",
+  "slug": "request_for_quotation_modern",
+  "doc_type": "Request for Quotation",
+  "theme": "modern",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "693a12452a64d98a1c798840cb2508bc3bb3afafc0b586c18ef1988c86782a93"
+}

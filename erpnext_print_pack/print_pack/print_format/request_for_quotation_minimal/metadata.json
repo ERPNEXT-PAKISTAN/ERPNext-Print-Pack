@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Request for Quotation",
+  "slug": "request_for_quotation_minimal",
+  "doc_type": "Request for Quotation",
+  "theme": "minimal",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "eb71197a4199dbeacd1cc4b9819c2e88c18043e6308d343fe2d50d2d05bcf408"
+}

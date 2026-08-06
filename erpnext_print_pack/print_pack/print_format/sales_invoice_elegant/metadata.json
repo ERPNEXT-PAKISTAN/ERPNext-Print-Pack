@@ -1,0 +1,26 @@
+{
+  "name": "Elegant Sales Invoice",
+  "slug": "sales_invoice_elegant",
+  "doc_type": "Sales Invoice",
+  "theme": "elegant",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b6b8eb3a095ed5079251afe2bc8ba8710fbb15addc9fe18b2d38aea2c4246fd7"
+}

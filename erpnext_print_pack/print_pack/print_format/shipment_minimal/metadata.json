@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Shipment",
+  "slug": "shipment_minimal",
+  "doc_type": "Shipment",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "198135c2d2cd2185bd5199e3cbfe9aabf56a6e07282ff6a61abbd7f4f01588de"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Clean Supplier Quotation",
+  "slug": "supplier_quotation_clean",
+  "doc_type": "Supplier Quotation",
+  "theme": "clean",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "7925d6837ad05159344ff5bb182db84f2b8668ec7ae8bbd62a84fb623d7df872"
+}

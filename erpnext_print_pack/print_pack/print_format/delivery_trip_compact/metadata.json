@@ -1,0 +1,23 @@
+{
+  "name": "Compact Delivery Trip",
+  "slug": "delivery_trip_compact",
+  "doc_type": "Delivery Trip",
+  "theme": "compact",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "25ae380298b0e901f3541154ccdc9ea77ea1a3493430f56845932a6b8ee60023"
+}

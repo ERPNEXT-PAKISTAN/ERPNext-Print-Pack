@@ -1,0 +1,25 @@
+{
+  "name": "Professional Blue Sales Order",
+  "slug": "sales_order_professional_blue",
+  "doc_type": "Sales Order",
+  "theme": "professional_blue",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "d66a0bd6a8be3ffdfb4e661b1a1fefd61969d7d82191a5e7cdee6a2e5fb795fa"
+}

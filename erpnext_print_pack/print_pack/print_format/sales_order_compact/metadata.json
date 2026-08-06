@@ -1,0 +1,25 @@
+{
+  "name": "Compact Sales Order",
+  "slug": "sales_order_compact",
+  "doc_type": "Sales Order",
+  "theme": "compact",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "06201487f5930d7fca3fcd97c17d1c3677cf3e3028bea0708459bc2091f43800"
+}

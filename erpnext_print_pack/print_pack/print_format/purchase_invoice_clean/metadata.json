@@ -1,0 +1,26 @@
+{
+  "name": "Clean Purchase Invoice",
+  "slug": "purchase_invoice_clean",
+  "doc_type": "Purchase Invoice",
+  "theme": "clean",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "dc75ea1cd005de871c0fa5a43136395cb0ef3d0877d587885132ac3a7f4a71fa"
+}

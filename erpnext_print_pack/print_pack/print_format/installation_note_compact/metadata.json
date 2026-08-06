@@ -1,0 +1,23 @@
+{
+  "name": "Compact Installation Note",
+  "slug": "installation_note_compact",
+  "doc_type": "Installation Note",
+  "theme": "compact",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "c7a210452cd91bc743b2c166f85d21e916bf5a6e88c43213aac28da705d7cb26"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Monochrome Sales Order",
+  "slug": "sales_order_monochrome",
+  "doc_type": "Sales Order",
+  "theme": "monochrome",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5c9f6825540efc201cf53adaa2b5bba3c6ec25377c4887b6ead25bbd9f8e67cf"
+}

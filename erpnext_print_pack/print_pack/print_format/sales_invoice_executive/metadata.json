@@ -1,0 +1,26 @@
+{
+  "name": "Executive Sales Invoice",
+  "slug": "sales_invoice_executive",
+  "doc_type": "Sales Invoice",
+  "theme": "executive",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "d85583791b7e669ca04a833a51d13e96fc2bf4d662bb73540f13b9442d64ffdf"
+}

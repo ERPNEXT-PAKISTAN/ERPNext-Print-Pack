@@ -1,0 +1,23 @@
+{
+  "name": "Clean Delivery Note",
+  "slug": "delivery_note_clean",
+  "doc_type": "Delivery Note",
+  "theme": "clean",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "697f27d326a515c60668a7abb91891a93c70e138db9bc6af3d444479310165c8"
+}

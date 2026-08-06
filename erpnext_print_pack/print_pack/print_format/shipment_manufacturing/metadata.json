@@ -1,0 +1,23 @@
+{
+  "name": "Manufacturing Shipment",
+  "slug": "shipment_manufacturing",
+  "doc_type": "Shipment",
+  "theme": "manufacturing",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "efa9c2f2a1ef1b464c779676552f323506e65d3b84940ce5be6f94de7513859d"
+}

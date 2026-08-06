@@ -1,0 +1,23 @@
+{
+  "name": "Technical Bill of Materials",
+  "slug": "bom_technical",
+  "doc_type": "BOM",
+  "theme": "technical",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "108e66d41f76bb825d056c6d10607125e8039e4fa76d7d799cd637d1d5bed023"
+}

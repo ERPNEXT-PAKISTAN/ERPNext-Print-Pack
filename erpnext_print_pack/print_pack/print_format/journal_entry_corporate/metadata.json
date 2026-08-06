@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Journal Entry",
+  "slug": "journal_entry_corporate",
+  "doc_type": "Journal Entry",
+  "theme": "corporate",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "8f72e544646aeab498a8c7ffc3e4084f0dc15384e6a612b3c61544c32c596eeb"
+}

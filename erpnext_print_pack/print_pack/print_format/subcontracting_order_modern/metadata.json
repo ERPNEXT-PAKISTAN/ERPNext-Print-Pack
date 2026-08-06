@@ -1,0 +1,23 @@
+{
+  "name": "Modern Subcontracting Order",
+  "slug": "subcontracting_order_modern",
+  "doc_type": "Subcontracting Order",
+  "theme": "modern",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "5f385dc47f413e56ec5542dc5b88a9afcf30d652d790359daf60869e68a22b8c"
+}

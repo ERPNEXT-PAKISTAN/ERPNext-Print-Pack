@@ -1,0 +1,1 @@
+{% if doc.attachments %}<div class="epp-box"><div class="bold">Attachments</div>{% for att in doc.attachments %}<div>{{ att.file_name or att.file_url or "" }}</div>{% endfor %}</div>{% endif %}

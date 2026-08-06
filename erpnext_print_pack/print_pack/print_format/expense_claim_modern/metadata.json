@@ -1,0 +1,23 @@
+{
+  "name": "Modern Expense Claim",
+  "slug": "expense_claim_modern",
+  "doc_type": "Expense Claim",
+  "theme": "modern",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "19264e6272e63c33f3e3bdb241d66973b408b5290214ee5d93595ada5f524c1d"
+}

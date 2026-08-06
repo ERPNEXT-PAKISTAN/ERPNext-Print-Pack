@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Purchase Receipt",
+  "slug": "purchase_receipt_professional_blue",
+  "doc_type": "Purchase Receipt",
+  "theme": "professional_blue",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "d9ad0b3f766a5e0c049c634fa321160808cf3e1d1389d66fa4338cec22d2d753"
+}

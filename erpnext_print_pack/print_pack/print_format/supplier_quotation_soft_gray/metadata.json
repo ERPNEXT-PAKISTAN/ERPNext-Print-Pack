@@ -1,0 +1,25 @@
+{
+  "name": "Soft Gray Supplier Quotation",
+  "slug": "supplier_quotation_soft_gray",
+  "doc_type": "Supplier Quotation",
+  "theme": "soft_gray",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "129ec16a27d17bb06cb7b86272ac3d01c866357f5afd307df7169b6c3dce49ba"
+}

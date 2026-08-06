@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Employee Advance",
+  "slug": "employee_advance_minimal",
+  "doc_type": "Employee Advance",
+  "theme": "minimal",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "78e962652eff501ddea933da979b42955e71388f8ddd10e34f3958ee80e74d15"
+}

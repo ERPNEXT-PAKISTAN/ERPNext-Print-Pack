@@ -1,0 +1,26 @@
+{
+  "name": "Thermal POS Invoice",
+  "slug": "pos_invoice_thermal",
+  "doc_type": "POS Invoice",
+  "theme": "thermal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "a7c8c3f201369e3272d56428a735d95e14a6210a83ceeffe63603b0ee74e2aa0"
+}

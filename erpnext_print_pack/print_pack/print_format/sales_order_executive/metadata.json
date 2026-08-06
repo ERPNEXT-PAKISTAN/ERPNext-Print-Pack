@@ -1,0 +1,25 @@
+{
+  "name": "Executive Sales Order",
+  "slug": "sales_order_executive",
+  "doc_type": "Sales Order",
+  "theme": "executive",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "209f41813c397f08f9adabc11d0d566db405f950312c0225f152762eb20eed5c"
+}

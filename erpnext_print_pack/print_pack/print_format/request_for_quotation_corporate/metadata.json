@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Request for Quotation",
+  "slug": "request_for_quotation_corporate",
+  "doc_type": "Request for Quotation",
+  "theme": "corporate",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "ddb5ce91c6c18847a4959291613599320b75c7faa9dc093f9dd571d8a20ffd60"
+}

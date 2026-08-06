@@ -1,0 +1,23 @@
+{
+  "name": "Compact Payment Request",
+  "slug": "payment_request_compact",
+  "doc_type": "Payment Request",
+  "theme": "compact",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "23d4958d721588464611683bc1820c694120e736622cba207a91dbed73faceab"
+}

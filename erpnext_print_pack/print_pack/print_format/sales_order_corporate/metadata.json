@@ -1,0 +1,25 @@
+{
+  "name": "Corporate Sales Order",
+  "slug": "sales_order_corporate",
+  "doc_type": "Sales Order",
+  "theme": "corporate",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9191953aecb128cfa0438fa0299f8cf7738831adb75dd73ac12f39ff9718a088"
+}

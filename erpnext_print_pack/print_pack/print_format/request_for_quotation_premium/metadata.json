@@ -1,0 +1,23 @@
+{
+  "name": "Premium Request for Quotation",
+  "slug": "request_for_quotation_premium",
+  "doc_type": "Request for Quotation",
+  "theme": "premium",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "7e6b45b05d5c6c0e6753d815aee43779c8cc368eefb1e5c493afc9894dc68bdf"
+}

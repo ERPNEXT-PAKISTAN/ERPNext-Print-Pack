@@ -1,0 +1,25 @@
+{
+  "name": "Minimal Supplier Quotation",
+  "slug": "supplier_quotation_minimal",
+  "doc_type": "Supplier Quotation",
+  "theme": "minimal",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "8b41b9fac59053683dbc43c82feb619506cc322e6fcbae02d4138c04f60fb649"
+}

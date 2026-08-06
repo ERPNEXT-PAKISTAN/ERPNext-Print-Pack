@@ -1,0 +1,23 @@
+{
+  "name": "Modern Delivery Trip",
+  "slug": "delivery_trip_modern",
+  "doc_type": "Delivery Trip",
+  "theme": "modern",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "17e1d03f173c24171cdd32e074b96e60d050820f3f54942aceaed7afd02fc8fc"
+}

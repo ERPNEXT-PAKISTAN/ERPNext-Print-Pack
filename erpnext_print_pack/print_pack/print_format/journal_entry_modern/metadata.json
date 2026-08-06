@@ -1,0 +1,23 @@
+{
+  "name": "Modern Journal Entry",
+  "slug": "journal_entry_modern",
+  "doc_type": "Journal Entry",
+  "theme": "modern",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "f7b93b8043f35a7ed592d90f2f06c91758d1bc07350cdfef39ce602a05af5d4c"
+}

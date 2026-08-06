@@ -1,0 +1,23 @@
+{
+  "name": "Soft Gray Delivery Note",
+  "slug": "delivery_note_soft_gray",
+  "doc_type": "Delivery Note",
+  "theme": "soft_gray",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "571181399ec6a5ba3fdc2fb74c31432965964356f42cf936dfa9afea9e82af35"
+}

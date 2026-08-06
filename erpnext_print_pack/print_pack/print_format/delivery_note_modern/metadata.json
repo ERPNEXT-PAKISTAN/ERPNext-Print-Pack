@@ -1,0 +1,23 @@
+{
+  "name": "Modern Delivery Note",
+  "slug": "delivery_note_modern",
+  "doc_type": "Delivery Note",
+  "theme": "modern",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "7d8e84440395b6784c4c1a2ed0da697bcf82f8522d56a81ac8b6f1607f9662fd"
+}

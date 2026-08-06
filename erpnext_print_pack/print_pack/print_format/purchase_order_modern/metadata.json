@@ -1,0 +1,25 @@
+{
+  "name": "Modern Purchase Order",
+  "slug": "purchase_order_modern",
+  "doc_type": "Purchase Order",
+  "theme": "modern",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "b4133f62660ffa3b844bd58cf7630fdd3a589922f1c81e7d4163cab451cc6a2f"
+}

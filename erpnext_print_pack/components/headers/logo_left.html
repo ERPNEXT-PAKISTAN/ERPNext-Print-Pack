@@ -1,0 +1,4 @@
+<table class="epp-table" style="border:0;margin-bottom:6px"><tr>
+	<td style="border:0;width:25%"><img src="{{ frappe.db.get_value('Company', doc.company, 'company_logo') or '' }}" style="max-height:48px"></td>
+	<td style="border:0"><div class="epp-primary bold">{{ doc.company or "" }}</div><div>{{ title }}</div></td>
+</tr></table>

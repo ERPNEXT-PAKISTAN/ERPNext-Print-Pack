@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Bill of Materials",
+  "slug": "bom_minimal",
+  "doc_type": "BOM",
+  "theme": "minimal",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "356f253c9c4a9f290c8fccb7b8e4025b6fe643af68bf551784108fcb9851327f"
+}

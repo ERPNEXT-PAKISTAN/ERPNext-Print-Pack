@@ -1,0 +1,26 @@
+{
+  "name": "Compact Sales Invoice",
+  "slug": "sales_invoice_compact",
+  "doc_type": "Sales Invoice",
+  "theme": "compact",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "e45c9a1793b987b135563b8eca1af541b4c8de9d7cc23ba3ba24d7bd4ed3421c"
+}

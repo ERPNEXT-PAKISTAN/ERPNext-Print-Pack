@@ -1,0 +1,25 @@
+{
+  "name": "Thermal Delivery Note",
+  "slug": "delivery_note_thermal",
+  "doc_type": "Delivery Note",
+  "theme": "thermal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5e18d3fe76a3518eff31d55b11460a5abf925fda2d9b5e5f2fd74baf88002a2a"
+}

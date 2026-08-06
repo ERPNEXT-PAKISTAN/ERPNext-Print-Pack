@@ -1,0 +1,26 @@
+{
+  "name": "Corporate Sales Invoice",
+  "slug": "sales_invoice_corporate",
+  "doc_type": "Sales Invoice",
+  "theme": "corporate",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "aa90a88865ff5f44be46cd0a8ea8196bfeb9bf5a6c5d18b678baa161ffd137b4"
+}

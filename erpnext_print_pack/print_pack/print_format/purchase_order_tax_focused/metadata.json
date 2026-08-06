@@ -1,0 +1,25 @@
+{
+  "name": "Tax Focused Purchase Order",
+  "slug": "purchase_order_tax_focused",
+  "doc_type": "Purchase Order",
+  "theme": "tax_focused",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "ed7d1248f99f026872abd42daee488e45044ead2130d54074abeb74edcef196e"
+}

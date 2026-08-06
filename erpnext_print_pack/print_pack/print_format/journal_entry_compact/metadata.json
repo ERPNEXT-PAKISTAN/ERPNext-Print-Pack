@@ -1,0 +1,23 @@
+{
+  "name": "Compact Journal Entry",
+  "slug": "journal_entry_compact",
+  "doc_type": "Journal Entry",
+  "theme": "compact",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "da84940b7aa12be48d5e17f3b90c59b1f78a8afb735d606f29f362a6505421b9"
+}

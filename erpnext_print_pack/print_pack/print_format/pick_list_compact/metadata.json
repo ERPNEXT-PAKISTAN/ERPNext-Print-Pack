@@ -1,0 +1,23 @@
+{
+  "name": "Compact Pick List",
+  "slug": "pick_list_compact",
+  "doc_type": "Pick List",
+  "theme": "compact",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "cf88a3bf7384a1c71e15777c9e40d5ef7c146228e1979079c5504ea8e2c8be29"
+}

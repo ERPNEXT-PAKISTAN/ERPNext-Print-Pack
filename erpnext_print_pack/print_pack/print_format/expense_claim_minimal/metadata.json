@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Expense Claim",
+  "slug": "expense_claim_minimal",
+  "doc_type": "Expense Claim",
+  "theme": "minimal",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "8fe2643004a85c6de6f8e1494ea77608368d3e49908269831bd9ae9b107ef07e"
+}

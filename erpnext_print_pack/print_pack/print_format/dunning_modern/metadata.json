@@ -1,0 +1,23 @@
+{
+  "name": "Modern Dunning",
+  "slug": "dunning_modern",
+  "doc_type": "Dunning",
+  "theme": "modern",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "7ce4019bc5f3d045addead55aa41b8382df6e9732d40bdcfb4b362c5a9189ae9"
+}

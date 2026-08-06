@@ -1,0 +1,1 @@
+{% if doc.items %}<table class="epp-table" style="font-size:8px"><thead><tr><th>Item</th><th>Qty</th><th>Amt</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ row.item_code or row.item_name or "" }}</td><td class="right">{{ row.qty or "" }}</td><td class="right">{{ row.amount or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}

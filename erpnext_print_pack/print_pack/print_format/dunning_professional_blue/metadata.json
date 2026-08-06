@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Dunning",
+  "slug": "dunning_professional_blue",
+  "doc_type": "Dunning",
+  "theme": "professional_blue",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "4d46a0eadd395266f4dc7dff7322090a5bc1a3ab700f1bac61a3ab4e360a0867"
+}

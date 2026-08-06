@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Item Label",
+  "slug": "item_label_minimal",
+  "doc_type": "Item",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "6893b3c6bcba03e005246d7f88375f52ef722bef713c1137db09f685d5c2c63b"
+}

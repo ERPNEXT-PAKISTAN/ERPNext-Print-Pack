@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Project",
+  "slug": "project_minimal",
+  "doc_type": "Project",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "aa8cec48e52f6c30d9987eee5ab9a19d26a56248a8a51ae69cb69661c1d130b5"
+}

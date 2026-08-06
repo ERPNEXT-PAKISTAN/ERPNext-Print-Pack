@@ -1,0 +1,25 @@
+{
+  "name": "Thermal Item Label",
+  "slug": "item_label_thermal",
+  "doc_type": "Item",
+  "theme": "thermal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "da7577051269ba7af137469f124398ecb85f729eb4e3753c3d45fba0b1c7b0dc"
+}

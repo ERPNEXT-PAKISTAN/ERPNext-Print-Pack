@@ -1,0 +1,23 @@
+{
+  "name": "Modern Timesheet",
+  "slug": "timesheet_modern",
+  "doc_type": "Timesheet",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "74ae2efc1eeee595688dbe7abe651c1a9fa0b8254f0f08152db95638b341ca53"
+}

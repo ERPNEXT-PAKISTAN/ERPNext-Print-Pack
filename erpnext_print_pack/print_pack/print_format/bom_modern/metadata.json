@@ -1,0 +1,23 @@
+{
+  "name": "Modern Bill of Materials",
+  "slug": "bom_modern",
+  "doc_type": "BOM",
+  "theme": "modern",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "259858e08b3996abedf9696438585e3987ca9db8ac042d7ed9e451c5bc7858d2"
+}

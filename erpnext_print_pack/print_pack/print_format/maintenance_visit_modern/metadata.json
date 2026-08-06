@@ -1,0 +1,23 @@
+{
+  "name": "Modern Maintenance Visit",
+  "slug": "maintenance_visit_modern",
+  "doc_type": "Maintenance Visit",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "6fff5199142df0864f139a87c441d02bd3e8335652a2ed84a3c8210711447cc5"
+}

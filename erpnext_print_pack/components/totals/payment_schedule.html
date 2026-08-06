@@ -1,0 +1,1 @@
+{% if doc.payment_schedule %}<table class="epp-table"><tr><th>Due Date</th><th>Amount</th></tr>{% for row in doc.payment_schedule %}<tr><td>{{ frappe.utils.formatdate(row.due_date) if row.due_date else "" }}</td><td class="right">{{ row.payment_amount or "" }}</td></tr>{% endfor %}</table>{% endif %}

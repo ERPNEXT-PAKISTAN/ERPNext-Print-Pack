@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+node_modules/
+dist/
+build/
+*.egg-info/
+.DS_Store
+*.tmp
+sites/
+*.zip
+
+# Never commit site or confidential preview data
+previews/**/*.pdf
+previews/**/*.png
+private/

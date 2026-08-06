@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Installation Note",
+  "slug": "installation_note_minimal",
+  "doc_type": "Installation Note",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "f4366e4a3bd5fa16a541209b957f9f78808e7973dac661819f2193ae037edc3b"
+}

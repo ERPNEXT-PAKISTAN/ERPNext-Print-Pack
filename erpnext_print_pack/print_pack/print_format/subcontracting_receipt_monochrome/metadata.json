@@ -1,0 +1,23 @@
+{
+  "name": "Monochrome Subcontracting Receipt",
+  "slug": "subcontracting_receipt_monochrome",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "monochrome",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "70497ff9311d960516678e34770a3d79dd65f354a00905728295061a2a1351c8"
+}

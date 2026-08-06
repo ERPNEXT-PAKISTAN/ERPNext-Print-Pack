@@ -1,0 +1,23 @@
+{
+  "name": "Modern Salary Slip",
+  "slug": "salary_slip_modern",
+  "doc_type": "Salary Slip",
+  "theme": "modern",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "dcb916cae5c6a63082964b96652481b91952ebbc79d4f5adefa78b0d8f324626"
+}

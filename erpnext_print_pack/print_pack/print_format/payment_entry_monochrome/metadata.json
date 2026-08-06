@@ -1,0 +1,23 @@
+{
+  "name": "Monochrome Payment Entry",
+  "slug": "payment_entry_monochrome",
+  "doc_type": "Payment Entry",
+  "theme": "monochrome",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "35e24acc79832b7057645e87cd00bde2eb3b0db886b77807ee054e061358b8e8"
+}

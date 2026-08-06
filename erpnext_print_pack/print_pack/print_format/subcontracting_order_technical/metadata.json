@@ -1,0 +1,23 @@
+{
+  "name": "Technical Subcontracting Order",
+  "slug": "subcontracting_order_technical",
+  "doc_type": "Subcontracting Order",
+  "theme": "technical",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "3c670281c34d784597a27b68520b0c5a7ed51603e4f60021a6ca45ba6616e5f8"
+}

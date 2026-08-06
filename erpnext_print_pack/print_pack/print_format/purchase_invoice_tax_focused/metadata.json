@@ -1,0 +1,26 @@
+{
+  "name": "Tax Focused Purchase Invoice",
+  "slug": "purchase_invoice_tax_focused",
+  "doc_type": "Purchase Invoice",
+  "theme": "tax_focused",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "82362e719f3ee845da767f4e447764d3705a72ed7f87ff92560fcf5ff9c0c0ab"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Material Request",
+  "slug": "material_request_minimal",
+  "doc_type": "Material Request",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9dacfd840ccc5c4c6ae960b7ab5d36faeac7135cf1ec209541909898bee71f61"
+}

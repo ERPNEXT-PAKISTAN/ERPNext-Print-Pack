@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Payment Entry",
+  "slug": "payment_entry_corporate",
+  "doc_type": "Payment Entry",
+  "theme": "corporate",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "d9db1c37bcb8598b2cbe2960a925c529135f9ac5a9dcf5fcfff2298c94578c7d"
+}

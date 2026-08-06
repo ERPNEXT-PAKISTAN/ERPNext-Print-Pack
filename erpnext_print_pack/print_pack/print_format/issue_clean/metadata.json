@@ -1,0 +1,23 @@
+{
+  "name": "Clean Issue",
+  "slug": "issue_clean",
+  "doc_type": "Issue",
+  "theme": "clean",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "9d002cbff4eb9842559925bdaefbdc9a670b45ba80a08903662b1dcadf878303"
+}

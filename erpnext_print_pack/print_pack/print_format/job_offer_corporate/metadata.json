@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Job Offer",
+  "slug": "job_offer_corporate",
+  "doc_type": "Job Offer",
+  "theme": "corporate",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "86c70059b2d77c47e209e4e0bbce96db114bcd29b281ba2fc24b73c79f59edbb"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Maintenance Visit",
+  "slug": "maintenance_visit_minimal",
+  "doc_type": "Maintenance Visit",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "7b44cf410895e70aa75f44c4debaa01508d83f60b863b705352d90b74237e788"
+}

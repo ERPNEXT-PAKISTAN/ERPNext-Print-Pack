@@ -1,0 +1,25 @@
+{
+  "name": "Modern Quotation",
+  "slug": "quotation_modern",
+  "doc_type": "Quotation",
+  "theme": "modern",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "aace2bd548d78780d1634ec712cf21679a7f01ed4b2dbb8c6ccbe291fa4cede8"
+}

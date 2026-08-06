@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Salary Slip",
+  "slug": "salary_slip_minimal",
+  "doc_type": "Salary Slip",
+  "theme": "minimal",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "98955ed763977af460c81c7b64ac5034db69a53bd0e5effd6c5f52299cadcfa9"
+}

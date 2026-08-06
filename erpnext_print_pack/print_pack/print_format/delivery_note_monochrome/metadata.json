@@ -1,0 +1,23 @@
+{
+  "name": "Monochrome Delivery Note",
+  "slug": "delivery_note_monochrome",
+  "doc_type": "Delivery Note",
+  "theme": "monochrome",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "1e630a54d68e791204d721097f9feb6961e0203e42a5e3a68432bb390451eb85"
+}

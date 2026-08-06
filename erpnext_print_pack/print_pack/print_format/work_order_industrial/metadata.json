@@ -1,0 +1,23 @@
+{
+  "name": "Industrial Work Order",
+  "slug": "work_order_industrial",
+  "doc_type": "Work Order",
+  "theme": "industrial",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "7e99af04d2fc7eb737419673f60122a108a2773ed43a24ddac43a0dcd72b64ae"
+}

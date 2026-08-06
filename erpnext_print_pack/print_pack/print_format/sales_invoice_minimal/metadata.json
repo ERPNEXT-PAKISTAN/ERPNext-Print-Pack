@@ -1,0 +1,26 @@
+{
+  "name": "Minimal Sales Invoice",
+  "slug": "sales_invoice_minimal",
+  "doc_type": "Sales Invoice",
+  "theme": "minimal",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "ec80f2a48cb14792963c458d117372881f66824d67c2c9fb00fd0e07ef38634d"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Clean Employee Advance",
+  "slug": "employee_advance_clean",
+  "doc_type": "Employee Advance",
+  "theme": "clean",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "5c7efd0202add02912369b21b524d40b3650a126f428999ee3f76dc80a7d6d31"
+}

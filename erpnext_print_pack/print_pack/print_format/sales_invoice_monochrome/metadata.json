@@ -1,0 +1,26 @@
+{
+  "name": "Monochrome Sales Invoice",
+  "slug": "sales_invoice_monochrome",
+  "doc_type": "Sales Invoice",
+  "theme": "monochrome",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "7da88306a26c3b8240df6240d78c8b34576be92393de92519a49eae8949bf3bd"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Clean Salary Slip",
+  "slug": "salary_slip_clean",
+  "doc_type": "Salary Slip",
+  "theme": "clean",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "245a853b273473ec17d8c841471a5a39f2b7006f553a936c5717ad81075cff7b"
+}

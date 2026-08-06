@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Leave Application",
+  "slug": "leave_application_professional_blue",
+  "doc_type": "Leave Application",
+  "theme": "professional_blue",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "4c85ceb92fb49bc29d7bf10d2570c7b77b0494c0d244cc563b13d31153243a7e"
+}

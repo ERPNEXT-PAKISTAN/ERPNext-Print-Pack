@@ -1,0 +1,23 @@
+{
+  "name": "Compact Salary Slip",
+  "slug": "salary_slip_compact",
+  "doc_type": "Salary Slip",
+  "theme": "compact",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "170ff591ec8dcbfed1d21b386bc5e1ddffe9d732c70cfceacaef7d5f92fd3a86"
+}

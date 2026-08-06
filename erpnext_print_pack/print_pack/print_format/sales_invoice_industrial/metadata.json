@@ -1,0 +1,26 @@
+{
+  "name": "Industrial Sales Invoice",
+  "slug": "sales_invoice_industrial",
+  "doc_type": "Sales Invoice",
+  "theme": "industrial",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "b2a27e14d0c232981a82c433712943fea8bc1394e1bbb3027eb057940beee96e"
+}

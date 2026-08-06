@@ -1,0 +1,23 @@
+{
+  "name": "Modern Payment Entry",
+  "slug": "payment_entry_modern",
+  "doc_type": "Payment Entry",
+  "theme": "modern",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "5d936db2d2361ae2987709cfda789f56bc1bcf853c7dbea2cb9dcc990ddd6b93"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Clean Job Offer",
+  "slug": "job_offer_clean",
+  "doc_type": "Job Offer",
+  "theme": "clean",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "181503783ce5a3528eb89595d0981bab54f9b6cac33609389751d632c142f5e8"
+}

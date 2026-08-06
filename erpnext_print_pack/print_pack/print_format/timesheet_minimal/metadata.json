@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Timesheet",
+  "slug": "timesheet_minimal",
+  "doc_type": "Timesheet",
+  "theme": "minimal",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "20bf0d39951a739032385478d6808fd3adb8f0f950bc883de294e6f2b6ddf6e3"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern Maintenance Schedule",
+  "slug": "maintenance_schedule_modern",
+  "doc_type": "Maintenance Schedule",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "d9e657e09d95003f6da124f4b9e973df3a870efc031ce5461ed00dde7640a6b8"
+}

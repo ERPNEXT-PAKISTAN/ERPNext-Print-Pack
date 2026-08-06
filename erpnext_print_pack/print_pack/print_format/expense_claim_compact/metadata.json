@@ -1,0 +1,23 @@
+{
+  "name": "Compact Expense Claim",
+  "slug": "expense_claim_compact",
+  "doc_type": "Expense Claim",
+  "theme": "compact",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "6c60a1d6f91c36609d6102473a6a0d9c36e97afa2ce831ee213945a0ee2bf29e"
+}

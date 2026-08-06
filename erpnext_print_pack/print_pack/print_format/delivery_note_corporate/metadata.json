@@ -1,0 +1,23 @@
+{
+  "name": "Corporate Delivery Note",
+  "slug": "delivery_note_corporate",
+  "doc_type": "Delivery Note",
+  "theme": "corporate",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "3e339609a8bc42e7246b421005d170caaf7f67aca10ae2b635a556009dcb9ac2"
+}

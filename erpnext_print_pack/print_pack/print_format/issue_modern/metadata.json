@@ -1,0 +1,23 @@
+{
+  "name": "Modern Issue",
+  "slug": "issue_modern",
+  "doc_type": "Issue",
+  "theme": "modern",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "6f53fa4ceae97a0b6e56767a12e4565d7e5aaa626183b52bbd5ec43c750e05ca"
+}

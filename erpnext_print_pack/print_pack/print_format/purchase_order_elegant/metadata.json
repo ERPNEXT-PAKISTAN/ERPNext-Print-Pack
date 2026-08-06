@@ -1,0 +1,25 @@
+{
+  "name": "Elegant Purchase Order",
+  "slug": "purchase_order_elegant",
+  "doc_type": "Purchase Order",
+  "theme": "elegant",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "78dff836465daad0be87d7d3029a9b7b828e99d076df27308390cc7ccacfa889"
+}

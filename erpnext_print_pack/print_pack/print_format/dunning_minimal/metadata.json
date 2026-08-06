@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Dunning",
+  "slug": "dunning_minimal",
+  "doc_type": "Dunning",
+  "theme": "minimal",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9ed52382cf945509a9fb161cbc435c188ba4364bd6db010b76740c5d8f2d335f"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern Employee Advance",
+  "slug": "employee_advance_modern",
+  "doc_type": "Employee Advance",
+  "theme": "modern",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "0b36d517a9bd80c8c9db1c64287ba96610dccfabf722adc1698c78f2003b9744"
+}

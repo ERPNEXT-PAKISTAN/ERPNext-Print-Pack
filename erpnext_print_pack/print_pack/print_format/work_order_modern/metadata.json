@@ -1,0 +1,23 @@
+{
+  "name": "Modern Work Order",
+  "slug": "work_order_modern",
+  "doc_type": "Work Order",
+  "theme": "modern",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9a82149dcdc0babf428828d3799d0e75fd11c1b8540c8cc33b0fd53f2c4b4266"
+}
