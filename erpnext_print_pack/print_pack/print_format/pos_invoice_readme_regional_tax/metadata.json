@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice POS Invoice",
+  "slug": "pos_invoice_readme_regional_tax",
+  "doc_type": "POS Invoice",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b72b563f3060d1cb72f8de588aab959383251495585f43d522cff5c57170ea5e",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

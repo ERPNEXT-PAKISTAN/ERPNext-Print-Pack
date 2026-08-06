@@ -15,6 +15,8 @@ REGIONAL_NAME_MARKERS = (
 	"UAE VAT",
 	"UAE E-Invoice",
 	"ZATCA E-Invoice",
+	"ZATCA Tax Invoice",
+	"Regional Tax Invoice",
 	"Pakistan FBR",
 	"Pakistan E-Invoice",
 	"FBR Pakistan",

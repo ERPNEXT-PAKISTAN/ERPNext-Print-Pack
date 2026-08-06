@@ -1,0 +1,118 @@
+{# README Regional Tax Invoice · Request for Quotation #}
+{% set title = "Request for Quotation" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Supplier" %}
+{% set ship_label = "Deliver To" %}
+{% set party_name = doc.supplier_name or doc.supplier or "" %}
+{% set party_address = doc.address_display or doc.supplier_address or "" %}
+{% set ship_address = doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 8mm; }
+.rt-root { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9px; color: #1e293b; }
+.rt-head { border-top: 6px solid #0f2744; border-bottom: 2px solid #0f2744; padding: 10px 0 12px; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.rt-brand { display: flex; gap: 10px; align-items: center; }
+.rt-logo { width: 46px; height: 46px; background: #0f2744; color: #fff; font-size: 22px; font-weight: 800; display: flex; align-items: center; justify-content: center; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); }
+.rt-co { font-size: 16px; font-weight: 800; color: #0f2744; letter-spacing: 0.5px; }
+.rt-co-meta { font-size: 8px; color: #64748b; line-height: 1.5; margin-top: 4px; max-width: 340px; }
+.rt-doc-title { font-size: 28px; font-weight: 800; color: #0f2744; text-align: right; line-height: 1; }
+.rt-meta { width: 100%; margin: 8px 0 12px; border-collapse: collapse; }
+.rt-meta td { padding: 3px 8px; font-size: 8px; border: 1px solid #e2e8f0; }
+.rt-meta td:first-child { background: #f8fafc; color: #64748b; width: 120px; }
+.rt-parties { display: flex; gap: 12px; margin-bottom: 10px; }
+.rt-party { flex: 1; border: 1px solid #e2e8f0; }
+.rt-party-h { background: #0f2744; color: #fff; padding: 5px 8px; font-weight: 700; font-size: 9px; }
+.rt-party-b { padding: 8px; line-height: 1.45; min-height: 64px; }
+.rt-party-b strong { font-size: 10px; }
+.rt-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.rt-table th { background: #0f2744; color: #fff; padding: 7px 5px; font-size: 8px; text-align: left; }
+.rt-table td { border-bottom: 1px solid #e2e8f0; padding: 6px 5px; font-size: 8px; }
+.rt-bottom { display: flex; gap: 10px; margin-top: 10px; align-items: flex-start; }
+.rt-words { flex: 1; font-size: 9px; line-height: 1.45; }
+.rt-totals-area { width: 42%; margin-left: auto; }
+.rt-totals { width: 100%; border-collapse: collapse; }
+.rt-totals td { padding: 5px 8px; border: 1px solid #e2e8f0; }
+.rt-totals .rt-grand td { background: #0f2744; color: #fff; font-weight: 800; font-size: 12px; }
+.rt-footer-row { display: flex; gap: 10px; margin-top: 12px; }
+.rt-bank, .rt-terms { flex: 1; border: 1px solid #e2e8f0; padding: 8px; font-size: 8px; line-height: 1.45; }
+.rt-bank strong, .rt-terms strong { color: #0f2744; display: block; margin-bottom: 4px; }
+.rt-sign { flex: 1; text-align: center; font-size: 8px; padding-top: 24px; }
+.rt-bar { background: #0f2744; color: #fff; text-align: center; padding: 8px; margin-top: 12px; font-style: italic; font-size: 10px; }
+.r { text-align: right; }
+</style>
+<div class="rt-root print-format">
+<div class="rt-head">
+  <div>
+    <div class="rt-brand">
+      
+{% set logo = frappe.db.get_value("Company", doc.company, "company_logo") if doc.company else "" %}
+{% if logo %}<img src="{{ logo }}" style="max-height:46px;max-width:120px">{% else %}<div class="rt-logo">{{ (doc.company or "C")[:1] }}</div>{% endif %}
+      <div><div class="rt-co">{{ doc.company or "" }}</div></div>
+    </div>
+    <div class="rt-co-meta">{{ doc.company_address_display or "" }}<br>Tax ID: {{ doc.company_tax_id or "" }}</div>
+  </div>
+  <div><div class="rt-doc-title">TAX INVOICE</div></div>
+</div>
+<table class="rt-meta" style="width:55%;margin-left:auto">
+<tr><td>Invoice No.</td><td><b>{{ doc.name }}</b></td></tr>
+<tr><td>Invoice Date</td><td>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</td></tr>
+
+<tr><td>PO Number</td><td>{{ doc.po_no or "" }}</td></tr>
+<tr><td>Place of Supply</td><td>{{ doc.place_of_supply or "" }}</td></tr>
+<tr><td>Currency</td><td>{{ doc.currency or "" }}</td></tr>
+</table>
+<div class="rt-parties">
+  <div class="rt-party"><div class="rt-party-h">{{ party_label or "BILL TO" }}</div><div class="rt-party-b"><strong>{{ party_name }}</strong><br>{{ party_address }}</div></div>
+  
+</div>
+
+{% if doc.items %}
+<table class="rt-table">
+<thead><tr>
+<th>#</th><th>Description</th><th>HSN/SAC</th><th class="r">Qty</th><th>Unit</th>
+<th class="r">Unit Price</th><th class="r">Amount</th>
+</tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.gst_hsn_code or row.item_code or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td>{{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div class="rt-bottom">
+  
+  
+<div class="rt-totals-area">
+<table class="rt-totals">
+<tr><td>Subtotal</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+{% for tax in doc.taxes or [] %}
+<tr><td>{{ tax.description or tax.account_head or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>
+{% endfor %}
+<tr class="rt-grand"><td>TOTAL AMOUNT</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+</div>
+</div>
+<div class="rt-footer-row">
+  <div class="rt-bank"><strong>BANK DETAILS</strong><br>
+    
+{% set bank = frappe.get_all("Bank Account", filters={"company": doc.company, "is_company_account": 1}, fields=["account_name","bank","bank_account_no","iban"], limit=1) %}
+{% if bank %}Bank: {{ bank[0].bank or "" }}<br>Account: {{ bank[0].account_name or "" }}<br>A/C No: {{ bank[0].bank_account_no or "" }}<br>IBAN: {{ bank[0].iban or "" }}{% else %}—{% endif %}
+  </div>
+  {% if doc.terms %}<div class="rt-terms"><strong>TERMS &amp; CONDITIONS</strong><br>{{ doc.terms }}</div>{% endif %}
+  <div class="rt-sign">For {{ doc.company or "" }}<br><br>_________________________<br>Authorized Signatory</div>
+</div>
+<div class="rt-bar">Thank you for your business!</div>
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
+
+</div>

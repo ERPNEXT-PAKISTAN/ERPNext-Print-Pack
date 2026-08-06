@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Subcontracting Receipt",
+  "slug": "subcontracting_receipt_readme_regional_tax",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3eb0ebe0b5ec344c9048376770ebb51acda87ee45c64538da09f76c66fb2ac35",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

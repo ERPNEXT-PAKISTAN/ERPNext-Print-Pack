@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Sales Invoice",
+  "slug": "sales_invoice_readme_zatca_tax",
+  "doc_type": "Sales Invoice",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9129a32a299f806636ceb0ebca0abfc082d214a3054773a2a8357ad99d5c36fb",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

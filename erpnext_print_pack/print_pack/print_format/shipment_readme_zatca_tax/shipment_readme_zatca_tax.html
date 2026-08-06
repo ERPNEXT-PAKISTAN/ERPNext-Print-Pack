@@ -1,0 +1,122 @@
+{# README ZATCA Tax Invoice · Shipment #}
+{% set title = "Shipment" %}
+{% set date_field = "pickup_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 8mm; }
+.zt-root { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 9px; color: #1a1a1a; }
+.ar { direction: rtl; font-family: Tahoma, Arial, sans-serif; }
+.zt-top { display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 3px solid #006c35; padding-bottom: 10px; margin-bottom: 12px; }
+.zt-logo { display: flex; align-items: center; gap: 8px; }
+.zt-logo-mark { width: 52px; height: 52px; border-radius: 8px; background: linear-gradient(135deg,#006c35,#004d25); color: #fff; font-weight: 800; font-size: 11px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.1; }
+.zt-title { text-align: center; flex: 1; }
+.zt-title h1 { margin: 0; font-size: 22px; color: #1e3a8a; }
+.zt-title .sub { color: #006c35; font-weight: 700; font-size: 11px; margin-top: 4px; }
+.zt-qr { width: 96px; height: 96px; border: 1px solid #d1d5db; border-radius: 6px; display: flex; align-items: center; justify-content: center; background: #fff; }
+.zt-qr img { width: 88px; height: 88px; }
+.zt-grid { display: flex; gap: 10px; margin-bottom: 10px; }
+.zt-box { flex: 1; border: 1px solid #cbd5e1; }
+.zt-box-h { background: #1e3a8a; color: #fff; padding: 5px 8px; font-weight: 700; font-size: 9px; }
+.zt-box-b { padding: 8px; line-height: 1.45; min-height: 72px; }
+.zt-info { width: 34%; border: 1px solid #cbd5e1; margin-bottom: 10px; margin-left: auto; }
+.zt-info td { padding: 4px 8px; border-bottom: 1px solid #e5e7eb; font-size: 8px; }
+.zt-info td:first-child { color: #64748b; width: 42%; }
+.zt-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.zt-table th { background: #1e3a8a; color: #fff; padding: 6px 4px; font-size: 7px; text-align: left; vertical-align: bottom; }
+.zt-table td { border-bottom: 1px solid #e5e7eb; padding: 5px 4px; font-size: 8px; }
+.zt-totals-wrap { display: flex; justify-content: flex-end; margin-top: 8px; }
+.zt-totals { width: 52%; border-collapse: collapse; }
+.zt-totals td { padding: 5px 8px; border: 1px solid #e5e7eb; }
+.zt-totals .zt-grand td { background: #006c35; color: #fff; font-weight: 800; font-size: 11px; }
+.zt-words { margin-top: 10px; font-size: 9px; line-height: 1.5; }
+.zt-meta { margin-top: 12px; border-top: 1px solid #e5e7eb; padding-top: 8px; font-size: 7px; color: #64748b; }
+.zt-meta b { color: #334155; }
+.zt-foot { text-align: center; margin-top: 8px; font-size: 8px; color: #006c35; font-weight: 600; }
+.r { text-align: right; }
+.epp-sig,.sig { display: none; }
+</style>
+<div class="zt-root print-format">
+<div class="zt-top">
+  <div class="zt-logo">
+    <div class="zt-logo-mark">ZATCA<br>KSA</div>
+    <div style="font-size:8px;color:#64748b">Zakat, Tax and<br>Customs Authority</div>
+  </div>
+  <div class="zt-title">
+    <h1><span class="ar">فاتورة ضريبية</span> / Tax Invoice</h1>
+    <div class="sub"><span class="ar">(ضريبية)</span> / (Tax)</div>
+  </div>
+  <div class="zt-qr epp-qr qr">
+    {% set qr = doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "" %}
+    {% if not qr %}{% set _qrp = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.name) %}{% if _qrp %}{% set qr = _qrp.get("qr") or "" %}{% endif %}{% endif %}
+    {% if qr %}<img src="{{ qr }}">{% else %}QR{% endif %}
+  </div>
+</div>
+<div class="zt-grid">
+  <div class="zt-box"><div class="zt-box-h">Seller / البائع</div><div class="zt-box-b"><strong>{{ doc.company or "" }}</strong><br>VAT ID: {{ doc.company_tax_id or "" }}<br>{{ doc.company_address_display or "" }}<br>CR: {{ doc.get("custom_company_cr_number") or "" }}</div></div>
+  <div class="zt-box"><div class="zt-box-h">{{ party_label }} / المشتري</div><div class="zt-box-b"><strong>{{ party_name }}</strong><br>VAT ID: {{ doc.tax_id or doc.customer_tax_id or "" }}<br>{{ party_address }}</div></div>
+</div>
+<table class="zt-info"><tr><td>Invoice Number</td><td><b>{{ doc.name }}</b></td></tr>
+<tr><td>Invoice Date</td><td>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</td></tr>
+<tr><td>Invoice Time</td><td>{{ doc.posting_time or "" }}</td></tr>
+<tr><td>Invoice Type</td><td>{{ doc.is_return and "Credit Note" or title }}</td></tr>
+<tr><td>Currency</td><td>{{ doc.currency or "" }}</td></tr></table>
+
+{% if doc.items %}
+<table class="zt-table">
+<thead><tr>
+<th>#</th><th>البند / Item</th><th class="r">الكمية<br>Qty</th><th class="r">الوحدة<br>Unit</th>
+<th class="r">سعر الوحدة<br>Unit Price</th><th class="r">قبل الضريبة<br>Before Tax</th>
+<th class="r">نسبة<br>Tax %</th><th class="r">الضريبة<br>Tax</th><th class="r">الإجمالي<br>Total</th>
+</tr></thead>
+<tbody>
+{% for row in doc.items %}
+{% set line_net = row.net_amount if row.net_amount is not none else (row.amount or 0) %}
+{% set line_tax = (row.get("tax_amount") or 0) %}
+{% set line_total = (line_net or 0) + (line_tax or 0) %}
+{% set tax_rate = row.item_tax_rate if row.item_tax_rate is not none else (row.tax_rate if row.tax_rate is defined else "") %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_name or row.item_code or row.description or "" }}{% if row.get("custom_item_name_ar") %}<br><span class="ar">{{ row.custom_item_name_ar }}</span>{% endif %}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td class="r">{{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("net_amount", doc) if row.get_formatted is defined else line_net or "" }}</td>
+<td class="r">{{ tax_rate }}{% if tax_rate %}%{% endif %}</td>
+<td class="r">{{ row.get_formatted("tax_amount", doc) if row.get_formatted is defined and row.tax_amount is defined else line_tax or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else line_total or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div style="display:flex;gap:12px;align-items:flex-start">
+  <div style="flex:1"></div>
+  <div style="flex:1">
+<div class="zt-totals-wrap">
+<table class="zt-totals">
+<tr><td>Total Before Tax / الإجمالي قبل الضريبة</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+{% for tax in doc.taxes or [] %}
+<tr><td>{{ tax.description or "VAT" }} / ضريبة</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>
+{% endfor %}
+<tr class="zt-grand"><td>Total Including Tax / الإجمالي شامل الضريبة</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+</div></div>
+</div>
+<div class="zt-meta">
+  <b>UUID:</b> {{ doc.get("uuid") or doc.name }}&nbsp;&nbsp;
+  <b>Software ID:</b> ERPNext Print Pack&nbsp;&nbsp;
+  <b>Sequence:</b> {{ doc.name }}&nbsp;&nbsp;
+  <b>Environment:</b> Production
+</div>
+<div class="zt-foot"><span class="ar">تم إنشاء هذه الفاتورة الإلكترونية وفقاً لمتطلبات هيئة الزكاة والضريبة والجمارك</span><br>This e-invoice has been generated in compliance with ZATCA e-invoicing requirements.</div>
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
+
+</div>

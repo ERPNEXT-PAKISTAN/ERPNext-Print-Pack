@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Stock Entry",
+  "slug": "stock_entry_readme_zatca_tax",
+  "doc_type": "Stock Entry",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a184a4121c702ff7f6b9260505f23642d4420c489f1ea4235152e5dedae66974",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Request for Quotation",
+  "slug": "request_for_quotation_readme_zatca_tax",
+  "doc_type": "Request for Quotation",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "be3df24a042868d1bfc56e6cbcbf7c46a2943cbfe0682db6d8af8d3e2784676e",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Delivery Note",
+  "slug": "delivery_note_readme_zatca_tax",
+  "doc_type": "Delivery Note",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b0da1bddb487194cc73d138c7f20678fdd390f4f5486567e89e99524362c4a9b",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

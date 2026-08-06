@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Shipment",
+  "slug": "shipment_readme_zatca_tax",
+  "doc_type": "Shipment",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c1239814f6db4406f89597974982f915a91e991b814a3e5d6f77f96a07cf6cdb",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

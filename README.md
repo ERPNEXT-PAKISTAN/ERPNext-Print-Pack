@@ -17,7 +17,7 @@ A production-ready **ERPNext / Frappe v15 and v16** print-format library with **
 - **Thermal / POS** — 80mm receipts with word-wrapped item names
 - **Payment Entry receipts** — payment type, party, mode of payment, bank/cash account, amount
 - **Item detail reports** — item image, valuation method, barcode, last two purchases
-- **Document voucher barcodes** — Code128 of ERPNext document name on premium/specimen layouts
+- **README preview layouts** — **ZATCA Tax Invoice** (bilingual SA) and **Regional Tax Invoice** (global navy style) on sales & purchase documents
 
 ## New installation
 

@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Material Request",
+  "slug": "material_request_readme_zatca_tax",
+  "doc_type": "Material Request",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd82b2e092ecc386e917c7e56089c6afe34c1f3fbd543b4365dbe526092b4f5e",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

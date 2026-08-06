@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Salary Slip",
+  "slug": "salary_slip_readme_zatca_tax",
+  "doc_type": "Salary Slip",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a87283c0803beedd3edd056646dc7ab3d9153a511fa4260a7805f3fc2eaa092e",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Expense Claim",
+  "slug": "expense_claim_readme_zatca_tax",
+  "doc_type": "Expense Claim",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4be7820bd730dc61401c7267bae04fb35a0c28cd850805309aefcce1e77529d1",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

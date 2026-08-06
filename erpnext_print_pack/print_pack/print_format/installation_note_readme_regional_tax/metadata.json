@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Installation Note",
+  "slug": "installation_note_readme_regional_tax",
+  "doc_type": "Installation Note",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f9928b6d2a091b3a84f6a051b2deb7ccd5d2f8c67a69886504f59c572ac0bba6",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Purchase Invoice",
+  "slug": "purchase_invoice_readme_zatca_tax",
+  "doc_type": "Purchase Invoice",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6f754b331bac5e556755264c9e3f040d0f8e52c3cdb599ef5a7159d2bbac08e4",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

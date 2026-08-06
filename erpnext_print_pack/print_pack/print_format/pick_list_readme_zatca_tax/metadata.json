@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Pick List",
+  "slug": "pick_list_readme_zatca_tax",
+  "doc_type": "Pick List",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "62aa6152855e5dcd5cd9e86e0c6d66685a5b3b8b843f9f609e64d31c86144425",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

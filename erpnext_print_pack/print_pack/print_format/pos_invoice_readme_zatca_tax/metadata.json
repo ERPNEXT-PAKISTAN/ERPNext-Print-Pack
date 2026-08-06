@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice POS Invoice",
+  "slug": "pos_invoice_readme_zatca_tax",
+  "doc_type": "POS Invoice",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9388af71078edda6a8a28679a958e85ef0b7756b3749ab5eb9ce221f20381f98",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Timesheet",
+  "slug": "timesheet_readme_regional_tax",
+  "doc_type": "Timesheet",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e2b8153d4151fd26656f89267153b026fc891cb7f73685cde57d0844fff917e4",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

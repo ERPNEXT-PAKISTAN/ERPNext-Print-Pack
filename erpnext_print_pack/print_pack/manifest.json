@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-07",
-  "total_formats": 919,
+  "total_formats": 963,
   "formats": [
     {
       "name": "Barcode Enabled Batch Label",
@@ -677,6 +677,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Bill of Materials",
+      "slug": "bom_readme_regional_tax",
+      "doc_type": "BOM",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "734a38002769059e773f33afceb75cb8a1e5ad7a16b0ccaf8a3263d88453ac10",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Bill of Materials",
+      "slug": "bom_readme_zatca_tax",
+      "doc_type": "BOM",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "5d33b4027614d93a8d9960d63a5f25b05be228829dd34f98b68a8b3362ca72e0",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Stripe Clean Bill of Materials",
       "slug": "bom_stripe_clean",
       "doc_type": "BOM",
@@ -1297,6 +1348,57 @@
       "status": "stable",
       "checksum": "d45f4d9f1a05470da6d0696d4dbd45ab30069e2fa17a429a382ad0d1682f5e99",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Delivery Note",
+      "slug": "delivery_note_readme_regional_tax",
+      "doc_type": "Delivery Note",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "0339ba80aa8412c91f0f07e2fae801880b67568d564a6a02679f845fcc1ba5e4",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Delivery Note",
+      "slug": "delivery_note_readme_zatca_tax",
+      "doc_type": "Delivery Note",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b0da1bddb487194cc73d138c7f20678fdd390f4f5486567e89e99524362c4a9b",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Retail Delivery Note",
@@ -3249,6 +3351,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Expense Claim",
+      "slug": "expense_claim_readme_regional_tax",
+      "doc_type": "Expense Claim",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f438a06cb046425509c504c3deff312a9b26848c28a8f350372284f3397a3018",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Expense Claim",
+      "slug": "expense_claim_readme_zatca_tax",
+      "doc_type": "Expense Claim",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "4be7820bd730dc61401c7267bae04fb35a0c28cd850805309aefcce1e77529d1",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Stripe Clean Expense Claim",
       "slug": "expense_claim_stripe_clean",
       "doc_type": "Expense Claim",
@@ -3696,6 +3849,57 @@
       "status": "stable",
       "checksum": "5a8d3a914d9b01bac0e3d0f0780d8bcafa9724791d0a62a5123beebf2e0bced3",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Installation Note",
+      "slug": "installation_note_readme_regional_tax",
+      "doc_type": "Installation Note",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f9928b6d2a091b3a84f6a051b2deb7ccd5d2f8c67a69886504f59c572ac0bba6",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Installation Note",
+      "slug": "installation_note_readme_zatca_tax",
+      "doc_type": "Installation Note",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b93c2e2ecf4dabb22c4d62d25fab03f8af80316a99a824c47a594b48e280916a",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Installation Note",
@@ -7673,6 +7877,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Material Request",
+      "slug": "material_request_readme_regional_tax",
+      "doc_type": "Material Request",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "af0acec5bda9df513bbc5361d60648e32be163b283f81b52635c9bc40de45d6d",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Material Request",
+      "slug": "material_request_readme_zatca_tax",
+      "doc_type": "Material Request",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "dd82b2e092ecc386e917c7e56089c6afe34c1f3fbd543b4365dbe526092b4f5e",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Stripe Clean Material Request",
       "slug": "material_request_stripe_clean",
       "doc_type": "Material Request",
@@ -9434,6 +9689,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Pick List",
+      "slug": "pick_list_readme_regional_tax",
+      "doc_type": "Pick List",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2cb3a2dea5002eb5abc2569881ccabf49aa03fef442c4a606e6ac24d0098cd91",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Pick List",
+      "slug": "pick_list_readme_zatca_tax",
+      "doc_type": "Pick List",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "62aa6152855e5dcd5cd9e86e0c6d66685a5b3b8b843f9f609e64d31c86144425",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Pick List",
       "slug": "pick_list_saudi_zatca",
       "doc_type": "Pick List",
@@ -10110,6 +10416,57 @@
       "checksum": "1d6bc3c3a2e30a0bb09c7056fc2c6d671160e86aba7cb110bbde092c91a7f7ed"
     },
     {
+      "name": "Regional Tax Invoice POS Invoice",
+      "slug": "pos_invoice_readme_regional_tax",
+      "doc_type": "POS Invoice",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b72b563f3060d1cb72f8de588aab959383251495585f43d522cff5c57170ea5e",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice POS Invoice",
+      "slug": "pos_invoice_readme_zatca_tax",
+      "doc_type": "POS Invoice",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9388af71078edda6a8a28679a958e85ef0b7756b3749ab5eb9ce221f20381f98",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Retail POS Invoice",
       "slug": "pos_invoice_retail",
       "doc_type": "POS Invoice",
@@ -10727,6 +11084,57 @@
       "status": "stable",
       "checksum": "81d0dcd745063332d68e314ac3dd7f56bdf52ac42bbcdc211cac80bec22fed42",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Production Plan",
+      "slug": "production_plan_readme_regional_tax",
+      "doc_type": "Production Plan",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "90718a6ab454d391794b9f87c0e4b020fa71a38dab2c783be0664744190e2262",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Production Plan",
+      "slug": "production_plan_readme_zatca_tax",
+      "doc_type": "Production Plan",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "a468a89f609c7470ba477d5638cbef5a81b79b529d7167207b67062715336297",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Production Plan",
@@ -11809,6 +12217,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Purchase Invoice",
+      "slug": "purchase_invoice_readme_regional_tax",
+      "doc_type": "Purchase Invoice",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c7d4565aebd4f14e4764bd2035bf6ac673e7ca9dfaabfd579110df010df3c1ff",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Purchase Invoice",
+      "slug": "purchase_invoice_readme_zatca_tax",
+      "doc_type": "Purchase Invoice",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "6f754b331bac5e556755264c9e3f040d0f8e52c3cdb599ef5a7159d2bbac08e4",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Purchase Invoice",
       "slug": "purchase_invoice_saudi_zatca",
       "doc_type": "Purchase Invoice",
@@ -12691,6 +13150,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Purchase Order",
+      "slug": "purchase_order_readme_regional_tax",
+      "doc_type": "Purchase Order",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ac71c87b625aea5225a953d44b166e8504ed62c518e2644217bf20b50900cd0e",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Purchase Order",
+      "slug": "purchase_order_readme_zatca_tax",
+      "doc_type": "Purchase Order",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "8296419b1850d4512d8134694727a2796f8ea041452d3d2a624cc5897b48bb2f",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Purchase Order",
       "slug": "purchase_order_saudi_zatca",
       "doc_type": "Purchase Order",
@@ -13500,6 +14010,57 @@
       "status": "stable",
       "checksum": "b2eec7197d2d73439488c0a52b7fcf8be556d5174d31ed69c9bb8e4c85f27ba2",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Purchase Receipt",
+      "slug": "purchase_receipt_readme_regional_tax",
+      "doc_type": "Purchase Receipt",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "cb2f6952e6ec83875a31dec3b801c12ba7de12e19d265c659d1f9a61df513e69",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Purchase Receipt",
+      "slug": "purchase_receipt_readme_zatca_tax",
+      "doc_type": "Purchase Receipt",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f902bc61902a380a4780b98fec1b0a2535b5a41fbfee2ff7fa26a63e36464ccb",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Saudi ZATCA Purchase Receipt",
@@ -14485,6 +15046,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Quotation",
+      "slug": "quotation_readme_regional_tax",
+      "doc_type": "Quotation",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2645b5e7d9a3a479a03de4ab0102b4c3cd12054df91903ccabb24190d2876f01",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Quotation",
+      "slug": "quotation_readme_zatca_tax",
+      "doc_type": "Quotation",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9b318e06573d2fbca77c5e0f92b9d07f205d96aed5f977a867f192f1ef972da1",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Quotation",
       "slug": "quotation_saudi_zatca",
       "doc_type": "Quotation",
@@ -15246,6 +15858,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Request for Quotation",
+      "slug": "request_for_quotation_readme_regional_tax",
+      "doc_type": "Request for Quotation",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "36e95d4a1869ab95911e1f44a733bcda05cc29cf1657eb6a0219fee71a1dc9a2",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Request for Quotation",
+      "slug": "request_for_quotation_readme_zatca_tax",
+      "doc_type": "Request for Quotation",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "be3df24a042868d1bfc56e6cbcbf7c46a2943cbfe0682db6d8af8d3e2784676e",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Request for Quotation",
       "slug": "request_for_quotation_saudi_zatca",
       "doc_type": "Request for Quotation",
@@ -15850,6 +16513,57 @@
       "status": "stable",
       "checksum": "22bb80296f8a6d59e569e45439d0cc5da64bbe1e2eaa55bca3c392cc99fe2dcb",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Salary Slip",
+      "slug": "salary_slip_readme_regional_tax",
+      "doc_type": "Salary Slip",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "eef8f2614141d4afa5bc946a9e0f145473dd35c692751835b490b3b33e003209",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Salary Slip",
+      "slug": "salary_slip_readme_zatca_tax",
+      "doc_type": "Salary Slip",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "a87283c0803beedd3edd056646dc7ab3d9153a511fa4260a7805f3fc2eaa092e",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Salary Slip",
@@ -16974,6 +17688,57 @@
       ],
       "status": "draft",
       "checksum": "57cd1d3d5ab9e6b99544c918911526ba4b9d13adea1e237676ad92f56a6f6333"
+    },
+    {
+      "name": "Regional Tax Invoice Sales Invoice",
+      "slug": "sales_invoice_readme_regional_tax",
+      "doc_type": "Sales Invoice",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "3a4e1101c58c92e1687a6c755c2083cf42ab162491badc315e7bae70b4c4e03c",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Sales Invoice",
+      "slug": "sales_invoice_readme_zatca_tax",
+      "doc_type": "Sales Invoice",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9129a32a299f806636ceb0ebca0abfc082d214a3054773a2a8357ad99d5c36fb",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Retail Sales Invoice",
@@ -18163,6 +18928,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Sales Order",
+      "slug": "sales_order_readme_regional_tax",
+      "doc_type": "Sales Order",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2c140ea4894a1da4dd37b3976b06c9502c1d9080e809e68d2aa7ef7e4c42d734",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Sales Order",
+      "slug": "sales_order_readme_zatca_tax",
+      "doc_type": "Sales Order",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "98befd9b4618cbabb2f33fc6b327864f74f461f56331215a33aa2b07c798ca19",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Saudi ZATCA Sales Order",
       "slug": "sales_order_saudi_zatca",
       "doc_type": "Sales Order",
@@ -19185,6 +20001,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Shipment",
+      "slug": "shipment_readme_regional_tax",
+      "doc_type": "Shipment",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ed84c79dce1999bf0803d2e84374b39565a38b503e0dcb5ecb4f5e09df2cf974",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Shipment",
+      "slug": "shipment_readme_zatca_tax",
+      "doc_type": "Shipment",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c1239814f6db4406f89597974982f915a91e991b814a3e5d6f77f96a07cf6cdb",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Stripe Clean Shipment",
       "slug": "shipment_stripe_clean",
       "doc_type": "Shipment",
@@ -19634,6 +20501,57 @@
       "status": "stable",
       "checksum": "401b4976e50eece24ca64812c0dbf1cb5f369335e77786b2eff0afbf93fe28dd",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Stock Entry",
+      "slug": "stock_entry_readme_regional_tax",
+      "doc_type": "Stock Entry",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "5d132f40fa6465126d98f2587f90e542370237816b7c463e83fbdd14562374eb",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Stock Entry",
+      "slug": "stock_entry_readme_zatca_tax",
+      "doc_type": "Stock Entry",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "a184a4121c702ff7f6b9260505f23642d4420c489f1ea4235152e5dedae66974",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Stock Entry",
@@ -20133,6 +21051,57 @@
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
+      "name": "Regional Tax Invoice Subcontracting Order",
+      "slug": "subcontracting_order_readme_regional_tax",
+      "doc_type": "Subcontracting Order",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "95a899022d31809cc39abed3660cab9abd42880ad77ee09dfc6ed96f26737394",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Subcontracting Order",
+      "slug": "subcontracting_order_readme_zatca_tax",
+      "doc_type": "Subcontracting Order",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "1b0ff7ae997c326dac7af4b533b890bbe3917754a81b7f43f65f87caa634980e",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+    },
+    {
       "name": "Stripe Clean Subcontracting Order",
       "slug": "subcontracting_order_stripe_clean",
       "doc_type": "Subcontracting Order",
@@ -20603,6 +21572,57 @@
       "status": "stable",
       "checksum": "45dbcdf13254a38b8c3c0728888654ee93aa77f4dc997a626cff1884a264bae5",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_readme_regional_tax",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "3eb0ebe0b5ec344c9048376770ebb51acda87ee45c64538da09f76c66fb2ac35",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_readme_zatca_tax",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f49f993c233300b5f12c2e7bbf5f05fc8c89deb66537191359cea8e9b55151ba",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Subcontracting Receipt",
@@ -21193,6 +22213,57 @@
       "status": "stable",
       "checksum": "d948b20b9f19b911f63ea2cab8d9ff8bcc3dc048e8635de2edf0b5258dd27e37",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Supplier Quotation",
+      "slug": "supplier_quotation_readme_regional_tax",
+      "doc_type": "Supplier Quotation",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "6222ef97e308feb6880a8aa2aed484860d2a2a31d4acca7becfb20a23b3293eb",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Supplier Quotation",
+      "slug": "supplier_quotation_readme_zatca_tax",
+      "doc_type": "Supplier Quotation",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "efb9b29a152d86fc05034222e309f99ec3e6e8a6dc0f9eba7de712a695ec4046",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Saudi ZATCA Supplier Quotation",
@@ -21803,6 +22874,57 @@
       "status": "stable",
       "checksum": "06ae74caa6b1f467197d770e5b618a5f84475889c49d2ea3dcdd2d3dcfaa1985",
       "description": "Formal tax invoice, purple accent, signature"
+    },
+    {
+      "name": "Regional Tax Invoice Timesheet",
+      "slug": "timesheet_readme_regional_tax",
+      "doc_type": "Timesheet",
+      "theme": "readme_regional_tax",
+      "layout_family": "readme_regional_tax",
+      "layout_type": "regional",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_regional_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e2b8153d4151fd26656f89267153b026fc891cb7f73685cde57d0844fff917e4",
+      "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+    },
+    {
+      "name": "ZATCA Tax Invoice Timesheet",
+      "slug": "timesheet_readme_zatca_tax",
+      "doc_type": "Timesheet",
+      "theme": "readme_zatca_tax",
+      "layout_family": "readme_zatca_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "readme-preview",
+        "readme_zatca_tax",
+        "premium-layout"
+      ],
+      "source_type": "original",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "18ef10bff50bc181a1532b22deff3ab59e8e00f8687f14cdc217af5641a35dac",
+      "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
     },
     {
       "name": "Stripe Clean Timesheet",

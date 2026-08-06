@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Bill of Materials",
+  "slug": "bom_readme_regional_tax",
+  "doc_type": "BOM",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "734a38002769059e773f33afceb75cb8a1e5ad7a16b0ccaf8a3263d88453ac10",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

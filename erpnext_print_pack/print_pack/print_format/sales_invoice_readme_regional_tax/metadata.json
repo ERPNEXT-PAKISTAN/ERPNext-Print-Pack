@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Sales Invoice",
+  "slug": "sales_invoice_readme_regional_tax",
+  "doc_type": "Sales Invoice",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3a4e1101c58c92e1687a6c755c2083cf42ab162491badc315e7bae70b4c4e03c",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}

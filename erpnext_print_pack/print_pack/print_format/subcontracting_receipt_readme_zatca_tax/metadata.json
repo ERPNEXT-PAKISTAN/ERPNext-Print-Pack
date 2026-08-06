@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Subcontracting Receipt",
+  "slug": "subcontracting_receipt_readme_zatca_tax",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f49f993c233300b5f12c2e7bbf5f05fc8c89deb66537191359cea8e9b55151ba",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

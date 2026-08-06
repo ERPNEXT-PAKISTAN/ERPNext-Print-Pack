@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Bill of Materials",
+  "slug": "bom_readme_zatca_tax",
+  "doc_type": "BOM",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5d33b4027614d93a8d9960d63a5f25b05be228829dd34f98b68a8b3362ca72e0",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

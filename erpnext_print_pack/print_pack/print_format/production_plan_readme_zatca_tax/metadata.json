@@ -1,0 +1,26 @@
+{
+  "name": "ZATCA Tax Invoice Production Plan",
+  "slug": "production_plan_readme_zatca_tax",
+  "doc_type": "Production Plan",
+  "theme": "readme_zatca_tax",
+  "layout_family": "readme_zatca_tax",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_zatca_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a468a89f609c7470ba477d5638cbef5a81b79b529d7167207b67062715336297",
+  "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
+}

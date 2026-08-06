@@ -1,0 +1,25 @@
+{
+  "name": "Regional Tax Invoice Material Request",
+  "slug": "material_request_readme_regional_tax",
+  "doc_type": "Material Request",
+  "theme": "readme_regional_tax",
+  "layout_family": "readme_regional_tax",
+  "layout_type": "regional",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "readme-preview",
+    "readme_regional_tax",
+    "premium-layout"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "af0acec5bda9df513bbc5361d60648e32be163b283f81b52635c9bc40de45d6d",
+  "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"
+}
