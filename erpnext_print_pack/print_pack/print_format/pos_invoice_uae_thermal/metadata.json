@@ -1,0 +1,27 @@
+{
+  "name": "UAE Thermal Receipt POS Invoice",
+  "slug": "pos_invoice_uae_thermal",
+  "doc_type": "POS Invoice",
+  "theme": "uae_thermal",
+  "layout_family": "uae_thermal",
+  "layout_type": "thermal",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fe5cae6c96a08712c462c8571b6fa19aeb7cdcdfd9cd2c7b0d81d778a3c59fb2",
+  "description": "UAE Thermal Receipt"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "India GST Sales Invoice",
+  "slug": "sales_invoice_india_gst",
+  "doc_type": "Sales Invoice",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ec1e0403ddb28a5a584b35dc8397099eb4636407461347c761f13f89d9462d06",
+  "description": "India GSTIN, HSN, tax ready"
+}

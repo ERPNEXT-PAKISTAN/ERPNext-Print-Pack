@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Item Label",
+  "slug": "item_label_emerald_fresh",
+  "doc_type": "Item",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "905b4d663b7b617a7a03f955225d9b22484196e7aa9bfefb31798287c7e59fd6",
+  "description": "Bright green modern"
+}

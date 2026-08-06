@@ -1,0 +1,26 @@
+{
+  "name": "India GST Purchase Order",
+  "slug": "purchase_order_india_gst",
+  "doc_type": "Purchase Order",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd6a92a7a39dc479cf183eaad329441282ac95bd50b23d325783c5dd88ba6669",
+  "description": "India GSTIN, HSN, tax ready"
+}

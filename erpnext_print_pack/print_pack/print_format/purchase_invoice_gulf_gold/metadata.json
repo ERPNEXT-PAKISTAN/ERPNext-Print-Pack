@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Purchase Invoice",
+  "slug": "purchase_invoice_gulf_gold",
+  "doc_type": "Purchase Invoice",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9709bfba17a7b793a527b47364bf090adfca7f1efaac90f5f474b8e3599a6321",
+  "description": "Middle East gold bilingual luxury"
+}

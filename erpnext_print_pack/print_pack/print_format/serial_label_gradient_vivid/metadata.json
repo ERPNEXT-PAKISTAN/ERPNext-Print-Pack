@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Serial Label",
+  "slug": "serial_label_gradient_vivid",
+  "doc_type": "Serial No",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3d385bdd72c2b6f2a02c3090620a71bef0a96ed6f688775f2e7b0cae8bc3e68b",
+  "description": "Colorful purple-pink gradient"
+}

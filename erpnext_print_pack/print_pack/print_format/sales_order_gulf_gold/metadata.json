@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Sales Order",
+  "slug": "sales_order_gulf_gold",
+  "doc_type": "Sales Order",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "80930acd84a59390fa5a3d1449a96448e8300cad801eb56f9e2b72cc9f0ed18f",
+  "description": "Middle East gold bilingual luxury"
+}

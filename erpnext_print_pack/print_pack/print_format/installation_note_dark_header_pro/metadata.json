@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Installation Note",
+  "slug": "installation_note_dark_header_pro",
+  "doc_type": "Installation Note",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d7e216f51b9aa555cec8b3487041a336586c4a503065870db32418d2d1c8cf64",
+  "description": "Solid navy header bar, white INVOICE title"
+}

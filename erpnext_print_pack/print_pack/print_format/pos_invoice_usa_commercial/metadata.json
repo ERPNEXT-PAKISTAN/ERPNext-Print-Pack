@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial POS Invoice",
+  "slug": "pos_invoice_usa_commercial",
+  "doc_type": "POS Invoice",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5f61d07a4900dfcecdc6c4b19dfca42dc877256bce3d151ca67344da603cad88",
+  "description": "American red/blue stripe invoice"
+}

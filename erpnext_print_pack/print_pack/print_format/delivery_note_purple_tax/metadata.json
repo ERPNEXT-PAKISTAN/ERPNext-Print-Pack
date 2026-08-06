@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Delivery Note",
+  "slug": "delivery_note_purple_tax",
+  "doc_type": "Delivery Note",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d45f4d9f1a05470da6d0696d4dbd45ab30069e2fa17a429a382ad0d1682f5e99",
+  "description": "Formal tax invoice, purple accent, signature"
+}

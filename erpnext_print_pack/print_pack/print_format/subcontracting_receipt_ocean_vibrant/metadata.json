@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Subcontracting Receipt",
+  "slug": "subcontracting_receipt_ocean_vibrant",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e36689d017c7800593b98684a81381036c45dbb760efd822825d1c9b42a2d25d",
+  "description": "Bright cyan ocean theme"
+}

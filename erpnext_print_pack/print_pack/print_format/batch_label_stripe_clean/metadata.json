@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Batch Label",
+  "slug": "batch_label_stripe_clean",
+  "doc_type": "Batch",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6f1dc5339cd7b1ad099c7f53fe654770a964c49d37c8361045019dd72ed63342",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

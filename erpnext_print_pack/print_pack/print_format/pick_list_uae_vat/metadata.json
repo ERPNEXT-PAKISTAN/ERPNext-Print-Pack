@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Pick List",
+  "slug": "pick_list_uae_vat",
+  "doc_type": "Pick List",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b59609dd2fe696677c90d946c6627161dda4f81d3191aad7c764239477c22fa9",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

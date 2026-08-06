@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Maintenance Visit",
+  "slug": "maintenance_visit_crimson_shop",
+  "doc_type": "Maintenance Visit",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "de6150daff03e95d682845a762c13c6ebb3c271a2c2c7f3da2f6ce2e43744e6d",
+  "description": "Bold red retail"
+}

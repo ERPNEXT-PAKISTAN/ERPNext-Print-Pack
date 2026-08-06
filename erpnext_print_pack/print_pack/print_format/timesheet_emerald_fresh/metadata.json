@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Timesheet",
+  "slug": "timesheet_emerald_fresh",
+  "doc_type": "Timesheet",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "59a1c81574f0355e96456e424216e0cdb3c87a3845d818e348659ad34112e608",
+  "description": "Bright green modern"
+}

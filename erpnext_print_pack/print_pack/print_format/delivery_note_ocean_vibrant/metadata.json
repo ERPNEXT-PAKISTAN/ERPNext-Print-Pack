@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Delivery Note",
+  "slug": "delivery_note_ocean_vibrant",
+  "doc_type": "Delivery Note",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9cb8165475213491cadb4e8772f82cbbb59ad5548f479b99523babaa2f488aca",
+  "description": "Bright cyan ocean theme"
+}

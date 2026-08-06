@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Job Card",
+  "slug": "job_card_dark_header_pro",
+  "doc_type": "Job Card",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e2053f8b812267b480849df7e522f7291f8242297ee3d06f5d58b9e142cf3548",
+  "description": "Solid navy header bar, white INVOICE title"
+}

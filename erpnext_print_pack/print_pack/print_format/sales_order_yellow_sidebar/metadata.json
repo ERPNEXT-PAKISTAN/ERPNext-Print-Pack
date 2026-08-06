@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Sales Order",
+  "slug": "sales_order_yellow_sidebar",
+  "doc_type": "Sales Order",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a11f31ebc58bf4eb40db78d6470159f4ac1a178f79cbb38f29c6956b529c5c64",
+  "description": "Yellow accent stripe, structured metadata"
+}

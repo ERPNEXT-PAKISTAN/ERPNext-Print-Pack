@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Employee Advance",
+  "slug": "employee_advance_purple_tax",
+  "doc_type": "Employee Advance",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cbf79c0c031e54fc7b785b7c5bb02379efca8d7132a60efa6d8b0be2192d6f10",
+  "description": "Formal tax invoice, purple accent, signature"
+}

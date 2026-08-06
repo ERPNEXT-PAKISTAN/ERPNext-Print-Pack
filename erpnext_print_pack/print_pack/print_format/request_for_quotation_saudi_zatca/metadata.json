@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Request for Quotation",
+  "slug": "request_for_quotation_saudi_zatca",
+  "doc_type": "Request for Quotation",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d92aeb3a78241a6b23943adae386aeeed4bca4ebb23939ffdeb95ae676b5a1c6",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

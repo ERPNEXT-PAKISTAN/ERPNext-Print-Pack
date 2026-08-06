@@ -147,6 +147,9 @@ def _decide_action(
 
 	record = get_format_record(name)
 	db_html = frappe.db.get_value("Print Format", name, "html") or ""
+	if not db_html.strip():
+		return "update", None
+
 	db_checksum = _checksum(db_html)
 	module = frappe.db.get_value("Print Format", name, "module")
 

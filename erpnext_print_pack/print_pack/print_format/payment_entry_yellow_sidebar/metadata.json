@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Payment Entry",
+  "slug": "payment_entry_yellow_sidebar",
+  "doc_type": "Payment Entry",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b4c261311a235f008f0649aaee60f5515b6ce0963d09d26019d9e9c8d42e7feb",
+  "description": "Yellow accent stripe, structured metadata"
+}

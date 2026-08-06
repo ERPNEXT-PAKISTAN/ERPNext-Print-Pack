@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Installation Note",
+  "slug": "installation_note_purple_tax",
+  "doc_type": "Installation Note",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5a8d3a914d9b01bac0e3d0f0780d8bcafa9724791d0a62a5123beebf2e0bced3",
+  "description": "Formal tax invoice, purple accent, signature"
+}

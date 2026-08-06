@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Modern Quotation",
+  "slug": "quotation_proforma_modern",
+  "doc_type": "Quotation",
+  "theme": "proforma_modern",
+  "layout_family": "proforma_modern",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_modern",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4fbac61aa43ed5857032ede956b6285a1df4dd39fd32d3d9c4f3712ebb14fe90",
+  "description": "Proforma Modern"
+}

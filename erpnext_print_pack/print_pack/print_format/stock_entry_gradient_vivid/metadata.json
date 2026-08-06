@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Stock Entry",
+  "slug": "stock_entry_gradient_vivid",
+  "doc_type": "Stock Entry",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "007f8ace1f38b91c245152fd68993bba655ded84dee5907f17b5d6b562a94808",
+  "description": "Colorful purple-pink gradient"
+}

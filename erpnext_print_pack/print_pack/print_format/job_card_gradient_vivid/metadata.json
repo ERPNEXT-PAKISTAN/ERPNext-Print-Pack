@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Job Card",
+  "slug": "job_card_gradient_vivid",
+  "doc_type": "Job Card",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ff812c4261c6556079b2f8fbf08dc6586babd90660431c31deb3f774bb7311f3",
+  "description": "Colorful purple-pink gradient"
+}

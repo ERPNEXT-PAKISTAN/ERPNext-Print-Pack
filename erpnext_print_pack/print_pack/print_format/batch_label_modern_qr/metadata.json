@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Batch Label",
+  "slug": "batch_label_modern_qr",
+  "doc_type": "Batch",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9d1a67ac113b2e058ef44205d058852882df9f0fa00fb7e21814ae4932a81a16",
+  "description": "Minimal grid, QR payment block"
+}

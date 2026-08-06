@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Bill of Materials",
+  "slug": "bom_modern_qr",
+  "doc_type": "BOM",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "97d291ddb2ab08171791a3f79b77792bfb8ec7dc10aaee0a108cf3494d47b7dc",
+  "description": "Minimal grid, QR payment block"
+}

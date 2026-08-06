@@ -1,0 +1,27 @@
+{
+  "name": "Proforma ZATCA Sales Order",
+  "slug": "sales_order_proforma_zatca",
+  "doc_type": "Sales Order",
+  "theme": "proforma_zatca",
+  "layout_family": "proforma_zatca",
+  "layout_type": "proforma",
+  "region": "SA",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_zatca",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0ca084c10fd1975b43955a902d8460fdeda6b49b1b23c76e5fb99781672789c6",
+  "description": "Proforma ZATCA"
+}

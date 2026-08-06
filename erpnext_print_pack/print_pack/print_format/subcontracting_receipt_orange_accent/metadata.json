@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Subcontracting Receipt",
+  "slug": "subcontracting_receipt_orange_accent",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f536d990f359b4130ed4b9e56bd8e02739dd5c6fe1ca50156f26722722e998dc",
+  "description": "Bold orange total bar, signature area"
+}

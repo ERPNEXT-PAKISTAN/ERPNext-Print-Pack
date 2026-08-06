@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Quotation",
+  "slug": "quotation_usa_commercial",
+  "doc_type": "Quotation",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9f74461e4c78acbeef0ee8cf371317222faefbe42e1234153abd0818fcc39561",
+  "description": "American red/blue stripe invoice"
+}

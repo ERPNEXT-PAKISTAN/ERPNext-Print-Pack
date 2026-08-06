@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Subcontracting Order",
+  "slug": "subcontracting_order_orange_accent",
+  "doc_type": "Subcontracting Order",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "898fbb14828ae5bfcdaa9af2527e538db939c079dee39e344066bdb67004f582",
+  "description": "Bold orange total bar, signature area"
+}

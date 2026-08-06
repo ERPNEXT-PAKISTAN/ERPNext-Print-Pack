@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Leave Application",
+  "slug": "leave_application_vertex_classic",
+  "doc_type": "Leave Application",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "24357c20fb8ac7c83659fd336671f8135d0ffb35d7849a564177402154bcdea9",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

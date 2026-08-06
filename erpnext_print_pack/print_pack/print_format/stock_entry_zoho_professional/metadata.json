@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Stock Entry",
+  "slug": "stock_entry_zoho_professional",
+  "doc_type": "Stock Entry",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c9c30287b3ee85e8ff3b6b1f02e0d5cf7f5530767348f1a9c844888befd0b42c",
+  "description": "Clean blue theme, summary balance box"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Item Label",
+  "slug": "item_label_vertex_classic",
+  "doc_type": "Item",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3dde1f2a86c601d74e37ca8b557828b6c1b25ada95b69a40de5e5d356a242b0c",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Bill of Materials",
+  "slug": "bom_zoho_professional",
+  "doc_type": "BOM",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b8d80bad0776582b618a5c37c70eb158ad388b4273affa52022c1458571e1e2a",
+  "description": "Clean blue theme, summary balance box"
+}

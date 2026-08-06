@@ -1,0 +1,26 @@
+{
+  "name": "Pakistan FBR Delivery Note",
+  "slug": "delivery_note_pakistan_fbr",
+  "doc_type": "Delivery Note",
+  "theme": "pakistan_fbr",
+  "layout_family": "pakistan_fbr",
+  "layout_type": "regional",
+  "region": "PK",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "pakistan_fbr",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "29391a4da0f2d72c3683086ac9a8a9f759ddba5215b8be124641d05b3bedfafd",
+  "description": "Pakistan NTN/STRN sales tax invoice"
+}

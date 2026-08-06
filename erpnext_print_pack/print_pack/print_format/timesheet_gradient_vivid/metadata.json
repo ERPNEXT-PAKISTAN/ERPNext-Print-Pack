@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Timesheet",
+  "slug": "timesheet_gradient_vivid",
+  "doc_type": "Timesheet",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5f11d5f031f04f8b43d3182797d36f19682df1f35ccb5087cff219772cdf5bc9",
+  "description": "Colorful purple-pink gradient"
+}

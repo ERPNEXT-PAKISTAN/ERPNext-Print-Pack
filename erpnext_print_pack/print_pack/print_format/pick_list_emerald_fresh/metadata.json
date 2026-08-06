@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Pick List",
+  "slug": "pick_list_emerald_fresh",
+  "doc_type": "Pick List",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "14ce5818c23030119aecfd2303fa6761c4bd209924e60a8b479aef31c456c94a",
+  "description": "Bright green modern"
+}

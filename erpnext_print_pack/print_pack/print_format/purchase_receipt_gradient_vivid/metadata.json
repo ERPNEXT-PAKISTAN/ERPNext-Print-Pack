@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Purchase Receipt",
+  "slug": "purchase_receipt_gradient_vivid",
+  "doc_type": "Purchase Receipt",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "968cb1d2dc1f3f0e8eb2ef6eaca0c6cac0730d3ecdffbac3256a5fc8fc5f63cc",
+  "description": "Colorful purple-pink gradient"
+}

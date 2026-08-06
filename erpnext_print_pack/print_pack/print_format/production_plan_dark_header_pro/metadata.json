@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Production Plan",
+  "slug": "production_plan_dark_header_pro",
+  "doc_type": "Production Plan",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c20897ddb442388960d93de4ac5ac64fd4d76f0ff6ba16840a039ea213da6a3b",
+  "description": "Solid navy header bar, white INVOICE title"
+}

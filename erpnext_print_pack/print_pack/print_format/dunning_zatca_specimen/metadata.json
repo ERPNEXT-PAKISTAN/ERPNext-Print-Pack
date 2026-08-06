@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Dunning",
+  "slug": "dunning_zatca_specimen",
+  "doc_type": "Dunning",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7343cb1b4773502600ef59583d30c5eca4098f918c9c70573f42f7ce5c89029f",
+  "description": "ZATCA E-Invoice Specimen"
+}

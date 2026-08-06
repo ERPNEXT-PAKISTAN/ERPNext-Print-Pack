@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Stock Entry",
+  "slug": "stock_entry_ocean_vibrant",
+  "doc_type": "Stock Entry",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bfe2eb7faf1d08180a4eade7b9f09bd22a43a40b5811abf465dabc43b682cc1b",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Purchase Order",
+  "slug": "purchase_order_gradient_vivid",
+  "doc_type": "Purchase Order",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c630a9974865725cddd6581df70162bd1a8061a85dc3ed207f5b13fe31ffa8c1",
+  "description": "Colorful purple-pink gradient"
+}

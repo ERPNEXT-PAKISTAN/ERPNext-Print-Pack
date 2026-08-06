@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Expense Claim",
+  "slug": "expense_claim_purple_tax",
+  "doc_type": "Expense Claim",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c501cbd92144d26e75dc128f488b401448202c71fd68b7547a828560446b3c03",
+  "description": "Formal tax invoice, purple accent, signature"
+}

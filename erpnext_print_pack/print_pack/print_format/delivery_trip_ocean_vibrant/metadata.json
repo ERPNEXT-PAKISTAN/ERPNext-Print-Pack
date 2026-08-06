@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Delivery Trip",
+  "slug": "delivery_trip_ocean_vibrant",
+  "doc_type": "Delivery Trip",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c130209967dd7bdf4a15f7bb4841b46c1f9d4327817c594b4c6d5fb87fde1cac",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Project",
+  "slug": "project_ocean_vibrant",
+  "doc_type": "Project",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6a3157685d65caa57c76376c8025ae4cf91bc4dde5e54d37bb5b4470b6b6010e",
+  "description": "Bright cyan ocean theme"
+}

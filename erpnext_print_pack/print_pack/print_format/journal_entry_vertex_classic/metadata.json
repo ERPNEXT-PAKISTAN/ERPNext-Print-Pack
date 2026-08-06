@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Journal Entry",
+  "slug": "journal_entry_vertex_classic",
+  "doc_type": "Journal Entry",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "17209ef4ab535d4b6a4fc07c168fee64b7a270a21850a4708f0ffad4a1d37204",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Dunning",
+  "slug": "dunning_zoho_professional",
+  "doc_type": "Dunning",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6c2c646286c13f4cc01c2b265668aa12b37381ce3fe768cda132b1161222fa4a",
+  "description": "Clean blue theme, summary balance box"
+}

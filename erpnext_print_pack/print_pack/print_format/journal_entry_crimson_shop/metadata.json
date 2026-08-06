@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Journal Entry",
+  "slug": "journal_entry_crimson_shop",
+  "doc_type": "Journal Entry",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9fbfe3053f149cb244fc6d3b5741576cad79be8ec2bf9fc6b6e4bc49aae17366",
+  "description": "Bold red retail"
+}

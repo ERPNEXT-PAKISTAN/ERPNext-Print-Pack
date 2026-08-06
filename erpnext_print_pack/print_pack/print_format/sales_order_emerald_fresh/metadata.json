@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Sales Order",
+  "slug": "sales_order_emerald_fresh",
+  "doc_type": "Sales Order",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "83a767a1790751a22f67636bb586514682a7e9ae1e1d3624fe00f5a625e04dc3",
+  "description": "Bright green modern"
+}

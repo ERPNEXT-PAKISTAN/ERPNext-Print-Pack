@@ -1,0 +1,177 @@
+{# ZATCA E-Invoice Specimen — modern Saudi compliant layout #}
+{% set PURPLE = "#7d579b" %}
+{% set company_doc = frappe.get_doc("Company", doc.company) if doc.company else none %}
+{% set qr = doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "" %}
+{% set bank_name = doc.get("custom_bank_name") or "" %}
+{% set iban = doc.get("custom_iban") or "" %}
+{% set discount = doc.get("discount_amount") or 0 %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.zs-root {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	color: #1f2937;
+	line-height: 1.45;
+}
+.zs-head { display: table; width: 100%; margin-bottom: 22px; }
+.zs-head > div { display: table-cell; vertical-align: top; }
+.zs-title { font-size: 34px; font-weight: 800; color: #111; letter-spacing: -0.5px; margin: 0 0 10px; }
+.zs-meta { color: #6b7280; font-size: 10px; }
+.zs-meta span { color: #111; font-weight: 600; margin-left: 6px; }
+.zs-meta div { margin-bottom: 4px; }
+.zs-qr-wrap { text-align: center; width: 130px; }
+.zs-qr {
+	width: 110px; height: 110px; margin: 0 auto;
+	border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;
+	display: flex; align-items: center; justify-content: center;
+	background: #fff;
+}
+.zs-qr img { width: 100%; height: 100%; object-fit: contain; }
+.zs-zatca {
+	width: 100px; height: 100px; border: 3px solid #22c55e; border-radius: 50%;
+	text-align: center; margin-left: auto; font-size: 8px; color: #111;
+	display: flex; flex-direction: column; align-items: center; justify-content: center;
+	font-weight: 700; line-height: 1.2;
+}
+.zs-zatca .zatca-t { font-size: 14px; font-weight: 800; margin: 2px 0; }
+.zs-cards { display: table; width: 100%; margin-bottom: 20px; border-spacing: 12px 0; }
+.zs-cards > div { display: table-cell; width: 50%; vertical-align: top; }
+.zs-card {
+	background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px;
+	padding: 14px 16px; min-height: 90px;
+}
+.zs-card .lbl { color: {{ PURPLE }}; font-weight: 700; font-size: 11px; margin-bottom: 8px; }
+.zs-card .name { font-size: 13px; font-weight: 700; color: #111; margin-bottom: 4px; }
+.zs-card .addr { color: #6b7280; font-size: 9px; line-height: 1.4; }
+.zs-table { width: 100%; border-collapse: collapse; margin-bottom: 18px; border-radius: 8px; overflow: hidden; }
+.zs-table thead th {
+	background: {{ PURPLE }}; color: #fff; padding: 10px 8px; font-size: 9px;
+	font-weight: 600; text-align: left; border: none;
+}
+.zs-table thead th.r { text-align: right; }
+.zs-table tbody td {
+	padding: 10px 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; font-size: 9px;
+}
+.zs-table tbody tr:last-child td { border-bottom: none; }
+.zs-table .item-name { font-weight: 600; color: #111; }
+.zs-table .item-desc { color: #6b7280; font-size: 8px; margin-top: 2px; }
+.zs-foot { display: table; width: 100%; }
+.zs-foot > div { display: table-cell; vertical-align: top; }
+.zs-bank {
+	background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px;
+	padding: 14px 16px; width: 90%;
+}
+.zs-bank .lbl { color: {{ PURPLE }}; font-weight: 700; font-size: 11px; margin-bottom: 8px; }
+.zs-bank .sub { color: #6b7280; font-size: 9px; }
+.zs-bank .val { color: #111; font-weight: 600; font-size: 10px; }
+.zs-totals { text-align: right; padding-left: 20px; }
+.zs-totals table { margin-left: auto; min-width: 220px; }
+.zs-totals td { padding: 5px 0; font-size: 10px; }
+.zs-totals .lbl { color: #6b7280; text-align: left; padding-right: 24px; }
+.zs-totals .val { font-weight: 700; color: #111; text-align: right; }
+.zs-totals .grand .lbl, .zs-totals .grand .val { font-size: 13px; color: #111; padding-top: 8px; border-top: 2px solid #e5e7eb; }
+.epp-words, .words { margin-top: 12px; color: #6b7280; font-size: 9px; font-style: italic; }
+.epp-terms, .terms { margin-top: 10px; font-size: 9px; color: #6b7280; }
+.epp-sig, .sig { display: none; }
+.epp-footer, .footer { display: none; }
+.print-format .zs-table > tbody > tr > td { padding: 10px 8px !important; }
+</style>
+
+<div class="zs-root print-format">
+<div class="zs-head">
+	<div style="width:38%">
+		<h1 class="zs-title">E-invoice</h1>
+		<div class="zs-meta">
+			<div>Invoice#<span>{{ doc.name }}</span></div>
+			<div>Invoice Date<span>{{ frappe.utils.formatdate(doc.posting_date) }}</span></div>
+			{% if doc.due_date %}<div>Due Date<span>{{ frappe.utils.formatdate(doc.due_date) }}</span></div>{% endif %}
+		</div>
+	</div>
+	<div class="zs-qr-wrap epp-qr qr">
+		<div class="zs-qr">
+			{% if qr %}<img src="{{ qr }}" alt="QR">{% else %}<span style="color:#9ca3af;font-size:9px">QR Code</span>{% endif %}
+		</div>
+	</div>
+	<div style="width:38%;text-align:right">
+		<div class="zs-zatca">
+			<div>★ ★ ★</div>
+			<div class="zatca-t">ZATCA</div>
+			<div>★ ★ ★</div>
+			<div style="font-size:7px;margin-top:2px">Compliant</div>
+		</div>
+	</div>
+</div>
+
+<div class="zs-cards">
+	<div><div class="zs-card">
+		<div class="lbl">Billed by</div>
+		<div class="name">{{ doc.company or "" }}</div>
+		<div class="addr">{{ doc.company_address_display or "" }}</div>
+		{% if doc.company_tax_id %}<div class="addr" style="margin-top:6px">VAT No. {{ doc.company_tax_id }}</div>{% endif %}
+	</div></div>
+	<div><div class="zs-card">
+		<div class="lbl">Billed to</div>
+		<div class="name">{{ doc.customer_name or doc.customer or "" }}</div>
+		<div class="addr">{{ doc.address_display or "" }}</div>
+		{% if doc.tax_id %}<div class="addr" style="margin-top:6px">VAT No. {{ doc.tax_id }}</div>{% endif %}
+	</div></div>
+</div>
+
+{% if doc.items %}
+<table class="zs-table">
+	<thead>
+		<tr>
+			<th style="width:32%">Item Name &amp; Description</th>
+			<th class="r" style="width:10%">Tax Rate</th>
+			<th class="r" style="width:8%">QTY.</th>
+			<th class="r" style="width:14%">Amount</th>
+			<th class="r" style="width:14%">Tax</th>
+			<th class="r" style="width:14%">Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for row in doc.items %}
+	{% set tax_amt = (row.get("tax_amount") or 0) if row.get("tax_amount") is not none else 0 %}
+	<tr>
+		<td>
+			<div class="item-name">{{ row.item_name or row.item_code or "" }}</div>
+			{% if row.description %}<div class="item-desc">{{ row.description }}</div>{% endif %}
+		</td>
+		<td class="r">{{ row.item_tax_rate or (doc.taxes[0].rate if doc.taxes else "") or "" }}{% if row.item_tax_rate or doc.taxes %}%{% endif %}</td>
+		<td class="r">{{ row.qty or "" }}</td>
+		<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+		<td class="r">{{ row.get_formatted("tax_amount", doc) if row.get_formatted is defined and row.get("tax_amount") else "" }}</td>
+		<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+{% endif %}
+
+<div class="zs-foot">
+	<div style="width:50%">
+		<div class="zs-bank">
+			<div class="lbl">Bank and payment details</div>
+			{% if bank_name %}<div class="sub">Bank Name</div><div class="val">{{ bank_name }}</div>{% endif %}
+			{% if iban %}<div class="sub" style="margin-top:6px">IBAN</div><div class="val">{{ iban }}</div>{% endif %}
+			{% if not bank_name and not iban %}
+			<div class="sub">Bank Name</div><div class="val">{{ doc.get("custom_bank_account_number") or "—" }}</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="zs-totals" style="width:50%">
+		<table>
+			<tr><td class="lbl">Sub total</td><td class="val">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+			{% if discount %}<tr><td class="lbl">Discount</td><td class="val">{{ doc.get_formatted("discount_amount") if doc.get_formatted is defined else discount }}</td></tr>{% endif %}
+			{% for tax in doc.taxes or [] %}
+			<tr><td class="lbl">{{ tax.description or "Tax" }}</td><td class="val">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>
+			{% endfor %}
+			<tr class="grand"><td class="lbl">Total</td><td class="val">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+		</table>
+	</div>
+</div>
+
+{% if doc.in_words %}<div class="epp-words words">{{ doc.in_words }}</div>{% endif %}
+{% if doc.terms %}<div class="epp-terms terms">{{ doc.terms }}</div>{% endif %}
+</div>

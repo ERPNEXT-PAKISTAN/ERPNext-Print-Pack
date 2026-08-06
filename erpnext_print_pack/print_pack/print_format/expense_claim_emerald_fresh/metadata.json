@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Expense Claim",
+  "slug": "expense_claim_emerald_fresh",
+  "doc_type": "Expense Claim",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dbdb013beb756f81d6c835854457c16029065b90e78e697be08e0d62905fdb25",
+  "description": "Bright green modern"
+}

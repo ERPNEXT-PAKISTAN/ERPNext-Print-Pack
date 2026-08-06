@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Journal Entry",
+  "slug": "journal_entry_yellow_sidebar",
+  "doc_type": "Journal Entry",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "49ee2fda72c560fa8a7522412226915b938463e1327c06d1c22b26f25bec0433",
+  "description": "Yellow accent stripe, structured metadata"
+}

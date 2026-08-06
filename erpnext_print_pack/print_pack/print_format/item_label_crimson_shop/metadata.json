@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Item Label",
+  "slug": "item_label_crimson_shop",
+  "doc_type": "Item",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ad20517e827bcbcbe827bae4a14202652b439685886456d27e96a179eb5b7c6e",
+  "description": "Bold red retail"
+}

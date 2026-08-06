@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Classic Sales Order",
+  "slug": "sales_order_proforma_classic",
+  "doc_type": "Sales Order",
+  "theme": "proforma_classic",
+  "layout_family": "proforma_classic",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_classic",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ad9ba50bf0fca0266ba058f4c148a06003f212bcbbf3435d91368464f00107d5",
+  "description": "Proforma Classic"
+}

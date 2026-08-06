@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Delivery Note",
+  "slug": "delivery_note_usa_commercial",
+  "doc_type": "Delivery Note",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b6ebbdf7ab3ddc41422ea32f844f30b4afdd61decd37d1dda6c54ed448ec8d16",
+  "description": "American red/blue stripe invoice"
+}

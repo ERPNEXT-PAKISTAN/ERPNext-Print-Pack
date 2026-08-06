@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Dunning",
+  "slug": "dunning_vertex_classic",
+  "doc_type": "Dunning",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d449233c847f97f33fa96465e8d8bdf47c74395e8f340a59a481ace989c290cb",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

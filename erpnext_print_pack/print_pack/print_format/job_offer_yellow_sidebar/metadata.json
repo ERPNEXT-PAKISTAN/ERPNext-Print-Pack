@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Job Offer",
+  "slug": "job_offer_yellow_sidebar",
+  "doc_type": "Job Offer",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b9606c707560395ae807dbbc6b10ca53a535def79f752a9a342b00d0173ac952",
+  "description": "Yellow accent stripe, structured metadata"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Serial Label",
+  "slug": "serial_label_vertex_classic",
+  "doc_type": "Serial No",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "040f9d6aa2dcedaa216d4d864451731e958385430192ed41db86e9773e440ce9",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

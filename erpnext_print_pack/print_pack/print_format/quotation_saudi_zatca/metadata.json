@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Quotation",
+  "slug": "quotation_saudi_zatca",
+  "doc_type": "Quotation",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c962d3589b14b1abb6c79019710df201fce5cdf7517f4630550995d4da71932e",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

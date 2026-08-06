@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Item Label",
+  "slug": "item_label_stripe_clean",
+  "doc_type": "Item",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "76d8b9eb5e2096cf8f933c4b18f4e14d207f4b85e9c26c242f89633591e8f45a",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

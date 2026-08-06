@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Shipment",
+  "slug": "shipment_gradient_vivid",
+  "doc_type": "Shipment",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b306f8552e6db8208204c77c57f89553fdedd425d25be724cc918d99f599e5a3",
+  "description": "Colorful purple-pink gradient"
+}

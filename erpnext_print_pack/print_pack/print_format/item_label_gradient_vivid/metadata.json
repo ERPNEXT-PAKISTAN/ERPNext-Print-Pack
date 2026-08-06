@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Item Label",
+  "slug": "item_label_gradient_vivid",
+  "doc_type": "Item",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2369633e55cedbe9406ecf33da9c94fda2f051ece7848d5be79256483d1872d1",
+  "description": "Colorful purple-pink gradient"
+}

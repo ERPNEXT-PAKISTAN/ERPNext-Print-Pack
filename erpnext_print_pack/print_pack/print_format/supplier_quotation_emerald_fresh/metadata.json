@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Supplier Quotation",
+  "slug": "supplier_quotation_emerald_fresh",
+  "doc_type": "Supplier Quotation",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fc6e9094fdfcbdaaf3f42ffc0fe20d05197f91256ea9201940a2ed10511486d8",
+  "description": "Bright green modern"
+}

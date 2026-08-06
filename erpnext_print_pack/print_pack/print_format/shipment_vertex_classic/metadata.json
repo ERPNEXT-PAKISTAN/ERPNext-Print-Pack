@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Shipment",
+  "slug": "shipment_vertex_classic",
+  "doc_type": "Shipment",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "740e1d32f8fff7ec9ec07f68a938054489dcaa201a09f8e0265e4a9904569532",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

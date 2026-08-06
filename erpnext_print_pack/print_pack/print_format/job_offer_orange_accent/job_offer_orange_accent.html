@@ -1,0 +1,49 @@
+{# Premium layout: orange_accent · Job Offer #}
+{% set title = "Job Offer" %}
+{% set date_field = "offer_date" %}
+
+{% set party_label = "Party" %}
+{% set ship_label = "" %}
+{% set party_name = doc.party_name or doc.party or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; color: #333; }
+.oa-head { border-left: 6px solid #ea580c; padding-left: 14px; margin-bottom: 16px; }
+.oa-head h1 { margin: 0; font-size: 24px; color: #ea580c; }
+.info td { padding: 6px; width: 50%; vertical-align: top; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #fff7ed; color: #c2410c; border-bottom: 2px solid #ea580c; padding: 8px; text-align: left; }
+.items td { padding: 7px 8px; border-bottom: 1px solid #fed7aa; }
+.oa-total { background: #ea580c; color: #fff; padding: 14px 20px; margin-top: 14px; width: 48%; margin-left: auto; border-radius: 4px; }
+.oa-total table { width: 100%; color: #fff; font-size: 16px; font-weight: 700; }
+.sig { margin-top: 28px; border-top: 1px solid #ccc; padding-top: 8px; width: 200px; font-size: 9px; color: #666; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="oa-head"><h1>{{ title }}</h1><div>{{ doc.company or "" }} · {{ doc.name }}</div></div>
+<table class="info"><tr>
+<td><strong>{{ party_label }}</strong><br>{{ party_name }}<br>{{ party_address }}</td>
+<td style="text-align:right">
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("offer_date")) if doc.get("offer_date") else "" }}</td></tr>
+
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</td>
+</tr></table>
+
+<div class="oa-total"><table><tr><td>TOTAL DUE</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table></div>
+<div class="sig">Authorized Signature ___________________</div>
+{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}
+
+</div>

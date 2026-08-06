@@ -1,0 +1,26 @@
+{
+  "name": "India GST Quotation",
+  "slug": "quotation_india_gst",
+  "doc_type": "Quotation",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2f92a775e9a4308a7b9e19fc41ea8206bd6a11e57ac6d22b564f6f0ad4666987",
+  "description": "India GSTIN, HSN, tax ready"
+}

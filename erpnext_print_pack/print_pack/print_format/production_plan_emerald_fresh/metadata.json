@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Production Plan",
+  "slug": "production_plan_emerald_fresh",
+  "doc_type": "Production Plan",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c2dce2c7108013676b6d5a8b4ddad84a56610f5f6d03bdb772d8ce1210d4c68a",
+  "description": "Bright green modern"
+}

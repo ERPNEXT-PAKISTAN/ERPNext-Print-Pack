@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Purchase Invoice",
+  "slug": "purchase_invoice_crimson_shop",
+  "doc_type": "Purchase Invoice",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "574a4f27973cc9ef6198769b6b1e21da359a2808db61cb5163df5ed3fe7ab59a",
+  "description": "Bold red retail"
+}

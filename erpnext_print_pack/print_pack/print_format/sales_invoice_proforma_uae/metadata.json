@@ -1,0 +1,27 @@
+{
+  "name": "Proforma UAE Sales Invoice",
+  "slug": "sales_invoice_proforma_uae",
+  "doc_type": "Sales Invoice",
+  "theme": "proforma_uae",
+  "layout_family": "proforma_uae",
+  "layout_type": "proforma",
+  "region": "AE",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_uae",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5fa38ace279c1a38de66882e916848ea177ba7051e41661e8e25ac94464e17d6",
+  "description": "Proforma UAE"
+}

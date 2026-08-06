@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Request for Quotation",
+  "slug": "request_for_quotation_stripe_clean",
+  "doc_type": "Request for Quotation",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8c6cdcf9cd06756d3ca1aec80c4d77b9ae4fb86cd41b0920008abb125d74c816",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

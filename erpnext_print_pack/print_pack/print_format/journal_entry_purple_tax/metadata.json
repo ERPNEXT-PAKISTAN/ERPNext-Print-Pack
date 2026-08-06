@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Journal Entry",
+  "slug": "journal_entry_purple_tax",
+  "doc_type": "Journal Entry",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4d67c420b61fd9894f47335fcddb64b154968abd1daed18954c72c2a63fc5e92",
+  "description": "Formal tax invoice, purple accent, signature"
+}

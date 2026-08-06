@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Timesheet",
+  "slug": "timesheet_vertex_classic",
+  "doc_type": "Timesheet",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "381aa1cacf3f435a7f17397c53a7ae379a3d93415f4d73deade1e497a06698e5",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

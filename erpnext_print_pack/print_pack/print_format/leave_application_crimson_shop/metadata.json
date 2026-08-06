@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Leave Application",
+  "slug": "leave_application_crimson_shop",
+  "doc_type": "Leave Application",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "652cf9127275f2da78669dd0377e0743a3ee62cb9345b45c25124672d174b19b",
+  "description": "Bold red retail"
+}

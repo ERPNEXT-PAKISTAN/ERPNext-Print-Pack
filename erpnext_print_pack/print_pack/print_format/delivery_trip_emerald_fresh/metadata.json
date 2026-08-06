@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Delivery Trip",
+  "slug": "delivery_trip_emerald_fresh",
+  "doc_type": "Delivery Trip",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "790abdd65a5ef9a19f62a7febf14addf298e0086fd6663709252af47d43f0d4c",
+  "description": "Bright green modern"
+}

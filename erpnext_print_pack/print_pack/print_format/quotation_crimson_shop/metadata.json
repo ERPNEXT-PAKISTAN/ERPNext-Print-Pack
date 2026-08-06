@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Quotation",
+  "slug": "quotation_crimson_shop",
+  "doc_type": "Quotation",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3a5ed4bf3444ff949d52da603df857e68b025c68abbe137619ce422af3ce0932",
+  "description": "Bold red retail"
+}

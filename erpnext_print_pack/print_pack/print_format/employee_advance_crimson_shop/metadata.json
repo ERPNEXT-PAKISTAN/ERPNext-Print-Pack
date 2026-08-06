@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Employee Advance",
+  "slug": "employee_advance_crimson_shop",
+  "doc_type": "Employee Advance",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f45ea8b23801f12fedeb2a6f07bcf2ab676e32b75d6e34ba48f734fe4b6ce77d",
+  "description": "Bold red retail"
+}

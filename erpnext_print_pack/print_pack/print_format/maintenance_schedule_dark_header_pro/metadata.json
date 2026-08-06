@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Maintenance Schedule",
+  "slug": "maintenance_schedule_dark_header_pro",
+  "doc_type": "Maintenance Schedule",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ebaa66e1d4edbb3df875f70f8972cbbdc752c3b53c6fadb5c6933d5e4eb8d9e6",
+  "description": "Solid navy header bar, white INVOICE title"
+}

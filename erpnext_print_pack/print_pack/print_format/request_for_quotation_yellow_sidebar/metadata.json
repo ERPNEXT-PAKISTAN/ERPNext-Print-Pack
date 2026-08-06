@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Request for Quotation",
+  "slug": "request_for_quotation_yellow_sidebar",
+  "doc_type": "Request for Quotation",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "310b283127ee4dcc865d1f0ec17e391257743b5e394c194308cf91f6d30340d0",
+  "description": "Yellow accent stripe, structured metadata"
+}

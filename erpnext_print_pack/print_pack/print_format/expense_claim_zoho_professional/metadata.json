@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Expense Claim",
+  "slug": "expense_claim_zoho_professional",
+  "doc_type": "Expense Claim",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6d155a6ad8c925ace32fbf038d2db3e4f2854425ff0302f8da0101ab2251f0b5",
+  "description": "Clean blue theme, summary balance box"
+}

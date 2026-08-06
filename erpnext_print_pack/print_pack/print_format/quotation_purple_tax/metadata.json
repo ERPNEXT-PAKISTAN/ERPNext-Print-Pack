@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Quotation",
+  "slug": "quotation_purple_tax",
+  "doc_type": "Quotation",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cb9ec13e0f6732f635ca48ee79d0a7f2e37b2df6e474514900f082200463c863",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Installation Note",
+  "slug": "installation_note_stripe_clean",
+  "doc_type": "Installation Note",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5a5f74562d64a79e004767b5f67a246a2c88710e28c3e10a9396cc37218ef688",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

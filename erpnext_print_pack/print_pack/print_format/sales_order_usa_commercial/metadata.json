@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Sales Order",
+  "slug": "sales_order_usa_commercial",
+  "doc_type": "Sales Order",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "19f74a8d0341617bb647174f2a9f95d1ac8405cd3f760edf92d35a4ff306ec2d",
+  "description": "American red/blue stripe invoice"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Request for Quotation",
+  "slug": "request_for_quotation_gradient_vivid",
+  "doc_type": "Request for Quotation",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dbcbcb600c0597814a1d870f61d89940fe2c296f32b5950ef259aab7e8c0f951",
+  "description": "Colorful purple-pink gradient"
+}

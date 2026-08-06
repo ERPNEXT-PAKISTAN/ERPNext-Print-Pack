@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Job Card",
+  "slug": "job_card_yellow_sidebar",
+  "doc_type": "Job Card",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "70babd221643c10a616853ae398c33b59429477bed3ea6e34ec9657b7e0538a6",
+  "description": "Yellow accent stripe, structured metadata"
+}

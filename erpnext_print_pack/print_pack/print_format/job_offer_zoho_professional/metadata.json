@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Job Offer",
+  "slug": "job_offer_zoho_professional",
+  "doc_type": "Job Offer",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ba3b9b66f11abbc852527e5506c822d014d14cc4514a32ad53b147eca5a7d675",
+  "description": "Clean blue theme, summary balance box"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Material Request",
+  "slug": "material_request_ocean_vibrant",
+  "doc_type": "Material Request",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b74ba77ec6d854fb6e6915a04b430e8b8a38ce4d003596340754a7c6b7d8342d",
+  "description": "Bright cyan ocean theme"
+}

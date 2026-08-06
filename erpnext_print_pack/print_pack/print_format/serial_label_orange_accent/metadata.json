@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Serial Label",
+  "slug": "serial_label_orange_accent",
+  "doc_type": "Serial No",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "38f89f11e61d4384e5e16abd2b9bf5ceeebf739de4e16ec5b025c647012cefde",
+  "description": "Bold orange total bar, signature area"
+}

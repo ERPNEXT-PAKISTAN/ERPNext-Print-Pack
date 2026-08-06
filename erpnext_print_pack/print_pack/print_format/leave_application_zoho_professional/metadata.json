@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Leave Application",
+  "slug": "leave_application_zoho_professional",
+  "doc_type": "Leave Application",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6a3b8ae09f33eaceb2e7e63100604cd0ee2cf0e22dc0c20e7e7d25fb8603b9c4",
+  "description": "Clean blue theme, summary balance box"
+}

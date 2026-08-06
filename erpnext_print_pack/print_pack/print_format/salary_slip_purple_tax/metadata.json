@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Salary Slip",
+  "slug": "salary_slip_purple_tax",
+  "doc_type": "Salary Slip",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "22bb80296f8a6d59e569e45439d0cc5da64bbe1e2eaa55bca3c392cc99fe2dcb",
+  "description": "Formal tax invoice, purple accent, signature"
+}

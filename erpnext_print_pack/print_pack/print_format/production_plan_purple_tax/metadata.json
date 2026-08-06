@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Production Plan",
+  "slug": "production_plan_purple_tax",
+  "doc_type": "Production Plan",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "81d0dcd745063332d68e314ac3dd7f56bdf52ac42bbcdc211cac80bec22fed42",
+  "description": "Formal tax invoice, purple accent, signature"
+}

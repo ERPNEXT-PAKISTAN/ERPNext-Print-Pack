@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Installation Note",
+  "slug": "installation_note_gradient_vivid",
+  "doc_type": "Installation Note",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d05c2062617bb25d6285c3386dc62516925c314ca17bb093af23b04f722976ed",
+  "description": "Colorful purple-pink gradient"
+}

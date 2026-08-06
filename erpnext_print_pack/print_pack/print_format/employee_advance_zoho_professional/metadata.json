@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Employee Advance",
+  "slug": "employee_advance_zoho_professional",
+  "doc_type": "Employee Advance",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b8e2768bac3ec8aa0b2d7084364aa2973d5c4eeb8b57ee3256b0ff512ac3b768",
+  "description": "Clean blue theme, summary balance box"
+}

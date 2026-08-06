@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Quotation",
+  "slug": "quotation_vertex_classic",
+  "doc_type": "Quotation",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2168579629c0c43f8d7575ba45507ab7f2bd8833e720bdf0af31f8681fa2ee65",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

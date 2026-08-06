@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Purchase Invoice",
+  "slug": "purchase_invoice_orange_accent",
+  "doc_type": "Purchase Invoice",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "284500a9e48cca7371af797810b66dfa8daf798af67370e272f961325c41e1f3",
+  "description": "Bold orange total bar, signature area"
+}

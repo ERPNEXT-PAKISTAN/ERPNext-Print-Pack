@@ -1,0 +1,56 @@
+{# Specimen zatca_specimen · Pick List #}
+{% set title = "Pick List" %}
+{% set date_field = "posting_date" %}
+{% set doc_label = "Pick List" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.sp-root { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; color: #1f2937; }
+.sp-title { font-size: 32px; font-weight: 800; margin: 0 0 8px; }
+.sp-meta { color: #6b7280; font-size: 10px; } .sp-meta b { color: #111; }
+.sp-badge { width: 92px; height: 92px; border: 3px solid #7d579b; border-radius: 50%; text-align: center; margin-left: auto; font-weight: 800; color: #7d579b; padding-top: 26px; line-height: 1.2; font-size: 10px; }
+.sp-card { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; width: 48%; display: inline-block; vertical-align: top; min-height: 80px; }
+.sp-card .lbl { color: #7d579b; font-weight: 700; margin-bottom: 6px; }
+.sp-qr { width: 100px; height: 100px; border: 1px solid #e5e7eb; border-radius: 8px; margin: 0 auto; text-align: center; line-height: 100px; color: #9ca3af; }
+.sp-table { width: 100%; border-collapse: collapse; margin: 14px 0; }
+.sp-table th { background: #7d579b; color: #fff; padding: 8px 6px; text-align: left; font-size: 9px; }
+.sp-table td { padding: 7px 6px; border-bottom: 1px solid #e5e7eb; font-size: 9px; }
+.r { text-align: right; }
+.sp-bank { background: #f9fafb; border-radius: 10px; padding: 12px; border: 1px solid #e5e7eb; }
+.sp-bank .lbl { color: #7d579b; font-weight: 700; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+.print-format .sp-table > tbody > tr > td { padding: 7px 6px !important; }
+</style>
+<div class="sp-root print-format">
+<table style="width:100%;margin-bottom:16px"><tr>
+<td style="width:38%"><div class="sp-title">{{ doc_label }}</div>
+<div class="sp-meta">No <b>{{ doc.name }}</b><br>Date <b>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</b>
+{% if doc.due_date %}<br>Due <b>{{ frappe.utils.formatdate(doc.due_date) }}</b>{% endif %}</div></td>
+<td style="width:24%;text-align:center"><div class="sp-qr epp-qr qr">{% set qr = doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "" %}{% if not qr and doc.get("custom_fbr_invoice_no") %}{% set _fbr = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.custom_fbr_invoice_no, include_fbr_url=1) %}{% if _fbr %}{% set qr = _fbr.get("qr") or "" %}{% endif %}{% endif %}{% if qr %}<img src="{{ qr }}" style="width:96px;height:96px">{% else %}QR{% endif %}</div></td>
+<td style="width:38%"><div class="sp-badge">ZATCA<br><span style="font-size:8px">Compliant</span></div></td>
+</tr></table>
+<div style="margin-bottom:12px">
+<div class="sp-card"><div class="lbl">From / Billed by</div><strong>{{ doc.company or "" }}</strong><br><span style="color:#6b7280;font-size:9px">{{ doc.company_address_display or "" }}</span><br>VAT/TRN: {{ doc.company_tax_id or "" }}</div>
+<div class="sp-card" style="float:right"><div class="lbl">{{ party_label }}</div><strong>{{ party_name }}</strong><br><span style="color:#6b7280;font-size:9px">{{ party_address }}</span></div>
+</div>
+
+{% if doc.items %}<table class="sp-table"><thead><tr><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead><tbody>
+{% for row in doc.items %}<tr><td>{{ row.item_name or row.item_code or row.description or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td><td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td></tr>{% endfor %}
+</tbody></table>{% endif %}
+<div class="r" style="margin-top:8px"><strong>Total:</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<table style="width:100%;margin-top:12px"><tr>
+<td style="width:50%"><div class="sp-bank"><div class="lbl">Bank / Payment</div>{{ doc.get("custom_bank_name") or doc.get("mode_of_payment") or "—" }}<br>{{ doc.get("custom_iban") or "" }}</div></td>
+<td class="r" style="width:50%;vertical-align:top"><strong>Total</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.paid_amount or doc.total or "" }}</td>
+</tr></table>
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
+
+</div>

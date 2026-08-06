@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen POS Invoice",
+  "slug": "pos_invoice_zatca_specimen",
+  "doc_type": "POS Invoice",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b7fe70ddd3d38802fc9845815b3a3ec87387b451544a84d0bb580f6bdbac0563",
+  "description": "ZATCA E-Invoice Specimen"
+}

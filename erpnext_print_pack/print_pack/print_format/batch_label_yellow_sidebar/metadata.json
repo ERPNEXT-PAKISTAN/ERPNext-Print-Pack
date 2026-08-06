@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Batch Label",
+  "slug": "batch_label_yellow_sidebar",
+  "doc_type": "Batch",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "251c5aaf02045aa693cb5ee79f6eb1782a605ed932cbffe881ba5845d40be934",
+  "description": "Yellow accent stripe, structured metadata"
+}

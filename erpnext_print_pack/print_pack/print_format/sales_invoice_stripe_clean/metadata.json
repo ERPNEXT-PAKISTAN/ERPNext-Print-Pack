@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Sales Invoice",
+  "slug": "sales_invoice_stripe_clean",
+  "doc_type": "Sales Invoice",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8bd0ee5baf3ce7a6450be0756a8914da02f0b5437a36497560d0f8755ccd6ac5",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

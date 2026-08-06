@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Sales Invoice",
+  "slug": "sales_invoice_modern_qr",
+  "doc_type": "Sales Invoice",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8916da9314f509a01d7d8ebcd13f80690f5fa055d4e1aa4f4c97f379617b4411",
+  "description": "Minimal grid, QR payment block"
+}

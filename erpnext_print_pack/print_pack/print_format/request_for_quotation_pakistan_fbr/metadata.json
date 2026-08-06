@@ -1,0 +1,26 @@
+{
+  "name": "Pakistan FBR Request for Quotation",
+  "slug": "request_for_quotation_pakistan_fbr",
+  "doc_type": "Request for Quotation",
+  "theme": "pakistan_fbr",
+  "layout_family": "pakistan_fbr",
+  "layout_type": "regional",
+  "region": "PK",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "pakistan_fbr",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4f3014160380a329b2cb561c7eccf79528ee50fec56fac48a90df55821bc36c2",
+  "description": "Pakistan NTN/STRN sales tax invoice"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Delivery Note",
+  "slug": "delivery_note_dark_header_pro",
+  "doc_type": "Delivery Note",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c8d6927c97be02367c81c663343ab84106564f0fae2091ee1c224b5bc6d7a064",
+  "description": "Solid navy header bar, white INVOICE title"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Delivery Trip",
+  "slug": "delivery_trip_stripe_clean",
+  "doc_type": "Delivery Trip",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5316c93db7b3cf733ea61ef109fc1044a02ca6d2dfd5438d1b5026b6b4377864",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

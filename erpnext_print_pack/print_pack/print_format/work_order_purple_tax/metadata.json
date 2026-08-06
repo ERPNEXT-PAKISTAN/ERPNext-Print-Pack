@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Work Order",
+  "slug": "work_order_purple_tax",
+  "doc_type": "Work Order",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b911cad6119589042a828f139c98baefa710ec515e579446ebfbac504273fe90",
+  "description": "Formal tax invoice, purple accent, signature"
+}

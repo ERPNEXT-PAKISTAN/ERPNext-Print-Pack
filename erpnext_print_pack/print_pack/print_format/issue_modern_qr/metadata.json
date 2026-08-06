@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Issue",
+  "slug": "issue_modern_qr",
+  "doc_type": "Issue",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6fc76d62229e270463e5889b57a779d783a1ce4df8585e0a2921fcf7909d587c",
+  "description": "Minimal grid, QR payment block"
+}

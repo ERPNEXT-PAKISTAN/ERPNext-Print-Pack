@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA Thermal Receipt Sales Invoice",
+  "slug": "sales_invoice_zatca_thermal",
+  "doc_type": "Sales Invoice",
+  "theme": "zatca_thermal",
+  "layout_family": "zatca_thermal",
+  "layout_type": "thermal",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ccbf618b3778cc6675e5b3a8a298053760a546d5e048524292d215524b966ccc",
+  "description": "ZATCA Thermal Receipt"
+}

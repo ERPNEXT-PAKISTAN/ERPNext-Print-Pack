@@ -1,0 +1,54 @@
+{# Premium layout: purple_tax · Issue #}
+{% set title = "Issue" %}
+{% set date_field = "opening_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; color: #333; }
+.pt-title { text-align: center; font-size: 20px; font-weight: 700; color: #7c3aed; border-bottom: 2px solid #7c3aed; padding-bottom: 8px; margin-bottom: 14px; }
+.pt-tax-id { text-align: center; font-size: 9px; color: #666; margin-bottom: 12px; }
+.pt-grid td { border: 1px solid #ddd6fe; padding: 8px; vertical-align: top; width: 50%; }
+.items { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.items th { background: #7c3aed; color: #fff; padding: 7px; border: 1px solid #6d28d9; }
+.items td { border: 1px solid #ddd6fe; padding: 6px; }
+.totals { width: 45%; margin-left: auto; margin-top: 10px; }
+.totals .grand td { background: #ede9fe; color: #5b21b6; font-weight: 700; }
+.pt-sig { margin-top: 24px; text-align: right; }
+.pt-sig .line { border-top: 1px solid #7c3aed; width: 180px; margin-left: auto; padding-top: 4px; font-size: 9px; color: #7c3aed; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="pt-title">TAX {{ title|upper }}</div>
+<div class="pt-tax-id">{% if doc.company_tax_id %}Tax Reg: {{ doc.company_tax_id }}{% endif %} {% if doc.tax_id %} · Customer Tax ID: {{ doc.tax_id }}{% endif %}</div>
+<table class="pt-grid" style="width:100%"><tr>
+<td><strong>From:</strong> {{ doc.company or "" }}<br>{{ doc.company_address_display or "" }}</td>
+<td><strong>{{ party_label }}:</strong> {{ party_name }}<br>{{ party_address }}<br>
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("opening_date")) if doc.get("opening_date") else "" }}</td></tr>
+
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</td>
+</tr></table>
+
+<table class="totals">
+<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
+</table>
+
+<div class="pt-sig"><div class="line">Authorized Signatory</div></div>
+
+
+</div>

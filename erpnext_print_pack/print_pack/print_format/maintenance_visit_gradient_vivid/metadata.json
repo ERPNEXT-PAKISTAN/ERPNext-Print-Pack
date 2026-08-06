@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Maintenance Visit",
+  "slug": "maintenance_visit_gradient_vivid",
+  "doc_type": "Maintenance Visit",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4eecf586c7069d6b5dd3f20652f96f8c644da17fe26aff9a3678add13cfe239a",
+  "description": "Colorful purple-pink gradient"
+}

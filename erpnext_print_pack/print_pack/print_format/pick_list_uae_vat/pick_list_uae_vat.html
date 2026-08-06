@@ -1,0 +1,62 @@
+{# Premium layout: uae_vat · Pick List #}
+{% set title = "Pick List" %}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; color: #333; }
+.uae-stripe { height: 6px; background: linear-gradient(90deg, #00732f 33%, #fff 33%, #fff 66%, #ff0000 66%); margin-bottom: 12px; }
+.uae-head { border-bottom: 3px solid #00732f; padding-bottom: 12px; margin-bottom: 14px; }
+.uae-head h1 { margin: 0; color: #00732f; font-size: 22px; }
+.uae-trn { background: #ecfdf5; border-left: 4px solid #00732f; padding: 8px 12px; margin-bottom: 12px; }
+.uae-cols td { width: 50%; padding: 10px; vertical-align: top; background: #f8fafc; border: 1px solid #e2e8f0; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #00732f; color: #fff; padding: 8px; }
+.items td { padding: 7px; border-bottom: 1px solid #e2e8f0; }
+.totals { width: 44%; margin-left: auto; margin-top: 12px; background: #00732f; color: #fff; padding: 12px; border-radius: 4px; }
+.totals td { color: #fff; padding: 4px 0; border: none; }
+.totals .grand td { font-size: 14px; font-weight: 700; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 8px; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="uae-stripe"></div>
+<div class="uae-head"><h1>Tax Invoice — {{ title }}</h1><div>{{ doc.company or "" }} · {{ doc.name }}</div></div>
+<div class="uae-trn"><strong>TRN:</strong> {{ doc.company_tax_id or "" }} &nbsp; <strong>Customer TRN:</strong> {{ doc.tax_id or "" }}</div>
+<table style="width:100%"><tr class="uae-cols">
+<td><strong>Supplier</strong><br>{{ doc.company_address_display or "" }}</td>
+<td><strong>{{ party_label }}</strong><br>{{ party_name }}<br>{{ party_address }}</td>
+</tr></table>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<table class="totals"><tr class="grand"><td>Total incl. VAT</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table>
+<div class="epp-sig sig">Authorized Signature _________________________</div><div class="epp-footer footer">Thank you for your business</div>
+
+</div>

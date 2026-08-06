@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Issue",
+  "slug": "issue_zoho_professional",
+  "doc_type": "Issue",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ee0433af6a6260985148083c1718fc2126be4a5dc6339ae6f6794b82ffef5d9e",
+  "description": "Clean blue theme, summary balance box"
+}

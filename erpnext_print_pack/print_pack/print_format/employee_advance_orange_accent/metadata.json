@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Employee Advance",
+  "slug": "employee_advance_orange_accent",
+  "doc_type": "Employee Advance",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1dcd52c38015bed794358e6b9a88543b950c8d6ffaedafd978dcda7915c24f76",
+  "description": "Bold orange total bar, signature area"
+}

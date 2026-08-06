@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Job Card",
+  "slug": "job_card_stripe_clean",
+  "doc_type": "Job Card",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2a367b76b22304bbe095ba526b9dceb164f9e3f99d8027e2e5bd8939a08f4c15",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

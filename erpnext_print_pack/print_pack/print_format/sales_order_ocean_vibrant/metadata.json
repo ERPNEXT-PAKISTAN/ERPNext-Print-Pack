@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Sales Order",
+  "slug": "sales_order_ocean_vibrant",
+  "doc_type": "Sales Order",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9cbfafa08e2a74b4949883b5cb5eb79626111ce63e477a98a74e000a2c97f872",
+  "description": "Bright cyan ocean theme"
+}

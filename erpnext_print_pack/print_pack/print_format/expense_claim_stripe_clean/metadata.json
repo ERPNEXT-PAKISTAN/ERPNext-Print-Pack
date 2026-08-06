@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Expense Claim",
+  "slug": "expense_claim_stripe_clean",
+  "doc_type": "Expense Claim",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "086bdbc8233dca15e55c23b6f851a7623c4998c370364d6ec8bff133b7f8f0eb",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

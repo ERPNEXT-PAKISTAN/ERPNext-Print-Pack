@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Pick List",
+  "slug": "pick_list_orange_accent",
+  "doc_type": "Pick List",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d1afa233779c44c71f3ebdcdbdf74b650aeedfbe91b0477f9d63f286b9e21f31",
+  "description": "Bold orange total bar, signature area"
+}

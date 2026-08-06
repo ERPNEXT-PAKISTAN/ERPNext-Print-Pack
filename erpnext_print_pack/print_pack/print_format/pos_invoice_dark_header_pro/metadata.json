@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro POS Invoice",
+  "slug": "pos_invoice_dark_header_pro",
+  "doc_type": "POS Invoice",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "70964818b7c9a33422abcc148c9823a6ec5365591ca9398af6b91f0c2d4d9bce",
+  "description": "Solid navy header bar, white INVOICE title"
+}

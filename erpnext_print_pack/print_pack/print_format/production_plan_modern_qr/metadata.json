@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Production Plan",
+  "slug": "production_plan_modern_qr",
+  "doc_type": "Production Plan",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "45631318992eba180907e82961e943b51d32fa3c15eaa8337c4655ca73da17ae",
+  "description": "Minimal grid, QR payment block"
+}

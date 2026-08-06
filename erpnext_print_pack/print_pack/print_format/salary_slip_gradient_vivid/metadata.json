@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Salary Slip",
+  "slug": "salary_slip_gradient_vivid",
+  "doc_type": "Salary Slip",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8fffaabde783d6ee1a8af6ebd0a8f3704f5f1b06cd6d990ae4186e1c6b268fa0",
+  "description": "Colorful purple-pink gradient"
+}

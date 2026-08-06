@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Bill of Materials",
+  "slug": "bom_crimson_shop",
+  "doc_type": "BOM",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5113a2152118b7346c0a8e74897aa336259740b2070df55d04b42623f115a1f8",
+  "description": "Bold red retail"
+}

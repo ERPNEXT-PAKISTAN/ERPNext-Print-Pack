@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Production Plan",
+  "slug": "production_plan_ocean_vibrant",
+  "doc_type": "Production Plan",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d96f81251e277a9a964bb46967b0b9844ae631cbde7440e586ee6979c24b7e42",
+  "description": "Bright cyan ocean theme"
+}

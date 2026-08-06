@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Purchase Order",
+  "slug": "purchase_order_yellow_sidebar",
+  "doc_type": "Purchase Order",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "38f78c5c94ce9f3c57bb659d01046128c5010dab7e7390f9ef4ccd4fe55851e7",
+  "description": "Yellow accent stripe, structured metadata"
+}

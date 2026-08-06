@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Salary Slip",
+  "slug": "salary_slip_zoho_professional",
+  "doc_type": "Salary Slip",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ea0a5346ebe4ecb528e3bcc6843a2a14f268e76a00cff53b6d2a6342a6c1e46a",
+  "description": "Clean blue theme, summary balance box"
+}

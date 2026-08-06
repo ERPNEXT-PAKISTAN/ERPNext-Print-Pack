@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Employee Advance",
+  "slug": "employee_advance_gradient_vivid",
+  "doc_type": "Employee Advance",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fdeae52e5cbfbf6b1aff720e360a063a7419963e2918e7e94954d4652ef9cde3",
+  "description": "Colorful purple-pink gradient"
+}

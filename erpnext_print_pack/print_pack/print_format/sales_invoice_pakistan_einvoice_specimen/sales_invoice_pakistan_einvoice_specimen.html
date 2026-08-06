@@ -1,0 +1,31 @@
+{# Pakistan E-Invoice Specimen #}
+{% set ACCENT = "#01411c" %}
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.zs-root { font-family: Arial, sans-serif; font-size: 10px; color: #1f2937; }
+.zs-title { font-size: 34px; font-weight: 800; margin: 0 0 10px; }
+.zs-meta { color: #6b7280; } .zs-meta span { color: #111; font-weight: 600; margin-left: 6px; }
+.zs-badge { width: 96px; height: 96px; border: 3px solid {{ ACCENT }}; border-radius: 50%; margin-left: auto; text-align: center; font-weight: 800; font-size: 12px; padding-top: 32px; color: {{ ACCENT }}; }
+.zs-card { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 14px; width: 48%; display: inline-block; vertical-align: top; }
+.zs-card .lbl { color: {{ ACCENT }}; font-weight: 700; margin-bottom: 6px; }
+.zs-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+.zs-table th { background: {{ ACCENT }}; color: #fff; padding: 9px 6px; text-align: left; }
+.zs-table td { padding: 8px 6px; border-bottom: 1px solid #bbf7d0; }
+.r { text-align: right; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+</style>
+<div class="zs-root print-format">
+<table style="width:100%;margin-bottom:18px"><tr>
+<td style="width:40%"><h1 class="zs-title">E-invoice</h1><div class="zs-meta">Invoice#<span>{{ doc.name }}</span><br>Date<span>{{ frappe.utils.formatdate(doc.posting_date) }}</span></div></td>
+<td style="width:20%;text-align:center"><div class="epp-qr qr" style="width:100px;height:100px;border:1px dashed #01411c;border-radius:8px;line-height:100px;margin:0 auto">QR</div></td>
+<td style="width:40%"><div class="zs-badge">FBR<br>PK</div></td>
+</tr></table>
+<div class="zs-card"><div class="lbl">Billed by</div><strong>{{ doc.company or "" }}</strong><br><span style="font-size:9px;color:#666">{{ doc.company_address_display or "" }}</span><br>NTN: {{ doc.company_tax_id or "" }}</div>
+<div class="zs-card" style="float:right"><div class="lbl">Billed to</div><strong>{{ doc.customer_name or doc.customer or "" }}</strong><br>{{ doc.address_display or "" }}</div>
+{% if doc.items %}<table class="zs-table"><thead><tr><th>Item</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead><tbody>
+{% for row in doc.items %}<tr><td>{{ row.item_name or row.item_code or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td><td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td></tr>{% endfor %}
+</tbody></table>{% endif %}
+<table style="width:100%"><tr><td style="width:50%"><div style="background:#f0fdf4;border-radius:10px;padding:12px;border:1px solid #bbf7d0"><strong style="color:{{ ACCENT }}">Bank details</strong><br>{{ doc.get("custom_bank_name") or "" }}</div></td>
+<td class="r" style="width:50%"><strong>Total</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table>
+{% if doc.in_words %}<div class="epp-words words" style="margin-top:10px;font-style:italic;color:#666">{{ doc.in_words }}</div>{% endif %}
+</div>

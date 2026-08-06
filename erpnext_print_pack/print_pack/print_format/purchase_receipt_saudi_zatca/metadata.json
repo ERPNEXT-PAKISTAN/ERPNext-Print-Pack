@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Purchase Receipt",
+  "slug": "purchase_receipt_saudi_zatca",
+  "doc_type": "Purchase Receipt",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0513d1841fa6d46eabecf20bf4ece44f12b6c3426a4684a33c26689025efcacd",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

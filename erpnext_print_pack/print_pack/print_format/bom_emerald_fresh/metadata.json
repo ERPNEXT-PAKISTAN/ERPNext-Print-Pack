@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Bill of Materials",
+  "slug": "bom_emerald_fresh",
+  "doc_type": "BOM",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "78332fd2b6fd46f4d5606b82a9f597c449a5d1b11e474fe981fe4b4456eaa7e9",
+  "description": "Bright green modern"
+}

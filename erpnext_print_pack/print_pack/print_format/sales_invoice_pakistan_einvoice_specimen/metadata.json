@@ -1,0 +1,10 @@
+{
+ "name": "Pakistan E-Invoice Specimen",
+ "slug": "sales_invoice_pakistan_einvoice_specimen",
+ "doc_type": "Sales Invoice",
+ "layout_family": "pakistan_einvoice_specimen",
+ "layout_type": "regional",
+ "region": "PK",
+ "status": "stable",
+ "description": "Pakistan FBR e-invoice specimen — green card layout"
+}

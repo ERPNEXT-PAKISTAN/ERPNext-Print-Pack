@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Stock Entry",
+  "slug": "stock_entry_yellow_sidebar",
+  "doc_type": "Stock Entry",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "43187ab14c563b9d1b4e3d37399423d8f73f64a0030859941a593187ac5d6740",
+  "description": "Yellow accent stripe, structured metadata"
+}

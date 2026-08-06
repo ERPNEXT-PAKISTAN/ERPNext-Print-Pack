@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Salary Slip",
+  "slug": "salary_slip_vertex_classic",
+  "doc_type": "Salary Slip",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b1a14f765f0fff2e5e0de66b568ef470fa8bdb76019c78e03fa28b3c2e3c60a7",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

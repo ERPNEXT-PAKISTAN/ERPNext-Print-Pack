@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Quotation",
+  "slug": "quotation_yellow_sidebar",
+  "doc_type": "Quotation",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6d2b02b1a6134bd3fb105b2811d99604ea991120816a240b999600bb9d6c863d",
+  "description": "Yellow accent stripe, structured metadata"
+}

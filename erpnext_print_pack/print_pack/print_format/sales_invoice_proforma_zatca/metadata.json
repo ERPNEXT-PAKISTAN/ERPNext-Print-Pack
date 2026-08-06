@@ -1,0 +1,27 @@
+{
+  "name": "Proforma ZATCA Sales Invoice",
+  "slug": "sales_invoice_proforma_zatca",
+  "doc_type": "Sales Invoice",
+  "theme": "proforma_zatca",
+  "layout_family": "proforma_zatca",
+  "layout_type": "proforma",
+  "region": "SA",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_zatca",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "31cde231c862c81f701863104dbd9f94410fc95d9669e340f816dc62718b88a3",
+  "description": "Proforma ZATCA"
+}

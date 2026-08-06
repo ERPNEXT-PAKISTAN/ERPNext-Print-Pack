@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Material Request",
+  "slug": "material_request_crimson_shop",
+  "doc_type": "Material Request",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6c9a2aed684cb81c042b2122314753c9e4368f3975a93ec85bc5e426314758d0",
+  "description": "Bold red retail"
+}

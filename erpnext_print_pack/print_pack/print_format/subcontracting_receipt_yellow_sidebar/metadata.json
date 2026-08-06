@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Subcontracting Receipt",
+  "slug": "subcontracting_receipt_yellow_sidebar",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "630b659ed664f773ce83293873f4be24bb328b5cfbcfc084f85a959fcf3cd6f3",
+  "description": "Yellow accent stripe, structured metadata"
+}

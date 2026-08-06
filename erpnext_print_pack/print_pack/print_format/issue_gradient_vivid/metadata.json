@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Issue",
+  "slug": "issue_gradient_vivid",
+  "doc_type": "Issue",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9edad503076e545bcf11c8c061cd51b93c153bd975190b250a939582b7cbbc7a",
+  "description": "Colorful purple-pink gradient"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Job Offer",
+  "slug": "job_offer_modern_qr",
+  "doc_type": "Job Offer",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dae1ad0ac7c4b81f003afdb9f1960eae4601a0983bd99c1c68fa957f721c5820",
+  "description": "Minimal grid, QR payment block"
+}

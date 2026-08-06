@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Purchase Order",
+  "slug": "purchase_order_purple_tax",
+  "doc_type": "Purchase Order",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ee9dfeffcf978621039d54d0fa0280eb92d05dd9f1d10cbb59979514c103505e",
+  "description": "Formal tax invoice, purple accent, signature"
+}

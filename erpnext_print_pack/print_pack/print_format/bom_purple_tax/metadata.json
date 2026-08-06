@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Bill of Materials",
+  "slug": "bom_purple_tax",
+  "doc_type": "BOM",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f7d69eec8e5261e29784f6bf681314f79c46dcbb470ab944a4d8f92f15ca5f30",
+  "description": "Formal tax invoice, purple accent, signature"
+}

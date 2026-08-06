@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Timesheet",
+  "slug": "timesheet_purple_tax",
+  "doc_type": "Timesheet",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "06ae74caa6b1f467197d770e5b618a5f84475889c49d2ea3dcdd2d3dcfaa1985",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,18 @@
+{
+ "app": "erpnext_print_pack",
+ "bg_color": "purple",
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "App",
+ "idx": 0,
+ "label": "Print Pack",
+ "link": "/app/print-format-browser",
+ "link_type": "External",
+ "logo_url": "/assets/erpnext_print_pack/images/print_pack_logo.svg",
+ "name": "Print Pack",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "Print Pack",
+ "standard": 1
+}

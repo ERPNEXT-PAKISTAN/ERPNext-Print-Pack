@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Request for Quotation",
+  "slug": "request_for_quotation_zoho_professional",
+  "doc_type": "Request for Quotation",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4d57c648674372444f1d0347e86ac79d15455a8f8ed36778a643a0d5fa5568f2",
+  "description": "Clean blue theme, summary balance box"
+}

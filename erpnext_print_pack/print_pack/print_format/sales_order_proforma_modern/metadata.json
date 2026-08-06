@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Modern Sales Order",
+  "slug": "sales_order_proforma_modern",
+  "doc_type": "Sales Order",
+  "theme": "proforma_modern",
+  "layout_family": "proforma_modern",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_modern",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c710c6fde820ed856d45d780c8e9565d70208c06831a876232411f8546b4611e",
+  "description": "Proforma Modern"
+}

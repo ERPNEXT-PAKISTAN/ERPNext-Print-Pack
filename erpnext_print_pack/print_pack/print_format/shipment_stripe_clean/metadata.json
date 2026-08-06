@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Shipment",
+  "slug": "shipment_stripe_clean",
+  "doc_type": "Shipment",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "297dce792ceaeca3f2d51953e7e52c91644120fdc047f60ea78d529ee66b63d7",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

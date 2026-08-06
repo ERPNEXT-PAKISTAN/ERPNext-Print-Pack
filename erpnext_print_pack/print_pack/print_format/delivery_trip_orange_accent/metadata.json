@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Delivery Trip",
+  "slug": "delivery_trip_orange_accent",
+  "doc_type": "Delivery Trip",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "aed0b95bd352bf208aa2502f6429a5e354b4778091a2e9459da391ac61128e2d",
+  "description": "Bold orange total bar, signature area"
+}

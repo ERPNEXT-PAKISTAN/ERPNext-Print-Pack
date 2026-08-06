@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Production Plan",
+  "slug": "production_plan_zoho_professional",
+  "doc_type": "Production Plan",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7212d322e1b186509cdb5cc33f328eda9314e885db8fe1a0517f90206d840ebe",
+  "description": "Clean blue theme, summary balance box"
+}

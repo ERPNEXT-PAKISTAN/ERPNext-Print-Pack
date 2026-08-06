@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Stock Entry",
+  "slug": "stock_entry_dark_header_pro",
+  "doc_type": "Stock Entry",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3424665a56c0026fee0609d1db84eaa529cd20bdfad5146c45f0fdce5ea0da92",
+  "description": "Solid navy header bar, white INVOICE title"
+}

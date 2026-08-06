@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none">
+  <rect width="800" height="560" fill="#f3f4f6"/>
+  <rect x="40" y="40" width="720" height="480" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="60" y="60" width="680" height="64" fill="#fff" stroke="#111" stroke-width="2"/>
+  <text x="76" y="92" fill="#111827" font-family="Arial,sans-serif" font-size="18" font-weight="700">TAX INVOICE</text>
+  <text x="76" y="112" fill="#374151" font-family="Arial,sans-serif" font-size="12">NTN: 1234567-8</text>
+  <rect x="60" y="140" width="310" height="88" fill="#fff" stroke="#111"/>
+  <rect x="390" y="140" width="310" height="88" fill="#fff" stroke="#111"/>
+  <rect x="60" y="250" width="640" height="30" fill="#f4f4f4" stroke="#111"/>
+  <rect x="60" y="280" width="640" height="34" fill="#fff" stroke="#111"/>
+  <rect x="60" y="314" width="640" height="34" fill="#fafafa" stroke="#111"/>
+  <rect x="500" y="370" width="200" height="72" fill="#fff" stroke="#111"/>
+  <rect x="60" y="460" width="120" height="120" rx="10" fill="#fff" stroke="#37a66b" stroke-width="3"/>
+  <rect x="72" y="472" width="96" height="96" rx="6" fill="#ecfdf3"/>
+  <text x="120" y="528" text-anchor="middle" fill="#37a66b" font-family="Arial,sans-serif" font-size="14" font-weight="700">FBR QR</text>
+  <rect x="220" y="500" width="280" height="36" fill="#111" opacity="0.85"/>
+  <text x="360" y="524" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="11">FBR Pakistan-1 · custom_fbr_invoice_no</text>
+</svg>

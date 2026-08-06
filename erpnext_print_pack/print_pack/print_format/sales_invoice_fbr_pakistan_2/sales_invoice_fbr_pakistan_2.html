@@ -1,0 +1,302 @@
+<style>
+body{font-family:Arial,sans-serif;font-size:11px;color:#000;margin:0;padding:12px;}
+.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.header-left{flex:1;}
+.header-right{text-align:right;}
+.meta{line-height:1.5;margin-bottom:6px;}
+.meta div{margin-bottom:2px;}
+.bold{font-weight:bold;}
+.right{text-align:right;}
+.center{text-align:center;}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px;}
+th,td{border:1px solid #000;padding:5px;}
+th{background:#f4f4f4;font-weight:bold;}
+
+.party-two-col{display:flex;justify-content:space-between;gap:20px;margin-bottom:12px;}
+.party-box{width:48%;border:1px solid #000;padding:8px;}
+.party-box .title{font-weight:bold;margin-bottom:6px;}
+
+.two-col{display:flex;gap:20px;margin-top:10px;}
+.totals-box{flex:1;max-width:280px;margin-left:auto;}
+.totals-box table{border:1px solid #000;}
+.totals-box td{border:none;border-bottom:1px solid #ddd;padding:0 4px;line-height:0.95;}
+.totals-box tr:last-child td{border-bottom:none;}
+
+.tax-summary{margin-top:12px;}
+.tax-summary h4{margin:0 0 1px 0;font-size:12px;}
+.tax-summary table{margin-top:1px;}
+.tax-summary th,.tax-summary td{padding:1px 3px;line-height:0.95;}
+
+.notes{margin-top:12px;padding:6px 0;border-top:1px solid #ddd;}
+
+/* LETTERHEAD */
+.letterhead{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border-bottom:2px solid #000;
+  padding-bottom:8px;
+  margin-bottom:10px;
+}
+.letterhead img{max-height:60px;}
+.company-name{font-size:16px;font-weight:bold;line-height:1.2;}
+.trn{margin-top:1px;}
+.letterhead-title{margin-left:auto;font-size:18px;font-weight:700;text-align:right;}
+
+/* BANK: tight lines */
+.bank-lines{margin-top:6px;}
+.bank-lines .row{display:flex;gap:10px;line-height:1.15;margin:0;padding:0;}
+.bank-lines .lbl{min-width:110px;font-weight:bold;}
+.bank-lines .val{flex:1;}
+
+/* QR + BARCODE */
+.fbr-qr-row{
+  margin-top:18px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.fbr-qr-img{width:140px;height:140px;display:block;}
+.fbr-qr-text{font-size:12px;color:#666;}
+.fbr-barcode{margin-top:10px;}
+.fbr-barcode img{width:220px;height:13mm;display:block;}
+.top-barcode{margin-top:6px;text-align:right;}
+.top-barcode img{width:220px;height:13mm;display:block;margin-left:auto;}
+.bank-qr-row{margin-top:12px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;}
+.bank-qr-row .bank-side{flex:1;min-width:0;}
+.bank-qr-row .qr-side{display:flex;gap:8px;padding:8px;border:2px solid #37a66b;border-radius:10px;background:#fff;flex-shrink:0;}
+.bank-qr-row .qr-box{width:90px;height:90px;border:1px solid #e5e7eb;border-radius:6px;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;}
+.bank-qr-row .qr-box.logo-box{background:#f8fafc;}
+.bank-qr-row .qr-box img{max-width:84px;max-height:84px;object-fit:contain;}
+.totals-notes{flex:1;margin:0;padding:0;border-top:none;align-self:flex-end;}
+.bank-qr-wrap{margin-top:4px;border-top:none;padding-top:0;}
+.bank-qr-wrap .bank-qr-row{margin-top:0;}
+.closing-signature{margin-top:14px;line-height:1.5;}
+</style>
+
+{# ============================================================
+   TOTALS FROM ITEM CUSTOM FIELDS
+   ============================================================ #}
+{% set ns = namespace(taxable_sum=0, tax_sum=0, rate_sum=0, rate_count=0) %}
+{% for item in doc.items %}
+  {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
+  {% set item_tax = (item.custom_sales_tax or 0) %}
+  {% set item_rate = (item.custom_sales_tax_rate or 0) %}
+
+  {% set ns.taxable_sum = ns.taxable_sum + (taxable or 0) %}
+  {% set ns.tax_sum = ns.tax_sum + (item_tax or 0) %}
+
+  {% if item_rate and item_rate > 0 %}
+    {% set ns.rate_sum = ns.rate_sum + item_rate %}
+    {% set ns.rate_count = ns.rate_count + 1 %}
+  {% endif %}
+{% endfor %}
+{% set avg_tax_rate = (ns.rate_sum / ns.rate_count) if ns.rate_count > 0 else 0 %}
+
+{# ============================================================
+   QR + BARCODE AS DATA URI (PDF SAFE)
+   NOTE: NO "your_app" USED HERE
+   ============================================================ #}
+{% set qr_data_uri = "" %}
+{% set bc_data_uri = "" %}
+{% if doc.custom_fbr_invoice_no %}
+  {% set payload = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.custom_fbr_invoice_no) %}
+  {% if payload %}
+    {% set qr_data_uri = payload.get("qr") or "" %}
+    {% set bc_data_uri = payload.get("barcode") or "" %}
+  {% endif %}
+{% endif %}
+
+{% macro format_address_block(address_text) -%}
+  {% set cleaned = (address_text or "")
+    .replace(", TRN, Phone", "")
+    .replace("TRN, Phone", "")
+    .replace(", TRN", "")
+    .replace("<br>TRN<br>Phone", "")
+    .replace("<br>TRN", "")
+    .replace("
+", "<br>") %}
+  {% set ns = namespace(parts=[]) %}
+  {% for raw_part in cleaned.split("<br>") %}
+    {% set part = raw_part.strip(" ,") %}
+    {% if part %}
+      {% set _ = ns.parts.append(part) %}
+    {% endif %}
+  {% endfor %}
+  {% if ns.parts %}
+    {{ ns.parts[:4] | join(", ") }}
+    {% if ns.parts|length > 4 %}<br>{{ ns.parts[4:] | join("<br>") }}{% endif %}
+  {% endif %}
+{%- endmacro %}
+{% macro tax_type_label(item, tax_rate) -%}
+  {% set template_name = (item.item_tax_template or "")|lower %}
+  {% if "zero" in template_name %}
+    Zero Rated
+  {% elif "exempt" in template_name %}
+    Exempt
+  {% elif tax_rate and tax_rate > 0 %}
+    Sales Tax ({{ "{:,.2f}".format(tax_rate or 0) }}%)
+  {% elif item.item_tax_template %}
+    {{ item.item_tax_template }}
+  {% else %}
+    Sales Tax
+  {% endif %}
+{%- endmacro %}
+
+<!-- LETTERHEAD -->
+<div class="letterhead">
+  {% set logo = frappe.db.get_value("Company", doc.company, "company_logo") %}
+  {% if logo and not frappe.db.exists("File", {"file_url": logo}) %}
+    {% set logo = "" %}
+  {% endif %}
+  {% if logo %}
+    <img src="{{ logo }}">
+  {% endif %}
+  <div>
+    <div class="company-name">{{ doc.company }}</div>
+    <div class="trn">NTN: {{ doc.company_tax_id }}</div>
+  </div>
+  <div class="letterhead-title">TAX INVOICE</div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="meta">
+      <div><span class="bold">Invoice Date</span> : {{ frappe.utils.formatdate(doc.posting_date or doc.creation, "dd-MM-yyyy") }}</div>
+      <div><span class="bold">Terms</span> : {{ doc.payment_terms_template or "Due on Receipt" }}</div>
+      <div><span class="bold">P.O. Date</span> : {{ frappe.utils.formatdate(doc.po_date, "dd-MM-yyyy") if doc.po_date else "" }}</div>
+      <div><span class="bold">P.O.#</span> : {{ doc.po_no or "" }}</div>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div><span class="bold">Invoice No:</span> {{ doc.name }}</div>
+    <div><span class="bold">FBR Invoice No:</span> {{ doc.custom_fbr_invoice_no or "" }}</div>
+    {% if bc_data_uri %}
+      <div class="top-barcode">
+        <img src="{{ bc_data_uri }}" alt="FBR Barcode">
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<!-- COMPANY & CUSTOMER -->
+<div class="party-two-col">
+  <div class="party-box">
+    <div class="title">Company</div>
+    <div class="bold" style="font-size:13px;">{{ doc.company }}</div>
+    <div>{{ format_address_block(doc.company_address_display) }}</div>
+  </div>
+
+  <div class="party-box">
+    <div class="title">Customer</div>
+    <div class="bold" style="font-size:13px;">{{ doc.customer_name }}</div>
+    <div>{{ format_address_block(doc.address_display) }}</div>
+    <div>NTN: {{ doc.customer_tax_id or doc.tax_id or "" }}</div>
+    {% if doc.contact_mobile %}
+      <div>Mobile: {{ doc.contact_mobile }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- ITEMS TABLE -->
+<table>
+  <thead>
+    <tr>
+      <th style="width:25px;">#</th>
+      <th style="width:36%;">Item</th>
+      <th style="width:70px;">Qty</th>
+      <th style="width:70px;">Rate</th>
+      <th style="width:80px;">Taxable</th>
+      <th style="width:60px;">Tax %</th>
+      <th style="width:70px;">Tax</th>
+      <th style="width:80px;">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in doc.items %}
+      {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
+      {% set item_tax_rate = (item.custom_sales_tax_rate or 0) %}
+      {% set item_tax = (item.custom_sales_tax or 0) %}
+      {% set line_total = (taxable or 0) + (item_tax or 0) %}
+      {% set uom = (item.uom or "") %}
+
+      <tr>
+        <td class="center">{{ loop.index }}</td>
+        <td><div style="font-size:9px;font-weight:400;line-height:1.1;white-space:normal;word-wrap:break-word;overflow-wrap:anywhere;">{{ item.item_name }}</div>{% if item.item_code %}<div style="font-size:8px;font-weight:400;color:#555;line-height:1.1;white-space:normal;word-wrap:break-word;overflow-wrap:anywhere;">{{ item.item_code }}</div>{% endif %}</td>
+        <td class="right">{{ "{:,.2f}".format(item.qty or 0) }}{% if uom %}<br>{{ uom }}{% endif %}</td>
+        <td class="right">{{ "{:,.2f}".format(item.rate or 0) }}</td>
+        <td class="right">{{ "{:,.2f}".format(taxable or 0) }}</td>
+        <td class="right">{{ "{:,.2f}".format(item_tax_rate) }}%</td>
+        <td class="right">{{ "{:,.2f}".format(item_tax) }}</td>
+        <td class="right">{{ "{:,.2f}".format(line_total) }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- TOTALS -->
+<div class="two-col">
+  <div class="notes totals-notes"><b>Notes</b><br>Thanks for your business.</div>
+  <div class="totals-box">
+    <table>
+      <tr>
+        <td>Sub Total</td>
+        <td class="right">{{ "{:,.2f}".format(ns.taxable_sum or 0) }}</td>
+      </tr>
+      <tr>
+        <td>Standard Rate (Avg {{ "{:,.2f}".format(avg_tax_rate) }}%)</td>
+        <td class="right">{{ "{:,.2f}".format(ns.tax_sum or 0) }}</td>
+      </tr>
+      <tr>
+        <td class="bold">Total {{ doc.currency }}</td>
+        <td class="right bold">{{ "{:,.2f}".format(doc.grand_total or 0) }}</td>
+      </tr>
+      <tr>
+        <td class="bold">Balance Due {{ doc.currency }}</td>
+        <td class="right bold">{{ "{:,.2f}".format(doc.outstanding_amount or doc.grand_total or 0) }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="bank-qr-wrap">
+  <!-- BANK ACCOUNT + QR -->
+{% set bank = frappe.get_all("Bank Account",
+  filters={"company": doc.company, "is_company_account": 1},
+  fields=["account_name","bank","bank_account_no","iban"],
+  limit=1) %}
+
+{% if bank or doc.custom_fbr_invoice_no %}
+  <div class="bank-qr-row">
+    {% if bank %}
+      <div class="bank-side">
+        <b>Bank Account for Payment.</b>
+        <div class="bank-lines">
+          <div class="row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
+          <div class="row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
+          <div class="row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
+        </div>
+      </div>
+    {% endif %}
+    {% if doc.custom_fbr_invoice_no %}
+      <div class="qr-side">
+        <div class="qr-box logo-box">
+          <img src="/assets/erpnext_print_pack/images/fbr_di_badge.svg" alt="DI Invoicing" onerror="this.style.display='none'">
+        </div>
+        <div class="qr-box">
+          {% if qr_data_uri %}<img src="{{ qr_data_uri }}" alt="FBR QR">{% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+</div>
+
+<div class="closing-signature">
+  Thanking You,<br>
+  For {{ doc.company }}<br><br><br>
+  Director
+</div>

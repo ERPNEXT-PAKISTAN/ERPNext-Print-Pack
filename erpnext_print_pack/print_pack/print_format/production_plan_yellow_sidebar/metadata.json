@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Production Plan",
+  "slug": "production_plan_yellow_sidebar",
+  "doc_type": "Production Plan",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f5c1da059f2100c5d1157b4aee58a4cc6f48f5a27214b9acb6bb2d8dcfccd5cb",
+  "description": "Yellow accent stripe, structured metadata"
+}

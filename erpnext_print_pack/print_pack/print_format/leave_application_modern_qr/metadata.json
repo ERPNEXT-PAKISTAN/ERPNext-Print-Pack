@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Leave Application",
+  "slug": "leave_application_modern_qr",
+  "doc_type": "Leave Application",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "109b1e52fcc32835a847e03f8c50cd16be13121da9e792ecafe1b62d52e38011",
+  "description": "Minimal grid, QR payment block"
+}

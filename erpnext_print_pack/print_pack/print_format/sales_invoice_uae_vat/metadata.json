@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Sales Invoice",
+  "slug": "sales_invoice_uae_vat",
+  "doc_type": "Sales Invoice",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0301c4e7c4780c8d2e320ccb6a8148b9ddea88dd24283140ebd68fefa506a300",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

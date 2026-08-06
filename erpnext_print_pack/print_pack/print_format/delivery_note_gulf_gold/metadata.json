@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Delivery Note",
+  "slug": "delivery_note_gulf_gold",
+  "doc_type": "Delivery Note",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "79836120d550773dce30c78bdb09098ac5d68070a4f54dc0999e77097670c216",
+  "description": "Middle East gold bilingual luxury"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent POS Invoice",
+  "slug": "pos_invoice_orange_accent",
+  "doc_type": "POS Invoice",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1879c4dbe869de8f3536a5273caee5afc5fb1c5b16160f9c3db5e6f975eaa399",
+  "description": "Bold orange total bar, signature area"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Subcontracting Order",
+  "slug": "subcontracting_order_dark_header_pro",
+  "doc_type": "Subcontracting Order",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1a21d1ba47ed7c0a121ae6a025e3345a6aa256b7bf1ed521a33208a942c2c4f7",
+  "description": "Solid navy header bar, white INVOICE title"
+}

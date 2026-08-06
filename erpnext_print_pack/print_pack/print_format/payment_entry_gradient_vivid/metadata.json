@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Payment Entry",
+  "slug": "payment_entry_gradient_vivid",
+  "doc_type": "Payment Entry",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6e4b946e22ebee67e910818d4d292d725d2ddfd1761d053f16d02c98b8072c45",
+  "description": "Colorful purple-pink gradient"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant POS Invoice",
+  "slug": "pos_invoice_ocean_vibrant",
+  "doc_type": "POS Invoice",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c84622940859481315704028f01f5acea3c3072624a2bd822005f4866ca38e39",
+  "description": "Bright cyan ocean theme"
+}

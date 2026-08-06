@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Project",
+  "slug": "project_vertex_classic",
+  "doc_type": "Project",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "05961ac6e84865d7652bb84299c75bd318419a88168d2e3265dc527fb1329d6a",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

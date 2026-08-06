@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Pick List",
+  "slug": "pick_list_yellow_sidebar",
+  "doc_type": "Pick List",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b588b5855f77ef2c5ca60207dc7fab1f5affaecd0b5deeed36867246cd5088ba",
+  "description": "Yellow accent stripe, structured metadata"
+}

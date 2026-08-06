@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Sales Invoice",
+  "slug": "sales_invoice_emerald_fresh",
+  "doc_type": "Sales Invoice",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5374ea03d2d1a29e28bb718c5096aff99b549a7fda413611c44446cad21f03aa",
+  "description": "Bright green modern"
+}

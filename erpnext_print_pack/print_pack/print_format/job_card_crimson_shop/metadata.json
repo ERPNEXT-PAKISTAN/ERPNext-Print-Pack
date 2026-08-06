@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Job Card",
+  "slug": "job_card_crimson_shop",
+  "doc_type": "Job Card",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b4846fa4954a7960a0eabe8cd99387b0cf4033f0647958c4dd268ef0ad69d569",
+  "description": "Bold red retail"
+}

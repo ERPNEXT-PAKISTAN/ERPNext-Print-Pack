@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Pick List",
+  "slug": "pick_list_zatca_specimen",
+  "doc_type": "Pick List",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cbbc585bbbeae6d567e8f0dd6471810b34da58e06042d6a1bf2f73a9795c14a2",
+  "description": "ZATCA E-Invoice Specimen"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Purchase Receipt",
+  "slug": "purchase_receipt_zoho_professional",
+  "doc_type": "Purchase Receipt",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8e90b205627509d09aca02ced2f69a158ae579ae64bda43407ddab486103279b",
+  "description": "Clean blue theme, summary balance box"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Expense Claim",
+  "slug": "expense_claim_dark_header_pro",
+  "doc_type": "Expense Claim",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0b3e7bb65452e9c8b8fa057de6e7bc229fa7e7e6d34cfff97fb75c1c6e06245e",
+  "description": "Solid navy header bar, white INVOICE title"
+}

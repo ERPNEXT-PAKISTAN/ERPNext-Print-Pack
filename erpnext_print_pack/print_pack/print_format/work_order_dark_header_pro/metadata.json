@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Work Order",
+  "slug": "work_order_dark_header_pro",
+  "doc_type": "Work Order",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5d496af803d436794bab7b0f050115d2a6a7fe64e38215d7d88ee8fd80ca348a",
+  "description": "Solid navy header bar, white INVOICE title"
+}

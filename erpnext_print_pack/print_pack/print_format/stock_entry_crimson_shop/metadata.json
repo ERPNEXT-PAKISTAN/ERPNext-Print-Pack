@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Stock Entry",
+  "slug": "stock_entry_crimson_shop",
+  "doc_type": "Stock Entry",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "63577fb160d92fdb48d1934c895fadab0f3bd707faf788744f146f4938763ed1",
+  "description": "Bold red retail"
+}

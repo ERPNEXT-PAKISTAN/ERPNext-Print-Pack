@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Material Request",
+  "slug": "material_request_purple_tax",
+  "doc_type": "Material Request",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3b7150c7a7856e6871bf30588802c7a52c665eb59080310ab1119a7a5070f101",
+  "description": "Formal tax invoice, purple accent, signature"
+}

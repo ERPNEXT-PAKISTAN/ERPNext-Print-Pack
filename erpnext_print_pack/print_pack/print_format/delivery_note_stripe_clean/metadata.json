@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Delivery Note",
+  "slug": "delivery_note_stripe_clean",
+  "doc_type": "Delivery Note",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "58b8b97fabe1a973494b62c8bf82c80f290bffc1fbfb1795b1fffefddbe8e478",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

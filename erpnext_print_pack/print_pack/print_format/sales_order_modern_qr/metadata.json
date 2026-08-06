@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Sales Order",
+  "slug": "sales_order_modern_qr",
+  "doc_type": "Sales Order",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bbd0244abb6c33868fdcd12b00a6a2ed8e6596b56fb9f9531f29f087080468d6",
+  "description": "Minimal grid, QR payment block"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Pick List",
+  "slug": "pick_list_ocean_vibrant",
+  "doc_type": "Pick List",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e9538ff12acc749c0da41b32412883711265ea7f22791befd08ae681c3b8a858",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Sales Invoice",
+  "slug": "sales_invoice_crimson_shop",
+  "doc_type": "Sales Invoice",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0ba19d21bd78fdd766f8af84111e7c774f82f3a394a435dcbdfd20fdcb67abd2",
+  "description": "Bold red retail"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Request for Quotation",
+  "slug": "request_for_quotation_ocean_vibrant",
+  "doc_type": "Request for Quotation",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "938ab773651f342393eb19704a595644224c74f13b45371a49665e1ed87d9b52",
+  "description": "Bright cyan ocean theme"
+}

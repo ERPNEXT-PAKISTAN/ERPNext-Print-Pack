@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Sales Order",
+  "slug": "sales_order_dark_header_pro",
+  "doc_type": "Sales Order",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "74226656557901afb6a642029e2d51fdbc06f94697ff4197b6834b087d313f12",
+  "description": "Solid navy header bar, white INVOICE title"
+}

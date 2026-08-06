@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Timesheet",
+  "slug": "timesheet_yellow_sidebar",
+  "doc_type": "Timesheet",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8054939a1de6f716e2cbededb51949a8310430aa1cf63c0dcc04d32da5ac0606",
+  "description": "Yellow accent stripe, structured metadata"
+}

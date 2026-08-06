@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Production Plan",
+  "slug": "production_plan_gradient_vivid",
+  "doc_type": "Production Plan",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ee8834a5af124143ab9627234481788dce69a3fb4ccaa99f94df3fec9a29ccc7",
+  "description": "Colorful purple-pink gradient"
+}

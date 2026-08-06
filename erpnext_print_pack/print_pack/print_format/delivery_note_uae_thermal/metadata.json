@@ -1,0 +1,27 @@
+{
+  "name": "UAE Thermal Receipt Delivery Note",
+  "slug": "delivery_note_uae_thermal",
+  "doc_type": "Delivery Note",
+  "theme": "uae_thermal",
+  "layout_family": "uae_thermal",
+  "layout_type": "thermal",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1a7946cc4f359a53f86cd9076bcd2b22426f74a45ea22475d87b336b884160ae",
+  "description": "UAE Thermal Receipt"
+}

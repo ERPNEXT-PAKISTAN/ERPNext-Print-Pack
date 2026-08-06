@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Job Offer",
+  "slug": "job_offer_crimson_shop",
+  "doc_type": "Job Offer",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3be6c4fde7b093fa13b561b18fbba584a9c07bd4e165d2ee009fcef0a7fbdb87",
+  "description": "Bold red retail"
+}

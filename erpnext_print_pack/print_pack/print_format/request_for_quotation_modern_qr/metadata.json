@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Request for Quotation",
+  "slug": "request_for_quotation_modern_qr",
+  "doc_type": "Request for Quotation",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd8146dfd99bc3a2f4d1421786240f26060337da6772a66e99d7bb2acef160c2",
+  "description": "Minimal grid, QR payment block"
+}

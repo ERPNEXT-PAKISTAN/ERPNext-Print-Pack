@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Production Plan",
+  "slug": "production_plan_orange_accent",
+  "doc_type": "Production Plan",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ec689ccbe52b1bc308b6d5ca69d1567284a41e8b0b3f73a1a318658479ae474b",
+  "description": "Bold orange total bar, signature area"
+}

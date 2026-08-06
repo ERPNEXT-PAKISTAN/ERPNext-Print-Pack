@@ -1,0 +1,50 @@
+{# Premium layout: dark_header_pro · Maintenance Visit #}
+{% set title = "Maintenance Visit" %}
+{% set date_field = "mntc_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; color: #333; }
+.dh-band { background: #1e3a8a; color: #fff; padding: 20px 24px; margin: -2px -2px 16px; }
+.dh-band .doc-title { font-size: 32px; font-weight: 300; letter-spacing: 3px; }
+.dh-band .co { font-size: 11px; opacity: 0.9; margin-top: 4px; }
+.dh-band .ref { text-align: right; font-size: 11px; }
+.party-row td { width: 50%; padding: 8px 12px 16px 0; vertical-align: top; }
+.party-row .lbl { font-size: 9px; text-transform: uppercase; color: #64748b; margin-bottom: 4px; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #1e3a8a; color: #fff; padding: 8px 6px; text-align: left; font-size: 9px; }
+.items td { padding: 8px 6px; border-bottom: 1px solid #e2e8f0; }
+.items tbody tr:nth-child(even) { background: #f8fafc; }
+.totals { width: 40%; margin-left: auto; margin-top: 12px; }
+.totals .grand td { background: #1e3a8a; color: #fff; font-size: 12px; font-weight: 700; padding: 8px; }
+.totals td { padding: 5px 8px; border-bottom: 1px solid #e2e8f0; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="dh-band"><table style="width:100%"><tr>
+<td><div class="doc-title">{{ title|upper }}</div><div class="co">{{ doc.company or "" }}</div></td>
+<td class="ref"><div>{{ doc.name }}</div><div>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div></td>
+</tr></table></div>
+<table class="party-row"><tr>
+<td><div class="lbl">{{ party_label }}</div><strong>{{ party_name }}</strong><br>{{ party_address }}</td>
+<td>{% if ship_label %}<div class="lbl">{{ ship_label }}</div>{{ ship_address }}{% endif %}</td>
+</tr></table>
+
+<table class="totals">
+<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
+</table>
+{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}
+
+</div>

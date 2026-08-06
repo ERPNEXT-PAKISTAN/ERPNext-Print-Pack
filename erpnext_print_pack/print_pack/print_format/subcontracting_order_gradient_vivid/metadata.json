@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Subcontracting Order",
+  "slug": "subcontracting_order_gradient_vivid",
+  "doc_type": "Subcontracting Order",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a7d2446161d3009178cebc4104993814f10210e20298be18139f80666a26ff95",
+  "description": "Colorful purple-pink gradient"
+}

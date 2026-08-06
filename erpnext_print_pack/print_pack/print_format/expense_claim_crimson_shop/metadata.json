@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Expense Claim",
+  "slug": "expense_claim_crimson_shop",
+  "doc_type": "Expense Claim",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9ea23a39dd0488253dba31aacb3b51a904e439946585e0f99c2d3bd0b4f98f82",
+  "description": "Bold red retail"
+}

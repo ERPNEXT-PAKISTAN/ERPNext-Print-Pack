@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Leave Application",
+  "slug": "leave_application_orange_accent",
+  "doc_type": "Leave Application",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "76b80ff68843395315aacc7f094892faa3b0b0509a1a62e06942ff31a3bc663f",
+  "description": "Bold orange total bar, signature area"
+}

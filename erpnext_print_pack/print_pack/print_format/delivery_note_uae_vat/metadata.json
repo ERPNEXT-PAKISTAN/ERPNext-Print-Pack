@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Delivery Note",
+  "slug": "delivery_note_uae_vat",
+  "doc_type": "Delivery Note",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0fc40fc881f2717a2ef2160bf09d77fd3866862806721d0568ffc87c92e5eefd",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

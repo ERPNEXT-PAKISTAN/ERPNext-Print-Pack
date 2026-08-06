@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Request for Quotation",
+  "slug": "request_for_quotation_crimson_shop",
+  "doc_type": "Request for Quotation",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "933192d3d48859fa0a18f6b8fc2b30f02fe63826fce9047e8e06f0963e16c8fa",
+  "description": "Bold red retail"
+}

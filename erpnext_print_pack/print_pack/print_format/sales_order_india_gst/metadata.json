@@ -1,0 +1,26 @@
+{
+  "name": "India GST Sales Order",
+  "slug": "sales_order_india_gst",
+  "doc_type": "Sales Order",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2726816c8cdd39c447ffa05db01a6a1cfedd23e8e071b0ca61dd386a7f5ecbeb",
+  "description": "India GSTIN, HSN, tax ready"
+}

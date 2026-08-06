@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Request for Quotation",
+  "slug": "request_for_quotation_orange_accent",
+  "doc_type": "Request for Quotation",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b3e274a73de448e289ac949698e3a2ffff5792e780b60f75d12fb82e68814304",
+  "description": "Bold orange total bar, signature area"
+}

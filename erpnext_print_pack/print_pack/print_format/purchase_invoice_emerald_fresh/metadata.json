@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Purchase Invoice",
+  "slug": "purchase_invoice_emerald_fresh",
+  "doc_type": "Purchase Invoice",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bbf15c55b6eff45cf79c277f942f656244d8093b493363ce037cc5c8f2880203",
+  "description": "Bright green modern"
+}

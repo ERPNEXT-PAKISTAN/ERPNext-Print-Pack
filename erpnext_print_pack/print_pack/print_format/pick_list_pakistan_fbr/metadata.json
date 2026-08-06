@@ -1,0 +1,26 @@
+{
+  "name": "Pakistan FBR Pick List",
+  "slug": "pick_list_pakistan_fbr",
+  "doc_type": "Pick List",
+  "theme": "pakistan_fbr",
+  "layout_family": "pakistan_fbr",
+  "layout_type": "regional",
+  "region": "PK",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "pakistan_fbr",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d5e80649b89a404d434b8ef1b4984301a37468f2e63b047b159e59940fe4c6c1",
+  "description": "Pakistan NTN/STRN sales tax invoice"
+}

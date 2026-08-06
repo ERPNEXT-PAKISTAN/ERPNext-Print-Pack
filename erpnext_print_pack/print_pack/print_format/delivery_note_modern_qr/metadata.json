@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Delivery Note",
+  "slug": "delivery_note_modern_qr",
+  "doc_type": "Delivery Note",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3db0045af80d011288f15150414cf6eea7a52c09f623e7b005a6d8d567037f83",
+  "description": "Minimal grid, QR payment block"
+}

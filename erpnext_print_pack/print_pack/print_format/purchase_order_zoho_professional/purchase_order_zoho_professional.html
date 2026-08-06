@@ -1,0 +1,72 @@
+{# Premium layout: zoho_professional · Purchase Order #}
+{% set title = "Purchase Order" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Supplier" %}
+{% set ship_label = "Deliver To" %}
+{% set party_name = doc.supplier_name or doc.supplier or "" %}
+{% set party_address = doc.address_display or doc.supplier_address or "" %}
+{% set ship_address = doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: 'Segoe UI', sans-serif; font-size: 10px; color: #333; }
+.zh { border-bottom: 3px solid #0891b2; padding-bottom: 12px; margin-bottom: 16px; }
+.zh .t { font-size: 22px; color: #0891b2; font-weight: 600; }
+.cards td { padding: 6px; vertical-align: top; }
+.card { background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 4px; padding: 10px; min-height: 60px; }
+.card .lbl { font-size: 8px; color: #0d9488; text-transform: uppercase; font-weight: 600; }
+.items { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.items th { background: #ecfeff; color: #0e7490; border-bottom: 2px solid #0891b2; padding: 8px; text-align: left; }
+.items td { padding: 8px; border-bottom: 1px solid #e0f2f1; }
+.summary { background: #0891b2; color: #fff; border-radius: 6px; padding: 14px 18px; width: 44%; margin-left: auto; margin-top: 14px; }
+.summary table { width: 100%; color: #fff; }
+.summary td { padding: 3px 0; }
+.summary .bal { font-size: 16px; font-weight: 700; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 8px; margin-top: 4px; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="zh"><table style="width:100%"><tr><td><div class="t">{{ title }}</div><div>{{ doc.company or "" }}</div></td><td style="text-align:right">
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("transaction_date")) if doc.get("transaction_date") else "" }}</td></tr>
+{% if doc.due_date %}<tr><td>Due Date</td><td class="r">{{ frappe.utils.formatdate(doc.due_date) }}</td></tr>{% endif %}
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</td></tr></table></div>
+<table class="cards" style="width:100%"><tr>
+<td style="width:50%"><div class="card"><div class="lbl">{{ party_label }}</div>{{ party_name }}<br>{{ party_address }}</div></td>
+<td style="width:50%"><div class="card"><div class="lbl">Company</div>{{ doc.company_address_display or "" }}{% if doc.company_tax_id %}<br>VAT: {{ doc.company_tax_id }}{% endif %}</div></td>
+</tr></table>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<div class="summary"><table>
+<tr><td>Sub Total</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
+<tr class="bal"><td>Balance Due</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table></div>
+{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}
+
+</div>

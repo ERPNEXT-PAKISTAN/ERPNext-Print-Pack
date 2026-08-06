@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Material Request",
+  "slug": "material_request_orange_accent",
+  "doc_type": "Material Request",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "23310d08e70862e1bd00318fad6e0861398d90bc200ab4f2ea88215b56376688",
+  "description": "Bold orange total bar, signature area"
+}

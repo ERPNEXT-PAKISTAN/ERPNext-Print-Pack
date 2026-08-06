@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen Delivery Note",
+  "slug": "delivery_note_uae_specimen",
+  "doc_type": "Delivery Note",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a255f665ba97753fa8e9c5e3d1697f6e6245e6d7b4b4d5adf88a5dbfa67e81f4",
+  "description": "UAE E-Invoice Specimen"
+}

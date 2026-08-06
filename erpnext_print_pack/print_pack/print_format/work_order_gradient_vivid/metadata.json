@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Work Order",
+  "slug": "work_order_gradient_vivid",
+  "doc_type": "Work Order",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ead8a6ea95d6a593d528807c2ae0a0100b34e6c072d527e5147b5b76f7dbb796",
+  "description": "Colorful purple-pink gradient"
+}

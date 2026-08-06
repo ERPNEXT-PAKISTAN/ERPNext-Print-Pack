@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT POS Invoice",
+  "slug": "pos_invoice_uae_vat",
+  "doc_type": "POS Invoice",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8e575595af58bdcfa52d8ea8595d9f2502bced4caec0023d9d461c70e3d7f9ac",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

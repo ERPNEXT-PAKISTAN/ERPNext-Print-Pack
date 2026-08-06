@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Employee Advance",
+  "slug": "employee_advance_emerald_fresh",
+  "doc_type": "Employee Advance",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2e457750741f65dc92dad2ae884d61cba826b3f2faee61ca9abfa34bf31db7d4",
+  "description": "Bright green modern"
+}

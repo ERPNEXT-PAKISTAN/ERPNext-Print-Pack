@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Installation Note",
+  "slug": "installation_note_yellow_sidebar",
+  "doc_type": "Installation Note",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "934a3c998f5d6a325a5ae57c0f4c8ffaec2da84aeb138aea884d3a267ecfb4e3",
+  "description": "Yellow accent stripe, structured metadata"
+}

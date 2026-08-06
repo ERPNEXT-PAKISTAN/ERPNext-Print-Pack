@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Maintenance Visit",
+  "slug": "maintenance_visit_stripe_clean",
+  "doc_type": "Maintenance Visit",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0bd546565bc7f350113dc505f8a1424fd847f97c829fe5ae117731dbe2d9b9db",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Bill of Materials",
+  "slug": "bom_gradient_vivid",
+  "doc_type": "BOM",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "291bb84581cae41184553abf042e19db003e1a125d4ad8252958095482de73ce",
+  "description": "Colorful purple-pink gradient"
+}

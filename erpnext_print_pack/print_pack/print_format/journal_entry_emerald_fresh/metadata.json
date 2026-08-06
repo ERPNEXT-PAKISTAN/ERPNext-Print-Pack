@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Journal Entry",
+  "slug": "journal_entry_emerald_fresh",
+  "doc_type": "Journal Entry",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0f379453ab94d2f80ce05d2afec3802512641f4373cc8732cd5a6f5eddbb8a74",
+  "description": "Bright green modern"
+}

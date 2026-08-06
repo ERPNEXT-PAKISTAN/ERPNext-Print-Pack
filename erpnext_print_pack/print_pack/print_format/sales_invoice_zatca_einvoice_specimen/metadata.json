@@ -1,0 +1,19 @@
+{
+ "name": "ZATCA E-Invoice Specimen",
+ "slug": "sales_invoice_zatca_einvoice_specimen",
+ "doc_type": "Sales Invoice",
+ "theme": "zatca_einvoice_specimen",
+ "layout_family": "zatca_einvoice_specimen",
+ "layout_type": "regional",
+ "region": "SA",
+ "sector": "all",
+ "category": "sales",
+ "orientation": "portrait",
+ "paper_size": "A4",
+ "languages": ["en", "ar"],
+ "features": ["zatca", "qr", "e-invoice", "premium-layout", "specimen"],
+ "source_type": "original",
+ "source_license": "MIT",
+ "status": "stable",
+ "description": "Modern ZATCA e-invoice specimen — purple accents, QR, billed-by/to cards"
+}

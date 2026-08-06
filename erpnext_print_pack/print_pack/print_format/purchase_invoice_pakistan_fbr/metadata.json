@@ -1,0 +1,26 @@
+{
+  "name": "Pakistan FBR Purchase Invoice",
+  "slug": "purchase_invoice_pakistan_fbr",
+  "doc_type": "Purchase Invoice",
+  "theme": "pakistan_fbr",
+  "layout_family": "pakistan_fbr",
+  "layout_type": "regional",
+  "region": "PK",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "pakistan_fbr",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a5bccb7fb0134f666a978420cb4804e41f6f5f0325b2ea68fe395856188d6939",
+  "description": "Pakistan NTN/STRN sales tax invoice"
+}

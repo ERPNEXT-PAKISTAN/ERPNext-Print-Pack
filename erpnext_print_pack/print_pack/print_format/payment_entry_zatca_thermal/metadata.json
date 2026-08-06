@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA Thermal Receipt Payment Entry",
+  "slug": "payment_entry_zatca_thermal",
+  "doc_type": "Payment Entry",
+  "theme": "zatca_thermal",
+  "layout_family": "zatca_thermal",
+  "layout_type": "thermal",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a00845b8258ebafc8a833a6a7e48d77d92c711b5f7c9b11de47072d0f1c36426",
+  "description": "ZATCA Thermal Receipt"
+}

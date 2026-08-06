@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA Thermal Receipt Delivery Note",
+  "slug": "delivery_note_zatca_thermal",
+  "doc_type": "Delivery Note",
+  "theme": "zatca_thermal",
+  "layout_family": "zatca_thermal",
+  "layout_type": "thermal",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b7ddd088141835853c76856faa356fdd28af661b2f3067bdb50a09ab981a0a9e",
+  "description": "ZATCA Thermal Receipt"
+}

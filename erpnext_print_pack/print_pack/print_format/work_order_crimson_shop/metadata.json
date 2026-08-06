@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Work Order",
+  "slug": "work_order_crimson_shop",
+  "doc_type": "Work Order",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bf5e0a072b589e17d8df569fffc1596d97da9061314b39fceac86317ac236d3e",
+  "description": "Bold red retail"
+}

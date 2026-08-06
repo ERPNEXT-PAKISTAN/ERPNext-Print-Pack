@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Purchase Invoice",
+  "slug": "purchase_invoice_zoho_professional",
+  "doc_type": "Purchase Invoice",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "83e64726b22840c7f7b77ab025fcf1158a0ea1ed9a7384cff50e38c903c98251",
+  "description": "Clean blue theme, summary balance box"
+}

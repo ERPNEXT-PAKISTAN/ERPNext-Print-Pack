@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Supplier Quotation",
+  "slug": "supplier_quotation_yellow_sidebar",
+  "doc_type": "Supplier Quotation",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d049dd61c3548ba3bb24048d3268622561770a063be323361f6dbc50b58f8f58",
+  "description": "Yellow accent stripe, structured metadata"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Maintenance Visit",
+  "slug": "maintenance_visit_ocean_vibrant",
+  "doc_type": "Maintenance Visit",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "01eedd79b87d82d6ae86a1f62570f2962aca4e79dda28d5059a194f30f7c0954",
+  "description": "Bright cyan ocean theme"
+}

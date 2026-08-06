@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Item Label",
+  "slug": "item_label_purple_tax",
+  "doc_type": "Item",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ea01e9d0eb964f55765be93d723509ac399ad12bb31ddbef12ed01f6f6cf37be",
+  "description": "Formal tax invoice, purple accent, signature"
+}

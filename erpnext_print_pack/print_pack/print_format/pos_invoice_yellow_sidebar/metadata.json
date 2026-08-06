@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar POS Invoice",
+  "slug": "pos_invoice_yellow_sidebar",
+  "doc_type": "POS Invoice",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "13d7ea12b75490b4ec03d83438d373fd01078d3df20e143d5b06e9eb0da25e12",
+  "description": "Yellow accent stripe, structured metadata"
+}

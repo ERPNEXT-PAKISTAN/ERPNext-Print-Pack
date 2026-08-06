@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Job Card",
+  "slug": "job_card_zoho_professional",
+  "doc_type": "Job Card",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3b4636707f2fcf73557697032b82a05ce890527fee5650de5164c37f28a9db17",
+  "description": "Clean blue theme, summary balance box"
+}

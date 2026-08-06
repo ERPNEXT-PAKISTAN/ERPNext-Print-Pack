@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Batch Label",
+  "slug": "batch_label_crimson_shop",
+  "doc_type": "Batch",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7d8b4dce71e8760feb1c2bb0d162d46533cbe25aa85bb574079032876a85b62c",
+  "description": "Bold red retail"
+}

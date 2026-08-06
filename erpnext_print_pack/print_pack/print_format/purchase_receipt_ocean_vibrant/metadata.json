@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Purchase Receipt",
+  "slug": "purchase_receipt_ocean_vibrant",
+  "doc_type": "Purchase Receipt",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d313c59909ac65a6d17a2edc90298660cddfc0cd8d3c3af6f88153e42a58c54a",
+  "description": "Bright cyan ocean theme"
+}

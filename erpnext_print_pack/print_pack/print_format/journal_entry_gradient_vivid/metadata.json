@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Journal Entry",
+  "slug": "journal_entry_gradient_vivid",
+  "doc_type": "Journal Entry",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fac4770bf92c6ddca7b4db218111f1e738ab79303b6dd76dd6e794f4a9e8fe8a",
+  "description": "Colorful purple-pink gradient"
+}

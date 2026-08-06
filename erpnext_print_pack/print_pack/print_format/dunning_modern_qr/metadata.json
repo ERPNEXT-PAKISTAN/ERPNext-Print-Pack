@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Dunning",
+  "slug": "dunning_modern_qr",
+  "doc_type": "Dunning",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f5d8218a5a2281ebf378f7760b95fc92e1e1696a44247c38577e605d4714bd77",
+  "description": "Minimal grid, QR payment block"
+}

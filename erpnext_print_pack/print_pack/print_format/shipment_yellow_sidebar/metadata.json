@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Shipment",
+  "slug": "shipment_yellow_sidebar",
+  "doc_type": "Shipment",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0454091a8415ac4f7841f27c0dd9558713a38b43ad6d5821777d214a07ea74ca",
+  "description": "Yellow accent stripe, structured metadata"
+}

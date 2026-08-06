@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Payment Entry",
+  "slug": "payment_entry_purple_tax",
+  "doc_type": "Payment Entry",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b0319458102805245d16e727c39144a91a1720c6ffba56ac73cda6762d259923",
+  "description": "Formal tax invoice, purple accent, signature"
+}

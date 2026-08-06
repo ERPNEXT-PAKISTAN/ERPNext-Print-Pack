@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Timesheet",
+  "slug": "timesheet_modern_qr",
+  "doc_type": "Timesheet",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "87f08e75dd9437e167c75eb5e855fbc6a71c4587e70182bc17965abd8ba1ff63",
+  "description": "Minimal grid, QR payment block"
+}

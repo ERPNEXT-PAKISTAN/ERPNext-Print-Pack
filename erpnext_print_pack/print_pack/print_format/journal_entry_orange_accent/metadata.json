@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Journal Entry",
+  "slug": "journal_entry_orange_accent",
+  "doc_type": "Journal Entry",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "75407aae3ce098e7605c3b66051c32397f2adbfdc99219cf44cc12f599c5d997",
+  "description": "Bold orange total bar, signature area"
+}

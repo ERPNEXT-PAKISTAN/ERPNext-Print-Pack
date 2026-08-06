@@ -1,0 +1,50 @@
+{# Premium layout: emerald_fresh · Sales Order #}
+{% set title = "Sales Order" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; }
+.em-head { background: #059669; color: #fff; padding: 16px 20px; border-radius: 0 0 20px 20px; margin: -2px -2px 14px; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #10b981; color: #fff; padding: 7px; }
+.items td { padding: 6px; border-bottom: 2px solid #d1fae5; }
+.em-total { background: #059669; color: #fff; padding: 12px 18px; border-radius: 20px; width: 44%; margin-left: auto; margin-top: 12px; font-weight: 700; text-align: right; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="em-head"><div style="font-size:20px;font-weight:700">{{ title }}</div><div>{{ doc.company or "" }}</div></div>
+<p><strong>{{ party_label }}:</strong> {{ party_name }} — {{ party_address }}</p>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div class="em-total">Total: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+
+</div>

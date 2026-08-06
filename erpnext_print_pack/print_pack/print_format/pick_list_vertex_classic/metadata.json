@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Pick List",
+  "slug": "pick_list_vertex_classic",
+  "doc_type": "Pick List",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "580bafaca967b323597132277dfab9eee4b4378a5b149b0330b5fde83fa51d1e",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

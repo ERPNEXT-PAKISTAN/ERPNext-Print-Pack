@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Installation Note",
+  "slug": "installation_note_orange_accent",
+  "doc_type": "Installation Note",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "161d4d20dc8ddc8f87d0ce1055241bbf2ac7f517cc4465869c2b5073001e2a6b",
+  "description": "Bold orange total bar, signature area"
+}

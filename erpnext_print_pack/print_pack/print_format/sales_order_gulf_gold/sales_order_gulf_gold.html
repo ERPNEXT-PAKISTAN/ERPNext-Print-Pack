@@ -1,0 +1,65 @@
+{# Premium layout: gulf_gold · Sales Order #}
+{% set title = "Sales Order" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Georgia, serif; font-size: 10px; color: #1a1a1a; }
+.gf-frame { border: 3px double #b8860b; padding: 16px; }
+.gf-head { text-align: center; border-bottom: 2px solid #b8860b; padding-bottom: 12px; margin-bottom: 14px; }
+.gf-head h1 { color: #b8860b; font-size: 22px; margin: 0; letter-spacing: 3px; }
+.gf-ar { direction: rtl; color: #8b6914; font-size: 14px; margin-top: 4px; }
+.gf-party td { width: 50%; padding: 10px; border: 1px solid #fde68a; background: #fffbeb; vertical-align: top; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #b8860b; color: #fff; padding: 7px; }
+.items td { border: 1px solid #fde68a; padding: 6px; }
+.totals { width: 45%; margin-left: auto; margin-top: 10px; }
+.totals .grand td { background: #b8860b; color: #fff; font-weight: 700; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="gf-frame">
+<div class="gf-head"><h1>{{ title|upper }}</h1><div class="gf-ar">فاتورة</div><div style="margin-top:6px">{{ doc.company or "" }}</div></div>
+<table style="width:100%"><tr class="gf-party">
+<td><strong>From</strong><br>{{ doc.company_address_display or "" }}<br>VAT: {{ doc.company_tax_id or "" }}</td>
+<td><strong>{{ party_label }}</strong><br>{{ party_name }}<br>{{ party_address }}</td>
+</tr></table>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<table class="totals">
+<tr><td>Net Total</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or tax.account_head or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
+<tr class="grand"><td>Grand Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+</div>
+
+</div>

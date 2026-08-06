@@ -1,0 +1,33 @@
+{# Premium layout: emerald_fresh · Maintenance Visit #}
+{% set title = "Maintenance Visit" %}
+{% set date_field = "mntc_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; }
+.em-head { background: #059669; color: #fff; padding: 16px 20px; border-radius: 0 0 20px 20px; margin: -2px -2px 14px; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #10b981; color: #fff; padding: 7px; }
+.items td { padding: 6px; border-bottom: 2px solid #d1fae5; }
+.em-total { background: #059669; color: #fff; padding: 12px 18px; border-radius: 20px; width: 44%; margin-left: auto; margin-top: 12px; font-weight: 700; text-align: right; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="em-head"><div style="font-size:20px;font-weight:700">{{ title }}</div><div>{{ doc.company or "" }}</div></div>
+<p><strong>{{ party_label }}:</strong> {{ party_name }} — {{ party_address }}</p>
+<div class="em-total">Total: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+
+</div>

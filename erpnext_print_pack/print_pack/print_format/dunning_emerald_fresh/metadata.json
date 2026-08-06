@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Dunning",
+  "slug": "dunning_emerald_fresh",
+  "doc_type": "Dunning",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bff106be96c6549fb48a1174699344b75aaeea00d7b156b873bd8ed936ddf479",
+  "description": "Bright green modern"
+}

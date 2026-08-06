@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Project",
+  "slug": "project_emerald_fresh",
+  "doc_type": "Project",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d2c487a50177be165a3555a1f344eef62377be27b9750cc0093cb719b7c0ef47",
+  "description": "Bright green modern"
+}

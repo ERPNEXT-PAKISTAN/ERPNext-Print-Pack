@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Material Request",
+  "slug": "material_request_modern_qr",
+  "doc_type": "Material Request",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1ec6e6aa89ab32a968db82f8b97466b4599ebec1a5205f2b8ef061c9677d3185",
+  "description": "Minimal grid, QR payment block"
+}

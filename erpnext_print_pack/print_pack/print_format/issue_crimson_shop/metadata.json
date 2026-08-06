@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Issue",
+  "slug": "issue_crimson_shop",
+  "doc_type": "Issue",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "53f0cb7d732822f6bbc399911c568502d4550cddd7e2a0360f12dae52e4b17bf",
+  "description": "Bold red retail"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Quotation",
+  "slug": "quotation_stripe_clean",
+  "doc_type": "Quotation",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7de86715f051204754eb99e353b216ab24a8fa41a24f094588a4c6410afef130",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

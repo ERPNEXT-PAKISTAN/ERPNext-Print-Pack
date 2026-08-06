@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean POS Invoice",
+  "slug": "pos_invoice_stripe_clean",
+  "doc_type": "POS Invoice",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a1820bf5237ae82b5e32f3af86015c60616c1ed08e703d0d93368a9ddde8ab72",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

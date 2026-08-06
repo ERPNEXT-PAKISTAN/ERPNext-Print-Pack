@@ -1,0 +1,26 @@
+{
+  "name": "Pakistan FBR POS Invoice",
+  "slug": "pos_invoice_pakistan_fbr",
+  "doc_type": "POS Invoice",
+  "theme": "pakistan_fbr",
+  "layout_family": "pakistan_fbr",
+  "layout_type": "regional",
+  "region": "PK",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "pakistan_fbr",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1b7b7823802dc3f965f68836fd8c0881c3ebbad62cbac351b1c9e2a4a8416284",
+  "description": "Pakistan NTN/STRN sales tax invoice"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Subcontracting Receipt",
+  "slug": "subcontracting_receipt_vertex_classic",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8efa7d78c059768a0d4f650beac15f0d694d7fbc62f9bf757ba2a5b9a11c3212",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

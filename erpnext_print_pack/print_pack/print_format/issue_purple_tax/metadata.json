@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Issue",
+  "slug": "issue_purple_tax",
+  "doc_type": "Issue",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "668df2fefb68c2f2e38b3b7fd54e7918caa1b50eabe8ef12ebf88fb58b0c4741",
+  "description": "Formal tax invoice, purple accent, signature"
+}

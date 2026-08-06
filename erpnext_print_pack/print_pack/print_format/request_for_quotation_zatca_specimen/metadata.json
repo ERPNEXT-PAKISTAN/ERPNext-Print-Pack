@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Request for Quotation",
+  "slug": "request_for_quotation_zatca_specimen",
+  "doc_type": "Request for Quotation",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2e59c3e040702c7d5fc99d60a765ad2717a7a440e0cd64c0df8b72eabcc815be",
+  "description": "ZATCA E-Invoice Specimen"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Work Order",
+  "slug": "work_order_emerald_fresh",
+  "doc_type": "Work Order",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "616804267536f1ff9e648a89ce964bab200b744e52a5968ae74d4fe3b2555904",
+  "description": "Bright green modern"
+}

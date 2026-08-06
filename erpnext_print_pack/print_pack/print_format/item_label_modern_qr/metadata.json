@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Item Label",
+  "slug": "item_label_modern_qr",
+  "doc_type": "Item",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3087ecf166202161b36ca19d3843bdd392360ca78dc88ce671cbfdd6b86f677e",
+  "description": "Minimal grid, QR payment block"
+}

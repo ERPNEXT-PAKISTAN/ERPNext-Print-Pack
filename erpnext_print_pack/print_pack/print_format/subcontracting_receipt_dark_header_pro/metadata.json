@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Subcontracting Receipt",
+  "slug": "subcontracting_receipt_dark_header_pro",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a00ac5ecad928dfc453f870065b29efb6dbc6f25dad511d35df5669accc95940",
+  "description": "Solid navy header bar, white INVOICE title"
+}

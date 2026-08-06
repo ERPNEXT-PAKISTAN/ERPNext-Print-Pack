@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Purchase Invoice",
+  "slug": "purchase_invoice_ocean_vibrant",
+  "doc_type": "Purchase Invoice",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "419e5d5af62cb1c6c5a60c69ff4bee281dfe0fad0e5a621dd4b1d0bed25e0cc3",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Subcontracting Order",
+  "slug": "subcontracting_order_vertex_classic",
+  "doc_type": "Subcontracting Order",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ab2cb38a0e69185dc7b3bbbed42561d7ded0549505d03b4af14c6772f7ba0432",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

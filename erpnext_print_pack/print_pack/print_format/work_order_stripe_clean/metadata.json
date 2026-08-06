@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Work Order",
+  "slug": "work_order_stripe_clean",
+  "doc_type": "Work Order",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "af003dcb701c355b45b91f0355185ffa436cae73655c5069b75fae9786bd0d72",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

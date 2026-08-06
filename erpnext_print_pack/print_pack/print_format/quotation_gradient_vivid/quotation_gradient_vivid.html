@@ -1,0 +1,60 @@
+{# Premium layout: gradient_vivid · Quotation #}
+{% set title = "Quotation" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: system-ui, sans-serif; font-size: 10px; color: #333; }
+.gv-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f953c6 100%); color: #fff; padding: 20px 24px; border-radius: 8px; margin-bottom: 16px; }
+.gv-hero h1 { margin: 0; font-size: 24px; font-weight: 800; }
+.gv-card { background: linear-gradient(180deg, #faf5ff 0%, #fff 100%); border: 1px solid #e9d5ff; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: linear-gradient(90deg, #667eea, #764ba2); color: #fff; padding: 8px; }
+.items td { padding: 8px; border-bottom: 1px solid #f3e8ff; }
+.gv-total { background: linear-gradient(90deg, #f953c6, #b91cfc); color: #fff; padding: 14px 20px; border-radius: 8px; width: 48%; margin-left: auto; margin-top: 12px; font-size: 16px; font-weight: 800; text-align: right; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="gv-hero"><h1>{{ title }}</h1><div>{{ doc.company or "" }} · {{ doc.name }}</div></div>
+<div class="gv-card"><strong>{{ party_label }}:</strong> {{ party_name }}<br>{{ party_address }}
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("transaction_date")) if doc.get("transaction_date") else "" }}</td></tr>
+{% if doc.due_date %}<tr><td>Due Date</td><td class="r">{{ frappe.utils.formatdate(doc.due_date) }}</td></tr>{% endif %}
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</div>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<div class="gv-total">TOTAL {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+
+</div>

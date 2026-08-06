@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Delivery Note",
+  "slug": "delivery_note_zatca_specimen",
+  "doc_type": "Delivery Note",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "99e28b1814a5a0466fd17fedbf42dd40fe2b00d2c5ab5b4431dc3398895cb5ca",
+  "description": "ZATCA E-Invoice Specimen"
+}

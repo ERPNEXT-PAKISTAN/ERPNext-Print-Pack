@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Pick List",
+  "slug": "pick_list_gulf_gold",
+  "doc_type": "Pick List",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3bbdad0538722287ca547eaa34f2fd6f2ad3dcb03697ba569537ac58abdb5237",
+  "description": "Middle East gold bilingual luxury"
+}

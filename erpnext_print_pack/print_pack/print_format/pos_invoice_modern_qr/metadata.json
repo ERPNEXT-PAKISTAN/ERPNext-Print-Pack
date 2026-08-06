@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR POS Invoice",
+  "slug": "pos_invoice_modern_qr",
+  "doc_type": "POS Invoice",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ae34866ac1bbbdad0eaed987d033097bd0585308f3ecde6291f633bf5f86e4fd",
+  "description": "Minimal grid, QR payment block"
+}

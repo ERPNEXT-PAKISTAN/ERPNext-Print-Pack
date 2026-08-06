@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Purchase Order",
+  "slug": "purchase_order_saudi_zatca",
+  "doc_type": "Purchase Order",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b834b32f531d701223f8b1828bda4d3be87fd536a7c33129daddd19fff490ca0",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

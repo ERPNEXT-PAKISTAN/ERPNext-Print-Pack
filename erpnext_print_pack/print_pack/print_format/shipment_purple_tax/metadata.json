@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Shipment",
+  "slug": "shipment_purple_tax",
+  "doc_type": "Shipment",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "23410fb71a9710e3ebdd3774868c3ff99c1013cce7e9010a8e8c861e7b869934",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Salary Slip",
+  "slug": "salary_slip_orange_accent",
+  "doc_type": "Salary Slip",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9f87545628ed5bf5112350f92dea2b58c48c785344a8283ff3670acf45814d9d",
+  "description": "Bold orange total bar, signature area"
+}

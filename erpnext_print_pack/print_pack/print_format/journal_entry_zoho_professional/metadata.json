@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Journal Entry",
+  "slug": "journal_entry_zoho_professional",
+  "doc_type": "Journal Entry",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dab4b5e73b2d11c01d7ef72cbeb0996746ea12c6ee1081129612e72396615012",
+  "description": "Clean blue theme, summary balance box"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Pick List",
+  "slug": "pick_list_dark_header_pro",
+  "doc_type": "Pick List",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cd48ac25d33efb7afdbdee97edca74138d56106e311054e3dcd223939cb8bfd2",
+  "description": "Solid navy header bar, white INVOICE title"
+}

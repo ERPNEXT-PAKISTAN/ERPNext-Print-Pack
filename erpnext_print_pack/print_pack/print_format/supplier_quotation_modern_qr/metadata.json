@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Supplier Quotation",
+  "slug": "supplier_quotation_modern_qr",
+  "doc_type": "Supplier Quotation",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7df495004fd3fbf810f7805a892db945e360631fccf87eceeddeba5d73f63abe",
+  "description": "Minimal grid, QR payment block"
+}

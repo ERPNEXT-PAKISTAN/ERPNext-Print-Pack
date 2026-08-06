@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Expense Claim",
+  "slug": "expense_claim_gradient_vivid",
+  "doc_type": "Expense Claim",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8741ee88fa67541d9e111c316a5f5983317961956fb958e8ca42a245c2d6b55b",
+  "description": "Colorful purple-pink gradient"
+}

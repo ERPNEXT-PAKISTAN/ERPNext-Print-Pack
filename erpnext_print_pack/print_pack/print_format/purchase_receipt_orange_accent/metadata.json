@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Purchase Receipt",
+  "slug": "purchase_receipt_orange_accent",
+  "doc_type": "Purchase Receipt",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a6023cfff3d219c9ebab9d762a690c9b3802129ac4357cb4ddf518bbb7afe2f0",
+  "description": "Bold orange total bar, signature area"
+}

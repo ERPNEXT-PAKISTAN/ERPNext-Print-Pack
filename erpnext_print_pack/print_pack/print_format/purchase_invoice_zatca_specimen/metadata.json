@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Purchase Invoice",
+  "slug": "purchase_invoice_zatca_specimen",
+  "doc_type": "Purchase Invoice",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "69bc75aa4d3361d9ee5c5fa3f909b0974278fcd2534693bb4cf34084b0875a94",
+  "description": "ZATCA E-Invoice Specimen"
+}

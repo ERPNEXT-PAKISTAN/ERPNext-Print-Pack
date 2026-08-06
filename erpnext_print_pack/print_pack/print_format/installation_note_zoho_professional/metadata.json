@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Installation Note",
+  "slug": "installation_note_zoho_professional",
+  "doc_type": "Installation Note",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "79d9e4d6d00a6ffa7a56400f3bccca927f20bafae911ff2bc1fc3bc5ad765895",
+  "description": "Clean blue theme, summary balance box"
+}

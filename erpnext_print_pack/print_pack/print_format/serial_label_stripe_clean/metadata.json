@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Serial Label",
+  "slug": "serial_label_stripe_clean",
+  "doc_type": "Serial No",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bae061f480827ca908226269baedc4cedc607b837dd3ba3b90a51d032a234911",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

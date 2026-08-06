@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA POS Invoice",
+  "slug": "pos_invoice_saudi_zatca",
+  "doc_type": "POS Invoice",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f51074f545ed80e8b8bdbf1000ce2e13a8329b4254c64506f63dfaeed7e761b6",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

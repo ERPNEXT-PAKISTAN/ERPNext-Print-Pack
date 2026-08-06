@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Classic Quotation",
+  "slug": "quotation_proforma_classic",
+  "doc_type": "Quotation",
+  "theme": "proforma_classic",
+  "layout_family": "proforma_classic",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_classic",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ef29c7f2a0b710a61becb9f4d7ead57c5e1e53a196a15c3d17a9b8944c7085de",
+  "description": "Proforma Classic"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Payment Entry",
+  "slug": "payment_entry_ocean_vibrant",
+  "doc_type": "Payment Entry",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dfeed7f6fb499244a51e322675c889b6b7e648c3d4ef8fdbf2f3523c3da9054b",
+  "description": "Bright cyan ocean theme"
+}

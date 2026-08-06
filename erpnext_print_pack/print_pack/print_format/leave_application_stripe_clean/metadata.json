@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Leave Application",
+  "slug": "leave_application_stripe_clean",
+  "doc_type": "Leave Application",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "674d71af27ee0fa6db6a73690c0949baca8e2c337fa7eadb13b0d2c1673c8096",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

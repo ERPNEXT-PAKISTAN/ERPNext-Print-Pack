@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen Pick List",
+  "slug": "pick_list_uae_specimen",
+  "doc_type": "Pick List",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ddf6da4a90e0fe7d5389185e4004733f3d9797b4e2da5473215427643c3c309d",
+  "description": "UAE E-Invoice Specimen"
+}

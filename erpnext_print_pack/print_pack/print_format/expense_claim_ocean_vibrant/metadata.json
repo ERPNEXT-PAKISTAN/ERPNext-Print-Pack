@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Expense Claim",
+  "slug": "expense_claim_ocean_vibrant",
+  "doc_type": "Expense Claim",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7c1b24c31a0e229f733f8517da0bc719ef5966154e58d6bfd66a37909e874c0d",
+  "description": "Bright cyan ocean theme"
+}

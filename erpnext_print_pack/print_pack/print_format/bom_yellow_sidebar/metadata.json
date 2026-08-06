@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Bill of Materials",
+  "slug": "bom_yellow_sidebar",
+  "doc_type": "BOM",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f726131f8bec2ec4bc83e14e97e4a43afdcdf1a8c10eb439d5a893ee349353ae",
+  "description": "Yellow accent stripe, structured metadata"
+}

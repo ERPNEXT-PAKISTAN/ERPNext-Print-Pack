@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Installation Note",
+  "slug": "installation_note_emerald_fresh",
+  "doc_type": "Installation Note",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0aad2f11c9881de376da7fcc21423e240e3b9011bae88aab6a2327a4251bab84",
+  "description": "Bright green modern"
+}

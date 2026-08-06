@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Subcontracting Receipt",
+  "slug": "subcontracting_receipt_emerald_fresh",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "87d1d98b5d83c0ff5f9b053bcc2a626222da91a21e45e810fcedad95fe1ff2e6",
+  "description": "Bright green modern"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh POS Invoice",
+  "slug": "pos_invoice_emerald_fresh",
+  "doc_type": "POS Invoice",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "45755e9e9a6d7bff765bd103629e0accb557e5746c4ddb7711ba43f3d75085cf",
+  "description": "Bright green modern"
+}

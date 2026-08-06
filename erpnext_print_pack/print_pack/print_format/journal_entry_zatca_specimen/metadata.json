@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Journal Entry",
+  "slug": "journal_entry_zatca_specimen",
+  "doc_type": "Journal Entry",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ff40faeff8f5463fd55183e9b1dc2fdd0392d0ef0fa0571d101765f4cf99b71b",
+  "description": "ZATCA E-Invoice Specimen"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Pick List",
+  "slug": "pick_list_saudi_zatca",
+  "doc_type": "Pick List",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd710d8d6ed56300d9e74bf6857127686804c8703824b1a777932e5104bfbef7",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

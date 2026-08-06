@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Purchase Receipt",
+  "slug": "purchase_receipt_vertex_classic",
+  "doc_type": "Purchase Receipt",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3039cb9c8a5cc3b4633600301294612bf0908982a8db1aed70b3ee5bc84946b6",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

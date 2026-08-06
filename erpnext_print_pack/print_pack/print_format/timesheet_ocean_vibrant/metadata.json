@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Timesheet",
+  "slug": "timesheet_ocean_vibrant",
+  "doc_type": "Timesheet",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1b07fc2a750f2964f846b6f862849dd414e9ad2bfaa21c2c35b6c8fbcf2a2668",
+  "description": "Bright cyan ocean theme"
+}

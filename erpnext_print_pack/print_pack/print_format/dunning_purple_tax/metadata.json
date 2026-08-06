@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Dunning",
+  "slug": "dunning_purple_tax",
+  "doc_type": "Dunning",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9df72922d8d8933b377211c164f3a56875bae23c2832c9f21bfd825b28d3aca0",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Salary Slip",
+  "slug": "salary_slip_stripe_clean",
+  "doc_type": "Salary Slip",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ffdc6f0b1c849ffe400e514fed29b07bcc0e2d10c2bc57b78fae9d3d62f6843a",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

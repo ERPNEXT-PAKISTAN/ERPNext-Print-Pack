@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Shipment",
+  "slug": "shipment_crimson_shop",
+  "doc_type": "Shipment",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0aada5a995ec765199c68039c75289760afea4898fc3ccc697afab0681cd67df",
+  "description": "Bold red retail"
+}

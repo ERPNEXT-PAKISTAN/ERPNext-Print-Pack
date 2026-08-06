@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Payment Entry",
+  "slug": "payment_entry_vertex_classic",
+  "doc_type": "Payment Entry",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e801e99e534d6455d9c140dddbde49b5a01d3d94b31ba868f2e6aaf8d24b39de",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

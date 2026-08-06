@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Purchase Invoice",
+  "slug": "purchase_invoice_yellow_sidebar",
+  "doc_type": "Purchase Invoice",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7a7bde2452c6f112c711fc8a0a31342539dbe4dfeb31e1473251aad6e91b01ea",
+  "description": "Yellow accent stripe, structured metadata"
+}

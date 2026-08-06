@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Project",
+  "slug": "project_orange_accent",
+  "doc_type": "Project",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a865ca358f21ddd14046f28abbb684e43fc6780782c7093b4aac4fd76b1e950c",
+  "description": "Bold orange total bar, signature area"
+}

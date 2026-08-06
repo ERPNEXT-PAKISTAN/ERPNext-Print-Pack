@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Payment Request",
+  "slug": "payment_request_zoho_professional",
+  "doc_type": "Payment Request",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8457e16178b5c5c2b261c736408e2c2a5a56cb3e57bf6ebbae6c85b13c1f6299",
+  "description": "Clean blue theme, summary balance box"
+}

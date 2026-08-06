@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop POS Invoice",
+  "slug": "pos_invoice_crimson_shop",
+  "doc_type": "POS Invoice",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c6a1dbcb107cd40b60286641b4bd36ad286e2bfef0754a0e46f469c02a7bfe6d",
+  "description": "Bold red retail"
+}

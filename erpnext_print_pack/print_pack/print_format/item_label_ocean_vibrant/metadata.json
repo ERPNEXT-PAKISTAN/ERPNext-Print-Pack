@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Item Label",
+  "slug": "item_label_ocean_vibrant",
+  "doc_type": "Item",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8fd6a7a593ec77a13fbf2ecc60d7de44013fd72b8d09fccb9431831bfd0aac89",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Bill of Materials",
+  "slug": "bom_ocean_vibrant",
+  "doc_type": "BOM",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "62b47a8045bc22456112313a34df31b8f41eb0e8860b3f427ee7e0eb32b05d31",
+  "description": "Bright cyan ocean theme"
+}

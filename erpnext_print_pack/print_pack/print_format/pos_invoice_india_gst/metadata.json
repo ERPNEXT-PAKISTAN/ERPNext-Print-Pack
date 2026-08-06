@@ -1,0 +1,26 @@
+{
+  "name": "India GST POS Invoice",
+  "slug": "pos_invoice_india_gst",
+  "doc_type": "POS Invoice",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9d3730cfbb160ffc620fa30d8db46596913003d3ef8d6559f194534883e9d478",
+  "description": "India GSTIN, HSN, tax ready"
+}

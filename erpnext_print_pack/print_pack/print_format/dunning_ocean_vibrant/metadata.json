@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Dunning",
+  "slug": "dunning_ocean_vibrant",
+  "doc_type": "Dunning",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dcd29b6c78aa1f899c7def236a0e140df2e60a6128c8abcf1a8da59747ca4606",
+  "description": "Bright cyan ocean theme"
+}

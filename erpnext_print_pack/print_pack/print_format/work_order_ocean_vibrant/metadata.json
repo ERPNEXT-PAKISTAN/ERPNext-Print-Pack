@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Work Order",
+  "slug": "work_order_ocean_vibrant",
+  "doc_type": "Work Order",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "90589d4af07eddb6e384244e05d42adf53741a5c1149c857f029dd458e11a3c3",
+  "description": "Bright cyan ocean theme"
+}

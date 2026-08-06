@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Leave Application",
+  "slug": "leave_application_gradient_vivid",
+  "doc_type": "Leave Application",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0d9a947b4ce55f38dc70106f41603c32bff1dd2aa0df3e46f0c36e3f7e1b08c3",
+  "description": "Colorful purple-pink gradient"
+}

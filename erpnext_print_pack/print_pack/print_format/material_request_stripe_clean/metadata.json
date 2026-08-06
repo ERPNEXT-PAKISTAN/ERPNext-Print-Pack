@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Material Request",
+  "slug": "material_request_stripe_clean",
+  "doc_type": "Material Request",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "09058f9912a0526b58bf7a5588edffc6f1dbeafee083db719805fee36f165832",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

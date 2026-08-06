@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Job Offer",
+  "slug": "job_offer_ocean_vibrant",
+  "doc_type": "Job Offer",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4c95825b58279ab9368ed69756da96bae2a0b789a6f7a1c3298e3fd7a5af67c9",
+  "description": "Bright cyan ocean theme"
+}

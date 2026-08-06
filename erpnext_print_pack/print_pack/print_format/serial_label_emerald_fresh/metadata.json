@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Serial Label",
+  "slug": "serial_label_emerald_fresh",
+  "doc_type": "Serial No",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f0445b50f9e49fc61ec2ed494fbfa169f7f7864e0b3199d7c6960704f931a10f",
+  "description": "Bright green modern"
+}

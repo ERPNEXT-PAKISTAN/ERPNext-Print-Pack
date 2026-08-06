@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Quotation",
+  "slug": "quotation_orange_accent",
+  "doc_type": "Quotation",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b61c7c0a87571b44da0926bf9100daa50bb2107d8581bc4e1fdd11907dcd14c1",
+  "description": "Bold orange total bar, signature area"
+}

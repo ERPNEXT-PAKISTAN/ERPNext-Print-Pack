@@ -1,0 +1,17 @@
+{
+ "name": "Executive Corporate Sales Invoice",
+ "slug": "sales_invoice_executive_corporate",
+ "doc_type": "Sales Invoice",
+ "theme": "executive_corporate",
+ "layout_family": "executive",
+ "sector": "corporate_enterprise",
+ "category": "sales",
+ "orientation": "portrait",
+ "paper_size": "A4",
+ "languages": ["en"],
+ "features": ["formal", "letterhead", "signatures"],
+ "source_type": "original",
+ "source_license": "MIT",
+ "status": "stable",
+ "erpnext_versions": ["15", "16"]
+}

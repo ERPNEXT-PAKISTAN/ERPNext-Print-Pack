@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Serial Label",
+  "slug": "serial_label_purple_tax",
+  "doc_type": "Serial No",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c64a33e0c1f8584a7b158460eb42d6f1001cf1be70385cc80ab332e1c3aea54a",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Bill of Materials",
+  "slug": "bom_vertex_classic",
+  "doc_type": "BOM",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bf016ee2f30d55ae417b88e111cc760c89a122ce1cbe567c5c2024bcb53ee9ae",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

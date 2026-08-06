@@ -1,0 +1,321 @@
+<style>
+:root{
+  --font: 11px;
+  --font-sm: 10px;
+  --qr-size: min(40mm, 34vw);
+  --barcode-width: min(110mm, 88vw);
+  --barcode-height: 25mm;
+}
+body{font-family:Arial,sans-serif;font-size:var(--font);color:#000;margin:0;padding:12px;}
+
+.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.header-left{flex:1;}
+.header-right{text-align:right;}
+.meta{line-height:1.5;margin-bottom:6px;}
+.meta div{margin-bottom:2px;}
+.bold{font-weight:bold;}
+.right{text-align:right;}
+.center{text-align:center;}
+
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px;}
+th,td{border:1px solid #000;padding:5px;}
+th{background:#f4f4f4;font-weight:bold;}
+
+.party-two-col{display:flex;justify-content:space-between;gap:20px;margin-bottom:12px;}
+.party-box{width:48%;border:1px solid #000;padding:8px;}
+.party-box .title{font-weight:bold;margin-bottom:6px;}
+
+.two-col{display:flex;gap:20px;margin-top:10px;}
+.totals-box{flex:1;max-width:280px;margin-left:auto;}
+.totals-box table{border:1px solid #000;}
+.totals-box td{border:none;border-bottom:1px solid #ddd;padding:0 4px;line-height:0.95;}
+.totals-box tr:last-child td{border-bottom:none;}
+
+.tax-summary{margin-top:12px;}
+.tax-summary h4{margin:0 0 1px 0;font-size:12px;}
+.tax-summary table{margin-top:1px;}
+.tax-summary th,.tax-summary td{padding:1px 3px;line-height:0.95;}
+
+.notes{margin-top:12px;padding:6px 0;border-top:1px solid #ddd;}
+
+.letterhead{display:flex;align-items:center;gap:10px;border-bottom:2px solid #000;padding-bottom:8px;margin-bottom:10px;}
+.letterhead img{max-height:60px;}
+.company-name{font-size:16px;font-weight:bold;line-height:1.2;}
+.trn{margin-top:1px;}
+
+.bank-lines{margin-top:6px;}
+.bank-lines .row{display:flex;gap:10px;line-height:1.15;margin:0;padding:0;}
+.bank-lines .lbl{min-width:110px;font-weight:bold;}
+.bank-lines .val{flex:1;}
+
+.fbr-qr-row{margin-top:18px;display:flex;align-items:center;gap:20px;}
+.fbr-qr-text{font-size:12px;color:#666;}
+.center-wrap{display:flex;flex-direction:column;align-items:center;}
+.qr-img{width:var(--qr-size);height:var(--qr-size);display:block;}
+.barcode-img{width:220px;height:13mm;display:block;margin-top:8px;}
+.small-note{font-size:var(--font-sm);margin-top:1px;text-align:center;}
+</style>
+
+{# Logo absolute to prevent broken image links #}
+{% set base_url = frappe.utils.get_url() %}
+{% set logo = frappe.db.get_value("Company", doc.company, "company_logo") %}
+{% if logo and not (logo.startswith("http://") or logo.startswith("https://")) %}
+  {% set logo = base_url + logo %}
+{% endif %}
+
+{# Totals + grouped tax #}
+{% set ns = namespace(taxable_sum=0, tax_sum=0) %}
+{% set grp = namespace(rows={}) %}
+{% for item in doc.items %}
+  {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
+  {% set rate = (item.custom_sales_tax_rate or 0) %}
+  {% set tax = (item.custom_sales_tax or 0) %}
+  {% set ns.taxable_sum = ns.taxable_sum + (taxable or 0) %}
+  {% set ns.tax_sum = ns.tax_sum + (tax or 0) %}
+
+  {% set key = "{:,.2f}".format(rate) %}
+  {% if key not in grp.rows %}
+    {% set _ = grp.rows.update({ key: {"taxable": 0, "tax": 0} }) %}
+  {% endif %}
+  {% set _ = grp.rows[key].update({
+      "taxable": grp.rows[key]["taxable"] + (taxable or 0),
+      "tax": grp.rows[key]["tax"] + (tax or 0)
+  }) %}
+{% endfor %}
+
+{# QR + Barcode data URI (tuned) #}
+{% set qr_data_uri = "" %}
+{% set bc_data_uri = "" %}
+{% if doc.custom_fbr_invoice_no %}
+  {% set payload = frappe.call(
+      "erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri",
+      value=doc.custom_fbr_invoice_no,
+      include_fbr_url=1,
+      fbr_base_url="https://fbr.gov.pk/verify",
+      module_width=0.32,
+      module_height=16.0,
+      dpi=203
+  ) %}
+  {% if payload %}
+    {% set qr_data_uri = payload.get("qr") or "" %}
+    {% set bc_data_uri = payload.get("barcode") or "" %}
+  {% endif %}
+{% endif %}
+
+{% macro format_address_block(address_text) -%}
+  {% set cleaned = (address_text or "")
+    .replace(", TRN, Phone", "")
+    .replace("TRN, Phone", "")
+    .replace(", TRN", "")
+    .replace("<br>TRN<br>Phone", "")
+    .replace("<br>TRN", "")
+    .replace("
+", "<br>") %}
+  {% set ns = namespace(parts=[]) %}
+  {% for raw_part in cleaned.split("<br>") %}
+    {% set part = raw_part.strip(" ,") %}
+    {% if part %}
+      {% set _ = ns.parts.append(part) %}
+    {% endif %}
+  {% endfor %}
+  {% if ns.parts %}
+    {{ ns.parts[:4] | join(", ") }}
+    {% if ns.parts|length > 4 %}<br>{{ ns.parts[4:] | join("<br>") }}{% endif %}
+  {% endif %}
+{%- endmacro %}
+{% macro tax_type_label(item, tax_rate) -%}
+  {% set template_name = (item.item_tax_template or "")|lower %}
+  {% if "zero" in template_name %}
+    Zero Rated
+  {% elif "exempt" in template_name %}
+    Exempt
+  {% elif tax_rate and tax_rate > 0 %}
+    Sales Tax ({{ "{:,.2f}".format(tax_rate or 0) }}%)
+  {% elif item.item_tax_template %}
+    {{ item.item_tax_template }}
+  {% else %}
+    Sales Tax
+  {% endif %}
+{%- endmacro %}
+
+<!-- LETTERHEAD -->
+<div class="letterhead">
+  {% set logo = frappe.db.get_value("Company", doc.company, "company_logo") %}
+  {% if logo and not frappe.db.exists("File", {"file_url": logo}) %}
+    {% set logo = "" %}
+  {% endif %}
+  {% if logo %}
+    <img src="{{ logo }}">
+  {% endif %}
+  <div>
+    <div class="company-name">{{ doc.company }}</div>
+    <div class="trn">NTN: {{ doc.company_tax_id }}</div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="meta">
+      <div>Invoice Date : {{ frappe.utils.formatdate(doc.posting_date or doc.creation, "dd-MM-yyyy") }}</div>
+      <div>Terms : {{ doc.payment_terms_template or "Due on Receipt" }}</div>
+      <div>P.O. Date : {{ frappe.utils.formatdate(doc.po_date, "dd-MM-yyyy") if doc.po_date else "" }}</div>
+      <div>P.O.# : {{ doc.po_no or "" }}</div>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <h2 style="margin:0 0 4px 0;font-size:18px;">TAX INVOICE</h2>
+    <div class="bold">Invoice No: {{ doc.name }}</div>
+    <div class="bold">FBR Invoice No: {{ doc.custom_fbr_invoice_no or "" }}</div>
+    <div style="margin-top:8px;">
+      <div>Balance Due</div>
+      <b style="font-size:16px;">{{ doc.currency }} {{ "{:,.2f}".format(doc.outstanding_amount or doc.grand_total or 0) }}</b>
+    </div>
+  </div>
+</div>
+
+<!-- COMPANY & CUSTOMER -->
+<div class="party-two-col">
+  <div class="party-box">
+    <div class="title">Company</div>
+    <div class="bold" style="font-size:13px;">{{ doc.company }}</div>
+    <div>{{ format_address_block(doc.company_address_display) }}</div>
+  </div>
+
+  <div class="party-box" style="text-align:right;">
+    <div class="title">Customer</div>
+    <div class="bold" style="font-size:13px;">{{ doc.customer_name }}</div>
+    <div>{{ format_address_block(doc.address_display) }}</div>
+    <div>NTN: {{ doc.customer_tax_id or doc.tax_id or "" }}</div>
+    {% if doc.contact_mobile %}<div>Mobile: {{ doc.contact_mobile }}</div>{% endif %}
+  </div>
+</div>
+
+<!-- ITEMS -->
+<table>
+  <thead>
+    <tr>
+      <th style="width:25px;">#</th>
+      <th style="width:36%;">Item</th>
+      <th style="width:70px;">Qty</th>
+      <th style="width:70px;">Rate</th>
+      <th style="width:90px;">Taxable</th>
+      <th style="width:60px;">Tax %</th>
+      <th style="width:80px;">Tax</th>
+      <th style="width:90px;">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in doc.items %}
+      {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
+      {% set rate = (item.custom_sales_tax_rate or 0) %}
+      {% set tax = (item.custom_sales_tax or 0) %}
+      {% set total = (taxable or 0) + (tax or 0) %}
+      <tr>
+        <td class="center">{{ loop.index }}</td>
+        <td><div style="font-size:12px;font-weight:600;line-height:1.25;">{{ item.item_name }}</div>{% if item.item_code %}<div style="font-size:9px;color:#555;">{{ item.item_code }}</div>{% endif %}</td>
+        <td class="right">{{ "{:,.2f}".format(item.qty or 0) }}{% if item.uom %}<br>{{ item.uom }}{% endif %}</td>
+        <td class="right">{{ "{:,.2f}".format(item.rate or 0) }}</td>
+        <td class="right">{{ "{:,.2f}".format(taxable or 0) }}</td>
+        <td class="right">{{ "{:,.2f}".format(rate) }}%</td>
+        <td class="right">{{ "{:,.2f}".format(tax) }}</td>
+        <td class="right">{{ "{:,.2f}".format(total) }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- TOTALS -->
+<div class="two-col">
+  <div></div>
+  <div class="totals-box">
+    <table>
+      <tr><td>Sub Total</td><td class="right">{{ "{:,.2f}".format(ns.taxable_sum or 0) }}</td></tr>
+      <tr><td>Sales Tax</td><td class="right">{{ "{:,.2f}".format(ns.tax_sum or 0) }}</td></tr>
+      <tr><td class="bold">Total {{ doc.currency }}</td><td class="right bold">{{ "{:,.2f}".format(doc.grand_total or 0) }}</td></tr>
+      <tr><td class="bold">Balance Due {{ doc.currency }}</td><td class="right bold">{{ "{:,.2f}".format(doc.outstanding_amount or doc.grand_total or 0) }}</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- GROUPED TAX SUMMARY -->
+<div class="tax-summary">
+  <h4>Tax Summary (Grouped)</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Tax Type</th>
+        <th class="right">Taxable</th>
+        <th class="right">Tax</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r, v in grp.rows.items()|sort %}
+        <tr>
+          <td>{% if (r|float) == 0 %}{{ "Zero Rated / Exempt" }}{% else %}{{ "Sales Tax (" ~ r ~ "%)" }}{% endif %}</td>
+          <td class="right">{{ "{:,.2f}".format(v.taxable) }}</td>
+          <td class="right">{{ "{:,.2f}".format(v.tax) }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- NOTES -->
+<div class="notes"><b>Notes</b><br>Thanks for your business.</div>
+
+
+<!-- BANK (tight) -->
+{% set bank = frappe.get_all("Bank Account",
+  filters={"company": doc.company, "is_company_account": 1},
+  fields=["account_name","bank","bank_account_no","iban"],
+  limit=1) %}
+
+{% if doc.custom_fbr_invoice_no or bank %}
+  <div style="margin-top:14px;display:flex;align-items:flex-start;gap:20px;">
+    {% if doc.custom_fbr_invoice_no %}
+    <div style="flex-shrink:0;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:5px;padding:6px;border:2px solid #37a66b;border-radius:8px;background:#fff;">
+        <div style="width:70px;height:70px;border:1px solid #e5e7eb;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#f8fafc;overflow:hidden;">
+          <img src="/assets/erpnext_print_pack/images/fbr_di_badge.svg" alt="DI Invoicing" style="max-width:100%;max-height:100%;object-fit:contain;" onerror="this.style.display='none'">
+        </div>
+        <div style="width:70px;height:70px;border:1px solid #e5e7eb;border-radius:4px;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;">
+          {% if qr_data_uri %}<img src="{{ qr_data_uri }}" alt="FBR QR" style="width:64px;height:64px;object-fit:contain;">{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div style="flex:1;min-width:0;">
+      {% if bank %}
+      <div style="margin-top:1px;">
+        <b>Bank Account for Payment.</b>
+        <div class="bank-lines">
+          <div class="row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
+          <div class="row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
+          <div class="row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
+        </div>
+      </div>
+      {% endif %}
+
+      {% if doc.custom_fbr_invoice_no %}
+      <div style="margin-top:8px;">
+        {% if bc_data_uri %}
+          <img src="{{ bc_data_uri }}" alt="FBR Barcode" style="width:100%;max-width:min(110mm,88vw);height:20mm;display:block;margin:0 auto;">
+        {% endif %}
+        <div style="margin-top:3px;font-size:9px;letter-spacing:.7px;font-weight:600;color:#374151;word-break:break-all;text-align:center;">{{ doc.custom_fbr_invoice_no }}</div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+<!-- SIGNATURE -->
+<div style="margin-top:18px; display:flex; justify-content:space-between; gap:15px;">
+  <div style="width:48%; border-top:1px solid #000; padding-top:6px;">
+    <b>Authorized Signature</b><br><span style="font-size:10px;">Name / Stamp</span>
+  </div>
+  <div style="width:48%; border-top:1px solid #000; padding-top:6px; text-align:right;">
+    <b>Received By</b><br><span style="font-size:10px;">Name / Signature</span>
+  </div>
+</div>

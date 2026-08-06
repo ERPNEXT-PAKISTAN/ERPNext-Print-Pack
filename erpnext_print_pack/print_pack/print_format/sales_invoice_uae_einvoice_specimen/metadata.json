@@ -1,0 +1,10 @@
+{
+ "name": "UAE E-Invoice Specimen",
+ "slug": "sales_invoice_uae_einvoice_specimen",
+ "doc_type": "Sales Invoice",
+ "layout_family": "uae_einvoice_specimen",
+ "layout_type": "regional",
+ "region": "AE",
+ "status": "stable",
+ "description": "UAE modern e-invoice specimen — green TRN, QR, card layout"
+}

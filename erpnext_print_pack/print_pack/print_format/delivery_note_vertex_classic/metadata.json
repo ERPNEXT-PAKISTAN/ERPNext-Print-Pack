@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Delivery Note",
+  "slug": "delivery_note_vertex_classic",
+  "doc_type": "Delivery Note",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0f7b9d054c0490cc97a3b802a6f5d8a09de88403d79e9cff8bd56ed7e807183c",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Job Offer",
+  "slug": "job_offer_vertex_classic",
+  "doc_type": "Job Offer",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "592d6811252220bd644f87f01976adafef91aba33b66892acd18136ce1b059e6",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

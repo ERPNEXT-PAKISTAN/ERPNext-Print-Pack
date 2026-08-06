@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Payment Entry",
+  "slug": "payment_entry_dark_header_pro",
+  "doc_type": "Payment Entry",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5fd014e28728d426334f65eff4748f98164b0160090b87b642bd096a90cff6e6",
+  "description": "Solid navy header bar, white INVOICE title"
+}

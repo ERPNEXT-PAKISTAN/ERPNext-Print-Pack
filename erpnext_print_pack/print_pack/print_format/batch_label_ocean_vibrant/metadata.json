@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Batch Label",
+  "slug": "batch_label_ocean_vibrant",
+  "doc_type": "Batch",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f436d1fabd7b4629459341bd3d597b6f790653b1625eee2ac93c15b2db462c0c",
+  "description": "Bright cyan ocean theme"
+}

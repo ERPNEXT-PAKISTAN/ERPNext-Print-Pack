@@ -1,0 +1,60 @@
+{# Premium layout: ocean_vibrant · Pick List #}
+{% set title = "Pick List" %}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: 'Trebuchet MS', sans-serif; font-size: 10px; color: #0c4a6e; }
+.oc-wave { background: linear-gradient(180deg, #0ea5e9 0%, #0284c7 100%); color: #fff; padding: 18px 22px; margin-bottom: 20px; }
+.oc-wave h1 { margin: 0; font-size: 26px; }
+.oc-bubble { background: #e0f2fe; border-radius: 12px; padding: 12px 16px; margin-bottom: 12px; border: 2px solid #7dd3fc; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #0284c7; color: #fff; padding: 8px; }
+.items td { padding: 8px; background: #f0f9ff; border-bottom: 1px solid #bae6fd; }
+.oc-sum { background: #0369a1; color: #fff; border-radius: 12px; padding: 14px 20px; width: 46%; margin-left: auto; margin-top: 14px; text-align: right; font-size: 15px; font-weight: 700; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="oc-wave"><h1>{{ title }}</h1><div>{{ doc.company or "" }}</div></div>
+<div class="oc-bubble"><strong>{{ party_label }}:</strong> {{ party_name }}<br>{{ party_address }}
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</td></tr>
+
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</div>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<div class="oc-sum">Balance: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div><div class="epp-footer footer">Thank you for your business</div>
+
+</div>

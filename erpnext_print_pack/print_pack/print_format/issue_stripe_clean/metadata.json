@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Issue",
+  "slug": "issue_stripe_clean",
+  "doc_type": "Issue",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2dfcc5d426fca047147466edff84ce6891c19a1c193135c6f66229a1bd6dc809",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

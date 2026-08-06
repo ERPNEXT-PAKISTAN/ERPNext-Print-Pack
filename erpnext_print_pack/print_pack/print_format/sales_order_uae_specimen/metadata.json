@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen Sales Order",
+  "slug": "sales_order_uae_specimen",
+  "doc_type": "Sales Order",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5fef4b4940e8c6c3af29c08c51362fd04e1e1d8e046948faa6917c2f78e9b5da",
+  "description": "UAE E-Invoice Specimen"
+}

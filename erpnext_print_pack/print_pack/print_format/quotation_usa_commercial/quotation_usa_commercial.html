@@ -1,0 +1,59 @@
+{# Premium layout: usa_commercial · Quotation #}
+{% set title = "Quotation" %}
+{% set date_field = "transaction_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; color: #1e293b; }
+.us-bar { background: #1e3a8a; height: 4px; margin-bottom: 2px; }
+.us-bar2 { background: #dc2626; height: 4px; margin-bottom: 16px; }
+.us-co { font-size: 24px; font-weight: 700; color: #1e3a8a; }
+.us-inv { font-size: 14px; color: #64748b; text-transform: uppercase; letter-spacing: 2px; }
+.us-box { background: #f1f5f9; border-radius: 6px; padding: 12px; margin-bottom: 14px; }
+.items { width: 100%; border-collapse: collapse; }
+.items th { background: #1e3a8a; color: #fff; padding: 8px; text-align: left; }
+.items td { padding: 8px; border-bottom: 1px solid #e2e8f0; }
+.us-due { background: #dc2626; color: #fff; padding: 14px 20px; border-radius: 6px; width: 46%; margin-left: auto; margin-top: 14px; font-size: 16px; font-weight: 700; text-align: right; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="us-bar"></div><div class="us-bar2"></div>
+<table style="width:100%;margin-bottom:14px"><tr>
+<td><div class="us-co">{{ doc.company or "" }}</div><div class="us-inv">{{ title }}</div></td>
+<td style="text-align:right"><div style="font-size:16px;font-weight:700">{{ doc.name }}</div><div>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div>{% if doc.due_date %}<div>Due: {{ frappe.utils.formatdate(doc.due_date) }}</div>{% endif %}</td>
+</tr></table>
+<div class="us-box"><strong>Bill To:</strong> {{ party_name }}<br>{{ party_address }}</div>
+
+{% if doc.items %}
+<table class="items">
+<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<div class="us-due">Amount Due: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+
+</div>

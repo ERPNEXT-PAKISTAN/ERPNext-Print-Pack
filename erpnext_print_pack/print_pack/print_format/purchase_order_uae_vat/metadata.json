@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Purchase Order",
+  "slug": "purchase_order_uae_vat",
+  "doc_type": "Purchase Order",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e3818a622c1cb7e9dd33561bd81af08934ab6873348fc9346b0aaa085a20afe6",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

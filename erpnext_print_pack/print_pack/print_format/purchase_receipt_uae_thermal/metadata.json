@@ -1,0 +1,27 @@
+{
+  "name": "UAE Thermal Receipt Purchase Receipt",
+  "slug": "purchase_receipt_uae_thermal",
+  "doc_type": "Purchase Receipt",
+  "theme": "uae_thermal",
+  "layout_family": "uae_thermal",
+  "layout_type": "thermal",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "daef4320e37a72c9171ce71fc5acb1cfdf58d52f5cb0cfb692d8f100915b9d90",
+  "description": "UAE Thermal Receipt"
+}

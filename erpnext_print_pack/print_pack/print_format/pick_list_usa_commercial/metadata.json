@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Pick List",
+  "slug": "pick_list_usa_commercial",
+  "doc_type": "Pick List",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7906a45228d2701f049d13a4a138609e6fab88f41588f6be305bb21eb13826dd",
+  "description": "American red/blue stripe invoice"
+}

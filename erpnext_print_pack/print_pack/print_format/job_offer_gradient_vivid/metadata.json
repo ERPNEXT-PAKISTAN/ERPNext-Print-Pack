@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Job Offer",
+  "slug": "job_offer_gradient_vivid",
+  "doc_type": "Job Offer",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd7be11797b9a9bc08406315617f506339db0a3c8c5b3c28c78ba1f65fe4d562",
+  "description": "Colorful purple-pink gradient"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Job Offer",
+  "slug": "job_offer_orange_accent",
+  "doc_type": "Job Offer",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8841adcb9c3dacb69266db026453f63fde16f6bfd48b101ee63af89745a37844",
+  "description": "Bold orange total bar, signature area"
+}

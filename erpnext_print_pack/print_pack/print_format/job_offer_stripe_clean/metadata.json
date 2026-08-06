@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Job Offer",
+  "slug": "job_offer_stripe_clean",
+  "doc_type": "Job Offer",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "32d35c936db1c8d8809a52f79fa544fc2f5c8b02c29ccfcbbb55161c57ad0c67",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

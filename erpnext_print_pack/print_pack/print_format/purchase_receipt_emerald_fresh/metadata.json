@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Purchase Receipt",
+  "slug": "purchase_receipt_emerald_fresh",
+  "doc_type": "Purchase Receipt",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ef4469cf4b4628ec89df40b8c7b8b6e353f4c4bd48fa743caffa0f1e0139e832",
+  "description": "Bright green modern"
+}

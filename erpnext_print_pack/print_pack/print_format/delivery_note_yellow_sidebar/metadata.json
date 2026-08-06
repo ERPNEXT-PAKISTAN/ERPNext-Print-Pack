@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Delivery Note",
+  "slug": "delivery_note_yellow_sidebar",
+  "doc_type": "Delivery Note",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3942db85c0587060e225c45a82aa3b262bec40e9d22fa7a0e60e9bc6c60a7c6d",
+  "description": "Yellow accent stripe, structured metadata"
+}

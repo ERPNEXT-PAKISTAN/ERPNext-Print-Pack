@@ -1,0 +1,19 @@
+{
+ "name": "SparkSuite Classic Sales Invoice",
+ "slug": "sales_invoice_sparksuite_classic",
+ "doc_type": "Sales Invoice",
+ "theme": "sparksuite_classic",
+ "layout_family": "sparksuite",
+ "sector": "general_business",
+ "category": "sales",
+ "orientation": "portrait",
+ "paper_size": "A4",
+ "languages": ["en"],
+ "features": ["tax-summary", "amount-in-words", "clean-lines"],
+ "source_type": "adapted",
+ "source_url": "https://github.com/sparksuite/simple-html-invoice-template",
+ "source_license": "MIT",
+ "attribution_required": false,
+ "erpnext_versions": ["15", "16"],
+ "status": "stable"
+}

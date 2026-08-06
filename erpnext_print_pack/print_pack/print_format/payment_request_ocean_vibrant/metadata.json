@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Payment Request",
+  "slug": "payment_request_ocean_vibrant",
+  "doc_type": "Payment Request",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a8113a676702e8579b426227dc1ec4b62b94a23707745e73e27db300aee73ff3",
+  "description": "Bright cyan ocean theme"
+}

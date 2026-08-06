@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Sales Order",
+  "slug": "sales_order_zatca_specimen",
+  "doc_type": "Sales Order",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7eec29bf245efecdfa997d2e1e1ca7c6c4479e4107fff08c8e23a085cbc78125",
+  "description": "ZATCA E-Invoice Specimen"
+}

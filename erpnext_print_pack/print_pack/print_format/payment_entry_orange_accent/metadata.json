@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Payment Entry",
+  "slug": "payment_entry_orange_accent",
+  "doc_type": "Payment Entry",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ef07704cfa0ca06451400bb982f1caa556a91021f45abd7b964fc1ed100d22c3",
+  "description": "Bold orange total bar, signature area"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Supplier Quotation",
+  "slug": "supplier_quotation_orange_accent",
+  "doc_type": "Supplier Quotation",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f2a6ee6639d1ec55945da0ffd5942db32534804b6fd4ee7c01644d9811a6a387",
+  "description": "Bold orange total bar, signature area"
+}

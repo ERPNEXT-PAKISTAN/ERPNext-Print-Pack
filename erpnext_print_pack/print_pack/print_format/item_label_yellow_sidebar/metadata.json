@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Item Label",
+  "slug": "item_label_yellow_sidebar",
+  "doc_type": "Item",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "954acf25c1b83caa68da76b31820771c3cc9537be38b39ba253cb9b35223134c",
+  "description": "Yellow accent stripe, structured metadata"
+}

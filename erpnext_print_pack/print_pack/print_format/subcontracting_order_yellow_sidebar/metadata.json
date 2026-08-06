@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Subcontracting Order",
+  "slug": "subcontracting_order_yellow_sidebar",
+  "doc_type": "Subcontracting Order",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "af6d0492d586d83ede0c1c4a5fd8d9d6172b020c188dc195af77a95a730cc7d2",
+  "description": "Yellow accent stripe, structured metadata"
+}

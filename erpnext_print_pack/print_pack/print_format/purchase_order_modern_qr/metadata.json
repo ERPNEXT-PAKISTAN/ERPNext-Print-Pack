@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Purchase Order",
+  "slug": "purchase_order_modern_qr",
+  "doc_type": "Purchase Order",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cb81cad0cc1a01aac49ada61124cb12473f3d5f8547a14d9e983a69953f714c4",
+  "description": "Minimal grid, QR payment block"
+}

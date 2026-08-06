@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Request for Quotation",
+  "slug": "request_for_quotation_emerald_fresh",
+  "doc_type": "Request for Quotation",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b7e14fc39c2f3d5a72e875007f58a78be9e14d9e2c4a82cb9e31d2605dec4e86",
+  "description": "Bright green modern"
+}

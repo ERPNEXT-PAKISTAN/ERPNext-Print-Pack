@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Modern Sales Invoice",
+  "slug": "sales_invoice_proforma_modern",
+  "doc_type": "Sales Invoice",
+  "theme": "proforma_modern",
+  "layout_family": "proforma_modern",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_modern",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8f5795c0849b91226ba74a61aef5d62afad84d36536088e072b17f6a1fedc5a6",
+  "description": "Proforma Modern"
+}

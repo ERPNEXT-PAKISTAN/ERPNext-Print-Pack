@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Delivery Trip",
+  "slug": "delivery_trip_yellow_sidebar",
+  "doc_type": "Delivery Trip",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2f5117e4c0834d4292b61b552e710afbc6517fd539cb2d78509e0de8fcb9b7ff",
+  "description": "Yellow accent stripe, structured metadata"
+}

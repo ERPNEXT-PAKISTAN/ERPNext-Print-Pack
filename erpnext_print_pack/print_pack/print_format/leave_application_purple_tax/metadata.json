@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Leave Application",
+  "slug": "leave_application_purple_tax",
+  "doc_type": "Leave Application",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fdd731c5ccf41a5ae0dc565ba7564b8a2b01c07f52eedfa6d13b6a6a89e59f6d",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Leave Application",
+  "slug": "leave_application_yellow_sidebar",
+  "doc_type": "Leave Application",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b878901e290d3d16d0bdd944aba46082afa1d0964bc3543342022f3e2b5d31d1",
+  "description": "Yellow accent stripe, structured metadata"
+}

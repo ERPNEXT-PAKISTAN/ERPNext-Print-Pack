@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Salary Slip",
+  "slug": "salary_slip_emerald_fresh",
+  "doc_type": "Salary Slip",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5360755b47dd8bbb8aea832029f3e150379c64392ae0f8a320ae813852348986",
+  "description": "Bright green modern"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Job Card",
+  "slug": "job_card_vertex_classic",
+  "doc_type": "Job Card",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ac9c4e2b6f6b39005dd5f01379b6842e2cd0575d33886b4272d6a610ce48ab2e",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

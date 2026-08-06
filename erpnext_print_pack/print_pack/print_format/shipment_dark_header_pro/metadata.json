@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Shipment",
+  "slug": "shipment_dark_header_pro",
+  "doc_type": "Shipment",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "88cebc346d1590f033cf396eee746e3dc4e2465117653b9c5b3770eff90f6fee",
+  "description": "Solid navy header bar, white INVOICE title"
+}

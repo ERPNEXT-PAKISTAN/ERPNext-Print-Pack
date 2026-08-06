@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Journal Entry",
+  "slug": "journal_entry_stripe_clean",
+  "doc_type": "Journal Entry",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2acd89e9f974f87f444070eec4152bac93138c7758fb9c7b3df3819691fe38e2",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Supplier Quotation",
+  "slug": "supplier_quotation_uae_vat",
+  "doc_type": "Supplier Quotation",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "35925a83115f343fe5b1728f4573ead186e9f6204e4916d2a1222edd6f553197",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

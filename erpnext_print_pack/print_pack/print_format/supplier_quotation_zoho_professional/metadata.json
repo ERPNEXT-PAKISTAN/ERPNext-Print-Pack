@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Supplier Quotation",
+  "slug": "supplier_quotation_zoho_professional",
+  "doc_type": "Supplier Quotation",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4ee2620a1111cd7786ccb7861b9a2c6695f6eca26889d3acf86bc17a6b55bcf2",
+  "description": "Clean blue theme, summary balance box"
+}

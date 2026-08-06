@@ -1,0 +1,27 @@
+{
+  "name": "UAE VAT Purchase Receipt",
+  "slug": "purchase_receipt_uae_vat",
+  "doc_type": "Purchase Receipt",
+  "theme": "uae_vat",
+  "layout_family": "uae_vat",
+  "layout_type": "regional",
+  "region": "AE",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "uae_vat",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "432580bed222f9318591278d65b97077a22cfd6a1dc189a9219b639d2c7f5f69",
+  "description": "UAE TRN tax invoice \u2014 flag colors"
+}

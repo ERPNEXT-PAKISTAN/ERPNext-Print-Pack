@@ -1,0 +1,27 @@
+{
+  "name": "Proforma UAE Sales Order",
+  "slug": "sales_order_proforma_uae",
+  "doc_type": "Sales Order",
+  "theme": "proforma_uae",
+  "layout_family": "proforma_uae",
+  "layout_type": "proforma",
+  "region": "AE",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_uae",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "933686c73651ef68a580ca2fe500af4f6778abda1bf3e2fe140762f400c80de3",
+  "description": "Proforma UAE"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Installation Note",
+  "slug": "installation_note_crimson_shop",
+  "doc_type": "Installation Note",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e0af79135720dee784d78676413d61d785e4ef4eab3002778c33c73b40e21067",
+  "description": "Bold red retail"
+}

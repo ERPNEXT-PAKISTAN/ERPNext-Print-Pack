@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Quotation",
+  "slug": "quotation_dark_header_pro",
+  "doc_type": "Quotation",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cf9ee8a47539153d6f1c146db538bf5ae630ee3efd3a504b352e9222dfc72371",
+  "description": "Solid navy header bar, white INVOICE title"
+}

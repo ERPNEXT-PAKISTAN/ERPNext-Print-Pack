@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Job Card",
+  "slug": "job_card_orange_accent",
+  "doc_type": "Job Card",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fd9e59f6997ece61f2125f55527a4e5959480830feaf5857e619681a557b6d27",
+  "description": "Bold orange total bar, signature area"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Maintenance Visit",
+  "slug": "maintenance_visit_zoho_professional",
+  "doc_type": "Maintenance Visit",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "48d79e918772e63c435489c6e3b3552fbaf5d0d6d9e965e430b511a892d7d61c",
+  "description": "Clean blue theme, summary balance box"
+}

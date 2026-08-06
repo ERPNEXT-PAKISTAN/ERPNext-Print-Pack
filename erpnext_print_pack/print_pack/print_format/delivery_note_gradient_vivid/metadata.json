@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Delivery Note",
+  "slug": "delivery_note_gradient_vivid",
+  "doc_type": "Delivery Note",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4bc8f8fca7859e43cea93b5a5d663ef4a17c782cf8bd39bde594197ce1a03606",
+  "description": "Colorful purple-pink gradient"
+}

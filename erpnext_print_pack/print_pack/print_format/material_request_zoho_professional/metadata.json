@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Material Request",
+  "slug": "material_request_zoho_professional",
+  "doc_type": "Material Request",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "833f1415c2bc78d5bb6b4665fe0292edae157916ef593162273b71ce47b8be7e",
+  "description": "Clean blue theme, summary balance box"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Dunning",
+  "slug": "dunning_stripe_clean",
+  "doc_type": "Dunning",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7de1b1fe15fbe18f28439fc98cff83b073a2ecd3e1a3921f97ae191657a1d018",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Subcontracting Receipt",
+  "slug": "subcontracting_receipt_gradient_vivid",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "af7d25e5186c6f695c11cfd5cb764c2f01e6cd041e14d610a0d240a22f79bc14",
+  "description": "Colorful purple-pink gradient"
+}

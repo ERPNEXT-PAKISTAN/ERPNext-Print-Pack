@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none">
+  <rect width="800" height="560" fill="#f3f4f6"/>
+  <rect x="40" y="40" width="720" height="480" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="60" y="60" width="220" height="28" rx="6" fill="#7d579b"/>
+  <text x="72" y="80" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">ZATCA E-Invoice Specimen</text>
+  <text x="60" y="120" fill="#111827" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="800">Sales Invoice</text>
+  <text x="60" y="148" fill="#6b7280" font-family="Segoe UI,Arial,sans-serif" font-size="13">SI-2026-00421 · 07-08-2026</text>
+  <rect x="620" y="96" width="100" height="100" rx="10" fill="#faf5ff" stroke="#7d579b"/>
+  <text x="670" y="152" text-anchor="middle" fill="#7d579b" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">ZATCA</text>
+  <rect x="60" y="170" width="310" height="90" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+  <rect x="390" y="170" width="310" height="90" rx="10" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="76" y="196" fill="#7d579b" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Billed by</text>
+  <text x="406" y="196" fill="#7d579b" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Bill To</text>
+  <rect x="60" y="280" width="640" height="34" fill="#7d579b"/>
+  <text x="76" y="302" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Description</text>
+  <rect x="60" y="314" width="640" height="36" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="60" y="350" width="640" height="36" fill="#fafafa" stroke="#e5e7eb"/>
+  <rect x="500" y="410" width="200" height="80" rx="8" fill="#7d579b"/>
+  <text x="600" y="458" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="800">SAR 4,250</text>
+</svg>

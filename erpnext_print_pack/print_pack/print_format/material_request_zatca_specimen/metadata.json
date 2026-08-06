@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA E-Invoice Specimen Material Request",
+  "slug": "material_request_zatca_specimen",
+  "doc_type": "Material Request",
+  "theme": "zatca_specimen",
+  "layout_family": "zatca_specimen",
+  "layout_type": "specimen",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d3176f8a7c91bcdc3f27f98282d99e3d92537358568bea010c2e9e076fbeeb70",
+  "description": "ZATCA E-Invoice Specimen"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Maintenance Schedule",
+  "slug": "maintenance_schedule_zoho_professional",
+  "doc_type": "Maintenance Schedule",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8ae69a4dc614cb8c73c96d17bc72f94ed1bd3cb8e812ae7e287a1a9379b64e0e",
+  "description": "Clean blue theme, summary balance box"
+}

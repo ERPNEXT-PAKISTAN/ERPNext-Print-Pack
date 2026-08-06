@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Production Plan",
+  "slug": "production_plan_crimson_shop",
+  "doc_type": "Production Plan",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b63005ca93791921b49337c15369b248822a8a4fdc8939e7217df2d43848024a",
+  "description": "Bold red retail"
+}

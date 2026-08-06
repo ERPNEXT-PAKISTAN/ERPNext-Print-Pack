@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Purchase Receipt",
+  "slug": "purchase_receipt_yellow_sidebar",
+  "doc_type": "Purchase Receipt",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ec20ed8fe1df867e6bf8a724d47bea77a1d593dfabe5b89deee396a177f1afe3",
+  "description": "Yellow accent stripe, structured metadata"
+}

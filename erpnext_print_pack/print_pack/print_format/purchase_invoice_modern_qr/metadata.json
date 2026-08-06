@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Purchase Invoice",
+  "slug": "purchase_invoice_modern_qr",
+  "doc_type": "Purchase Invoice",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e20d54322cae07e4912418654d73fdd72d5e0a42365369208fd54c4b191ef613",
+  "description": "Minimal grid, QR payment block"
+}

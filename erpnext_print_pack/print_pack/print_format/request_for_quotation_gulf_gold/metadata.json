@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Request for Quotation",
+  "slug": "request_for_quotation_gulf_gold",
+  "doc_type": "Request for Quotation",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b65bc51ed2f3ff907ebadc55e405e1ff6c7617c5648173551b42305906e5e6d1",
+  "description": "Middle East gold bilingual luxury"
+}

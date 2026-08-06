@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Maintenance Schedule",
+  "slug": "maintenance_schedule_gradient_vivid",
+  "doc_type": "Maintenance Schedule",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b136bbb9a7ab24d07482ebcc66caa020c8501291babf646f5c3cb2d95cbde6bd",
+  "description": "Colorful purple-pink gradient"
+}

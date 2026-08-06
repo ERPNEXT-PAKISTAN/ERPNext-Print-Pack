@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Supplier Quotation",
+  "slug": "supplier_quotation_usa_commercial",
+  "doc_type": "Supplier Quotation",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b36448ca4e5c22bcdfb3311315debcaf9e173472c1eac3c79cf364084ac96522",
+  "description": "American red/blue stripe invoice"
+}

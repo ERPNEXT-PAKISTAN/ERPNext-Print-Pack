@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Payment Request",
+  "slug": "payment_request_yellow_sidebar",
+  "doc_type": "Payment Request",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d84d8f87c51acb0a2ef4cea2037e6c8d987e954252aa2e0802a3ac1da82e7242",
+  "description": "Yellow accent stripe, structured metadata"
+}

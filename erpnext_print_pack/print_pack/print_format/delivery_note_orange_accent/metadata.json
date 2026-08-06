@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Delivery Note",
+  "slug": "delivery_note_orange_accent",
+  "doc_type": "Delivery Note",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f6236f85503ed26c2dd3c5f44d028d7794b8ed54dcc2f874ae3fdab2dd991187",
+  "description": "Bold orange total bar, signature area"
+}

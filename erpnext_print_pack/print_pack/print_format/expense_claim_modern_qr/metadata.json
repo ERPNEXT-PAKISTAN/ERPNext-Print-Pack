@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Expense Claim",
+  "slug": "expense_claim_modern_qr",
+  "doc_type": "Expense Claim",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fa0d453907e94d7ef5030a2a7ddaabe18aaf502b81e8308fe03f065866579811",
+  "description": "Minimal grid, QR payment block"
+}

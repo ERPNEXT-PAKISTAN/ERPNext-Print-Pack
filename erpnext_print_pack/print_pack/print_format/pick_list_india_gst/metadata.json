@@ -1,0 +1,26 @@
+{
+  "name": "India GST Pick List",
+  "slug": "pick_list_india_gst",
+  "doc_type": "Pick List",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cfc451ecdbaf1e500dccd985b81b9b6249a61b8d50a857abf5cbf91ead97453a",
+  "description": "India GSTIN, HSN, tax ready"
+}

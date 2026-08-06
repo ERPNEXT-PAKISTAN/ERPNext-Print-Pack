@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Sales Order",
+  "slug": "sales_order_zoho_professional",
+  "doc_type": "Sales Order",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "68098921328d858d1f7c047009ec9a965a658ef15054d09a03bd1bf865c81b44",
+  "description": "Clean blue theme, summary balance box"
+}

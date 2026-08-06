@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Sales Invoice",
+  "slug": "sales_invoice_usa_commercial",
+  "doc_type": "Sales Invoice",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6ca5b31f2914e6520f6e148f9f1189aafa3f63f7ca6fd54f412a7faa8e0f2e0e",
+  "description": "American red/blue stripe invoice"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Job Card",
+  "slug": "job_card_emerald_fresh",
+  "doc_type": "Job Card",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ec8cfd6a20b1c023d6c7d481c3ee9702436e7cd5d0508871173dae78615ff02e",
+  "description": "Bright green modern"
+}

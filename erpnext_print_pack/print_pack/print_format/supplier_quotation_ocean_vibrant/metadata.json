@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Supplier Quotation",
+  "slug": "supplier_quotation_ocean_vibrant",
+  "doc_type": "Supplier Quotation",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c2a0ee0f374b38f4a47cf50c42a510ddce3bb392a2a0f9e8f5b7350e0b6aa951",
+  "description": "Bright cyan ocean theme"
+}

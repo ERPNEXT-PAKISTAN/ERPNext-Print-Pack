@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Purchase Receipt",
+  "slug": "purchase_receipt_modern_qr",
+  "doc_type": "Purchase Receipt",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "184b4f97a28889209147fa279baa9cdb18beed20295cf4ddfc9a180ee950b6ff",
+  "description": "Minimal grid, QR payment block"
+}

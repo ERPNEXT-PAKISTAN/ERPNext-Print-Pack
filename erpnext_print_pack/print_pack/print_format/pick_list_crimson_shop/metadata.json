@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Pick List",
+  "slug": "pick_list_crimson_shop",
+  "doc_type": "Pick List",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "da15efbc1a4de2537d69020e74a68dcba524ffccb25dc2bf247a7f610beff0b7",
+  "description": "Bold red retail"
+}

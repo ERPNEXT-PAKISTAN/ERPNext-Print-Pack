@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Batch Label",
+  "slug": "batch_label_orange_accent",
+  "doc_type": "Batch",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ab0e6758367554232b3154adb0f8e3fc9635c35b3a5039f8c8150e4191d7655f",
+  "description": "Bold orange total bar, signature area"
+}

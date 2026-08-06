@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Pick List",
+  "slug": "pick_list_zoho_professional",
+  "doc_type": "Pick List",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c95a285d7e8cdfa172d7067852abe686c1509586295b42280d14755e392cc3cf",
+  "description": "Clean blue theme, summary balance box"
+}

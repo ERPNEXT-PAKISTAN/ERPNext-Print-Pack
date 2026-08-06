@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Payment Request",
+  "slug": "payment_request_orange_accent",
+  "doc_type": "Payment Request",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8607b94a71af8674b81bd019a4b0c84b06b8a263fd1ad60c82d508d2ee75d578",
+  "description": "Bold orange total bar, signature area"
+}

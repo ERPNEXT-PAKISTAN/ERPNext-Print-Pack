@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Sales Order",
+  "slug": "sales_order_purple_tax",
+  "doc_type": "Sales Order",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "96c77948afcbf0c56c94fec14333729f5ac320a4a4f267c92b9a7d1832dc70c7",
+  "description": "Formal tax invoice, purple accent, signature"
+}

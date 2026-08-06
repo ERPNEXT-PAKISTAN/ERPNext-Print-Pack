@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Payment Request",
+  "slug": "payment_request_vertex_classic",
+  "doc_type": "Payment Request",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a221c640497381b8cc1a6f771cd639b0dd8ff1de6e469c38f20c11d9c882fe1f",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

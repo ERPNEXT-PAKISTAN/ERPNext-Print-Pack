@@ -1,0 +1,26 @@
+{
+  "name": "India GST Purchase Invoice",
+  "slug": "purchase_invoice_india_gst",
+  "doc_type": "Purchase Invoice",
+  "theme": "india_gst",
+  "layout_family": "india_gst",
+  "layout_type": "regional",
+  "region": "IN",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "india_gst",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ed3aa88888b3c5e7e4c159c429b144cdf6bab2fa76f95e5936cad396eccda182",
+  "description": "India GSTIN, HSN, tax ready"
+}

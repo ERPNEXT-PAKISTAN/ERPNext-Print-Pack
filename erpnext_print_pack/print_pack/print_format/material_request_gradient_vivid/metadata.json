@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Material Request",
+  "slug": "material_request_gradient_vivid",
+  "doc_type": "Material Request",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1d7795cda4146c85ed134de21b0369ef5def78111b31f3d670538e3e0970ae21",
+  "description": "Colorful purple-pink gradient"
+}

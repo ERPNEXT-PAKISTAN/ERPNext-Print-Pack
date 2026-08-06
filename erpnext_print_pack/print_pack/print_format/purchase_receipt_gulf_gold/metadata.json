@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Purchase Receipt",
+  "slug": "purchase_receipt_gulf_gold",
+  "doc_type": "Purchase Receipt",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1d12af9435b982bc6ebf403d1eb6756234520eb8acd28bae59f347ba583b0d4e",
+  "description": "Middle East gold bilingual luxury"
+}

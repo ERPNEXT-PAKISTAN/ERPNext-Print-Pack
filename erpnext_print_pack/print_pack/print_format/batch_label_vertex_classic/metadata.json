@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Batch Label",
+  "slug": "batch_label_vertex_classic",
+  "doc_type": "Batch",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "03f463f5d964977799a22074b50c3465f99a74ada7fc87f5f395ecc0e8c6bf3a",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

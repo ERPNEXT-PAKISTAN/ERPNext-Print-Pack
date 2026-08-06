@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Payment Request",
+  "slug": "payment_request_purple_tax",
+  "doc_type": "Payment Request",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0307d7d71768b37afb4be55a61eec6aa4f97b4de745abede0195ec8b9f7ce372",
+  "description": "Formal tax invoice, purple accent, signature"
+}

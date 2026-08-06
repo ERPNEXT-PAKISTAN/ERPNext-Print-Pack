@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Subcontracting Order",
+  "slug": "subcontracting_order_modern_qr",
+  "doc_type": "Subcontracting Order",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9550042b135e61e1502537818486bb04fad889dc96e9d83fa5a9c1ef20b06873",
+  "description": "Minimal grid, QR payment block"
+}

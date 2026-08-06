@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Stock Entry",
+  "slug": "stock_entry_emerald_fresh",
+  "doc_type": "Stock Entry",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4fa7e57b968005f5f37f31218b25b51736bffa71db63764a34bfd6fa4dbcbc06",
+  "description": "Bright green modern"
+}

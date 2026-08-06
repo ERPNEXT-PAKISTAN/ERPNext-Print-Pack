@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Sales Order",
+  "slug": "sales_order_vertex_classic",
+  "doc_type": "Sales Order",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "686720b0940e537f01b17797fc5a603d2a987195d2d34b0744294d6412b5233c",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

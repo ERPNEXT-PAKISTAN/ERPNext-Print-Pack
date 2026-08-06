@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Journal Entry",
+  "slug": "journal_entry_ocean_vibrant",
+  "doc_type": "Journal Entry",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cdcd053fc2d486a02b5f17bd79b8b4b5ac60057e7deea5e9a03b8ca14e7f278e",
+  "description": "Bright cyan ocean theme"
+}

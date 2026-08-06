@@ -6,12 +6,12 @@
       "reviewed_ref": "master (layout review only, no commit copied)",
       "license": "MIT",
       "license_url": "https://github.com/sparksuite/simple-html-invoice-template/blob/master/LICENSE",
-      "usage": "inspired",
-      "files_used": [],
-      "concepts_used": ["basic invoice table layout", "header/total separation"],
+      "usage": "adapted",
+      "files_used": ["sales_invoice_sparksuite_classic.html"],
+      "concepts_used": ["clean invoice table layout", "header/total separation", "minimal borders"],
       "attribution_required": false,
       "copyright_notice_included": false,
-      "notes": "No source code or assets copied."
+      "notes": "Layout adapted to ERPNext Jinja; original MIT template structure."
     },
     {
       "repository": "InvoicePlane/InvoicePlane",
@@ -32,12 +32,12 @@
       "reviewed_ref": "layout review only",
       "license": "MIT",
       "license_url": "https://github.com/tabler/tabler/blob/dev/LICENSE",
-      "usage": "inspired",
-      "files_used": [],
-      "concepts_used": ["spacing", "card-like sections"],
+      "usage": "adapted",
+      "files_used": ["sales_invoice_tabler_business.html"],
+      "concepts_used": ["card sections", "gradient header", "dashboard-style stats"],
       "attribution_required": false,
       "copyright_notice_included": false,
-      "notes": "No source code or assets copied."
+      "notes": "Tabler design patterns adapted; no Tabler CSS bundle copied."
     },
     {
       "repository": "ColorlibHQ/AdminLTE",

@@ -1,0 +1,17 @@
+{
+ "doctype": "Print Format",
+ "name": "Zoho Professional Work Order",
+ "doc_type": "Work Order",
+ "module": "Print Pack",
+ "custom_format": 1,
+ "print_format_type": "Jinja",
+ "standard": "No",
+ "disabled": 0,
+ "default_print_language": "en",
+ "margin_top": 10.0,
+ "margin_bottom": 10.0,
+ "margin_left": 10.0,
+ "margin_right": 10.0,
+ "page_number": "Hide",
+ "css": ""
+}

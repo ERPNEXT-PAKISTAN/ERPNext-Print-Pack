@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid POS Invoice",
+  "slug": "pos_invoice_gradient_vivid",
+  "doc_type": "POS Invoice",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b0449fcafbb8cc216d051690e5ca2363c16ea91e221fe8bca73b785bf81bb799",
+  "description": "Colorful purple-pink gradient"
+}

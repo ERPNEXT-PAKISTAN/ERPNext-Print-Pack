@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Maintenance Visit",
+  "slug": "maintenance_visit_modern_qr",
+  "doc_type": "Maintenance Visit",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "849ec4f66fe7f30fb7bd85728a2758b73990ee825e19fa893c2eaf8a947d2731",
+  "description": "Minimal grid, QR payment block"
+}

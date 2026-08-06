@@ -1,0 +1,17 @@
+{
+ "doctype": "Print Format",
+ "name": "UAE Thermal Receipt POS Invoice",
+ "doc_type": "POS Invoice",
+ "module": "Print Pack",
+ "custom_format": 1,
+ "print_format_type": "Jinja",
+ "standard": "No",
+ "disabled": 0,
+ "default_print_language": "en",
+ "margin_top": 4.0,
+ "margin_bottom": 4.0,
+ "margin_left": 4.0,
+ "margin_right": 4.0,
+ "page_number": "Hide",
+ "css": ""
+}

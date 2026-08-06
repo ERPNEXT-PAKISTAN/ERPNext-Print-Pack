@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Production Plan",
+  "slug": "production_plan_vertex_classic",
+  "doc_type": "Production Plan",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8cfc5346418333ac149b59ebc37018ca6640868c5bff81d642c19375e128aca6",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

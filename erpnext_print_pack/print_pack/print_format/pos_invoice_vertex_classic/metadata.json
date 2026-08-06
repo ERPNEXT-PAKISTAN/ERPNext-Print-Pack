@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic POS Invoice",
+  "slug": "pos_invoice_vertex_classic",
+  "doc_type": "POS Invoice",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "82884b4e24abbf2ee25775db6b96f726a5157ae5f943dda05214eeb8b7541166",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

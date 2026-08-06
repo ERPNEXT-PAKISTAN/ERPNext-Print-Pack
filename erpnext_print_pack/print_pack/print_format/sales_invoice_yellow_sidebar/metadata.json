@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Sales Invoice",
+  "slug": "sales_invoice_yellow_sidebar",
+  "doc_type": "Sales Invoice",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1198fbb89e0baea058fb6b1ca7821428070196ddeb33d92b62ba9cb88ba3ea33",
+  "description": "Yellow accent stripe, structured metadata"
+}

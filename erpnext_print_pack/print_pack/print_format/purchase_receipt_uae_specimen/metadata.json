@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen Purchase Receipt",
+  "slug": "purchase_receipt_uae_specimen",
+  "doc_type": "Purchase Receipt",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d2dc84f93db21b2eec2760ce6fe3645e793cb5d34b88b21ef0e151ac7f96b109",
+  "description": "UAE E-Invoice Specimen"
+}

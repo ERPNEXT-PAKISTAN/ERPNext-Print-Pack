@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Delivery Note",
+  "slug": "delivery_note_crimson_shop",
+  "doc_type": "Delivery Note",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4346bf7b95b6a44c55eedabe25b35ac3fea3dec676bc41c024b62e11f66691a1",
+  "description": "Bold red retail"
+}

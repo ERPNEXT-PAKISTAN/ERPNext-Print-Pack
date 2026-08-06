@@ -1,0 +1,58 @@
+{# Premium layout: vertex_classic · Job Card #}
+{% set title = "Job Card" %}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Party" %}
+{% set ship_label = "" %}
+{% set party_name = doc.party_name or doc.party or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Calibri, Arial, sans-serif; font-size: 10px; color: #333; }
+.vx-top { width: 100%; margin-bottom: 16px; }
+.vx-top td { vertical-align: top; padding: 4px; }
+.vx-title { font-size: 28px; color: #2f75b5; font-weight: 700; }
+.vx-co { font-size: 12px; font-weight: 700; color: #2f75b5; }
+.party-box { background: #d9e2f3; border: 1px solid #9dc3e6; padding: 8px; margin-bottom: 10px; }
+.party-grid td { width: 50%; vertical-align: top; padding: 4px; }
+.items { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.items th { background: #2f75b5; color: #fff; border: 1px solid #2f75b5; padding: 6px; font-size: 9px; }
+.items td { border: 1px solid #9dc3e6; padding: 5px; }
+.totals { width: 42%; margin-left: auto; margin-top: 10px; border-collapse: collapse; }
+.totals td { border: 1px solid #9dc3e6; padding: 5px 8px; }
+.totals .grand td { background: #d9e2f3; font-weight: 700; }
+.meta td { padding: 2px 0; font-size: 9px; }
+.words { margin-top: 10px; font-style: italic; font-size: 9px; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<table class="vx-top"><tr>
+<td><div class="vx-co">{{ doc.company or "" }}</div><div>{{ doc.company_address_display or "" }}</div></td>
+<td style="text-align:right"><div class="vx-title">{{ title }}</div>
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</td></tr>
+
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</td>
+</tr></table>
+<table class="party-grid"><tr>
+<td><div class="party-box"><strong>{{ party_label }}</strong><br>{{ party_name }}<br>{{ party_address }}</div></td>
+<td>{% if ship_label %}<div class="party-box"><strong>{{ ship_label }}</strong><br>{{ ship_address }}</div>{% endif %}</td>
+</tr></table>
+
+<table class="totals">
+<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
+</table>
+
+
+</div>

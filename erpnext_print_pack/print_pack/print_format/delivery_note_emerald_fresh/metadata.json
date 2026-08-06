@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Delivery Note",
+  "slug": "delivery_note_emerald_fresh",
+  "doc_type": "Delivery Note",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dde8843b448db77ceb3a7e5eadc0c6de023eeb565ef2baeccadfe2c5ccca7065",
+  "description": "Bright green modern"
+}

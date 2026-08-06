@@ -1,0 +1,35 @@
+{# Premium layout: crimson_shop · Leave Application #}
+{% set title = "Leave Application" %}
+{% set date_field = "from_date" %}
+
+{% set party_label = "Employee" %}
+{% set ship_label = "" %}
+{% set party_name = doc.employee_name or doc.employee or "" %}
+{% set party_address = "" %}
+{% set ship_address = "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Impact, Arial Black, sans-serif; font-size: 11px; color: #111; }
+.cr-banner { background: #dc2626; color: #fff; text-align: center; padding: 14px; font-size: 22px; letter-spacing: 2px; }
+.cr-sub { background: #fef2f2; padding: 10px; text-align: center; border-bottom: 3px solid #dc2626; margin-bottom: 12px; font-family: Arial; font-size: 10px; }
+.items { width: 100%; font-family: Arial; border-collapse: collapse; }
+.items th { background: #dc2626; color: #fff; padding: 8px; }
+.items td { padding: 7px; border-bottom: 1px solid #fecaca; }
+.cr-big { background: #991b1b; color: #fff; font-size: 22px; text-align: center; padding: 16px; margin-top: 14px; border-radius: 4px; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="cr-banner">{{ doc.company or "SHOP"|upper }}</div>
+<div class="cr-sub">{{ title }} #{{ doc.name }} · {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }} · {{ party_name }}</div>
+
+<div class="cr-big">PAY {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div><div class="epp-footer footer">Thank you for your business</div>
+
+</div>

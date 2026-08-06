@@ -1,0 +1,29 @@
+{
+  "name": "FBR Pakistan-3 Sales Invoice",
+  "slug": "sales_invoice_fbr_pakistan_3",
+  "doc_type": "Sales Invoice",
+  "theme": "sales_invoice_fbr_pakistan_3",
+  "layout_family": "sales_invoice_fbr_pakistan_3",
+  "layout_type": "regional",
+  "region": "PK",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "fbr",
+    "pakistan",
+    "sales-tax",
+    "qr",
+    "barcode"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "source_app": "fbr_integration",
+  "source_format": "FBR Letterhead-2",
+  "status": "stable",
+  "checksum": "67831fea7554a07a25000363dae44b80645d001f0bcc115f3a71acfa25a1067e",
+  "description": "Pakistan FBR sales tax invoice (adapted from FBR Letterhead-2)"
+}

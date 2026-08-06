@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Maintenance Schedule",
+  "slug": "maintenance_schedule_vertex_classic",
+  "doc_type": "Maintenance Schedule",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ad8fce3f7c84b080ac0faa70f05e165311103eea09f86f0432fa5084e39703d5",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

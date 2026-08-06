@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Maintenance Visit",
+  "slug": "maintenance_visit_emerald_fresh",
+  "doc_type": "Maintenance Visit",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7ce08cdcea98ade39f7d83cb846b8fd703e274ef03c73a28a9c3798b58f70d96",
+  "description": "Bright green modern"
+}

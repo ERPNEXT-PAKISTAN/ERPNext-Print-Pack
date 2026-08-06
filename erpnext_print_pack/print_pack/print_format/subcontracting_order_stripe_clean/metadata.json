@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Subcontracting Order",
+  "slug": "subcontracting_order_stripe_clean",
+  "doc_type": "Subcontracting Order",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bc33df8405ec7c84ef50cb6fc916b7f921b3da255424d19ed94635cbe8e3258c",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Stock Entry",
+  "slug": "stock_entry_modern_qr",
+  "doc_type": "Stock Entry",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c9d6645db66ce5ab7dbd95392003cc5a530f7ffe46b79fee9bf9ceda23599e94",
+  "description": "Minimal grid, QR payment block"
+}

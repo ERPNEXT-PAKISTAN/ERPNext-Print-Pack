@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Shipment",
+  "slug": "shipment_modern_qr",
+  "doc_type": "Shipment",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "663e98a298830f0dcaa2041dd65c14c05dac73f0b0c2454314c856f92e8f066d",
+  "description": "Minimal grid, QR payment block"
+}

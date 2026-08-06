@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Maintenance Schedule",
+  "slug": "maintenance_schedule_stripe_clean",
+  "doc_type": "Maintenance Schedule",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0ddd0544266d2ac65b03c45b0e871c92bad00068aade4c06660ca281374d11d8",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

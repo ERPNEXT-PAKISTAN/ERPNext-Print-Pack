@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Shipment",
+  "slug": "shipment_zoho_professional",
+  "doc_type": "Shipment",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "acf696bf8bafd60dd6cb266490115cdd164e82b65b59b456af217b7b926ac039",
+  "description": "Clean blue theme, summary balance box"
+}

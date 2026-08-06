@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Subcontracting Receipt",
+  "slug": "subcontracting_receipt_stripe_clean",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2ed1b59d78958a49a72e46f6319db2c5c4b2f71a272640791655e678634a6263",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

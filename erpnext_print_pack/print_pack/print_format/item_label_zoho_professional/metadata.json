@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Item Label",
+  "slug": "item_label_zoho_professional",
+  "doc_type": "Item",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "edbcd2e5488f0659547a6b67a3e2393294a7f34cf385d304a70c50a3d89c0c78",
+  "description": "Clean blue theme, summary balance box"
+}

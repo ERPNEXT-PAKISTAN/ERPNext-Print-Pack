@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Dunning",
+  "slug": "dunning_gradient_vivid",
+  "doc_type": "Dunning",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1a62e16977d56f5cba2ceb64851f24d851ff46f36582a8d0d0f09a9fd9654e25",
+  "description": "Colorful purple-pink gradient"
+}

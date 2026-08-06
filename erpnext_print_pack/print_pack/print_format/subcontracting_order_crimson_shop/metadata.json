@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Subcontracting Order",
+  "slug": "subcontracting_order_crimson_shop",
+  "doc_type": "Subcontracting Order",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b6e80bbc3653384a10643826f177669b7d950ce1ddd0dd5ed14bbb70aa99dc67",
+  "description": "Bold red retail"
+}

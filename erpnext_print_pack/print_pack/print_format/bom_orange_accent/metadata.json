@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Bill of Materials",
+  "slug": "bom_orange_accent",
+  "doc_type": "BOM",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a706942b315bc83f5aa6ff4d30377ab89a06b8825367be4f42d08dbf08151c66",
+  "description": "Bold orange total bar, signature area"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Timesheet",
+  "slug": "timesheet_orange_accent",
+  "doc_type": "Timesheet",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a80579272fcb453e65e21e306c4112cb3d6bc68c754450f8f80525608ad112d5",
+  "description": "Bold orange total bar, signature area"
+}

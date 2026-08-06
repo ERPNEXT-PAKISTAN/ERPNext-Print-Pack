@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Maintenance Visit",
+  "slug": "maintenance_visit_purple_tax",
+  "doc_type": "Maintenance Visit",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bca1851e661bd10735f24ad6f8b6c535ed4dcb54e5e6e775f1fe98b8479c606c",
+  "description": "Formal tax invoice, purple accent, signature"
+}

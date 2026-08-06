@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Purchase Invoice",
+  "slug": "purchase_invoice_dark_header_pro",
+  "doc_type": "Purchase Invoice",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f9588a752650123350f37c15e29f9bb29df817f7bd889a119ae22b3824c8c8e4",
+  "description": "Solid navy header bar, white INVOICE title"
+}

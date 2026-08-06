@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Dunning",
+  "slug": "dunning_crimson_shop",
+  "doc_type": "Dunning",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "51cae3ad9ddebd75da6e7946cbf172b9909e7fe66f471a6247b4ecf4a7b11163",
+  "description": "Bold red retail"
+}

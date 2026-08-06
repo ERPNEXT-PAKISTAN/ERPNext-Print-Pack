@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Batch Label",
+  "slug": "batch_label_emerald_fresh",
+  "doc_type": "Batch",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "39293262177bcc5f40944b56c67c7f0aa3a8c75c360fa2ef5c9956f3d0caf3f5",
+  "description": "Bright green modern"
+}

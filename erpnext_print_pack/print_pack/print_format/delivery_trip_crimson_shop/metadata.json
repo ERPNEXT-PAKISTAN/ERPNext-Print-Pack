@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Delivery Trip",
+  "slug": "delivery_trip_crimson_shop",
+  "doc_type": "Delivery Trip",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8d120a6f3d7ae4586597c8a65fb6d774ac360efda23a011a2b7dc0b75ea5bc81",
+  "description": "Bold red retail"
+}

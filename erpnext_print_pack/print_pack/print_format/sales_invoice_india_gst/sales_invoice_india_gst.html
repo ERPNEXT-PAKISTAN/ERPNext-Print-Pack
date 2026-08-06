@@ -1,0 +1,63 @@
+{# Premium layout: india_gst · Sales Invoice #}
+{% set title = "Sales Invoice" %}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.r { text-align: right; }
+.bold { font-weight: 700; }
+small { color: #666; font-size: 9px; }
+
+.root { font-family: Arial, sans-serif; font-size: 10px; color: #333; }
+.in-head { background: linear-gradient(135deg, #ff9933 0%, #fff 50%, #138808 100%); padding: 3px; margin-bottom: 12px; border-radius: 4px; }
+.in-inner { background: #fff; padding: 12px 16px; border-radius: 3px; }
+.in-title { font-size: 18px; font-weight: 700; color: #138808; }
+.in-gst { background: #fff7ed; border: 1px solid #fdba74; padding: 8px; margin: 10px 0; font-size: 9px; }
+.items { width: 100%; border-collapse: collapse; font-size: 9px; }
+.items th { background: #138808; color: #fff; padding: 6px 4px; }
+.items td { border: 1px solid #ddd; padding: 5px 4px; }
+.totals { width: 48%; margin-left: auto; margin-top: 10px; }
+.totals .grand td { background: #ff9933; color: #fff; font-weight: 700; }
+
+.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+</style>
+<div class="root print-format">
+
+<div class="in-head"><div class="in-inner">
+<div class="in-title">GST {{ title }}</div>
+<div>{{ doc.company or "" }} · {{ doc.name }} · {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div>
+</div></div>
+<div class="in-gst">
+	<strong>Supplier GSTIN:</strong> {{ doc.company_tax_id or "" }} &nbsp;|&nbsp;
+	<strong>Customer GSTIN:</strong> {{ doc.tax_id or "" }} &nbsp;|&nbsp;
+	<strong>Place of Supply:</strong> {{ doc.place_of_supply or "" }}
+</div>
+<table style="width:100%;margin-bottom:8px"><tr>
+<td><strong>Bill To:</strong> {{ party_name }}<br>{{ party_address }}</td>
+<td style="text-align:right">
+<table class="meta">
+<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</td></tr>
+{% if doc.due_date %}<tr><td>Due Date</td><td class="r">{{ frappe.utils.formatdate(doc.due_date) }}</td></tr>{% endif %}
+<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+</table>
+</td>
+</tr></table>
+{% if doc.items %}<table class="items"><thead><tr><th>#</th><th>Item</th><th>HSN</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Tax</th><th class="r">Amount</th></tr></thead><tbody>
+{% for row in doc.items %}<tr><td>{{ loop.index }}</td><td>{{ row.item_name or row.item_code or "" }}</td><td>{{ row.gst_hsn_code or row.custom_hsn_code or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.rate or "" }}</td><td class="r">{{ row.item_tax_rate or "" }}</td><td class="r">{{ row.amount or "" }}</td></tr>{% endfor %}
+</tbody></table>{% endif %}
+
+<table class="totals">
+<tr><td>Net Total</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or tax.account_head or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
+<tr class="grand"><td>Grand Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+{% if doc.in_words %}<div class="words">{{ doc.in_words }}</div>{% endif %}<div class="epp-sig sig">Authorized Signature _________________________</div>{% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}<div class="epp-footer footer">Thank you for your business</div>
+
+</div>

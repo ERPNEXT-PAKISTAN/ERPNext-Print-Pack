@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Employee Advance",
+  "slug": "employee_advance_vertex_classic",
+  "doc_type": "Employee Advance",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "97c31aeb7cc30de6392d256d8c87163ae929c2a71927361d6c9145936b2a69cb",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

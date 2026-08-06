@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Dunning",
+  "slug": "dunning_orange_accent",
+  "doc_type": "Dunning",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "450631dfa46a2d086ff20866b25f898351e8b45b41ebb884284bb95162b75963",
+  "description": "Bold orange total bar, signature area"
+}

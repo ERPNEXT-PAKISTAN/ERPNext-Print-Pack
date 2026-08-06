@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Maintenance Visit",
+  "slug": "maintenance_visit_vertex_classic",
+  "doc_type": "Maintenance Visit",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "145ead46ddbca42c5d66f05c9210a20f3caaab8a287c06469a94d6db5b6f69ec",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

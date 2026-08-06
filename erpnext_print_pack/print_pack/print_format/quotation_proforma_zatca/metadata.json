@@ -1,0 +1,27 @@
+{
+  "name": "Proforma ZATCA Quotation",
+  "slug": "quotation_proforma_zatca",
+  "doc_type": "Quotation",
+  "theme": "proforma_zatca",
+  "layout_family": "proforma_zatca",
+  "layout_type": "proforma",
+  "region": "SA",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_zatca",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "42c0044db436e37db3f47768f3bc1d23061a2e8c2c05f0595093eb80beabc7b0",
+  "description": "Proforma ZATCA"
+}

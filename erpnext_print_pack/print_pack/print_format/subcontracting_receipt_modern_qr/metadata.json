@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Subcontracting Receipt",
+  "slug": "subcontracting_receipt_modern_qr",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a1a70656a6363e62092a88e0f20f35709175b64dd4e1ac41bca39dc60c969fa1",
+  "description": "Minimal grid, QR payment block"
+}

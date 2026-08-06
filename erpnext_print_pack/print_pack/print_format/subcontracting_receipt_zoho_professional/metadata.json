@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Subcontracting Receipt",
+  "slug": "subcontracting_receipt_zoho_professional",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "31362889fdc5e02e2d4742701cb2f85aaba4e361d2f4da7d9275ebaf13fe2e63",
+  "description": "Clean blue theme, summary balance box"
+}

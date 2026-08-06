@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Serial Label",
+  "slug": "serial_label_zoho_professional",
+  "doc_type": "Serial No",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6e018f4abbaa5550753da1ba584112414d96435a3161d7fc471d3f54b742cd0d",
+  "description": "Clean blue theme, summary balance box"
+}

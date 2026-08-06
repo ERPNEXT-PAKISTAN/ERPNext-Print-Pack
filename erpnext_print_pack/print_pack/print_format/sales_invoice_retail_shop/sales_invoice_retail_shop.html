@@ -1,0 +1,56 @@
+{# Retail Shop — receipt-style for shops, boutiques, POS #}
+{% set company_doc = frappe.get_doc("Company", doc.company) if doc.company else none %}
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.rs-root { font-family: 'Arial Black', Arial, sans-serif; font-size: 11px; color: #111; max-width: 520px; margin: 0 auto; text-align: center; }
+.rs-shop { font-size: 26px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.rs-tagline { font-size: 10px; color: #666; font-weight: normal; margin-bottom: 12px; }
+.rs-divider { border-top: 2px dashed #ccc; margin: 12px 0; }
+.rs-meta { font-size: 10px; text-align: left; font-weight: normal; font-family: Arial, sans-serif; }
+.rs-meta td { padding: 2px 0; }
+.rs-items { width: 100%; text-align: left; font-family: 'Courier New', monospace; font-size: 11px; margin-top: 8px; }
+.rs-items td { padding: 4px 0; border-bottom: 1px dotted #ddd; }
+.rs-items .name { width: 55%; }
+.rs-items .qty { width: 15%; text-align: center; }
+.rs-items .amt { width: 30%; text-align: right; }
+.rs-grand { background: #111; color: #fff; padding: 12px 16px; margin-top: 14px; font-size: 18px; font-weight: 900; border-radius: 4px; }
+.rs-grand table { width: 100%; color: #fff; }
+.rs-footer { margin-top: 16px; font-size: 9px; color: #888; font-family: Arial, sans-serif; font-weight: normal; }
+.print-format .rs-root table > tbody > tr > td { padding: 4px 0 !important; }
+</style>
+<div class="rs-root print-format">
+{% if company_doc and company_doc.company_logo %}
+<img src="{{ company_doc.company_logo }}" style="max-height:64px;margin-bottom:8px"><br>
+{% endif %}
+<div class="rs-shop">{{ doc.company or "SHOP" }}</div>
+<div class="rs-tagline">Sales Receipt / Tax Invoice</div>
+<div class="rs-divider"></div>
+
+<table class="rs-meta" style="width:100%">
+	<tr><td>Invoice</td><td style="text-align:right;font-weight:bold">{{ doc.name }}</td></tr>
+	<tr><td>Date</td><td style="text-align:right">{{ frappe.utils.formatdate(doc.posting_date) }}</td></tr>
+	<tr><td>Customer</td><td style="text-align:right">{{ doc.customer_name or doc.customer or "Walk-in" }}</td></tr>
+	{% if doc.tax_id %}<tr><td>Tax ID</td><td style="text-align:right">{{ doc.tax_id }}</td></tr>{% endif %}
+</table>
+
+<div class="rs-divider"></div>
+
+{% if doc.items %}
+<table class="rs-items">
+	{% for row in doc.items %}
+	<tr>
+		<td class="name">{{ row.item_name or row.item_code or "" }}</td>
+		<td class="qty">x{{ row.qty or "" }}</td>
+		<td class="amt">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endif %}
+
+<div class="rs-grand">
+	<table><tr><td>TOTAL</td><td style="text-align:right">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table>
+</div>
+
+{% if doc.in_words %}<div style="margin-top:10px;font-size:9px;font-family:Arial">{{ doc.in_words }}</div>{% endif %}
+<div class="rs-footer">*** Thank you — visit again ***<br>{{ doc.company or "" }}</div>
+</div>

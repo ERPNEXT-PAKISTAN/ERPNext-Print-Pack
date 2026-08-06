@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Sales Order",
+  "slug": "sales_order_crimson_shop",
+  "doc_type": "Sales Order",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "81eb5029be9c6e0d8038c8f89c0c505f96b4cf969e8317477adb344bbfaf6d00",
+  "description": "Bold red retail"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "USA Commercial Purchase Receipt",
+  "slug": "purchase_receipt_usa_commercial",
+  "doc_type": "Purchase Receipt",
+  "theme": "usa_commercial",
+  "layout_family": "usa_commercial",
+  "layout_type": "regional",
+  "region": "US",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "usa_commercial",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d59db525634a16a6159761d16fbe073c4b2cdf344dd3ae21837ec121de86f9d7",
+  "description": "American red/blue stripe invoice"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Payment Entry",
+  "slug": "payment_entry_crimson_shop",
+  "doc_type": "Payment Entry",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3a142a8a3e367086b9e4d2ac0704cb9931deedf0b6397d8b93ec82d44a96365e",
+  "description": "Bold red retail"
+}

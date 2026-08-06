@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Quotation",
+  "slug": "quotation_ocean_vibrant",
+  "doc_type": "Quotation",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0ba830f26ea71f5eff9208485540a727f6d7f3b0ebbcb15adbccf410791169a3",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Material Request",
+  "slug": "material_request_dark_header_pro",
+  "doc_type": "Material Request",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "55a19523ffbdf666bf3609cc2273ea23963cefada4d705d2ce2ab12c2972740a",
+  "description": "Solid navy header bar, white INVOICE title"
+}

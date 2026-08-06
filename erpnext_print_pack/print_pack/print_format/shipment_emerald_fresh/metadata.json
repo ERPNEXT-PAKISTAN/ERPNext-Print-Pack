@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Shipment",
+  "slug": "shipment_emerald_fresh",
+  "doc_type": "Shipment",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ee17d5edbffafc0da3a7c7ed5307acfa4516fc8aa455ee6f517b54334fcb8f36",
+  "description": "Bright green modern"
+}

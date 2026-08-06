@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Timesheet",
+  "slug": "timesheet_dark_header_pro",
+  "doc_type": "Timesheet",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fe8adb1d31f8885745bb3b8f8b6251a479dc7c23fc92d6f98cab5a534cfd4309",
+  "description": "Solid navy header bar, white INVOICE title"
+}

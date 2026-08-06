@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Installation Note",
+  "slug": "installation_note_vertex_classic",
+  "doc_type": "Installation Note",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a99877a3e58cb123dc2abe9632b64ffc21a5a05c2ee7bb32eaf25198d2edccf2",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

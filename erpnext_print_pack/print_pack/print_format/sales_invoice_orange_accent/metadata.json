@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Sales Invoice",
+  "slug": "sales_invoice_orange_accent",
+  "doc_type": "Sales Invoice",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e75f9a1078fb6f4a55a681d35bbeae8498a87b9a25f0a9c99576026429e82c7f",
+  "description": "Bold orange total bar, signature area"
+}

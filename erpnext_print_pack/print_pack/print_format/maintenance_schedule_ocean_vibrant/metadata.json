@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Maintenance Schedule",
+  "slug": "maintenance_schedule_ocean_vibrant",
+  "doc_type": "Maintenance Schedule",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "499157899f3e0af6a6cf66569c4e4f0db9397636825d6b72eaea5cca9b18ba46",
+  "description": "Bright cyan ocean theme"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Work Order",
+  "slug": "work_order_vertex_classic",
+  "doc_type": "Work Order",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b2d87d41b2bb03dd7f27bc0e7f271ed778eb921d6d761f5f5a29cd0ac5089475",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

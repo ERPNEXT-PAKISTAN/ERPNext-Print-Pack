@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Work Order",
+  "slug": "work_order_yellow_sidebar",
+  "doc_type": "Work Order",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5d534f38fad5a258a9f73f252b0db33183ca5ce30d9c0043b248c661cfec93d6",
+  "description": "Yellow accent stripe, structured metadata"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Maintenance Schedule",
+  "slug": "maintenance_schedule_orange_accent",
+  "doc_type": "Maintenance Schedule",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8da22c9aea0ea641d3169fe495dad6f2301b96a6859608777ca53a72e6061279",
+  "description": "Bold orange total bar, signature area"
+}

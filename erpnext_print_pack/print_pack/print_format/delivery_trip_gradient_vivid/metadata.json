@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Delivery Trip",
+  "slug": "delivery_trip_gradient_vivid",
+  "doc_type": "Delivery Trip",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "082a0eaaedb7d1b3780c7125cd2e7973f5f6ab21f1c36f3577c72247a8f5fa92",
+  "description": "Colorful purple-pink gradient"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Installation Note",
+  "slug": "installation_note_modern_qr",
+  "doc_type": "Installation Note",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "25d68bbd48a202e6c936cfbe483806e8ba738b91d0f336db79c4ec910bd3bba7",
+  "description": "Minimal grid, QR payment block"
+}

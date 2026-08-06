@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen POS Invoice",
+  "slug": "pos_invoice_uae_specimen",
+  "doc_type": "POS Invoice",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "aeac4951f39c9505b50d6b28a5e1fb0cc5404ddf30b2261e803fc36f9cc97973",
+  "description": "UAE E-Invoice Specimen"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Pick List",
+  "slug": "pick_list_purple_tax",
+  "doc_type": "Pick List",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "db3cad92583598b46518e825ce895658f5f6dac88e88693a6bc6b5d9ff1ad223",
+  "description": "Formal tax invoice, purple accent, signature"
+}

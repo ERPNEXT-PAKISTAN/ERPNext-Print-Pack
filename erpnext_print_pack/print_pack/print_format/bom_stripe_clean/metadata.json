@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Bill of Materials",
+  "slug": "bom_stripe_clean",
+  "doc_type": "BOM",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ffea117abe6c1744467c6860e197aae6f590dbb31c038c360018da02033d35fd",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

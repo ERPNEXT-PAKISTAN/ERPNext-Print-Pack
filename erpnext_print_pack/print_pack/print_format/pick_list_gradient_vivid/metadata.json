@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Pick List",
+  "slug": "pick_list_gradient_vivid",
+  "doc_type": "Pick List",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "6836f92513cc2d87f86baa1fd4109f523a42814be75f28107299a3b5b0040315",
+  "description": "Colorful purple-pink gradient"
+}

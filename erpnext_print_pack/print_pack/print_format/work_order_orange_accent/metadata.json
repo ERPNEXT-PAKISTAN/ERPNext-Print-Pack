@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Work Order",
+  "slug": "work_order_orange_accent",
+  "doc_type": "Work Order",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2db744ee3fd88797d5ce55cecb4da7ef63011985899948e683cad9e8c0beb497",
+  "description": "Bold orange total bar, signature area"
+}

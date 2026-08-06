@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Sales Invoice",
+  "slug": "sales_invoice_vertex_classic",
+  "doc_type": "Sales Invoice",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "662fbb55374a9bace405a542dc3546f9d2a9de921f7b497e8369f71602db0e97",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

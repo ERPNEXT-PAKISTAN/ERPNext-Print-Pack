@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Batch Label",
+  "slug": "batch_label_dark_header_pro",
+  "doc_type": "Batch",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a9f4843bf8749234ab7150e5af60350d6f4891bfe32b469b6962c3650826ad0f",
+  "description": "Solid navy header bar, white INVOICE title"
+}

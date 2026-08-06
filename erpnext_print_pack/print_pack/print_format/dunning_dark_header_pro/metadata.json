@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Dunning",
+  "slug": "dunning_dark_header_pro",
+  "doc_type": "Dunning",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "99625b8923ce8c12ad7d51f87036504ad7cae634c7922f28e800b49514c62c80",
+  "description": "Solid navy header bar, white INVOICE title"
+}

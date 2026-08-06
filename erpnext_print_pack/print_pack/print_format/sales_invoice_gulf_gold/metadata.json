@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Sales Invoice",
+  "slug": "sales_invoice_gulf_gold",
+  "doc_type": "Sales Invoice",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2828c494318d05cc13225890c7af01e28e078a386a9ccc82276916a51b2ddf67",
+  "description": "Middle East gold bilingual luxury"
+}

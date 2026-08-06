@@ -1,0 +1,98 @@
+{# SparkSuite Classic — MIT-inspired clean invoice layout (adapted for ERPNext) #}
+{% set company_doc = frappe.get_doc("Company", doc.company) if doc.company else none %}
+<style>
+@page { size: A4 portrait; margin: 12mm; }
+.ss-root {
+	max-width: 100%;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.45;
+	color: #555;
+}
+.ss-root table { width: 100%; border-collapse: collapse; }
+.ss-root td { padding: 6px 8px; vertical-align: top; }
+.ss-title { font-size: 36px; line-height: 1; color: #333; font-weight: 300; letter-spacing: -1px; }
+.ss-meta { text-align: right; color: #666; }
+.ss-meta .bold { color: #333; font-weight: 600; }
+.ss-section { padding-bottom: 24px; }
+.ss-heading td { background: #eee; border-bottom: 1px solid #ddd; font-weight: 700; color: #333; font-size: 10px; text-transform: uppercase; }
+.ss-item td { border-bottom: 1px solid #eee; }
+.ss-total td { border-top: 2px solid #eee; font-weight: 700; font-size: 13px; color: #333; }
+.ss-total .amount { text-align: right; }
+.ss-tax td { font-size: 10px; color: #666; }
+.ss-footer { margin-top: 28px; padding-top: 12px; border-top: 1px solid #eee; font-size: 10px; color: #888; }
+.print-format .ss-root table > tbody > tr > td { padding: 6px 8px !important; }
+</style>
+<div class="ss-root print-format">
+<table class="ss-section">
+	<tr class="top">
+		<td style="width:55%">
+			{% if company_doc and company_doc.company_logo %}
+			<img src="{{ company_doc.company_logo }}" style="max-height:52px;margin-bottom:8px"><br>
+			{% endif %}
+			<div class="ss-title">Invoice</div>
+		</td>
+		<td class="ss-meta">
+			<div><span class="bold">Invoice #</span> {{ doc.name }}</div>
+			<div><span class="bold">Date</span> {{ frappe.utils.formatdate(doc.posting_date) }}</div>
+			{% if doc.due_date %}<div><span class="bold">Due</span> {{ frappe.utils.formatdate(doc.due_date) }}</div>{% endif %}
+			{% if doc.status %}<div><span class="bold">Status</span> {{ doc.status }}</div>{% endif %}
+		</td>
+	</tr>
+</table>
+
+<table class="ss-section">
+	<tr class="information">
+		<td style="width:50%">
+			<div class="bold" style="color:#333;margin-bottom:4px">{{ doc.company or "" }}</div>
+			<div>{{ doc.company_address_display or "" }}</div>
+			{% if doc.company_tax_id %}<div>VAT: {{ doc.company_tax_id }}</div>{% endif %}
+		</td>
+		<td style="width:50%">
+			<div class="bold" style="color:#333;margin-bottom:4px">{{ doc.customer_name or doc.customer or "" }}</div>
+			<div>{{ doc.address_display or "" }}</div>
+			{% if doc.tax_id %}<div>Tax ID: {{ doc.tax_id }}</div>{% endif %}
+			{% if doc.contact_email %}<div>{{ doc.contact_email }}</div>{% endif %}
+		</td>
+	</tr>
+</table>
+
+{% if doc.items %}
+<table>
+	<tr class="ss-heading">
+		<td style="width:5%">#</td>
+		<td>Item</td>
+		<td style="width:12%;text-align:right">Qty</td>
+		<td style="width:15%;text-align:right">Rate</td>
+		<td style="width:18%;text-align:right">Amount</td>
+	</tr>
+	{% for row in doc.items %}
+	<tr class="ss-item">
+		<td>{{ loop.index }}</td>
+		<td>
+			<div class="bold" style="color:#333">{{ row.item_name or row.item_code or "" }}</div>
+			{% if row.description and row.description != row.item_name %}<div style="font-size:10px">{{ row.description }}</div>{% endif %}
+		</td>
+		<td style="text-align:right">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
+		<td style="text-align:right">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+		<td style="text-align:right">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endif %}
+
+<table style="width:42%;margin-left:auto;margin-top:12px">
+	<tr><td>Net Total</td><td class="amount" style="text-align:right">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+	{% if doc.taxes %}
+	{% for tax in doc.taxes %}
+	<tr class="ss-tax"><td>{{ tax.description or tax.account_head or "Tax" }}</td><td style="text-align:right">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>
+	{% endfor %}
+	{% endif %}
+	<tr class="ss-total"><td>Total</td><td class="amount" style="text-align:right">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+
+{% if doc.in_words %}<div style="margin-top:16px;font-style:italic">{{ doc.in_words }}</div>{% endif %}
+{% if doc.terms %}<div style="margin-top:20px"><div class="bold" style="color:#333">Terms</div><div>{{ doc.terms }}</div></div>{% endif %}
+
+<div class="ss-footer">Thank you for your business · {{ doc.company or "" }}</div>
+</div>

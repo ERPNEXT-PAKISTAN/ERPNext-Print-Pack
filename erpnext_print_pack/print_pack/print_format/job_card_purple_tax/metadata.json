@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Job Card",
+  "slug": "job_card_purple_tax",
+  "doc_type": "Job Card",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2575dfe489a9bdc645500e20ae7070fe600369617174a19e83f8a49771de1142",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Payment Entry",
+  "slug": "payment_entry_emerald_fresh",
+  "doc_type": "Payment Entry",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f6c5113827284db1aee4552cf387a2ffb89ceaeff8b1e2b658243011ecc65f68",
+  "description": "Bright green modern"
+}

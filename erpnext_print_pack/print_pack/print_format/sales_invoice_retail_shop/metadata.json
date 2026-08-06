@@ -1,0 +1,17 @@
+{
+ "name": "Retail Shop Sales Invoice",
+ "slug": "sales_invoice_retail_shop",
+ "doc_type": "Sales Invoice",
+ "theme": "retail_shop",
+ "layout_family": "retail",
+ "sector": "retail_shop",
+ "category": "sales",
+ "orientation": "portrait",
+ "paper_size": "A4",
+ "languages": ["en"],
+ "features": ["receipt-style", "bold-total"],
+ "source_type": "original",
+ "source_license": "MIT",
+ "status": "stable",
+ "erpnext_versions": ["15", "16"]
+}

@@ -1,11 +1,22 @@
 app_name = "erpnext_print_pack"
 app_title = "ERPNext Print Pack"
 app_publisher = "Taimoor"
-app_description = "Community-ready ERPNext print format library with 320+ Jinja templates, components, themes, and sync tooling"
+app_description = "Community-ready ERPNext print format library with 900+ Jinja templates, regional tax invoices, thermal POS, and print browser"
 app_email = "taimoor986@gmail.com"
 app_license = "MIT"
+app_logo_url = "/assets/erpnext_print_pack/images/print_pack_logo.svg"
+app_home = "/app/print-format-browser"
 
 required_apps = ["erpnext"]
+
+add_to_apps_screen = [
+	{
+		"name": "erpnext_print_pack",
+		"logo": app_logo_url,
+		"title": "ERPNext Print Pack",
+		"route": app_home,
+	}
+]
 
 fixtures = [
 	{

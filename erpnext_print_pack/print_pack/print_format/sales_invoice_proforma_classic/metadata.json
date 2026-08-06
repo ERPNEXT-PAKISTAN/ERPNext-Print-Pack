@@ -1,0 +1,26 @@
+{
+  "name": "Proforma Classic Sales Invoice",
+  "slug": "sales_invoice_proforma_classic",
+  "doc_type": "Sales Invoice",
+  "theme": "proforma_classic",
+  "layout_family": "proforma_classic",
+  "layout_type": "proforma",
+  "region": "ALL",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "specimen",
+    "proforma_classic",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "07240df1a12a46cb78c0cfb8d6e9262ad354c2ec977fa428050b7fece1683186",
+  "description": "Proforma Classic"
+}

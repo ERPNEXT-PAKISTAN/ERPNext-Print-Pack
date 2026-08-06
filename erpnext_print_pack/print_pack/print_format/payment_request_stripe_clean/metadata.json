@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Payment Request",
+  "slug": "payment_request_stripe_clean",
+  "doc_type": "Payment Request",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "01d79a861720bda7dcad66b41a572facdde0740135efbd612c43527e0eea30e0",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

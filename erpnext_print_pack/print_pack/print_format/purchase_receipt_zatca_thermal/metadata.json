@@ -1,0 +1,27 @@
+{
+  "name": "ZATCA Thermal Receipt Purchase Receipt",
+  "slug": "purchase_receipt_zatca_thermal",
+  "doc_type": "Purchase Receipt",
+  "theme": "zatca_thermal",
+  "layout_family": "zatca_thermal",
+  "layout_type": "thermal",
+  "region": "SA",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "zatca_thermal",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cb9265aeaa015a76f3de55521ce5850c5c87ca2e389b2e3ae71a228c58985a80",
+  "description": "ZATCA Thermal Receipt"
+}

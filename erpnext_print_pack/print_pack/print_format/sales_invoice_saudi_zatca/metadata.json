@@ -1,0 +1,27 @@
+{
+  "name": "Saudi ZATCA Sales Invoice",
+  "slug": "sales_invoice_saudi_zatca",
+  "doc_type": "Sales Invoice",
+  "theme": "saudi_zatca",
+  "layout_family": "saudi_zatca",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "saudi_zatca",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c95440a835e643aea7081b7bec31e318baddab4aa9b37ec83375f2f130a0aadb",
+  "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
+}

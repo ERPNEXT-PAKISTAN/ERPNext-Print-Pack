@@ -1,0 +1,27 @@
+{
+  "name": "Gulf Gold Purchase Order",
+  "slug": "purchase_order_gulf_gold",
+  "doc_type": "Purchase Order",
+  "theme": "gulf_gold",
+  "layout_family": "gulf_gold",
+  "layout_type": "regional",
+  "region": "ME",
+  "sector": "all",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "premium-layout",
+    "gulf_gold",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "85225a3c44df7f87600b50d9d265089b023c3b41fb46d2d90b5559702e6ba55b",
+  "description": "Middle East gold bilingual luxury"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Delivery Trip",
+  "slug": "delivery_trip_vertex_classic",
+  "doc_type": "Delivery Trip",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5281cd2a461b09a5c6d77ea18b623b21a3bdf44dc7690875518b76d40421d510",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

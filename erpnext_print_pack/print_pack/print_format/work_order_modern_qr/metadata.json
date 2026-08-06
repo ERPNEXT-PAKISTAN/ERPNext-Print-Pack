@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Work Order",
+  "slug": "work_order_modern_qr",
+  "doc_type": "Work Order",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b7dc3999da6c4dadb08b56c95944ed85d7640184cf0593bdd27e979cd6e64a52",
+  "description": "Minimal grid, QR payment block"
+}

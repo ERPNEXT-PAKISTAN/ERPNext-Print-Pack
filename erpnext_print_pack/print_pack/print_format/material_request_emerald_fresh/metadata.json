@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Material Request",
+  "slug": "material_request_emerald_fresh",
+  "doc_type": "Material Request",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "26ea276cb85414b97f5a6c780f23cdd9719fa0c0cd2a410d70daa73f2ce15c55",
+  "description": "Bright green modern"
+}

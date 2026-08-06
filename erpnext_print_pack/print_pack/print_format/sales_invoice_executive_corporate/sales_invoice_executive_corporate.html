@@ -1,0 +1,78 @@
+{# Executive Corporate — formal letterhead for companies & enterprises #}
+{% set company_doc = frappe.get_doc("Company", doc.company) if doc.company else none %}
+<style>
+@page { size: A4 portrait; margin: 14mm; }
+.ec-root { font-family: Georgia, 'Times New Roman', serif; font-size: 11px; color: #1a1a1a; line-height: 1.5; }
+.ec-band { background: #1e3a5f; color: #fff; padding: 22px 28px; margin: -4px -4px 20px -4px; }
+.ec-band table { width: 100%; }
+.ec-band .co { font-size: 20px; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; }
+.ec-band .doc-type { font-size: 11px; opacity: 0.8; margin-top: 6px; }
+.ec-gold { height: 3px; background: linear-gradient(90deg, #b8860b, #d4af37, #b8860b); margin-bottom: 20px; }
+.ec-ref { text-align: right; font-size: 10px; color: #444; margin-bottom: 18px; font-family: Arial, sans-serif; }
+.ec-party { width: 100%; margin-bottom: 20px; }
+.ec-party td { width: 50%; vertical-align: top; padding-right: 16px; }
+.ec-party .head { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: #b8860b; margin-bottom: 6px; font-family: Arial, sans-serif; }
+.ec-table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 10px; }
+.ec-table th { border-top: 2px solid #1e3a5f; border-bottom: 2px solid #1e3a5f; padding: 8px 6px; text-align: left; font-weight: 600; color: #1e3a5f; }
+.ec-table td { padding: 8px 6px; border-bottom: 1px solid #e5e7eb; }
+.ec-table .num { text-align: right; }
+.ec-totals { width: 45%; margin-left: auto; margin-top: 16px; font-family: Arial, sans-serif; }
+.ec-totals td { padding: 5px 8px; }
+.ec-totals .grand { border-top: 2px solid #1e3a5f; font-size: 13px; font-weight: 700; color: #1e3a5f; }
+.ec-sig { margin-top: 36px; font-family: Arial, sans-serif; font-size: 10px; }
+.ec-sig td { width: 33%; padding-top: 30px; border-top: 1px solid #999; }
+.print-format .ec-root table > tbody > tr > td { padding: 8px 6px !important; }
+</style>
+<div class="ec-root print-format">
+<div class="ec-band">
+	<table><tr>
+		<td>
+			{% if company_doc and company_doc.company_logo %}<img src="{{ company_doc.company_logo }}" style="max-height:44px;filter:brightness(0) invert(1);margin-bottom:8px"><br>{% endif %}
+			<div class="co">{{ doc.company or "" }}</div>
+			<div class="doc-type">Tax Invoice</div>
+		</td>
+		<td style="text-align:right;vertical-align:bottom;font-family:Arial,sans-serif;font-size:10px">
+			<div>{{ doc.company_address_display or "" }}</div>
+		</td>
+	</tr></table>
+</div>
+<div class="ec-gold"></div>
+
+<div class="ec-ref">
+	<strong>Reference:</strong> {{ doc.name }} &nbsp;|&nbsp;
+	<strong>Date:</strong> {{ frappe.utils.formatdate(doc.posting_date) }}
+	{% if doc.due_date %}&nbsp;|&nbsp; <strong>Due:</strong> {{ frappe.utils.formatdate(doc.due_date) }}{% endif %}
+</div>
+
+<table class="ec-party"><tr>
+	<td><div class="head">Invoiced To</div><strong>{{ doc.customer_name or doc.customer or "" }}</strong><br>{{ doc.address_display or "" }}</td>
+	<td><div class="head">Payment Details</div>Currency: {{ doc.currency or "" }}<br>{% if doc.company_tax_id %}Company VAT: {{ doc.company_tax_id }}{% endif %}</td>
+</tr></table>
+
+{% if doc.items %}
+<table class="ec-table">
+	<thead><tr><th>#</th><th>Description</th><th class="num">Qty</th><th class="num">Unit Price</th><th class="num">Line Total</th></tr></thead>
+	<tbody>
+	{% for row in doc.items %}
+	<tr>
+		<td>{{ loop.index }}</td>
+		<td>{{ row.item_name or row.item_code or "" }}</td>
+		<td class="num">{{ row.qty or "" }}</td>
+		<td class="num">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+		<td class="num">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+{% endif %}
+
+<table class="ec-totals">
+	<tr><td>Net Amount</td><td style="text-align:right">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+	{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or "Tax" }}</td><td style="text-align:right">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
+	<tr class="grand"><td>Total Payable</td><td style="text-align:right">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+</table>
+
+{% if doc.in_words %}<div style="margin-top:14px;font-style:italic;font-size:10px">{{ doc.in_words }}</div>{% endif %}
+
+<table class="ec-sig"><tr><td>Authorized Signatory</td><td>Finance Department</td><td>Customer Acknowledgement</td></tr></table>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "Dark Header Pro Project",
+  "slug": "project_dark_header_pro",
+  "doc_type": "Project",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dd68da03273308e78c67e4822be756787ce625fd433f631d5f85d83e0d137088",
+  "description": "Solid navy header bar, white INVOICE title"
+}

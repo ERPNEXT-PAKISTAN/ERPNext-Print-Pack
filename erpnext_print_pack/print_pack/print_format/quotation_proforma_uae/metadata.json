@@ -1,0 +1,27 @@
+{
+  "name": "Proforma UAE Quotation",
+  "slug": "quotation_proforma_uae",
+  "doc_type": "Quotation",
+  "theme": "proforma_uae",
+  "layout_family": "proforma_uae",
+  "layout_type": "proforma",
+  "region": "AE",
+  "is_proforma": true,
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "proforma_uae",
+    "proforma"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8a82c3d7550f84a67856f9e0ec32203e551a073adc38f1281ccbe1fed794efb2",
+  "description": "Proforma UAE"
+}

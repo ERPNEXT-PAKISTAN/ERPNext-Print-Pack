@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Timesheet",
+  "slug": "timesheet_crimson_shop",
+  "doc_type": "Timesheet",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4c2a1774407703b499204739693741e5727e85e0b97d69335c73f980a52748e4",
+  "description": "Bold red retail"
+}

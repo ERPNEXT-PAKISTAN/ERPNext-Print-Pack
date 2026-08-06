@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Journal Entry",
+  "slug": "journal_entry_modern_qr",
+  "doc_type": "Journal Entry",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fdc19a5e74e22dc1fadeb2d057889a38f87f95659dd83cebaaa8f8c05dc4ce64",
+  "description": "Minimal grid, QR payment block"
+}

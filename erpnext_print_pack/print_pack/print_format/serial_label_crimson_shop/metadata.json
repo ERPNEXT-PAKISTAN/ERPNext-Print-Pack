@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Shop Serial Label",
+  "slug": "serial_label_crimson_shop",
+  "doc_type": "Serial No",
+  "theme": "crimson_shop",
+  "layout_family": "crimson_shop",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "crimson_shop",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3d770878fb97b07fa14237e4873b12930942d1932df57ba1e1daf583b387e24b",
+  "description": "Bold red retail"
+}

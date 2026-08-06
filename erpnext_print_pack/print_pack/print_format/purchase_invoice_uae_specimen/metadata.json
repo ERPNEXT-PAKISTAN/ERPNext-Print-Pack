@@ -1,0 +1,27 @@
+{
+  "name": "UAE E-Invoice Specimen Purchase Invoice",
+  "slug": "purchase_invoice_uae_specimen",
+  "doc_type": "Purchase Invoice",
+  "theme": "uae_specimen",
+  "layout_family": "uae_specimen",
+  "layout_type": "specimen",
+  "region": "AE",
+  "is_proforma": false,
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "specimen",
+    "uae_specimen",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "791c9f444e95b6896eb198b710b6bf1ee8b066d6e5fd00ea90162b37b1b95b16",
+  "description": "UAE E-Invoice Specimen"
+}

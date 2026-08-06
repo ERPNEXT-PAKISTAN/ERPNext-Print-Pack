@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Delivery Trip",
+  "slug": "delivery_trip_purple_tax",
+  "doc_type": "Delivery Trip",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8babf0758b43d4ec4be1dfd95bd43e0c60adb0245e011fe5e16332f76c084e39",
+  "description": "Formal tax invoice, purple accent, signature"
+}

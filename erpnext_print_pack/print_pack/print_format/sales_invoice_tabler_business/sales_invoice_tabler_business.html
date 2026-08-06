@@ -1,0 +1,69 @@
+{# Tabler Business — card-based corporate layout (Tabler-inspired, adapted) #}
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.tb-root { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; color: #1e293b; }
+.tb-hero { background: linear-gradient(135deg, #206bc4 0%, #4299e1 100%); color: #fff; border-radius: 8px; padding: 20px 24px; margin-bottom: 16px; }
+.tb-hero h1 { margin: 0; font-size: 22px; font-weight: 600; }
+.tb-hero .sub { opacity: 0.85; margin-top: 4px; }
+.tb-cards { width: 100%; margin-bottom: 16px; }
+.tb-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; }
+.tb-card .label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: #64748b; margin-bottom: 4px; }
+.tb-card .value { font-size: 12px; font-weight: 600; color: #0f172a; }
+.tb-grid td { padding: 6px; vertical-align: top; }
+.tb-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; margin-top: 8px; }
+.tb-table th { background: #f1f5f9; color: #475569; font-size: 9px; text-transform: uppercase; padding: 10px 8px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.tb-table td { padding: 10px 8px; border-bottom: 1px solid #f1f5f9; }
+.tb-table tr:nth-child(even) td { background: #fafbfc; }
+.tb-table tr:last-child td { border-bottom: none; }
+.tb-summary { background: #0f172a; color: #fff; border-radius: 8px; padding: 14px 18px; width: 48%; margin-left: auto; margin-top: 14px; }
+.tb-summary table { width: 100%; }
+.tb-summary td { padding: 4px 0; color: #cbd5e1; }
+.tb-summary .grand td { font-size: 16px; font-weight: 700; color: #fff; border-top: 1px solid #334155; padding-top: 10px; }
+.print-format .tb-root table > tbody > tr > td { padding: 6px !important; }
+</style>
+<div class="tb-root print-format">
+<div class="tb-hero">
+	<table style="width:100%"><tr>
+		<td><h1>Sales Invoice</h1><div class="sub">{{ doc.company or "" }}</div></td>
+		<td style="text-align:right;vertical-align:top"><div style="font-size:18px;font-weight:700">{{ doc.name }}</div><div class="sub">{{ frappe.utils.formatdate(doc.posting_date) }}</div></td>
+	</tr></table>
+</div>
+
+<table class="tb-cards tb-grid"><tr>
+	<td style="width:24%"><div class="tb-card"><div class="label">Customer</div><div class="value">{{ doc.customer_name or doc.customer or "—" }}</div></div></td>
+	<td style="width:24%"><div class="tb-card"><div class="label">Due Date</div><div class="value">{{ frappe.utils.formatdate(doc.due_date) if doc.due_date else "—" }}</div></div></td>
+	<td style="width:24%"><div class="tb-card"><div class="label">Currency</div><div class="value">{{ doc.currency or "" }}</div></div></td>
+	<td style="width:24%"><div class="tb-card"><div class="label">Status</div><div class="value">{{ doc.status or "" }}</div></div></td>
+</tr></table>
+
+<table class="tb-grid" style="margin-bottom:12px"><tr>
+	<td style="width:50%"><div class="tb-card"><div class="label">Bill From</div><div>{{ doc.company_address_display or "" }}</div></div></td>
+	<td style="width:50%"><div class="tb-card"><div class="label">Bill To</div><div>{{ doc.address_display or "" }}</div></div></td>
+</tr></table>
+
+{% if doc.items %}
+<table class="tb-table">
+	<thead><tr><th>#</th><th>Description</th><th style="text-align:right">Qty</th><th style="text-align:right">Rate</th><th style="text-align:right">Amount</th></tr></thead>
+	<tbody>
+	{% for row in doc.items %}
+	<tr>
+		<td>{{ loop.index }}</td>
+		<td><strong>{{ row.item_name or row.item_code or "" }}</strong>{% if row.description %}<br><span style="color:#64748b">{{ row.description }}</span>{% endif %}</td>
+		<td style="text-align:right">{{ row.qty or "" }}</td>
+		<td style="text-align:right">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+		<td style="text-align:right">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+{% endif %}
+
+<div class="tb-summary">
+	<table>
+		<tr><td>Subtotal</td><td style="text-align:right">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
+		{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or "Tax" }}</td><td style="text-align:right">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
+		<tr class="grand"><td>Amount Due</td><td style="text-align:right">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
+	</table>
+</div>
+{% if doc.in_words %}<div style="margin-top:12px;color:#64748b;font-size:9px">{{ doc.in_words }}</div>{% endif %}
+</div>

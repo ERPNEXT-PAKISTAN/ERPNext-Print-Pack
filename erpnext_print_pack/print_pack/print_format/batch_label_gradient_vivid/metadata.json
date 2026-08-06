@@ -1,0 +1,26 @@
+{
+  "name": "Gradient Vivid Batch Label",
+  "slug": "batch_label_gradient_vivid",
+  "doc_type": "Batch",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a386279b453f99c309628773bcdd339acc575b99ce7bae65239b85b4540167cf",
+  "description": "Colorful purple-pink gradient"
+}

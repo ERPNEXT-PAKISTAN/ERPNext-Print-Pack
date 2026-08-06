@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Serial Label",
+  "slug": "serial_label_yellow_sidebar",
+  "doc_type": "Serial No",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "91ce2c8f0c445a28d288fb063ddadbb18fabd088029ddd62d42b13af4be68f1d",
+  "description": "Yellow accent stripe, structured metadata"
+}

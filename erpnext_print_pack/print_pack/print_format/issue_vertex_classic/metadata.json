@@ -1,0 +1,23 @@
+{
+  "name": "Vertex Classic Issue",
+  "slug": "issue_vertex_classic",
+  "doc_type": "Issue",
+  "theme": "vertex_classic",
+  "layout_family": "vertex_classic",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "vertex_classic"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5987c2df49fd566ed432d893a0f6718e0a592151222d3a8f5e327552dec0a2c4",
+  "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
+}

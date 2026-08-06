@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Material Request",
+  "slug": "material_request_yellow_sidebar",
+  "doc_type": "Material Request",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "31d7ed996b1c73fe69fe1a754b0c63aea875f15908743cbbcc9613315d68f81e",
+  "description": "Yellow accent stripe, structured metadata"
+}

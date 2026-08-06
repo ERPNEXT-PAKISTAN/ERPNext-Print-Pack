@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Salary Slip",
+  "slug": "salary_slip_ocean_vibrant",
+  "doc_type": "Salary Slip",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "fad66cb8eff50857d92236ee372426485bbf1d528c8bbd88816799600331cd4a",
+  "description": "Bright cyan ocean theme"
+}

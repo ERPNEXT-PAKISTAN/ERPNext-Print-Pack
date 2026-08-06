@@ -1,0 +1,40 @@
+{# Thermal ZATCA Thermal Receipt · Sales Invoice #}
+{% set title = "Sales Invoice" %}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: 80mm auto; margin: 2mm; }
+.th-root { font-family: monospace, Arial; font-size: 11px; width: 72mm; margin: 0 auto; color: #111; }
+.th-co { font-size: 14px; font-weight: 800; text-align: center; border-bottom: 2px solid #006c35; padding-bottom: 4px; }
+.th-meta { text-align: center; font-size: 10px; margin: 6px 0; }
+.th-line { border-top: 1px dashed #999; margin: 6px 0; }
+.th-item { display: block; font-size: 10px; margin: 4px 0; overflow: hidden; }
+.th-item-name { display: block; word-wrap: break-word; overflow-wrap: anywhere; white-space: normal; max-width: 72mm; line-height: 1.25; padding-right: 2mm; }
+.th-item-amt { display: block; text-align: right; font-weight: 600; margin-top: 1px; }
+.th-total { background: #006c35; color: #fff; text-align: center; padding: 8px; font-size: 14px; font-weight: 800; margin-top: 8px; }
+.th-qr { text-align: center; margin: 6px 0; font-size: 9px; color: #006c35; }
+.th-bc { text-align: center; margin: 4px 0; }
+.th-bc img { max-width: 64mm; height: 12mm; }
+</style>
+<div class="th-root print-format">
+<div class="th-co">{{ doc.company or "" }}</div>
+<div class="th-meta">{{ title }}<br>{{ doc.name }} · {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div>
+{% set _th_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _th_bc %}<div class="th-bc"><img src="{{ _th_bc }}" alt="{{ doc.name }}"></div>{% endif %}
+<div class="th-line"></div>
+<div style="font-size:10px;word-wrap:break-word;overflow-wrap:anywhere">{{ party_label }}: {{ party_name }}</div>
+<div class="th-line"></div>
+{% if doc.items %}{% for row in doc.items %}<div class="th-item"><span class="th-item-name">{{ row.item_name or row.item_code or "" }} x {{ row.qty or "" }}</span><span class="th-item-amt">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</span></div>{% endfor %}
+{% elif doc.doc_type == "Payment Entry" %}<div class="th-item"><span class="th-item-name">{{ doc.payment_type or "Payment" }} · {{ doc.party_name or doc.party or "" }}</span><span class="th-item-amt">{{ doc.get_formatted("paid_amount") if doc.get_formatted is defined else doc.paid_amount or "" }}</span></div>
+{% elif doc.accounts %}{% for row in doc.accounts %}{% if row.debit_in_account_currency or row.credit_in_account_currency %}<div class="th-item"><span class="th-item-name">{{ row.account or "" }}</span><span class="th-item-amt">{{ row.debit_in_account_currency or row.credit_in_account_currency or "" }}</span></div>{% endif %}{% endfor %}{% endif %}
+<div class="th-total">TOTAL {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.paid_amount or "" }}</div>
+{% set _th_qr = "" %}{% if doc.get("custom_fbr_invoice_no") %}{% set _fbr_th = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.custom_fbr_invoice_no, include_fbr_url=1) %}{% if _fbr_th %}{% set _th_qr = _fbr_th.get("qr") or "" %}{% endif %}{% endif %}
+{% if _th_qr %}<div class="th-qr epp-qr qr"><img src="{{ _th_qr }}" style="width:72px;height:72px" alt="FBR QR"></div>{% else %}<div class="th-qr epp-qr qr">SA E-Invoice · QR</div>{% endif %}
+<div style="text-align:center;font-size:9px;margin-top:6px">Thank you</div>
+</div>

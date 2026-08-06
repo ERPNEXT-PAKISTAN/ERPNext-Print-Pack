@@ -1,0 +1,23 @@
+{
+  "name": "Purple Tax Invoice Subcontracting Order",
+  "slug": "subcontracting_order_purple_tax",
+  "doc_type": "Subcontracting Order",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5f75098df3d15450c870c2b368af64dde50b9772e1edc2cb971ee622dd3a166b",
+  "description": "Formal tax invoice, purple accent, signature"
+}

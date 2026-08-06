@@ -1,0 +1,23 @@
+{
+  "name": "Orange Accent Shipment",
+  "slug": "shipment_orange_accent",
+  "doc_type": "Shipment",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "340821170dd8e2634c80b259f0b155bdac8369d3c49a20ad0f174cc4a438ea6b",
+  "description": "Bold orange total bar, signature area"
+}

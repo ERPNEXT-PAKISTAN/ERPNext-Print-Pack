@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Employee Advance",
+  "slug": "employee_advance_ocean_vibrant",
+  "doc_type": "Employee Advance",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "040cfd1b998973533400df6275a034fd617ab5127aeb6fe58edf17f8f5e7ee76",
+  "description": "Bright cyan ocean theme"
+}

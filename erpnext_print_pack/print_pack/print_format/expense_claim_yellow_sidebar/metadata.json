@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Expense Claim",
+  "slug": "expense_claim_yellow_sidebar",
+  "doc_type": "Expense Claim",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b6479abbced36d6b22bf7e61ee784218553b9283bad572ac562e8d0a112b20a6",
+  "description": "Yellow accent stripe, structured metadata"
+}

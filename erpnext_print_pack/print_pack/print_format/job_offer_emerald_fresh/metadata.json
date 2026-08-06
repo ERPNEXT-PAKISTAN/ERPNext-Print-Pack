@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Job Offer",
+  "slug": "job_offer_emerald_fresh",
+  "doc_type": "Job Offer",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4cf08e92854b4f93ddf99d3dc9f2b2fafc4114c6d5592ba47fa4564baa35c24b",
+  "description": "Bright green modern"
+}

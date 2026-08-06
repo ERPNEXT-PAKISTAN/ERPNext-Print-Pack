@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Fresh Maintenance Schedule",
+  "slug": "maintenance_schedule_emerald_fresh",
+  "doc_type": "Maintenance Schedule",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1ed2ad047d0bdb3304f598f3e30371a0780b621f481f264d281c26f868644bf0",
+  "description": "Bright green modern"
+}

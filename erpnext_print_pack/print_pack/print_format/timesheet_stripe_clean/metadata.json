@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Timesheet",
+  "slug": "timesheet_stripe_clean",
+  "doc_type": "Timesheet",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "45c37fb0076b8a28f6cde55c42efb9ad5ea38006c31596d86a53c288b76ac295",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

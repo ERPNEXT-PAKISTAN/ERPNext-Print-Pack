@@ -1,0 +1,26 @@
+{
+  "name": "Ocean Vibrant Installation Note",
+  "slug": "installation_note_ocean_vibrant",
+  "doc_type": "Installation Note",
+  "theme": "ocean_vibrant",
+  "layout_family": "ocean_vibrant",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "ocean_vibrant",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c04278dcc75cf35e3cd15c5c3fba9478d96a459a5d1b0909e2d99d1abe5e08be",
+  "description": "Bright cyan ocean theme"
+}

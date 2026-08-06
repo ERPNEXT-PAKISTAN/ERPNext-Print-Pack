@@ -1,0 +1,23 @@
+{
+  "name": "Yellow Sidebar Maintenance Visit",
+  "slug": "maintenance_visit_yellow_sidebar",
+  "doc_type": "Maintenance Visit",
+  "theme": "yellow_sidebar",
+  "layout_family": "yellow_sidebar",
+  "sector": "all",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "yellow_sidebar"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "856395ecce179614f4e7594056e2759325524616a7066e692b203ff599fad7c7",
+  "description": "Yellow accent stripe, structured metadata"
+}

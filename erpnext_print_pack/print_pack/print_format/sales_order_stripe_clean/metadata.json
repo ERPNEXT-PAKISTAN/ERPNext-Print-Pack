@@ -1,0 +1,23 @@
+{
+  "name": "Stripe Clean Sales Order",
+  "slug": "sales_order_stripe_clean",
+  "doc_type": "Sales Order",
+  "theme": "stripe_clean",
+  "layout_family": "stripe_clean",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "stripe_clean"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4b9e375039fadf7ead50cdaf73d99de8a2876e0338c4c4a128f6276abdd62800",
+  "description": "Zebra rows, no vertical borders, airy modern"
+}

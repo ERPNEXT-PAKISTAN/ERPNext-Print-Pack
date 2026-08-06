@@ -1,0 +1,23 @@
+{
+  "name": "Modern QR Salary Slip",
+  "slug": "salary_slip_modern_qr",
+  "doc_type": "Salary Slip",
+  "theme": "modern_qr",
+  "layout_family": "modern_qr",
+  "sector": "all",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "modern_qr"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "dbcecf42d5ac05d712baccbe39d6b73ba96c5eb88f0e9974f5a95676191be143",
+  "description": "Minimal grid, QR payment block"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Zoho Professional Subcontracting Order",
+  "slug": "subcontracting_order_zoho_professional",
+  "doc_type": "Subcontracting Order",
+  "theme": "zoho_professional",
+  "layout_family": "zoho_professional",
+  "sector": "all",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "zoho_professional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "1960ed569e5e349a624e6e1a68d570213c7e06bc837a9903239aa1784d14b5d0",
+  "description": "Clean blue theme, summary balance box"
+}
