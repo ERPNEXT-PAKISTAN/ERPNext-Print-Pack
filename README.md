@@ -2,9 +2,11 @@
 
 A production-ready **ERPNext / Frappe v15 and v16** print-format library with **900+ Jinja templates** for **all countries and tax authorities** — regional e-invoices, proforma styles, thermal POS receipts, premium layouts, item detail sheets, and a built-in **Print Format Browser**.
 
-![ZATCA E-Invoice specimen](docs/images/preview_zatca_invoice.svg)
-
-![Regional tax invoice sample](docs/images/preview_fbr_pakistan_invoice.svg)
+<p align="center">
+  <img src="docs/images/preview_zatca_invoice.png" alt="ZATCA E-Invoice specimen" width="720">
+  <br><br>
+  <img src="docs/images/preview_regional_invoice.png" alt="Regional tax invoice sample" width="720">
+</p>
 
 ## Features
 
