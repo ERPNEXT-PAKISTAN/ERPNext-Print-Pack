@@ -78,6 +78,18 @@ table.items th, table.epp-table th, table.sp-table th {
 	word-wrap: break-word;
 	word-break: normal;
 }
+.epp-voucher-barcode, .th-bc {
+	max-width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.epp-voucher-barcode img {
+	max-width: 100% !important;
+	width: auto !important;
+	max-height: 12mm;
+	height: 12mm;
+	object-fit: contain;
+}
 """
 
 

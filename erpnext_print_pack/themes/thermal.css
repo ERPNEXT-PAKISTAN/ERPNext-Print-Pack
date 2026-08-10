@@ -48,6 +48,27 @@
 	font-size: 8px;
 	color: #374151;
 }
+.epp-root {
+	max-width: 72mm;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.epp-voucher-barcode, .th-bc {
+	max-width: 68mm;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin: 3px auto;
+}
+.epp-voucher-barcode img, .th-bc img {
+	display: block;
+	margin: 0 auto;
+	max-width: 56mm !important;
+	width: 56mm !important;
+	height: 8mm !important;
+	max-height: 8mm !important;
+	object-fit: fill;
+}
 
 /* epp-page-fit */
 .root, .epp-root, .sp-root, .print-format {
@@ -119,4 +140,16 @@ table.items th, table.epp-table th, table.sp-table th {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: normal;
+}
+.epp-voucher-barcode, .th-bc {
+	max-width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.epp-voucher-barcode img {
+	max-width: 100% !important;
+	width: auto !important;
+	max-height: 12mm;
+	height: 12mm;
+	object-fit: contain;
 }

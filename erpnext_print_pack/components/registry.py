@@ -63,6 +63,7 @@ COMPONENT_REGISTRY = {
 	"qr_block": "qr_blocks/basic.html",
 	"qr_zatca_placeholder": "qr_blocks/zatca_placeholder.html",
 	"barcode_block": "barcode_blocks/basic.html",
+	"barcode_thermal": "barcode_blocks/thermal.html",
 	"signature_single": "signatures/single.html",
 	"signature_multi": "signatures/multi.html",
 	"terms_block": "terms/basic.html",

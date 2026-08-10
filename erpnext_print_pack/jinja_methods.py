@@ -51,12 +51,25 @@ def get_item_prices(item_code: str, limit: int = 20):
 	)
 
 
-def get_doc_barcode_data_uri(value: str = "", module_width: float | None = None, module_height: float | None = None):
+def get_doc_barcode_data_uri(
+	value: str = "",
+	module_width: float | None = None,
+	module_height: float | None = None,
+	compact: int | bool = 0,
+):
 	"""Jinja-safe document barcode helper (avoids frappe.call/request dependency)."""
 	try:
 		from erpnext_print_pack.print_barcodes import get_doc_barcode_data_uri as _impl
 
-		return _impl(value=value, module_width=module_width, module_height=module_height) or ""
+		return (
+			_impl(
+				value=value,
+				module_width=module_width,
+				module_height=module_height,
+				compact=compact,
+			)
+			or ""
+		)
 	except Exception:
 		frappe.log_error(title="erpnext_print_pack barcode render failed")
 		return ""

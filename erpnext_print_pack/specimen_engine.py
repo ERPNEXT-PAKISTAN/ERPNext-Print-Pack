@@ -5,7 +5,7 @@ from __future__ import annotations
 from erpnext_print_pack.doctype_profiles import DocTypeProfile
 from erpnext_print_pack.layout_engine import _party_vars
 from erpnext_print_pack.page_fit_css import PAGE_FIT_CSS
-from erpnext_print_pack.print_snippets import DOC_BARCODE_SNIPPET
+from erpnext_print_pack.print_snippets import DOC_BARCODE_SNIPPET, THERMAL_DOC_BARCODE_SNIPPET
 
 SPECIMEN_PACKS = {
 	"zatca_specimen": {"label": "ZATCA E-Invoice Specimen", "region": "SA", "accent": "#7d579b", "badge": "ZATCA", "badge_sub": "Compliant"},
@@ -239,19 +239,18 @@ def _render_thermal(profile: DocTypeProfile, pack: dict, party: str, date_field:
 .th-item-amt {{ display: block; text-align: right; font-weight: 600; margin-top: 1px; }}
 .th-total {{ background: {accent}; color: #fff; text-align: center; padding: 8px; font-size: 14px; font-weight: 800; margin-top: 8px; }}
 .th-qr {{ text-align: center; margin: 6px 0; font-size: 9px; color: {accent}; }}
-.th-bc {{ text-align: center; margin: 4px 0; }}
+.th-bc {{ text-align: center; margin: 3px auto; max-width: 68mm; width: 100%; overflow: hidden; }}
 .th-pay-type {{ font-size: 16px; font-weight: 800; text-align: center; margin: 4px 0; color: {accent}; text-transform: uppercase; }}
 .th-party {{ font-size: 13px; font-weight: 800; text-align: center; margin: 4px 0; word-wrap: break-word; }}
 .th-mop {{ font-size: 10px; text-align: center; margin: 2px 0; }}
 .th-acct {{ font-size: 9px; text-align: center; color: #555; word-wrap: break-word; overflow-wrap: anywhere; }}
 .th-pay-amt {{ font-size: 16px; font-weight: 800; text-align: center; margin: 6px 0; }}
-.th-bc img {{ max-width: 64mm; height: 12mm; }}
+.th-bc img, .epp-voucher-barcode img {{ display: block; margin: 0 auto; max-width: 56mm !important; width: 56mm !important; height: 8mm !important; max-height: 8mm !important; object-fit: fill; }}
 </style>
 <div class="th-root print-format">
 <div class="th-co">{{{{ doc.company or "" }}}}</div>
 <div class="th-meta">{{{{ title }}}}<br>{{{{ doc.name }}}} · {{{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}}}</div>
-{{% set _th_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}}
-{{% if _th_bc %}}<div class="th-bc"><img src="{{{{ _th_bc }}}}" alt="{{{{ doc.name }}}}"></div>{{% endif %}}
+{THERMAL_DOC_BARCODE_SNIPPET}
 <div class="th-line"></div>
 {{% if doc.doc_type == "Payment Entry" %}}
 <div class="th-pay-type">{{{{ doc.payment_type or "Payment" }}}}</div>

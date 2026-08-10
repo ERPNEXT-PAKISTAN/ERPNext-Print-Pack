@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.4 - 2026-08-11
+
+### Thermal barcode fit
+- Compact Code128 barcodes for 80mm thermal receipts (narrower module width + smaller quiet zone)
+- Thermal CSS caps barcode to ~56mm so it no longer overflows the paper
+
 ## 0.5.3 - 2026-08-11
 
 ### Print text layout fix

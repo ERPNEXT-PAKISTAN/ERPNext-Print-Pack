@@ -35,7 +35,7 @@ def get_qr_and_barcode_data_uri(
 	d = int(dpi) if dpi is not None else 203
 
 	qr_png = _make_qr_png(qr_payload)
-	bc_png = _make_code128_png(value, module_width=mw, module_height=mh, dpi=d)
+	bc_png = _make_code128_png(value, module_width=mw, module_height=mh, dpi=d, quiet_zone=2.0)
 
 	return {
 		"qr": "data:image/png;base64," + base64.b64encode(qr_png).decode("utf-8"),
@@ -44,14 +44,29 @@ def get_qr_and_barcode_data_uri(
 
 
 @frappe.whitelist()
-def get_doc_barcode_data_uri(value: str, module_width: float | None = None, module_height: float | None = None):
-	"""Code128 barcode for ERPNext document name (voucher number)."""
+def get_doc_barcode_data_uri(
+	value: str,
+	module_width: float | None = None,
+	module_height: float | None = None,
+	compact: int | bool = 0,
+):
+	"""Code128 barcode for ERPNext document name (voucher number).
+
+	Pass compact=1 for 80mm thermal receipts so the bars stay inside the paper.
+	"""
 	value = (value or "").strip()
 	if not value:
 		return ""
-	mw = float(module_width) if module_width is not None else 0.28
-	mh = float(module_height) if module_height is not None else 12.0
-	png = _make_code128_png(value, module_width=mw, module_height=mh, dpi=203)
+	compact = int(compact or 0)
+	if compact:
+		mw = float(module_width) if module_width is not None else 0.14
+		mh = float(module_height) if module_height is not None else 8.0
+		quiet = 0.6
+	else:
+		mw = float(module_width) if module_width is not None else 0.28
+		mh = float(module_height) if module_height is not None else 12.0
+		quiet = 2.0
+	png = _make_code128_png(value, module_width=mw, module_height=mh, dpi=203, quiet_zone=quiet)
 	return "data:image/png;base64," + base64.b64encode(png).decode("utf-8")
 
 
@@ -75,7 +90,13 @@ def _make_qr_png(data: str) -> bytes:
 	return buf.getvalue()
 
 
-def _make_code128_png(data: str, module_width: float, module_height: float, dpi: int) -> bytes:
+def _make_code128_png(
+	data: str,
+	module_width: float,
+	module_height: float,
+	dpi: int,
+	quiet_zone: float = 2.0,
+) -> bytes:
 	import barcode
 	from barcode.writer import ImageWriter
 
@@ -86,7 +107,7 @@ def _make_code128_png(data: str, module_width: float, module_height: float, dpi:
 		options={
 			"module_width": module_width,
 			"module_height": module_height,
-			"quiet_zone": 2.0,
+			"quiet_zone": quiet_zone,
 			"write_text": False,
 			"font_size": 0,
 			"dpi": dpi,

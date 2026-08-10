@@ -2,7 +2,12 @@
 
 DOC_BARCODE_SNIPPET = """
 {% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
-{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+"""
+
+THERMAL_DOC_BARCODE_SNIPPET = """
+{% set _th_bc = get_doc_barcode_data_uri(doc.name, compact=1) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _th_bc %}<div class="th-bc epp-voucher-barcode"><img src="{{ _th_bc }}" alt="{{ doc.name }}"></div>{% endif %}
 """
 
 FBR_QR_SETUP = """

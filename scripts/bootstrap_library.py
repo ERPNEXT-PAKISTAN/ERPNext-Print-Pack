@@ -139,7 +139,8 @@ COMPONENT_BODIES = {
 	"totals/bilingual.html": """<div class="epp-box"><span class="bold">Total</span> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }} <span style="float:right;direction:rtl">الإجمالي</span></div>""",
 	"qr_blocks/basic.html": """<div class="epp-box center">{% set qr = doc.get("qr_code") or doc.get("custom_qr_code") or doc.get("ksa_einv_qr") or "" %}{% if qr %}<img src="{{ qr }}" style="width:96px;height:96px">{% else %}<div style="border:1px dashed #999;width:96px;height:96px;margin:0 auto;line-height:96px">QR</div>{% endif %}</div>""",
 	"qr_blocks/zatca_placeholder.html": """<div class="epp-box center"><div style="border:1px dashed #666;width:120px;height:120px;margin:0 auto;font-size:8px;padding-top:48px">ZATCA QR</div></div>""",
-	"barcode_blocks/basic.html": """<div class="epp-box center">{% if doc.name %}<div style="font-family:monospace;letter-spacing:2px">{{ doc.name }}</div>{% endif %}</div>""",
+	"barcode_blocks/basic.html": """{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain"></div>{% elif doc.name %}<div class="epp-box center" style="font-family:monospace;letter-spacing:1px;font-size:8px;word-break:break-all">{{ doc.name }}</div>{% endif %}""",
+	"barcode_blocks/thermal.html": """{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name, compact=1) if doc.name and get_doc_barcode_data_uri is defined else "" %}{% if _epp_doc_bc %}<div class="th-bc epp-voucher-barcode" style="margin-top:4px"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}"></div>{% elif doc.name %}<div class="center" style="font-family:monospace;font-size:8px;word-break:break-all">{{ doc.name }}</div>{% endif %}""",
 	"signatures/single.html": """<div style="margin-top:18px">Signature ____________________</div>""",
 	"signatures/multi.html": """<table style="width:100%;margin-top:18px"><tr><td>Prepared</td><td>Checked</td><td>Approved</td></tr><tr><td>__________</td><td>__________</td><td>__________</td></tr></table>""",
 	"signatures/prepared_checked_approved.html": """<table style="width:100%;margin-top:16px"><tr><td>Prepared</td><td>Checked</td><td>Approved</td></tr></table>""",
@@ -174,7 +175,7 @@ def write_themes():
 def pick_components(profile, theme: str) -> list[str]:
 	parts = []
 	if theme == "thermal":
-		parts += ["header_thermal", "items_thermal", "totals_basic", "footer_basic"]
+		parts += ["header_thermal", "items_thermal", "totals_basic", "barcode_thermal", "footer_basic"]
 	elif theme == "landscape":
 		parts += ["header_landscape", "party_bill_to" if profile.has_party_customer else "party_supplier", "items_landscape", "totals_basic", "footer_basic"]
 	elif theme == "bilingual":
