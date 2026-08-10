@@ -27,6 +27,91 @@ small { color: #666; font-size: 9px; }
 
 <div class="em-head"><div style="font-size:20px;font-weight:700">{{ title }}</div><div>{{ doc.company or "" }}</div></div>
 <p><strong>{{ party_label }}:</strong> {{ party_name }} — {{ party_address }}</p>
+
+{% if doc.image %}
+<div style="margin-bottom:10px"><img src="{{ doc.image }}" style="max-height:100px;max-width:100px;border:1px solid #ddd;border-radius:6px"></div>
+{% endif %}
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Item Code</td><td><strong>{{ doc.name }}</strong></td></tr>
+<tr><td>Item Name</td><td>{{ doc.item_name or "" }}</td></tr>
+<tr><td>Item Group</td><td>{{ doc.item_group or "" }}</td></tr>
+<tr><td>Brand</td><td>{{ doc.brand or "—" }}</td></tr>
+<tr><td>Stock UOM</td><td>{{ doc.stock_uom or "" }}{% if doc.sales_uom %} · Sales: {{ doc.sales_uom }}{% endif %}{% if doc.purchase_uom %} · Purchase: {{ doc.purchase_uom }}{% endif %}</td></tr>
+<tr><td>Valuation Method</td><td>{{ doc.valuation_method or "—" }}</td></tr>
+<tr><td>Valuation Rate</td><td class="r">{{ frappe.utils.fmt_money(doc.valuation_rate) if doc.valuation_rate else "—" }}</td></tr>
+<tr><td>Standard Rate</td><td class="r">{{ frappe.utils.fmt_money(doc.standard_rate) if doc.standard_rate else "—" }}</td></tr>
+<tr><td>Maintain Stock</td><td>{{ "Yes" if doc.is_stock_item else "No" }}</td></tr>
+{% if doc.item_defaults %}
+{% for d in doc.item_defaults %}
+{% if d.default_warehouse %}<tr><td>Store / Warehouse</td><td>{{ d.default_warehouse }}{% if d.company %} ({{ d.company }}){% endif %}</td></tr>{% endif %}
+{% endfor %}
+{% endif %}
+{% if doc.barcode %}<tr><td>Barcode</td><td>{{ doc.barcode }}</td></tr>{% endif %}
+{% if doc.barcodes %}
+{% for b in doc.barcodes %}
+<tr><td>Barcode</td><td>{{ b.barcode or "" }}{% if b.barcode_type %} ({{ b.barcode_type }}){% endif %}</td></tr>
+{% endfor %}
+{% endif %}
+{% if doc.gst_hsn_code %}<tr><td>HSN</td><td>{{ doc.gst_hsn_code }}</td></tr>{% endif %}
+</tbody>
+</table>
+{% if doc.taxes %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Tax Template / Type</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for t in doc.taxes %}
+<tr><td>{{ t.item_tax_template or t.tax_type or t.tax_category or "Tax" }}</td><td class="r">{{ t.tax_rate or "" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.uoms %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>UOM</th><th class="r">Conversion Factor</th></tr></thead>
+<tbody>
+{% for row in doc.uoms %}
+<tr><td>{{ row.uom or "" }}</td><td class="r">{{ row.conversion_factor or "" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set prices = frappe.get_all("Item Price", filters={"item_code": doc.name}, fields=["price_list", "price_list_rate", "currency", "uom", "valid_from"], order_by="price_list asc", limit_page_length=20) %}
+{% if prices %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Price List</th><th>UOM</th><th>Currency</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for row in prices %}
+<tr>
+<td>{{ row.price_list or "" }}</td>
+<td>{{ row.uom or doc.stock_uom or "" }}</td>
+<td>{{ row.currency or "" }}</td>
+<td class="r">{{ frappe.utils.fmt_money(row.price_list_rate, currency=row.currency) if row.price_list_rate else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set purchases = frappe.db.sql("select pi.supplier_name, pi.supplier, pii.rate, pii.qty, pii.stock_uom, pi.posting_date from `tabPurchase Invoice Item` pii inner join `tabPurchase Invoice` pi on pi.name=pii.parent where pii.item_code=%s and pi.docstatus=1 order by pi.posting_date desc limit 2", doc.name, as_dict=1) %}
+{% if purchases %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Date</th><th>Supplier</th><th class="r">Qty</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for row in purchases %}
+<tr>
+<td>{{ frappe.utils.formatdate(row.posting_date) if row.posting_date else "" }}</td>
+<td>{{ row.supplier_name or row.supplier or "" }}</td>
+<td class="r">{{ row.qty or "" }} {% if row.stock_uom %}{{ row.stock_uom }}{% endif %}</td>
+<td class="r">{{ frappe.utils.fmt_money(row.rate) if row.rate else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.description %}
+<div class="epp-remarks remarks" style="margin-top:10px;padding:8px;border:1px solid #ddd"><strong>Description</strong><br>{{ doc.description }}</div>
+{% endif %}
 <div class="em-total">Total: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
 <div class="epp-sig sig">Authorized Signature _________________________</div>
 {% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
@@ -39,7 +124,10 @@ small { color: #666; font-size: 9px; }
 <div class="epp-footer footer">Thank you for your business</div>
 
 
-{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% set _epp_doc_bc = "" %}
+{% if doc.name %}
+  {% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) or "" %}
+{% endif %}
 {% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

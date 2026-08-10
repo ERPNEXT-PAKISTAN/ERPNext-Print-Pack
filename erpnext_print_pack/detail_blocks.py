@@ -770,7 +770,7 @@ def _item_master_detail_block() -> str:
 </tbody>
 </table>
 {% endif %}
-{% set prices = get_item_prices(doc.name) %}
+{% set prices = frappe.get_all("Item Price", filters={"item_code": doc.name}, fields=["price_list", "price_list_rate", "currency", "uom", "valid_from"], order_by="price_list asc", limit_page_length=20) %}
 {% if prices %}
 <table class="items" style="margin-top:8px">
 <thead><tr><th>Price List</th><th>UOM</th><th>Currency</th><th class="r">Rate</th></tr></thead>
@@ -781,6 +781,22 @@ def _item_master_detail_block() -> str:
 <td>{{ row.uom or doc.stock_uom or "" }}</td>
 <td>{{ row.currency or "" }}</td>
 <td class="r">{{ frappe.utils.fmt_money(row.price_list_rate, currency=row.currency) if row.price_list_rate else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set purchases = frappe.db.sql("select pi.supplier_name, pi.supplier, pii.rate, pii.qty, pii.stock_uom, pi.posting_date from `tabPurchase Invoice Item` pii inner join `tabPurchase Invoice` pi on pi.name=pii.parent where pii.item_code=%s and pi.docstatus=1 order by pi.posting_date desc limit 2", doc.name, as_dict=1) %}
+{% if purchases %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Date</th><th>Supplier</th><th class="r">Qty</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for row in purchases %}
+<tr>
+<td>{{ frappe.utils.formatdate(row.posting_date) if row.posting_date else "" }}</td>
+<td>{{ row.supplier_name or row.supplier or "" }}</td>
+<td class="r">{{ row.qty or "" }} {% if row.stock_uom %}{{ row.stock_uom }}{% endif %}</td>
+<td class="r">{{ frappe.utils.fmt_money(row.rate) if row.rate else "" }}</td>
 </tr>
 {% endfor %}
 </tbody>

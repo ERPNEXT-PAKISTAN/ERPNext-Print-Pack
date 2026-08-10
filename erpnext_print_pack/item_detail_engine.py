@@ -107,7 +107,7 @@ def render_item_detail(accent: str = "#6366f1", title: str = "Item Detail Report
 </div>
 {{% endif %}}
 
-{{% set prices = get_item_prices(doc.name) %}}
+{{% set prices = frappe.get_all("Item Price", filters={{"item_code": doc.name}}, fields=["price_list", "price_list_rate", "currency", "uom", "valid_from"], order_by="price_list asc", limit_page_length=20) %}}
 <div class="id-box" style="margin-top:10px">
   <div class="lbl">Item Prices</div>
   {{% if prices %}}
@@ -130,7 +130,7 @@ def render_item_detail(accent: str = "#6366f1", title: str = "Item Detail Report
   {{% endif %}}
 </div>
 
-{{% set purchases = get_item_last_purchases(doc.name, 2) %}}
+{{% set purchases = frappe.db.sql("select pi.supplier_name, pi.supplier, pii.rate, pii.qty, pii.stock_uom, pi.posting_date from `tabPurchase Invoice Item` pii inner join `tabPurchase Invoice` pi on pi.name=pii.parent where pii.item_code=%s and pi.docstatus=1 order by pi.posting_date desc limit 2", doc.name, as_dict=1) %}}
 <div class="id-box" style="margin-top:10px">
   <div class="lbl">Last Two Purchases</div>
   {{% if purchases %}}

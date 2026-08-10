@@ -78,7 +78,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1e4c5e883f06c3ab6cceb14939b2fcfe032e0708853479d803f4cb7d7d3abe2f",
+      "checksum": "4360b846df8662643aca97fedc63b80b1555329226eb1bdf1640b1f5afdebfa6",
       "description": "Bold red retail"
     },
     {
@@ -107,7 +107,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c306e759a16e08ee3630157472037c69bfb3703ca79f5cd844cc3597fc2a3116",
+      "checksum": "7cf063022684e24e674dec0de05cdd6e74e56cfda33a6183d0dcad4c305b6a43",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -138,7 +138,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "90cf92fc922679414760b31c5b910839e332dd82a605bd395c3ac8b60f86e6ea",
+      "checksum": "e4c6d749ef383953c19c465124b4e4a412776737630ba25f7edbfb77d1cb4f50",
       "description": "Bright green modern"
     },
     {
@@ -169,7 +169,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fc30899db5b0e68efe076d6998914ef9e04dd87cb80a1dfbba012b0e5a9e9d05",
+      "checksum": "4b2b7b6fbc30468df6b03b05e099f158c72cea6dd2fe09b681de5dfca6245e7a",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -221,7 +221,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6e54105f76148542e6424d5f19b5599d1b1e46bd3284d9b46f6277282afbc66d",
+      "checksum": "59ffd8a1cafbec3f1d1459190ac75415dae56fb555f3f7a5af248b325dc5419e",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -252,7 +252,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8ab49d0556fc82569c24e5631143e9e1d75b21ef2bb89cce1ab848699373ee77",
+      "checksum": "c525b69b4d544e67f488bd392a89ff5e30f0ba452617f803d8f0072dc8be5b02",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -281,7 +281,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "724e44b437abe82d7b8d7519f41a769cd126bce1ae2af70d7ff77e523def3f0c",
+      "checksum": "b322efaa51e6efe6225bc35285be2ff6060bedc9d966f8ef01512cc1d5040c38",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -310,7 +310,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "957ec857c1a7e2177858878e57f1b88a525dd3c3a6e040ecb9caccfdcdea5075",
+      "checksum": "372b50a13951d3e617db001ef62d9efa85db628f1a025d1dad264cb07b9cb8d4",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -364,7 +364,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a893ab552d16045b0fbfb03bc94ed3cfca6ca9b4d6c5c9508614c6e110caba56",
+      "checksum": "2f9968e87c82c2e28db330e964df8ae15f2f3f5a2c7f36fa0626c483fa50648d",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -418,7 +418,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c6f5f8b85b1d2bffd9ddb1117505001a292dc1b85157ceb11da0a8be6349c378",
+      "checksum": "415193e2e67a0c3f41603b0308235af31b7d1e1f6586bdc8e4769160ad3189ff",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -447,7 +447,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "261a54b3980047b45127115a7192f312cdf78102b9d5b003ef6522569e06ddda",
+      "checksum": "0120abe2f6cebc19773318a9ac6e6d5d064ee4c244d5ade25cc9fced827780cc",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -476,7 +476,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "16dd430c9e3baf3932d577752d1d112c2dd3a60cf00a2843095c95b8278c75fb",
+      "checksum": "f736df3cffd23fa117650140daf0b7dc4c08be1a98d2566ba424e4b63d80ff8b",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -507,7 +507,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "aa21d395053e8d7351707d6b13e5ae7dad665e711320fab5589509541df1a08b",
+      "checksum": "cbe2f81dd0d011083546ec5e32cf67344c8811ae8d9616f52ee8eebc571c48f8",
       "description": "Bold red retail"
     },
     {
@@ -536,7 +536,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7d92c7c78f9b397be8c0a0a0db6f7d3bb11d128e07fdc6aa5d73cedd7a09acd7",
+      "checksum": "9dd089df239cccef1cdeeda2064454bdfd196134e5d42bd32385b4493ab06c82",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -567,7 +567,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d496fe33cc427f436a79cefef8d7cfe275b5f2360c91c032233743b517d7a4f9",
+      "checksum": "7b99430e681c875d367fbe56914318555a883b89aa44df6c99968cf14f020f3d",
       "description": "Bright green modern"
     },
     {
@@ -598,7 +598,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2fdc7a69ca4cb244f3d19343a0739ff6eecb738af9e675c8a583335c8b76ab6d",
+      "checksum": "a59d155ad5fbfc999a8cc160209612b4d954d44d9be41e8be588d54298db8237",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -696,7 +696,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "92668b7380671eea4f0f43bc5113a040f097a093a3ba3708ddbf02da3d2209bd",
+      "checksum": "95d791976e2c2bcf2b0c4c6dc61f9d83a27ded6cc22b5ff31b7700af50e46a82",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -727,7 +727,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "edbb6a63c25a1e24e2d9a3187f88fec237501fffbdb4adb4ced47f66575da320",
+      "checksum": "010366cbdb2a258f911098eb0c2c0071dcc44918567946ea3dd410e06058efa8",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -756,7 +756,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "225d40141a6d425618b51984a0f2f084d2121cea84fca966d6402c0a4c06465b",
+      "checksum": "a2a415ec8a5457e429545923facf4d570945d2bd8aa6ebf02049cab20d9dd1f6",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -785,7 +785,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5d1fdf2fcbf18ac7fe786c4475fed8a4f34fb53992d968d679e8e20a906e6927",
+      "checksum": "dbf7dc4412ed5718126a8adeb60fe41b5a6fd45786915f2950000e074797d227",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -875,7 +875,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "09cb4340cee95405eecd59f2a7f0c4f1923c7dec0dd4686f11a8585ddd26632f",
+      "checksum": "8dde52a91c0c53f23d53579e60ae207d9aa18b9c85379987348496279440e46c",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -927,7 +927,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2cc395a693c42dae00e757666cc74a63905558a2c45ca0b5c01bbb1cad12e687",
+      "checksum": "db08babdc9965a30cba628f181163e6e8d24692aa8b1d343f5f39ef78c07654f",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -956,7 +956,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "604c63fccbb4fdc8df49cf7782c9a031be9c10586497faf4cbb0ae9ad17332f2",
+      "checksum": "52f66e1a273a9f17f88e337db7a63e59e78b514cd7d1740df7c514a59b28cfce",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -985,7 +985,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "987b7071c8469945c2be4e4e5a8d2986f4126f27de73dc4dc365450de98b1b0a",
+      "checksum": "305ab3ceda693ca2c7525c579286c8c1ffa968b2d09f38fa589c0839a3dd42c1",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -1085,7 +1085,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ca97c3293294d2b7bf5cb3236889ab88b55c139e1517d362657166a248b49a7e",
+      "checksum": "09db1827fb2e504e3d2dcf0aa0606e3f5f0061ca5919278fef07ca895b1de780",
       "description": "Bold red retail"
     },
     {
@@ -1114,7 +1114,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e6238543383d26da3eb861f299e0ef1a3d008fea4edd80b4446567d174c977bb",
+      "checksum": "a2a7a0fb92aebf8ed19927903e3c08e6c48f777cb1f316f048556947e8d85dbb",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -1145,7 +1145,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7a48e557d7fc71a22e0dbf3f87e6233c17e362ad01b49c0a9e09573dfcfcb285",
+      "checksum": "97ccc7831de94a7b192eaa59be6ec0e2a1e21b72f32c5be76232a9b3e830f699",
       "description": "Bright green modern"
     },
     {
@@ -1176,7 +1176,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "aa0bd144a8cb9a41de6b583f882fae17b785cb1922fd7e28fe2646628134fe91",
+      "checksum": "9d644b67b5e6ceda58c94517f76b4370954032fc65f85ddae0f2d4ad98215581",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -1208,7 +1208,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "052f29d36a4e042bba1c8cd956a9f0e480f4756ce615ccf995b3b77647d22102",
+      "checksum": "26f49e514ce315ab5cc9f8a161df8c1ee90e8a3ae6069428271477c297ce3efd",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -1239,7 +1239,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6d5fe9b3d999bfec8a33bd8204c3b329cc76310b574b7cd79324d2654c192bfb",
+      "checksum": "0c2e1bd378766502f1576a33cf6131d4dc9310e8cf9314e06351c878af192ff2",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -1362,7 +1362,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3c859479b3ad81ef6c16412bc2a89ef3f1913a8c3b0ad018cb40ef2d3babd566",
+      "checksum": "b4a7382b9567030e4c0538c08b1efef1cd5e4e7b20699a1926647bee7dcdfcde",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -1416,7 +1416,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3b6a08bfaf8cf3daa69ab745c07bee48a14261a1760cd08e6afb493f777259f4",
+      "checksum": "75e7280b80dcbf58e0491980db7d909a5850b655102318b6ff99b2631310ceb5",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -1445,7 +1445,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4cdb7caf0ed64303021c3ce8b1bc3e3551041d7600ff8b76a147730d52655f2f",
+      "checksum": "8dd31bc9ac4a9629b813a3a16d8c7bba140716903f75707cb9ee985bbed4a297",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -1476,7 +1476,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9f79513ff90e20adf378bd80adcb61082c973e0e14da7fa6c30c23bb3f31127e",
+      "checksum": "b74bc180160067b8f22051a2d533a7959338917c7bd84a22823f998f5e0ffe40",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -1551,7 +1551,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6cd044ed99ab37b8f39b141255b0f728686f68bdbb07c95c47f1421a097b510d",
+      "checksum": "b40c30860ec8de87334a4365a7d57fdb7d0e1801e1af368f44568f8cbfb18c28",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -1667,7 +1667,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "da1d2d7b36952f5462d149d071510a31746c7f472e3b206236f80c7e63c14bf9",
+      "checksum": "1842ee5bf4acf4d7e193795a10df8492dc32a9f638e8bb205351429daada3b7e",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -1719,7 +1719,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "62ce987ae90438f407a074834c581d9699a6ff6f98f4ce1f7a202753aeb7c125",
+      "checksum": "3fb13bde41ce6778b5977f0c86d6c450bec7495ab9b9a9e42dea2097d1086e3e",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -1799,7 +1799,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dfc34bb8d02efcad8464b88e3bde578dca67f0966275bafc9414c9d7ac6e94be",
+      "checksum": "740cd1a84b067d1d9fafff3ab386a7dd9746bd933193b97353989f1aaec5f8b9",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -1863,7 +1863,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7b7740f19fec886ce91cc74a1c15ab6193947f5eb2fc7b42285c175524f733c7",
+      "checksum": "1633dff6d99eb228d83eb5c57696a73643aa6a823bacac5514a5acc8b7d6120e",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -1894,7 +1894,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0766c8910e95c67dde9126cfab1815d8d1a70a2eecce9493d083465cdaae1207",
+      "checksum": "15be006f9b7d49a75c255744b096b2bc9327561f3a771b7176bda0e53a382686",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -1923,7 +1923,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5afcdbe6980c1e643d22536fae02c864508cf92dea44dfeb398a61a5ec726ee0",
+      "checksum": "e1bf460cd688a52eb990c91e53c85e9f641090f2a9dcd15177e939157f8c4bd9",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -1952,7 +1952,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "88c4c8839a428a4fe0a5c2ee795d3f9da0f033b8f1c0abdf9c55cf87c149e2a5",
+      "checksum": "cf341266c0137274b717d3ce11bc28e90070dbd26fae6ca4d271a6ca669e5641",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -1984,7 +1984,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "36a29c2ae1196ae176582aac7d2fd16a0f979eba9a88bc765742c9cdf15e853a",
+      "checksum": "11db969273d25c7eb3c75c4931967889328d4f0aca62e3d3eb6e248cdfd5ee98",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -2045,7 +2045,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d23dbdfc35d924bf4036990bccca4e9c4d7f445043a85d462c679ade947e8c14",
+      "checksum": "64db7df334de059be1f168cbc6e527359967b33850a9f9838e8f3bf0f9b5e927",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -2099,7 +2099,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2e9e02794236be484a013fa2d8b7794ba59e6f875b0393b62eee00fde10a92c2",
+      "checksum": "c3ebd5691faa003cd116121ae431a92255291f7d70d34d2eac41ec04b0fbf10d",
       "description": "Bold red retail"
     },
     {
@@ -2128,7 +2128,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b812e03a96f3f4516014a54a4c212937a980a85b7d58aa673549f7fe70dde72e",
+      "checksum": "0ab7b64401ffedc5db49e5f7dc2b69a88203dc840b2943a7f2c48368de866317",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -2159,7 +2159,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "93a9c7dfc424b9ae5984794a80d05520c0f808d1a3121858dd60292acee038e3",
+      "checksum": "4f7b7173b5ece1c37c3421d930a5c28c3390edf292634f11aa54d1bfdad77840",
       "description": "Bright green modern"
     },
     {
@@ -2190,7 +2190,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "aa38300d7a6e43068dce684bef10f304c2e992e7a6b935e4ce22b1169d06f172",
+      "checksum": "cede7ed45a7b8bb60f496104af86fa63e2ea3b64842720a318093ec8b5eed49f",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -2290,7 +2290,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cc856679e59de0eaeee110183b43ac918432c6f9d3ad32561a4625eabde21e75",
+      "checksum": "ce7db61ea6f7891d87d421973be87d5cf78b2ea30aea5c8747ff690dd323ffd2",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -2321,7 +2321,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fc4b8aae799a12a71192d31f5c8d4e4be1f482a037db93a333ac98f73613be00",
+      "checksum": "4e9cd32a6dc991b4821dbbcfc19d729b699ed39ba61f70397f5e1d9c3607ac79",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -2350,7 +2350,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b0280f92ccf86b190f4bbd486b600e9ee6dc798521b97556efbfb90f2fb93abe",
+      "checksum": "784bcf15980b0c8b026fe8b92320997431da7a360586bf078a5a666262419c62",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -2379,7 +2379,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "21eec3fecdc99e1ffa5a54c341d3ae7175d8dc4ba36ccb751bf37e4c3fbbf772",
+      "checksum": "715ab315943b3fe31a18ffefdd59461f8a42c4f656efd66c0efd088d7b9896b6",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -2408,7 +2408,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "43813477757a0b81fed34e455be4e4a3fef04d8779e1b284874b8b39b69c387b",
+      "checksum": "87f876a85444938c5293114dc9249be77f7b740e25d01345e292ead40c95c1ec",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -2437,7 +2437,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "05adba938361a8a3c13e8a64e495f8ba7be88f315b3db2d5348a15d10e60fc8c",
+      "checksum": "25b243805c9ba3051964acdc456badeb55ef9934e1771a643a722e2d0b70b2a0",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -2466,7 +2466,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e8fc2c46032c86b82bfdf3ad57bf3e5cade244afc593cdf994e61c8096e03fa2",
+      "checksum": "27ab73f97de8ca5721079bf1771a29f6030b383818d6f583cadf1cd01ad8ec10",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -2495,7 +2495,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4537707289b9ae333e1372aa296e9bcc11649eaa7c2cca53d97e4216a1fb7833",
+      "checksum": "d4b870b3c3bac18329bb6f4f10989b9ba79add29e1f450e6ee29301ee81b4dfa",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -2549,7 +2549,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "885a72ca0f2b6630f248690b584efcb2762c6edab8e3ecb8a764389873c94e3c",
+      "checksum": "4688b3fee818c0c7053b6d83c2d76cb1efb692f5f347ccaf7834bf77d2c3f6ed",
       "description": "Bold red retail"
     },
     {
@@ -2578,7 +2578,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c250cac30f3435c0a70772e667fc4c0f4c08ff87852524a00f1307c27c897100",
+      "checksum": "b8e3d35461937895c683594221fadc23d46e1bd414e689eb4c43bd6a88021137",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -2609,7 +2609,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "87688f8a5f8e40e62ca1d3140f2a47fce98b720553e62aa487b6f26897016549",
+      "checksum": "ddeffd032b503dc2fa92652690d920c0724ea17230e56191e6efcbf4f26646b5",
       "description": "Bright green modern"
     },
     {
@@ -2640,7 +2640,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "51083051281a1b9def0c455eb59e1127183af5839a211908eeac9eaf76abc9aa",
+      "checksum": "718ab0aa1e50f2e9feebea54885bf142fd2c408507b846ade9885290019842be",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -2715,7 +2715,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dcd9d1f80a716a94763dbcdcfa887c32018fe07af6de56e519cb957e5cb4d287",
+      "checksum": "9db86a513f7c8e063e33e9dadac70d52d3faf795d336ba77b5761cc8fd531e9e",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -2746,7 +2746,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "05eb9778ed3ab12f24a37070c5ede70a25bce07741d0ba3f4186b254591d6012",
+      "checksum": "f3bac36552617b6ad1eab64225cc85b70d2ec025506a7dcd00b0814e894647aa",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -2775,7 +2775,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "93b3773f3aaba4dec4a5ddc9f75a5f2daf358f48f43453811bddd40c886bbde4",
+      "checksum": "fdf350d0256c02be21a93c3aa049c16c72e9b82c0083e2058b5c6de5788e5a39",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -2827,7 +2827,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b4b20f7a0c0afd6d755efcf685f36875b046579aaa6566f46b0928aacdb472b1",
+      "checksum": "35f55a65b4e237cc7b1fe0a90691d1ef44cc5aea091a03a18462f3a4945562fa",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -2856,7 +2856,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0ae9f19eaeb970e9dd879d147f29382456a9d532e2b57a794f78c638f27cebc0",
+      "checksum": "f54e5881d570046053b51d54a5749a821155a2a340af45c2372e86e43f4b47af",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -2888,7 +2888,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4b5d429be20bf6dea0adeb43be247cebaff98a65cbfd3cacc011dd997dea3d38",
+      "checksum": "5e432f1a5c0a563b2d3258d5cb494d1f3d9d7fcaf14350924cd828dee90610f4",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -2917,7 +2917,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d49a9708bff855f2d1b7514668e80d23cd24bebb092592f5f8bbdf23c805b522",
+      "checksum": "3119f413dbedd60bcc220e9d377a7be831b04339143c8b57ab8dd295baea5bbb",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -2946,7 +2946,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e84d235500c1b24a503b3b4d1edd301722014a2325f812f43e26fbc4d0095887",
+      "checksum": "32fb0cd5484cc233dd55c44b9492514aae51cdde80561b144126b352a5710783",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -2978,7 +2978,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7343cb1b4773502600ef59583d30c5eca4098f918c9c70573f42f7ce5c89029f",
+      "checksum": "37fc8a846a5bf48e4c69d30196e6126a7b4b63d0b99f394d057c0a3b75a59a71",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -3007,7 +3007,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8871c6abb185ebf04f77b81d6b1334a1977c6fe3837ac73a739811071ebea661",
+      "checksum": "61d410b102d3897a160538425a850693399c4f261de974e557f945929494d1b7",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -3107,7 +3107,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "379c4f5354f97b15b77781e0845db13d5206592ccbf89b6967d9cd8f11cbe778",
+      "checksum": "7b28c10081ed6225c4f2610ac503101bcaf4349c017ccd10719e338849638c11",
       "description": "Bold red retail"
     },
     {
@@ -3136,7 +3136,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b3eec575ac3eec3aeed3893268e88ba077c777c4b40b8e02e79701b9356923cc",
+      "checksum": "08f59eefca590667f197a8089d02a66722fc960cb5d20d370ec3d8158d84207c",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -3167,7 +3167,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "59531b2614530676bd51d921d717c13a7f4497ac2b1cab414802c61a52ba4042",
+      "checksum": "34c60b0578a59adb156db0a680738311b3bd88da88efc998941ce882e5fffe85",
       "description": "Bright green modern"
     },
     {
@@ -3198,7 +3198,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ec704964072c2f859b381495e308ba60724f54a239bc1856941efe7a49db37e6",
+      "checksum": "d678abe02a4fe5c71f4e97a7e0d56772a804c042e3c590ff92e5e28ae69289e1",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -3273,7 +3273,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e867e2f58e7070e3402d3ab7c82e1092f27f03937564b28aea0093a10ed5f4f6",
+      "checksum": "bcf69d319495f9a1d3dd28a05ff69c2d74e6af9344e1677bf10ea9bc63cb4edf",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -3304,7 +3304,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "540f174c2ed412e61188ea149c366fb720590e76d01d94c91a9ad404480beaf8",
+      "checksum": "2c12dcf40032063590167ce0612a4e783d9b01857f46ffdc358ff881a0a57365",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -3333,7 +3333,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ee3c9ff53ee1270270dcc8c96f1775695a60e800fb2474cd493663ebf7b35cad",
+      "checksum": "02a2ffaf8fbbc60293adea83cf36292dd1dcf7584c7856017040d2d27211a033",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -3385,7 +3385,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e3228640234b73da3c5bcd63df1345cf94e0d40b7c621cfb1a53bd6c5ed0db5e",
+      "checksum": "78c877ec54ad39e72dc8e9f9d43d1f83223abf0bc4d501df30347774ef810dec",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -3414,7 +3414,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "45658b3ef2ce0af7ccd7474a71c0c60b7f6560f6d1364c51a466141b158ae93e",
+      "checksum": "511579e619c776e6991def4a1a936a9fe4d14bbf313532ce3098a47b38c2a925",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -3443,7 +3443,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5a982d69eef30a9e4fdd35cc77706afbf3e9d9c328a3dd17d4e99e569f8ed8fd",
+      "checksum": "65bca3345636f65d0b6048d4083fabc22c9c797882f0df0dcf5bed6902ebdf19",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -3472,7 +3472,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4b57ad6aceafa7e1230a36e6903b6add5608e75ec9069dde5babbe1aa43eb513",
+      "checksum": "9c6a7866b7b185cc34c59da1b6749b1ce668df5091c13a924e2716f2fb0647bc",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -3501,7 +3501,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f6fa2f901b6f9d01516063e1856f4fd44231f986a1a7f340c1f444abfe189d76",
+      "checksum": "f40d4ae60fe352e1b29995c4954a85917846928037b47257f40766f4a15571c0",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -3601,7 +3601,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5e918731623e0ad438f0c0997250dc663498585d0937a18f23c53d32e4b42db6",
+      "checksum": "58a695f81f6cbdd852e38fc83ae37d1c7bc8cf65fa77003e1c21ab412a50a80f",
       "description": "Bold red retail"
     },
     {
@@ -3630,7 +3630,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4933211670d86747baa9edb01b5b16f7af6762c0b00eb8665dab1329339d1822",
+      "checksum": "94bd97314634636d518dcb02d55232143e8cf78c4a6aeac34cfc7d77d1b4e5df",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -3661,7 +3661,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3aa469b5b82f1c759326de62ea7448eeef358471946b5f867479b43de113d94e",
+      "checksum": "5a39c5caff79645314ed8ae95b935f6d5b0dea7656e34ee98ce92c0f8971b781",
       "description": "Bright green modern"
     },
     {
@@ -3692,7 +3692,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f309c19e77958eebf8a536c3b817621e0a947749a8f0dd901d85cec554704d57",
+      "checksum": "eb63d69cec06a7e2f0370c207e2f779a73a86f8e96b69cecbb26d2b86b4ba131",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -3767,7 +3767,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5baf1838026e5e28f79321ac1a5c24c08285e1bdaec9cdabbd1aea7121ab3135",
+      "checksum": "c129eb25cb03e40016c9bfa79bd2d77bdff291030fe5141d3a5ecd277f397034",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -3798,7 +3798,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b9cb1d35646df18d10bfb248240e9d8e8620738f964735babde3b56a6414cd8e",
+      "checksum": "ebbf8ac52e89b5dc4377d49cde5644483b00522b82dde367b7d2f4b9a0db3882",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -3827,7 +3827,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4003a768c00a802f41e805e192e9f54ecf374e70f5107ac5edd00729a77a50b4",
+      "checksum": "750c3e93592f222f1ef6bc2092d1ae23aec70db4a6646c26931ee9e912e8a85f",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -3879,7 +3879,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2f45655f24aaf840201792962a549f7d419a6bfcbb65c19cb76cf5232c6b8207",
+      "checksum": "a299f3d3a959d724d96ed0f657a8af6cd005933ec5badc4aee2589b0b2ba53e5",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -3969,7 +3969,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "97c832f965df2b47d01adf031c1984968115c1412b94ef8d979cbe2437b16302",
+      "checksum": "67baac47581e83f21f05ec8b757b627d8bf020c5e38dcc645128a7fc6ee526fb",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -3998,7 +3998,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7cf4ebedf1b8db96dd8231828f35c11fc02a424acbb853b9a862b8c24876879a",
+      "checksum": "8b6a4410fff92fc55f4249742d2c5187b6f68ec6d1d7e2dc91bd015a0b16032f",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -4027,7 +4027,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "64afe64fcc94ec31fa5537aa72b16b8f6489b3421f6c1479986b67be6d6215a0",
+      "checksum": "2f4c325a6720dfbcecdc0d5494ca74c5648899110bdd26de8a73286c153f85a4",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -4056,7 +4056,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7d0c0dadee33ca1e9b4197503a5d8e00f54e2b310eb797cdb11f9824c3644c34",
+      "checksum": "930d919f9959f11dfbc09893b7c23771c748e64f2162897316b3b36871ead7a6",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -4156,7 +4156,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1739ff7a164fc00483168130d447150ca6289b7d5682c67e3c8451adfff9525e",
+      "checksum": "a172c5a59cc8fd57f6cc959605af645fe91b2b021c9ada04e2bdf4d0c2377f6f",
       "description": "Bold red retail"
     },
     {
@@ -4185,7 +4185,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4a9b68bedb7d92b43cfd70a1ac2761341a78695d64d7374bf81d2992d80a3fe2",
+      "checksum": "ad9d8edb9153f35ef376f736cf9d225879ece8ddbc990fafe26a130fe1426d28",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -4216,7 +4216,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1bc19b73516dded2efdd4e3e0141399f1daa5f53144f2d6d0a894c27f1f26513",
+      "checksum": "94e8de504649021898a3c5530bb0ace337b0d3a525800c4b3ff229a2daeeb0c0",
       "description": "Bright green modern"
     },
     {
@@ -4247,7 +4247,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "63bfeb0d67b6d38a29800f8bd26189149a7e97ece266749daf14f4958d172c80",
+      "checksum": "7674941853bf50f5c6a8d276c00a20a7d0d028f43028ea8cf48791f1646c313e",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -4322,7 +4322,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "07f2ca5e2d0173ec41d8ee63112e879696ab93c5c1c839bdc99fc4f2861ce2de",
+      "checksum": "8537bfc56794f72cef80e306008616db95157dfbed6efc992cf242757bb2ff2c",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -4376,7 +4376,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ea641ce318ac16b757e6369a15be16fae7f107db75b44a57a543bc1fad7f4d7d",
+      "checksum": "6570830addfdb3d066aa5d433db61e133d4f1335cf406b89de9c8ce11874c72d",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -4405,7 +4405,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cb4f4b054d2c4e4bdcc1bca9a54c80e0a7a45566056aeae261cd580e15e06019",
+      "checksum": "9280cbe2c0d5879b3122379623f2016bb2ec6476e52427a42f7c2782ca1d5baa",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -4457,7 +4457,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "796359e250d450223f8d4b97d5e1d8eaa69d0c6c4f350f8de7789086b592a4ee",
+      "checksum": "a583fb8e4552e15313300c227a46330650769dddffb5661c1c1bad0ad0efbd32",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -4547,7 +4547,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "74cf0a85c8821a53bb2e37413d50e5cc1f773187e45e06459f6ffe49728c60f4",
+      "checksum": "d4794020ba17f6e01fe948f146c004cafb375a1f74f80a85547ba9b2ebbef5a8",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -4599,7 +4599,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e3e356b6c79c67b254c466feef5790a69960634df514bb6ed3136bf75d6765c0",
+      "checksum": "328dc28bab20c3cf49134b5d1c47771155470734d3ef2bf5a0a3bf99f546e664",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -4628,7 +4628,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "216e0c813664181939693a8f483201f3955e1e4422c61ffc40e8822260a88f41",
+      "checksum": "b73b6ff156e64a55fc475e0628c4221de266f2f3fdabcb724210b83ee7ec4762",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -4657,7 +4657,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "277d123b2c51e22f4593c0ee34b464854b1db7a8f78b0611615d786c9761d8a5",
+      "checksum": "d685e2f5bb8448acce6ee9328c55b9fdb7889a0bb8f1af9b5aa8377d84407bac",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -4757,7 +4757,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d20ffdffe7b36a84aa3084be0cd16aa1de332862c80cf763a0d4a8dc0a9e6f68",
+      "checksum": "721157e377063fa5003483d5878219c540229309354c9fea73569ba4b3961e2e",
       "description": "Bold red retail"
     },
     {
@@ -4786,7 +4786,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "25ec58f78573c61d281b50f2271331d5bc5fff627e20c810b596d561573463ac",
+      "checksum": "b3f295c3e3d66d65b4932c7ebb4bea1aeb32ff4b5d4cb54fe6d90280689cd63d",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -4817,7 +4817,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "713fe498ab870a54e7b104ab2b9fee857932673a51ee2c9bcc208fc53833ae63",
+      "checksum": "03254a84b3c5b609f8ce3bd580a9e9866f70fac249c2ffc9f594f2ae5ff1e3a7",
       "description": "Bright green modern"
     },
     {
@@ -4848,7 +4848,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7211015792270a63b04818785f5234d212aeb12ce901a219c21deb82484877ac",
+      "checksum": "683e9547afc9bba88001035797a981103c83fbc90895e215c04e1cdf3e06facf",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -4923,7 +4923,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e1b554b663e7231a1923719cb05296673467da6fb795ea83c34faebddddc60dc",
+      "checksum": "d496657046f3ff65f56001d2c30bb35745d3a15f2067cc3ac6c694555716baa7",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -4954,7 +4954,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9af72036abd327a0d48b79c52e6d9f8f17298981e57ce5d78055c75b0a999834",
+      "checksum": "b82bfd29609562ea262ab657dd6ff9eaddb09e7b966dc2f7b63c523d4393714f",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -4983,7 +4983,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "10021130c22b5baccf6e46bb11e93821aa59833865168a00925a5ec682ebae51",
+      "checksum": "5fe07df792ed0bfedd10d99a5ccf35de00ec8109fdca0c2bc1d28d1db0298a15",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -5035,7 +5035,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "29f43d1ea0007f5fd5b682905b239e6b654fb7994c932d00708e92af3cf6af17",
+      "checksum": "7ec20b8aff5b8837a050fa27fc4e629227d41b9f97ef84b2cb617ce43760903e",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -5064,7 +5064,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "84f24dc7b9b5f8c1d317bb22b81ed5db0c7ecd9011ee5570aea917f2c8efa5b3",
+      "checksum": "6dcb1ce1616ab8e719662e06300b077dc1b7fe772c822b246e7fa7ca943bcc3f",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -5093,7 +5093,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2a2d65127bdd211b18e35eec4b3ec4a8cf23c4a4073a3ff0cbd9231e797c1379",
+      "checksum": "2cdad32624c816e7d316adb6b3a18080122b2374bb5f31c8180fbf124a36c4c1",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -5122,7 +5122,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b11393eb9e701b2b345bcd4907477db7567beb88ec44ea8de568dcf7bbce9e3a",
+      "checksum": "ad471047a3db4a7eca949818d2a071a1161b95bbc9375b985bb470f90d9ae0fe",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -5151,7 +5151,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "42365ebc947cae566128f3734c5de851135bda07b43e127d7331b477a3333f30",
+      "checksum": "e81e86d9cf99088484cd07849ba9fc9e2507dd6d068d4c1a94a97a026d183ce3",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -5182,7 +5182,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3e3927307dfc57c8ef9e08457ed7b42692f703336c9ae4a4c34e66cb64dcba38",
+      "checksum": "a9ca0c99986719c02a507b09eeeec3a5b451d0c4d4567ce50a4ce2f5e877be09",
       "description": "Item Detail Report"
     },
     {
@@ -5282,7 +5282,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b08cc8072a721b7082c0d7d6edc5a99e17e379abe6f47dd4ddf4e37483ba99dd",
+      "checksum": "230a01282979156bbeb74fff84ad31416bfbc7ae10189e37488b14869ea9d517",
       "description": "Bold red retail"
     },
     {
@@ -5311,7 +5311,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "931abec4dddc1b0b04c4a0f763cf3170cb546a18106df670436a088260006d26",
+      "checksum": "042b65cc9c4de301de27f5a76bc3df256317575cb9c89b10ae5763f2bb080468",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -5342,7 +5342,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e00f2827b6522a0f9e8c0d1b28664c35f53f46b575e735601859e197b12e5eeb",
+      "checksum": "473831090d54f83d8d37c331028bd7778a48deed6efb7096e22f22803497a76d",
       "description": "Bright green modern"
     },
     {
@@ -5373,7 +5373,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f8663aa2c7376e3ac3ebc3149ac7bc17fe4c5ef0fef3643221a00cd303f8f881",
+      "checksum": "f37878717f7de1fb4d86c989562a5eb90b68a86b99cf4f7781fc27d0de10d1fa",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -5448,7 +5448,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4c5d88c7d5bd50b1b2afdb859ba0fe992b4131843fe3f0e9076b027480800aa6",
+      "checksum": "a02947f54d4ffc77acf9be6ee1fda14732292a8db7765aa1d92f861b026650b0",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -5502,7 +5502,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a8767987a257d25caaa03cca20cdd7a00549a16e4f09c3fcf21692f120ebf796",
+      "checksum": "d77f2cb174627d5e6b3a03e951ba21f42f78b44579732233aa3db6d1fab35047",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -5531,7 +5531,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "29d8f5b37a88fb56176b29b943eb820bf91e1b731aa33d3a64f3738bfe5e89f1",
+      "checksum": "e11615788c49cac7707fc1b565fbf390b143e6e0876a35cb0b785670a45094c2",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -5562,7 +5562,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "26ad8a19b9d15b4d6125a9adc0f84825a19b659529a38e29f687cc5fe67fdfb5",
+      "checksum": "25970da50c00ebc763701d17389349a346641f9f58ea20009e02e0c3a8a5624e",
       "description": "Item Detail Professional"
     },
     {
@@ -5614,7 +5614,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e671111da829b7978cefd4a7823127d32fe8345eb696a25e38a3bd861f0ab12d",
+      "checksum": "b3cb61ce47bc77dac0a77f818bbfc568109cdf1a9da834b877e6c5120a10047d",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -5643,7 +5643,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "00cc0dc6eb0834c36035a0fa54a16e7461cf351ecfe460a1fcbd997225e300b3",
+      "checksum": "e7f558fb4f4a9b3f4c01dca286922cb0a009050d244e264e3cb171744408cd45",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -5695,7 +5695,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7ced2754f2a7131099035d07460543f851b6ec608508c42f64215a4d998ea89c",
+      "checksum": "2667e8a21f110186f4af4a0742458308bc8cc79b615cbeec7b3c5fc626747025",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -5724,7 +5724,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e0a453edb5a014108f2beac721333f153c7ff7d81b37a1024c2db7cd90a7c969",
+      "checksum": "94d485fb5e66d50ebdb0b48e241cbafae360ca153b9de7b89f3025eb27ea807a",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -5753,7 +5753,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "aad6b72db18dd1a9189a24f1c54baf58cc50bffb96b0ecc5bae5574c0bdb2bc9",
+      "checksum": "ddf0d7dc935e531337308ab7033f8066f2e9cef6582dbb3f05f63f9ce0e71723",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -5832,7 +5832,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8a481708c9a55a5f461027072dda91a32bb6068a2658f88f4dbc22d638ebfa86",
+      "checksum": "985339414ce57fc62f317267b22d6d62345fcb79330e8651439b59b824f4a2a3",
       "description": "Bold red retail"
     },
     {
@@ -5861,7 +5861,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eed0a43d2e8fd26e98c3da3d4b74c50ea79818470caeb97bc1645ebd4b9ab832",
+      "checksum": "cd49b6b72417931d195ea5431003b6434f52ceca54220d8920b7683c55a66d77",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -5892,7 +5892,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "540f32734c32f596d2dab40e74f4133add603c72c1df49661dd2093e3a5ba985",
+      "checksum": "7210b5f4a93d333f2b765545de68cadaae61fcbd355f4032ab0a9a45d47d2516",
       "description": "Bright green modern"
     },
     {
@@ -5923,7 +5923,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2119267970a152eae943a6c31ed5ccb08a884c3dcb63eaf9ff6bf712195b46f7",
+      "checksum": "b7cbf9fc6a8677b4b19a42b94cac0d5602045e9e219c52c71b51811fd0b479a9",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -5975,7 +5975,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ecc68019e44eee8aa5dd3dc3abc4a4a7e7b284eca11478375c59f0d9ea720b1b",
+      "checksum": "3536e2596d6fc43407ca760c00ccc8c2d46dc0f14857da646c4a1f61c28412ed",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -6006,7 +6006,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bbb066465d88163b4f754aa25edf729d36f525fe0408b9869b3882bec20f58a4",
+      "checksum": "869716f957c25d6750db1245e5b2fdbc0d5205f872fbd2ff2744c0f6275618b0",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -6035,7 +6035,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "427866e7dd3982628060079533b408806dceaae381862fdcf0707bc6933a9a03",
+      "checksum": "1e0644ecadfb7f0d86f244dd246c3ea45e91e41d3a87a750e307f5008dfbab2b",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -6064,7 +6064,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c3e052bf1044035777b2cdad089e8cad19549ae1b86104a0dec0d5618faa0222",
+      "checksum": "af23dad6718403dacf38476fafeffd670ec7177eceaad61d864691203b62e081",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -6118,7 +6118,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "89618ea37cda52be5c6a593cb1f4f0f8f6f538c7ece16d879448c5c0bb76adcb",
+      "checksum": "b4d21e64ffce8271904152e1e7ffb66593c104b092d42aef24d69d073d27d933",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -6172,7 +6172,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e339b05ad0460232703adf08e7ffbe285b18eea70c2c72d4c4d77fce1d87626c",
+      "checksum": "eeb8181559ac8fe755699743e783ab1eaaeae88713410e45538e3b738c52cbc8",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -6201,7 +6201,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "157a662f16d669636437fcebef00b49809c4e962e1ec372e38e913352d767546",
+      "checksum": "e325968b97ca4cee812147bde011d02f28ccfe264a32d377636016029c51ae28",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -6230,7 +6230,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f88544513545c5632ed149e10e6df8d670346cb4797b4d02f01a30250c177108",
+      "checksum": "f0a5b687db0098bafa03899999298d48a1a112ae05de6cf731bd44623d924c3b",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -6284,7 +6284,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0b0e26709c130866481fbef1c1fc75a91c0c3c46f7ac0f55560b74660c4d66bc",
+      "checksum": "4f755de4bd518589103afd78b7f946315c90e73ce3dbfa01b0fd1dc08104fa5a",
       "description": "Bold red retail"
     },
     {
@@ -6313,7 +6313,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6b251fb3e1f9fb298717fedc8809aac33941140589a363ce8fbee97ee4903cbd",
+      "checksum": "5ca14d9e9aa75d15a97e08c259a9ce53aec1733b60db8a57bfe3c7c5eca0dcfb",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -6344,7 +6344,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f331711aa2722cd4167732005825ade4edf1940f307b8eb8158e53bac9252be8",
+      "checksum": "18fb7e44d72ee27191cc53313b0159fae79876a79bac702aa1700d846ea94371",
       "description": "Bright green modern"
     },
     {
@@ -6375,7 +6375,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "693511f3389d8d063289712c7b1d9cdeb7b3670347f295e6ee0acd35aab16b08",
+      "checksum": "c90b16613146bb2d8c660ff20144bf8433657f75d9b2b57da2b220654b659dee",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -6521,7 +6521,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d431164f9ba582591fbae823bbcd2a84eaac91849a8865c4cc59f71680f74dff",
+      "checksum": "0cd34b0dccfe3db2a7a8dd46d734113cd06a577cf4b27e8d1935438bfb0fe312",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -6552,7 +6552,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e80a5ad4d5da3e2dad40e80f9cd2c0e856b52c1a156f308cc967ca0895b9c2d4",
+      "checksum": "ed9eb73746480204149afec6a39d74fa0ffb29b5988ac2f9e9ddf53d27a0c669",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -6581,7 +6581,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "62deae42655106fd44dcbba6ca0f9a4fad6d80eba14805a5c9d5b55f7c65a9ac",
+      "checksum": "ced00835f3a3eff91ae78ddbc54ffef098f93d882f751445f76018a64354fb78",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -6610,7 +6610,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6b32db8b8e7a762a11ac145587afe7e20dc40f0ff9d7bbc93db4c94cd3472c81",
+      "checksum": "b22c41b1ad21254f1e05899ef1696f1c6ae80e36e1b38b8b9555c464a89762f6",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -6639,7 +6639,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "18bd3c5e1522540b100e38c256f516d5f6a9639b0e019bb63d31584ff577e25d",
+      "checksum": "ffa8599f47de1a0eee13e11a6117f1ff09d72fa2fdb0af30364f07616dca01d8",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -6716,7 +6716,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "09aa98e33cd8c2396b54153180318c7f6f6660d770b20059f5f7110ada137d1a",
+      "checksum": "31fad11b7e7a2db7ead9eaa92ca6a91985cf61094800fc3351f3b34e4f220a70",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -6745,7 +6745,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "833b4c863f255192f023d1a1c9eeca0a410b19cf9e1041c4722fb2ad60e0a7ae",
+      "checksum": "3ca954d27121ff2990b30c611a0dfd938edc73ebe3c14e1d60f8ccb2b988a3f3",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -6774,7 +6774,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "48ed3d673b7de18473729f4b2649cad803ca45a02e374f0b94da0c23079abdc5",
+      "checksum": "e00ee0285666b45c4aca4ff74590bb88b7a9215b112f41081d4c9d7438ccb4ab",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -6874,7 +6874,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "536dc4b8ae252989a42b2258a0a894ae64dac3b90cce203ea7ce2cb9bdeb3ea0",
+      "checksum": "f5cc7d5ceef34128065c12dbc951abea776920829bc00ddd740fe06435d686a9",
       "description": "Bold red retail"
     },
     {
@@ -6903,7 +6903,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b400bbe8018490a8a4221fc39f11e9956fc717f6db42827fd673f7b4db23b838",
+      "checksum": "7c00e1fb6595c1ca77c3de5dd612c48774575b68ddfae38ded209f332fbe6dfa",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -6934,7 +6934,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "445e3b87897e6665b3f4d161ed4d940c26b324877fce86f687290bed41331e0f",
+      "checksum": "1a42e66caf2f92095e3c1b9f797ea4fb6cb0edb6e79e79b75f986957afe436e5",
       "description": "Bright green modern"
     },
     {
@@ -6965,7 +6965,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7f17aae25217fa9cd15bd9947761303fab7743da8013803d32ee03ed78bd9e0c",
+      "checksum": "92210fec574139a78ad1375db71f87aa3fac721048a3596f6c41287263d5aeda",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -7040,7 +7040,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3420a53dbd50232228b9ab070c343010378f8765e27eaf526c237f627a62eb08",
+      "checksum": "f57e4506a0578e1596dd1e122d23777975c2c0ed5720120240000f504f583464",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -7071,7 +7071,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3d2fd243333163e2596489af7c7796950243897548f42a81fdc35fe5fed76fd7",
+      "checksum": "57426ac4607e2c449cae746adc58178d96dc9aadb68759421bc37dd75ad2e19d",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -7100,7 +7100,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "43b64eb515e8a0fd19b4513d8aa2c3b5d0be0df0159425e08241340e99b02f54",
+      "checksum": "98d9b8bf5cba45143d0b1e716d013b2bfd28cfbce57a85ecbbb6b2a2e4cf2931",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -7152,7 +7152,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bffec705e5f837b985a53c67f36733a79aa0fdda2785fc143bb5af953d7e33dd",
+      "checksum": "d48bef9eaa6a35a1ff7670cada55c51e4baf35e970f1c1f6f49f027f20574551",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -7181,7 +7181,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c1f6de4e445e3ed99d44abfbcf61e3d3cae71d5e21d132f7a0fd6eea4ba9837d",
+      "checksum": "4b22adfecb08ed28034813c2ca3fa8ceaac04074419d1d5154c5b8ff522ede69",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -7210,7 +7210,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "172710d8912306237e0dcd785e1c01d729e0afa021fd81c277fc12a1e8a8e042",
+      "checksum": "0b7d1884fef5cd06ba32469b19559313e52c5358e76ac8933c67367ab449b3f6",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -7239,7 +7239,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "75f3a7f9d6080cd4f58949de99a2c81395fff76e19cd99f195a72427916f00be",
+      "checksum": "6615538c96b435494166880678229d53449326a9b5156076a490a6ab0e2cfc24",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -7268,7 +7268,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "77068d111be362ba84022e840d9fa1f3a3c550d1a97dfc3f7335886308352249",
+      "checksum": "86855fbcc71d18e106c26424d8c30979e4a3c1f817e3203ccf8af51e33e8d5e4",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -7374,7 +7374,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9ddf11e26d5e7b192b155da08c85ab02040564156455aa7dd89f034a6acebc77",
+      "checksum": "bad93529f20b4a8ca6dee62be3585865fd4be5ea61b0d4a772d86c89b454c19d",
       "description": "Bold red retail"
     },
     {
@@ -7403,7 +7403,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0323a7e8eabd63850267f3879b03694128ebef5e11d9a0d8a7c7e0c49f24c3e1",
+      "checksum": "37828896e09ebc8ea3c7ae081ec10b189b846e1eebd004e8bd54be0cbbd1c955",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -7434,7 +7434,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "40a83e812b2f57adeef79c69ec9cc3c02c19f645f7312e8c829adba1cb6b2502",
+      "checksum": "17631f1a1a1725590f7e7a9db4d7111a4ead838facd9a46e996549afce1061aa",
       "description": "Bright green modern"
     },
     {
@@ -7490,7 +7490,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "91815598065e75169524468bd53f399f46df696c394e2276c3c675735b337a35",
+      "checksum": "a2f0102b95e6f60233fd7eea202098c875cfbb2404585f3ad6b74c755312d302",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -7595,7 +7595,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bf0a3f3cf38d57faf7713e1e64575af4decebca4710a60548cfa4b745e293fc7",
+      "checksum": "ffe9a9b83d5c516f7752fe896ee9df1757057f9858ecc77e95c46abe58433e24",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -7651,7 +7651,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0b1d9f7c3fa37c2de8c7a539d184cd487bd6afd17547ab05c526889000888856",
+      "checksum": "48298f17b027f5e7420cd0e8e84ce5b8d85dce09866502a2267e4ae63577d738",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -7680,7 +7680,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e1c78c47894a7e8269d0c66f9c861c1e1f47ed748d4ab6bed11b5518523812f5",
+      "checksum": "b2e739299de4bee2a558c638bdd04ed1509b361889210ca9fa44d7b75b12667a",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -7759,7 +7759,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "84daa985849773a8903371d8533d1f1efe6577d4cc1ae79aa7514b148d76ef08",
+      "checksum": "36c199e5f86614482bff6f85bffc11cb912b2d351f350c7b29829c6ad08587ec",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -7813,7 +7813,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dd3c0d1656638e016286185aa24d0a247ecc45e5cd0214df1ae97abc82e8f23d",
+      "checksum": "aa6cf24a68b61737f585f626e40da8ca8c4471a834733aa08a9da06a1a66ad2b",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -7896,7 +7896,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5b0a45b86e9c656380d06b427b72e5aee43e8a3640fb0ccb763511e14da0d25b",
+      "checksum": "ba06fb31db457fbf78f9d0be666c972e88e128f243b0cba7137ec1eee12f7d94",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -7925,7 +7925,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ceb9c635e6126c57d08448c09ea8461c8d0839cbcf09037d2f4ed98d88337c39",
+      "checksum": "2ab07df7479b81534c9e91e89597ff3d30bc48661d91198bef3811f485b8c4cc",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -7954,7 +7954,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d1182052730d807c26d967ad7adf3870b780edcbf5eedd404d3f0fcf58fac8e8",
+      "checksum": "528eeb3dad0fc6fb8d20c584228bcea648c987a5c2662fb2558f723a578147c0",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -7986,7 +7986,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "79dc602ad329bcb64ec3c05b7dc2a9720e1012ec9ac1cd1ad15e12f926194d3c",
+      "checksum": "905b16df2164e33899745eb293f9cd85050601ed73e55a11b947d0b28641a3db",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -8015,7 +8015,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "80256c8731a433b2d2832a9b60da509f8e9d4aa61cfd0aecf29bd29bf8127748",
+      "checksum": "628f9b606078383dce8facaa77aae70c53787af180c0a0f159fc5067892b71bb",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -8115,7 +8115,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8e407af21c0860111ac178cfae6e033b153b967f7a6ca52391c215d1c4ecc95f",
+      "checksum": "5ffa2b2c282cb9d3451251519f5a8bcae9d7ec998e33ecee67821d1b0227c37a",
       "description": "Bold red retail"
     },
     {
@@ -8144,7 +8144,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "15b49b4c7f40d032dcc7634090eeb80593c95bc77710f836c1a700eabc898c82",
+      "checksum": "abc35989dc818d35015265ccdd44807e9ec3ff528df2418e37ddef5e60581b7e",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -8175,7 +8175,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "780c025dc8ca1420c8cbb00c558d64e9958a9dbdb765fd4d1f0900bd5b8e3df3",
+      "checksum": "fe7fa4f4c1d01bd49d7f05b7380325bb9b2e2a7e1edd8b00081289ab525c2ca7",
       "description": "Bright green modern"
     },
     {
@@ -8206,7 +8206,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "642ec359d82f0cf052235bbbb5c2d6ef73fcf4175bceb8bf6d6312d5a67c8a22",
+      "checksum": "1add7986bf1d5d29fa847fbe56c67dc1ad42281b3f93bee765b116ee9e74f4e0",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -8281,7 +8281,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cb463cd3bacc003c802c4f6ee52ce3dbefc16b427f2d6f64451fa87a37598af3",
+      "checksum": "9f914997a60cced8a0a8735d9f25114c5fdbce967b1125598e0dd0a22ff8722f",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -8312,7 +8312,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8e31d5ced3571ad0d37d859a8ae7ce59676e4e8758d7948c61252ea699892df5",
+      "checksum": "cedeb3daf78bbadba8338f6fc90092200a0ace40246ec76a5eadd34addaafa73",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -8341,7 +8341,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b531c75d19265c2a4047c8986b0ee7657e808a1c441124fd9581af13472edcf9",
+      "checksum": "48be700e1fb2c5282ab8b72aee85e3741993b65b6ee7e867aa551ed9c0d6c9d0",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -8393,7 +8393,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "163ca1fef769e3e63f79b982c7c051529cba928782e9b94c6fcf4fee266b7823",
+      "checksum": "f0da75d68fdda74053e887bad754dfa0d36777bd2a607a76d7a674cb040df3b0",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -8422,7 +8422,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9f9e16645a573a26a90e2b854246b97fe23acd7ee90ba8137c4d5fa9b930a5f2",
+      "checksum": "e881239866a5d216817e184464ca670846a2b0f51f35363f88277b0b0f198abe",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -8451,7 +8451,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3a5091337bdf8c46febaf5d3f61c16a12c56acb9aff570772e070b69cf75f7bc",
+      "checksum": "83792d5060830d39623c89a69334323da552bc8eaea57578b5f4df37e12e1743",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -8480,7 +8480,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "15c3ee7aecba5660fd3bef2e033335651581081dbe217e1d04ac5b0a9b229d75",
+      "checksum": "3f5abeaef65adecb31ecef146dda47c0ab477953d254ad63ec103bc34766f2a1",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -8509,7 +8509,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c387cc319850a806e823946d7664ddd0212a0caa54439c9797e60b80f40ed917",
+      "checksum": "ea97e3e998ac7e21e6b76c1bba790df340b3abe77a4e503894a81ebd16735cfb",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -8563,7 +8563,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c9e2a762c4190c14ead20066ceb4f38e0b84a843b66d6a91a3bb1f754d9a3a1a",
+      "checksum": "8dcd91b87d4d57418d077c9e58534006b7b65383904ef2bed07109b851d693e8",
       "description": "Bold red retail"
     },
     {
@@ -8592,7 +8592,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c413cd678f6c80e02af86eeb21fb5e61b2cf6652fe86b0b8e57b84b76fc1f431",
+      "checksum": "f494fc35276174d178ba3400f9b5e56f982e5aaceac6a9892227328edfa56a80",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -8623,7 +8623,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6239d68b03ee87db621b8fcb061024205afdb6d8253e305d4c183638bc848d06",
+      "checksum": "475a8cf31eb5cd9cbba8c7a8d049e0548cd70a4a7cb4882e47d5ecff24e14496",
       "description": "Bright green modern"
     },
     {
@@ -8654,7 +8654,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d3e69f9e29a78125f5647e87f505e9c8ec9f756b4ddee067b999cd3444990e7a",
+      "checksum": "4a5f5782dd2942d0f8867983be70206ce6ce1254b26c59536f09fb078851c809",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -8729,7 +8729,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "18b92c0ad88a40d6da7a3a12d76bd481651c5856c677ddd6c519628adb7308a3",
+      "checksum": "c315fcf189cc38b5bd1e78a57aac80890da0e488f4f06314c2017106d7fca02a",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -8760,7 +8760,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0e5e27ac8f66a9061ccfde9e24afcf5b0c23b3799e66ca2006717052ac2f9a27",
+      "checksum": "280e5b7e68f71771999f2a715dc14aebcca9024aee3abe41f6597f7fc93a199a",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -8789,7 +8789,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0c378e4dccf9843a8943a4480cacdff11a0d9dc0707471548430101dc32eba0c",
+      "checksum": "b06e4e24de62c1a2b093874c3731ab50689fddbacc3f61fcc6782ab23b410895",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -8818,7 +8818,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6128f7184c69799d4549fa8dc3bed1fd8cdc5209a96c5da1ee1d9dae98c72f04",
+      "checksum": "973d872b1b58b67ef1a5557d2914841a9236979c839b56fcd43ae7923892b721",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -8847,7 +8847,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9bd28c6307d1a6c1648653909ebdf219f77f8539c88a596eb9a24c6f0e21b7a8",
+      "checksum": "c0d3791c3c77d48ee1ec98bef7798ca79570f178d4bc948923b79193bce46ecf",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -8876,7 +8876,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2b7417bc27bba96f91c4454c63daeef5b1a4758ec56e86c2e6a0b8821a8f623f",
+      "checksum": "9c0dd6b685c8e0e99a59b04ac45be6753376e9fb932dc88f0e5efe9521ad125a",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -8905,7 +8905,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "18c462e23ec34301968fa2e8389fe6758caebdba2650bee768ce35efad79a76a",
+      "checksum": "3dd6e08b81f6f418f6c74c0b5ff9607011d785c45cf66feabb2a6e245b0f8c2a",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -8934,7 +8934,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3f4347ed1b954a69a2328a4de545bb137443c47e591b7337e294675e1873555d",
+      "checksum": "6908d150e91360f1879ed2b6f2b602e7ac3803da17efafcaeef124a81829daec",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -9034,7 +9034,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "721a531d9cab3af2390e36df57b2bafe42e81cd12bbc3eb1a423e6a051b53d38",
+      "checksum": "bc712b9d8696f82faa01885d9d691f504c1f3c942da9d54d33e38c7310885a98",
       "description": "Bold red retail"
     },
     {
@@ -9063,7 +9063,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1e9174320401c845cb3c84defc9d502869bf5d9213a7c4ef722500042218685f",
+      "checksum": "05e984ca4c2c88c1be1b77864c10bed6c6d61b83cec1ccfcc5794f1e5faae8ed",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -9094,7 +9094,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2b68b3a88a2a71687a772b7b391d83c4ba7c05a8b0c985986bb30c325408c596",
+      "checksum": "c69fee467a0ddb84696efc6cebb6307bae42ded7bce18af54ce4ca63de000ba1",
       "description": "Bright green modern"
     },
     {
@@ -9125,7 +9125,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f3d2a4d2f5cc44d9c79e1028762b6fb834d4f8fbbba3504d0c7eac2af2b6d5e7",
+      "checksum": "9e2fe99debf1b1388dd4a7405943ce2b2f6315e4e4bcc0b20108d5e5f8dc7933",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -9200,7 +9200,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0ee9cc29d1b4ae681297e2f22c519b367b37bc024aebb0778caf083689e9e963",
+      "checksum": "9e2bff3ac5feb8b23b5f25efc0ca9249b9af3b2ba5f4c32ff0227c846136a310",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -9231,7 +9231,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7f3845096b02bb9484e46cd04ef203d2219c7eb175f77b2103537d8a8ee9b02e",
+      "checksum": "6986df60c46b31249e0cee7e0f2dafbb7a98de99e286fa088570f86d1287bd34",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -9260,7 +9260,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4764841c8a4ef036a019780e7633d104f21bc16c1db49271541eaaa32c6d8a03",
+      "checksum": "4eb74032572ea392ed1e291c8ad9548b848992a639d2728e9caa3a42cb11e349",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -9312,7 +9312,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c27cd5aae3a4434fa84a6d730910495111a94cdb78a96380c0655802b244d907",
+      "checksum": "05260b1471907f5acd09c76a92f57a49702e4a913cf85af4de3a6343a86d411d",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -9341,7 +9341,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "07beebc2043451ad5a1ac2051a5f384d1ffdfa76c1ea7c57ad2edf6811e46d5e",
+      "checksum": "5b72d4c522dedccefd24d3b956dd680c0b7d4bf4acc4e1ba43ab55e387ef21e7",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -9370,7 +9370,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e223e6c8f4ce6d81d6e495293c009d055e666123ec5036928921021210438388",
+      "checksum": "2ca896f402facf6927f397e587494aa1ab401cb45bb12a3bb466180bd24976d8",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -9399,7 +9399,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fe5fa4979bd7903693ad21de61131de591a407f538a123f896dea00e43dd690c",
+      "checksum": "4d4c7741de220d81ed4268fd31e394c9ccf6c9bc170274ef2b690ba9f64d90fc",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -9428,7 +9428,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5556e7f9f665ca10dd49c24ee2e4160fa97c22806cab8265a48ae96fd3082f23",
+      "checksum": "723d61abae7838fb5e5a57baa9c93cd175ee18d76bd29651dbad46882d4220e8",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -9482,7 +9482,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dbcc3c508075f0496589e11ae08662f15945cefac75fe6b561ed513e3ee0b3a4",
+      "checksum": "385d85ed197ab368c2197f65e3da7b66dcff8fe31b7e2b3564456fc9817a9fc5",
       "description": "Bold red retail"
     },
     {
@@ -9511,7 +9511,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1faca6191a519eb1e99ff653fdc926701f0e3cd2ce26eb9ae0791381ca94d298",
+      "checksum": "3645e238ed9d351764bbb8905be66b0a8264b94c54f383e21717ce2be19c4f6d",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -9542,7 +9542,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ba960da92bdb1ae1a0917473e1428cf449cb271060f2b06976bc39741ae91c5d",
+      "checksum": "ddd998dcadf9200ae2cc6055892c5d3c8cd63000fb38635eb6fa30bec9afa95b",
       "description": "Bright green modern"
     },
     {
@@ -9573,7 +9573,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b7ec8d783a5dc701dcd2ea411a7505b5dc9a4bb19f7eee92969b89d2d0bcdee9",
+      "checksum": "57c61bc353a33743478ee29690e88db48d062c54188323b139e7160c6765bcce",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -9719,7 +9719,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3ca2be559a56275c5878459722dc79bcc7fe08a96083652482fe9d37967ee6a1",
+      "checksum": "bca671ead303cf8c093865a7b921594e5947a89745f06c2bf28c358b0512d78a",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -9750,7 +9750,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "873c0fa9e548f438c4423bccf4d98b0841643a2b6efaad8b3b5671e93b1bd5d9",
+      "checksum": "76c49df854f556ec2495e0e5ddfc1a32669784483b795534a03857dcb75ccdcd",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -9779,7 +9779,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4747bbecffd4d259605929ea106aa4f19c3ad68481d2fad4d54cfb69c068b253",
+      "checksum": "97f898f93e4d036944ee79ebdfad27b8c54737d842bc9f235bd06ca8a0587a69",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -9808,7 +9808,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3ea6c1bd60ffe4bb21cdb2d85c25c1a4f7578cddac88f802eeb39db7e90bc0ca",
+      "checksum": "8f3ed99a726c4744d04c19250c686b8b70516f7e6f9ff275a9974a2cb8acdcfa",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -9898,7 +9898,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8836a6ce2b29f3ce58ed27a9a76b69f672005346e7a8fd884fe29e56fadc1ac9",
+      "checksum": "34f2fd0b3a92831f65abb34e7517297802ab83bfa49fc42b5930162c905e15a4",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -9978,7 +9978,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0c9a9e838af1f6898b0ed155bbcc702f4fe78dbdace1bca09a960b58c3a20f7c",
+      "checksum": "9728b36d5ac43368175625d1ba0553cb03f41429583f086c6e3412d1cfbf7b50",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -10007,7 +10007,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "da3540cf3a9744cae3f0d4d475a63768762e3354e9559c654eed0df1d0d3eea3",
+      "checksum": "bca14dcbb2ff980de07ffab35682593878bc02fb7b13878e91792a4be4e815f2",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -10036,7 +10036,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d0f4cc2ee5cc1a8d5bc3c00a9fb74a00f9787d8484191db5f065e10cac5ceea9",
+      "checksum": "4f1a10823a6db7973e1739f9da45b83e73fd408faebc1522f9822bcdc62c65ee",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -10068,7 +10068,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5e4cc4a3c0bcc36c0dc96d33e018afd48ddb6c55a6a7243b7663455b7079aa01",
+      "checksum": "5f1e5ea2b23486b3a7f1c05052da71314635c09c65e652f8bdd3d5898ab40955",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -10097,7 +10097,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cb2e4632ddca90b75d5c4851eaa4b661a079892b5307928545bc8f7d6f2a05f2",
+      "checksum": "1bc68d05bbaefb78d988f1118738d711dd7f2d44239e448d7cbb5a673ad3d400",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -10203,7 +10203,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a5570404a93d88a9fecfa63bdbd3eb6686eb8d7ef45be074610a34c27410c8e7",
+      "checksum": "cb8e840f54bc7c769caf77476358aad6b3fcdda9e506bdafed673509ce3c0667",
       "description": "Bold red retail"
     },
     {
@@ -10232,7 +10232,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6e2241a827d22e4eefae57d2ca24fae2e386a5526694916b5798cf4396a273f5",
+      "checksum": "829a32bb39462ad6525d73eefd4040fbeaaf425aa675f80ce0d47e3634e7a5da",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -10288,7 +10288,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9164f97e49185569bb1db618c0e10786fc067d6e2c13bca0e71ab36e9f98abe2",
+      "checksum": "f5e0390128b8d985995e60ccb490fe9f457591857503487bf0088bd8a6dd1b3c",
       "description": "Bright green modern"
     },
     {
@@ -10344,7 +10344,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "efdbdfbc8123160df15e8ab0729f8617405e6f56253827c177aef560d8565b77",
+      "checksum": "d3499d449394777faaf38e240fb0397549e805e4a09b92ee0f157f8f253a1c66",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -10449,7 +10449,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a41939a03cbbbab6f6dd9fd259a283739959d6eeb362da65bfbc3cd4c0b86af6",
+      "checksum": "9faadcd02e291cc5fbcc1f098627025421f885f211b0c1db3c80e3602378be70",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -10505,7 +10505,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6ab91962e8416373e70f8a4f7e61021078d15a61c0128b51d8f23058316245ae",
+      "checksum": "928fc0682243ef68d16c0d0ac644f47049ba9cdbedec3b8ccfd313b90870c171",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -10534,7 +10534,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a3bfc2053fbcbc5f7bfffe895664033f66a5c1b58aa62b532b4af557e3b5037d",
+      "checksum": "24fabd2e898f586e5539550f9a826fd44df27d2393bf0bb728deefa8fd6dae8f",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -10613,7 +10613,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dc78148edd1e0d9d1d24fe8cee6996618a0e0dba8cb5502cd38d2fa1acc71d2c",
+      "checksum": "a3890c26e3379cba53f8202f09340df98c6d6857a32de3d460626051c7c9300a",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -10667,7 +10667,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9a58d1661e23bfee73eb2fa4b5f577b8e4d5a6b15cab9c4f725c58b0a9fcd568",
+      "checksum": "a5f22f95be68f719ddb82e8464e38f5513e89efda862dfb747ebb086f79af1b1",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -10775,7 +10775,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c41803181673e509b7cb17048aa3ad5e2d2fc07681b954d5c470546062f255b1",
+      "checksum": "66029b15e9db895db3ddc3052a0d93d9ff89ac8aebae561b54e48f3d43134e8f",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -10836,7 +10836,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c9f2ac00bbe0b14a4fd39028889a25cf3ad4b99e47833bace4da8071dda9eace",
+      "checksum": "66faadc719704e703fb5dfb2c96acfa76c34501dc4bdcc3674ef3808e4db9f5b",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -10865,7 +10865,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5ed6bcfee7ef66ce6f6bf953e4ce2d2cd51463eace41c7d50469a6b427bcdaa4",
+      "checksum": "04a9ce98d3ddbc8a11eb24ca2d4c84517a77f399ea9f6495ed62c1cc0d983a7a",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -10897,7 +10897,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "508c11da51cdfe75bda3da2459bb752e8e19bb43e9087150d98b680f2be2b1f8",
+      "checksum": "f49fe9ddb72c6dffbb5f61b89104b4667c05093ab1038ee0091ca9a4583ee8f1",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -10958,7 +10958,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e51a8a759f4fb5dd3514a637707dfe18c457b8654c395694787f2d2729824550",
+      "checksum": "fdfcfdadf557148d4284e3dcafdbca2e8a8581f3e10a471000a566120485d2fc",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -11058,7 +11058,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d17b3cf0c46a3490afca86c6af1e21ef4c237fcf76a8c458e3dabe94d0aebc44",
+      "checksum": "a350e78a6a0fae9cfff6e983ec34d8d9a40e17855075b96cdb95b5578f2293b4",
       "description": "Bold red retail"
     },
     {
@@ -11087,7 +11087,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fd30d82ab07ab0971148c6377eea3d0f47cf53aed00cfc1d4fab7cbbc7051805",
+      "checksum": "58d1fad36099bf71a5867e13a5d4daac084528778cff671bf15587686ffbc61f",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -11118,7 +11118,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0f8a9cc66c0003bb71382dd40ad38eca874761c76992c5526eac990d2f16f43f",
+      "checksum": "7237c897f70c008c8a5310d15c552d35eb5c85669e7dd5383f609c6ff3e4727b",
       "description": "Bright green modern"
     },
     {
@@ -11149,7 +11149,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "43f0bf94795073d3b5b853c899bb84756860ea648076248d7044e15419444b9b",
+      "checksum": "caf43c1cb7b8e6d28ed180ee3ba8d1dd9180c65e5ad9b27ffd8df6146dd28e6d",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -11224,7 +11224,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "67b4455e8b835f3db9a9dac8fea7e2b1a081ae1bac2e35000ab77176b7af5bd3",
+      "checksum": "675f0dc9825976ffe03bfb6d28a44d49bf58bd32e6f3f2eae7c5644329ce5104",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -11278,7 +11278,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4c0759361c468c324629fea4c060dd286f869dab36921e9e730c743a2d9345cc",
+      "checksum": "27bbcae14f61e84d47847ab6fba2e5e8bed66109107a7c0a1854702e707d02a0",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -11307,7 +11307,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4d29c1678dc66bdf2bfcced0bf6e8209b24fac630d2938c8624477caaf12d8aa",
+      "checksum": "69a0f75c3db6bc8f74f65e5a7ed3d85f9523d8e332d631651fa61c2829783fa9",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -11359,7 +11359,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e0bdf5794f64498835904f74d16f74da23dd8c4c49ee8ceb25dd612f9f7b287e",
+      "checksum": "6aa8a7b8674988bb19207957fa1f31df781a70f4563ddf430caa9f1d37c6771c",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -11388,7 +11388,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e509d722a4b827683c0c2e713001fe01cf58f4bd548fbaf870aa06a013a17827",
+      "checksum": "943f86f7ec760a13f7374106d2e43344073d98b5a3a7fbd71bccb0e38c1a0e54",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -11443,7 +11443,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fbf647f3928325acd8e21a133141a0f1a7b7989e5de74f8eca052dc3f9a288fd",
+      "checksum": "045fb65309e474ab4532299639ff8dbc32c119fe9ea9c96aedee7906012b20d9",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -11472,7 +11472,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5bfa9f6d2ff5462d3095f1307a7911146790ee5190fce4565959884d1f7e74a8",
+      "checksum": "232927f2cc9552839fd6ad02ba444cbaa299ca386b2788e0899b2a6ef742060a",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -11501,7 +11501,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5a808a48fd7d7a84d12c9c7d2600c44926ce0a6cb9e85cd504c1233dee9729f5",
+      "checksum": "1fd6690c0d28e858c59f5ac79439d84058a6f8801a58caaf98d781213cacca1c",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -11533,7 +11533,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "91f055ab8c677913cdade2bff4de2a0b3e1e9ee7e9beec2a2cc802ef024041d6",
+      "checksum": "cabea2c8d48c9dde751de1dce55a16116e630f37106b8de3771b905a9b109984",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -11562,7 +11562,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fd96b73f4628e13041a2307c0e51c4a60e07e5269e51f5a91fc72a41d9b365bc",
+      "checksum": "059f88a88fc5c52d305565d099e5fec3b2a5029b18c4f67761e1f92f30ed7b4a",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -11616,7 +11616,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cab0271a10ad99134547d0818e64c10b6da2c351ae67bdaba5fa3fd144109c49",
+      "checksum": "3c5c8ecc02123f58c046e0c66f4c5b71e56e59dbf47d0b1a696a11d4bd1414fa",
       "description": "Bold red retail"
     },
     {
@@ -11645,7 +11645,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "52880ac1c57850a26727c353812ccb85c8c12f96fba76149a2ff076289238ef5",
+      "checksum": "92522951aba0951ac5edde8d5f09f69d83a9366cc1408bd50820cb5edcca05fe",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -11676,7 +11676,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7441c3197e15d45954a84204d5a0fdfea5eff8f00097f1fde211ed35be3f957b",
+      "checksum": "815190ca3e7ab89443a479f706c0e2e5f159d07f0507aa0048aa6b92f3f9af6c",
       "description": "Bright green modern"
     },
     {
@@ -11707,7 +11707,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9298909f84320f76df98e3f17fc59dc6a320cda9a69a10d76977b199dfa2d707",
+      "checksum": "8ea32286808b90b05f2042a3e3944632bc8966b4d79dff93cd47c6157c2e96c6",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -11739,7 +11739,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02fc3383e4fc4d872b90ca8513377561bfa6386b055dddac24c3aae0dbbc3b3f",
+      "checksum": "2e323fca6752b0ef0f003d78b59050345ff8fade6095f11f1c9a8830954ffd76",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -11770,7 +11770,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4af1503e4e3b3c83b97b89a2c458dd283ac6741075174b11d77a712bc049ac33",
+      "checksum": "5fe7253f555d0942cf1bb4527e80558873ab4c75b35a92ef207f22eaa04599cf",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -11916,7 +11916,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a73f3caf09397cf5f302653b4e9b3ff4a5107545e3594f5883d8ec1a246e6795",
+      "checksum": "54f4f4dd07717a1d7058577b476e8bd43bdb29ee2b970607994a11bd7bc4136a",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -11947,7 +11947,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c59ed9e5955d82264f057dbddf4a3d4ef592487f163e51fecd7f8e204ad15a0f",
+      "checksum": "9aaac1a862bb3bbcf715c3d27ddb99b7ffe998b3b6fbe570ce9c4c4373f4916f",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -11976,7 +11976,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "075131aaddd0f1a740fc41dc63f1a5c8573d328d721745dc3b2b68326faeeb64",
+      "checksum": "095f5db284ff03856712b3eed23b53988ebc8f011a08a30a3c66a65ebfd5dc12",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -12007,7 +12007,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "97d4d9dcfaac5f45e9aa0de4779c3b46af0600cc7edb597b9d7bbc2ab5916304",
+      "checksum": "3cd7db53035e0af78acab68173071eac9e40d559a01c2f2860d2ee766409856a",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -12036,7 +12036,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "afd921098016a8fecc1753af7bddd2948766993b015da7e3aaea21dfc74fd4aa",
+      "checksum": "ae6d041f14e8a694942be7616da18e0d7225849c51d0aa53d03cb1a5dfc0c154",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -12129,7 +12129,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eb7a704e4e2648b80b44ecb40117ce1e62d9dd2e3d0d839435356777761309a6",
+      "checksum": "234c64117e8754195c776f22395aee9049b7765420e21ae314cc03e89a27e397",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -12158,7 +12158,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eac3cf5e5cf2677145bb59ce917a84345c7e5ed463c3cdabb155c55510ab0277",
+      "checksum": "21d15254418f0d5032ea76725542f382437d8f0fd1e53798852541e275feffa3",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -12238,7 +12238,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1020eea8bd9963eeedf6f2cab25b0e7e2ebeed2813c6f976f62ea72b51cd5f8e",
+      "checksum": "a1d5cfd4449ae00e3d8660bfe4be5ddd338f342d67e5c8d6d4d632f0ac6d676c",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -12270,7 +12270,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "49d90ce29dbaf6e18f87fd7c9b66d3b647489e1507c2eacce4f402e5c6c4eb89",
+      "checksum": "bd6e831ad314bec7f469f335c9014bfb94edd91943cdb4ca24cbeba898c37fb7",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -12301,7 +12301,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "44a89caa87701da76d3824aa73f51e478f9faeb29042cf4735843dfe58eae22b",
+      "checksum": "32d201396a3eaa5d6aeadfe7f75f69cf666475b1ac3ef49a137edeb4756c37b3",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -12330,7 +12330,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cf7d953f4dab1e55a8a19717ccf815e3f6f0203a9ab2dc33aef16b31cfd78b5b",
+      "checksum": "ba73fbf2753fc275406d0b4024329d41fdab6c2560562d38f4028e7357833952",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -12359,7 +12359,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "aad06ede5e9e3532e4b908dac80c4bc6cd6e8926b51ef47852ed854240bab86d",
+      "checksum": "0649c145d02f76a407090ce018d225ad23d1c98dd0074ce791c29642494af0d8",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -12391,7 +12391,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "563adf10f8ecc7c9e83d019f5f59ae91aa7d546c48144262695506c0e64190d5",
+      "checksum": "c753c0fe1dabdd8be60ae2c52782b93063e95f3d0d8ae71ef5bece81719f80de",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -12420,7 +12420,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9e6ab120cc0d695affa5b7f897749d0c38916db69c7b893499b77dc98c2d9297",
+      "checksum": "f001bcd1fb4e686e9c32e44c2279807798e5fba2df1fe2f236ac30f7b230cee7",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -12502,7 +12502,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1b4890798564fd240eae30fc7ba4e9908c091978538992c0ea881c3fd6521f5d",
+      "checksum": "1b1d852f446d27e77a8cff78d208f4b3d51f956c6018a6f96f7480d374265566",
       "description": "Bold red retail"
     },
     {
@@ -12531,7 +12531,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "71bf44bdd7c074ca71a3c3e40985413527eca518a6cae78536382bd32ea27989",
+      "checksum": "b5258c71f02cdd5465862978ef35106af30b24080d4c438c921845f769e033f2",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -12562,7 +12562,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "76e5448e9e19630b7a76b40849121bd1b1dba5b69f9c868fcea8b04d38a049ba",
+      "checksum": "97a6d30102f84ad2e718e58afbbf426c8c1f03a768123037b5ae30980dd67278",
       "description": "Bright green modern"
     },
     {
@@ -12593,7 +12593,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "76acb93c02a91e5127e00d9049b5e40a6db73426875f9df193acaba00b737a4e",
+      "checksum": "5275881d90d91437f96258f59f4f81ca4d2c79f07fce3d541fe666d154b3bb70",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -12625,7 +12625,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "87ac6bcd98518b746ec94bab88f8ae653fc2455daacd63784d17959de5987d64",
+      "checksum": "d907ee55741a2ced700e28a0f2f0938cb1c4f90237124ea301d33676e377aa4b",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -12656,7 +12656,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c1c82acea4c2a2f65429cf57b1a56f571e6cf80570e77fbb0ce8dcbbad8b320a",
+      "checksum": "33fd87e961c3d1350e0028a8e582747dd34c2780eef390934f5812cf86046081",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -12735,7 +12735,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5f15c8e29ff6812db2b3d8d6c6b65c63826758b1c1e83ef6d8c51e1ab82741b5",
+      "checksum": "e4d800457389e5eacc2b0cffc46a148af58906da74a5f33f8616c23a980305e9",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -12766,7 +12766,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ed0ec839bc6efce40d075540e3396e16c85c9e199b941412ef1362fcf81d0153",
+      "checksum": "24c333b3ac13eceaa9ab48855fb96db94bf26111683c9f1c2c6120ba604ed8c8",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -12795,7 +12795,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "46efd13bd6ccf2d42693a64b2a0b5df452750962001edce4941c2519a7629132",
+      "checksum": "bd22031d5162acae919e9347d5018970fe9b5be2e73a624eb836c602619565cb",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -12826,7 +12826,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d517e4320b951237e2eff2aeec4af3c3c94fee92362d1ae46cd32977fb67e435",
+      "checksum": "0b552be1f76371ae5d005fe2631b9ad515b9b0ac7ac3b1bb3dc591b12859096d",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -12855,7 +12855,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "34001ed0ad9c7ed6a0afa9b716f94363747454bcea2972257172e75dbcee8c2a",
+      "checksum": "c3ed8fc566ed84873a6cd1f56f835147a2cd38153c099a7c6d6a0df2f10fa6be",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -12999,7 +12999,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "92b8e903a533ce689bfc3fcebfcd4d442e6b41bc81fc958ade13901f14e5f7dd",
+      "checksum": "635bf33e1ee83651c470e5697af0aff198badaaa8a385dd3c85b32fdb4ea63dd",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -13028,7 +13028,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5db43a6b5e14c4d98eea2fd271b0cefd903e68a72c7cfbc093ecc978b2a0a35f",
+      "checksum": "0fca0cdf20a90ecb2acc7b3427ba68eeec62207a0b61210487551a21bdb4b649",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -13086,7 +13086,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "df92af2b4fe1aefc737c1f0b2d3647ea8e8ec6fd6136e000a67d657760e6bdac",
+      "checksum": "0e9922567d786e0c72e91aa4ce778b0ba6948b8ecb305627f5ac4e4bb7562b55",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -13150,7 +13150,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "92c365a29d33031dea308c9b6c358f6158c2bbd4d05040c2feb8024f611a992d",
+      "checksum": "14c602ebddb5c51eb2108461fd73ac2eb71cc697e92210d468f9836b23b574b2",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -13181,7 +13181,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "194f4c5d2a20f65aeacd2e23dea9faa5319a3ec462bc4c4a4cb03e3fbce4dc34",
+      "checksum": "ed36741dae5749df6fc1df82ffb550cadcf65bb429fb654143d533f33fe0838c",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -13210,7 +13210,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2b4ac4cbbbc12a0d40e303aa8aa5b868c72dd4fc1252a55c13b73ba9f11e2195",
+      "checksum": "519503fc11e4d45776520bf761d553a0f29a29a05e6b432a902536f6a6214b6c",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -13239,7 +13239,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "48feb4615e63124e2cb34f7cedd14ecd54a0dc99b292fc8c688c09cbb9eda9b1",
+      "checksum": "a16bf65de97e8ed586151ab8074420db9595e293eae2dbacb2bc93bfe1aa4d5d",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -13271,7 +13271,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "66e625832ab8e3b42f7e14271da193bfbca5261e5aacc0335d1fe6282ce4e4fa",
+      "checksum": "4b58e741d816071651814973bb6e0906b7e849d9db6de10d0e1905d621815258",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -13332,7 +13332,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1743e253f0045f3f3c03406821e72af803f0788c9eb052d554d351ceb6707158",
+      "checksum": "93e2b96c7a098852d6848d96da475eafdcc7c074d0653cf91a540d2bd7dcd8e2",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -13363,7 +13363,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dd3107b793fe92337930a93378b4bdb29966d0b456e39406aec2a0af49f2ddd5",
+      "checksum": "25843075b4b32d02b6d458b01d2598a61808e58269ecb755ea827f7ce446e945",
       "description": "Bold red retail"
     },
     {
@@ -13392,7 +13392,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4b222a5308bf9a802a049b78801ba35136565661047800a3b3f0fe961ddbf0b3",
+      "checksum": "909ea7f8f9e903a0caf9c7520c54ac1a631cb845e354b440983771dcd6d8b5d5",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -13423,7 +13423,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "baf5eb2d7d4fdedc8a78acb0bdf3f0af31811f7dd45077029f4463fe0bdd2325",
+      "checksum": "cae0c39ee2abc7835cddc3bbfbad13c5d6c5d538038458850ebecd79d2040cdc",
       "description": "Bright green modern"
     },
     {
@@ -13454,7 +13454,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ea638a2e3f9279624381c4dd58bf2d58759bf1aec6fb1a8cdc121b20061a9793",
+      "checksum": "010d22cfbc636f6800453d9e50267956a09a335fa3fba6dc1c742bc7e8e8ea35",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -13575,7 +13575,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3bb9eece406d650eb5109f80aced1083e0b5645d4abdc7cdafad566eb8d7d060",
+      "checksum": "e4413d7c1c4bb1f665f9e7fb2e429c9cc4855859da97be04ad60164a7c5d8058",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -13606,7 +13606,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "88a57b90e0b2f1d37881577f84c8e0f669a17fcc65111ebaf048a9d534941621",
+      "checksum": "7af87fa6130cec11247b8268e8eedebbf2cfb176af283517b8cd5bc46b84b4a1",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -13635,7 +13635,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "65893ac19b2c2b32f72ba40e801bf636e29787fc687cd486b362f7cae68e3f7b",
+      "checksum": "d530f557c88169bf410cee3be3a0767be360e8a6565890ce9bcb3f30f1c6bb07",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -13664,7 +13664,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "78296733fb7cfb0d1a3c48707322e8b5d8098ea904254f16249e86251ea769bb",
+      "checksum": "d188020b358aea6ef3074e58b670f5ede76bae6d6470fdb7efa2d5149d3c1041",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -13754,7 +13754,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "658b31d16718aedc5ea069d1c9d68e44f3c08bdf876daca6f9455289af3b325a",
+      "checksum": "4aaaa886692193206bed98ca34693a40b8da1afdf0036a8d902e9256757262d1",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -13783,7 +13783,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "29d4c81f6522e89823f1e93d8fbaf997cc81e66b7ebf6d314c1aac5c82f6fcc4",
+      "checksum": "c306560656a2a903d6c32b3b19c0d56e46ff6bbcee45542abfeabd238ab71b8d",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -13812,7 +13812,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ce8a496181dfeac8f08b722d79fa65cca77795be361a2a14e61961549643a82d",
+      "checksum": "955d3c0df96d2d2397a290c38c370fce0bcce813eacda24524256bd732f13ad5",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -13841,7 +13841,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "abff7c13bc2b073eecdf482a920b81ebb14b7fefec5de6bf992ff9e9325b6712",
+      "checksum": "b277c3063542464eccd6894cc6af2d9cc6fa6aa255d2b68de8f27b3f08ad4871",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -13941,7 +13941,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e26b992049e48966fe0fdad4ccd15a4ae8d8550e8763fb1b0450a5da249db9c8",
+      "checksum": "04a1b6b5439f44f62ef97703d447930787ec63b1089767b46be911e9731af04a",
       "description": "Bold red retail"
     },
     {
@@ -13970,7 +13970,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3f140c2f4b2347190cd066ff2fcc35ead3270ad8bc854d2be01d6cfaac886146",
+      "checksum": "2357e21b805e5a4127156c09a267234fa5a4612cc302a624bcd4859704aff137",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -14001,7 +14001,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "666e14b70f64974600fdeaefcc34b4b3341e87b03fd3c701e490dd3611164e67",
+      "checksum": "879db5fc420b12f07ebfbea89b5f6d02e00e8084745440dc9ac35bc6e9d59247",
       "description": "Bright green modern"
     },
     {
@@ -14032,7 +14032,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f6c1edb123cd995e31a89a6036c0233f09537ebbb125666cf813ea1f341fbeb9",
+      "checksum": "0e6e4bb682c4803bfd696423a652698c163312cbc328d6bf05d72a8c1ce298aa",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -14107,7 +14107,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "48135db4ac4ff095dee50c66a9576e5d182e717cb7c0646f626aa03e85d50b5b",
+      "checksum": "09c69c2618c20433a958a0fb12889d9a223d55fbc17078fad524df72af762eb5",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -14138,7 +14138,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5b54d4f8b7e5df06faf8a799e64ce9147b66db9334d8e5e87a980af1f86f77de",
+      "checksum": "03e5fb2f5701178b70eb01a2365bb2b191a58591f7bf4f45b547ccf0b354d8a0",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -14167,7 +14167,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a4d40bcb3fd298c8342fb09a683a4fed13ebfc75e56572de307995175904cf38",
+      "checksum": "512df347ba9c752ad9475c677b9a80ec6147a723f939dbd1c03ad63674d0bf9d",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -14219,7 +14219,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5fec2bc26b0cd41d5a80190ebbc21fc660dffa39717f712867e28011f8e0c615",
+      "checksum": "a25266509cc0283d641c9b1182e84a0cdceb08503a148b0a436d5dae8e94088b",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -14248,7 +14248,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9f881bd34d0e9c69e8dc2f2ab4aa1a50b0b71e8f100e86f636d7faff74f73851",
+      "checksum": "82eb301832f22f8db349594df26f6c9c267e82a5ae55431e32dfce9aaa1aa60b",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -14277,7 +14277,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4f9b78c9993cda7fcee13903746c56f9b40e5a67e1a8700dd3bf4b3251c2146a",
+      "checksum": "e134e0b321525cf1ea2e58a961057fc374e5545a35b85655ca90321cc38543a4",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -14306,7 +14306,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7a897c7ca2f6985d79b2eaf36b6c0e398be82551f194f3d592987beedbe335b9",
+      "checksum": "fe62cb92a4edc2abdf6803af0e5e47e19ba54ba22eba17d9eadfb7ae600fd93b",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -14335,7 +14335,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1bb45af379c488c355c7c510a05ef6c263797bec73c5fa060182e0718e767795",
+      "checksum": "7d2b76c017339c1f8015bd58d6ee328c2bbc3895082e7c2a9d7b479e75515630",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -14444,7 +14444,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "55be842e281fd12c7d205750c3ab34e05bd9eaf7df0694e233961e7ffb26a3a6",
+      "checksum": "e5a0423aa364d122846567bfc3bcdfc4f30414e153b94eb510054003a4a4da18",
       "description": "Bold red retail"
     },
     {
@@ -14473,7 +14473,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "77333b4d19ed806b98b3bb64ef263032bdab050c361523f9ab33620ce507d02a",
+      "checksum": "be30c37813ec16911a6a69996df46a055ad77669491d5eeddcb819e665b73fd5",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -14530,7 +14530,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3ff6a52f326cd9a776847c79f3b2381e04b7d797a7b26f997a343b07c0d71a31",
+      "checksum": "b585187e751f711db4542910b49364958a763e1bdcd3634756e683fd3885df4f",
       "description": "Bright green modern"
     },
     {
@@ -14587,7 +14587,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1704afea3e1f6b6d85bd2a9b6db7aed290fc670a6a8394a00a15cb4699e0b110",
+      "checksum": "92f7f96b7047df7559e04f56857af75be21aa2501536892ad17f89d84fb8e8ee",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -14619,7 +14619,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "522ab553acb69fa6368d40e930f88d96c3aa60ffbac4a54a9c09af3c0ef07a7d",
+      "checksum": "f343a6287c9b9090a33ac246ee3598e4c51151fafb82417152b77b71a68e25ab",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -14650,7 +14650,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2cac0eaa159146e2563c7e90ce9f292e5dcdfd1c47f1f54dfc5ae50388202e7b",
+      "checksum": "b1e98ab88b19e4867b568b6938c63bf302a13de6f945cc7a9453321ea5fffd24",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -14758,7 +14758,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e07ecff38641a01807810cca7289ea4961fd2c93b26c0248e3219e68cccedc86",
+      "checksum": "6bb7253489f38ea0f929ae089d2b4d2d746f21cfad6a96b2ffcdcedb523a4bda",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -14815,7 +14815,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dc051283ac5e90e1e07ec86c38ccd23ece1eea66f6bfb3604215b6017bf52cc2",
+      "checksum": "07271f772147ec35db037847d52cb1cfcc41a1071b0767fa94370fa2b05d21bd",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -14844,7 +14844,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "95150e17886493450703962f23a6312faf3b18244e84c4039201e26f87efcc2c",
+      "checksum": "35e7a36a66d83eb8282c4c1a64766672e509b1cef6dde990eb4c754de154fc07",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -14875,7 +14875,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02c1021c3a13e4f74ed4df85a04bfae987a2fe09b500d9373472d13e24afd921",
+      "checksum": "676a617ea59f1614017d8d5b92b0393a642b610c8bb07a40689f95f384922183",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -14956,7 +14956,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8dbc49bc3007935407845b3e5ee908ec232a32bc366b83e65c6dad3feef0ee11",
+      "checksum": "cb6e2103728b0b390fc555c1454c005e4f33aae46e99e95598f9184f1651d0b7",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -15049,7 +15049,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "39f7a9c1efbf582e7553d416f82143254b17076af9f208c185c8c1bf79bc0435",
+      "checksum": "80f32d96e89c645e308fa4515e6e8e4a340d19fd3d71ea52522eb44ccc7832f5",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -15104,7 +15104,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cdb3651cf30c13d8a66ddf639d8c8014035d9acdcd6b3b7c13787464254c1bd3",
+      "checksum": "81e6cd4fc54104cba84f071ec2079daab1a2ef8550afa563a5d77f1dff27bb5a",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -15215,7 +15215,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bbd9a8c7248a576feb5f918ec446fdef043d5fb5a55a64c1cb8b4d22ff2ba96c",
+      "checksum": "1fb304827e99d5052c6b25c2641da793952840270847b448cbd90fa578c660f6",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -15247,7 +15247,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "268edeebcc3d0a53c0e7b06d42efc4686fc768f4b6dafadd4c7a6bcdd0aeb596",
+      "checksum": "73b7a66b60023a944e74f6d57988d7d5c407655e3d6918f3a1dd8793d3aae563",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -15278,7 +15278,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5ab8e01809c1c3eaa5f4ca911645c66e7851d71bea4b0835502c5553ba8d1e0b",
+      "checksum": "c9ffd3f0900fcd48d5ca0dce3d1d505967c0b93e64996f3dacc1899ee4c3acb1",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -15307,7 +15307,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "45fad3e58cc81ae743b685dc0df359fb52b6a97aad6d3a78e812a8b55eb2ea5a",
+      "checksum": "ad6852f69a7074c008d6f1138a36ecfcfb6b961ce6c1aff9f54a9502ccd8aef0",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -15336,7 +15336,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1476b85b5e730f30a8833b472eceb0eb9fc2d34bef8d5daf7bce9b16441ffcce",
+      "checksum": "b4287f8b2eafb5868460a1c72aed5e02c4dadbb2c42e3f19ebd2b5cd70df25bc",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -15368,7 +15368,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8b2f85c47b169dd4c681ba5b9bd197c98a80377578c8040851af4852ba5881f7",
+      "checksum": "0de3addf3761370b464f300b285b1d5a1da01318adad26d1ecf6105462439355",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -15397,7 +15397,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0a32b601d7a11e5c2a77d3ce5752c633411c087a44e4fe5d3a8bdabffd95537e",
+      "checksum": "6d858b4d86fae1e05cefd7f24ec01658fe37c360743923e8a948f95f7ecb9567",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -15503,7 +15503,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "772aef6ac484bd993d3e029a0fb3822e35d5042af67bb300090a410f4ee5b52e",
+      "checksum": "4a9ac0313f16bbf8cb4d6011e781d28b9440defc7d8ebe4c43f57ec9ae05c2c6",
       "description": "Bold red retail"
     },
     {
@@ -15532,7 +15532,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dc4172636b0e61dd71b16f9997533e24f09ce49bb4de972fa04e62b519a2d52b",
+      "checksum": "1bcd0357126d6cf15b1a987c16e14e87f13529314f4c2782cd3a552fe73fab8e",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -15588,7 +15588,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5994360cd12347df167e4fefda6a8222da6ffbc76c943504e1a99f7945be44fd",
+      "checksum": "5d5fddf8334c673446c981fcf57c0d84b884004bf905ecb5f5aea4b26b494f88",
       "description": "Bright green modern"
     },
     {
@@ -15644,7 +15644,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f20b24494930e99edd360a240f447b35e95d414fba355fe0d67a0e4d9737cb94",
+      "checksum": "3287c36e09578fec899e63dc9a99749f2dbf03d60d7f329528a8ec3b3c7ed164",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -15676,7 +15676,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "67c07bab399bd54baf159615585cbcbdfff0ebf75d399fe646b6c6a0412dd71b",
+      "checksum": "24737793a83cf310236c67f273e3b47085efdef72fdbf56ff91d6b83400490bf",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -15707,7 +15707,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2645b99fe824ec526a530c7072b5f986ffcb78853569b0e34b4183bad8d44eec",
+      "checksum": "5757037f3bffa791f3619c7a3fba5181b0660073fd820f70b9a0dd4aa605cc72",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -15812,7 +15812,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bd9a338f580eadaa58ffb1a0b29bc8c08e993771dcb3cb37da4cb30518991f7a",
+      "checksum": "3b58fb4911d1c51bbdaf63778377f29750baf74aaf9583cb3fcce79a14a6bea5",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -15868,7 +15868,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "93a4e00e5ced8778ada77501ec836997441a81f172186c2847f364d531548169",
+      "checksum": "00fcc2575edecc30239d71d0421b80faa0042a88ac675f01fb684724b6782379",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -15897,7 +15897,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9d19d375e416f8d0fa30c815b311e7d9bd4a3e435cbe8597e429b94adb0ac616",
+      "checksum": "7d6ad2f49e1f8121b4ae1ecb73640eb14bfaa7f9c64497c36c4fa3788787a71b",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -15928,7 +15928,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d8765d3ce9d32e1e7455934150e7101fb58d0def5698fd036b7e84d59fb14dc5",
+      "checksum": "d2b58ff5456cde803994a58f5ec5aa238d8132bdb3061ca3f8d7b2b98e35213b",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -16007,7 +16007,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1599c4e60fad7f420ebc3ab76d5630687d48dd7fd2c6e1163cbcba8f15f23b89",
+      "checksum": "b0479109b51972a8ed2f2f7894a709aa7db08a08dd1dc316d8481242bd0f935f",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -16100,7 +16100,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eedc352cb7929d8660bd26addfab04d1fc04cd0501d533b46cda27dc1266d7a6",
+      "checksum": "216bd30ce7806e2a0963278fb731ce5f0266e5080d88b1dddcee94c3aaede0db",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -16154,7 +16154,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a1edf900c34ae9d27c6e58922c059d369d09c7dd2c9ec5407081e4722dbdb37a",
+      "checksum": "89ade8d77f80b7004ed5102da8c9725dae187af78c82842b37f55ad5a5ed85e6",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -16262,7 +16262,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8310a5bca437ae55035baee85c05e4cb401007bfa9f0e4713a687c1979d9582d",
+      "checksum": "fa0429f24f82f6baf606ed9078300a824d6a94da990657a28ade7752d17f46cd",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -16294,7 +16294,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d79fb64e060ef6d06c4d3cfa33edf1c58bca658064bd3aa454db03577290568d",
+      "checksum": "7abcbd92a33ef568e261c78217b9a9445671772520e22f5b328328c541b03f62",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -16325,7 +16325,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fc1f12929cbd0ac4c2695039766e7e11668e37e35b333012d615cbd945afdb65",
+      "checksum": "82356b4799428978d6e777402e1bc99436d47214f93871ae7452822776a787f4",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -16354,7 +16354,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "785e9acc0529acc6639210b582f2c3205d3e2b93f255b87f846e58712053ccc3",
+      "checksum": "7f2a86d3490970d2c9ca8a0a63aab1704bd0d84ec7123116d5108b7ac547b4ce",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -16383,7 +16383,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0d05588e7d55cc0353ec20f6fc1fb8c2a6b7d019423982a45f9b8daa414c6da2",
+      "checksum": "c5c6f1da2f06ef76db1457b40a5eba9dcf6a2b87d64011ba480001aa6bfffdbe",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -16415,7 +16415,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "68012496bf3bc6418ca278924f4189597101fc2a24d5578ab76120daba61eb81",
+      "checksum": "5307198bda9356c5374e8b09343c8ecc2efac41155f056282d0b9efd044a832c",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -16444,7 +16444,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "184cfb7175dd350237fffc8903c50ff64baffa021d440e98be18d6fd3d2d28a1",
+      "checksum": "7ad2c6170a331c9b00a12482d8baf892f7df473ddb1b483272e6f9a3eb68479a",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -16544,7 +16544,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "669fe750cddb4ef3c7c23f63817440e17651dace7d13e078524a819515b5a7eb",
+      "checksum": "e2f89b5e0aca0df8ce6e5259edab51a50b5c37ff3b33413bc424bd9e3f3a214f",
       "description": "Bold red retail"
     },
     {
@@ -16573,7 +16573,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "37d888512d2193777667da9bc90dcd9606a9382503272a3bbeffadcb721ca649",
+      "checksum": "12530a088b5f1b268c16ef1a7241351c5f0487c8f1fcf81e19f913525f896101",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -16604,7 +16604,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7061fed65ee536f8c308e3eaa3c7360cc8a1a0b9c518de8558a40ab10afbb188",
+      "checksum": "0ef2d5ab06f024201114ddfb1e6dfc4ef2684f5ef6f9d3d9e2446c5b18b27b22",
       "description": "Bright green modern"
     },
     {
@@ -16635,7 +16635,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "86adc8365d42fad741259a2b8f2aa75d5e06cb4ba01a743601325a0ba0673e3c",
+      "checksum": "347d4680cb56939136c788c548151336bc0774517c350b357b881f98a666894e",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -16667,7 +16667,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f9b3adaf65b0a16cf69d967477aa3bd7cc435268a4c2b06b8fb8f705d70e2b9d",
+      "checksum": "7e921b24f99f083bf80ec97412acf92841388795b07f580132affb4922974f3d",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -16698,7 +16698,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "124ca0425d9b5e1765b8fdc8d7fe8bce865c9a29daa5dfc9f60a53d96f127647",
+      "checksum": "aa6b89ed0da606d3b0888ce2e38f48fe0c4daa5dbb5ceac9305270376a1dbe75",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -16798,7 +16798,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "72f1f101c95c136f214fc40e10fc9d165f67c178de7d82502546df2a8b8a7218",
+      "checksum": "b777749d7f82b3f99e480344a6f6348c9860f1e5ad6616df1ca63489d1e84811",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -16852,7 +16852,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b18ba39aa67d9003f4544c53a0d5d56ddd494cb68bf23d06b10a61c639320b2d",
+      "checksum": "fc6d36b7ccaa6b25ce0cb53dcf4e5d498ba62ccb9194e84139f9a7c7612139b9",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -16881,7 +16881,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f15bce0c1f5ff38d6fc7eb0c3ab23f47378ae67bb4fa757cc2e3ecac8c07c1b6",
+      "checksum": "5da302673016e92d6da0c400976d4d0a512e9a80a053a606eb9a70efd007e651",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -16912,7 +16912,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bba3f56f5bb00984153ef1c4faebd74ae868327c62814ae89b1de65b31a6abe7",
+      "checksum": "faa4ba58ffe2150501d93349b27328aa7f5c6c4a3cd84236278ef7f7a56f1019",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -16987,7 +16987,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "889f19bdd299eef9ec4add99c97c43c2c77bdab6b20d9520d90baa8203e5a2ec",
+      "checksum": "7e14edf8fcde772ad6e8e66e234f7672c5fae3cf76076a8cc71f6786d015a311",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -17080,7 +17080,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "246bc8f7542fdb47b778c5077bf0568d2b0cf22e04f68710b3963631fc3d76ec",
+      "checksum": "e821b08690d4d609707c92c160eed834714aff96f3e1707d52cb6583fc58a984",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -17132,7 +17132,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a3e8e3a6111ef729cf16aabd1c1405670e47d707e8d3b6dbc09b1994e881f99b",
+      "checksum": "cf180408181e945873cc5e66fd6cf2b21d921b320e65b93ca47e1d726f790c77",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -17212,7 +17212,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "871ce5b172d8832362bd232be77d64165b88945e816fd2f336e7f922a4e1c6bd",
+      "checksum": "49d6d9504fba4352c4c77f5c33461ad90b60264aef162532943e9e249099c420",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -17276,7 +17276,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b0ba9f3fc7264b4419d2e8dd202fd851f4b089addc7e64ae217c9c22f4700d08",
+      "checksum": "5cbe163efdd2af3edc4d146e290d11517f9912c81498356c49222591f089f587",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -17307,7 +17307,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "16c61a8521e371c501974ae19c87f4d77ab4962b4c2d93188e57e8be63ff5f05",
+      "checksum": "413dce80d8e27224cdf96c1f50f1043761313371132f75cc1c1f25d48981afea",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -17336,7 +17336,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bb5cf690cc25d8e89234d7d189a1e07092a41c61e0a488e772138b180e24fd80",
+      "checksum": "db09d9d1f114b707ac95b11dd5921017b4f22122d7831a5508332f44ef090170",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -17365,7 +17365,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6a09c2f2e5de34caa51d79727a3df407ecb1e64334eae8e0a64d658d5739864b",
+      "checksum": "8662c50bde9ced68944487f8806b84cf8b293ab596183f70356bcbdeb6cae979",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -17397,7 +17397,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ad91c12a21ed81b772c8f6d8f3ec02a48522a4abbc06d9183eecf844e5115c4b",
+      "checksum": "5490ed3487ebfe1c55e83f16234a35ae5c47e2903848cd1250ed74ffc448bc11",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -17458,7 +17458,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1de1232be2489c731077770c2cea88ea6e9acb0a871367cfed9e242b6fe44bf1",
+      "checksum": "98db71316d9c1eb213de2b765f01fe6aaa7ae15a2b99e7e6b81a77c8d294306a",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -17564,7 +17564,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8fe76b0358907653ec373c6ce701f3e6ba0409ec2e014d01c9ab7d471f87e715",
+      "checksum": "0d1459412a3c16d069a24026af4da04fcd30240c388919e08c10f9326ad314b5",
       "description": "Bold red retail"
     },
     {
@@ -17593,7 +17593,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8581e94963f8f44ee6208efcb2b5630bf99e07d651a8665c17c4dec6d0048727",
+      "checksum": "2d47c68a7d8983d9b570574d462582250f91cf1fc6ae1472bf230b71968fc59c",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -17649,7 +17649,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2ea77301d6b4a9b35983e5d9a9471f327d0b12d5ae25cf1057c5f6c5af592eee",
+      "checksum": "9c86e631d27f17a7f4eaf2da4bf88df98aed96878614046c6a4edf174e80ab09",
       "description": "Bright green modern"
     },
     {
@@ -17680,7 +17680,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f25210feebfa116d594631352fb04a81e38e3498cd38f8425710c95f1767d2d7",
+      "checksum": "ddcfdff3ef2ff34c7ea69d7eab32e2364cc3984025aa2e47e82f001349ead3d7",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -17712,7 +17712,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "afbe175ce194bb18182ab1278143fff41a5493455d6e825ef320df2543a11b9d",
+      "checksum": "a25ca305d0d12a1f8f41d51faabffd85af1a051efa841011f78428a9b1867033",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -17743,7 +17743,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "acb26b00ce97fb09dcfcf33dd25862feed210efdb1f990125aecad8f546c5bee",
+      "checksum": "ebeae7f2a34df0dbeb4dc6397796ff19c29c1459b57e68d2eaef5f68fa937ca4",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -17848,7 +17848,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0b800e6e394ba9170066cc808c6a77f59cb8cae89568e13ad6b92bbc0a24fff2",
+      "checksum": "7904bc52c2bafe17b34780ba35bba708e9cbafe919dc398b976c1506fb262f0e",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -17904,7 +17904,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eb39bb728973f64a01e1e085c765e6c150ce1b514bffe0d129c3d254c0305b81",
+      "checksum": "4bab2c51c50296f58de41a1a1d42be1106ee67df8aa354c501e57a1a709c12db",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -17933,7 +17933,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eda1e5def29b2afcc894d5ff194f92367a8a592503f33563017f434c9a42a39e",
+      "checksum": "93976220af04c9eb98073cf5b628915792e24e4f94f21d29989f001edb6ba6fa",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -17964,7 +17964,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e2043ecc2b931400601d754889c76e041be7e0809dd40fdb631f96c0dffca5f8",
+      "checksum": "6b874b841ba6e318137ba12f5ea4bfd8815955563a54051f2422739031bb66e9",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -18045,7 +18045,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b2e8dcbaf953f182f5b0c8e8c90623998f3883cca186c50b5777d96969786ca1",
+      "checksum": "6d62e42b3f7e8e31b94caee1395423cabe6ce1ff4d597ea202fc126080454db5",
       "description": "Proforma Classic"
     },
     {
@@ -18076,7 +18076,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02648fceb47ec50f08bc7999406a3eb21b8970744f5d4c6098657021ce81aad7",
+      "checksum": "7d5f554d88373f90c80cd4dd62745bc22c7b1edf0858cd48e4bc81fe46d7791c",
       "description": "Proforma Modern"
     },
     {
@@ -18108,7 +18108,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a2759986495956c5c0cd762ae119b3cc8a275b649e17454a5542a6c93403502e",
+      "checksum": "3074d364ef0f06d99e004e143ddef4b9dd9c6159bebd9fdf810812a5d98cb118",
       "description": "Proforma UAE"
     },
     {
@@ -18140,7 +18140,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e0dd42cd3b062b4d88076fa2b612fd7af71bb2c0a6a69c58479c391f697bcd75",
+      "checksum": "d705ba53d43bb7a8221d7ccd00354a7ccb4d499fe7d5b9e2866be5db6827bf69",
       "description": "Proforma ZATCA"
     },
     {
@@ -18169,7 +18169,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "13fbe77a285dc753ac11ca9a2fabb11f5d7151952f2e2406dfc0412f65275cf3",
+      "checksum": "0e20b1dfb8452364a737b29224b1bb71efe05b9f66e1c0dd5575c5178e3f764e",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -18262,7 +18262,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bfa684c60d772759d15a45f76e7edea4ed8d336999761335319fbd8c90e550ed",
+      "checksum": "02833002f0b457aaa24fcba9f46a918ddf9218058f436a45d0366c7e1875131e",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -18316,7 +18316,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "41f4867aa19f8bf9a75f4a0730d004960c5547e8cfed2efb8af522c7e632b0c2",
+      "checksum": "87dd4f2da28f725fcb7c1b54898ed94a0921eee24c0e403a696a9bcb68a083b7",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -18399,7 +18399,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "94af7be41603b894963f8b5d61dc6c4aba2614fed652e94bf41e5209a0a311bb",
+      "checksum": "d159663a40ed103ca5bc6394bc465e3ba70a0f6d34f8b49ea72cea7811d146f2",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -18431,7 +18431,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "99a43e2a74a5ce17912c02ad878f80d57b4399cdddb39a07f704519031b6d64b",
+      "checksum": "6e68196ab01f4a8800d6347b282d810a2bb8205ff1170d8f5aef8c7581a499d5",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -18462,7 +18462,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "31c4efab24f8384bbd0c8f5f5f6549fe77ccd74bc71a3101480672f5f19612e5",
+      "checksum": "1f548a825fa3f6475bb9d62cb2df39819f68bb3384a587b402307696ff571bf6",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -18491,7 +18491,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c1c0695dbe3ce59e87752f6e39a51a09200e905f1ad7c611a094daf517347f92",
+      "checksum": "b1e15bf6ce80619991560051c9929fa08ff0998c8e479600c1e2ab23fbd183d3",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -18520,7 +18520,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "31a2b7f011b61ff26c36269729306cb35411f00bc4b457acc1aa159f7ed59d56",
+      "checksum": "1d6baa6bbde831bc0c8df453c4541e6671ed3bc7fac0cf09c9329ff9c6acfc9a",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -18552,7 +18552,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0ce146cf82bc00b2e1243245a7a6c880110fbb1de97b2d5a02e83576ceb74162",
+      "checksum": "3e71969963f6b2eb3807e597f1c2fcc60a8cd0cf1716e4108ae03e23899b75fb",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -18581,7 +18581,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6dca03e5168339117dfe3efbee8f14d82aa25a65ab614d3d8ea0c34ceb1b9d7d",
+      "checksum": "db829279b0c1c7f7f972b61ff065a0ed1877f4f66e7c292e2f3c671dfd69093b",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -18681,7 +18681,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "11215cd342030180258e13ee486af05f4f1b2048a6f1d456afc89858b6f4a2a7",
+      "checksum": "b2d8e646c67e59985f1d30097be92d7f3e729c48e5deaebde5e39758abb3775b",
       "description": "Bold red retail"
     },
     {
@@ -18710,7 +18710,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1b57877513d719206e22d4805ca2e721c70399b40274640f34d3978b11b94c9f",
+      "checksum": "fe90e12222c64931648f614cc7de194cb289ba5574a4b55f7c4c389d51d734c8",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -18741,7 +18741,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e4012ef4f056b7a0930fad57a41bd8862d5b00c7fd20f730fedbd2123b2d152f",
+      "checksum": "254902c6cc33b756bcf078063d17957f38c89eabd1788fac59663cd5a0c4fb22",
       "description": "Bright green modern"
     },
     {
@@ -18772,7 +18772,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5e2412d80b6826bac8cf6393c78ca1e63e141f0db8bfe0fda42da008642189ac",
+      "checksum": "bf46a57def9663075ae8913819e201f69bdde3d7a640504922101c46cc7bc7f1",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -18804,7 +18804,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6bab89397998b42b624af37e6e79dcd2ab544fe1e728fcacd547fae11dc2797b",
+      "checksum": "5c9cab2093cd2f6f00bdeffb75c499ba9bdb2be929aa735a98d56de04c6a7f2d",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -18835,7 +18835,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f94c90235fa611d98b8e8fb58dab83927fcac52fc4a9d430edc45bd033697265",
+      "checksum": "5a47f0514c8d6445a140ca88fa2f69a239d27c9aa54af7bd3180362b504c9b90",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -18910,7 +18910,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "33ee9ed7f358c7e79bada76863dfcc801c739870992d34a25e282f1e00c1b7d2",
+      "checksum": "8640317df8ce6de79d06ab4abfa247e7b3753a799cd587ade1ee2a5225987b48",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -18964,7 +18964,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "08aab1c833d3a089d743157c0192e3b384cd6a7407d3c42f4b7774ba512e92da",
+      "checksum": "3156ec3403da931cfc547568ba17890ad1fbf0734bdcdca02525940440990fbf",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -18993,7 +18993,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "444b68f3fd94bbf186513f3673a783ea0b454edecd14745d0ab7b8bbd1d89b78",
+      "checksum": "079eadb15f1525ad304790bee157356a78154e6c0d8c0228669998b72dfb7e72",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -19024,7 +19024,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bfb4974ec84c1e59daac2edbb5e6916bb773c364c8646fafd1361032bcf32d59",
+      "checksum": "63379f72117c8bce21c66d8a487f818e8bf1919fc97d44131c9ed47d84119428",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -19099,7 +19099,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b301f201c6c7d9be1d2ccef7014cf2cc75c8a914fa7b2e8eaea2c8e3d76993a8",
+      "checksum": "5fe02b88e1fc17c8fc26ff2af480e41bca3db874f99e119452202a2a46cf5bc8",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -19192,7 +19192,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fbfc97ad11bc684aafbe5a39e72701eafe388ae7e4bea3b18b7d832924f09c97",
+      "checksum": "628c100e64f78195829c2fb9f15fbab19ccc5a9040b7124107921909b7ff464e",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -19244,7 +19244,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4ad7892516eeb93d15467eb0fe84f14c1297e4e33a42bf83bff67d44f4d27f41",
+      "checksum": "dc93013e1dfe1095d744d0b5b7524a4b200bc880e8668fa60eb300bf7432dcbd",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -19299,7 +19299,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b6922ec0d8351ec24b48d75c23b210c7bbea0e803aab1bfa9f0f5f22f37bfba3",
+      "checksum": "debf35cd4e8236bd4153ef1e5461fdd5d4bc3272a1d4a3ac4cdd29427db05c0a",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -19331,7 +19331,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9d50e0d695f261bf49073d55bb892303dd9370d41dfbc13439e9f3139b921587",
+      "checksum": "c7d09b4c458177f410f2bde50b76e2d53daae10966c7f4924d19450763d83a8f",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -19362,7 +19362,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e05b57898c581f9b93db34484d09c44816f541b3b31ea5aee0051d75410d4826",
+      "checksum": "99a6a0ff179b1caa20159b86c8775d8c1feda146ec105e8c00e51031e2537f91",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -19391,7 +19391,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "691950f0a13337158b423cd040ff49330e3da8a70a88bedf72e4da1ee33d0134",
+      "checksum": "156c77ba4d13e078135180dc9599d35c0fdca5912229e2e588deb6f7c3c5e442",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -19420,7 +19420,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6fa8e4e252273ecbf81cbc34d994da2f265af6937d5bc1752846f68061f76c9e",
+      "checksum": "97d90e91bf4aa7153750434c5c28b231955422bc5a72814df15cbffe37877151",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -19452,7 +19452,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "51cf6f1df968901a95a903c89e39fcbbea0d0847df204ca44ed584824d5f2c9b",
+      "checksum": "f1c6e85dfa0224fac131a3c43ac7b2f615981781f1614865cf7842d6f2bb84e0",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -19481,7 +19481,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1eaae17a0aeca61b473992d584f65960f80bd0138d04c76502771f5eb8002223",
+      "checksum": "a2d385a9209b52f5b92e941515db2c271376278311cabad294ad9056f1a93cd0",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -19581,7 +19581,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "abbbdb0ad2ebb9b9b04b4072e32f3bbfd25c03638e8af14b8e0ac06d1b74c88a",
+      "checksum": "5c9ad58d5c7b0f888d0e1f46b9719623dfdafcac8f7e50cb71702ec099d868c4",
       "description": "Bold red retail"
     },
     {
@@ -19610,7 +19610,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "71f71aa6456eecc3f609008cf9ad1638fad4b8cb6954e976ee4a02d9648580ce",
+      "checksum": "bb248e805c054379e47f3ad49dbb822d54b8d4ad3b78513c120efecbff03a4c6",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -19641,7 +19641,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "982c76472e02c0deb7c3781cb6201255b66c2483c60ae1c67f9fd7d21a268b11",
+      "checksum": "92c556f6103be9b37b7036a8232733790f643c624bff69795e5eaf670facd4bc",
       "description": "Bright green modern"
     },
     {
@@ -19672,7 +19672,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f4a9892487985c41e29b2769502fac7f4204caae38ebc7ce97b5dfb738b762ae",
+      "checksum": "35d4c90ef2ac46a5b476f642bc0a193c9a5d11daba76f58c04df025887fdb169",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -19747,7 +19747,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ce9cb2d22c6cf4e360ac2d573cb6704d9ab16b5d4e3c8a3ff0f3ce8ed4c7ba31",
+      "checksum": "82e94800b5e7a34a7c0f5d4a8ef9dd876d1a00e15bbd568518b225e694b1f793",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -19778,7 +19778,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3398aed5ff5e8319b6123a7b848ec8e00863002e60deedda4c5e773aac2cad5c",
+      "checksum": "a30932784dd4eb641bc85f3e20db1eea8dd66935c0bdc9f67a047e0f2d82ee7f",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -19807,7 +19807,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "080ff2c8aeeaf72f97eabe709b8ea9c5d4271df059292aae9c172f35382c0719",
+      "checksum": "d6a88c34216ae6d666ee25a38879039c760af421cb5e3ef9d8190e37cd57ff21",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -19859,7 +19859,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ccbf4dd1157f411871d0311fedba6fe6057bc65ec001586a151da3c61b7455b2",
+      "checksum": "85eddb22f7ff63145528cab7a9c496ce3a6ad9ba925220e36ae92b9d2425d86c",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -19949,7 +19949,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1e02343d32e169a3549b0b1b00afa0919ce16354d1182e58aae69c949c7f53e2",
+      "checksum": "e8b4529a65728a088702898a1ff28542dfa175d122e4b8ab5c447e435b990cdc",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -19978,7 +19978,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "afc53f3931971590e1c6d25ed2ae7bc9adecdc303344f5f16319a79097ca6a79",
+      "checksum": "b8f897d4271d1b94d310310619784195625a9ec93f4e44db6f261b9b6b382075",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -20007,7 +20007,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4d12fc914ab13cdefb395bd0ae55f1242c7b65134a4d12cea7756518263a8998",
+      "checksum": "ad95fc0b77a7e58e259731a622a3107df21519f0955578586befd5fcbeeb759c",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -20036,7 +20036,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e78a41ae96a72ead989d4ac96f27cca975f9f65ce6a575bebb7584e6f2160070",
+      "checksum": "f836ec054f4c9a58437d7b67f0b31164111eb621373c1cf91282644e22b6a52e",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -20257,7 +20257,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0326f028cbdc3483ea95d9af4470f81169292f4b5649b248df0523e317703d10",
+      "checksum": "fdc644a81be0276737b422122298af77f1e550460945bc6fedf18d893e633ef5",
       "description": "Bold red retail"
     },
     {
@@ -20286,7 +20286,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8e2f41cc8af214905806f4b792413424418c5b19e7646b728b7b1591cdbe044e",
+      "checksum": "39bcb0e40fc4a773b934057cbda188a48e0a2a605053cef00a5052f0ce2e217a",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -20343,7 +20343,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ed694893b57c32500553fafb0c47bde1b37d59d0602cd45ad803c55c5c9b9de4",
+      "checksum": "7d2885708c9486d0f532a354015c5b284247a54b6915c83a3314dd5c64678e4f",
       "description": "Bright green modern"
     },
     {
@@ -20530,7 +20530,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "12e243d98d38e620dd1fef3b3da8fb479e70c6389281ba28e23753cff620ea31",
+      "checksum": "2d763e0d0dd401e89f08b687d09e70d8bbbbde2e57d858f5c44efa5e149909dc",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -20562,7 +20562,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "35e3ac1694a4fa21ea7e065fd11ee4c97c2ba72825ef5f88032a02daa0b5098c",
+      "checksum": "416a1b38a48c5ee0fb4158107eaa358c76131d25651689c69ecdb0601c7e1b0e",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -20593,7 +20593,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bc69f3a6e0634b27d504efe544f26e6b72178c327248f8c587b0b72909d36e2f",
+      "checksum": "fb7a50993eb083ad373b1b2e62873c24b70fea85fc7434dec1ffbdaa6bb5549e",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -20779,7 +20779,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02cbca6e2a4cf4935cfb0537a5f13a980ecb3193ddc882589ec088877107d0bb",
+      "checksum": "a890e107c2f4331670a46afeeb1fc727f54838fc2901760ce641d7f68a49e8a2",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -20836,7 +20836,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02c5c66e2b4dd1295342c39ebd7031c8440e4ef2330769de028b3ca10e66be1c",
+      "checksum": "17f61d942f35ec131ce9f772f930847e5c950b0a65cc1cceb913e6e57656ebad",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -20865,7 +20865,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "74cd406043ac46db7943f3f6ddbc1913f24825970901c60881146f057e27c1f5",
+      "checksum": "121b1a9ac4571b4da901e47750c498801647fb07919eca716213f7ef79942ce6",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -20922,7 +20922,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8f49e6250808b05fc5c022d3011c25842fdd78635f69c98200c3f1b1160261a9",
+      "checksum": "fd14740e88ad24a1270a78aaa1c7ead52377fd0e21f5efcac7cdc9850ba7bbd8",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -21031,7 +21031,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8f5ccefc102707a4ac6312503fdba85bcde63e7bb4020d703386dba56806163b",
+      "checksum": "6551343f2e25f7d34b0b0e0cb0100c69ae8b55ec478d531badb1ec8a23ec009f",
       "description": "Proforma Classic"
     },
     {
@@ -21062,7 +21062,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a6d7b13d60ed8db0cb28575394df543efae79bdc711b7de93aa6fb90f73f7eac",
+      "checksum": "c44546194004f0e5e5830472f59e44f7a4b4cac0b5c67c48c3d0c7afbc990c0b",
       "description": "Proforma Modern"
     },
     {
@@ -21094,7 +21094,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a3757ecd8eb8d2ee44c530dac82120047faf5c3f0c4be31c108810c0707601ad",
+      "checksum": "418f9b9f30adc44b50ae4f1b8b5eef85cb01cf920460cc7797a1dd367aaae1b5",
       "description": "Proforma UAE"
     },
     {
@@ -21126,7 +21126,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2c2acb278b4798ff5d69f74f55c5028c4320b43871e7e724111f4cf0a5efb706",
+      "checksum": "b4dee1da98720dd66eeb358734ba396f491f45811de804d3701731d8031b39f0",
       "description": "Proforma ZATCA"
     },
     {
@@ -21155,7 +21155,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9f12ad697e5e43b516b656ad7d857dc91ee9901970a3a9c2522ac50a28d569c0",
+      "checksum": "ac7316651014512253f070a8cfd8ce985f3e4605f9fc700894c65a4986b41453",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -21328,7 +21328,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3fe18be5aecafe1e1a17352de662892988c0d3fa4a7472f55c8469375df7405f",
+      "checksum": "ffa9e3ace9d6e28f62dc63c68e9c188f5e793928be7e70e8aed44e299a088088",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -21412,7 +21412,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c2121d720b425901f27b55c238a67d726f70d3a129bc73117304bc0267679ff5",
+      "checksum": "b4197a9df57cec7edd13f748c9d9656030c4baa245e6da8e313c274b6414e082",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -21577,7 +21577,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a46168ab2d27436868ceef5fa5153a1e5c6adfe2315f816ba01a503fc79f21b3",
+      "checksum": "1ccb5eaa8c19096987e6be083054cf96447fda2c4699b2ba87ac423aa15c40a9",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -21641,7 +21641,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "799d5919ab2b39a635f562289d47b7fc43637281610dc16036e04150cd285487",
+      "checksum": "6cbed8644311052b12184a8e139f994051377ef89748c8b3e388b5975994657b",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -21672,7 +21672,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e62cdbfa51550084b71bae3084d1ccf6188a681f8cc9a0684dfe9d863596a9fe",
+      "checksum": "e6340dd3e58f87e3f493147356f17ea733d13931aa54d4cfe242d5b58110636a",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -21701,7 +21701,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "58482ff36f61c0a01c6c7d328a84832fd2dabdee1aa2dedeaa727b867dc99ad8",
+      "checksum": "3f4be50ce3f230e891e8d9116ea6aca343545701d0ce4f7142e4c3c4e19788e8",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -21756,7 +21756,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02ab92d456d95cf1a63c2a43fb4c2bbbb824915cdbe593aec2dc515eff39437e",
+      "checksum": "c53d4d25d993fc3bf2b0bbd88cdf723556e5688b2157b8973b5c7122c6f29492",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -21822,7 +21822,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d51e88a1a3918bd0372589a5b3280c3d2935231a7fdae50a932f777bfd7ae6a9",
+      "checksum": "84553469bc6df2fec91258298a0d0b3aa9a06ebde0c55a85a9e0e8c86586e5e9",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -21883,7 +21883,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "1116cf91694c70615d80d9b59f92cc978d789240d12e4f0e636edaa545324c44",
+      "checksum": "a5a03088572f8b09185db2d6eb2d888934c59f9e8fc43b713d7cb11a55a81bf9",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -21989,7 +21989,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9fdf0c7b6d0c7fa4703248523661b988a835bf3fbdb43635b6c057dffd959e9d",
+      "checksum": "360ccfb05ec8e4366011b3c275343478629cd7ca05a4155e4e805e67e6b60634",
       "description": "Bold red retail"
     },
     {
@@ -22018,7 +22018,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c862c157ecb6b882743a3344f12ba4c8714d840ba38d97fb962bbf7d93b11baa",
+      "checksum": "ae33026d0af226fb46d1913b13a41d40738faa9a6c9efc25523fec4caa925289",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -22049,7 +22049,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3c8982d18c5f3f9072baa283cf17a6c6e06239fe3e958dcc42f255ec46b3fd38",
+      "checksum": "bc7c08e140502db81bd0aa6358244a4f08034d35888e82e724d95a416dae95dd",
       "description": "Bright green modern"
     },
     {
@@ -22105,7 +22105,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d6ed440637f367af31ab67dbe546a7d9419d4b353310f8242e27d64aa3df3767",
+      "checksum": "f0372513e71fbe2c378079bb7d581da8edb72b476bc8fc920d7b7b9a5d516723",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -22137,7 +22137,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "657c5dc22b7e4bb4ecd64a594f4a6acc3fbe2319709d81356efad3edddaaac88",
+      "checksum": "1a119669e4ac839a502aa7e91a5a74ab6ec8b88ab82d0c89db102edb5d25b252",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -22168,7 +22168,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "457c455623241ea81158292c6c1968311ea260295b449c4163b96674452b1cc8",
+      "checksum": "16cc5cc2ad5535f0317377239d7b11974c577acda72fb2139980951d9424484f",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -22273,7 +22273,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c2f0a4dd511b2bb7d74f0b9acad2dca2fb53d646a8f80fb98d819772e56a433d",
+      "checksum": "20f8bb7ae3b61f488d9da0e4c61306bef33452916473d90295589b6909bdb33e",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -22329,7 +22329,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9bbc58b78d2dbb798cfdfdc1adafea0c782ae472afc539ecdd288c3ae2f688ad",
+      "checksum": "cfa5bac7da2e9511996bb9dc004232f1617845345706e3c8ac3b28c1a21948ac",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -22358,7 +22358,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "13b56b6271bfc2568cf60c50f89abae9c0a2ee75e29fa178de68a6e2eff256ed",
+      "checksum": "5eff34dde84c6ad514a021092c62ca76f03b27944401d44f41c3a641dc298abe",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -22389,7 +22389,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3cf62be87d801f0d5a599da9b07e141b2c6aaaeb3424e5ad267ddcd555eb3b22",
+      "checksum": "2396b38f2705be7bd12b37d1d09770a48402742440c1086e2633ea2eddb2f368",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -22470,7 +22470,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9645a99b3aa05d2b98c54d2a34504d15cd337e6b2531a24bebf285c044acdbc1",
+      "checksum": "2b0856e38a40dc2f39b8f9f2b45507c77fd68cb37cf27324e2f3d85e6882511b",
       "description": "Proforma Classic"
     },
     {
@@ -22501,7 +22501,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d6dccb33caa6c54fe254cac2fc2a6313ceb37dce7d1f58bd4a4632dcbaf3ea08",
+      "checksum": "c81589a446638599e9d30fd6dc07125b107013b9cc694e0947d381944c13ad9a",
       "description": "Proforma Modern"
     },
     {
@@ -22533,7 +22533,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "58f03a824b8e38fc5a2d3ede422efbb38646f43dbb93e39bf9596a2772af3260",
+      "checksum": "2a07bb84b6a12264d4c62f8c7e460197890de2947ee21626b3c2b4d4362b9a58",
       "description": "Proforma UAE"
     },
     {
@@ -22565,7 +22565,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eaa64fecf219c0fa42c2fc85d817bfb06f375e0cc51d4cda7e96559f209879a0",
+      "checksum": "0be6e9aab97b3043fd959cbf899e588e80c70a20c4554daf4f78cf0dc683fae2",
       "description": "Proforma ZATCA"
     },
     {
@@ -22594,7 +22594,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "890a4193f5509de79b9d513342f82d9056e71a000cad17aa43268e3963d45342",
+      "checksum": "c5ca3869723177e533a4eb9d6f00c440e2d9deb2f6384642b6076cfb771d35e5",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -22687,7 +22687,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0d6265f8cc4efc82e9820e1fb7ca6aebb2e0b9f68078495c702de50d440cb57b",
+      "checksum": "a81b2e6488eada47a59627a59b7e9081cf80d02102781fee4935ff180092b539",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -22741,7 +22741,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9a6823993e039c1dd163457454b8b0903442d4a301b61fe3876602825be40cef",
+      "checksum": "c7c033309394334b555a2c666f44016c070619cda9be465fcac5293ffdf9d4a3",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -22824,7 +22824,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f425f67e07079ed2a982745637c0e823ac4c382fee069ae444dbd21aab695070",
+      "checksum": "dd5b740a093b50622c4c996f30255c904d3ecf3953c511b203b81316f5602dbc",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -22856,7 +22856,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4b3b0b314c2e12c85711050db3060620400fdbc352257c395b14bedeea1b3062",
+      "checksum": "71c548376fdd20ac0497f142ddf51f92eb68f86c3604cc9cc6ca3495f3dd1626",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -22887,7 +22887,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "194d8ac6dd9f614d92ef744333f795d40d78c83bed14089c57c5b9e64bd09846",
+      "checksum": "1f7621ba592bf3ea20c86fe00e9fdd5c1caf306c7ce2058c9caa36cda8effab0",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -22916,7 +22916,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e9a5b72b39fe782b669c8c9bc7f9fd62703658527f27fde46cdb6eb15e78c502",
+      "checksum": "9d0f24990611c262d4c2a0fc89e510aa1bd6ee654e9d09f5fba0d984d564ce30",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -22945,7 +22945,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7b2e5dadf98f9938c91a97c6c9266e9318d7157a4739b614e6788091c7bf182c",
+      "checksum": "b63913b15aceb237e13305b5b33d2c98132f57176f58a43856b4ed344a944a50",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -22977,7 +22977,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f5d1598d697500ce90287de68ba40a387633a0acf3a1f56aeedd527b310ad95d",
+      "checksum": "fe039caab90deade4e8073191fc37a2b80ffc3862dd258c8fd180cf632cbdc35",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -23006,7 +23006,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d03dd1a06ba837b7ddbbb794cef6890ced8c0c102458f86d9c0349287b57446c",
+      "checksum": "c8ad9e758147cf089a304d72fedd0b898890155c2beff7ccedbee78a75b3eff4",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -23085,7 +23085,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8fa0f16fc89279bca76390cc4296cebcf588e1590d8ff3cbd701cbf3236ee239",
+      "checksum": "767fc549a977938f354c060b296621d1a98a9214177a62e24cd81e09b93ad6c3",
       "description": "Bold red retail"
     },
     {
@@ -23114,7 +23114,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6fbf19ea9f2ce1218db409276001a935d4a50af04a7706fa2c0a3457abce95f7",
+      "checksum": "6e00f73541a6f71ea81dc27d6579daeeadc6a37f5044743006749385514c2102",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -23145,7 +23145,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "233cbb3f5803631b7d679178594e7e5511bece7bd19d274491633a3eb711c0e6",
+      "checksum": "342cf1fb48467ec57b005ee236f236a6e39a98595e9003fd621741008373cd0d",
       "description": "Bright green modern"
     },
     {
@@ -23176,7 +23176,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0f3e167b66c38ac22614fcdb7a9592a96e3b03adb6cd4d665c4fac9ae7d70ee1",
+      "checksum": "2a09f2836c21f25128d85b3e282d77461a78df287304f16d0e9ba0580c45ec20",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -23228,7 +23228,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4c6fc01fc831e3a7d04f34bb6765c4ac8b8b2b3897527181dce7aad492534f4b",
+      "checksum": "d29bbfa117f00533491d24cd69014980e97c1641516028360139f68b7608caa9",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -23259,7 +23259,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "17bc46f4855426a60c7ad3457ab617d3fb04394ee0ae9d5a85b6ff1625238964",
+      "checksum": "1f88e13b27a09456a61d39fe7c209c55bed84aa49ef979f91d55a1dee62ba133",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -23288,7 +23288,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "96c9bbbd1005fcbd704ffe1fb7a7e43d1c67e04d9b6d08d042b5ff8595276dbf",
+      "checksum": "8f6f843e5437d98951adba98e939a79405ecc782093bea64767ff9ef649fbebe",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -23317,7 +23317,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "39bd97628102f7ba20bbcf88f75910ce9176bc38d2b4c28507511340e10e89f7",
+      "checksum": "d0f079a25c8326a3c314679e8aea6f37e5c87fe9a58f566a0e55cc9adbe341d6",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -23371,7 +23371,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a4b13383982016d4c52c480f0faafc4ba9f22b77976b54812ba6075f44088e46",
+      "checksum": "66b1221d16b19e96fae9ed7d0c741b90528019e360186489d6c31e31d4bf8882",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -23425,7 +23425,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9a9bdd375eb06fa9de4cc03af00e751c3ed77bc83b9ca42601f4fa9860992fbe",
+      "checksum": "310d99b76c7e78fd9760a4d90d065b19c4a4dcce7cf378f88c6cc4aa8348823a",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -23454,7 +23454,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f29a478c407d78bed2a5506510882378d36949de77f383c2c5bb96ed7c16ca5b",
+      "checksum": "d7edb0bae3d12ca4e312c85cadcdb17c226eef64b1e3799d6fc7441372ec07fe",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -23483,7 +23483,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a6409b077cb835973221c1af4eb7c630674185121b05fd9a5c15af1b5b5a0f67",
+      "checksum": "de9ccf0bd81fe81ced6ac11f6d7d2b197e03561c3e11ba8a5b50a2cc4bf1eadf",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -23537,7 +23537,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f7954b2ffbc3aaa126b60ab8e7fdd6398687922fb8536ae6d95b6ae638c7d6bf",
+      "checksum": "cd19f577d925407797ec42ff6ef8646dad499affcff570e5fe84de55609c2dbf",
       "description": "Bold red retail"
     },
     {
@@ -23566,7 +23566,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ef98c45962dc9cddf529f3242af24014b01ad3911bd842228306163fd4e1fd14",
+      "checksum": "14b1c829da965b63d36f486ed61380b7049c4c116be9524170d1d6ebc7b7ac74",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -23597,7 +23597,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fd6d92b8eb810cd0e2183b5d1c3fc51b29d48e78da542814e95928c9ad2bc086",
+      "checksum": "a3e96e35abd71af4a66f4a06c99e0c4b7e030e1fa4e2b2cc95979aad8e451fe3",
       "description": "Bright green modern"
     },
     {
@@ -23628,7 +23628,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8b0b09a8324cf629fca9a2ae67b7b4f389ce3f37b0e62545a009ba6a4b86a576",
+      "checksum": "f18fd0485c3ee9f2658c5c797c3d362a85dac094f21d39c17cffde2c118aa669",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -23749,7 +23749,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7e48ba517c2c5484604df64ee1dee121554927cf069bd957c3156ca9353287ac",
+      "checksum": "bd149a05b6c453c5044fbf7f2efde2d864b90d762f02043ad89940728cc7e8f7",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -23780,7 +23780,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "afd0a5721d50df7e0355b59fc8dacdc036fbaf9618730095d4c23027a817123a",
+      "checksum": "ccd209ba00dc450014a53c6e5f88efa383db6864c3e06a39eeb75000783fed29",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -23809,7 +23809,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "78a20901eaa76a1845254ecb2d5fb815925c61b315e71539435d32fdbb365e29",
+      "checksum": "a31612371810cc6fff3f580438e9bd14f13cdeffb5b1b0c8f97ddcfa15863f38",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -23838,7 +23838,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d1267a8476eff37e9422f2211ad7ee4388cba6966cd3d4437aaa57854770b8fd",
+      "checksum": "909e1ccdba538c1eeb31bb1c90b4ca65b37a58985d4821a9b600580874cd4c76",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -23928,7 +23928,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d166952f42111677d80a97938b15d788625d336762de0204151954e8389d3cf7",
+      "checksum": "4222af77f9a8eae12457ba4d9c7a52534eb99eba1fbe36e136d46671e58ef146",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -23980,7 +23980,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2e72f4cda72e666c9d959ce822da219598aad25e23f8ba8c666ceb4ae7046f03",
+      "checksum": "010b1ed9021a5513ed686fb30c2ed5660788d3d2912f3319549b6a3e680c2fd5",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -24009,7 +24009,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c78629e179ac2a383632c08ce990f74aacadbbf7344de2bed1469ac67bd6978b",
+      "checksum": "161592a3e47419bcd2f79179387ea2e9e359ec0c4ed6d5a449e8081f70d397e9",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -24038,7 +24038,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "20e9f0e1ee2b912271ed4cf7404d54372ca388797e7d26a3b2ed66fb726dc6fc",
+      "checksum": "22d718b282529ca79f16f618f4952208e0deac80e376ff451380b889172b46ec",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -24117,7 +24117,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ab0487943dc689e2b2f300b6b81eb1aacb66ac8877c17d719b0945472448f740",
+      "checksum": "40ad14a056e9f3a95b05972f634203b17f113ba51d4e9237822b360a62027a54",
       "description": "Bold red retail"
     },
     {
@@ -24146,7 +24146,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "536f75758ec515281bc70081b444a3add0902d4db4cd682f532fb6a8227e53e1",
+      "checksum": "3ff08d3c70acd3bcf094e7e355ebe05dd50b7fdf736a79647cf8483e66265dfb",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -24177,7 +24177,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "33a4206c5eea20f1862b06a146d407b948f0aff0f47ab754999695c159a653db",
+      "checksum": "6c03519682f67772db4549db3183f916648a759f7b6c916e2ec4f5d2156938b3",
       "description": "Bright green modern"
     },
     {
@@ -24208,7 +24208,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "72402482e3d04a83879eb9cfb95b95fee518f6c3a31bd21c1d7b7f23d6c4d918",
+      "checksum": "2e78d31cc9baa557cfb7d185de2be74693f4e8e8e964213d31e91a63e3358287",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -24354,7 +24354,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8ef5eb3170c85450e2282ff1e9d80db1611b002b40a472cf5dfc3770547abefa",
+      "checksum": "d3dc29b70f5a71a0086db902cb49f6c8bded1eaa1892bb7b1e6198ee91e72772",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -24385,7 +24385,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8c17d4ad81646f23d12089e0b570e4291533fdc92b1826c03c10cf2e1bcafcbe",
+      "checksum": "cc6fef3b5f3f19ea63749ad5b822859492aec56cc33b7cc6088e365f7e1d16d8",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -24414,7 +24414,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "52f79b35c4c0e1409f7c0dd38efc7103666d3105d129c846ab6e36209c04224d",
+      "checksum": "55990c0e696f7a5c63e1ff0c8aeb1741718aa0cd6d522e6d990fa830b581d65c",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -24443,7 +24443,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "966f83553c452af6bd7b119c8e0bd68e78d12858eb697fbc455f4085c3b458c5",
+      "checksum": "45d7c2fccc6e0ffda95aeb044b2f06e1ab2763c2d15c58f86c4f4e7c4d7b9ada",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -24558,7 +24558,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "eca6b8d9915e6bc5db06c85d5ce00a34fb873951c1cc2694971e972a9115bf8e",
+      "checksum": "61be9339655a0a149841a42c4c5fd791a012dd51cf729e6baa6a9da0484a8107",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -24635,7 +24635,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2329c3991e00523a95f7eec075ca720bb6a00133e24831fe236add890e1d5e63",
+      "checksum": "fd2208aea389fc1f2edeb93c3723e087e9a0cea7fe7201df0f922d67f543a22a",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -24664,7 +24664,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "75e67c307f48297cc75af7cbe7759af417cab2dbb7c0f1b1b0a9c5e396b0808d",
+      "checksum": "ec0ba2a35a3e10d8a5141f456134d4b35d74f4a312e898e1f007c2b3c671ac3b",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -24693,7 +24693,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "3f5efd8d860d59683a52a8618fb74e6df713c4e90cffcc8f69082620a46da31f",
+      "checksum": "c9a5b645305e5792ba106168448d8ae8c0ab043b4060e5e95b2141c307b53ac5",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -24793,7 +24793,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a4e1977497e56aee94dd05991f447a41d970c5f0aad6a0ec477bb631a67f1f59",
+      "checksum": "93d9381f73778399906c3e61ba454a16f1dd36a61cd6c17bee10e8ef30721a9c",
       "description": "Bold red retail"
     },
     {
@@ -24822,7 +24822,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f5adfc0f5ba7d2f84630553e5b11d6c8de3f59ff45a8b4f220be54325049d287",
+      "checksum": "c8f37760f1d1d054d4089a17eee72b8a1b2993bf92801aaf93ecb0841035b48f",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -24853,7 +24853,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b7d756c0b84be58cf6a668fb37d8e1f07d2dfb7f6a907560929c8d6b87c97362",
+      "checksum": "8605b53806d56a9630507778cdbde58390c5fd66ed826a3098a6e1442140bb5f",
       "description": "Bright green modern"
     },
     {
@@ -24884,7 +24884,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2a3e9e1f5fb6e311529b0419f2719596368c2fd391114d61f408c12d0fd29324",
+      "checksum": "dd77ee0feb3144a5741faeedeea78cd049e53887f230491043a497503cde6933",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -24959,7 +24959,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6bd5c6a6794f749fc21e17bb180de7dd044426038ebbec447f23772e67c49d61",
+      "checksum": "4edf2daf8d432e294b4034ec1b7ff24a4102e9e6a5bb436926e0d43e5d5baee4",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -25013,7 +25013,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "121506421b5437621cc5049338444dd896de4f8b09ea543464210a81056a1d9a",
+      "checksum": "d234362edecf6c247c633d90ff56534b859a1271164db5eeddca259cb4e198b6",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -25042,7 +25042,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6497dbe117f460a8ea74f45d344b069265996d76b11b3e3fb670730421fe80bd",
+      "checksum": "a07704ceadbb851b8eb4bfddd2886715f5e761ec7dc8087bafa0bc6f5b43fd72",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -25094,7 +25094,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "67329b42c1c05e3acea15b6a2444c896bc98544e86db3f1738fe9faf165c6110",
+      "checksum": "c44727631bee6bc2202a99bec92b7dec78fd5e160a6166eac81d054a8eeddd78",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -25184,7 +25184,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fa46b0f287c02c4304e9607b66bd1d1bc5388f9fe10224aa56f28331d4bb30ba",
+      "checksum": "9fde11fa037d509c79ffb1ae0043f84e5e59205d5c26ac5fd14aa7dc1e04ccb0",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -25236,7 +25236,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5126367c00f1003a4d3493710262afa04b69c1e1899cba1695dccdf128472b3e",
+      "checksum": "74f96f84e6b86115f67440210ce0ed947c65557535a6cc556722acced60ded24",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -25265,7 +25265,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8ca9c2e682396dafc61cedfceab95c4b15f54c996b7d9aa3fa807a0e9822123d",
+      "checksum": "871871449a3368ba032880a63d42436f396206852c563a0374b1ed14ab2bdd4d",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -25294,7 +25294,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "21e5d04f1206e8fab612a6995e32f46f010224c969abfaf44d67e0246f4afd75",
+      "checksum": "2d9093cfbc0f969c1d00228d1f96b88d6e1ec2de2c9f572814f1c21bb0d37e55",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -25394,7 +25394,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "be1157a6dd784a19619ef0b601cb644268edabe94100264f4db5f33d9c955f1b",
+      "checksum": "421e8f1d28b8410e3531b6f40a7324df6fa5732f231f09cb22d3367905adee7d",
       "description": "Bold red retail"
     },
     {
@@ -25423,7 +25423,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4bead8255e491b44f35e1fd72657af7e98a933a73497f9b77ba6003b8c6a944a",
+      "checksum": "fc826dd36d025c14baa37f96f25bb44c0118b28491241e42aba6bbba2183a61e",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -25454,7 +25454,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5fef9c8ca29921f03dc02af0910b40173b5d75d5c44445a0cbec088248dfbaa1",
+      "checksum": "4887464d8b140a7427da664235a5575cc49f8cb7e0a7a2920f7387f3ef8dbeed",
       "description": "Bright green modern"
     },
     {
@@ -25485,7 +25485,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8b1246e763af5f2502a33e5ff97c793048990a4dbc3c81b4dfcecf686ff58220",
+      "checksum": "ca033867603b9bb72ab9be5ecebf00c85b30a14f3d3a1711808a016288cf9315",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -25560,7 +25560,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d7ed7d15cbe0203664944843bfe2da8b8f6349b05afca18d447fa1eadd722e7f",
+      "checksum": "cf73153bd4cce9397997c18b5be0c5534093440ec389cd22c2e37ec168ebaa68",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -25614,7 +25614,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7e57929bc5b5fee0c2beb64770c64091a884103fd9418c4dfea133d604266797",
+      "checksum": "cbb8469cea2d65414d9f311f154ef82a6bb27e729df7ffb1d84b7291b8999346",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -25643,7 +25643,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d5208f9974d33f3f54d0978f15a5c21cd5d08107aaa24c3894be589e708de789",
+      "checksum": "247376bbc300d1a6c512835c86b446d995afeb56719da5e2f429516744f5119b",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -25695,7 +25695,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "65ad455a924df61f5a83f18e991b44d8e9178b42e0806ef52079deae06ca1df1",
+      "checksum": "a32f1bbf0bfa81079fdb3716bf6fb1ef01b73e373268d84db69d63cc6ca145c5",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -25785,7 +25785,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "10b6bc1a8443163b6a4795dffd720b8033aba7560427f6dc315f4c2830ed12a8",
+      "checksum": "2845439b34ba7b88c38f6fde0917d3a4887ec1ffbc03a904d02fbcebfac28f2a",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -25837,7 +25837,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "87d95c167c5a8949f65ebef65647d297648f44129d9ecaa7950286f89d7924b0",
+      "checksum": "50622431e37e7624ad0b75e1aad1cdf6361340a5df2d1b7c5208282145615c39",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -25866,7 +25866,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dd49d875bf21a02276302f8b0593201c38e982f3417421a84dbe1febbd196015",
+      "checksum": "b166bd271c02002c0d101b2cf60bc99696bdbd06395c6e5f5648c26f56e6857c",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -25895,7 +25895,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2d19a9986464a8fcf991705b05b33b231d3e6c8db8779f68b175e04d06b932c0",
+      "checksum": "29e27beac4b1d20f09d614b4c9fbfcd8128f4370027bf8e53aba34fcce45f0e2",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -26001,7 +26001,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b58d20e309693a4ea928ab9204abd58c33e28d54cb159a3ffe72b40c41ef6289",
+      "checksum": "782aa1c8b369439404e491d1ef15a242a73ba30717b55443ee04d26cca9b1eb3",
       "description": "Bold red retail"
     },
     {
@@ -26030,7 +26030,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "892cd6526c7d4f916d4b1aa502f07fde2ea9009570accd60c7bf2115aea0f4b6",
+      "checksum": "ba81419477014913c5ae4223dcf975650c3231ba97e790e2f40df99780ca8f02",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -26061,7 +26061,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a76103e5e9238145a2546abcc48f9beee3a1e6e004959908d659189bb42364dd",
+      "checksum": "cf76121adcfcc98a8ad9b3cb60f4ef6a8d4acfa444fb56bcf5d7e539059ef345",
       "description": "Bright green modern"
     },
     {
@@ -26092,7 +26092,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "71faad868cde0c292e5b93c39046f560761b482145aeafa15972fcc0ce337f6f",
+      "checksum": "186ef732df2151293633ee31cf8aaa67c1bb9510790d6c28e1c38115e35140ce",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -26124,7 +26124,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d246042639c0374b733669fd3105ee7c93c3ebc0a3a0a86b3e2d9050e79dbfde",
+      "checksum": "8cf0b982ac5c48a36bc337c6c2aa22c8089f34cc13bb5e00d1e7bb661ec79be5",
       "description": "Middle East gold bilingual luxury"
     },
     {
@@ -26155,7 +26155,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "90f50c1dafb194dbace8b7256a6ca617576d423e085b1f3dbf58b5d48904b3a7",
+      "checksum": "92d4c0413a9a929add8fef47fa044668eb721bac87cc235f71e55ae15bb45936",
       "description": "India GSTIN, HSN, tax ready"
     },
     {
@@ -26234,7 +26234,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "40de0dc982de90215c293d88301da274fadd9e1970a9bdaebe2d6c6f7fa5fa68",
+      "checksum": "ba1b4081b04b9c3b5594a047bde759196cf05b8479ef234f111e50105d8280e9",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -26290,7 +26290,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "8e79429f8a5f95d356ecfe6f631eb1194b2c25e2c71188486248209419e84b83",
+      "checksum": "fd96046c67bb80f567caa656253f488e763e951221b4b66a74eb720e4ff9f062",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -26319,7 +26319,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a0b13a6102a86d78f0be074507efe292621020e225aa50c031dda2b731b47731",
+      "checksum": "af05413566db37e344a8b75654b5dc78ba7eb845707446c7179756c8f0008f86",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -26350,7 +26350,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5a8b79cbf1ba05a8015999c3753f1622f1c5b1b47341f7f29e6c13e87a3249d8",
+      "checksum": "4a40087b5fa9d921eed3f8b2ce10a2afd13ec1c59e05f3be5bbdc2ce83a8d3b1",
       "description": "Pakistan NTN/STRN sales tax invoice"
     },
     {
@@ -26429,7 +26429,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e258cf83d88466a3aee8880128f7c022a6ec75efe77d0fc558becac74ad74d95",
+      "checksum": "7799559328c415fbb54bf8a0de2b25b321922e6ca78742aa003913ff0584067f",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -26522,7 +26522,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "ca0cfd4aae9cabe52f72c08741fa8f8896461faaf6f6fd7cd53e94bd96927c9d",
+      "checksum": "293f528c4124d1c2c0a250ad03dbb1d9ba4771d0e60181421b8c8338dc2225b6",
       "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
     },
     {
@@ -26576,7 +26576,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "866aac6071f5c9ec80e303380da2938d2a9c9a2ec2f42ac297f500e767faf744",
+      "checksum": "07c3570f64ca81c7824b05f642c499856b61c2e4e964e57abcefba92f9ba5f6b",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -26633,7 +26633,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f0203ad3529b75ac94785bac84674e6681d24e4190543cd607f5a4d325257955",
+      "checksum": "bfc7fcb5a8fa131b9df247a2450467cbf1ec25b89247e734e7fb0621f2bfd4d6",
       "description": "UAE E-Invoice Specimen"
     },
     {
@@ -26665,7 +26665,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d42b6164b64b5b5f23400161cc90b6e5128f3e8a06a362ab7365c4429bae38bb",
+      "checksum": "f7cb3e13f9f21760d92f985e5bac6a504f205b587c954b08f776a99d880ab639",
       "description": "UAE TRN tax invoice \u2014 flag colors"
     },
     {
@@ -26696,7 +26696,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c7167b3afee8ccb2cab2c50b3288c1b545686b04e569e9ecc6baad4b937c765a",
+      "checksum": "9b682606b41cb579a7d11126480f0318500d432947c5a971523437c6b0d00cb3",
       "description": "American red/blue stripe invoice"
     },
     {
@@ -26725,7 +26725,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "81d5e3d686a72a2ea7ce14d29e978569af3dc3659fc7b532a6d12da80d988fec",
+      "checksum": "dfca74dc435412a4d1a9a7f67b40ca7e4655aa49e95703f00bf22922b9d942d5",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -26754,7 +26754,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b72baa2d2c1714f7820e2203046b56d7d1fc54c6e35289c4817f2716c345ee87",
+      "checksum": "965f67b1e87e50a74020e30c19ff4e97a132e21b2770ef43a8a614cf8e56fadb",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -26786,7 +26786,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "fb0c276a6e1ee0cbb33c2c9783869f9f3997157b7eec3563c005856cb5d39a00",
+      "checksum": "c8d6be4b38dcfee7a1badea568ef7e8e12c0941ca56cd3140a84499fcaf6cd06",
       "description": "ZATCA E-Invoice Specimen"
     },
     {
@@ -26815,7 +26815,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "02bc3f31a65d4ee8a8d043f3c3387a9318151765c4ffac0271bd5c1df02edd2f",
+      "checksum": "31e4087e903a9d54bacd63d76ba6c994d3ac3fb0655ca39a04875ce945aaca45",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -26915,7 +26915,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "48f3c14d30dbcd089fae5ee7c65a9a3d5e06f55583add8ef0fa89614ffa08747",
+      "checksum": "1f82592041c053a2715d42a786638ed4e882329e1ae1ce00327ba0a944606efe",
       "description": "Bold red retail"
     },
     {
@@ -26944,7 +26944,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "6225ddb436bf648ea5530335658f540cb35667eff8554e456f13db259b3c3438",
+      "checksum": "f28056dfaa35f6ac4296e1781786e66ad1c084d7603a47008f850f397011b418",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -26975,7 +26975,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5623f810a40cc7cd9d02a6d9853d9b85b5dbb2acd704298f6105403f19cbc7a3",
+      "checksum": "9d7dec2f14a6a142aa54acacfe9ea82675e7ad0a1eed522cbfe7c8c1a945bb5c",
       "description": "Bright green modern"
     },
     {
@@ -27006,7 +27006,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "573304c7a66c581dc760231b3401b93871fc9d8b7bf0fd72be248238e0cd17b2",
+      "checksum": "39bff2d47b746003393a6775611949a019ff1ec91cc9b3d46b522c4cbebec694",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -27081,7 +27081,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5970a09efcfc242e79b7600d5aa3f4021109b4870f35056cc08ff670d5463595",
+      "checksum": "e2857d6f783c618930e25c01ad7300971ba2262fac559ae220878ec395f499b0",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -27112,7 +27112,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dcf583e90bbc3d637a94302daa1d1c04e3660916f64f9a792c46900201a64c9f",
+      "checksum": "b14200b93778200324592480767b140f2480294670362de4e9aa813819023610",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -27141,7 +27141,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e41faf0add2d3f78e727f505f9d98c982bd2cec3561c3f5029499a8f868649dc",
+      "checksum": "60161e2c6061dc565d94fb6889a6e075ba9a4fdbfe1e4586b9c5d1d880465c2f",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -27193,7 +27193,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9fbf9a626add0afefcf5c028437214eea44b14633febce75a548926169cde788",
+      "checksum": "f858508935c4e2822a8bc76c8b05e74464abc03417a0e3375327a5a14420015a",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -27283,7 +27283,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c5d23f220a8bf2396c564cbfb834ecff7cae154de874da8e962e84505709f8e0",
+      "checksum": "104131f22ecd8ba8f00e4e3385ab7057735194b283893f41b7c142780ddbef04",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -27312,7 +27312,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9d142d1fcf60c6f5d6dbe01a7a6543d1b4cfff82441d5f8283088125d53a94b7",
+      "checksum": "e81144ffafd463d6fbb98d6c855e9c4fb572139705c08a3064c6cb7315620fd6",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -27341,7 +27341,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "edabea4310227e2b0a32fcc9ed76f3ee129c068e909870d45727f1b1f3b1920e",
+      "checksum": "28b19376550f454c97d459c2411a78a4f326885f2ac7aa2328e224ae0e5ffb17",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -27370,7 +27370,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9933637ea15cba561abec933300c9fdcd4b860ee1c5b75b1b9b2744da5760e9b",
+      "checksum": "819ab902a10cddeec397823c6af1292f5590f52cdc26e91c78c2c361900c9f53",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -27424,7 +27424,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b545b84a865f618808d2c16afab1dab4e6462c83f1fe3e2a9324095fb8e3ea09",
+      "checksum": "3e5fda0bf9dcbae84fbc934b20ce219673e6e18fe7ad782283bdf495e727615b",
       "description": "Bold red retail"
     },
     {
@@ -27453,7 +27453,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b43febbf308b8e475e2226c67037413a96cd65a15334d7f37b3acfafcd0473d0",
+      "checksum": "ed80060e7e95da522ff0fb4bd5dccb308f4949278f80430eec746fbb97faff28",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -27484,7 +27484,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "782ee6d5bfa1ec0a03c03d4b341fc832b2087dc11fe48f29ad4f2acc1d170fc6",
+      "checksum": "98863a7fa47dc9d2db6b147637669ffee555fc65a1d92f872ce1d5461afc95d7",
       "description": "Bright green modern"
     },
     {
@@ -27515,7 +27515,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "23e1e02fca17e3965ea983fc641d53bf125e756ac6b2b41f319f7eeb931d1bd2",
+      "checksum": "a17ba5c8c8ffe04906e1a642dee6c0cda5df3e507e2dca14858508a492630eb0",
       "description": "Colorful purple-pink gradient"
     },
     {
@@ -27661,7 +27661,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "5d093822e9e9235b121eb3847506cea3070b3d2fab215840c42bfac7cd62fb8d",
+      "checksum": "b423a73717cf1c006c2f182b3f008264c3fc1838709a30287118620647069b0f",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -27692,7 +27692,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "097194c0befae0345ec4cbb8f491cc438dbb0c2f20a64811a58a0f200403952c",
+      "checksum": "71d3d1e3197fe44c34775a1c9acb872edba3629cfaee8df6c62c9184acbbd2a2",
       "description": "Bright cyan ocean theme"
     },
     {
@@ -27721,7 +27721,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "0525a3d09039997043615c4e409a64aac98b92d62e70d5fe2c5cdb58a6aee47c",
+      "checksum": "1ae50f4c262a643060550e074d4331a9ba502b591d89abac56fb206a43a07923",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -27750,7 +27750,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c8c0e943e491416388cdfe76bbb26bc3f2ec159e914364fc6102786fcd242a68",
+      "checksum": "34d969843556f213c9cf59b5bad3a2577814cf5d1c1fa6a2ff4303c74e9ca401",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -27779,7 +27779,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "988bff4125d09727e313801aece3282f5cbba94836463743b13f1a801e82435f",
+      "checksum": "31fd0e4cd562657b2a1b223fc2aff81f00409026eddf64fe39ce75bc3bf5ad8d",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -27856,7 +27856,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cc3f128c2e5c084f8a52a6378cd7a3873fe74758806bc2969f4906aac9a62fd3",
+      "checksum": "8323b995c14a48a5da19d7b68bb18d419a767b4d474f36f062c024ad7ce6594e",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -27885,7 +27885,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "2a1a9b615ca5ed12e87c886a0e3898addb81e50fe14e95c7a4c5516f29878485",
+      "checksum": "8cf76ebb63da00fe2b834f63c138e1de370244484fb4b3daf9409a6a75abc9da",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -27914,7 +27914,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "71225b2b048ac0eb5015a2878c527072344fc4987879e2cc19c34c2a02798be1",
+      "checksum": "8638c3427d59fe1735088dd1e5beb2533dfa16e0869dbf8caa944d00d78e7463",
       "description": "Clean blue theme, summary balance box"
     }
   ]
