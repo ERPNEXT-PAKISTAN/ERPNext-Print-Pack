@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.3 - 2026-08-11
+
+### Print text layout fix
+- Fixed vertical/stacked letter names in meta sections (Yellow Sidebar and others) caused by aggressive page-fit CSS
+- Meta label columns now keep horizontal text; wrapping uses word boundaries only
+
 ## 0.5.2 - 2026-08-11
 
 ### BOM print coverage

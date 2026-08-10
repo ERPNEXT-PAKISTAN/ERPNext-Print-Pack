@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from erpnext_print_pack.page_fit_css import PAGE_FIT_CSS
+from erpnext_print_pack.page_fit_css import with_page_fit
 
 THEMES_DIR = Path(__file__).resolve().parent
 
@@ -107,7 +107,4 @@ def get_theme_css(theme_key: str) -> str:
 		base = css_path.read_text(encoding="utf-8")
 	else:
 		base = _theme_base_css(theme_key, theme)
-	# Always append page-fit so regenerated and hand-tuned theme CSS stay A4-safe.
-	if "table-layout: fixed" in base and "overflow-wrap: anywhere" in base:
-		return base
-	return f"{base.rstrip()}\n{PAGE_FIT_CSS}"
+	return with_page_fit(base)
