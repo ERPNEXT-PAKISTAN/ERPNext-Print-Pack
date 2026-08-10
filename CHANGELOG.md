@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.5.1 - 2026-08-11
+
+### Field coverage
+- Expense Claim: mode of payment, payable account, bank/cash account, advances/taxes, remarks below
+- Remarks block at bottom for Journal Entry, sales/purchase invoices & orders, delivery notes, stock, payments, etc.
+- Item detail: valuation method/rate, tax templates, default warehouse/store, item group, UOMs, barcodes, item prices
+
+### No HTML / Enable fix
+- Root cause: draft formats were synced without HTML (210 empty disabled records)
+- Migrate/sync now loads draft HTML too; Enable auto-syncs HTML if missing
+- Sync preserves site Enable/Disable after first create
+
+## 0.5.0 - 2026-08-11
+
+### DocType-aware print layouts
+- Added shared `detail_blocks` engine covering Journal Entry accounts (debit/credit/party/cost center), Payment Entry accounts/references/deductions/taxes, Stock Entry warehouses/batch/serial/additional costs, Material Request, Work Order, Salary Slip, Expense Claim, Timesheet, and BOM
+- Regenerated premium/theme/regional/specimen formats (~995) with richer item/account tables, remarks, and totals
+- Expanded Payment Entry / Journal Entry / Stock Entry theme coverage
+
+### Reliability & UX
+- Sync now hashes actual HTML (not stale metadata checksums) and batches registry writes atomically
+- Generators emit required metadata (`attribution_required`, `erpnext_versions`)
+- Catalog rebuilt to match disk; repository validation clean
+- Print Format Browser: removed N+1 HTML lookups; sandboxed preview iframe
+- Removed inline `onerror` handlers from FBR templates
+
 ## 0.3.0 - 2026-08-06
 
 ### Production hardening

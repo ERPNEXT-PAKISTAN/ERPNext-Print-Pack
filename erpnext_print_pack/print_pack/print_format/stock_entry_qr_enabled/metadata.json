@@ -1,0 +1,25 @@
+{
+  "name": "QR Enabled Stock Entry",
+  "slug": "stock_entry_qr_enabled",
+  "doc_type": "Stock Entry",
+  "theme": "qr_enabled",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "qr"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "fa17abd3986a1123685a6cae899af101a1816952b70767b82c1898fbaab03f29"
+}

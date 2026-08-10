@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "dark_header_pro"
+    "dark_header_pro",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "1a21d1ba47ed7c0a121ae6a025e3345a6aa256b7bf1ed521a33208a942c2c4f7",
+  "checksum": "f5adfc0f5ba7d2f84630553e5b11d6c8de3f59ff45a8b4f220be54325049d287",
   "description": "Solid navy header bar, white INVOICE title"
 }

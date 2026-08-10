@@ -1,0 +1,29 @@
+{
+  "name": "Purple Tax Invoice Item Detail Report",
+  "slug": "item_detail_purple_tax",
+  "doc_type": "Item",
+  "theme": "purple_tax",
+  "layout_family": "purple_tax",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "purple_tax",
+    "field-rich"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "e671111da829b7978cefd4a7823127d32fe8345eb696a25e38a3bd861f0ab12d",
+  "description": "Formal tax invoice, purple accent, signature"
+}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from erpnext_print_pack.detail_blocks import remarks_block
 from erpnext_print_pack.doctype_profiles import DocTypeProfile
 from erpnext_print_pack.layout_engine import _base_wrap, _items_table, _meta_header, _totals_block
 
@@ -19,8 +20,14 @@ def _regional_wrap(profile: DocTypeProfile, key: str, css: str, body: str) -> st
 		if profile.has_terms
 		else ""
 	)
+	remarks = remarks_block(profile)
 	sig = '<div class="epp-sig sig">Authorized Signature _________________________</div>'
 	footer = '<div class="epp-footer footer">Thank you for your business</div>'
+	# Ensure remarks render above the footer; _base_wrap fills {{REMARKS}}.
+	if "{{REMARKS}}" not in body and "{{FOOTER}}" in body:
+		body = body.replace("{{FOOTER}}", "{{REMARKS}}{{FOOTER}}")
+	elif "{{REMARKS}}" not in body:
+		body = body + "{{REMARKS}}"
 	html = _base_wrap(profile, key, css, body)
 	return (
 		html.replace("{{ITEMS}}", items)
@@ -28,6 +35,7 @@ def _regional_wrap(profile: DocTypeProfile, key: str, css: str, body: str) -> st
 		.replace("{{META}}", _meta_header(profile))
 		.replace("{{IN_WORDS}}", in_words)
 		.replace("{{TERMS}}", terms)
+		.replace("{{REMARKS}}", remarks)
 		.replace("{{SIG}}", sig)
 		.replace("{{FOOTER}}", footer)
 	)

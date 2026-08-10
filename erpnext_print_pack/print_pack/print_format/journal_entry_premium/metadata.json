@@ -1,0 +1,25 @@
+{
+  "name": "Premium Journal Entry",
+  "slug": "journal_entry_premium",
+  "doc_type": "Journal Entry",
+  "theme": "premium",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "760ae9bbd7cd15159419ac929657eb07eb42cc0e30aa1db01999252f512ddc9b"
+}

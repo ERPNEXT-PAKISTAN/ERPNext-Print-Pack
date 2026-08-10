@@ -1,0 +1,31 @@
+{
+  "name": "Gradient Vivid Item Detail Report",
+  "slug": "item_detail_gradient_vivid",
+  "doc_type": "Item",
+  "theme": "gradient_vivid",
+  "layout_family": "gradient_vivid",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "gradient_vivid",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "f8663aa2c7376e3ac3ebc3149ac7bc17fe4c5ef0fef3643221a00cd303f8f881",
+  "description": "Colorful purple-pink gradient"
+}

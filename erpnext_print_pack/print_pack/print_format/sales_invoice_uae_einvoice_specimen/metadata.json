@@ -1,10 +1,26 @@
 {
- "name": "UAE E-Invoice Specimen",
- "slug": "sales_invoice_uae_einvoice_specimen",
- "doc_type": "Sales Invoice",
- "layout_family": "uae_einvoice_specimen",
- "layout_type": "regional",
- "region": "AE",
- "status": "stable",
- "description": "UAE modern e-invoice specimen — green TRN, QR, card layout"
+  "name": "UAE E-Invoice Specimen",
+  "slug": "sales_invoice_uae_einvoice_specimen",
+  "doc_type": "Sales Invoice",
+  "layout_family": "uae_einvoice_specimen",
+  "layout_type": "regional",
+  "region": "AE",
+  "status": "stable",
+  "description": "UAE modern e-invoice specimen \u2014 green TRN, QR, card layout",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "checksum": "2155707ba70df21408ffb29c584a00ef143da1b0d2d5ea5964a55fc600420bca",
+  "theme": "uae_einvoice_specimen",
+  "category": "general"
 }

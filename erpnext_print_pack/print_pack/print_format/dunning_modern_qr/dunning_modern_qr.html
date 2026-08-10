@@ -33,11 +33,20 @@ small { color: #666; font-size: 9px; }
 <div style="text-align:right"><div class="mq-qr">QR</div><div style="margin-top:6px;font-size:9px">{{ doc.name }}</div></div>
 </div>
 
-<div class="mq-sum">
-<div>Subtotal: {{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</div>
-{% for tax in doc.taxes or [] %}<div>{{ tax.description or "Tax" }}: {{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</div>{% endfor %}
-<div class="g">Due: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
-</div>
+<div class="mq-sum"></div>
 {% if doc.terms %}<div class="terms"><strong>Terms</strong><br>{{ doc.terms }}</div>{% endif %}
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

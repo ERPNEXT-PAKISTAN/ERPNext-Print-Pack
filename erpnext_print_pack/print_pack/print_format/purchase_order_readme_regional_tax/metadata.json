@@ -19,6 +19,11 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
   "checksum": "ac71c87b625aea5225a953d44b166e8504ed62c518e2644217bf20b50900cd0e",
   "description": "Global tax invoice \u2014 navy corporate style matching README preview (Bill/Ship, HSN, tax summary)"

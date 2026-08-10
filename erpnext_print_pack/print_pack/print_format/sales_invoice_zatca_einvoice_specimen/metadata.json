@@ -1,19 +1,34 @@
 {
- "name": "ZATCA E-Invoice Specimen",
- "slug": "sales_invoice_zatca_einvoice_specimen",
- "doc_type": "Sales Invoice",
- "theme": "zatca_einvoice_specimen",
- "layout_family": "zatca_einvoice_specimen",
- "layout_type": "regional",
- "region": "SA",
- "sector": "all",
- "category": "sales",
- "orientation": "portrait",
- "paper_size": "A4",
- "languages": ["en", "ar"],
- "features": ["zatca", "qr", "e-invoice", "premium-layout", "specimen"],
- "source_type": "original",
- "source_license": "MIT",
- "status": "stable",
- "description": "Modern ZATCA e-invoice specimen — purple accents, QR, billed-by/to cards"
+  "name": "ZATCA E-Invoice Specimen",
+  "slug": "sales_invoice_zatca_einvoice_specimen",
+  "doc_type": "Sales Invoice",
+  "theme": "zatca_einvoice_specimen",
+  "layout_family": "zatca_einvoice_specimen",
+  "layout_type": "regional",
+  "region": "SA",
+  "sector": "all",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "zatca",
+    "qr",
+    "e-invoice",
+    "premium-layout",
+    "specimen"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "description": "Modern ZATCA e-invoice specimen \u2014 purple accents, QR, billed-by/to cards",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "checksum": "87b81b303db90cc5e019282497beab2456aaae08b753b42976f7e79431ab6992"
 }

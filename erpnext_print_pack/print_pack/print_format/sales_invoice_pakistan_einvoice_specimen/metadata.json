@@ -1,10 +1,26 @@
 {
- "name": "Pakistan E-Invoice Specimen",
- "slug": "sales_invoice_pakistan_einvoice_specimen",
- "doc_type": "Sales Invoice",
- "layout_family": "pakistan_einvoice_specimen",
- "layout_type": "regional",
- "region": "PK",
- "status": "stable",
- "description": "Pakistan FBR e-invoice specimen — green card layout"
+  "name": "Pakistan E-Invoice Specimen",
+  "slug": "sales_invoice_pakistan_einvoice_specimen",
+  "doc_type": "Sales Invoice",
+  "layout_family": "pakistan_einvoice_specimen",
+  "layout_type": "regional",
+  "region": "PK",
+  "status": "stable",
+  "description": "Pakistan FBR e-invoice specimen \u2014 green card layout",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "checksum": "fac0009006015bc062b1ee15e1bd42e4861b340e041007b7d7520ab3efa40cbb",
+  "theme": "pakistan_einvoice_specimen",
+  "category": "general"
 }

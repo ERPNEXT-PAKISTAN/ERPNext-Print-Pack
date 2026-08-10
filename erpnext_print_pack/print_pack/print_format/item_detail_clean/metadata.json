@@ -1,0 +1,23 @@
+{
+  "name": "Clean Item Detail Report",
+  "slug": "item_detail_clean",
+  "doc_type": "Item",
+  "theme": "clean",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "76d136c388006f3679ae652c0b0d6286b5af25eb48c8f15e1ba66c4e2d9bf94f"
+}

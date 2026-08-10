@@ -1,0 +1,25 @@
+{
+  "name": "Soft Gray Journal Entry",
+  "slug": "journal_entry_soft_gray",
+  "doc_type": "Journal Entry",
+  "theme": "soft_gray",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "0216e6b01f779cba7faeb5322f9d87012490a61c7a9a5e289eb886d34d2b70da"
+}

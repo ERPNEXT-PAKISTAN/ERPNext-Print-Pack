@@ -2,6 +2,13 @@
 
 from __future__ import annotations
 
+from erpnext_print_pack.detail_blocks import (
+	detail_table,
+	meta_header,
+	party_vars,
+	remarks_block,
+	totals_block,
+)
 from erpnext_print_pack.doctype_profiles import DocTypeProfile
 from erpnext_print_pack.print_snippets import DOC_BARCODE_SNIPPET
 
@@ -60,103 +67,19 @@ def format_slug(profile: DocTypeProfile, layout_key: str) -> str:
 
 
 def _party_vars(profile: DocTypeProfile) -> str:
-	if profile.doc_type == "Payment Entry":
-		return """
-{% set party_label = doc.party_type or "Party" %}
-{% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.party_address or doc.address_display or "" %}
-{% set ship_address = "" %}
-"""
-	if profile.has_party_customer:
-		return """
-{% set party_label = "Bill To" %}
-{% set ship_label = "Ship To" %}
-{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
-{% set party_address = doc.address_display or "" %}
-{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
-"""
-	if profile.has_party_supplier:
-		return """
-{% set party_label = "Supplier" %}
-{% set ship_label = "Deliver To" %}
-{% set party_name = doc.supplier_name or doc.supplier or "" %}
-{% set party_address = doc.address_display or doc.supplier_address or "" %}
-{% set ship_address = doc.shipping_address_display or "" %}
-"""
-	if profile.party_field == "employee":
-		return """
-{% set party_label = "Employee" %}
-{% set ship_label = "" %}
-{% set party_name = doc.employee_name or doc.employee or "" %}
-{% set party_address = "" %}
-{% set ship_address = "" %}
-"""
-	return """
-{% set party_label = "Party" %}
-{% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.address_display or "" %}
-{% set ship_address = "" %}
-"""
+	return party_vars(profile)
 
 
 def _items_table(profile: DocTypeProfile) -> str:
-	if not profile.has_items:
-		return ""
-	return """
-{% if doc.items %}
-<table class="items">
-<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
-<tbody>
-{% for row in doc.items %}
-<tr>
-<td>{{ loop.index }}</td>
-<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
-<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
-<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
-<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-{% endif %}
-"""
+	return detail_table(profile)
 
 
 def _totals_block(profile: DocTypeProfile) -> str:
-	if not profile.has_items and profile.doc_type == "Payment Entry":
-		return """
-<table class="totals"><tr><td>Amount</td><td class="r">{% set _pay_amt = doc.paid_amount or doc.received_amount or doc.base_paid_amount or 0 %}{% set _pay_cur = doc.paid_to_account_currency or doc.paid_from_account_currency or doc.company_currency or "" %}{{ frappe.utils.fmt_money(_pay_amt, currency=_pay_cur) if _pay_amt else "" }}</td></tr>
-<tr><td>Mode of Payment</td><td class="r"><strong>{{ doc.mode_of_payment or "—" }}</strong></td></tr>
-<tr><td>Account</td><td class="r">{% if doc.payment_type == "Receive" %}{{ doc.paid_to or "" }}{% elif doc.payment_type == "Pay" %}{{ doc.paid_from or "" }}{% else %}{{ doc.paid_from or "" }}{% if doc.paid_from and doc.paid_to %} → {% endif %}{{ doc.paid_to or "" }}{% endif %}</td></tr>
-</table>
-"""
-	if not profile.has_taxes:
-		return """
-<table class="totals">
-<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
-</table>
-"""
-	return """
-<table class="totals">
-<tr><td>Net Total</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
-{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or tax.account_head or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
-<tr class="grand"><td>Grand Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
-</table>
-"""
+	return totals_block(profile)
 
 
 def _meta_header(profile: DocTypeProfile) -> str:
-	due = '{% if doc.due_date %}<tr><td>Due Date</td><td class="r">{{ frappe.utils.formatdate(doc.due_date) }}</td></tr>{% endif %}' if profile.has_due_date else ""
-	return f"""
-<table class="meta">
-<tr><td>Document</td><td class="r bold">{{{{ doc.name }}}}</td></tr>
-<tr><td>Date</td><td class="r">{{{{ frappe.utils.formatdate(doc.get("{profile.date_field}")) if doc.get("{profile.date_field}") else "" }}}}</td></tr>
-{due}
-<tr><td>Currency</td><td class="r">{{{{ doc.currency or "" }}}}</td></tr>
-</table>
-"""
+	return meta_header(profile)
 
 
 def render_layout(profile: DocTypeProfile, layout_key: str) -> str:
@@ -187,6 +110,17 @@ def _base_wrap(profile: DocTypeProfile, layout_key: str, css: str, body: str) ->
 		if profile.has_terms
 		else ""
 	)
+	remarks = remarks_block(profile)
+	filled = (
+		body.replace("{{ITEMS}}", items)
+		.replace("{{TOTALS}}", totals)
+		.replace("{{META}}", _meta_header(profile))
+		.replace("{{IN_WORDS}}", in_words)
+		.replace("{{TERMS}}", terms)
+		.replace("{{REMARKS}}", remarks)
+	)
+	if "{{REMARKS}}" not in body:
+		filled = f"{filled}\n{remarks}"
 	return f"""{{# Premium layout: {layout_key} · {profile.doc_type} #}}
 {{% set title = "{profile.title}" %}}
 {{% set date_field = "{profile.date_field}" %}}
@@ -200,7 +134,7 @@ small {{ color: #666; font-size: 9px; }}
 .print-format table > tbody > tr > td {{ padding: 5px 6px !important; }}
 </style>
 <div class="root print-format">
-{body.replace("{{ITEMS}}", items).replace("{{TOTALS}}", totals).replace("{{META}}", _meta_header(profile)).replace("{{IN_WORDS}}", in_words).replace("{{TERMS}}", terms)}
+{filled}
 {DOC_BARCODE_SNIPPET}
 </div>
 """
@@ -292,11 +226,7 @@ def _render_zoho_professional(profile: DocTypeProfile) -> str:
 <td style="width:50%"><div class="card"><div class="lbl">Company</div>{{ doc.company_address_display or "" }}{% if doc.company_tax_id %}<br>VAT: {{ doc.company_tax_id }}{% endif %}</div></td>
 </tr></table>
 {{ITEMS}}
-<div class="summary"><table>
-<tr><td>Sub Total</td><td class="r">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr>
-{% for tax in doc.taxes or [] %}<tr><td>{{ tax.description or "Tax" }}</td><td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td></tr>{% endfor %}
-<tr class="bal"><td>Balance Due</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr>
-</table></div>
+<div class="summary">{{TOTALS}}</div>
 {{IN_WORDS}}{{TERMS}}
 """
 	return _base_wrap(profile, "zoho_professional", css, body)
@@ -322,7 +252,7 @@ def _render_orange_accent(profile: DocTypeProfile) -> str:
 <td style="text-align:right">{{META}}</td>
 </tr></table>
 {{ITEMS}}
-<div class="oa-total"><table><tr><td>TOTAL DUE</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table></div>
+<div class="oa-total">{{TOTALS}}</div>
 <div class="sig">Authorized Signature ___________________</div>
 {{IN_WORDS}}{{TERMS}}
 """
@@ -375,11 +305,7 @@ def _render_modern_qr(profile: DocTypeProfile) -> str:
 <div style="text-align:right"><div class="mq-qr">QR</div><div style="margin-top:6px;font-size:9px">{{ doc.name }}</div></div>
 </div>
 {{ITEMS}}
-<div class="mq-sum">
-<div>Subtotal: {{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</div>
-{% for tax in doc.taxes or [] %}<div>{{ tax.description or "Tax" }}: {{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</div>{% endfor %}
-<div class="g">Due: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
-</div>
+<div class="mq-sum">{{TOTALS}}</div>
 {{IN_WORDS}}{{TERMS}}
 """
 	return _base_wrap(profile, "modern_qr", css, body)

@@ -1,0 +1,31 @@
+{
+  "name": "Emerald Fresh Item Detail Report",
+  "slug": "item_detail_emerald_fresh",
+  "doc_type": "Item",
+  "theme": "emerald_fresh",
+  "layout_family": "emerald_fresh",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "emerald_fresh",
+    "regional"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "e00f2827b6522a0f9e8c0d1b28664c35f53f46b575e735601859e197b12e5eeb",
+  "description": "Bright green modern"
+}

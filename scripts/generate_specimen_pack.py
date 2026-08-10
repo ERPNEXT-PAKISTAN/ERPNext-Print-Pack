@@ -53,6 +53,8 @@ def write_format(profile, pack_key: str, pack: dict, html: str, thermal: bool = 
 		"features": ["specimen", pack_key, layout_type],
 		"source_type": "original",
 		"source_license": "MIT",
+		"attribution_required": False,
+		"erpnext_versions": ["15", "16"],
 		"status": "stable",
 		"checksum": checksum(html),
 		"description": pack["label"],

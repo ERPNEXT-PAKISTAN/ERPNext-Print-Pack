@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "79836120d550773dce30c78bdb09098ac5d68070a4f54dc0999e77097670c216",
+  "checksum": "052f29d36a4e042bba1c8cd956a9f0e480f4756ce615ccf995b3b77647d22102",
   "description": "Middle East gold bilingual luxury"
 }

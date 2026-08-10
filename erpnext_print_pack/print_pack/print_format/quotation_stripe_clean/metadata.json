@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "stripe_clean"
+    "stripe_clean",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "7de86715f051204754eb99e353b216ab24a8fa41a24f094588a4c6410afef130",
+  "checksum": "41f4867aa19f8bf9a75f4a0730d004960c5547e8cfed2efb8af522c7e632b0c2",
   "description": "Zebra rows, no vertical borders, airy modern"
 }

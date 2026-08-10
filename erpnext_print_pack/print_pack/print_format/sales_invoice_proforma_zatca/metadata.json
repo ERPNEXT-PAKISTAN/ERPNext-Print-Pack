@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "31cde231c862c81f701863104dbd9f94410fc95d9669e340f816dc62718b88a3",
+  "checksum": "2c2acb278b4798ff5d69f74f55c5028c4320b43871e7e724111f4cf0a5efb706",
   "description": "Proforma ZATCA"
 }

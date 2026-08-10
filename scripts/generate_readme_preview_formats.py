@@ -50,6 +50,8 @@ def write_format(profile, layout_key: str) -> None:
 		"features": ["readme-preview", layout_key, "premium-layout"],
 		"source_type": "original",
 		"source_license": "MIT",
+		"attribution_required": False,
+		"erpnext_versions": ["15", "16"],
 		"status": "stable",
 		"checksum": checksum(html),
 		"description": meta_info["description"],

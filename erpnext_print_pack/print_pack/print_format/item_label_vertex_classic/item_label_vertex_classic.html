@@ -41,7 +41,10 @@ small { color: #666; font-size: 9px; }
 <tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
 <tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("creation")) if doc.get("creation") else "" }}</td></tr>
 
-<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+{% if doc.currency %}<tr><td>Currency</td><td class="r">{{ doc.currency }}</td></tr>{% endif %}
+{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
+{% if doc.cost_center %}<tr><td>Cost Center</td><td class="r">{{ doc.cost_center }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
 </table>
 </td>
 </tr></table>
@@ -50,9 +53,87 @@ small { color: #666; font-size: 9px; }
 <td>{% if ship_label %}<div class="party-box"><strong>{{ ship_label }}</strong><br>{{ ship_address }}</div>{% endif %}</td>
 </tr></table>
 
-<table class="totals">
-<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
+{% if doc.image %}
+<div style="margin-bottom:10px"><img src="{{ doc.image }}" style="max-height:100px;max-width:100px;border:1px solid #ddd;border-radius:6px"></div>
+{% endif %}
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Item Code</td><td><strong>{{ doc.name }}</strong></td></tr>
+<tr><td>Item Name</td><td>{{ doc.item_name or "" }}</td></tr>
+<tr><td>Item Group</td><td>{{ doc.item_group or "" }}</td></tr>
+<tr><td>Brand</td><td>{{ doc.brand or "—" }}</td></tr>
+<tr><td>Stock UOM</td><td>{{ doc.stock_uom or "" }}{% if doc.sales_uom %} · Sales: {{ doc.sales_uom }}{% endif %}{% if doc.purchase_uom %} · Purchase: {{ doc.purchase_uom }}{% endif %}</td></tr>
+<tr><td>Valuation Method</td><td>{{ doc.valuation_method or "—" }}</td></tr>
+<tr><td>Valuation Rate</td><td class="r">{{ frappe.utils.fmt_money(doc.valuation_rate) if doc.valuation_rate else "—" }}</td></tr>
+<tr><td>Standard Rate</td><td class="r">{{ frappe.utils.fmt_money(doc.standard_rate) if doc.standard_rate else "—" }}</td></tr>
+<tr><td>Maintain Stock</td><td>{{ "Yes" if doc.is_stock_item else "No" }}</td></tr>
+{% if doc.item_defaults %}
+{% for d in doc.item_defaults %}
+{% if d.default_warehouse %}<tr><td>Store / Warehouse</td><td>{{ d.default_warehouse }}{% if d.company %} ({{ d.company }}){% endif %}</td></tr>{% endif %}
+{% endfor %}
+{% endif %}
+{% if doc.barcode %}<tr><td>Barcode</td><td>{{ doc.barcode }}</td></tr>{% endif %}
+{% if doc.barcodes %}
+{% for b in doc.barcodes %}
+<tr><td>Barcode</td><td>{{ b.barcode or "" }}{% if b.barcode_type %} ({{ b.barcode_type }}){% endif %}</td></tr>
+{% endfor %}
+{% endif %}
+{% if doc.gst_hsn_code %}<tr><td>HSN</td><td>{{ doc.gst_hsn_code }}</td></tr>{% endif %}
+</tbody>
 </table>
+{% if doc.taxes %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Tax Template / Type</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for t in doc.taxes %}
+<tr><td>{{ t.item_tax_template or t.tax_type or t.tax_category or "Tax" }}</td><td class="r">{{ t.tax_rate or "" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.uoms %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>UOM</th><th class="r">Conversion Factor</th></tr></thead>
+<tbody>
+{% for row in doc.uoms %}
+<tr><td>{{ row.uom or "" }}</td><td class="r">{{ row.conversion_factor or "" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set prices = get_item_prices(doc.name) %}
+{% if prices %}
+<table class="items" style="margin-top:8px">
+<thead><tr><th>Price List</th><th>UOM</th><th>Currency</th><th class="r">Rate</th></tr></thead>
+<tbody>
+{% for row in prices %}
+<tr>
+<td>{{ row.price_list or "" }}</td>
+<td>{{ row.uom or doc.stock_uom or "" }}</td>
+<td>{{ row.currency or "" }}</td>
+<td class="r">{{ frappe.utils.fmt_money(row.price_list_rate, currency=row.currency) if row.price_list_rate else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.description %}
+<div class="epp-remarks remarks" style="margin-top:10px;padding:8px;border:1px solid #ddd"><strong>Description</strong><br>{{ doc.description }}</div>
+{% endif %}
 
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

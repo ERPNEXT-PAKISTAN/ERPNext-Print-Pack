@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "orange_accent"
+    "orange_accent",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "fd9e59f6997ece61f2125f55527a4e5959480830feaf5857e619681a557b6d27",
+  "checksum": "62deae42655106fd44dcbba6ca0f9a4fad6d80eba14805a5c9d5b55f7c65a9ac",
   "description": "Bold orange total bar, signature area"
 }

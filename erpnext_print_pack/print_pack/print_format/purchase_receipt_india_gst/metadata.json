@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "5d0b6d4aca236816764d9aeb5481514605d386ba00124cca03f4bc38a05c5ef5",
+  "checksum": "124ca0425d9b5e1765b8fdc8d7fe8bce865c9a29daa5dfc9f60a53d96f127647",
   "description": "India GSTIN, HSN, tax ready"
 }

@@ -10,12 +10,13 @@ A production-ready **ERPNext / Frappe v15 and v16** print-format library with **
 
 ## Features
 
-- **900+ print formats** across sales, purchasing, stock, manufacturing, HR, payments, and labels
+- **990+ print formats** across sales, purchasing, stock, manufacturing, HR, payments, and labels
 - **Print Format Browser** — preview, filter by region/layout, set default, print/PDF
 - **Global regional layouts** — Saudi ZATCA, UAE VAT, Pakistan FBR, India GST, USA, Gulf, and more
 - **Proforma invoices** — multiple styles for quotations and sales documents
 - **Thermal / POS** — 80mm receipts with word-wrapped item names
-- **Payment Entry receipts** — payment type, party, mode of payment, bank/cash account, amount
+- **DocType-aware detail tables** — Journal Entry accounts (debit/credit), Payment Entry references/deductions, Stock Entry warehouses/batch/serial, Material Request, Work Order, Salary Slip, Expense Claim, Timesheet
+- **Payment Entry receipts** — payment type, party, mode of payment, bank/cash account, allocated amounts, remarks
 - **Item detail reports** — item image, valuation method, barcode, last two purchases
 - **README preview layouts** — **ZATCA Tax Invoice** (bilingual SA) and **Regional Tax Invoice** (global navy style) on sales & purchase documents
 

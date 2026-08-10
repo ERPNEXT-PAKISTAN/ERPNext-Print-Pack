@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "c710c6fde820ed856d45d780c8e9565d70208c06831a876232411f8546b4611e",
+  "checksum": "d6dccb33caa6c54fe254cac2fc2a6313ceb37dce7d1f58bd4a4632dcbaf3ea08",
   "description": "Proforma Modern"
 }

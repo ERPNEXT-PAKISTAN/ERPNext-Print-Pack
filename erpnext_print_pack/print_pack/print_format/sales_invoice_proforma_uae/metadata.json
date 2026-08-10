@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "5fa38ace279c1a38de66882e916848ea177ba7051e41661e8e25ac94464e17d6",
+  "checksum": "a3757ecd8eb8d2ee44c530dac82120047faf5c3f0c4be31c108810c0707601ad",
   "description": "Proforma UAE"
 }

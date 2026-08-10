@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "purple_tax"
+    "purple_tax",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "401b4976e50eece24ca64812c0dbf1cb5f369335e77786b2eff0afbf93fe28dd",
+  "checksum": "966f83553c452af6bd7b119c8e0bd68e78d12858eb697fbc455f4085c3b458c5",
   "description": "Formal tax invoice, purple accent, signature"
 }

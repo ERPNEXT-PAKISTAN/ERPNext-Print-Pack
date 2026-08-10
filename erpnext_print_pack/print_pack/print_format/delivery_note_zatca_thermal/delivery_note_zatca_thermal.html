@@ -37,7 +37,7 @@
 <div class="th-pay-type">{{ doc.payment_type or "Payment" }}</div>
 <div class="th-party">{{ doc.party_name or doc.party or "" }}</div>
 <div class="th-mop">Mode: <b>{{ doc.mode_of_payment or "—" }}</b></div>
-<div class="th-acct">{{% if doc.payment_type == "Receive" %}{{ doc.paid_to or "" }}{% elif doc.payment_type == "Pay" %}{{ doc.paid_from or "" }}{% else %}{{ doc.paid_from or "" }}{% if doc.paid_from and doc.paid_to %} → {% endif %}{{ doc.paid_to or "" }}{% endif %}}</div>
+<div class="th-acct">{% if doc.payment_type == "Receive" %}{{ doc.paid_to or "" }}{% elif doc.payment_type == "Pay" %}{{ doc.paid_from or "" }}{% else %}{{ doc.paid_from or "" }}{% if doc.paid_from and doc.paid_to %} → {% endif %}{{ doc.paid_to or "" }}{% endif %}</div>
 <div class="th-line"></div>
 <div class="th-total">AMOUNT {% set _pay_amt = doc.paid_amount or doc.received_amount or doc.base_paid_amount or 0 %}{% set _pay_cur = doc.paid_to_account_currency or doc.paid_from_account_currency or doc.company_currency or "" %}{{ frappe.utils.fmt_money(_pay_amt, currency=_pay_cur) if _pay_amt else "" }}</div>
 {% else %}

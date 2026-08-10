@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "a184a4121c702ff7f6b9260505f23642d4420c489f1ea4235152e5dedae66974",
+  "checksum": "a2a69d355c988e662dfb1f6499605bd2f356dfa3bf191111026ef4f9c2e6c454",
   "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
 }

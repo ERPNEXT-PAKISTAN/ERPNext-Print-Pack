@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "3af92447e62897128118933439f5eb895ac1a430cd5fca0f3723d6e348a72e69",
+  "checksum": "5a8b79cbf1ba05a8015999c3753f1622f1c5b1b47341f7f29e6c13e87a3249d8",
   "description": "Pakistan NTN/STRN sales tax invoice"
 }

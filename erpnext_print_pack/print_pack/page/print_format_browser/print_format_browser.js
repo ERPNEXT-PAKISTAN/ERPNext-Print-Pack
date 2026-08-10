@@ -387,12 +387,18 @@ erpnext_print_pack.PrintFormatBrowser = class PrintFormatBrowser {
 		}
 
 		if (!fmt.has_html) {
-			this.render_preview_empty(__("This format has no HTML loaded. Run sync from server."));
+			this.render_preview_empty(
+				__(
+					"No HTML loaded for this format. Click Enable (auto-syncs HTML) or use Sync HTML from the menu."
+				)
+			);
 			return;
 		}
 
 		if (fmt.disabled) {
-			this.render_preview_empty(__("Format is disabled. Click Enable to use it."));
+			this.render_preview_empty(
+				__("Format is disabled. Click Enable — HTML will be loaded if missing.")
+			);
 			return;
 		}
 
@@ -433,11 +439,18 @@ erpnext_print_pack.PrintFormatBrowser = class PrintFormatBrowser {
 		const base_url = frappe.urllib.get_base_url();
 		const print_css = frappe.assets.bundled_asset("print.bundle.css");
 
+		// Sandbox preview frame: allow same-origin CSS/fonts, block scripts/forms.
+		this.$iframe.attr(
+			"sandbox",
+			"allow-same-origin allow-popups allow-modals"
+		);
+
 		doc.open();
 		doc.write(`<!DOCTYPE html>
 			<html lang="${frappe.boot.lang || "en"}">
 			<head>
 				<meta charset="UTF-8">
+				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob: *; style-src 'unsafe-inline' ${base_url}; font-src ${base_url} data:;">
 				<style>${out.style || ""}</style>
 				<link href="${base_url}${print_css}" rel="stylesheet">
 			</head>

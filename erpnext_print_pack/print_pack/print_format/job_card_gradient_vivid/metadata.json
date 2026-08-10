@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "ff812c4261c6556079b2f8fbf08dc6586babd90660431c31deb3f774bb7311f3",
+  "checksum": "693511f3389d8d063289712c7b1d9cdeb7b3670347f295e6ee0acd35aab16b08",
   "description": "Colorful purple-pink gradient"
 }

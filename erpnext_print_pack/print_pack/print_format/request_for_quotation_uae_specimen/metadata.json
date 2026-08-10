@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "1c9c25bba14015fbb59501b351b6b06510e06d8668a983593e9a3baa4a813ec9",
+  "checksum": "b6922ec0d8351ec24b48d75c23b210c7bbea0e803aab1bfa9f0f5f22f37bfba3",
   "description": "UAE E-Invoice Specimen"
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Professional Blue Item Detail Report",
+  "slug": "item_detail_professional_blue",
+  "doc_type": "Item",
+  "theme": "professional_blue",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "23869fa8ab7cd5d2770782b800bdd8047d04c1f01286d6ca632bb01c3f790edb"
+}

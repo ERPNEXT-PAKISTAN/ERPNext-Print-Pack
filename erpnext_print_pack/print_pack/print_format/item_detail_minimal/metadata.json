@@ -1,0 +1,23 @@
+{
+  "name": "Minimal Item Detail Report",
+  "slug": "item_detail_minimal",
+  "doc_type": "Item",
+  "theme": "minimal",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "9737fb72f4354c313734a83a3cd88025e8b42e90488f8488ec788ac02e3a6641"
+}

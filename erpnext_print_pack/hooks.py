@@ -73,5 +73,6 @@ jinja = {
 	"methods": [
 		"erpnext_print_pack.jinja_methods.print_helpers",
 		"erpnext_print_pack.jinja_methods.get_item_last_purchases",
+		"erpnext_print_pack.jinja_methods.get_item_prices",
 	],
 }

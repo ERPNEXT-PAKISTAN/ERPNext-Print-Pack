@@ -1,0 +1,23 @@
+{
+  "name": "Modern Item Detail Report",
+  "slug": "item_detail_modern",
+  "doc_type": "Item",
+  "theme": "modern",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "7ed8b31ab47ffcf349e1c8376cc35ebb0a78c4ad0f0b82bc5d9cca9e25d848f0"
+}

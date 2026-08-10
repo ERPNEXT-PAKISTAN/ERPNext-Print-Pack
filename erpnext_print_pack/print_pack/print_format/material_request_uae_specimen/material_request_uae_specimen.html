@@ -40,10 +40,44 @@
 <div class="sp-card" style="float:right"><div class="lbl">{{ party_label }}</div><strong>{{ party_name }}</strong><br><span style="color:#6b7280;font-size:9px">{{ party_address }}</span></div>
 </div>
 
-{% if doc.items %}<table class="sp-table"><thead><tr><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead><tbody>
-{% for row in doc.items %}<tr><td>{{ row.item_name or row.item_code or row.description or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td><td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td></tr>{% endfor %}
-</tbody></table>{% endif %}
-<div class="r" style="margin-top:8px"><strong>Total:</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+{% if doc.items %}
+<table class="items sp-table">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Warehouse</th>
+<th class="r">Qty</th>
+<th>UOM</th>
+<th>Required By</th>
+<th class="r">Ordered</th>
+<th class="r">Received</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.warehouse or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td>{{ row.uom or row.stock_uom or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.schedule_date) if row.schedule_date else "" }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td class="r">{{ row.received_qty or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+
+<table class="totals sp-table">
+<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or doc.total_amount or "" }}</td></tr>
+{% if doc.rounded_total %}<tr><td>Rounded Total</td><td class="r">{{ doc.get_formatted("rounded_total") if doc.get_formatted is defined else doc.rounded_total }}</td></tr>{% endif %}
+{% if doc.outstanding_amount %}<tr><td>Outstanding</td><td class="r">{{ doc.get_formatted("outstanding_amount") if doc.get_formatted is defined else doc.outstanding_amount }}</td></tr>{% endif %}
+</table>
+
 <table style="width:100%;margin-top:12px"><tr>
 <td style="width:50%"><div class="sp-bank"><div class="lbl">Bank / Payment</div>{{ doc.get("custom_bank_name") or doc.get("mode_of_payment") or "—" }}<br>{{ doc.get("custom_iban") or "" }}</div></td>
 <td class="r" style="width:50%;vertical-align:top"><strong>Total</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.paid_amount or doc.total or "" }}</td>

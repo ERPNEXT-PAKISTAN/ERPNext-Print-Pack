@@ -2,11 +2,11 @@
 {% set title = "Payment Entry" %}
 {% set date_field = "posting_date" %}
 
-{% set party_label = "Bill To" %}
-{% set ship_label = "Ship To" %}
-{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
-{% set party_address = doc.address_display or "" %}
-{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+{% set party_label = doc.party_type or "Party" %}
+{% set ship_label = "" %}
+{% set party_name = doc.party_name or doc.party or "" %}
+{% set party_address = doc.party_address or doc.address_display or "" %}
+{% set ship_address = "" %}
 
 <style>
 @page { size: A4 portrait; margin: 10mm; }
@@ -34,15 +34,112 @@ small { color: #666; font-size: 9px; }
 <td><strong>{{ party_label }}:</strong> {{ party_name }}<br>{{ party_address }}</td>
 <td style="text-align:right">
 <table class="meta">
-<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
-<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</td></tr>
-
-<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+<tr><td>Payment No</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.posting_date) if doc.posting_date else "" }}</td></tr>
+<tr><td>Payment Type</td><td class="r">{{ doc.payment_type or "" }}</td></tr>
+<tr><td>Mode of Payment</td><td class="r">{{ doc.mode_of_payment or "—" }}</td></tr>
+{% if doc.reference_no %}<tr><td>Reference No</td><td class="r">{{ doc.reference_no }}</td></tr>{% endif %}
+{% if doc.reference_date %}<tr><td>Reference Date</td><td class="r">{{ frappe.utils.formatdate(doc.reference_date) }}</td></tr>{% endif %}
+{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
 </table>
 </td>
 </tr></table></div>
 
-<table class="totals"><tr><td>Received Amount</td><td class="r">{{ doc.get_formatted("paid_amount") if doc.get_formatted is defined else doc.paid_amount or "" }}</td></tr></table>
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Party Type</td><td>{{ doc.party_type or "" }}</td></tr>
+<tr><td>Party</td><td><strong>{{ doc.party_name or doc.party or "" }}</strong></td></tr>
+<tr><td>Paid From</td><td>{{ doc.paid_from or "" }}{% if doc.paid_from_account_currency %} ({{ doc.paid_from_account_currency }}){% endif %}</td></tr>
+<tr><td>Paid To</td><td>{{ doc.paid_to or "" }}{% if doc.paid_to_account_currency %} ({{ doc.paid_to_account_currency }}){% endif %}</td></tr>
+{% if doc.bank_account %}<tr><td>Bank Account</td><td>{{ doc.bank_account }}</td></tr>{% endif %}
+{% if doc.party_bank_account %}<tr><td>Party Bank</td><td>{{ doc.party_bank_account }}</td></tr>{% endif %}
+{% if doc.bank %}<tr><td>Bank</td><td>{{ doc.bank }}{% if doc.bank_account_no %} · {{ doc.bank_account_no }}{% endif %}</td></tr>{% endif %}
+{% if doc.cost_center %}<tr><td>Cost Center</td><td>{{ doc.cost_center }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td>{{ doc.project }}</td></tr>{% endif %}
+</tbody>
+</table>
+{% if doc.references %}
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Reference</th>
+<th>Due Date</th>
+<th class="r">Outstanding</th>
+<th class="r">Allocated</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.references %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.reference_doctype or "" }}</td>
+<td><strong>{{ row.reference_name or "" }}</strong>{% if row.bill_no %}<br><small>Bill: {{ row.bill_no }}</small>{% endif %}</td>
+<td>{{ frappe.utils.formatdate(row.due_date) if row.due_date else "" }}</td>
+<td class="r">{{ row.get_formatted("outstanding_amount") if row.get_formatted is defined else row.outstanding_amount or "" }}</td>
+<td class="r">{{ row.get_formatted("allocated_amount") if row.get_formatted is defined else row.allocated_amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.deductions %}
+<table class="items" style="margin-top:10px">
+<thead><tr><th>#</th><th>Account</th><th>Cost Center</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.deductions %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.account or "" }}</td>
+<td>{{ row.cost_center or "" }}</td>
+<td class="r">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.taxes %}
+<table class="items" style="margin-top:10px">
+<thead><tr><th>Tax</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for tax in doc.taxes %}
+<tr>
+<td>{{ tax.description or tax.account_head or "Tax" }}</td>
+<td class="r">{{ tax.rate or "" }}</td>
+<td class="r">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
 
+<table class="totals">
+{% set _pay_amt = doc.paid_amount or doc.received_amount or doc.base_paid_amount or 0 %}
+{% set _pay_cur = doc.paid_to_account_currency or doc.paid_from_account_currency or doc.company_currency or "" %}
+<tr><td>Paid Amount</td><td class="r">{{ frappe.utils.fmt_money(doc.paid_amount, currency=doc.paid_from_account_currency or _pay_cur) if doc.paid_amount else "" }}</td></tr>
+{% if doc.received_amount %}<tr><td>Received Amount</td><td class="r">{{ frappe.utils.fmt_money(doc.received_amount, currency=doc.paid_to_account_currency or _pay_cur) }}</td></tr>{% endif %}
+{% if doc.total_allocated_amount %}<tr><td>Allocated</td><td class="r">{{ doc.get_formatted("total_allocated_amount") if doc.get_formatted is defined else doc.total_allocated_amount }}</td></tr>{% endif %}
+{% if doc.unallocated_amount %}<tr><td>Unallocated</td><td class="r">{{ doc.get_formatted("unallocated_amount") if doc.get_formatted is defined else doc.unallocated_amount }}</td></tr>{% endif %}
+{% if doc.difference_amount %}<tr><td>Difference</td><td class="r">{{ doc.get_formatted("difference_amount") if doc.get_formatted is defined else doc.difference_amount }}</td></tr>{% endif %}
+{% if doc.total_taxes_and_charges %}<tr><td>Taxes</td><td class="r">{{ doc.get_formatted("total_taxes_and_charges") if doc.get_formatted is defined else doc.total_taxes_and_charges }}</td></tr>{% endif %}
+<tr class="grand"><td>Amount</td><td class="r">{{ frappe.utils.fmt_money(_pay_amt, currency=_pay_cur) if _pay_amt else "" }}</td></tr>
+</table>
+{% if doc.in_words or doc.base_in_words %}<div class="words">{{ doc.in_words or doc.base_in_words }}</div>{% endif %}
+{% if doc.in_words %}<div class="words">{{ doc.in_words }}</div>{% endif %}
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

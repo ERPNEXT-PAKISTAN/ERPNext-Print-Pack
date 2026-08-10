@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "9f74461e4c78acbeef0ee8cf371317222faefbe42e1234153abd0818fcc39561",
+  "checksum": "31c4efab24f8384bbd0c8f5f5f6549fe77ccd74bc71a3101480672f5f19612e5",
   "description": "American red/blue stripe invoice"
 }

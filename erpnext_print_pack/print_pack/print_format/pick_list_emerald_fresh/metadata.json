@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "14ce5818c23030119aecfd2303fa6761c4bd209924e60a8b479aef31c456c94a",
+  "checksum": "7441c3197e15d45954a84204d5a0fdfea5eff8f00097f1fde211ed35be3f957b",
   "description": "Bright green modern"
 }

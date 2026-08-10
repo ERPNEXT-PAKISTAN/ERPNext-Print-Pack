@@ -5,30 +5,36 @@ import frappe
 from erpnext_print_pack.print_format_sync import sync_all
 
 
-def after_install():
-	"""Install stable formats only; never force; never include drafts."""
+def _run_stable_sync(context: str):
+	"""Sync stable + draft formats (drafts stay disabled) so Enable always has HTML."""
 	try:
 		result = sync_all(
-			statuses=("stable",),
+			statuses=("stable", "draft"),
 			dry_run=False,
 			force=False,
-			include_draft=False,
+			include_draft=True,
 			fail_fast=False,
 		)
-		frappe.logger().info(f"erpnext_print_pack after_install sync: {json.dumps(result)}")
+		summary = {
+			"created": result.get("created"),
+			"updated": result.get("updated"),
+			"unchanged": result.get("unchanged"),
+			"skipped_locally_modified": result.get("skipped_locally_modified"),
+			"skipped_missing_doctype": result.get("skipped_missing_doctype"),
+			"failed_validation": result.get("failed_validation"),
+			"failed": result.get("failed"),
+		}
+		frappe.logger().info(f"erpnext_print_pack {context} sync: {json.dumps(summary)}")
+		return result
 	except Exception:
-		frappe.log_error(title="erpnext_print_pack after_install sync failed")
+		frappe.log_error(title=f"erpnext_print_pack {context} sync failed")
+		return None
+
+
+def after_install():
+	"""Install stable formats only; never force; never include drafts."""
+	_run_stable_sync("after_install")
 
 
 def after_migrate():
-	try:
-		result = sync_all(
-			statuses=("stable",),
-			dry_run=False,
-			force=False,
-			include_draft=False,
-			fail_fast=False,
-		)
-		frappe.logger().info(f"erpnext_print_pack after_migrate sync: {json.dumps(result)}")
-	except Exception:
-		frappe.log_error(title="erpnext_print_pack after_migrate sync failed")
+	_run_stable_sync("after_migrate")

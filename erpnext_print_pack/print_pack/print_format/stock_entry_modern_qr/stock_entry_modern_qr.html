@@ -2,10 +2,10 @@
 {% set title = "Stock Entry" %}
 {% set date_field = "posting_date" %}
 
-{% set party_label = "Party" %}
+{% set party_label = "Supplier" %}
 {% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.address_display or "" %}
+{% set party_name = doc.supplier_name or doc.supplier or "" %}
+{% set party_address = doc.address_display or doc.supplier_address or "" %}
 {% set ship_address = "" %}
 
 <style>
@@ -35,15 +35,46 @@ small { color: #666; font-size: 9px; }
 
 {% if doc.items %}
 <table class="items">
-<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>From WH</th>
+<th>To WH</th>
+<th class="r">Qty</th>
+<th>UOM</th>
+<th class="r">Basic Rate</th>
+<th class="r">Amount</th>
+<th>Batch / Serial</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
-<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
-<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
-<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name and row.item_name != row.item_code %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.s_warehouse or "" }}</td>
+<td>{{ row.t_warehouse or "" }}</td>
+<td class="r">{{ row.get_formatted("qty") if row.get_formatted is defined else row.qty or "" }}</td>
+<td>{{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.get_formatted("basic_rate") if row.get_formatted is defined else row.basic_rate or row.valuation_rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or row.basic_amount or "" }}</td>
+<td>{% if row.batch_no %}Batch: {{ row.batch_no }}{% endif %}{% if row.serial_no %}<br><small>{{ row.serial_no }}</small>{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.additional_costs %}
+<table class="items" style="margin-top:10px">
+<thead><tr><th>#</th><th>Expense Account</th><th>Description</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.additional_costs %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.expense_account or "" }}</td>
+<td>{{ row.description or "" }}</td>
+<td class="r">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or "" }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -51,10 +82,27 @@ small { color: #666; font-size: 9px; }
 {% endif %}
 
 <div class="mq-sum">
-<div>Subtotal: {{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</div>
-{% for tax in doc.taxes or [] %}<div>{{ tax.description or "Tax" }}: {{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</div>{% endfor %}
-<div class="g">Due: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
+<table class="totals">
+{% if doc.total_outgoing_value %}<tr><td>Outgoing Value</td><td class="r">{{ doc.get_formatted("total_outgoing_value") if doc.get_formatted is defined else doc.total_outgoing_value }}</td></tr>{% endif %}
+{% if doc.total_incoming_value %}<tr><td>Incoming Value</td><td class="r">{{ doc.get_formatted("total_incoming_value") if doc.get_formatted is defined else doc.total_incoming_value }}</td></tr>{% endif %}
+{% if doc.total_additional_costs %}<tr><td>Additional Costs</td><td class="r">{{ doc.get_formatted("total_additional_costs") if doc.get_formatted is defined else doc.total_additional_costs }}</td></tr>{% endif %}
+{% if doc.value_difference %}<tr><td>Value Difference</td><td class="r">{{ doc.get_formatted("value_difference") if doc.get_formatted is defined else doc.value_difference }}</td></tr>{% endif %}
+{% if doc.total_amount %}<tr class="grand"><td>Total Amount</td><td class="r">{{ doc.get_formatted("total_amount") if doc.get_formatted is defined else doc.total_amount }}</td></tr>{% endif %}
+</table>
 </div>
 
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

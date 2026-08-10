@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "modern_qr"
+    "modern_qr",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "bbd0244abb6c33868fdcd12b00a6a2ed8e6596b56fb9f9531f29f087080468d6",
+  "checksum": "c2f0a4dd511b2bb7d74f0b9acad2dca2fb53d646a8f80fb98d819772e56a433d",
   "description": "Minimal grid, QR payment block"
 }

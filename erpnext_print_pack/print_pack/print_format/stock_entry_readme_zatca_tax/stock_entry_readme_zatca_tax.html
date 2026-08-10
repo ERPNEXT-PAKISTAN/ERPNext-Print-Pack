@@ -2,10 +2,10 @@
 {% set title = "Stock Entry" %}
 {% set date_field = "posting_date" %}
 
-{% set party_label = "Party" %}
+{% set party_label = "Supplier" %}
 {% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.address_display or "" %}
+{% set party_name = doc.supplier_name or doc.supplier or "" %}
+{% set party_address = doc.address_display or doc.supplier_address or "" %}
 {% set ship_address = "" %}
 
 <style>

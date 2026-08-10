@@ -1,0 +1,29 @@
+{
+  "name": "Orange Accent Item Detail Report",
+  "slug": "item_detail_orange_accent",
+  "doc_type": "Item",
+  "theme": "orange_accent",
+  "layout_family": "orange_accent",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "orange_accent",
+    "field-rich"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "29d8f5b37a88fb56176b29b943eb820bf91e1b731aa33d3a64f3738bfe5e89f1",
+  "description": "Bold orange total bar, signature area"
+}

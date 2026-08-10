@@ -53,6 +53,8 @@ def write_format(profile, layout_key: str) -> dict:
 		"features": ["premium-layout", layout_key, meta_info.get("layout_type", "regional")],
 		"source_type": "original",
 		"source_license": "MIT",
+		"attribution_required": False,
+		"erpnext_versions": ["15", "16"],
 		"status": "stable",
 		"checksum": checksum(html),
 		"description": meta_info["description"],

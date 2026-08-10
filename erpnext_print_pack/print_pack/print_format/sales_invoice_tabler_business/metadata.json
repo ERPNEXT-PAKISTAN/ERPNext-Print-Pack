@@ -1,19 +1,28 @@
 {
- "name": "Tabler Business Sales Invoice",
- "slug": "sales_invoice_tabler_business",
- "doc_type": "Sales Invoice",
- "theme": "tabler_business",
- "layout_family": "tabler",
- "sector": "corporate",
- "category": "sales",
- "orientation": "portrait",
- "paper_size": "A4",
- "languages": ["en"],
- "features": ["tax-summary", "card-layout"],
- "source_type": "adapted",
- "source_url": "https://github.com/tabler/tabler",
- "source_license": "MIT",
- "attribution_required": false,
- "erpnext_versions": ["15", "16"],
- "status": "stable"
+  "name": "Tabler Business Sales Invoice",
+  "slug": "sales_invoice_tabler_business",
+  "doc_type": "Sales Invoice",
+  "theme": "tabler_business",
+  "layout_family": "tabler",
+  "sector": "corporate",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "tax-summary",
+    "card-layout"
+  ],
+  "source_type": "adapted",
+  "source_url": "https://github.com/tabler/tabler",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "4dca3a3124e6f86f9c97061b503ddc1cf90169a52ed8d7d906193d524618dfac"
 }

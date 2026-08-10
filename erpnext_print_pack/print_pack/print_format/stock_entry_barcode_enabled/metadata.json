@@ -1,0 +1,25 @@
+{
+  "name": "Barcode Enabled Stock Entry",
+  "slug": "stock_entry_barcode_enabled",
+  "doc_type": "Stock Entry",
+  "theme": "barcode_enabled",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "barcode"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "07d58ce8a4e214464d924ce312dbede8fd5738c0671c269353ce4b3dc41b6448"
+}

@@ -36,19 +36,48 @@ small { color: #666; font-size: 9px; }
 <td><strong>From:</strong> {{ doc.company or "" }}<br>{{ doc.company_address_display or "" }}</td>
 <td><strong>{{ party_label }}:</strong> {{ party_name }}<br>{{ party_address }}<br>
 <table class="meta">
-<tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
-<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("planned_start_date")) if doc.get("planned_start_date") else "" }}</td></tr>
-
-<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+<tr><td>Work Order</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Item</td><td class="r">{{ doc.production_item or doc.item_name or "" }}</td></tr>
+<tr><td>Qty</td><td class="r">{{ doc.qty or "" }}</td></tr>
+{% if doc.bom_no %}<tr><td>BOM</td><td class="r">{{ doc.bom_no }}</td></tr>{% endif %}
+{% if doc.planned_start_date %}<tr><td>Planned Start</td><td class="r">{{ frappe.utils.format_datetime(doc.planned_start_date) }}</td></tr>{% endif %}
+{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
 </table>
 </td>
 </tr></table>
 
-<table class="totals">
-<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</td></tr>
+{% if doc.required_items %}
+<table class="items">
+<thead><tr><th>#</th><th>Required Item</th><th>Source WH</th><th class="r">Required Qty</th><th class="r">Transferred</th><th class="r">Consumed</th></tr></thead>
+<tbody>
+{% for row in doc.required_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td>{{ row.source_warehouse or "" }}</td>
+<td class="r">{{ row.required_qty or "" }}</td>
+<td class="r">{{ row.transferred_qty or 0 }}</td>
+<td class="r">{{ row.consumed_qty or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
 </table>
+{% endif %}
 
 <div class="pt-sig"><div class="line">Authorized Signatory</div></div>
 
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

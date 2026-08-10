@@ -10,7 +10,12 @@ from pathlib import Path
 
 import frappe
 
-from erpnext_print_pack.sync_registry import get_format_record, set_format_record
+from erpnext_print_pack.sync_registry import (
+	get_format_record,
+	load_registry,
+	save_registry,
+	set_format_record,
+)
 
 APP_ROOT = Path(__file__).resolve().parent
 PRINT_FORMAT_ROOT = APP_ROOT / "print_pack" / "print_format"
@@ -140,12 +145,13 @@ def _decide_action(
 	source_checksum: str,
 	exists: bool,
 	force: bool,
+	registry: dict | None = None,
 ) -> tuple[str, str | None]:
 	"""Return action: create|update|unchanged|skip_* and reason."""
 	if not exists:
 		return "create", None
 
-	record = get_format_record(name)
+	record = get_format_record(name, registry=registry)
 	db_html = frappe.db.get_value("Print Format", name, "html") or ""
 	if not db_html.strip():
 		return "update", None
@@ -191,6 +197,8 @@ def sync_all(
 	result = SyncResult()
 	format_dirs = list(_iter_format_dirs())
 	result.discovered = len(format_dirs)
+	registry = load_registry()
+	registry_dirty = False
 
 	for format_dir in format_dirs:
 		try:
@@ -222,7 +230,14 @@ def sync_all(
 			result.skipped_missing_doctype.append(name)
 			continue
 
-		source_checksum = metadata.get("checksum") or _checksum(row.get("html", ""))
+		# Always hash actual HTML so HTML edits deploy even if metadata checksum is stale.
+		html_checksum = _checksum(row.get("html", ""))
+		meta_checksum = metadata.get("checksum")
+		if meta_checksum and meta_checksum != html_checksum:
+			frappe.logger().warning(
+				f"erpnext_print_pack: checksum mismatch for {name}; using HTML hash"
+			)
+		source_checksum = html_checksum
 		jinja_error = _validate_jinja(row["html"], name)
 		if jinja_error:
 			result.failed_validation.append((name, jinja_error))
@@ -232,7 +247,9 @@ def sync_all(
 
 		result.eligible += 1
 		exists = bool(frappe.db.exists("Print Format", name))
-		action, reason = _decide_action(name, slug, source_checksum, exists, force)
+		action, reason = _decide_action(
+			name, slug, source_checksum, exists, force, registry=registry
+		)
 
 		if action == "skip_locally_modified":
 			result.skipped_locally_modified.append(name)
@@ -257,14 +274,20 @@ def sync_all(
 		try:
 			if exists:
 				doc = frappe.get_doc("Print Format", name)
+				# Keep the site's Enable/Disable choice; only seed disabled on create.
+				preserve_disabled = doc.disabled
 			else:
 				doc = frappe.new_doc("Print Format")
 				doc.name = name
+				preserve_disabled = None
 
 			for key, value in row.items():
 				if key in SKIP_FIELDS:
 					continue
 				setattr(doc, key, value)
+
+			if preserve_disabled is not None:
+				doc.disabled = preserve_disabled
 
 			doc.flags.ignore_permissions = True
 			if doc.is_new():
@@ -282,13 +305,18 @@ def sync_all(
 				synced_checksum=_checksum(synced_html),
 				owned=True,
 				status=status,
+				registry=registry,
+				persist=False,
 			)
+			registry_dirty = True
 		except Exception as exc:
 			result.failed.append((name, str(exc)))
 			if fail_fast:
 				break
 
 	if not dry_run:
+		if registry_dirty:
+			save_registry(registry)
 		frappe.db.commit()
 		frappe.clear_cache(doctype="Print Format")
 

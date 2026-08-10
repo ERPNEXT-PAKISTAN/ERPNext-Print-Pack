@@ -1,17 +1,27 @@
 {
- "name": "Agency Modern Sales Invoice",
- "slug": "sales_invoice_agency_modern",
- "doc_type": "Sales Invoice",
- "theme": "agency_modern",
- "layout_family": "agency",
- "sector": "services_agency",
- "category": "sales",
- "orientation": "portrait",
- "paper_size": "A4",
- "languages": ["en"],
- "features": ["modern", "minimal-grid"],
- "source_type": "original",
- "source_license": "MIT",
- "status": "stable",
- "erpnext_versions": ["15", "16"]
+  "name": "Agency Modern Sales Invoice",
+  "slug": "sales_invoice_agency_modern",
+  "doc_type": "Sales Invoice",
+  "theme": "agency_modern",
+  "layout_family": "agency",
+  "sector": "services_agency",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "modern",
+    "minimal-grid"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "attribution_required": false,
+  "checksum": "dfb19f7c32062f52fda112a072e87b8edc13fcad0afa59894cc75c2664824e70"
 }

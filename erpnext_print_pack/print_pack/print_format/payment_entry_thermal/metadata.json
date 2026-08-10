@@ -1,0 +1,26 @@
+{
+  "name": "Thermal Payment Entry",
+  "slug": "payment_entry_thermal",
+  "doc_type": "Payment Entry",
+  "theme": "thermal",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "80mm",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "amount-in-words",
+    "thermal"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "b48df252a61c3c4a0b28ab24c6ab0ab757578def34baa480af21beed919a6215"
+}

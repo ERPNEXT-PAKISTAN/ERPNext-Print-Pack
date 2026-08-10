@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "5113a2152118b7346c0a8e74897aa336259740b2070df55d04b42623f115a1f8",
+  "checksum": "aa21d395053e8d7351707d6b13e5ae7dad665e711320fab5589509541df1a08b",
   "description": "Bold red retail"
 }

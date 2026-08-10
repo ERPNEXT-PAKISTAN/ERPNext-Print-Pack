@@ -1,17 +1,28 @@
 {
- "name": "Executive Corporate Sales Invoice",
- "slug": "sales_invoice_executive_corporate",
- "doc_type": "Sales Invoice",
- "theme": "executive_corporate",
- "layout_family": "executive",
- "sector": "corporate_enterprise",
- "category": "sales",
- "orientation": "portrait",
- "paper_size": "A4",
- "languages": ["en"],
- "features": ["formal", "letterhead", "signatures"],
- "source_type": "original",
- "source_license": "MIT",
- "status": "stable",
- "erpnext_versions": ["15", "16"]
+  "name": "Executive Corporate Sales Invoice",
+  "slug": "sales_invoice_executive_corporate",
+  "doc_type": "Sales Invoice",
+  "theme": "executive_corporate",
+  "layout_family": "executive",
+  "sector": "corporate_enterprise",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "formal",
+    "letterhead",
+    "signatures"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "attribution_required": false,
+  "checksum": "9c06dccad847b77487f1fc76edd1fdc42229208da4d1e55b94614ac42dfef3c5"
 }

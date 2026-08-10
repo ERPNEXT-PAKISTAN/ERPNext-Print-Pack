@@ -33,11 +33,26 @@ small { color: #666; font-size: 9px; }
 <tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
 <tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</td></tr>
 
-<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+{% if doc.currency %}<tr><td>Currency</td><td class="r">{{ doc.currency }}</td></tr>{% endif %}
+{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
+{% if doc.cost_center %}<tr><td>Cost Center</td><td class="r">{{ doc.cost_center }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
 </table>
 </div>
 
 <div class="oc-sum">Balance: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
-<div class="epp-sig sig">Authorized Signature _________________________</div><div class="epp-footer footer">Thank you for your business</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+<div class="epp-footer footer">Thank you for your business</div>
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

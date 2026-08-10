@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "6a3157685d65caa57c76376c8025ae4cf91bc4dde5e54d37bb5b4470b6b6010e",
+  "checksum": "5b54d4f8b7e5df06faf8a799e64ce9147b66db9334d8e5e87a980af1f86f77de",
   "description": "Bright cyan ocean theme"
 }

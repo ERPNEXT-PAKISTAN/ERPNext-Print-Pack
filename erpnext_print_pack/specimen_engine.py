@@ -127,31 +127,18 @@ def render_specimen(profile: DocTypeProfile, pack_key: str, thermal: bool = Fals
 
 
 def _items_block(profile: DocTypeProfile) -> str:
-	if not profile.has_items:
-		if profile.doc_type == "Payment Entry":
-			return _payment_details_table()
-		if profile.doc_type == "Journal Entry":
-			return """{% if doc.accounts %}<table class="sp-table"><tr><th>Account</th><th class="r">Debit</th><th class="r">Credit</th></tr>
-{% for row in doc.accounts %}<tr><td>{{ row.account or "" }}</td><td class="r">{{ row.get_formatted("debit_in_account_currency") if row.get_formatted is defined else row.debit_in_account_currency or "" }}</td><td class="r">{{ row.get_formatted("credit_in_account_currency") if row.get_formatted is defined else row.credit_in_account_currency or "" }}</td></tr>{% endfor %}
-</table>{% endif %}"""
-		return ""
-	return """
-{% if doc.items %}<table class="sp-table"><thead><tr><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead><tbody>
-{% for row in doc.items %}<tr><td>{{ row.item_name or row.item_code or row.description or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td><td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td></tr>{% endfor %}
-</tbody></table>{% endif %}"""
+	from erpnext_print_pack.detail_blocks import detail_table
+
+	return detail_table(profile).replace('class="items"', 'class="items sp-table"')
 
 
 def _totals_block(profile: DocTypeProfile) -> str:
-	if not profile.has_items or profile.doc_type == "Payment Entry":
+	from erpnext_print_pack.detail_blocks import totals_block
+
+	# Payment specimen layouts already embed amount prominently.
+	if profile.doc_type == "Payment Entry":
 		return ""
-	if not profile.has_taxes:
-		return """<div class="r" style="margin-top:8px"><strong>Total:</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>"""
-	return """
-<div class="r" style="margin-top:8px">
-Net: {{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}<br>
-{% for tax in doc.taxes or [] %}{{ tax.description or "Tax" }}: {{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}<br>{% endfor %}
-<strong>Grand Total: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</strong>
-</div>"""
+	return totals_block(profile).replace('class="totals"', 'class="totals sp-table"')
 
 
 def _payment_amount_expr() -> str:
@@ -268,7 +255,7 @@ def _render_thermal(profile: DocTypeProfile, pack: dict, party: str, date_field:
 <div class="th-pay-type">{{{{ doc.payment_type or "Payment" }}}}</div>
 <div class="th-party">{{{{ doc.party_name or doc.party or "" }}}}</div>
 <div class="th-mop">Mode: <b>{{{{ doc.mode_of_payment or "—" }}}}</b></div>
-<div class="th-acct">{{{_payment_account_expr()}}}</div>
+<div class="th-acct">{_payment_account_expr()}</div>
 <div class="th-line"></div>
 <div class="th-total">AMOUNT {_payment_amount_expr()}</div>
 {{% else %}}

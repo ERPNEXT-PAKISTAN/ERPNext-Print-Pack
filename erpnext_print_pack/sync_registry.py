@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import tempfile
 from pathlib import Path
 
 import frappe
@@ -27,11 +29,23 @@ def load_registry() -> dict:
 def save_registry(data: dict) -> None:
 	path = get_registry_path()
 	path.parent.mkdir(parents=True, exist_ok=True)
-	path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+	payload = json.dumps(data, indent=2, sort_keys=True) + "\n"
+	fd, tmp_name = tempfile.mkstemp(prefix=".epp_sync_", dir=str(path.parent))
+	try:
+		with os.fdopen(fd, "w", encoding="utf-8") as handle:
+			handle.write(payload)
+		os.replace(tmp_name, path)
+	except Exception:
+		try:
+			os.unlink(tmp_name)
+		except OSError:
+			pass
+		raise
 
 
-def get_format_record(name: str) -> dict | None:
-	return load_registry().get("formats", {}).get(name)
+def get_format_record(name: str, registry: dict | None = None) -> dict | None:
+	data = registry if registry is not None else load_registry()
+	return data.get("formats", {}).get(name)
 
 
 def set_format_record(
@@ -42,8 +56,10 @@ def set_format_record(
 	synced_checksum: str,
 	owned: bool = True,
 	status: str = "stable",
-) -> None:
-	data = load_registry()
+	registry: dict | None = None,
+	persist: bool = True,
+) -> dict:
+	data = registry if registry is not None else load_registry()
 	data.setdefault("formats", {})[name] = {
 		"slug": slug,
 		"owned": owned,
@@ -51,7 +67,9 @@ def set_format_record(
 		"source_checksum": source_checksum,
 		"last_synced_checksum": synced_checksum,
 	}
-	save_registry(data)
+	if persist:
+		save_registry(data)
+	return data
 
 
 def remove_format_record(name: str) -> None:

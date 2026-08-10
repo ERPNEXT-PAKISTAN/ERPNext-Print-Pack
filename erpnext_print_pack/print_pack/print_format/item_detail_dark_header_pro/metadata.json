@@ -1,0 +1,29 @@
+{
+  "name": "Dark Header Pro Item Detail Report",
+  "slug": "item_detail_dark_header_pro",
+  "doc_type": "Item",
+  "theme": "dark_header_pro",
+  "layout_family": "dark_header_pro",
+  "sector": "all",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "premium-layout",
+    "dark_header_pro",
+    "field-rich"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "stable",
+  "checksum": "931abec4dddc1b0b04c4a0f763cf3170cb546a18106df670436a088260006d26",
+  "description": "Solid navy header bar, white INVOICE title"
+}

@@ -3,10 +3,10 @@
 {% set date_field = "posting_date" %}
 {% set doc_label = "Journal Entry" %}
 
-{% set party_label = "Party" %}
+{% set party_label = "Pay to / Received from" %}
 {% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.address_display or "" %}
+{% set party_name = doc.pay_to_recd_from or "" %}
+{% set party_address = "" %}
 {% set ship_address = "" %}
 
 <style>
@@ -39,15 +39,50 @@
 <div class="sp-card"><div class="lbl">From / Billed by</div><strong>{{ doc.company or "" }}</strong><br><span style="color:#6b7280;font-size:9px">{{ doc.company_address_display or "" }}</span><br>VAT/TRN: {{ doc.company_tax_id or "" }}</div>
 <div class="sp-card" style="float:right"><div class="lbl">{{ party_label }}</div><strong>{{ party_name }}</strong><br><span style="color:#6b7280;font-size:9px">{{ party_address }}</span></div>
 </div>
-{% if doc.accounts %}<table class="sp-table"><tr><th>Account</th><th class="r">Debit</th><th class="r">Credit</th></tr>
-{% for row in doc.accounts %}<tr><td>{{ row.account or "" }}</td><td class="r">{{ row.get_formatted("debit_in_account_currency") if row.get_formatted is defined else row.debit_in_account_currency or "" }}</td><td class="r">{{ row.get_formatted("credit_in_account_currency") if row.get_formatted is defined else row.credit_in_account_currency or "" }}</td></tr>{% endfor %}
-</table>{% endif %}
+
+{% if doc.accounts %}
+<table class="items sp-table">
+<thead>
+<tr>
+<th>#</th>
+<th>Account</th>
+<th>Party</th>
+<th>Cost Center</th>
+<th>Against</th>
+<th class="r">Debit</th>
+<th class="r">Credit</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.accounts %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.account or "" }}</strong>{% if row.account_type %}<br><small>{{ row.account_type }}</small>{% endif %}{% if row.user_remark %}<br><small>{{ row.user_remark }}</small>{% endif %}</td>
+<td>{{ row.party_type or "" }}{% if row.party %} {{ row.party }}{% endif %}</td>
+<td>{{ row.cost_center or "" }}</td>
+<td>{{ row.against_account or "" }}</td>
+<td class="r">{{ row.get_formatted("debit_in_account_currency") if row.get_formatted is defined else row.debit_in_account_currency or row.debit or "" }}</td>
+<td class="r">{{ row.get_formatted("credit_in_account_currency") if row.get_formatted is defined else row.credit_in_account_currency or row.credit or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+
+<table class="totals sp-table">
+<tr><td>Total Debit</td><td class="r">{{ doc.get_formatted("total_debit") if doc.get_formatted is defined else doc.total_debit or "" }}</td></tr>
+<tr><td>Total Credit</td><td class="r">{{ doc.get_formatted("total_credit") if doc.get_formatted is defined else doc.total_credit or "" }}</td></tr>
+{% if doc.difference %}<tr><td>Difference</td><td class="r">{{ doc.get_formatted("difference") if doc.get_formatted is defined else doc.difference }}</td></tr>{% endif %}
+{% if doc.total_amount %}<tr class="grand"><td>Total Amount</td><td class="r">{{ doc.get_formatted("total_amount") if doc.get_formatted is defined else doc.total_amount }}</td></tr>{% endif %}
+</table>
+{% if doc.total_amount_in_words %}<div class="words">{{ doc.total_amount_in_words }}</div>{% endif %}
 
 <table style="width:100%;margin-top:12px"><tr>
 <td style="width:50%"><div class="sp-bank"><div class="lbl">Bank / Payment</div>{{ doc.get("custom_bank_name") or doc.get("mode_of_payment") or "—" }}<br>{{ doc.get("custom_iban") or "" }}</div></td>
 <td class="r" style="width:50%;vertical-align:top"><strong>Total</strong> {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.paid_amount or doc.total or "" }}</td>
 </tr></table>
-
+{% if doc.in_words %}<div class="epp-words words">{{ doc.in_words }}</div>{% endif %}
 
 {% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
 {% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}

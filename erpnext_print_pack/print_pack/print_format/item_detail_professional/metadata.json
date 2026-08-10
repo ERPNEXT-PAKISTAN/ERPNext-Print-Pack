@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "2493b15f0b046f1c54dc86f83eb0af2eebc2dafbed9168c9ad978c04983616b9",
+  "checksum": "26ad8a19b9d15b4d6125a9adc0f84825a19b659529a38e29f687cc5fe67fdfb5",
   "description": "Item Detail Professional"
 }

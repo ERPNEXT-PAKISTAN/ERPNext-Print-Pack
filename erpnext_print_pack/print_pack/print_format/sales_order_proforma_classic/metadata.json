@@ -20,7 +20,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "ad9ba50bf0fca0266ba058f4c148a06003f212bcbbf3435d91368464f00107d5",
+  "checksum": "9645a99b3aa05d2b98c54d2a34504d15cd337e6b2531a24bebf285c044acdbc1",
   "description": "Proforma Classic"
 }

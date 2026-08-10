@@ -24,6 +24,11 @@
   "source_app": "fbr_integration",
   "source_format": "FBR Sales Invoice",
   "status": "stable",
-  "checksum": "cdb61babf919516c3771e461e858ffab9d66cf816510a421dc31f96195d767b3",
-  "description": "Pakistan FBR sales tax invoice (adapted from FBR Sales Invoice)"
+  "checksum": "1da3e042fb6adb8926666e681a59da1d5c84bb5d7d2b7af07b37e13b38bad986",
+  "description": "Pakistan FBR sales tax invoice (adapted from FBR Sales Invoice)",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ]
 }

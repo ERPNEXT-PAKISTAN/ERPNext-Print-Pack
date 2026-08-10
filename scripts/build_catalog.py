@@ -23,9 +23,9 @@ def build_catalog():
 		"## Summary",
 		"",
 	]
-	by_doctype = Counter(f["doc_type"] for f in formats)
-	by_theme = Counter(f["theme"] for f in formats)
-	by_status = Counter(f["status"] for f in formats)
+	by_doctype = Counter(f.get("doc_type") or "Unknown" for f in formats)
+	by_theme = Counter(f.get("theme") or f.get("layout_family") or "unknown" for f in formats)
+	by_status = Counter(f.get("status") or "unknown" for f in formats)
 	lines.append(f"- Stable: {by_status.get('stable', 0)}")
 	lines.append(f"- Draft: {by_status.get('draft', 0)}")
 	lines.append(f"- DocTypes: {len(by_doctype)}")
@@ -45,9 +45,12 @@ def build_catalog():
 	lines.append("")
 	lines.append("| Name | DocType | Theme | Status | Features |")
 	lines.append("|---|---|---|---|---|")
-	for f in sorted(formats, key=lambda x: (x["doc_type"], x["name"])):
+	for f in sorted(formats, key=lambda x: (x.get("doc_type") or "", x.get("name") or "")):
 		features = ", ".join(f.get("features") or [])
-		lines.append(f"| {f['name']} | {f['doc_type']} | {f['theme']} | {f['status']} | {features} |")
+		theme = f.get("theme") or f.get("layout_family") or ""
+		lines.append(
+			f"| {f.get('name') or ''} | {f.get('doc_type') or ''} | {theme} | {f.get('status') or ''} | {features} |"
+		)
 	OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 	print(f"Wrote {OUT} ({len(formats)} formats)")
 

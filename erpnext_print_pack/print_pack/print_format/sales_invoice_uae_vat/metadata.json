@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "0301c4e7c4780c8d2e320ccb6a8148b9ddea88dd24283140ebd68fefa506a300",
+  "checksum": "799d5919ab2b39a635f562289d47b7fc43637281610dc16036e04150cd285487",
   "description": "UAE TRN tax invoice \u2014 flag colors"
 }

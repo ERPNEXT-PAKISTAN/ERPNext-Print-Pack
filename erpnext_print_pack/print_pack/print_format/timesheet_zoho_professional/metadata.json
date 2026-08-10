@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "zoho_professional"
+    "zoho_professional",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "c6a797aa362f10cc6cd39207631a4af85a09f3f6686cc34cea96c8bc9e33e325",
+  "checksum": "9933637ea15cba561abec933300c9fdcd4b860ee1c5b75b1b9b2744da5760e9b",
   "description": "Clean blue theme, summary balance box"
 }

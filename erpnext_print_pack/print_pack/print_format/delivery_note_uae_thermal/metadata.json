@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "2229341275b172809e6e32bf3a28be908867646cd401a13d6ae720d627c7df19",
+  "checksum": "1c76c47752c5136567678d783a6ddd777a02e3c62247dfc3b8418c79a802c840",
   "description": "UAE Thermal Receipt"
 }

@@ -33,21 +33,38 @@ small { color: #666; font-size: 9px; }
 <tr><td>Document</td><td class="r bold">{{ doc.name }}</td></tr>
 <tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.get("pickup_date")) if doc.get("pickup_date") else "" }}</td></tr>
 
-<tr><td>Currency</td><td class="r">{{ doc.currency or "" }}</td></tr>
+{% if doc.currency %}<tr><td>Currency</td><td class="r">{{ doc.currency }}</td></tr>{% endif %}
+{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
+{% if doc.cost_center %}<tr><td>Cost Center</td><td class="r">{{ doc.cost_center }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
 </table>
 </div>
 
 {% if doc.items %}
 <table class="items">
-<thead><tr><th>#</th><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Warehouse</th>
+<th class="r">Qty</th>
+<th>UOM</th>
+<th>Batch / Serial</th>
+<th class="r">Rate</th>
+<th class="r">Amount</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_name or row.item_code or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}</td>
-<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
-<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
-<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+<td><strong>{{ row.item_code or row.item_name or "" }}</strong>{% if row.item_name and row.item_name != row.item_code %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.warehouse or row.s_warehouse or row.t_warehouse or row.target_warehouse or "" }}</td>
+<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or row.required_qty or "" }}</td>
+<td>{{ row.uom or row.stock_uom or "" }}</td>
+<td>{% if row.batch_no %}{{ row.batch_no }}{% endif %}{% if row.serial_no %}<br><small>{{ row.serial_no }}</small>{% endif %}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or row.basic_rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or row.basic_amount or "" }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -55,6 +72,18 @@ small { color: #666; font-size: 9px; }
 {% endif %}
 
 <div class="gv-total">TOTAL {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
-<div class="epp-sig sig">Authorized Signature _________________________</div><div class="epp-footer footer">Thank you for your business</div>
+<div class="epp-sig sig">Authorized Signature _________________________</div>
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+<div class="epp-footer footer">Thank you for your business</div>
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

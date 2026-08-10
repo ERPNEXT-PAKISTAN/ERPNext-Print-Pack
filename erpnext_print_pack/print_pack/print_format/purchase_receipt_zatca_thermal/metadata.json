@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "8594f2ae28296cb4a6bfe9f1970d15b2dcb8f76e7409ce9e4ee416a35e56493c",
+  "checksum": "db069160ea375a2d35b445d264bc5d9319d485047ca6438ffafdcaaaa4da5f5d",
   "description": "ZATCA Thermal Receipt"
 }

@@ -21,7 +21,12 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "d18c5aa015874002c5f9db651427d29e3155b8c386afee419ef1554cac024654",
+  "checksum": "da1d2d7b36952f5462d149d071510a31746c7f472e3b206236f80c7e63c14bf9",
   "description": "Saudi tax invoice \u2014 green, Arabic, VAT, QR"
 }

@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "yellow_sidebar"
+    "yellow_sidebar",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "630b659ed664f773ce83293873f4be24bb328b5cfbcfc084f85a959fcf3cd6f3",
+  "checksum": "dd49d875bf21a02276302f8b0593201c38e982f3417421a84dbe1febbd196015",
   "description": "Yellow accent stripe, structured metadata"
 }

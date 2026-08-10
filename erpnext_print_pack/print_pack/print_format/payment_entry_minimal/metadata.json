@@ -9,7 +9,9 @@
   "languages": [
     "en"
   ],
-  "features": [],
+  "features": [
+    "amount-in-words"
+  ],
   "source_type": "original",
   "source_url": null,
   "source_license": "MIT",
@@ -19,5 +21,5 @@
     "16"
   ],
   "status": "stable",
-  "checksum": "4d6e77e782ace910fb8105d92e45652683bb4f15d7979c8831194e02da64de13"
+  "checksum": "06521c868b9d850bebc762930dec0c9ce1875be90a55453886560d5d50dcd5a5"
 }

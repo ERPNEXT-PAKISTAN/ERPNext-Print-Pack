@@ -24,6 +24,11 @@
   "source_app": "fbr_integration",
   "source_format": "FBR Letterhead-2",
   "status": "stable",
-  "checksum": "67831fea7554a07a25000363dae44b80645d001f0bcc115f3a71acfa25a1067e",
-  "description": "Pakistan FBR sales tax invoice (adapted from FBR Letterhead-2)"
+  "checksum": "8c7034849f51455c595fafd0248f5364b1fa7a3b6c5b6b33da50b532a2a416b8",
+  "description": "Pakistan FBR sales tax invoice (adapted from FBR Letterhead-2)",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ]
 }

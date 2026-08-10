@@ -50,6 +50,8 @@ def main():
 			"features": ["item-detail", "image", "barcode", "purchase-history"],
 			"source_type": "original",
 			"source_license": "MIT",
+			"attribution_required": False,
+			"erpnext_versions": ["15", "16"],
 			"status": "stable",
 			"checksum": checksum(html),
 			"description": label,

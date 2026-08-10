@@ -1,0 +1,25 @@
+{
+  "name": "Executive Payment Entry",
+  "slug": "payment_entry_executive",
+  "doc_type": "Payment Entry",
+  "theme": "executive",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "amount-in-words"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "00a4823e77cd1bf12ae43abfd4ebd265be67f6b917b539e952e0f5d47911c347"
+}

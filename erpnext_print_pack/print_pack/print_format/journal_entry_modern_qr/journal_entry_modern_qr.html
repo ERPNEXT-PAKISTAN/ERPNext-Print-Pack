@@ -2,10 +2,10 @@
 {% set title = "Journal Entry" %}
 {% set date_field = "posting_date" %}
 
-{% set party_label = "Party" %}
+{% set party_label = "Pay to / Received from" %}
 {% set ship_label = "" %}
-{% set party_name = doc.party_name or doc.party or "" %}
-{% set party_address = doc.address_display or "" %}
+{% set party_name = doc.pay_to_recd_from or "" %}
+{% set party_address = "" %}
 {% set ship_address = "" %}
 
 <style>
@@ -33,11 +33,57 @@ small { color: #666; font-size: 9px; }
 <div style="text-align:right"><div class="mq-qr">QR</div><div style="margin-top:6px;font-size:9px">{{ doc.name }}</div></div>
 </div>
 
-<div class="mq-sum">
-<div>Subtotal: {{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</div>
-{% for tax in doc.taxes or [] %}<div>{{ tax.description or "Tax" }}: {{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</div>{% endfor %}
-<div class="g">Due: {{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</div>
-</div>
+{% if doc.accounts %}
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Account</th>
+<th>Party</th>
+<th>Cost Center</th>
+<th>Against</th>
+<th class="r">Debit</th>
+<th class="r">Credit</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.accounts %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.account or "" }}</strong>{% if row.account_type %}<br><small>{{ row.account_type }}</small>{% endif %}{% if row.user_remark %}<br><small>{{ row.user_remark }}</small>{% endif %}</td>
+<td>{{ row.party_type or "" }}{% if row.party %} {{ row.party }}{% endif %}</td>
+<td>{{ row.cost_center or "" }}</td>
+<td>{{ row.against_account or "" }}</td>
+<td class="r">{{ row.get_formatted("debit_in_account_currency") if row.get_formatted is defined else row.debit_in_account_currency or row.debit or "" }}</td>
+<td class="r">{{ row.get_formatted("credit_in_account_currency") if row.get_formatted is defined else row.credit_in_account_currency or row.credit or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
 
+<div class="mq-sum">
+<table class="totals">
+<tr><td>Total Debit</td><td class="r">{{ doc.get_formatted("total_debit") if doc.get_formatted is defined else doc.total_debit or "" }}</td></tr>
+<tr><td>Total Credit</td><td class="r">{{ doc.get_formatted("total_credit") if doc.get_formatted is defined else doc.total_credit or "" }}</td></tr>
+{% if doc.difference %}<tr><td>Difference</td><td class="r">{{ doc.get_formatted("difference") if doc.get_formatted is defined else doc.difference }}</td></tr>{% endif %}
+{% if doc.total_amount %}<tr class="grand"><td>Total Amount</td><td class="r">{{ doc.get_formatted("total_amount") if doc.get_formatted is defined else doc.total_amount }}</td></tr>{% endif %}
+</table>
+{% if doc.total_amount_in_words %}<div class="words">{{ doc.total_amount_in_words }}</div>{% endif %}
+</div>
+{% if doc.in_words %}<div class="words">{{ doc.in_words }}</div>{% endif %}
+
+
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or doc.description or "" %}
+{% if _epp_remark %}
+<div class="epp-remarks remarks" style="margin-top:14px;padding:10px 12px;border:1px solid #d1d5db;border-radius:4px;background:#fafafa">
+<strong>Remarks</strong><br>
+{{ _epp_remark }}
+</div>
+{% endif %}
+
+
+{% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

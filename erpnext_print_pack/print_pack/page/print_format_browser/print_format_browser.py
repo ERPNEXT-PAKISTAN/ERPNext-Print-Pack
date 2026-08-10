@@ -68,12 +68,26 @@ def get_formats(doc_type, show_disabled=1, search=None, layout_filter=None, regi
 		order_by="disabled asc, name asc",
 	)
 
+	# Reliable HTML presence check without loading full HTML blobs into Python.
+	html_flags = {
+		row.name: cint(row.has_html)
+		for row in frappe.db.sql(
+			"""
+			SELECT name, CASE WHEN IFNULL(html, '') != '' THEN 1 ELSE 0 END AS has_html
+			FROM `tabPrint Format`
+			WHERE module = %s AND doc_type = %s
+			""",
+			(APP_MODULE, doc_type),
+			as_dict=True,
+		)
+	}
+
 	default_pf = _default_print_format(doc_type)
 
 	for fmt in formats:
+		fmt["has_html"] = bool(html_flags.get(fmt.name))
 		enrich_format_record(fmt)
 		fmt["is_default"] = fmt.name == default_pf
-		fmt["has_html"] = bool(frappe.db.get_value("Print Format", fmt.name, "html"))
 
 	if layout_filter == "premium":
 		formats = [f for f in formats if f.get("is_premium")]
@@ -172,24 +186,50 @@ def get_document(doc_type, name):
 
 @frappe.whitelist()
 def toggle_disabled(name, disabled=0):
-	"""Enable or disable a print format."""
+	"""Enable or disable a print format.
+
+	If enabling a format with empty HTML, sync HTML from app files first.
+	Draft formats without HTML previously blocked Enable ("HTML is required").
+	"""
 	doc = frappe.get_doc("Print Format", name)
 	doc.check_permission("write")
-	doc.disabled = cint(disabled)
+	disabled = cint(disabled)
+
+	if disabled == 0 and not (doc.html or "").strip():
+		from erpnext_print_pack.print_format_sync import sync_all
+
+		sync_all(
+			print_format_name=name,
+			statuses=("stable", "draft"),
+			include_draft=True,
+			dry_run=False,
+			force=True,
+		)
+		doc.reload()
+		if not (doc.html or "").strip():
+			frappe.throw(
+				frappe._(
+					"This format has no HTML in the Print Pack library. "
+					"Run Sync HTML (Stable) / include drafts from the browser menu."
+				)
+			)
+
+	doc.disabled = disabled
 	doc.save()
-	return {"name": doc.name, "disabled": doc.disabled}
+	return {"name": doc.name, "disabled": doc.disabled, "has_html": bool((doc.html or "").strip())}
 
 
 @frappe.whitelist()
-def sync_formats(include_draft=0):
-	"""Load HTML from app files into Print Format records."""
+def sync_formats(include_draft=1):
+	"""Load HTML from app files into Print Format records (includes drafts by default)."""
 	frappe.only_for("System Manager")
 	from erpnext_print_pack.print_format_sync import sync_all
 
-	statuses = ("stable", "draft") if cint(include_draft) else ("stable",)
+	include_draft = cint(include_draft)
+	statuses = ("stable", "draft") if include_draft else ("stable",)
 	result = sync_all(
 		statuses=statuses,
-		include_draft=cint(include_draft),
+		include_draft=include_draft,
 		dry_run=False,
 		force=False,
 	)

@@ -13,11 +13,17 @@
   ],
   "features": [
     "premium-layout",
-    "vertex_classic"
+    "vertex_classic",
+    "field-rich"
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
-  "checksum": "3dde1f2a86c601d74e37ca8b557828b6c1b25ada95b69a40de5e5d356a242b0c",
+  "checksum": "e339b05ad0460232703adf08e7ffbe285b18eea70c2c72d4c4d77fce1d87626c",
   "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
 }

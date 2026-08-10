@@ -21,6 +21,11 @@
   ],
   "source_type": "original",
   "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
   "status": "stable",
   "checksum": "508c11da51cdfe75bda3da2459bb752e8e19bb43e9087150d98b680f2be2b1f8",
   "description": "ZATCA E-Invoice Specimen"

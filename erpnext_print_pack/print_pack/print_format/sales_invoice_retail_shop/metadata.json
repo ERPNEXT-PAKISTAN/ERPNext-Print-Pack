@@ -1,17 +1,27 @@
 {
- "name": "Retail Shop Sales Invoice",
- "slug": "sales_invoice_retail_shop",
- "doc_type": "Sales Invoice",
- "theme": "retail_shop",
- "layout_family": "retail",
- "sector": "retail_shop",
- "category": "sales",
- "orientation": "portrait",
- "paper_size": "A4",
- "languages": ["en"],
- "features": ["receipt-style", "bold-total"],
- "source_type": "original",
- "source_license": "MIT",
- "status": "stable",
- "erpnext_versions": ["15", "16"]
+  "name": "Retail Shop Sales Invoice",
+  "slug": "sales_invoice_retail_shop",
+  "doc_type": "Sales Invoice",
+  "theme": "retail_shop",
+  "layout_family": "retail",
+  "sector": "retail_shop",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "receipt-style",
+    "bold-total"
+  ],
+  "source_type": "original",
+  "source_license": "MIT",
+  "status": "stable",
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "attribution_required": false,
+  "checksum": "54f2f88a8b84e6bbec9b42c3e051e019aaf866f4a547015b25cde7b037a2af52"
 }

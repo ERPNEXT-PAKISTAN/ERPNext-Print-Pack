@@ -2,7 +2,6 @@
 {% set title = "Batch Label" %}
 {% set date_field = "creation" %}
 <style>
-
 @page {
 	size: A4 portrait;
 	margin: 8mm;
@@ -61,6 +60,6 @@
 
 <div class="epp-box center">{% if doc.name %}<div style="font-family:monospace;letter-spacing:2px">{{ doc.name }}</div>{% endif %}</div>
 
-{% if doc.remarks or doc.notes %}<div class="epp-box">{{ doc.remarks or doc.notes }}</div>{% endif %}
+{% set _epp_remark = doc.remarks or doc.user_remark or doc.remark or doc.custom_remarks or doc.notes or doc.comment or "" %}{% if _epp_remark %}<div class="epp-box epp-remarks remarks" style="margin-top:12px"><div class="bold">Remarks</div><div>{{ _epp_remark }}</div></div>{% endif %}
 
 </div>
