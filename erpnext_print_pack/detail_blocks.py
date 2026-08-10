@@ -145,11 +145,36 @@ def meta_header(profile: DocTypeProfile) -> str:
 		return """
 <table class="meta">
 <tr><td>Work Order</td><td class="r bold">{{ doc.name }}</td></tr>
-<tr><td>Item</td><td class="r">{{ doc.production_item or doc.item_name or "" }}</td></tr>
-<tr><td>Qty</td><td class="r">{{ doc.qty or "" }}</td></tr>
+<tr><td>Status</td><td class="r">{{ doc.status or "" }}</td></tr>
+<tr><td>Item</td><td class="r">{{ doc.production_item or "" }}{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Qty To Manufacture</td><td class="r">{{ doc.qty or "" }} {{ doc.stock_uom or "" }}</td></tr>
+<tr><td>Manufactured Qty</td><td class="r">{{ doc.produced_qty or 0 }}</td></tr>
 {% if doc.bom_no %}<tr><td>BOM</td><td class="r">{{ doc.bom_no }}</td></tr>{% endif %}
+{% if doc.production_plan %}<tr><td>Production Plan</td><td class="r">{{ doc.production_plan }}</td></tr>{% endif %}
+{% if doc.sales_order %}<tr><td>Sales Order</td><td class="r">{{ doc.sales_order }}</td></tr>{% endif %}
+{% if doc.wip_warehouse %}<tr><td>WIP Warehouse</td><td class="r">{{ doc.wip_warehouse }}</td></tr>{% endif %}
+{% if doc.fg_warehouse %}<tr><td>Target Warehouse</td><td class="r">{{ doc.fg_warehouse }}</td></tr>{% endif %}
+{% if doc.source_warehouse %}<tr><td>Source Warehouse</td><td class="r">{{ doc.source_warehouse }}</td></tr>{% endif %}
 {% if doc.planned_start_date %}<tr><td>Planned Start</td><td class="r">{{ frappe.utils.format_datetime(doc.planned_start_date) }}</td></tr>{% endif %}
-{% if doc.status %}<tr><td>Status</td><td class="r">{{ doc.status }}</td></tr>{% endif %}
+{% if doc.planned_end_date %}<tr><td>Planned End</td><td class="r">{{ frappe.utils.format_datetime(doc.planned_end_date) }}</td></tr>{% endif %}
+{% if doc.actual_start_date %}<tr><td>Actual Start</td><td class="r">{{ frappe.utils.format_datetime(doc.actual_start_date) }}</td></tr>{% endif %}
+{% if doc.actual_end_date %}<tr><td>Actual End</td><td class="r">{{ frappe.utils.format_datetime(doc.actual_end_date) }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
+</table>
+"""
+	if dt == "Production Plan":
+		return """
+<table class="meta">
+<tr><td>Production Plan</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Date</td><td class="r">{{ frappe.utils.formatdate(doc.posting_date) if doc.posting_date else "" }}</td></tr>
+<tr><td>Status</td><td class="r">{{ doc.status or "" }}</td></tr>
+{% if doc.get_items_from %}<tr><td>Get Items From</td><td class="r">{{ doc.get_items_from }}</td></tr>{% endif %}
+{% if doc.customer %}<tr><td>Customer</td><td class="r">{{ doc.customer }}</td></tr>{% endif %}
+{% if doc.warehouse or doc.for_warehouse %}<tr><td>Warehouse</td><td class="r">{{ doc.for_warehouse or doc.warehouse or "" }}</td></tr>{% endif %}
+{% if doc.from_date or doc.to_date %}<tr><td>Period</td><td class="r">{{ frappe.utils.formatdate(doc.from_date) if doc.from_date else "" }}{% if doc.to_date %} → {{ frappe.utils.formatdate(doc.to_date) }}{% endif %}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
+<tr><td>Total Planned Qty</td><td class="r">{{ doc.total_planned_qty or 0 }}</td></tr>
+<tr><td>Total Produced Qty</td><td class="r">{{ doc.total_produced_qty or 0 }}</td></tr>
 </table>
 """
 	due = (
@@ -183,6 +208,10 @@ def detail_table(profile: DocTypeProfile) -> str:
 		return _material_request_items_table()
 	if dt == "Work Order":
 		return _work_order_tables()
+	if dt == "Production Plan":
+		return _production_plan_tables()
+	if dt == "Job Card":
+		return _job_card_tables()
 	if dt == "Salary Slip":
 		return _salary_slip_tables()
 	if dt == "Expense Claim":
@@ -255,6 +284,26 @@ def totals_block(profile: DocTypeProfile) -> str:
 {% if doc.total_additional_costs %}<tr><td>Additional Costs</td><td class="r">{{ doc.get_formatted("total_additional_costs") if doc.get_formatted is defined else doc.total_additional_costs }}</td></tr>{% endif %}
 {% if doc.value_difference %}<tr><td>Value Difference</td><td class="r">{{ doc.get_formatted("value_difference") if doc.get_formatted is defined else doc.value_difference }}</td></tr>{% endif %}
 {% if doc.total_amount %}<tr class="grand"><td>Total Amount</td><td class="r">{{ doc.get_formatted("total_amount") if doc.get_formatted is defined else doc.total_amount }}</td></tr>{% endif %}
+</table>
+"""
+	if dt == "Work Order":
+		return """
+<table class="totals">
+<tr><td>Qty To Manufacture</td><td class="r">{{ doc.qty or 0 }}</td></tr>
+<tr><td>Material Transferred</td><td class="r">{{ doc.material_transferred_for_manufacturing or 0 }}</td></tr>
+<tr><td>Manufactured Qty</td><td class="r">{{ doc.produced_qty or 0 }}</td></tr>
+{% if doc.process_loss_qty %}<tr><td>Process Loss Qty</td><td class="r">{{ doc.process_loss_qty }}</td></tr>{% endif %}
+{% if doc.planned_operating_cost %}<tr><td>Planned Operating Cost</td><td class="r">{{ doc.get_formatted("planned_operating_cost") if doc.get_formatted is defined else doc.planned_operating_cost }}</td></tr>{% endif %}
+{% if doc.actual_operating_cost %}<tr><td>Actual Operating Cost</td><td class="r">{{ doc.get_formatted("actual_operating_cost") if doc.get_formatted is defined else doc.actual_operating_cost }}</td></tr>{% endif %}
+{% if doc.additional_operating_cost %}<tr><td>Additional Operating Cost</td><td class="r">{{ doc.get_formatted("additional_operating_cost") if doc.get_formatted is defined else doc.additional_operating_cost }}</td></tr>{% endif %}
+{% if doc.total_operating_cost %}<tr class="grand"><td>Total Operating Cost</td><td class="r">{{ doc.get_formatted("total_operating_cost") if doc.get_formatted is defined else doc.total_operating_cost }}</td></tr>{% endif %}
+</table>
+"""
+	if dt == "Production Plan":
+		return """
+<table class="totals">
+<tr><td>Total Planned Qty</td><td class="r">{{ doc.total_planned_qty or 0 }}</td></tr>
+<tr class="grand"><td>Total Produced Qty</td><td class="r">{{ doc.total_produced_qty or 0 }}</td></tr>
 </table>
 """
 	if not profile.has_items and not profile.has_taxes:
@@ -476,18 +525,385 @@ def _material_request_items_table() -> str:
 
 def _work_order_tables() -> str:
 	return """
+{% if doc.description %}
+<div style="margin-bottom:8px"><strong>Description</strong><br>{{ doc.description }}</div>
+{% endif %}
 {% if doc.required_items %}
+<div style="margin:10px 0 4px;font-weight:700">Required Items</div>
 <table class="items">
-<thead><tr><th>#</th><th>Required Item</th><th>Source WH</th><th class="r">Required Qty</th><th class="r">Transferred</th><th class="r">Consumed</th></tr></thead>
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Source WH</th>
+<th>Operation</th>
+<th class="r">Required</th>
+<th class="r">Transferred</th>
+<th class="r">Consumed</th>
+<th class="r">Available</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.required_items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.source_warehouse or "" }}</td>
+<td>{{ row.operation or "" }}</td>
+<td class="r">{{ row.required_qty or "" }} {{ row.stock_uom or "" }}</td>
+<td class="r">{{ row.transferred_qty or 0 }}</td>
+<td class="r">{{ row.consumed_qty or 0 }}</td>
+<td class="r">{{ row.available_qty_at_source_warehouse or row.available_qty_at_wip_warehouse or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.operations %}
+<div style="margin:14px 0 4px;font-weight:700">Operations</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Planned Start</th>
+<th>Planned End</th>
+<th class="r">Planned Cost</th>
+<th class="r">Actual Cost</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}{% if row.finished_good %}<br><small>FG: {{ row.finished_good }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.completed_qty or 0 }}{% if row.pending_qty %} / pending {{ row.pending_qty }}{% endif %}</td>
+<td class="r">{{ row.actual_operation_time or row.time_in_mins or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_time) if row.planned_start_time else "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_end_time) if row.planned_end_time else "" }}</td>
+<td class="r">{{ row.get_formatted("planned_operating_cost") if row.get_formatted is defined else row.planned_operating_cost or "" }}</td>
+<td class="r">{{ row.get_formatted("actual_operating_cost") if row.get_formatted is defined else row.actual_operating_cost or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set job_cards = frappe.get_all("Job Card", filters={"work_order": doc.name}, fields=["name", "operation", "workstation", "status", "for_quantity", "total_completed_qty", "total_time_in_mins", "posting_date", "employee"], order_by="creation asc", limit_page_length=100) %}
+{% if job_cards %}
+<div style="margin:14px 0 4px;font-weight:700">Linked Job Cards</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Job Card</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Qty</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for row in job_cards %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.name }}</strong></td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.workstation or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.for_quantity or "" }}</td>
+<td class="r">{{ row.total_completed_qty or 0 }}</td>
+<td class="r">{{ row.total_time_in_mins or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.posting_date) if row.posting_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.non_stock_items %}
+<div style="margin:14px 0 4px;font-weight:700">Additional Costs</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.non_stock_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td class="r">{{ row.rate or "" }}</td>
+<td class="r">{{ row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.secondary_items %}
+<div style="margin:14px 0 4px;font-weight:700">Secondary Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th>Warehouse</th></tr></thead>
+<tbody>
+{% for row in doc.secondary_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td>{{ row.source_warehouse or row.warehouse or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+"""
+
+
+def _production_plan_tables() -> str:
+	return """
+{% if doc.sales_orders %}
+<div style="margin:10px 0 4px;font-weight:700">Sales Orders</div>
+<table class="items">
+<thead><tr><th>#</th><th>Sales Order</th><th>Date</th><th>Customer</th><th>Status</th><th class="r">Grand Total</th></tr></thead>
+<tbody>
+{% for row in doc.sales_orders %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.sales_order or "" }}</strong></td>
+<td>{{ frappe.utils.formatdate(row.sales_order_date) if row.sales_order_date else "" }}</td>
+<td>{{ row.customer or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.get_formatted("grand_total") if row.get_formatted is defined else row.grand_total or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.material_requests %}
+<div style="margin:14px 0 4px;font-weight:700">Material Requests</div>
+<table class="items">
+<thead><tr><th>#</th><th>Material Request</th><th>Date</th></tr></thead>
+<tbody>
+{% for row in doc.material_requests %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.material_request or "" }}</strong></td>
+<td>{{ frappe.utils.formatdate(row.material_request_date) if row.material_request_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.po_items %}
+<div style="margin:14px 0 4px;font-weight:700">Assembly / Production Items</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>BOM</th>
+<th>Warehouse</th>
+<th class="r">Planned Qty</th>
+<th class="r">Pending</th>
+<th class="r">Ordered</th>
+<th class="r">Produced</th>
+<th>Sales Order / MR</th>
+<th>Start Date</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.po_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td>{{ row.warehouse or "" }}</td>
+<td class="r">{{ row.planned_qty or "" }} {{ row.stock_uom or "" }}</td>
+<td class="r">{{ row.pending_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td class="r">{{ row.produced_qty or 0 }}</td>
+<td>{% if row.sales_order %}SO: {{ row.sales_order }}{% endif %}{% if row.material_request %}<br>MR: {{ row.material_request }}{% endif %}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_date) if row.planned_start_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.sub_assembly_items %}
+<div style="margin:14px 0 4px;font-weight:700">Sub Assembly Items</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>BOM</th>
+<th>Type</th>
+<th>Warehouse</th>
+<th class="r">Qty</th>
+<th class="r">Required</th>
+<th class="r">Ordered</th>
+<th class="r">Produced</th>
+<th>Supplier / SO</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.sub_assembly_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.production_item or row.item_name or "" }}</strong>{% if row.parent_item_code %}<br><small>Parent: {{ row.parent_item_code }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td>{{ row.type_of_manufacturing or "" }}</td>
+<td>{{ row.fg_warehouse or "" }}</td>
+<td class="r">{{ row.qty or "" }} {{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.required_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td class="r">{{ row.wo_produced_qty or 0 }}</td>
+<td>{% if row.supplier %}{{ row.supplier }}{% endif %}{% if row.sales_order %}<br>SO: {{ row.sales_order }}{% endif %}{% if row.purchase_order %}<br>PO: {{ row.purchase_order }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.mr_items %}
+<div style="margin:14px 0 4px;font-weight:700">Raw Materials</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Warehouse</th>
+<th>MR Type</th>
+<th class="r">Required Qty</th>
+<th class="r">Projected</th>
+<th class="r">Actual</th>
+<th class="r">Requested</th>
+<th class="r">Ordered</th>
+<th>Sales Order</th>
+<th>Schedule</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.mr_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.main_item_code %}<br><small>For: {{ row.main_item_code }}</small>{% endif %}</td>
+<td>{{ row.warehouse or row.from_warehouse or "" }}</td>
+<td>{{ row.material_request_type or "" }}</td>
+<td class="r">{{ row.quantity or row.required_bom_qty or "" }} {{ row.uom or "" }}</td>
+<td class="r">{{ row.projected_qty or 0 }}</td>
+<td class="r">{{ row.actual_qty or 0 }}</td>
+<td class="r">{{ row.requested_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td>{{ row.sales_order or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.schedule_date) if row.schedule_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set work_orders = frappe.get_all("Work Order", filters={"production_plan": doc.name}, fields=["name", "production_item", "item_name", "qty", "produced_qty", "status", "bom_no", "planned_start_date"], order_by="creation asc", limit_page_length=100) %}
+{% if work_orders %}
+<div style="margin:14px 0 4px;font-weight:700">Linked Work Orders</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Work Order</th>
+<th>Item</th>
+<th>BOM</th>
+<th class="r">Qty</th>
+<th class="r">Produced</th>
+<th>Status</th>
+<th>Planned Start</th>
+</tr>
+</thead>
+<tbody>
+{% for row in work_orders %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.name }}</strong></td>
+<td>{{ row.production_item or "" }}{% if row.item_name %}<br><small>{{ row.item_name }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td class="r">{{ row.produced_qty or 0 }}</td>
+<td>{{ row.status or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_date) if row.planned_start_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+"""
+
+
+def _job_card_tables() -> str:
+	return """
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Work Order</td><td><strong>{{ doc.work_order or "" }}</strong></td></tr>
+<tr><td>Operation</td><td>{{ doc.operation or "" }}</td></tr>
+<tr><td>Workstation</td><td>{{ doc.workstation or doc.workstation_type or "" }}</td></tr>
+<tr><td>Item</td><td>{{ doc.production_item or doc.finished_good or "" }}{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Qty To Manufacture</td><td>{{ doc.for_quantity or "" }}</td></tr>
+<tr><td>Completed Qty</td><td>{{ doc.total_completed_qty or 0 }}</td></tr>
+<tr><td>Status</td><td>{{ doc.status or "" }}</td></tr>
+{% if doc.bom_no %}<tr><td>BOM</td><td>{{ doc.bom_no }}</td></tr>{% endif %}
+{% if doc.wip_warehouse %}<tr><td>WIP Warehouse</td><td>{{ doc.wip_warehouse }}</td></tr>{% endif %}
+{% if doc.total_time_in_mins %}<tr><td>Total Time (min)</td><td>{{ doc.total_time_in_mins }}</td></tr>{% endif %}
+</tbody>
+</table>
+{% if doc.time_logs %}
+<div style="margin:10px 0 4px;font-weight:700">Time Logs</div>
+<table class="items">
+<thead><tr><th>#</th><th>Employee</th><th>From</th><th>To</th><th class="r">Completed Qty</th><th class="r">Time (min)</th></tr></thead>
+<tbody>
+{% for row in doc.time_logs %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.employee or row.employee_name or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.from_time) if row.from_time else "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.to_time) if row.to_time else "" }}</td>
+<td class="r">{{ row.completed_qty or "" }}</td>
+<td class="r">{{ row.time_in_mins or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.items %}
+<div style="margin:14px 0 4px;font-weight:700">Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th>Source WH</th><th class="r">Required</th><th class="r">Transferred</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or "" }}{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
 <td>{{ row.source_warehouse or "" }}</td>
 <td class="r">{{ row.required_qty or "" }}</td>
 <td class="r">{{ row.transferred_qty or 0 }}</td>
-<td class="r">{{ row.consumed_qty or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.sub_operations %}
+<div style="margin:14px 0 4px;font-weight:700">Sub Operations</div>
+<table class="items">
+<thead><tr><th>#</th><th>Operation</th><th>Status</th><th class="r">Completed</th></tr></thead>
+<tbody>
+{% for row in doc.sub_operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.completed_qty or 0 }}</td>
 </tr>
 {% endfor %}
 </tbody>

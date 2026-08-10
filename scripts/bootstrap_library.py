@@ -145,6 +145,12 @@ def pick_components(profile, theme: str) -> list[str]:
 		parts += ["header_basic", "items_stock_entry", "totals_stock_entry", "signature_multi", "notes_block", "footer_basic"]
 	elif profile.doc_type == "Expense Claim":
 		parts += ["header_document_number", "items_expense_claim", "totals_expense_claim", "signature_multi", "notes_block", "footer_basic"]
+	elif profile.doc_type == "Work Order":
+		parts += ["header_document_number", "items_work_order", "totals_work_order", "signature_multi", "notes_block", "footer_basic"]
+	elif profile.doc_type == "Production Plan":
+		parts += ["header_document_number", "items_production_plan", "totals_production_plan", "signature_multi", "notes_block", "footer_basic"]
+	elif profile.doc_type == "Job Card":
+		parts += ["header_document_number", "items_job_card", "signature_single", "notes_block", "footer_basic"]
 	elif profile.doc_type in ("Item", "Batch", "Serial No"):
 		parts += ["header_compact", "barcode_block", "notes_block"]
 	else:

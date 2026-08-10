@@ -1,0 +1,10 @@
+<table class="totals">
+<tr><td>Qty To Manufacture</td><td class="r">{{ doc.qty or 0 }}</td></tr>
+<tr><td>Material Transferred</td><td class="r">{{ doc.material_transferred_for_manufacturing or 0 }}</td></tr>
+<tr><td>Manufactured Qty</td><td class="r">{{ doc.produced_qty or 0 }}</td></tr>
+{% if doc.process_loss_qty %}<tr><td>Process Loss Qty</td><td class="r">{{ doc.process_loss_qty }}</td></tr>{% endif %}
+{% if doc.planned_operating_cost %}<tr><td>Planned Operating Cost</td><td class="r">{{ doc.get_formatted("planned_operating_cost") if doc.get_formatted is defined else doc.planned_operating_cost }}</td></tr>{% endif %}
+{% if doc.actual_operating_cost %}<tr><td>Actual Operating Cost</td><td class="r">{{ doc.get_formatted("actual_operating_cost") if doc.get_formatted is defined else doc.actual_operating_cost }}</td></tr>{% endif %}
+{% if doc.additional_operating_cost %}<tr><td>Additional Operating Cost</td><td class="r">{{ doc.get_formatted("additional_operating_cost") if doc.get_formatted is defined else doc.additional_operating_cost }}</td></tr>{% endif %}
+{% if doc.total_operating_cost %}<tr class="grand"><td>Total Operating Cost</td><td class="r">{{ doc.get_formatted("total_operating_cost") if doc.get_formatted is defined else doc.total_operating_cost }}</td></tr>{% endif %}
+</table>

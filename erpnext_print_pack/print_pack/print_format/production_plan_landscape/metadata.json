@@ -1,0 +1,25 @@
+{
+  "name": "Landscape Production Plan",
+  "slug": "production_plan_landscape",
+  "doc_type": "Production Plan",
+  "theme": "landscape",
+  "category": "manufacturing",
+  "orientation": "landscape",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "landscape"
+  ],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "fef66582e79bce816511ee31032419c1fb19a121bf3352779c98ac5b2cf43f2e"
+}

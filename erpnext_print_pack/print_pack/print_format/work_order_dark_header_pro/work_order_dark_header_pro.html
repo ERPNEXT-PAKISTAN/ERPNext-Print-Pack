@@ -42,23 +42,153 @@ small { color: #666; font-size: 9px; }
 <td>{% if ship_label %}<div class="lbl">{{ ship_label }}</div>{{ ship_address }}{% endif %}</td>
 </tr></table>
 
+{% if doc.description %}
+<div style="margin-bottom:8px"><strong>Description</strong><br>{{ doc.description }}</div>
+{% endif %}
 {% if doc.required_items %}
+<div style="margin:10px 0 4px;font-weight:700">Required Items</div>
 <table class="items">
-<thead><tr><th>#</th><th>Required Item</th><th>Source WH</th><th class="r">Required Qty</th><th class="r">Transferred</th><th class="r">Consumed</th></tr></thead>
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Source WH</th>
+<th>Operation</th>
+<th class="r">Required</th>
+<th class="r">Transferred</th>
+<th class="r">Consumed</th>
+<th class="r">Available</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.required_items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
 <td>{{ row.source_warehouse or "" }}</td>
-<td class="r">{{ row.required_qty or "" }}</td>
+<td>{{ row.operation or "" }}</td>
+<td class="r">{{ row.required_qty or "" }} {{ row.stock_uom or "" }}</td>
 <td class="r">{{ row.transferred_qty or 0 }}</td>
 <td class="r">{{ row.consumed_qty or 0 }}</td>
+<td class="r">{{ row.available_qty_at_source_warehouse or row.available_qty_at_wip_warehouse or 0 }}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
 {% endif %}
+{% if doc.operations %}
+<div style="margin:14px 0 4px;font-weight:700">Operations</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Planned Start</th>
+<th>Planned End</th>
+<th class="r">Planned Cost</th>
+<th class="r">Actual Cost</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}{% if row.finished_good %}<br><small>FG: {{ row.finished_good }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.completed_qty or 0 }}{% if row.pending_qty %} / pending {{ row.pending_qty }}{% endif %}</td>
+<td class="r">{{ row.actual_operation_time or row.time_in_mins or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_time) if row.planned_start_time else "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_end_time) if row.planned_end_time else "" }}</td>
+<td class="r">{{ row.get_formatted("planned_operating_cost") if row.get_formatted is defined else row.planned_operating_cost or "" }}</td>
+<td class="r">{{ row.get_formatted("actual_operating_cost") if row.get_formatted is defined else row.actual_operating_cost or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set job_cards = frappe.get_all("Job Card", filters={"work_order": doc.name}, fields=["name", "operation", "workstation", "status", "for_quantity", "total_completed_qty", "total_time_in_mins", "posting_date", "employee"], order_by="creation asc", limit_page_length=100) %}
+{% if job_cards %}
+<div style="margin:14px 0 4px;font-weight:700">Linked Job Cards</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Job Card</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Qty</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for row in job_cards %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.name }}</strong></td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.workstation or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.for_quantity or "" }}</td>
+<td class="r">{{ row.total_completed_qty or 0 }}</td>
+<td class="r">{{ row.total_time_in_mins or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.posting_date) if row.posting_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.non_stock_items %}
+<div style="margin:14px 0 4px;font-weight:700">Additional Costs</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.non_stock_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td class="r">{{ row.rate or "" }}</td>
+<td class="r">{{ row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.secondary_items %}
+<div style="margin:14px 0 4px;font-weight:700">Secondary Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th>Warehouse</th></tr></thead>
+<tbody>
+{% for row in doc.secondary_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td>{{ row.source_warehouse or row.warehouse or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<table class="totals">
+<tr><td>Qty To Manufacture</td><td class="r">{{ doc.qty or 0 }}</td></tr>
+<tr><td>Material Transferred</td><td class="r">{{ doc.material_transferred_for_manufacturing or 0 }}</td></tr>
+<tr><td>Manufactured Qty</td><td class="r">{{ doc.produced_qty or 0 }}</td></tr>
+{% if doc.process_loss_qty %}<tr><td>Process Loss Qty</td><td class="r">{{ doc.process_loss_qty }}</td></tr>{% endif %}
+{% if doc.planned_operating_cost %}<tr><td>Planned Operating Cost</td><td class="r">{{ doc.get_formatted("planned_operating_cost") if doc.get_formatted is defined else doc.planned_operating_cost }}</td></tr>{% endif %}
+{% if doc.actual_operating_cost %}<tr><td>Actual Operating Cost</td><td class="r">{{ doc.get_formatted("actual_operating_cost") if doc.get_formatted is defined else doc.actual_operating_cost }}</td></tr>{% endif %}
+{% if doc.additional_operating_cost %}<tr><td>Additional Operating Cost</td><td class="r">{{ doc.get_formatted("additional_operating_cost") if doc.get_formatted is defined else doc.additional_operating_cost }}</td></tr>{% endif %}
+{% if doc.total_operating_cost %}<tr class="grand"><td>Total Operating Cost</td><td class="r">{{ doc.get_formatted("total_operating_cost") if doc.get_formatted is defined else doc.total_operating_cost }}</td></tr>{% endif %}
+</table>
 
 
 

@@ -33,6 +33,73 @@ small { color: #666; font-size: 9px; }
 <div style="text-align:right"><div class="mq-qr">QR</div><div style="margin-top:6px;font-size:9px">{{ doc.name }}</div></div>
 </div>
 
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Work Order</td><td><strong>{{ doc.work_order or "" }}</strong></td></tr>
+<tr><td>Operation</td><td>{{ doc.operation or "" }}</td></tr>
+<tr><td>Workstation</td><td>{{ doc.workstation or doc.workstation_type or "" }}</td></tr>
+<tr><td>Item</td><td>{{ doc.production_item or doc.finished_good or "" }}{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Qty To Manufacture</td><td>{{ doc.for_quantity or "" }}</td></tr>
+<tr><td>Completed Qty</td><td>{{ doc.total_completed_qty or 0 }}</td></tr>
+<tr><td>Status</td><td>{{ doc.status or "" }}</td></tr>
+{% if doc.bom_no %}<tr><td>BOM</td><td>{{ doc.bom_no }}</td></tr>{% endif %}
+{% if doc.wip_warehouse %}<tr><td>WIP Warehouse</td><td>{{ doc.wip_warehouse }}</td></tr>{% endif %}
+{% if doc.total_time_in_mins %}<tr><td>Total Time (min)</td><td>{{ doc.total_time_in_mins }}</td></tr>{% endif %}
+</tbody>
+</table>
+{% if doc.time_logs %}
+<div style="margin:10px 0 4px;font-weight:700">Time Logs</div>
+<table class="items">
+<thead><tr><th>#</th><th>Employee</th><th>From</th><th>To</th><th class="r">Completed Qty</th><th class="r">Time (min)</th></tr></thead>
+<tbody>
+{% for row in doc.time_logs %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.employee or row.employee_name or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.from_time) if row.from_time else "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.to_time) if row.to_time else "" }}</td>
+<td class="r">{{ row.completed_qty or "" }}</td>
+<td class="r">{{ row.time_in_mins or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.items %}
+<div style="margin:14px 0 4px;font-weight:700">Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th>Source WH</th><th class="r">Required</th><th class="r">Transferred</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or "" }}{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td>{{ row.source_warehouse or "" }}</td>
+<td class="r">{{ row.required_qty or "" }}</td>
+<td class="r">{{ row.transferred_qty or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.sub_operations %}
+<div style="margin:14px 0 4px;font-weight:700">Sub Operations</div>
+<table class="items">
+<thead><tr><th>#</th><th>Operation</th><th>Status</th><th class="r">Completed</th></tr></thead>
+<tbody>
+{% for row in doc.sub_operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.completed_qty or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
 <div class="mq-sum"></div>
 
 

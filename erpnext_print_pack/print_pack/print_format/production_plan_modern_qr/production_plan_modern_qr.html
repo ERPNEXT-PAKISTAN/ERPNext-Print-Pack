@@ -33,31 +33,173 @@ small { color: #666; font-size: 9px; }
 <div style="text-align:right"><div class="mq-qr">QR</div><div style="margin-top:6px;font-size:9px">{{ doc.name }}</div></div>
 </div>
 
-{% if doc.items %}
+{% if doc.sales_orders %}
+<div style="margin:10px 0 4px;font-weight:700">Sales Orders</div>
+<table class="items">
+<thead><tr><th>#</th><th>Sales Order</th><th>Date</th><th>Customer</th><th>Status</th><th class="r">Grand Total</th></tr></thead>
+<tbody>
+{% for row in doc.sales_orders %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.sales_order or "" }}</strong></td>
+<td>{{ frappe.utils.formatdate(row.sales_order_date) if row.sales_order_date else "" }}</td>
+<td>{{ row.customer or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.get_formatted("grand_total") if row.get_formatted is defined else row.grand_total or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.material_requests %}
+<div style="margin:14px 0 4px;font-weight:700">Material Requests</div>
+<table class="items">
+<thead><tr><th>#</th><th>Material Request</th><th>Date</th></tr></thead>
+<tbody>
+{% for row in doc.material_requests %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.material_request or "" }}</strong></td>
+<td>{{ frappe.utils.formatdate(row.material_request_date) if row.material_request_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.po_items %}
+<div style="margin:14px 0 4px;font-weight:700">Assembly / Production Items</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>BOM</th>
+<th>Warehouse</th>
+<th class="r">Planned Qty</th>
+<th class="r">Pending</th>
+<th class="r">Ordered</th>
+<th class="r">Produced</th>
+<th>Sales Order / MR</th>
+<th>Start Date</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.po_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td>{{ row.warehouse or "" }}</td>
+<td class="r">{{ row.planned_qty or "" }} {{ row.stock_uom or "" }}</td>
+<td class="r">{{ row.pending_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td class="r">{{ row.produced_qty or 0 }}</td>
+<td>{% if row.sales_order %}SO: {{ row.sales_order }}{% endif %}{% if row.material_request %}<br>MR: {{ row.material_request }}{% endif %}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_date) if row.planned_start_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.sub_assembly_items %}
+<div style="margin:14px 0 4px;font-weight:700">Sub Assembly Items</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>BOM</th>
+<th>Type</th>
+<th>Warehouse</th>
+<th class="r">Qty</th>
+<th class="r">Required</th>
+<th class="r">Ordered</th>
+<th class="r">Produced</th>
+<th>Supplier / SO</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.sub_assembly_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.production_item or row.item_name or "" }}</strong>{% if row.parent_item_code %}<br><small>Parent: {{ row.parent_item_code }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td>{{ row.type_of_manufacturing or "" }}</td>
+<td>{{ row.fg_warehouse or "" }}</td>
+<td class="r">{{ row.qty or "" }} {{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.required_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td class="r">{{ row.wo_produced_qty or 0 }}</td>
+<td>{% if row.supplier %}{{ row.supplier }}{% endif %}{% if row.sales_order %}<br>SO: {{ row.sales_order }}{% endif %}{% if row.purchase_order %}<br>PO: {{ row.purchase_order }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.mr_items %}
+<div style="margin:14px 0 4px;font-weight:700">Raw Materials</div>
 <table class="items">
 <thead>
 <tr>
 <th>#</th>
 <th>Item</th>
 <th>Warehouse</th>
-<th class="r">Qty</th>
-<th>UOM</th>
-<th>Batch / Serial</th>
-<th class="r">Rate</th>
-<th class="r">Amount</th>
+<th>MR Type</th>
+<th class="r">Required Qty</th>
+<th class="r">Projected</th>
+<th class="r">Actual</th>
+<th class="r">Requested</th>
+<th class="r">Ordered</th>
+<th>Sales Order</th>
+<th>Schedule</th>
 </tr>
 </thead>
 <tbody>
-{% for row in doc.items %}
+{% for row in doc.mr_items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_code or row.item_name or "" }}</strong>{% if row.item_name and row.item_name != row.item_code %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
-<td>{{ row.warehouse or row.s_warehouse or row.t_warehouse or row.target_warehouse or "" }}</td>
-<td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or row.required_qty or "" }}</td>
-<td>{{ row.uom or row.stock_uom or "" }}</td>
-<td>{% if row.batch_no %}{{ row.batch_no }}{% endif %}{% if row.serial_no %}<br><small>{{ row.serial_no }}</small>{% endif %}</td>
-<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or row.basic_rate or "" }}</td>
-<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or row.basic_amount or "" }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.main_item_code %}<br><small>For: {{ row.main_item_code }}</small>{% endif %}</td>
+<td>{{ row.warehouse or row.from_warehouse or "" }}</td>
+<td>{{ row.material_request_type or "" }}</td>
+<td class="r">{{ row.quantity or row.required_bom_qty or "" }} {{ row.uom or "" }}</td>
+<td class="r">{{ row.projected_qty or 0 }}</td>
+<td class="r">{{ row.actual_qty or 0 }}</td>
+<td class="r">{{ row.requested_qty or 0 }}</td>
+<td class="r">{{ row.ordered_qty or 0 }}</td>
+<td>{{ row.sales_order or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.schedule_date) if row.schedule_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set work_orders = frappe.get_all("Work Order", filters={"production_plan": doc.name}, fields=["name", "production_item", "item_name", "qty", "produced_qty", "status", "bom_no", "planned_start_date"], order_by="creation asc", limit_page_length=100) %}
+{% if work_orders %}
+<div style="margin:14px 0 4px;font-weight:700">Linked Work Orders</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Work Order</th>
+<th>Item</th>
+<th>BOM</th>
+<th class="r">Qty</th>
+<th class="r">Produced</th>
+<th>Status</th>
+<th>Planned Start</th>
+</tr>
+</thead>
+<tbody>
+{% for row in work_orders %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.name }}</strong></td>
+<td>{{ row.production_item or "" }}{% if row.item_name %}<br><small>{{ row.item_name }}</small>{% endif %}</td>
+<td>{{ row.bom_no or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td class="r">{{ row.produced_qty or 0 }}</td>
+<td>{{ row.status or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_date) if row.planned_start_date else "" }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -66,9 +208,8 @@ small { color: #666; font-size: 9px; }
 
 <div class="mq-sum">
 <table class="totals">
-<tr><td>Total</td><td class="r">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or doc.total_amount or "" }}</td></tr>
-{% if doc.rounded_total %}<tr><td>Rounded Total</td><td class="r">{{ doc.get_formatted("rounded_total") if doc.get_formatted is defined else doc.rounded_total }}</td></tr>{% endif %}
-{% if doc.outstanding_amount %}<tr><td>Outstanding</td><td class="r">{{ doc.get_formatted("outstanding_amount") if doc.get_formatted is defined else doc.outstanding_amount }}</td></tr>{% endif %}
+<tr><td>Total Planned Qty</td><td class="r">{{ doc.total_planned_qty or 0 }}</td></tr>
+<tr class="grand"><td>Total Produced Qty</td><td class="r">{{ doc.total_produced_qty or 0 }}</td></tr>
 </table>
 </div>
 

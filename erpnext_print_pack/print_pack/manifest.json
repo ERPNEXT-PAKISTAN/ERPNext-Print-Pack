@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-08-11",
-  "total_formats": 995,
+  "total_formats": 1001,
   "formats": [
     {
       "name": "Barcode Enabled Batch Label",
@@ -6313,7 +6313,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a1f2728c2fdf01c22c9a68d84d9d0ae2ccc436b2437b2ab3e5663ea0016f5216",
+      "checksum": "e13e448c787ee72431500bccdbefac346797c7737c1a5f1212bff119a8f799fa",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -6399,7 +6399,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "2ecb4b1c55de04adeb276073d17811b257ea819d80386ed81846ebe3fdf27db0"
+      "checksum": "ff56f935dfc41fa2fd44d327861cf78081078d6327694a2add89dffb18c5e72e"
     },
     {
       "name": "Landscape Job Card",
@@ -6447,7 +6447,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "ef959ab89f2db41c5868cdb226b1bf173769126f1d664e46eb44f76261c23c92"
+      "checksum": "1d51870915bf91ea462ccf7d96eed31270874e2676a1158d21a9a336797dc0d6"
     },
     {
       "name": "Minimal Job Card",
@@ -6470,7 +6470,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b172ec90d34d8cbb5619ce6b4d7cfa13ea1b077eee655835acb72c0bcf911a99"
+      "checksum": "b337efddbe4b38ebbcaf1eb2d9a7abfe5b258eb5b1276497b7518e5b96c50f97"
     },
     {
       "name": "Modern Job Card",
@@ -6493,7 +6493,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c843ec0a6909e290837d1bcbd99702d51665d755ff7947639e43366acfb58c83"
+      "checksum": "0236516f294553f60adf1443995df932ced5e7e68e482b26c3f6eb88eb4fa5ae"
     },
     {
       "name": "Modern QR Job Card",
@@ -6521,7 +6521,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "9e83b3a60f9e32fd3a29113dad0b62ab644b4d3363b9cbed3cf40eadb23b1178",
+      "checksum": "0e1db0c874944ae235b4c0c7927c748782ead357c4d8246b257247e0dce0105a",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -6581,7 +6581,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4dfb2b4a7a4e0427f0aaf489a516eb8329bd3353fabc8a66597f17b4f7b50161",
+      "checksum": "ed8c42d93fe49068142d547ed1ba91406b31bbd60e7a7fc9ab0c677133a636e9",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -6610,7 +6610,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "38d8c1364ba92fceeeb22d832bf1e777a59626aec3479b79f5aef88273b9e57c",
+      "checksum": "3e4a002e4806ba38b9f9e89dc5c688e71154f1fe6a2c801ffd439f6a09927154",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -6639,7 +6639,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bf39a7950a23b4ec169784df29377ddd1223e99b88b2739f7fb05780406133ee",
+      "checksum": "ee4d73fabbf42f0e50ab697c3f61f2d6c7e7620dc1bc2338f9acd3a3af5c5620",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -6663,7 +6663,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "dedf4a38766f8061bc07c8d3c1198ec8f913f5824a0c6f4f3b2264975fe43ce6"
+      "checksum": "5214a65bb2e77be6a15809c8f9a990714fdc2ff319cf3921b6467e86d73c1039"
     },
     {
       "name": "Thermal Job Card",
@@ -6716,7 +6716,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "cf723bfbdd4a900221fa9fe5a18819baf37b158fd77a3f44806ed525885b1ae2",
+      "checksum": "e6afe1c1dc45fb45fa7cf444cdd5058833c264d5f3871b43037fce6cd2c63d3d",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -6745,7 +6745,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d41c8b5203fba6ade904dca6ebbdd1866795bdcbd2d35a4686afc81d3cea552d",
+      "checksum": "1e96e529a84bc1899176d864bd642217a62648b077fdf6732db5a9cd10771b87",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -6774,7 +6774,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "f05a4ef0d6295b7505658af516b7c1b2206153c58ad0ebda09886d040fe82d0d",
+      "checksum": "57041e944c7f16dee1bc8f762a311640379d3906260512a78c7c63b1bbc91e98",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -13336,6 +13336,29 @@
       "description": "Clean blue theme, summary balance box"
     },
     {
+      "name": "Compact Production Plan",
+      "slug": "production_plan_compact",
+      "doc_type": "Production Plan",
+      "theme": "compact",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "46b879087929865154cbb8f2e3b109a5c0bbbec619c3e1e9392d7a272eab23ca"
+    },
+    {
       "name": "Crimson Shop Production Plan",
       "slug": "production_plan_crimson_shop",
       "doc_type": "Production Plan",
@@ -13392,7 +13415,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "461c0c13d31e935bdd57bb33af3625f4c80f6efad9b66c3fe9765de8b81e600c",
+      "checksum": "834a3711cc32e94ae0a1b53a770ae12e848f08c69bec4c313657755adee5e94c",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -13425,6 +13448,29 @@
       "status": "stable",
       "checksum": "cae0c39ee2abc7835cddc3bbfbad13c5d6c5d538038458850ebecd79d2040cdc",
       "description": "Bright green modern"
+    },
+    {
+      "name": "Executive Production Plan",
+      "slug": "production_plan_executive",
+      "doc_type": "Production Plan",
+      "theme": "executive",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "0b85f7611def6d52e64b2ad5d046c3e7fbe61046d18c1569c2e6a948bb63a2fe"
     },
     {
       "name": "Gradient Vivid Production Plan",
@@ -13478,7 +13524,32 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "4800c3e7ff81b103eb0b047dcc2ba546e73ac5c763ed5610a6646fd7791178d9"
+      "checksum": "0d45980f877eb57822f22b0a18578c2389dc7145584b1a78e208bb2d053d4b54"
+    },
+    {
+      "name": "Landscape Production Plan",
+      "slug": "production_plan_landscape",
+      "doc_type": "Production Plan",
+      "theme": "landscape",
+      "category": "manufacturing",
+      "orientation": "landscape",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "landscape"
+      ],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "fef66582e79bce816511ee31032419c1fb19a121bf3352779c98ac5b2cf43f2e"
     },
     {
       "name": "Manufacturing Production Plan",
@@ -13501,7 +13572,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "b2a4daa5284b146541e9927562cdcd61ab1802975f50e2a0f63030b9339c70d6"
+      "checksum": "daabe22fa11f86cfb1e9494c09cbd76aab991881fcd1c1c0fd10cc2d94c8f73a"
     },
     {
       "name": "Minimal Production Plan",
@@ -13524,7 +13595,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "d81b1ba2f131b53079e92fa12bc3552d9c68998731417d910b680390373acfab"
+      "checksum": "d84c7c6fee2c3592747f896cf52b919db4a994fb88341c6806fea8246c0652b4"
     },
     {
       "name": "Modern Production Plan",
@@ -13547,7 +13618,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "a0777dff352051d9ed23b8fd269633c973ef461505f4ffb0a125f9339367dd35"
+      "checksum": "0e140c51fe610b717f7df7e5cd2b21db5b3a7bf95e9ad6ee99e825ffbc05ee8b"
     },
     {
       "name": "Modern QR Production Plan",
@@ -13575,7 +13646,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "217e9082fb24626e82aa7acead089b022e73ce77179c07fba870cd8678af32a1",
+      "checksum": "22ca07922c249c3c53b1c657ac2e22e30f1bb9271022afac4f06b5d605d7534c",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -13635,7 +13706,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "7fe25e98855396565e6bbb528d4166f09fc69efb721ec0a12116f2ed9212b89a",
+      "checksum": "21ded16cffad9527484faf19c05b2282bc8cd8e6f5d7c4ec176de4175c6debe1",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -13664,7 +13735,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "418c7a823882ce23c9e628ca9b49813ced82f718dc281cc61c8b3e6f7e2d290f",
+      "checksum": "b213cbfa70b73ea43b3d79affdc921e858dc3da5853db6732a58495c7054e84b",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -13754,8 +13825,56 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c18b3d418276457216c9edcdc8c518211f74553ec9859b6616c2d9f88a3e1361",
+      "checksum": "58f6d375b1bad7fe668b70650fe4e013a0f2799a5d0f1a94a8684956ee69893e",
       "description": "Zebra rows, no vertical borders, airy modern"
+    },
+    {
+      "name": "Technical Production Plan",
+      "slug": "production_plan_technical",
+      "doc_type": "Production Plan",
+      "theme": "technical",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "2840984e61705ac8a0155935b49d079095c847b576e97207a14b3c678aecc370"
+    },
+    {
+      "name": "Thermal Production Plan",
+      "slug": "production_plan_thermal",
+      "doc_type": "Production Plan",
+      "theme": "thermal",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "80mm",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "thermal"
+      ],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "8354f0c040ec759a205ccd9a9376c5ca631403d03b6b2cde2b21c367e58c0966"
     },
     {
       "name": "Vertex Classic Production Plan",
@@ -13783,7 +13902,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "bbdbb951f4129773080a22bd9f22385d605844e20a522cff05713d0e0d35c6a2",
+      "checksum": "44807e8787b0dbb645b4c523e55c06497f3eb141b9887b533a8bb618f0b45292",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -13812,7 +13931,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c83d51d259635bca47281432fb8e076505109aa524f97b086da35e40afb26325",
+      "checksum": "ebce7bf7b59684cd505d599ca24cb3f1970d2f7f83bbcf43a21b7bedb9773e56",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -13841,7 +13960,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "62bf310b7aa58755832944d45c2968491d889d307d37dfa6031c42643341f973",
+      "checksum": "32015dd3170400d9e051e68dde893aa96d5cf09715eaba778c77e97c2515024c",
       "description": "Clean blue theme, summary balance box"
     },
     {
@@ -27453,7 +27572,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "4bfce95bafc3cbfddab7b1772f53b18e56cfcd0bd095215bade5b329ddb1c294",
+      "checksum": "b79501bb25e748a6a0d1e3fe382863cc7f9f633ed01bd7bfa53f31a517c4cc2a",
       "description": "Solid navy header bar, white INVOICE title"
     },
     {
@@ -27486,6 +27605,29 @@
       "status": "stable",
       "checksum": "98863a7fa47dc9d2db6b147637669ffee555fc65a1d92f872ce1d5461afc95d7",
       "description": "Bright green modern"
+    },
+    {
+      "name": "Executive Work Order",
+      "slug": "work_order_executive",
+      "doc_type": "Work Order",
+      "theme": "executive",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [],
+      "source_type": "original",
+      "source_url": null,
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "draft",
+      "checksum": "1f2ad67ab7ee7ae4a3e18d5ed944bcbac7e9f434d98d146d7366cff45685e8bb"
     },
     {
       "name": "Gradient Vivid Work Order",
@@ -27539,7 +27681,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "1b2581506415802377ba2492847a55d38c7a5f1ba8890b43fec58030724b369e"
+      "checksum": "d33695befab1d91ecc347d6a930afafe360a8c9b3231059bf9b03d6c274a9ba4"
     },
     {
       "name": "Landscape Work Order",
@@ -27587,7 +27729,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "0cd153fdbed9656dbe50cb4e5d95f1fc7b003c1042dc00fc53a33c12ad57b78e"
+      "checksum": "4ea0889541c2d74536a39f6b3b7eba4d6b1ef9382ab04ef05e29fada3fd8ee31"
     },
     {
       "name": "Minimal Work Order",
@@ -27610,7 +27752,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "38ad9390e4f87aade9dd8a635924691f856cca7a6d228a4858b4bd729d275897"
+      "checksum": "81fc700a129dc612ff22379b9310c649f3cbbdc09b097bfcb76d1ca7333d7a80"
     },
     {
       "name": "Modern Work Order",
@@ -27633,7 +27775,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "dab502c8aac84e6d2cdd46041dd38171de57419396c5826193b039f121971978"
+      "checksum": "77a12c14b00c4380ea14f0a5adfa3a957eb46bd981b94da9e80138493b0c3c22"
     },
     {
       "name": "Modern QR Work Order",
@@ -27661,7 +27803,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "924a161e77de310144349f0e5ad060d2e7e62a203d5a49a6ee98974a1d060e87",
+      "checksum": "693bb989f635de8fc96d190e206f7bd4c8afbb706507ed771476332d71d011a1",
       "description": "Minimal grid, QR payment block"
     },
     {
@@ -27721,7 +27863,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "47837dd1f5cb52e824721a9882d54d0c8cd4a521e7b2a97a9f3e9e9ad2cfbf74",
+      "checksum": "86ac1e26db45766852d31310dcf76cf5e4cd91f1af33317220bbf08daeccbda9",
       "description": "Bold orange total bar, signature area"
     },
     {
@@ -27750,7 +27892,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "e2535507b1509ba821599804e8b543223e074347be93477313b7253a01ef7d73",
+      "checksum": "d309ddf2f274447cb7cf3f773b35532d05ea63a6ffb54589f3249601eb420c60",
       "description": "Formal tax invoice, purple accent, signature"
     },
     {
@@ -27779,7 +27921,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "b272ae6695493825a55ee96f88f5c1144e7e2a037791231c7ecce980461da7af",
+      "checksum": "69756300a8539ebe479c663e6eff730257e8a63f85bebc506d1f335690704dea",
       "description": "Zebra rows, no vertical borders, airy modern"
     },
     {
@@ -27803,7 +27945,7 @@
         "16"
       ],
       "status": "draft",
-      "checksum": "d89cfad0b10e157303e8c2aed475e835318aec35c434251772ab3cb01cc0aafd"
+      "checksum": "83e8c5d526bb1e0b7720418b9d241cfa4edbd06004a8906219b2aea23d80441a"
     },
     {
       "name": "Thermal Work Order",
@@ -27856,7 +27998,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "c56fad9b342419b15884b861a60efe4c34a6b19b86cd2ca7050ae4a15e8b774a",
+      "checksum": "44c58e7630818f1916e3ba4c6ace7c1091820558051a2d1cafe499916fe848b1",
       "description": "Light blue headers, thin borders \u2014 Excel/Word professional"
     },
     {
@@ -27885,7 +28027,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "12fb557a3e82ea9e427a8bc59e34deaac346beaf657b37784fded124dfc6eb22",
+      "checksum": "1e858bcc63e17a177fc80f95ed160d4676f522cae5aabe36e46a029d3cf99a4b",
       "description": "Yellow accent stripe, structured metadata"
     },
     {
@@ -27914,7 +28056,7 @@
         "16"
       ],
       "status": "stable",
-      "checksum": "808b4c17760846aad93aeaac022f274ac42b36e9d109566209f2d32ce3674da0",
+      "checksum": "3621a1edc384d0de31e31a451c982e305d9831e8cdde34334994dcec20bd1374",
       "description": "Clean blue theme, summary balance box"
     }
   ]

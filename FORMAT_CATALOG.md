@@ -1,11 +1,11 @@
 # Format Catalog
 
-Generated formats: **995**
+Generated formats: **1001**
 
 ## Summary
 
 - Stable: 762
-- Draft: 233
+- Draft: 239
 - DocTypes: 39
 - Themes: 65
 
@@ -32,7 +32,7 @@ Generated formats: **995**
 - Payment Entry: 31
 - Payment Request: 22
 - Pick List: 30
-- Production Plan: 18
+- Production Plan: 23
 - Project: 18
 - Purchase Invoice: 37
 - Purchase Order: 37
@@ -49,7 +49,7 @@ Generated formats: **995**
 - Subcontracting Receipt: 22
 - Supplier Quotation: 32
 - Timesheet: 20
-- Work Order: 20
+- Work Order: 21
 
 ## By Theme
 
@@ -57,13 +57,13 @@ Generated formats: **995**
 - barcode_enabled: 6
 - bilingual: 2
 - clean: 25
-- compact: 37
+- compact: 38
 - corporate: 26
 - crimson_shop: 40
 - dark_header_pro: 40
 - elegant: 5
 - emerald_fresh: 40
-- executive: 6
+- executive: 8
 - executive_corporate: 1
 - gradient_vivid: 40
 - gulf_gold: 11
@@ -71,7 +71,7 @@ Generated formats: **995**
 - industrial: 8
 - item_detail_classic: 1
 - item_detail_professional: 1
-- landscape: 15
+- landscape: 16
 - manufacturing: 10
 - material: 1
 - minimal: 40
@@ -104,8 +104,8 @@ Generated formats: **995**
 - stripe_clean: 40
 - tabler_business: 1
 - tax_focused: 4
-- technical: 23
-- thermal: 18
+- technical: 24
+- thermal: 19
 - uae_einvoice_specimen: 1
 - uae_specimen: 16
 - uae_thermal: 5
@@ -601,11 +601,14 @@ Generated formats: **995**
 | ZATCA E-Invoice Specimen Pick List | Pick List | zatca_specimen | stable | specimen, zatca_specimen, specimen |
 | ZATCA Tax Invoice Pick List | Pick List | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | Zoho Professional Pick List | Pick List | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
+| Compact Production Plan | Production Plan | compact | draft |  |
 | Crimson Shop Production Plan | Production Plan | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Production Plan | Production Plan | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Production Plan | Production Plan | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Executive Production Plan | Production Plan | executive | draft |  |
 | Gradient Vivid Production Plan | Production Plan | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Industrial Production Plan | Production Plan | industrial | draft |  |
+| Landscape Production Plan | Production Plan | landscape | draft | landscape |
 | Manufacturing Production Plan | Production Plan | manufacturing | draft |  |
 | Minimal Production Plan | Production Plan | minimal | stable |  |
 | Modern Production Plan | Production Plan | modern | stable |  |
@@ -615,6 +618,8 @@ Generated formats: **995**
 | Purple Tax Invoice Production Plan | Production Plan | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Production Plan | Production Plan | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Stripe Clean Production Plan | Production Plan | stripe_clean | stable | premium-layout, stripe_clean, field-rich |
+| Technical Production Plan | Production Plan | technical | draft |  |
+| Thermal Production Plan | Production Plan | thermal | draft | thermal |
 | Vertex Classic Production Plan | Production Plan | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Production Plan | Production Plan | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA Tax Invoice Production Plan | Production Plan | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
@@ -1102,6 +1107,7 @@ Generated formats: **995**
 | Crimson Shop Work Order | Work Order | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Work Order | Work Order | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Work Order | Work Order | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Executive Work Order | Work Order | executive | draft |  |
 | Gradient Vivid Work Order | Work Order | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Industrial Work Order | Work Order | industrial | draft |  |
 | Landscape Work Order | Work Order | landscape | draft | landscape |

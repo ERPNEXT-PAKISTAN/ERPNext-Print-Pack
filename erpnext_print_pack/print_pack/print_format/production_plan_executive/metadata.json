@@ -1,0 +1,23 @@
+{
+  "name": "Executive Production Plan",
+  "slug": "production_plan_executive",
+  "doc_type": "Production Plan",
+  "theme": "executive",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [],
+  "source_type": "original",
+  "source_url": null,
+  "source_license": "MIT",
+  "attribution_required": false,
+  "erpnext_versions": [
+    "15",
+    "16"
+  ],
+  "status": "draft",
+  "checksum": "0b85f7611def6d52e64b2ad5d046c3e7fbe61046d18c1569c2e6a948bb63a2fe"
+}
