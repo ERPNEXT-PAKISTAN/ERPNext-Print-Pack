@@ -24,6 +24,6 @@
     "16"
   ],
   "status": "stable",
-  "checksum": "6f83d1f1bab1956fde27b37e93a60ff694ef4720c437bdcac6a0476bc8f56410",
+  "checksum": "b86a3394a9529b95f057147b51c1e7adf5b40dad1f665f84223d17a74b4a7d7d",
   "description": "Minimal grid, QR payment block"
 }

@@ -9,7 +9,7 @@
 {% set ship_address = "" %}
 
 <style>
-@page { size: A4 portrait; margin: 10mm; }
+@page { size: A4 portrait; margin: 8mm; }
 .r { text-align: right; }
 .bold { font-weight: 700; }
 small { color: #666; font-size: 9px; }
@@ -21,25 +21,190 @@ small { color: #666; font-size: 9px; }
 .items td { padding: 6px; border-bottom: 2px solid #d1fae5; }
 .em-total { background: #059669; color: #fff; padding: 12px 18px; border-radius: 20px; width: 44%; margin-left: auto; margin-top: 12px; font-weight: 700; text-align: right; }
 
-.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+
+.root, .epp-root, .sp-root, .print-format {
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+.root *, .epp-root *, .sp-root *, .print-format * {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+table.items, table.epp-table, table.sp-table, table.meta, table.totals, table.epp-totals,
+table.party-grid, table.vx-top {
+	width: 100% !important;
+	max-width: 100% !important;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+table.totals, table.epp-totals {
+	width: 48% !important;
+	margin-left: auto;
+}
+table.items th, table.items td,
+table.epp-table th, table.epp-table td,
+table.sp-table th, table.sp-table td {
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	vertical-align: top;
+	padding: 4px 5px !important;
+	font-size: 9px;
+}
+table.items th, table.epp-table th, table.sp-table th {
+	font-size: 8px;
+	line-height: 1.2;
+}
+.party-box, .epp-box, .sp-card {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 </style>
 <div class="root print-format">
 
 <div class="em-head"><div style="font-size:20px;font-weight:700">{{ title }}</div><div>{{ doc.company or "" }}</div></div>
 <p><strong>{{ party_label }}:</strong> {{ party_name }} — {{ party_address }}</p>
 
+{% if doc.description %}
+<div style="margin-bottom:8px"><strong>Description</strong><br>{{ doc.description }}</div>
+{% endif %}
 {% if doc.required_items %}
+<div style="margin:10px 0 4px;font-weight:700">Required Items</div>
 <table class="items">
-<thead><tr><th>#</th><th>Required Item</th><th>Source WH</th><th class="r">Required Qty</th><th class="r">Transferred</th><th class="r">Consumed</th></tr></thead>
+<thead>
+<tr>
+<th>#</th>
+<th>Item</th>
+<th>Source WH</th>
+<th>Operation</th>
+<th class="r">Required</th>
+<th class="r">Transferred</th>
+<th class="r">Consumed</th>
+<th class="r">Available</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.required_items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != row.item_name %}<br><small>{{ row.description }}</small>{% endif %}</td>
 <td>{{ row.source_warehouse or "" }}</td>
-<td class="r">{{ row.required_qty or "" }}</td>
+<td>{{ row.operation or "" }}</td>
+<td class="r">{{ row.required_qty or "" }} {{ row.stock_uom or "" }}</td>
 <td class="r">{{ row.transferred_qty or 0 }}</td>
 <td class="r">{{ row.consumed_qty or 0 }}</td>
+<td class="r">{{ row.available_qty_at_source_warehouse or row.available_qty_at_wip_warehouse or 0 }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.operations %}
+<div style="margin:14px 0 4px;font-weight:700">Operations</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Planned Start</th>
+<th>Planned End</th>
+<th class="r">Planned Cost</th>
+<th class="r">Actual Cost</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}{% if row.finished_good %}<br><small>FG: {{ row.finished_good }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.completed_qty or 0 }}{% if row.pending_qty %} / pending {{ row.pending_qty }}{% endif %}</td>
+<td class="r">{{ row.actual_operation_time or row.time_in_mins or "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_start_time) if row.planned_start_time else "" }}</td>
+<td>{{ frappe.utils.format_datetime(row.planned_end_time) if row.planned_end_time else "" }}</td>
+<td class="r">{{ row.get_formatted("planned_operating_cost") if row.get_formatted is defined else row.planned_operating_cost or "" }}</td>
+<td class="r">{{ row.get_formatted("actual_operating_cost") if row.get_formatted is defined else row.actual_operating_cost or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% set job_cards = frappe.get_all("Job Card", filters={"work_order": doc.name}, fields=["name", "operation", "workstation", "status", "for_quantity", "total_completed_qty", "total_time_in_mins", "posting_date", "employee"], order_by="creation asc", limit_page_length=100) %}
+{% if job_cards %}
+<div style="margin:14px 0 4px;font-weight:700">Linked Job Cards</div>
+<table class="items">
+<thead>
+<tr>
+<th>#</th>
+<th>Job Card</th>
+<th>Operation</th>
+<th>Workstation</th>
+<th>Status</th>
+<th class="r">Qty</th>
+<th class="r">Completed</th>
+<th class="r">Time (min)</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for row in job_cards %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.name }}</strong></td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.workstation or "" }}</td>
+<td>{{ row.status or "" }}</td>
+<td class="r">{{ row.for_quantity or "" }}</td>
+<td class="r">{{ row.total_completed_qty or 0 }}</td>
+<td class="r">{{ row.total_time_in_mins or "" }}</td>
+<td>{{ frappe.utils.formatdate(row.posting_date) if row.posting_date else "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.non_stock_items %}
+<div style="margin:14px 0 4px;font-weight:700">Additional Costs</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.non_stock_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td class="r">{{ row.rate or "" }}</td>
+<td class="r">{{ row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.secondary_items %}
+<div style="margin:14px 0 4px;font-weight:700">Secondary Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th>Warehouse</th></tr></thead>
+<tbody>
+{% for row in doc.secondary_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.required_qty or row.qty or "" }}</td>
+<td>{{ row.source_warehouse or row.warehouse or "" }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -57,10 +222,7 @@ small { color: #666; font-size: 9px; }
 <div class="epp-footer footer">Thank you for your business</div>
 
 
-{% set _epp_doc_bc = "" %}
-{% if doc.name %}
-  {% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) or "" %}
-{% endif %}
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
 {% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

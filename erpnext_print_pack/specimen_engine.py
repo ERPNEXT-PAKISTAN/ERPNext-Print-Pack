@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from erpnext_print_pack.doctype_profiles import DocTypeProfile
 from erpnext_print_pack.layout_engine import _party_vars
+from erpnext_print_pack.page_fit_css import PAGE_FIT_CSS
 from erpnext_print_pack.print_snippets import DOC_BARCODE_SNIPPET
 
 SPECIMEN_PACKS = {
@@ -85,22 +86,22 @@ def render_specimen(profile: DocTypeProfile, pack_key: str, thermal: bool = Fals
 {{% set doc_label = "{doc_label}" %}}
 {party}
 <style>
-@page {{ size: A4 portrait; margin: 10mm; }}
+@page {{ size: A4 portrait; margin: 8mm; }}
 .sp-root {{ font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; color: #1f2937; }}
-.sp-title {{ font-size: 32px; font-weight: 800; margin: 0 0 8px; }}
+.sp-title {{ font-size: 28px; font-weight: 800; margin: 0 0 8px; }}
 .sp-meta {{ color: #6b7280; font-size: 10px; }} .sp-meta b {{ color: #111; }}
-.sp-badge {{ width: 92px; height: 92px; border: 3px solid {accent}; border-radius: 50%; text-align: center; margin-left: auto; font-weight: 800; color: {accent}; padding-top: 26px; line-height: 1.2; font-size: 10px; }}
-.sp-card {{ background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; width: 48%; display: inline-block; vertical-align: top; min-height: 80px; }}
+.sp-badge {{ width: 84px; height: 84px; border: 3px solid {accent}; border-radius: 50%; text-align: center; margin-left: auto; font-weight: 800; color: {accent}; padding-top: 22px; line-height: 1.2; font-size: 10px; }}
+.sp-card {{ background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 12px; width: 48%; display: inline-block; vertical-align: top; min-height: 72px; }}
 .sp-card .lbl {{ color: {accent}; font-weight: 700; margin-bottom: 6px; }}
-.sp-qr {{ width: 100px; height: 100px; border: 1px solid #e5e7eb; border-radius: 8px; margin: 0 auto; text-align: center; line-height: 100px; color: #9ca3af; }}
-.sp-table {{ width: 100%; border-collapse: collapse; margin: 14px 0; }}
-.sp-table th {{ background: {accent}; color: #fff; padding: 8px 6px; text-align: left; font-size: 9px; }}
-.sp-table td {{ padding: 7px 6px; border-bottom: 1px solid #e5e7eb; font-size: 9px; }}
+.sp-qr {{ width: 96px; height: 96px; border: 1px solid #e5e7eb; border-radius: 8px; margin: 0 auto; text-align: center; line-height: 96px; color: #9ca3af; }}
+.sp-table {{ width: 100%; border-collapse: collapse; margin: 12px 0; table-layout: fixed; }}
+.sp-table th {{ background: {accent}; color: #fff; padding: 6px 4px; text-align: left; font-size: 8px; }}
+.sp-table td {{ padding: 5px 4px; border-bottom: 1px solid #e5e7eb; font-size: 9px; }}
 .r {{ text-align: right; }}
-.sp-bank {{ background: #f9fafb; border-radius: 10px; padding: 12px; border: 1px solid #e5e7eb; }}
+.sp-bank {{ background: #f9fafb; border-radius: 10px; padding: 10px; border: 1px solid #e5e7eb; }}
 .sp-bank .lbl {{ color: {accent}; font-weight: 700; }}
 .epp-sig,.sig,.epp-footer,.footer {{ display: none; }}
-.print-format .sp-table > tbody > tr > td {{ padding: 7px 6px !important; }}
+{PAGE_FIT_CSS}
 </style>
 <div class="sp-root print-format">
 <table style="width:100%;margin-bottom:16px"><tr>
@@ -181,21 +182,22 @@ def _render_payment_specimen(
 {{% set doc_label = "{doc_label}" %}}
 {party}
 <style>
-@page {{ size: A4 portrait; margin: 10mm; }}
+@page {{ size: A4 portrait; margin: 8mm; }}
 .sp-root {{ font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; color: #1f2937; }}
-.sp-title {{ font-size: 32px; font-weight: 800; margin: 0 0 8px; }}
+.sp-title {{ font-size: 28px; font-weight: 800; margin: 0 0 8px; }}
 .sp-meta {{ color: #6b7280; font-size: 10px; }} .sp-meta b {{ color: #111; }}
-.sp-badge {{ width: 92px; height: 92px; border: 3px solid {accent}; border-radius: 50%; text-align: center; margin-left: auto; font-weight: 800; color: {accent}; padding-top: 26px; line-height: 1.2; font-size: 10px; }}
-.sp-card {{ background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; }}
+.sp-badge {{ width: 84px; height: 84px; border: 3px solid {accent}; border-radius: 50%; text-align: center; margin-left: auto; font-weight: 800; color: {accent}; padding-top: 22px; line-height: 1.2; font-size: 10px; }}
+.sp-card {{ background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 12px; }}
 .sp-card .lbl {{ color: {accent}; font-weight: 700; margin-bottom: 6px; }}
 .sp-pay-type {{ font-size: 18px; font-weight: 800; color: {accent}; text-transform: uppercase; }}
 .sp-party-name {{ font-size: 14px; font-weight: 800; display: block; margin: 8px 0 4px; }}
 .sp-pay-amt {{ font-size: 20px; font-weight: 800; color: #111; }}
-.sp-table {{ width: 100%; border-collapse: collapse; margin: 14px 0; }}
-.sp-table th {{ background: {accent}; color: #fff; padding: 8px 6px; text-align: left; font-size: 9px; }}
-.sp-table td {{ padding: 10px 8px; border-bottom: 1px solid #e5e7eb; font-size: 10px; vertical-align: top; }}
+.sp-table {{ width: 100%; border-collapse: collapse; margin: 12px 0; table-layout: fixed; }}
+.sp-table th {{ background: {accent}; color: #fff; padding: 6px 4px; text-align: left; font-size: 8px; }}
+.sp-table td {{ padding: 6px 4px; border-bottom: 1px solid #e5e7eb; font-size: 9px; vertical-align: top; }}
 .r {{ text-align: right; }}
 .epp-sig,.sig,.epp-footer,.footer {{ display: none; }}
+{PAGE_FIT_CSS}
 </style>
 <div class="sp-root print-format">
 <table style="width:100%;margin-bottom:16px"><tr>

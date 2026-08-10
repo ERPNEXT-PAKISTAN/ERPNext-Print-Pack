@@ -1,0 +1,55 @@
+<table class="epp-table" style="margin-bottom:10px"><thead><tr><th style="width:35%">Field</th><th style="width:65%">Value</th></tr></thead><tbody>
+<tr><td>Finished Good</td><td><strong>{{ doc.item or "" }}</strong>{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Output Qty</td><td>{{ doc.quantity or "" }} {{ doc.uom or "" }}</td></tr>
+{% if doc.description %}<tr><td>Description</td><td>{{ doc.description }}</td></tr>{% endif %}
+{% if doc.routing %}<tr><td>Routing</td><td>{{ doc.routing }}</td></tr>{% endif %}
+{% if doc.default_source_warehouse %}<tr><td>Default Source WH</td><td>{{ doc.default_source_warehouse }}</td></tr>{% endif %}
+{% if doc.default_target_warehouse %}<tr><td>Default Target WH</td><td>{{ doc.default_target_warehouse }}</td></tr>{% endif %}
+<tr><td>Flags</td><td>{% if doc.is_active %}Active {% endif %}{% if doc.is_default %}Default {% endif %}{% if doc.with_operations %}With Operations{% endif %}</td></tr>
+</tbody></table>
+{% if doc.items %}<div style="margin:10px 0 4px;font-weight:700">Raw Materials / Components</div>
+<table class="epp-table"><thead><tr>
+<th style="width:4%">#</th><th style="width:28%">Item</th><th style="width:12%">Operation</th><th style="width:14%">Source WH</th>
+<th style="width:10%" class="right">Qty</th><th style="width:8%">UOM</th><th style="width:12%" class="right">Rate</th><th style="width:12%" class="right">Amount</th>
+</tr></thead><tbody>
+{% for row in doc.items %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.bom_no %}<br><small>BOM: {{ row.bom_no }}</small>{% endif %}</td>
+<td>{{ row.operation or "" }}</td><td>{{ row.source_warehouse or "" }}</td>
+<td class="right">{{ row.qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td>
+<td class="right">{{ row.get_formatted("rate") if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="right">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.operations %}<div style="margin:12px 0 4px;font-weight:700">Operations</div>
+<table class="epp-table"><thead><tr>
+<th style="width:4%">#</th><th style="width:22%">Operation</th><th style="width:16%">Workstation</th>
+<th style="width:12%" class="right">Time (min)</th><th style="width:12%" class="right">Hour Rate</th>
+<th style="width:14%" class="right">Operating Cost</th><th style="width:20%">FG / Notes</th>
+</tr></thead><tbody>
+{% for row in doc.operations %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td class="right">{{ row.time_in_mins or "" }}</td>
+<td class="right">{{ row.get_formatted("hour_rate") if row.get_formatted is defined else row.hour_rate or "" }}</td>
+<td class="right">{{ row.get_formatted("operating_cost") if row.get_formatted is defined else row.operating_cost or "" }}</td>
+<td>{% if row.finished_good %}{{ row.finished_good }}{% if row.finished_good_qty %} × {{ row.finished_good_qty }}{% endif %}{% endif %}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.exploded_items %}<div style="margin:12px 0 4px;font-weight:700">Exploded Items</div>
+<table class="epp-table"><thead><tr>
+<th style="width:5%">#</th><th style="width:35%">Item</th><th style="width:15%" class="right">Qty</th>
+<th style="width:10%">UOM</th><th style="width:17%" class="right">Rate</th><th style="width:18%" class="right">Amount</th>
+</tr></thead><tbody>
+{% for row in doc.exploded_items %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td class="right">{{ row.stock_qty or row.qty or "" }}</td><td>{{ row.stock_uom or row.uom or "" }}</td>
+<td class="right">{{ row.rate or "" }}</td><td class="right">{{ row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.secondary_items %}<div style="margin:12px 0 4px;font-weight:700">Secondary Items</div>
+<table class="epp-table"><thead><tr><th>#</th><th>Item</th><th class="right">Qty</th><th>UOM</th><th class="right">Rate</th><th class="right">Amount</th></tr></thead><tbody>
+{% for row in doc.secondary_items %}<tr>
+<td>{{ loop.index }}</td><td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="right">{{ row.qty or "" }}</td><td>{{ row.uom or "" }}</td>
+<td class="right">{{ row.rate or "" }}</td><td class="right">{{ row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}

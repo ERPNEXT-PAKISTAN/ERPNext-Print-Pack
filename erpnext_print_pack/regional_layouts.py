@@ -164,7 +164,11 @@ def render_india_gst(profile: DocTypeProfile) -> str:
 <td><strong>Bill To:</strong> {{ party_name }}<br>{{ party_address }}</td>
 <td style="text-align:right">{{META}}</td>
 </tr></table>
-{% if doc.items %}<table class="items"><thead><tr><th>#</th><th>Item</th><th>HSN</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Tax</th><th class="r">Amount</th></tr></thead><tbody>
+{% if doc.items %}<table class="items"><thead><tr>
+<th style="width:5%">#</th><th style="width:38%">Item</th><th style="width:12%">HSN</th>
+<th style="width:10%" class="r">Qty</th><th style="width:12%" class="r">Rate</th>
+<th style="width:10%" class="r">Tax</th><th style="width:13%" class="r">Amount</th>
+</tr></thead><tbody>
 {% for row in doc.items %}<tr><td>{{ loop.index }}</td><td>{{ row.item_name or row.item_code or "" }}</td><td>{{ row.gst_hsn_code or row.custom_hsn_code or "" }}</td><td class="r">{{ row.qty or "" }}</td><td class="r">{{ row.rate or "" }}</td><td class="r">{{ row.item_tax_rate or "" }}</td><td class="r">{{ row.amount or "" }}</td></tr>{% endfor %}
 </tbody></table>{% endif %}
 {{TOTALS}}{{IN_WORDS}}{{SIG}}{{TERMS}}{{FOOTER}}

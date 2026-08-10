@@ -9,7 +9,7 @@
 {% set ship_address = doc.shipping_address_display or "" %}
 
 <style>
-@page { size: A4 portrait; margin: 10mm; }
+@page { size: A4 portrait; margin: 8mm; }
 .r { text-align: right; }
 .bold { font-weight: 700; }
 small { color: #666; font-size: 9px; }
@@ -24,7 +24,53 @@ small { color: #666; font-size: 9px; }
 .totals { width: 42%; margin-left: auto; margin-top: 10px; }
 .totals .grand td { background: #eab308; color: #fff; font-weight: 700; }
 
-.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+
+.root, .epp-root, .sp-root, .print-format {
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+.root *, .epp-root *, .sp-root *, .print-format * {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+table.items, table.epp-table, table.sp-table, table.meta, table.totals, table.epp-totals,
+table.party-grid, table.vx-top {
+	width: 100% !important;
+	max-width: 100% !important;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+table.totals, table.epp-totals {
+	width: 48% !important;
+	margin-left: auto;
+}
+table.items th, table.items td,
+table.epp-table th, table.epp-table td,
+table.sp-table th, table.sp-table td {
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	vertical-align: top;
+	padding: 4px 5px !important;
+	font-size: 9px;
+}
+table.items th, table.epp-table th, table.sp-table th {
+	font-size: 8px;
+	line-height: 1.2;
+}
+.party-box, .epp-box, .sp-card {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 </style>
 <div class="root print-format">
 
@@ -49,28 +95,24 @@ small { color: #666; font-size: 9px; }
 <table class="items">
 <thead>
 <tr>
-<th>#</th>
-<th>Code</th>
-<th>Description</th>
-<th class="r">Qty</th>
-<th>UOM</th>
-<th class="r">Rate</th>
-<th class="r">Disc%</th>
-
-<th class="r">Amount</th>
+<th style="width:5%">#</th>
+<th style="width:42%">Item</th>
+<th style="width:10%" class="r">Qty</th>
+<th style="width:8%">UOM</th>
+<th style="width:14%" class="r">Rate</th>
+<th style="width:8%" class="r">Disc%</th>
+<th style="width:13%" class="r">Amount</th>
 </tr>
 </thead>
 <tbody>
 {% for row in doc.items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td>{{ row.item_code or "" }}</td>
-<td><strong>{{ row.item_name or row.description or "" }}</strong>{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}{% if row.batch_no %}<br><small>Batch: {{ row.batch_no }}</small>{% endif %}{% if row.serial_no %}<br><small>Serial: {{ row.serial_no }}</small>{% endif %}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}{% if row.batch_no %}<br><small>Batch: {{ row.batch_no }}</small>{% endif %}{% if row.serial_no %}<br><small>Serial: {{ row.serial_no }}</small>{% endif %}</td>
 <td class="r">{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}</td>
 <td>{{ row.uom or row.stock_uom or "" }}</td>
 <td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
 <td class="r">{{ row.discount_percentage or 0 }}</td>
-
 <td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
 </tr>
 {% endfor %}
@@ -79,7 +121,7 @@ small { color: #666; font-size: 9px; }
 {% endif %}
 {% if doc.payment_schedule %}
 <table class="items" style="margin-top:10px">
-<thead><tr><th>Payment Term</th><th>Due Date</th><th class="r">Amount</th></tr></thead>
+<thead><tr><th style="width:40%">Payment Term</th><th style="width:30%">Due Date</th><th style="width:30%" class="r">Amount</th></tr></thead>
 <tbody>
 {% for row in doc.payment_schedule %}
 <tr>

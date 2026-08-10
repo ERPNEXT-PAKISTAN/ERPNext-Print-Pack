@@ -9,7 +9,7 @@
 {% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
 
 <style>
-@page { size: A4 portrait; margin: 10mm; }
+@page { size: A4 portrait; margin: 8mm; }
 .r { text-align: right; }
 .bold { font-weight: 700; }
 small { color: #666; font-size: 9px; }
@@ -23,7 +23,53 @@ small { color: #666; font-size: 9px; }
 .items td { padding: 8px; background: #f0f9ff; border-bottom: 1px solid #bae6fd; }
 .oc-sum { background: #0369a1; color: #fff; border-radius: 12px; padding: 14px 20px; width: 46%; margin-left: auto; margin-top: 14px; text-align: right; font-size: 15px; font-weight: 700; }
 
-.print-format table > tbody > tr > td { padding: 5px 6px !important; }
+
+.root, .epp-root, .sp-root, .print-format {
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+.root *, .epp-root *, .sp-root *, .print-format * {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+table.items, table.epp-table, table.sp-table, table.meta, table.totals, table.epp-totals,
+table.party-grid, table.vx-top {
+	width: 100% !important;
+	max-width: 100% !important;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+table.totals, table.epp-totals {
+	width: 48% !important;
+	margin-left: auto;
+}
+table.items th, table.items td,
+table.epp-table th, table.epp-table td,
+table.sp-table th, table.sp-table td {
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	vertical-align: top;
+	padding: 4px 5px !important;
+	font-size: 9px;
+}
+table.items th, table.epp-table th, table.sp-table th {
+	font-size: 8px;
+	line-height: 1.2;
+}
+.party-box, .epp-box, .sp-card {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 </style>
 <div class="root print-format">
 
@@ -70,10 +116,7 @@ small { color: #666; font-size: 9px; }
 <div class="epp-footer footer">Thank you for your business</div>
 
 
-{% set _epp_doc_bc = "" %}
-{% if doc.name %}
-  {% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) or "" %}
-{% endif %}
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
 {% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 
 </div>

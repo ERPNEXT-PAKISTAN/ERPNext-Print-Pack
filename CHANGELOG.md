@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.2 - 2026-08-11
+
+### BOM print coverage
+- BOM formats show finished good, raw materials/components, operations, exploded/secondary items, and cost totals
+
+### A4 page fit
+- Shared page-fit CSS (`table-layout: fixed`, max-width 100%, word-wrap) for premium, theme, regional, and specimen layouts
+- Sales Invoice item tables slimmed to equal-width columns that stay inside A4
+
 ## 0.5.1 - 2026-08-11
 
 ### Field coverage

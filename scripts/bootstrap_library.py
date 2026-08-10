@@ -60,7 +60,63 @@ COMPONENT_BODIES = {
 	"item_tables/stock_entry.html": """{% if doc.items %}<table class="epp-table"><thead><tr><th>#</th><th>Item</th><th>From WH</th><th>To WH</th><th>Qty</th><th>UOM</th><th>Rate</th><th>Amount</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ loop.index }}</td><td>{{ row.item_code or "" }}{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td><td>{{ row.s_warehouse or "" }}</td><td>{{ row.t_warehouse or "" }}</td><td class="right">{{ row.qty or "" }}</td><td>{{ row.uom or "" }}</td><td class="right">{{ row.basic_rate or row.valuation_rate or "" }}</td><td class="right">{{ row.amount or row.basic_amount or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}{% if doc.additional_costs %}<table class="epp-table" style="margin-top:8px"><thead><tr><th>Expense Account</th><th>Description</th><th>Amount</th></tr></thead><tbody>{% for row in doc.additional_costs %}<tr><td>{{ row.expense_account or "" }}</td><td>{{ row.description or "" }}</td><td class="right">{{ row.amount or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}""",
 	"item_tables/journal_accounts.html": """{% if doc.accounts %}<table class="epp-table"><thead><tr><th>#</th><th>Account</th><th>Party</th><th>Cost Center</th><th>Debit</th><th>Credit</th></tr></thead><tbody>{% for row in doc.accounts %}<tr><td>{{ loop.index }}</td><td>{{ row.account or "" }}{% if row.user_remark %}<br><small>{{ row.user_remark }}</small>{% endif %}</td><td>{{ row.party_type or "" }} {{ row.party or "" }}</td><td>{{ row.cost_center or "" }}</td><td class="right">{{ row.debit_in_account_currency or row.debit or "" }}</td><td class="right">{{ row.credit_in_account_currency or row.credit or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}""",
 	"item_tables/payment_details.html": """<table class="epp-table"><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Payment Type</td><td>{{ doc.payment_type or "" }}</td></tr><tr><td>Party</td><td>{{ doc.party_name or doc.party or "" }} ({{ doc.party_type or "" }})</td></tr><tr><td>Mode of Payment</td><td>{{ doc.mode_of_payment or "" }}</td></tr><tr><td>Paid From</td><td>{{ doc.paid_from or "" }}</td></tr><tr><td>Paid To</td><td>{{ doc.paid_to or "" }}</td></tr><tr><td>Paid Amount</td><td class="right">{{ doc.paid_amount or "" }}</td></tr>{% if doc.received_amount %}<tr><td>Received Amount</td><td class="right">{{ doc.received_amount }}</td></tr>{% endif %}</tbody></table>{% if doc.references %}<table class="epp-table" style="margin-top:8px"><thead><tr><th>Type</th><th>Reference</th><th>Outstanding</th><th>Allocated</th></tr></thead><tbody>{% for row in doc.references %}<tr><td>{{ row.reference_doctype or "" }}</td><td>{{ row.reference_name or "" }}</td><td class="right">{{ row.outstanding_amount or "" }}</td><td class="right">{{ row.allocated_amount or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}{% if doc.deductions %}<table class="epp-table" style="margin-top:8px"><thead><tr><th>Account</th><th>Amount</th></tr></thead><tbody>{% for row in doc.deductions %}<tr><td>{{ row.account or "" }}</td><td class="right">{{ row.amount or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}""",
-	"item_tables/manufacturing.html": """{% if doc.items %}<table class="epp-table"><thead><tr><th>Item</th><th>Qty</th><th>UOM</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ row.item_code or row.item_name or "" }}</td><td class="right">{{ row.qty or row.required_qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}""",
+	"item_tables/manufacturing.html": """{% if doc.items %}<table class="epp-table"><thead><tr><th style="width:5%">#</th><th style="width:45%">Item</th><th style="width:20%" class="right">Qty</th><th style="width:30%">UOM</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ loop.index }}</td><td>{{ row.item_code or row.item_name or "" }}</td><td class="right">{{ row.qty or row.required_qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}""",
+	"item_tables/bom.html": """<table class="epp-table" style="margin-bottom:10px"><thead><tr><th style="width:35%">Field</th><th style="width:65%">Value</th></tr></thead><tbody>
+<tr><td>Finished Good</td><td><strong>{{ doc.item or "" }}</strong>{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Output Qty</td><td>{{ doc.quantity or "" }} {{ doc.uom or "" }}</td></tr>
+{% if doc.description %}<tr><td>Description</td><td>{{ doc.description }}</td></tr>{% endif %}
+{% if doc.routing %}<tr><td>Routing</td><td>{{ doc.routing }}</td></tr>{% endif %}
+{% if doc.default_source_warehouse %}<tr><td>Default Source WH</td><td>{{ doc.default_source_warehouse }}</td></tr>{% endif %}
+{% if doc.default_target_warehouse %}<tr><td>Default Target WH</td><td>{{ doc.default_target_warehouse }}</td></tr>{% endif %}
+<tr><td>Flags</td><td>{% if doc.is_active %}Active {% endif %}{% if doc.is_default %}Default {% endif %}{% if doc.with_operations %}With Operations{% endif %}</td></tr>
+</tbody></table>
+{% if doc.items %}<div style="margin:10px 0 4px;font-weight:700">Raw Materials / Components</div>
+<table class="epp-table"><thead><tr>
+<th style="width:4%">#</th><th style="width:28%">Item</th><th style="width:12%">Operation</th><th style="width:14%">Source WH</th>
+<th style="width:10%" class="right">Qty</th><th style="width:8%">UOM</th><th style="width:12%" class="right">Rate</th><th style="width:12%" class="right">Amount</th>
+</tr></thead><tbody>
+{% for row in doc.items %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.bom_no %}<br><small>BOM: {{ row.bom_no }}</small>{% endif %}</td>
+<td>{{ row.operation or "" }}</td><td>{{ row.source_warehouse or "" }}</td>
+<td class="right">{{ row.qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td>
+<td class="right">{{ row.get_formatted("rate") if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="right">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.operations %}<div style="margin:12px 0 4px;font-weight:700">Operations</div>
+<table class="epp-table"><thead><tr>
+<th style="width:4%">#</th><th style="width:22%">Operation</th><th style="width:16%">Workstation</th>
+<th style="width:12%" class="right">Time (min)</th><th style="width:12%" class="right">Hour Rate</th>
+<th style="width:14%" class="right">Operating Cost</th><th style="width:20%">FG / Notes</th>
+</tr></thead><tbody>
+{% for row in doc.operations %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td class="right">{{ row.time_in_mins or "" }}</td>
+<td class="right">{{ row.get_formatted("hour_rate") if row.get_formatted is defined else row.hour_rate or "" }}</td>
+<td class="right">{{ row.get_formatted("operating_cost") if row.get_formatted is defined else row.operating_cost or "" }}</td>
+<td>{% if row.finished_good %}{{ row.finished_good }}{% if row.finished_good_qty %} × {{ row.finished_good_qty }}{% endif %}{% endif %}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.exploded_items %}<div style="margin:12px 0 4px;font-weight:700">Exploded Items</div>
+<table class="epp-table"><thead><tr>
+<th style="width:5%">#</th><th style="width:35%">Item</th><th style="width:15%" class="right">Qty</th>
+<th style="width:10%">UOM</th><th style="width:17%" class="right">Rate</th><th style="width:18%" class="right">Amount</th>
+</tr></thead><tbody>
+{% for row in doc.exploded_items %}<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td class="right">{{ row.stock_qty or row.qty or "" }}</td><td>{{ row.stock_uom or row.uom or "" }}</td>
+<td class="right">{{ row.rate or "" }}</td><td class="right">{{ row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.secondary_items %}<div style="margin:12px 0 4px;font-weight:700">Secondary Items</div>
+<table class="epp-table"><thead><tr><th>#</th><th>Item</th><th class="right">Qty</th><th>UOM</th><th class="right">Rate</th><th class="right">Amount</th></tr></thead><tbody>
+{% for row in doc.secondary_items %}<tr>
+<td>{{ loop.index }}</td><td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="right">{{ row.qty or "" }}</td><td>{{ row.uom or "" }}</td>
+<td class="right">{{ row.rate or "" }}</td><td class="right">{{ row.amount or "" }}</td>
+</tr>{% endfor %}</tbody></table>{% endif %}""",
+	"totals/bom.html": """<table class="epp-totals" style="width:48%;margin-left:auto"><tr><td>Raw Material Cost</td><td class="right">{{ doc.get_formatted("raw_material_cost") if doc.get_formatted is defined else doc.raw_material_cost or "" }}</td></tr><tr><td>Operating Cost</td><td class="right">{{ doc.get_formatted("operating_cost") if doc.get_formatted is defined else doc.operating_cost or "" }}</td></tr><tr><td class="bold">Total Cost</td><td class="right bold">{{ doc.get_formatted("total_cost") if doc.get_formatted is defined else doc.total_cost or "" }}</td></tr></table>""",
 	"totals/journal.html": """<table class="epp-totals" style="width:45%;margin-left:auto"><tr><td>Total Debit</td><td class="right">{{ doc.total_debit or "" }}</td></tr><tr><td>Total Credit</td><td class="right">{{ doc.total_credit or "" }}</td></tr>{% if doc.total_amount %}<tr><td class="bold">Total Amount</td><td class="right bold">{{ doc.total_amount }}</td></tr>{% endif %}</table>{% if doc.total_amount_in_words %}<div class="epp-box">{{ doc.total_amount_in_words }}</div>{% endif %}""",
 	"totals/payment.html": """<table class="epp-totals" style="width:50%;margin-left:auto"><tr><td>Paid Amount</td><td class="right">{{ doc.paid_amount or "" }}</td></tr>{% if doc.received_amount %}<tr><td>Received Amount</td><td class="right">{{ doc.received_amount }}</td></tr>{% endif %}{% if doc.total_allocated_amount %}<tr><td>Allocated</td><td class="right">{{ doc.total_allocated_amount }}</td></tr>{% endif %}{% if doc.unallocated_amount %}<tr><td>Unallocated</td><td class="right">{{ doc.unallocated_amount }}</td></tr>{% endif %}</table>""",
 	"totals/stock_entry.html": """<table class="epp-totals" style="width:50%;margin-left:auto">{% if doc.total_outgoing_value %}<tr><td>Outgoing Value</td><td class="right">{{ doc.total_outgoing_value }}</td></tr>{% endif %}{% if doc.total_incoming_value %}<tr><td>Incoming Value</td><td class="right">{{ doc.total_incoming_value }}</td></tr>{% endif %}{% if doc.total_additional_costs %}<tr><td>Additional Costs</td><td class="right">{{ doc.total_additional_costs }}</td></tr>{% endif %}{% if doc.total_amount %}<tr><td class="bold">Total Amount</td><td class="right bold">{{ doc.total_amount }}</td></tr>{% endif %}</table>""",
@@ -135,8 +191,8 @@ def pick_components(profile, theme: str) -> list[str]:
 		parts += ["header_logo_left", "party_customer_shipping" if profile.has_party_customer else "party_supplier", "items_basic", "totals_tax_breakdown", "signature_multi", "terms_block"]
 	elif theme == "retail" or theme == "wholesale":
 		parts += ["header_logo_center", "party_bill_to" if profile.has_party_customer else "party_supplier", "items_basic", "totals_basic", "payment_instructions"]
-	elif profile.has_items and profile.category in ("stock", "manufacturing"):
-		parts += ["header_basic", "items_warehouse" if profile.category == "stock" else "items_manufacturing", "totals_basic"]
+	elif profile.doc_type == "BOM":
+		parts += ["header_document_number", "items_bom", "totals_bom", "signature_multi", "notes_block", "footer_basic"]
 	elif profile.doc_type == "Payment Entry":
 		parts += ["header_document_number", "items_payment_details", "totals_payment", "signature_single", "notes_block", "footer_basic"]
 	elif profile.doc_type == "Journal Entry":
@@ -151,6 +207,8 @@ def pick_components(profile, theme: str) -> list[str]:
 		parts += ["header_document_number", "items_production_plan", "totals_production_plan", "signature_multi", "notes_block", "footer_basic"]
 	elif profile.doc_type == "Job Card":
 		parts += ["header_document_number", "items_job_card", "signature_single", "notes_block", "footer_basic"]
+	elif profile.has_items and profile.category in ("stock", "manufacturing"):
+		parts += ["header_basic", "items_warehouse" if profile.category == "stock" else "items_manufacturing", "totals_basic"]
 	elif profile.doc_type in ("Item", "Batch", "Serial No"):
 		parts += ["header_compact", "barcode_block", "notes_block"]
 	else:
@@ -188,7 +246,8 @@ def build_html(profile, theme: str, title: str) -> str:
 {{% set date_field = "{date_field}" %}}
 <style>
 {css}
-.print-format .epp-table > tbody > tr > td {{ padding: 0 !important; }}
+.right {{ text-align: right; }}
+.bold {{ font-weight: 700; }}
 </style>
 <div class="epp-root print-format">
 {chr(10).join(parts)}

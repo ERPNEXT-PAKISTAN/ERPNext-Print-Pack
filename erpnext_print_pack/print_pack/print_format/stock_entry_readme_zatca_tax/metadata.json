@@ -26,6 +26,6 @@
     "16"
   ],
   "status": "stable",
-  "checksum": "a2a69d355c988e662dfb1f6499605bd2f356dfa3bf191111026ef4f9c2e6c454",
+  "checksum": "ee61bd02e39e93f1dddb0e9e41d50c9d74284cfc9c8202beb2d55cf2b24c9d79",
   "description": "Bilingual ZATCA e-invoice \u2014 matches README preview (Arabic/English, QR, VAT blocks)"
 }

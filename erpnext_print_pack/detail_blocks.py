@@ -45,6 +45,14 @@ def party_vars(profile: DocTypeProfile) -> str:
 {% set party_address = doc.address_display or doc.supplier_address or "" %}
 {% set ship_address = "" %}
 """
+	if profile.doc_type == "BOM":
+		return """
+{% set party_label = "Finished Good" %}
+{% set ship_label = "" %}
+{% set party_name = (doc.item_name or doc.item or "") ~ ((" · Qty " ~ doc.quantity ~ ((" " ~ doc.uom) if doc.uom else "")) if doc.quantity else "") %}
+{% set party_address = doc.description or "" %}
+{% set ship_address = "" %}
+"""
 	if profile.has_party_customer:
 		return """
 {% set party_label = "Bill To" %}
@@ -159,6 +167,21 @@ def meta_header(profile: DocTypeProfile) -> str:
 {% if doc.planned_end_date %}<tr><td>Planned End</td><td class="r">{{ frappe.utils.format_datetime(doc.planned_end_date) }}</td></tr>{% endif %}
 {% if doc.actual_start_date %}<tr><td>Actual Start</td><td class="r">{{ frappe.utils.format_datetime(doc.actual_start_date) }}</td></tr>{% endif %}
 {% if doc.actual_end_date %}<tr><td>Actual End</td><td class="r">{{ frappe.utils.format_datetime(doc.actual_end_date) }}</td></tr>{% endif %}
+{% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
+</table>
+"""
+	if dt == "BOM":
+		return """
+<table class="meta">
+<tr><td>BOM</td><td class="r bold">{{ doc.name }}</td></tr>
+<tr><td>Finished Good</td><td class="r">{{ doc.item or "" }}</td></tr>
+<tr><td>Item Name</td><td class="r">{{ doc.item_name or "" }}</td></tr>
+<tr><td>Output Qty</td><td class="r">{{ doc.quantity or "" }} {{ doc.uom or "" }}</td></tr>
+{% if doc.is_active %}<tr><td>Active</td><td class="r">Yes</td></tr>{% endif %}
+{% if doc.is_default %}<tr><td>Default</td><td class="r">Yes</td></tr>{% endif %}
+{% if doc.with_operations %}<tr><td>With Operations</td><td class="r">Yes</td></tr>{% endif %}
+{% if doc.routing %}<tr><td>Routing</td><td class="r">{{ doc.routing }}</td></tr>{% endif %}
+{% if doc.currency %}<tr><td>Currency</td><td class="r">{{ doc.currency }}</td></tr>{% endif %}
 {% if doc.project %}<tr><td>Project</td><td class="r">{{ doc.project }}</td></tr>{% endif %}
 </table>
 """
@@ -304,6 +327,14 @@ def totals_block(profile: DocTypeProfile) -> str:
 <table class="totals">
 <tr><td>Total Planned Qty</td><td class="r">{{ doc.total_planned_qty or 0 }}</td></tr>
 <tr class="grand"><td>Total Produced Qty</td><td class="r">{{ doc.total_produced_qty or 0 }}</td></tr>
+</table>
+"""
+	if dt == "BOM":
+		return """
+<table class="totals">
+<tr><td>Raw Material Cost</td><td class="r">{{ doc.get_formatted("raw_material_cost") if doc.get_formatted is defined else doc.raw_material_cost or "" }}</td></tr>
+<tr><td>Operating Cost</td><td class="r">{{ doc.get_formatted("operating_cost") if doc.get_formatted is defined else doc.operating_cost or "" }}</td></tr>
+<tr class="grand"><td>Total Cost</td><td class="r">{{ doc.get_formatted("total_cost") if doc.get_formatted is defined else doc.total_cost or "" }}</td></tr>
 </table>
 """
 	if not profile.has_items and not profile.has_taxes:
@@ -1022,19 +1053,118 @@ def _timesheet_table() -> str:
 
 def _bom_items_table() -> str:
 	return """
+<table class="items" style="margin-bottom:10px">
+<thead><tr><th>Field</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Finished Good</td><td><strong>{{ doc.item or "" }}</strong>{% if doc.item_name %} · {{ doc.item_name }}{% endif %}</td></tr>
+<tr><td>Output Qty</td><td>{{ doc.quantity or "" }} {{ doc.uom or "" }}</td></tr>
+{% if doc.description %}<tr><td>Description</td><td>{{ doc.description }}</td></tr>{% endif %}
+{% if doc.routing %}<tr><td>Routing</td><td>{{ doc.routing }}</td></tr>{% endif %}
+{% if doc.default_source_warehouse %}<tr><td>Default Source WH</td><td>{{ doc.default_source_warehouse }}</td></tr>{% endif %}
+{% if doc.default_target_warehouse %}<tr><td>Default Target WH</td><td>{{ doc.default_target_warehouse }}</td></tr>{% endif %}
+<tr><td>Flags</td><td>{% if doc.is_active %}Active {% endif %}{% if doc.is_default %}Default {% endif %}{% if doc.with_operations %}With Operations{% endif %}</td></tr>
+</tbody>
+</table>
 {% if doc.items %}
+<div style="margin:12px 0 4px;font-weight:700">Raw Materials / Components</div>
 <table class="items">
-<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th>UOM</th><th class="r">Rate</th><th class="r">Amount</th><th>Source WH</th></tr></thead>
+<thead>
+<tr>
+<th style="width:4%">#</th>
+<th style="width:28%">Item</th>
+<th style="width:12%">Operation</th>
+<th style="width:14%">Source WH</th>
+<th style="width:10%" class="r">Qty</th>
+<th style="width:8%">UOM</th>
+<th style="width:12%" class="r">Rate</th>
+<th style="width:12%" class="r">Amount</th>
+</tr>
+</thead>
 <tbody>
 {% for row in doc.items %}
 <tr>
 <td>{{ loop.index }}</td>
-<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}{% if row.bom_no %}<br><small>BOM: {{ row.bom_no }}</small>{% endif %}</td>
+<td>{{ row.operation or "" }}</td>
+<td>{{ row.source_warehouse or "" }}</td>
 <td class="r">{{ row.qty or "" }}</td>
 <td>{{ row.uom or row.stock_uom or "" }}</td>
+<td class="r">{{ row.get_formatted("rate") if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount") if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.operations %}
+<div style="margin:14px 0 4px;font-weight:700">Operations</div>
+<table class="items">
+<thead>
+<tr>
+<th style="width:4%">#</th>
+<th style="width:22%">Operation</th>
+<th style="width:16%">Workstation</th>
+<th style="width:12%" class="r">Time (min)</th>
+<th style="width:12%" class="r">Hour Rate</th>
+<th style="width:14%" class="r">Operating Cost</th>
+<th style="width:20%">FG / Notes</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.operations %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.operation or "" }}</strong>{% if row.description %}<br><small>{{ row.description }}</small>{% endif %}</td>
+<td>{{ row.workstation or row.workstation_type or "" }}</td>
+<td class="r">{{ row.time_in_mins or "" }}</td>
+<td class="r">{{ row.get_formatted("hour_rate") if row.get_formatted is defined else row.hour_rate or "" }}</td>
+<td class="r">{{ row.get_formatted("operating_cost") if row.get_formatted is defined else row.operating_cost or "" }}</td>
+<td>{% if row.finished_good %}{{ row.finished_good }}{% if row.finished_good_qty %} × {{ row.finished_good_qty }}{% endif %}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.exploded_items %}
+<div style="margin:14px 0 4px;font-weight:700">Exploded Items</div>
+<table class="items">
+<thead>
+<tr>
+<th style="width:5%">#</th>
+<th style="width:35%">Item</th>
+<th style="width:15%" class="r">Qty</th>
+<th style="width:10%">UOM</th>
+<th style="width:17%" class="r">Rate</th>
+<th style="width:18%" class="r">Amount</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.exploded_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td><strong>{{ row.item_code or "" }}</strong>{% if row.item_name %}<br>{{ row.item_name }}{% endif %}</td>
+<td class="r">{{ row.qty or row.stock_qty or "" }}</td>
+<td>{{ row.stock_uom or row.uom or "" }}</td>
 <td class="r">{{ row.rate or "" }}</td>
 <td class="r">{{ row.amount or "" }}</td>
-<td>{{ row.source_warehouse or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+{% if doc.secondary_items %}
+<div style="margin:14px 0 4px;font-weight:700">Secondary Items</div>
+<table class="items">
+<thead><tr><th>#</th><th>Item</th><th class="r">Qty</th><th>UOM</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.secondary_items %}
+<tr>
+<td>{{ loop.index }}</td>
+<td>{{ row.item_code or row.item_name or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td>{{ row.uom or "" }}</td>
+<td class="r">{{ row.rate or "" }}</td>
+<td class="r">{{ row.amount or "" }}</td>
 </tr>
 {% endfor %}
 </tbody>
@@ -1079,9 +1209,9 @@ def _stockish_items_table() -> str:
 
 
 def _commercial_items_table(include_tax: bool = False) -> str:
-	tax_h = "<th class=\"r\">Tax</th>" if include_tax else ""
-	tax_c = (
-		'<td class="r">{{ row.item_tax_amount or row.gst_tax or "" }}</td>'
+	# Keep column count A4-safe: merge code into description; optional tax as small note.
+	tax_note = (
+		'{% if row.item_tax_amount or row.gst_tax %}<br><small>Tax: {{ row.item_tax_amount or row.gst_tax }}</small>{% endif %}'
 		if include_tax
 		else ""
 	)
@@ -1090,28 +1220,24 @@ def _commercial_items_table(include_tax: bool = False) -> str:
 <table class="items">
 <thead>
 <tr>
-<th>#</th>
-<th>Code</th>
-<th>Description</th>
-<th class="r">Qty</th>
-<th>UOM</th>
-<th class="r">Rate</th>
-<th class="r">Disc%</th>
-{tax_h}
-<th class="r">Amount</th>
+<th style="width:5%">#</th>
+<th style="width:42%">Item</th>
+<th style="width:10%" class="r">Qty</th>
+<th style="width:8%">UOM</th>
+<th style="width:14%" class="r">Rate</th>
+<th style="width:8%" class="r">Disc%</th>
+<th style="width:13%" class="r">Amount</th>
 </tr>
 </thead>
 <tbody>
 {{% for row in doc.items %}}
 <tr>
 <td>{{{{ loop.index }}}}</td>
-<td>{{{{ row.item_code or "" }}}}</td>
-<td><strong>{{{{ row.item_name or row.description or "" }}}}</strong>{{% if row.description and row.description != (row.item_name or row.item_code) %}}<br><small>{{{{ row.description }}}}</small>{{% endif %}}{{% if row.batch_no %}}<br><small>Batch: {{{{ row.batch_no }}}}</small>{{% endif %}}{{% if row.serial_no %}}<br><small>Serial: {{{{ row.serial_no }}}}</small>{{% endif %}}</td>
+<td><strong>{{{{ row.item_code or "" }}}}</strong>{{% if row.item_name %}}<br>{{{{ row.item_name }}}}{{% endif %}}{{% if row.description and row.description != (row.item_name or row.item_code) %}}<br><small>{{{{ row.description }}}}</small>{{% endif %}}{{% if row.batch_no %}}<br><small>Batch: {{{{ row.batch_no }}}}</small>{{% endif %}}{{% if row.serial_no %}}<br><small>Serial: {{{{ row.serial_no }}}}</small>{{% endif %}}{tax_note}</td>
 <td class="r">{{{{ row.get_formatted("qty", doc) if row.get_formatted is defined else row.qty or "" }}}}</td>
 <td>{{{{ row.uom or row.stock_uom or "" }}}}</td>
 <td class="r">{{{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}}}</td>
 <td class="r">{{{{ row.discount_percentage or 0 }}}}</td>
-{tax_c}
 <td class="r">{{{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}}}</td>
 </tr>
 {{% endfor %}}
@@ -1120,7 +1246,7 @@ def _commercial_items_table(include_tax: bool = False) -> str:
 {{% endif %}}
 {{% if doc.payment_schedule %}}
 <table class="items" style="margin-top:10px">
-<thead><tr><th>Payment Term</th><th>Due Date</th><th class="r">Amount</th></tr></thead>
+<thead><tr><th style="width:40%">Payment Term</th><th style="width:30%">Due Date</th><th style="width:30%" class="r">Amount</th></tr></thead>
 <tbody>
 {{% for row in doc.payment_schedule %}}
 <tr>

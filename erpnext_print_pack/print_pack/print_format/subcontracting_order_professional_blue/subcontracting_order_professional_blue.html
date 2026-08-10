@@ -53,7 +53,54 @@
 	color: #0369a1;
 }
 
-.print-format .epp-table > tbody > tr > td { padding: 0 !important; }
+.root, .epp-root, .sp-root, .print-format {
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+.root *, .epp-root *, .sp-root *, .print-format * {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+table.items, table.epp-table, table.sp-table, table.meta, table.totals, table.epp-totals,
+table.party-grid, table.vx-top {
+	width: 100% !important;
+	max-width: 100% !important;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+table.totals, table.epp-totals {
+	width: 48% !important;
+	margin-left: auto;
+}
+table.items th, table.items td,
+table.epp-table th, table.epp-table td,
+table.sp-table th, table.sp-table td {
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+	white-space: normal;
+	vertical-align: top;
+	padding: 4px 5px !important;
+	font-size: 9px;
+}
+table.items th, table.epp-table th, table.sp-table th {
+	font-size: 8px;
+	line-height: 1.2;
+}
+.party-box, .epp-box, .sp-card {
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.right { text-align: right; }
+.bold { font-weight: 700; }
 </style>
 <div class="epp-root print-format">
 <div class="epp-header epp-box">
@@ -62,7 +109,7 @@
 	<div>{{ doc.name or "" }} · {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</div>
 </div>
 
-{% if doc.items %}<table class="epp-table"><thead><tr><th>Item</th><th>Qty</th><th>UOM</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ row.item_code or row.item_name or "" }}</td><td class="right">{{ row.qty or row.required_qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}
+{% if doc.items %}<table class="epp-table"><thead><tr><th style="width:5%">#</th><th style="width:45%">Item</th><th style="width:20%" class="right">Qty</th><th style="width:30%">UOM</th></tr></thead><tbody>{% for row in doc.items %}<tr><td>{{ loop.index }}</td><td>{{ row.item_code or row.item_name or "" }}</td><td class="right">{{ row.qty or row.required_qty or "" }}</td><td>{{ row.uom or row.stock_uom or "" }}</td></tr>{% endfor %}</tbody></table>{% endif %}
 
 <table class="epp-totals" style="width:45%;margin-left:auto"><tr><td>Net Total</td><td class="right">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</td></tr><tr><td>Grand Total</td><td class="right bold">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }}</td></tr></table>
 

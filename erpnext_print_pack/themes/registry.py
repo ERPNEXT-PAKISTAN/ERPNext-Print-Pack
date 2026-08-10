@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from erpnext_print_pack.page_fit_css import PAGE_FIT_CSS
+
 THEMES_DIR = Path(__file__).resolve().parent
 
 THEME_REGISTRY = {
@@ -34,12 +36,7 @@ THEME_REGISTRY = {
 }
 
 
-def get_theme_css(theme_key: str) -> str:
-	theme = THEME_REGISTRY.get(theme_key, THEME_REGISTRY["minimal"])
-	css_path = THEMES_DIR / f"{theme_key}.css"
-	if css_path.exists():
-		return css_path.read_text(encoding="utf-8")
-
+def _theme_base_css(theme_key: str, theme: dict) -> str:
 	font_size = theme.get("font_size", "9px")
 	font_family = theme.get("font_family", "Arial, Helvetica, sans-serif")
 	orientation = theme.get("orientation", "portrait")
@@ -74,6 +71,7 @@ def get_theme_css(theme_key: str) -> str:
 .epp-table {{
 	width: 100%;
 	border-collapse: collapse;
+	table-layout: fixed;
 }}
 .epp-table th {{
 	background: {theme['header_bg']};
@@ -87,6 +85,8 @@ def get_theme_css(theme_key: str) -> str:
 	border: 1px solid {theme['primary']};
 	padding: 4px;
 	vertical-align: top;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
 }}
 .epp-totals td {{
 	border: 1px solid {theme['primary']};
@@ -98,3 +98,16 @@ def get_theme_css(theme_key: str) -> str:
 	color: {theme['accent']};
 }}
 """
+
+
+def get_theme_css(theme_key: str) -> str:
+	theme = THEME_REGISTRY.get(theme_key, THEME_REGISTRY["minimal"])
+	css_path = THEMES_DIR / f"{theme_key}.css"
+	if css_path.exists():
+		base = css_path.read_text(encoding="utf-8")
+	else:
+		base = _theme_base_css(theme_key, theme)
+	# Always append page-fit so regenerated and hand-tuned theme CSS stay A4-safe.
+	if "table-layout: fixed" in base and "overflow-wrap: anywhere" in base:
+		return base
+	return f"{base.rstrip()}\n{PAGE_FIT_CSS}"

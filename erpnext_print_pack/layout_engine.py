@@ -10,6 +10,7 @@ from erpnext_print_pack.detail_blocks import (
 	totals_block,
 )
 from erpnext_print_pack.doctype_profiles import DocTypeProfile
+from erpnext_print_pack.page_fit_css import PAGE_FIT_CSS
 from erpnext_print_pack.print_snippets import DOC_BARCODE_SNIPPET
 
 LAYOUT_REGISTRY: dict[str, dict] = {
@@ -126,12 +127,12 @@ def _base_wrap(profile: DocTypeProfile, layout_key: str, css: str, body: str) ->
 {{% set date_field = "{profile.date_field}" %}}
 {party}
 <style>
-@page {{ size: A4 portrait; margin: 10mm; }}
+@page {{ size: A4 portrait; margin: 8mm; }}
 .r {{ text-align: right; }}
 .bold {{ font-weight: 700; }}
 small {{ color: #666; font-size: 9px; }}
 {css}
-.print-format table > tbody > tr > td {{ padding: 5px 6px !important; }}
+{PAGE_FIT_CSS}
 </style>
 <div class="root print-format">
 {filled}
