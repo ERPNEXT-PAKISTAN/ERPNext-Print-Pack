@@ -1,10 +1,7 @@
 """Reusable Jinja snippets injected into generated print templates."""
 
 DOC_BARCODE_SNIPPET = """
-{% set _epp_doc_bc = "" %}
-{% if doc.name %}
-  {% set _epp_doc_bc = frappe.call("erpnext_print_pack.print_barcodes.get_doc_barcode_data_uri", value=doc.name) or "" %}
-{% endif %}
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
 {% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:right"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:180px;height:14mm;display:inline-block"></div>{% endif %}
 """
 
