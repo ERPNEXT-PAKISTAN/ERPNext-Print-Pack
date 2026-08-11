@@ -1,0 +1,25 @@
+{
+  "name": "Bilingual Tax Invoice POS Invoice",
+  "slug": "pos_invoice_bilingual_tax",
+  "doc_type": "POS Invoice",
+  "theme": "bilingual_tax",
+  "layout_family": "bilingual_tax",
+  "layout_type": "specimen",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "bilingual_tax"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "426e8b2410b8ba1ba8838f5aa5f59f5c35bda552da4e787ef5a8cb4d18027637",
+  "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+}

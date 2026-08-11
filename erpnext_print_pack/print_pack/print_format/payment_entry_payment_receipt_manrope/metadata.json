@@ -1,0 +1,24 @@
+{
+  "name": "Manrope Payment Receipt Payment Entry",
+  "slug": "payment_entry_payment_receipt_manrope",
+  "doc_type": "Payment Entry",
+  "theme": "payment_receipt_manrope",
+  "layout_family": "payment_receipt_manrope",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "payments",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "payment_receipt_manrope"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c7b1c4495517d2e3c1194b5661b8b01ce4130ccc7ea95d96963521d047bf3800",
+  "description": "Payment receipt \u2014 Manrope green brand, amount banner, applied invoices table"
+}

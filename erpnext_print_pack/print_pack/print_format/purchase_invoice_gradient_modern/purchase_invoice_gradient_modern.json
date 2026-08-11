@@ -1,0 +1,17 @@
+{
+ "doctype": "Print Format",
+ "name": "Gradient Modern Invoice Purchase Invoice",
+ "doc_type": "Purchase Invoice",
+ "module": "Print Pack",
+ "custom_format": 1,
+ "print_format_type": "Jinja",
+ "standard": "No",
+ "disabled": 0,
+ "default_print_language": "en",
+ "margin_top": 8.0,
+ "margin_bottom": 8.0,
+ "margin_left": 10.0,
+ "margin_right": 10.0,
+ "page_number": "Hide",
+ "css": ""
+}

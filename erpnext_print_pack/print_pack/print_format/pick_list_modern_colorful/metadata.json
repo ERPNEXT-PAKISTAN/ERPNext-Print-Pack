@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Pick List",
+  "slug": "pick_list_modern_colorful",
+  "doc_type": "Pick List",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "693b77f8ef6e162c966bf1925af202d955fa5c6f4d1f42a240255a9989f127b8",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

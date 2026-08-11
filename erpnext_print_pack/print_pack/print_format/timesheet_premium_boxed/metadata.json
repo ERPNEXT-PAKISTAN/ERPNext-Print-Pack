@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Timesheet",
+  "slug": "timesheet_premium_boxed",
+  "doc_type": "Timesheet",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bf919ff1435c31a9f7d9da114208864e81282ad8c953de7583ff670382b90473",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Delivery Note",
+  "slug": "delivery_note_modern_colorful",
+  "doc_type": "Delivery Note",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "049640b99ee2398163a181773097c421ccb5e725c76348f1d4cd64ed871d7cbc",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

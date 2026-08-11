@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Sales Order",
+  "slug": "sales_order_premium_boxed",
+  "doc_type": "Sales Order",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "43325f30fb822efd1c282274912a0e992524c0c32bfba73829e55879553e36ae",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Salary Slip",
+  "slug": "salary_slip_premium_boxed",
+  "doc_type": "Salary Slip",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f374bcca1ea1b8920014404b9de7b0aadbeb79c0f7c69014ebfc03701447ba67",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

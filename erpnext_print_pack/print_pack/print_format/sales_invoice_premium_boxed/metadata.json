@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Sales Invoice",
+  "slug": "sales_invoice_premium_boxed",
+  "doc_type": "Sales Invoice",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "27936c4cde9e6a36f360cb34718340acb153d1f6da15d4a8a47119bf6fd29d2d",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

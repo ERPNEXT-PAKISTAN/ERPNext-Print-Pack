@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Subcontracting Order",
+  "slug": "subcontracting_order_modular_box",
+  "doc_type": "Subcontracting Order",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "0426be3922a453ae3f0a2fc6dff2e1bee4b02766665c4ddd89e2f8362ab7e65f",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

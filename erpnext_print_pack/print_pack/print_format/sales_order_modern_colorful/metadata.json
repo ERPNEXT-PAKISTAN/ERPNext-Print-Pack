@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Sales Order",
+  "slug": "sales_order_modern_colorful",
+  "doc_type": "Sales Order",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "87f58ccfefeef28fe89188d41c9e225d82b52b106fce937e4087549bb9d4a82d",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

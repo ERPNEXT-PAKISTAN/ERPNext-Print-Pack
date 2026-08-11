@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Stock Entry",
+  "slug": "stock_entry_modern_colorful",
+  "doc_type": "Stock Entry",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "7d301c6dd13080aa3d4b2f02210c7014a407e4738012c7f8c6371ccd1da05faf",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

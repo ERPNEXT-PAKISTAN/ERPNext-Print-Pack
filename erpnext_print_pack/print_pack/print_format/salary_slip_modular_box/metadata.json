@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Salary Slip",
+  "slug": "salary_slip_modular_box",
+  "doc_type": "Salary Slip",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "db1c94e2af3f0402cf6be8f4556b117ad49d0624400fbd41285849bc2aec6584",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

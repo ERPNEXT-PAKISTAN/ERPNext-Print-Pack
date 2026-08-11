@@ -1,0 +1,117 @@
+{# Modern Colorful · BOM #}
+{% set date_field = "creation" %}
+
+{% set party_label = "Finished Good" %}
+{% set ship_label = "" %}
+{% set party_name = (doc.item_name or doc.item or "") ~ ((" · Qty " ~ doc.quantity ~ ((" " ~ doc.uom) if doc.uom else "")) if doc.quantity else "") %}
+{% set party_address = doc.description or "" %}
+{% set ship_address = "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.mc-root { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: #1f2937; font-size: 11px; line-height: 1.5; }
+.mc-card { background: #fff; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,.06); overflow: hidden; }
+.mc-header { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: #fff; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.mc-brand h1 { margin: 0 0 4px; font-size: 24px; letter-spacing: -.5px; font-weight: 700; }
+.mc-brand p { margin: 0; font-size: 12px; opacity: .9; }
+.mc-label { text-align: right; }
+.mc-label h2 { margin: 0; font-size: 26px; text-transform: uppercase; font-weight: 700; opacity: .95; }
+.mc-label p { margin: 4px 0 0; font-size: 12px; opacity: .9; }
+.mc-content { padding: 32px; }
+.mc-details { display: flex; gap: 32px; margin-bottom: 28px; }
+.mc-section { flex: 1; }
+.mc-section h4 { margin: 0 0 8px; color: #6366f1; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; font-weight: 700; }
+.mc-section p { margin: 0 0 4px; font-size: 12px; color: #1f2937; }
+.mc-root table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+.mc-root th { background: #f9fafb; color: #6b7280; text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; border-bottom: 2px solid #e5e7eb; font-weight: 600; }
+.mc-root td { padding: 12px 14px; border-bottom: 1px solid #f3f4f6; font-size: 12px; }
+.mc-item-desc { font-weight: 600; }
+.mc-item-sub { color: #6b7280; }
+.mc-r { text-align: right; }
+.mc-summary-wrap { display: flex; justify-content: flex-end; }
+.mc-summary { width: 280px; }
+.mc-summary-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 12px; }
+.mc-total { border-top: 2px solid #6366f1; margin-top: 8px; padding-top: 12px !important; font-weight: 700; font-size: 18px !important; color: #6366f1; }
+.mc-footer { padding: 22px 32px; background: #fafafa; border-top: 1px solid #f3f4f6; text-align: center; font-size: 11px; color: #6b7280; }
+.mc-footer p { margin: 0 0 4px; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+.print-format .mc-root table > tbody > tr > td { padding: 12px 14px !important; }
+</style>
+<div class="mc-root print-format">
+<div class="mc-card">
+<header class="mc-header">
+<div class="mc-brand">
+<h1>{{ doc.company or "" }}</h1>
+<p>{{ doc.company_address_display or "" }}</p>
+</div>
+<div class="mc-label">
+<h2>Bill of Materials</h2>
+<p>#{{ doc.name }}</p>
+</div>
+</header>
+<div class="mc-content">
+<div class="mc-details">
+<div class="mc-section">
+<h4>{{ party_label or "Bill To" }}</h4>
+<p><strong>{{ party_name }}</strong></p>
+<p>{{ party_address }}</p>
+</div>
+<div class="mc-section">
+<h4>Invoice Details</h4>
+<p><strong>Date Issued:</strong> {{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</p>
+
+<p><strong>Payment Method:</strong> {{ doc.mode_of_payment or doc.payment_terms_template or "—" }}</p>
+</div>
+</div>
+
+{% if doc.items %}
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Qty</th>
+<th>Unit Price</th>
+<th class="mc-r">Total</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>
+<span class="mc-item-desc">{{ row.item_name or row.item_code or "" }}</span>
+{% if row.description and row.description != (row.item_name or row.item_code) %}
+<br><small class="mc-item-sub">{{ row.description }}</small>
+{% endif %}
+</td>
+<td>{{ row.qty or "" }}</td>
+<td>{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="mc-r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div class="mc-summary-wrap">
+<div class="mc-summary">
+<div class="mc-summary-row"><span>Subtotal</span><span>{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</span></div>
+
+{% if doc.total_taxes_and_charges %}
+<div class="mc-summary-row"><span>Tax</span><span>{{ doc.get_formatted("total_taxes_and_charges") if doc.get_formatted is defined else doc.total_taxes_and_charges or "" }}</span></div>
+{% endif %}
+<div class="mc-summary-row mc-total"><span>Amount Due</span><span>{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or "" }}</span></div>
+</div>
+</div>
+</div>
+<footer class="mc-footer">
+<p>Thank you for choosing {{ doc.company or "us" }}. We appreciate your business!</p>
+<p>
+{% set bank = frappe.get_all("Bank Account", filters={"company": doc.company, "is_company_account": 1}, fields=["bank","bank_account_no","iban"], limit=1) %}
+{% if bank %}Bank: {{ bank[0].bank or "" }} | Account: {{ bank[0].bank_account_no or bank[0].iban or "" }}{% else %}Please contact us for payment details.{% endif %}
+</p>
+</footer>
+</div>
+
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice POS Invoice",
+  "slug": "pos_invoice_modern_colorful",
+  "doc_type": "POS Invoice",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "74069c37f71aa902a51716cc68a78ec535dfda86b218082d5da1afdc80bb911c",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

@@ -1,0 +1,156 @@
+{# Bilingual Tax Invoice · Sales Order #}
+{% set date_field = "transaction_date" %}
+<style>
+:root {
+--primary: #1a365d; --secondary: #2b6cb0; --border: #e2e8f0; --bg-muted: #f8fafc;
+--text-main: #1e293b; --text-light: #64748b;
+}
+.bti-root { font-family: 'Inter', 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif; color: var(--text-main); font-size: 11px; }
+.bti-card { background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.bti-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid var(--primary); padding-bottom: 18px; margin-bottom: 24px; }
+.bti-brand h1 { margin: 0 0 4px; color: var(--primary); font-size: 22px; font-weight: 600; }
+.bti-brand p { margin: 0; font-size: 11px; color: var(--text-light); }
+.bti-title { text-align: center; }
+.bti-title h2 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
+.bti-title p { margin: 0; color: var(--secondary); font-weight: 700; font-size: 12px; letter-spacing: .4px; }
+.bti-qr { width: 100px; height: 100px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.bti-qr img { width: 96px; height: 96px; }
+.bti-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 24px; }
+.bti-info-box { border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.bti-info-box.bti-span-2 { grid-column: span 2; }
+.bti-info-header { background: var(--bg-muted); padding: 8px 14px; font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+.bti-info-content { padding: 14px; font-size: 12px; line-height: 1.8; }
+.bti-info-content p { margin: 0 0 4px; }
+.bti-info-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.bti-label-en, .bti-label-ar { color: var(--text-light); font-size: 11px; }
+.bti-label-ar { font-family: 'Noto Sans Arabic', sans-serif; }
+.bti-root table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+.bti-root th { background: var(--primary); color: #fff; font-size: 10px; padding: 11px 8px; text-align: center; text-transform: uppercase; font-weight: 600; }
+.bti-th-ar { display: block; font-family: 'Noto Sans Arabic', sans-serif; font-size: 11px; margin-bottom: 2px; text-transform: none; }
+.bti-root td { padding: 13px 8px; border-bottom: 1px solid var(--border); font-size: 12px; text-align: center; }
+.bti-desc-cell { text-align: left !important; width: 35%; }
+.bti-desc-cell small { color: var(--text-light); }
+.bti-bottom { display: grid; grid-template-columns: 1.5fr 1fr; gap: 32px; }
+.bti-notes-title { font-weight: 700; margin: 0 0 6px; }
+.bti-words { color: var(--secondary); font-style: italic; margin: 0; }
+.bti-words-ar { margin: 4px 0 0; font-family: 'Noto Sans Arabic', sans-serif; direction: rtl; text-align: right; }
+.bti-terms { margin-top: 14px; font-size: 11px; color: var(--text-light); }
+.bti-summary { background: var(--bg-muted); padding: 18px; border-radius: 6px; }
+.bti-summary-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+.bti-total-row { background: var(--primary); color: #fff; padding: 14px; margin-top: 10px; border-radius: 4px; font-weight: 700; font-size: 15px; }
+.bti-total-row > div { display: flex; justify-content: space-between; width: 100%; }
+.bti-footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 10px; color: var(--text-light); text-align: center; line-height: 1.7; }
+.bti-footer p { margin: 0 0 4px; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+.print-format .bti-root table > tbody > tr > td { padding: 13px 8px !important; }
+@page { size: A4 portrait; margin: 10mm; }
+</style>
+<div class="bti-root print-format">
+<div class="bti-card">
+<div class="bti-header">
+<div class="bti-brand">
+<h1>{{ doc.company or "" }}</h1>
+<p>Tax Number: {{ doc.company_tax_id or "" }}</p>
+</div>
+<div class="bti-title">
+<h2>أمر بيع</h2>
+<p>SALES ORDER</p>
+</div>
+<div class="bti-qr epp-qr qr">
+{% set qr = doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "" %}
+{% if not qr %}{% set _qrp = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.name) %}{% if _qrp %}{% set qr = _qrp.get("qr") or "" %}{% endif %}{% endif %}
+{% if qr %}<img src="{{ qr }}">{% else %}QR{% endif %}
+</div>
+</div>
+<div class="bti-info-grid">
+<div class="bti-info-box">
+<div class="bti-info-header"><span>Seller Details</span><span>تفاصيل البائع</span></div>
+<div class="bti-info-content">
+<p><strong>{{ doc.get("custom_company_name_ar") or doc.company or "" }}</strong></p>
+<p>{{ doc.company_address_display or "" }}</p>
+<p>CR: {{ doc.get("custom_company_cr_number") or "" }}</p>
+</div>
+</div>
+<div class="bti-info-box">
+<div class="bti-info-header"><span>Invoice Information</span><span>معلومات الفاتورة</span></div>
+<div class="bti-info-content">
+<div class="bti-info-row"><span class="bti-label-en">Invoice No:</span><span>{{ doc.name }}</span><span class="bti-label-ar">:رقم الفاتورة</span></div>
+<div class="bti-info-row"><span class="bti-label-en">Date:</span><span>{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}</span><span class="bti-label-ar">:التاريخ</span></div>
+<div class="bti-info-row"><span class="bti-label-en">PO No:</span><span>{{ doc.po_no or "—" }}</span><span class="bti-label-ar">:رقم الطلب</span></div>
+</div>
+</div>
+<div class="bti-info-box bti-span-2">
+<div class="bti-info-header"><span>Customer Details (Bill To)</span><span>تفاصيل العميل</span></div>
+<div class="bti-info-content">
+<p><strong>{{ doc.customer_name or doc.customer or doc.party_name or "" }}</strong></p>
+<p>{{ doc.address_display or "" }} | VAT: {{ doc.tax_id or doc.customer_tax_id or "" }}</p>
+</div>
+</div>
+</div>
+
+{% if doc.items %}
+<table>
+<thead>
+<tr>
+<th><span class="bti-th-ar">م</span><br>#</th>
+<th class="bti-desc-cell"><span class="bti-th-ar">وصف المنتجات</span><br>Description</th>
+<th><span class="bti-th-ar">الكمية</span><br>Qty</th>
+<th><span class="bti-th-ar">سعر الوحدة</span><br>Unit Price</th>
+<th><span class="bti-th-ar">الضريبة</span><br>VAT</th>
+<th><span class="bti-th-ar">المجموع</span><br>Total</th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.items %}
+{% set line_net = row.net_amount if row.net_amount is not none else (row.amount or 0) %}
+{% set line_tax = row.get("tax_amount") or 0 %}
+{% set line_total = (line_net or 0) + (line_tax or 0) %}
+<tr>
+<td>{{ loop.index }}</td>
+<td class="bti-desc-cell">
+<strong>{{ row.item_name or row.item_code or "" }}</strong>
+{% if row.description and row.description != (row.item_name or row.item_code) %}<br><small>{{ row.description }}</small>{% endif %}
+</td>
+<td>{{ row.qty or "" }}</td>
+<td>{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td>{{ row.get_formatted("tax_amount", doc) if row.get_formatted is defined and row.tax_amount is defined else line_tax or "" }}</td>
+<td>{{ row.get_formatted("amount", doc) if row.get_formatted is defined else line_total or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div class="bti-bottom">
+
+<div class="bti-notes">
+<p class="bti-notes-title">Total in Words / المبلغ بالكلمات:</p>
+
+
+{% if doc.terms %}
+<p class="bti-terms"><strong>Terms:</strong> {{ doc.terms }}</p>
+{% elif doc.payment_terms_template %}
+<p class="bti-terms"><strong>Terms:</strong> {{ doc.payment_terms_template }}</p>
+{% endif %}
+</div>
+<div class="bti-summary">
+<div class="bti-summary-row"><span>Total (Excl. VAT) / المجموع</span><span>{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }}</span></div>
+
+{% for tax in doc.taxes or [] %}
+<div class="bti-summary-row"><span>{{ tax.description or "Total VAT / ضريبة القيمة المضافة" }}</span><span>{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }}</span></div>
+{% endfor %}
+<div class="bti-total-row">
+<div><span>Total Amount / الإجمالي</span><span>{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }} {{ doc.currency or "" }}</span></div>
+</div>
+</div>
+</div>
+<div class="bti-footer">
+<p>This is a computer-generated document and does not require a signature.</p>
+<p>هذه الفاتورة تم إنشاؤها حاسوبياً ولا تتطلب توقيعاً</p>
+<p>Thank you for your business! | شكراً لتعاملكم معنا</p>
+</div>
+</div>
+
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+
+</div>

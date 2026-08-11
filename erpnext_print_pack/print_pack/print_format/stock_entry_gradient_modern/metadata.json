@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Stock Entry",
+  "slug": "stock_entry_gradient_modern",
+  "doc_type": "Stock Entry",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "d0749ec947017a3d2525343bc94587dc12d6d7146633c2cb8b61cb5b203bd9c6",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

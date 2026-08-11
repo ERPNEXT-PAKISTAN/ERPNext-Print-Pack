@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Pick List",
+  "slug": "pick_list_modular_box",
+  "doc_type": "Pick List",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4c0fc7e2365976136737f44cacc5877bbc861cc5b596fde87d1c4588abb3668e",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

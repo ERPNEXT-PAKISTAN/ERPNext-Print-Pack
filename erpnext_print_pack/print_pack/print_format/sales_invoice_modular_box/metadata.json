@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Sales Invoice",
+  "slug": "sales_invoice_modular_box",
+  "doc_type": "Sales Invoice",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b1c7d71228e19b72787b3b21a0caa65ba9bc18317425e420ee7ae7ccae54c1f2",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

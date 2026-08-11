@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Purchase Receipt",
+  "slug": "purchase_receipt_gradient_modern",
+  "doc_type": "Purchase Receipt",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "5e6eeef862e9ad819ab6923d2eb74e48e4fe028528d8ba1dc4246ddab8c8f36b",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

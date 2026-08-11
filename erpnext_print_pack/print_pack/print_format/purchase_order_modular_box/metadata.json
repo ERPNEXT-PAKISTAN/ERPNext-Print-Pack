@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Purchase Order",
+  "slug": "purchase_order_modular_box",
+  "doc_type": "Purchase Order",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4986252b594c918ca4e024f21de4bc7bc3e0785310e83450cbc2ccdacf5df139",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Pick List",
+  "slug": "pick_list_gradient_modern",
+  "doc_type": "Pick List",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "4742447854d9d875b8f2fe9fa5d4735fe713ecfc2f8851e743d5145955bc351a",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

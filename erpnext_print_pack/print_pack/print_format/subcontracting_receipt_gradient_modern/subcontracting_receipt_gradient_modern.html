@@ -1,0 +1,83 @@
+{# Gradient Modern · Subcontracting Receipt #}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Supplier" %}
+{% set ship_label = "Deliver To" %}
+{% set party_name = doc.supplier_name or doc.supplier or "" %}
+{% set party_address = doc.address_display or doc.supplier_address or "" %}
+{% set ship_address = doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.gm-root { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: #111827; font-size: 11px; }
+.gm-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+.gm-header { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); color: #fff; padding: 28px 32px; display: flex; justify-content: space-between; align-items: flex-start; }
+.gm-header h2 { margin: 0 0 4px; font-size: 20px; font-weight: 700; }
+.gm-header p { margin: 0; opacity: .9; font-size: 11px; }
+.gm-header h1 { margin: 0 0 4px; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
+.gm-header-right { text-align: right; }
+.gm-content { padding: 28px 32px; }
+.gm-grid { display: flex; justify-content: space-between; gap: 40px; margin-bottom: 28px; }
+.gm-grid h4 { color: #6366f1; text-transform: uppercase; font-size: 11px; margin: 0 0 8px; letter-spacing: .5px; }
+.gm-grid p { margin: 0; line-height: 1.5; }
+.gm-table { width: 100%; border-collapse: collapse; }
+.gm-table th { text-align: left; padding: 8px 0; border-bottom: 2px solid #eee; color: #6b7280; font-size: 11px; text-transform: uppercase; }
+.gm-table th.r { text-align: right; }
+.gm-table td { padding: 14px 0; border-bottom: 1px solid #f3f4f6; }
+.gm-table td.r { text-align: right; }
+.gm-total { margin-top: 24px; text-align: right; }
+.gm-total h4 { color: #6366f1; text-transform: uppercase; font-size: 11px; margin: 0 0 6px; }
+.gm-total-amt { font-size: 26px; font-weight: 700; color: #6366f1; }
+.gm-tax-row { display: flex; justify-content: flex-end; gap: 24px; font-size: 11px; color: #6b7280; margin-top: 4px; }
+.gm-words { margin-top: 12px; font-size: 10px; color: #6b7280; font-style: italic; text-align: right; }
+.r { text-align: right; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+.print-format .gm-table > tbody > tr > td { padding: 14px 0 !important; }
+</style>
+<div class="gm-root print-format">
+<div class="gm-card">
+<header class="gm-header">
+<div>
+<h2>{{ doc.company or "" }}</h2>
+<p>{{ doc.company_address_display or "" }}</p>
+</div>
+<div class="gm-header-right">
+<h1>SUBCONTRACTING RECEIPT</h1>
+<p>#{{ doc.name }}</p>
+</div>
+</header>
+<div class="gm-content">
+<div class="gm-grid">
+<div><h4>{{ party_label or "Client" }}</h4><p><b>{{ party_name }}</b><br>{{ party_address }}</p></div>
+
+<div><h4>Date</h4><p>{{ frappe.utils.formatdate(doc.get("posting_date")) if doc.get("posting_date") else "" }}</p></div>
+</div>
+
+{% if doc.items %}
+<table class="gm-table">
+<thead><tr><th>Description</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ row.item_name or row.item_code or row.description or "" }}</td>
+<td class="r">{{ row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+<div class="gm-total">
+<h4>Total Due</h4>
+<div class="gm-total-amt">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or doc.paid_amount or "" }}</div>
+</div>
+
+</div>
+</div>
+
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+
+</div>

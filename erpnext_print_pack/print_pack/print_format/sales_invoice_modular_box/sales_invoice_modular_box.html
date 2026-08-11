@@ -1,0 +1,83 @@
+{# Modular Box · Sales Invoice #}
+{% set date_field = "posting_date" %}
+
+{% set party_label = "Bill To" %}
+{% set ship_label = "Ship To" %}
+{% set party_name = doc.customer_name or doc.customer or doc.party_name or "" %}
+{% set party_address = doc.address_display or "" %}
+{% set ship_address = doc.shipping_address or doc.shipping_address_display or "" %}
+
+<style>
+@page { size: A4 portrait; margin: 10mm; }
+.mb-root { font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; color: #1e293b; font-size: 11px; }
+.mb-container { display: block; }
+.mb-box { background: #fff; padding: 16px 18px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.06); margin-bottom: 14px; }
+.mb-header { border-left: 8px solid #4f46e5; display: flex; justify-content: space-between; align-items: center; }
+.mb-header h1 { margin: 0; font-size: 22px; font-weight: 600; color: #1e293b; }
+.mb-header .doc { text-align: right; font-size: 11px; line-height: 1.5; }
+.mb-header .doc b { font-size: 14px; display: block; color: #4f46e5; }
+.mb-row { display: flex; gap: 14px; margin-bottom: 14px; }
+.mb-client { flex: 2; border-top: 4px solid #f43f5e; }
+.mb-info { flex: 1; }
+.mb-row h3 { margin: 0 0 8px; font-size: 11px; text-transform: uppercase; color: #64748b; font-weight: 600; }
+.mb-row p { margin: 0; line-height: 1.5; }
+.mb-table-box { padding: 0; overflow: hidden; }
+.mb-table-box table { width: 100%; border-collapse: collapse; }
+.mb-table-box th { background: #f8fafc; padding: 12px 14px; text-align: left; color: #64748b; font-size: 11px; text-transform: uppercase; }
+.mb-table-box td { padding: 12px 14px; border-bottom: 1px solid #f1f5f9; }
+.mb-table-box .r { text-align: right; }
+.mb-total { background: #1e293b; color: #fff; }
+.mb-total-inner { display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; }
+.mb-price { font-weight: 600; color: #fbbf24; font-size: 20px; }
+.mb-words { margin-top: 8px; font-size: 10px; color: #64748b; font-style: italic; text-align: right; }
+.r { text-align: right; }
+.epp-sig,.sig,.epp-footer,.footer { display: none; }
+.print-format .mb-table-box table > tbody > tr > td { padding: 12px 14px !important; }
+</style>
+<div class="mb-root print-format">
+<div class="mb-container">
+<div class="mb-box mb-header">
+<h1>{{ doc.company or "" }}</h1>
+<div class="doc"><b>SALES INVOICE</b>#{{ doc.name }}</div>
+</div>
+<div class="mb-row">
+<div class="mb-box mb-client">
+<h3>{{ party_label or "Bill To" }}</h3>
+<p><b>{{ party_name }}</b><br>{{ party_address }}</p>
+</div>
+<div class="mb-box mb-info">
+<h3>Due Date</h3>
+<p>{% if doc.due_date %}{{ frappe.utils.formatdate(doc.due_date) }}{% else %}{{ frappe.utils.formatdate(doc.get(date_field)) if doc.get(date_field) else "" }}{% endif %}</p>
+</div>
+</div>
+<div class="mb-box mb-table-box">
+
+{% if doc.items %}
+<table>
+<thead><tr><th>Item</th><th>Qty</th><th class="r">Rate</th><th class="r">Total</th></tr></thead>
+<tbody>
+{% for row in doc.items %}
+<tr>
+<td>{{ row.item_name or row.item_code or row.description or "" }}</td>
+<td>{{ row.qty or "" }}</td>
+<td class="r">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="r">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else row.amount or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+</div>
+<div class="mb-box mb-total">
+<div class="mb-total-inner">
+<span>Grand Total</span>
+<span class="mb-price">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or doc.total or doc.paid_amount or "" }}</span>
+</div>
+{% if doc.in_words %}<div class="mb-words">{{ doc.in_words }}</div>{% endif %}
+</div>
+</div>
+
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+
+</div>

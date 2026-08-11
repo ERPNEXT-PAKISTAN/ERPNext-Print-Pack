@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Supplier Quotation",
+  "slug": "supplier_quotation_premium_boxed",
+  "doc_type": "Supplier Quotation",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "bfcf0c18bd0f36718ec3761c0bb07a21680327693341d69c1883ac0d0336f453",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

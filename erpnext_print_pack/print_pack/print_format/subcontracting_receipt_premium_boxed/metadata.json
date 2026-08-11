@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Subcontracting Receipt",
+  "slug": "subcontracting_receipt_premium_boxed",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c004ef964a7990ca4262d22ec9b15f1ad7ba0089aee4a11606c296549d1138de",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

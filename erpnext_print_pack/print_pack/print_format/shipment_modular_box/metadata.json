@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Shipment",
+  "slug": "shipment_modular_box",
+  "doc_type": "Shipment",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9505a89a8c7df185d3982834c5deeebf1ba3f81cf99def2ff7af7f3b0edc08ef",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

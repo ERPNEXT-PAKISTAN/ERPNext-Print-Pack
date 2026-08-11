@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Purchase Receipt",
+  "slug": "purchase_receipt_modern_colorful",
+  "doc_type": "Purchase Receipt",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c9661265d3b3f4ea7c1199797712c7e90eec8ca41ba3003457e8fa63b671ee6c",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice POS Invoice",
+  "slug": "pos_invoice_modular_box",
+  "doc_type": "POS Invoice",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9c16027cdc320d7c6e65f383841e13de312a86907129e9716ebc249de7abc466",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

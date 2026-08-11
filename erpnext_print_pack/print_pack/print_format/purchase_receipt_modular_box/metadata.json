@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Purchase Receipt",
+  "slug": "purchase_receipt_modular_box",
+  "doc_type": "Purchase Receipt",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8d8d9324cfad3e15594ec58b917496167577536df8280854301b7ccc59e3ec88",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Timesheet",
+  "slug": "timesheet_modern_colorful",
+  "doc_type": "Timesheet",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e62c300f6d158f9d24ad6dc05aa8d813162d655463562c92e910b3a9b835bcc3",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

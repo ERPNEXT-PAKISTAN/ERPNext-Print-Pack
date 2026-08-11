@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-08-11",
-  "total_formats": 1001,
+  "generated_on": "2026-08-12",
+  "total_formats": 1103,
   "formats": [
     {
       "name": "Barcode Enabled Batch Label",
@@ -571,6 +571,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Bill of Materials",
+      "slug": "bom_gradient_modern",
+      "doc_type": "BOM",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "844e20ae34059a7f3243fdf15c8628fa34de8c000f7786e463e2348df2fdc0fa",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Bill of Materials",
       "slug": "bom_gradient_vivid",
       "doc_type": "BOM",
@@ -671,6 +695,30 @@
       "checksum": "69f29596f045ec9b666d9800ced42cea458114204988eda1fffa2ae8bd96ad07"
     },
     {
+      "name": "Modern Colorful Invoice Bill of Materials",
+      "slug": "bom_modern_colorful",
+      "doc_type": "BOM",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e66254bce0b2977f902ea59fc48880d2512dda217118da5d3427e359fb6981c2",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Bill of Materials",
       "slug": "bom_modern_qr",
       "doc_type": "BOM",
@@ -698,6 +746,30 @@
       "status": "stable",
       "checksum": "32a9cbcf7804803800cf08344b2a06ed19b8f430e8bb43dca0228efd91dfabe1",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Bill of Materials",
+      "slug": "bom_modular_box",
+      "doc_type": "BOM",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "8752983156599234334c28e79dbf817f642e5e3b9c3bd4d566e79791abd416e1",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Bill of Materials",
@@ -758,6 +830,30 @@
       "status": "stable",
       "checksum": "08bf88a2e910558f1253d79a0e86e5c7ec419313d427f2ebe018c3b35a0cac36",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Bill of Materials",
+      "slug": "bom_premium_boxed",
+      "doc_type": "BOM",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "caf81e68554c449168e8ae72cbf1ce8da6ee703bac9b62b9b993c169e7dada6c",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice Bill of Materials",
@@ -989,6 +1085,31 @@
       "description": "Clean blue theme, summary balance box"
     },
     {
+      "name": "Bilingual Tax Invoice Delivery Note",
+      "slug": "delivery_note_bilingual_tax",
+      "doc_type": "Delivery Note",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "bilingual_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "cb7e24614a2c3dc0c2357ba822f8aa637ad71bd22c09f0f7ac992ed5c350157a",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+    },
+    {
       "name": "Clean Delivery Note",
       "slug": "delivery_note_clean",
       "doc_type": "Delivery Note",
@@ -1149,6 +1270,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Delivery Note",
+      "slug": "delivery_note_gradient_modern",
+      "doc_type": "Delivery Note",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "7df6e6bae081d20498b95a81328084ebffc2e65cea131d759de51e6b78310deb",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Delivery Note",
       "slug": "delivery_note_gradient_vivid",
       "doc_type": "Delivery Note",
@@ -1241,6 +1386,31 @@
       "status": "stable",
       "checksum": "f7036050705be92ba46ed035fe90ab74c50599946fb41b7d062719b9e4c8ff35",
       "description": "India GSTIN, HSN, tax ready"
+    },
+    {
+      "name": "KSA ZATCA Fatoora Tax Invoice Delivery Note",
+      "slug": "delivery_note_ksa_zatca_fatoora",
+      "doc_type": "Delivery Note",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "1343f695e7eed5087d62feb63099d7c680d4f5c20f7528d052e8a4cce4aff793",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
     },
     {
       "name": "Landscape Delivery Note",
@@ -1337,6 +1507,30 @@
       "checksum": "318a7ee88a2d8e48c5ef29f1e54a9c46862ab9ec8d9fb847cb4f6b5cad0d0c0d"
     },
     {
+      "name": "Modern Colorful Invoice Delivery Note",
+      "slug": "delivery_note_modern_colorful",
+      "doc_type": "Delivery Note",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "049640b99ee2398163a181773097c421ccb5e725c76348f1d4cd64ed871d7cbc",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Delivery Note",
       "slug": "delivery_note_modern_qr",
       "doc_type": "Delivery Note",
@@ -1364,6 +1558,30 @@
       "status": "stable",
       "checksum": "3fac14fab8fd87dd03e866cb28e481b0e32775bc5244c344c220d9b041fba49d",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Delivery Note",
+      "slug": "delivery_note_modular_box",
+      "doc_type": "Delivery Note",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "3877820a8760cbc1d68d5aae3d84eacbe99dd9ac6481d82a444a10cb848fd231",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Delivery Note",
@@ -1501,6 +1719,30 @@
       ],
       "status": "draft",
       "checksum": "e9b2fae1bf34ed294b62843b9ea10fee7525f7c6a79a7afc9dea6278d67322e3"
+    },
+    {
+      "name": "Premium Boxed Invoice Delivery Note",
+      "slug": "delivery_note_premium_boxed",
+      "doc_type": "Delivery Note",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "59bf1968d1fb46aa2ee5be9e90c76b43de63a7e7b9d9c7609721b17a7e1cfcf6",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Delivery Note",
@@ -1954,6 +2196,31 @@
       "status": "stable",
       "checksum": "818687e5ec19386429c077d59620e1bb9b69c7d6f2db0fca9f1589f9d78cca9b",
       "description": "Yellow accent stripe, structured metadata"
+    },
+    {
+      "name": "ZATCA Manrope Tax Invoice Delivery Note",
+      "slug": "delivery_note_zatca_manrope",
+      "doc_type": "Delivery Note",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e5540f7142d3511f4e22255b8714425e031cc95ba49d9b35204798f4f436076b",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
     },
     {
       "name": "ZATCA E-Invoice Specimen Delivery Note",
@@ -3665,6 +3932,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Expense Claim",
+      "slug": "expense_claim_gradient_modern",
+      "doc_type": "Expense Claim",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "28504d53813195f3673af68f1985c1653beff7fe155a2b7e6322b250b5a13fd5",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Expense Claim",
       "slug": "expense_claim_gradient_vivid",
       "doc_type": "Expense Claim",
@@ -3742,6 +4033,30 @@
       "checksum": "263f7dba554c31712e803dd8f646afac05632eee5e227bce9f5ef72865a729e1"
     },
     {
+      "name": "Modern Colorful Invoice Expense Claim",
+      "slug": "expense_claim_modern_colorful",
+      "doc_type": "Expense Claim",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f739b95e0aa49d80bc9afd90c4a232043b933bba09c6d5d21f3a9b7f1b9911b4",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Expense Claim",
       "slug": "expense_claim_modern_qr",
       "doc_type": "Expense Claim",
@@ -3769,6 +4084,30 @@
       "status": "stable",
       "checksum": "abd175a02972e19542642ac12e4d7b2bcb4f8f5d30971d2c40ac0757d54c685a",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Expense Claim",
+      "slug": "expense_claim_modular_box",
+      "doc_type": "Expense Claim",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "a09aa61bf54c60267f78edfca0a8aa8e3c6eaac0ccd13696412f68996f25ab6a",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Expense Claim",
@@ -3829,6 +4168,30 @@
       "status": "stable",
       "checksum": "a6ef467e6b439893880930d79cefca5e44cd40be0a7c6de2698723313278774f",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Expense Claim",
+      "slug": "expense_claim_premium_boxed",
+      "doc_type": "Expense Claim",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "36fd2cab0e82b7a6362592f135ad5c662215fa9787fd213ddb834631829817f8",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Expense Claim",
@@ -4220,6 +4583,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Installation Note",
+      "slug": "installation_note_gradient_modern",
+      "doc_type": "Installation Note",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "3f51eb9bacda7ed160e161b58b929afd9696617b64840a7d0fef09fd37963e73",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Installation Note",
       "slug": "installation_note_gradient_vivid",
       "doc_type": "Installation Note",
@@ -4297,6 +4684,30 @@
       "checksum": "3571f0b80cf179e6f1b1e2df0d0a1c734c0d28aa312a2f45e59c77f46e7a7372"
     },
     {
+      "name": "Modern Colorful Invoice Installation Note",
+      "slug": "installation_note_modern_colorful",
+      "doc_type": "Installation Note",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f65bfe218f327b59d0990c8db7ccd3f36bfb5760c549352dc7c28843e4c4f694",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Installation Note",
       "slug": "installation_note_modern_qr",
       "doc_type": "Installation Note",
@@ -4324,6 +4735,30 @@
       "status": "stable",
       "checksum": "cc45ca7f0b3a50a1c58a8f30b0d943de8c5c53086951896e510774bf6efce1d1",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Installation Note",
+      "slug": "installation_note_modular_box",
+      "doc_type": "Installation Note",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "83d1adf6f3a6a53caf12117d184ba1d164a13646928b84f6bdabde3cf82700c2",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Installation Note",
@@ -4407,6 +4842,30 @@
       "status": "stable",
       "checksum": "80cb7c975fb8772cf8698181ad14616186b840610a8eaf05d4013628f8975cce",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Installation Note",
+      "slug": "installation_note_premium_boxed",
+      "doc_type": "Installation Note",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e4f67909fd072d4c6ae90ef1a1c01e0e745baf79ff9bc8f47b6496875fb8e994",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Installation Note",
@@ -9546,6 +10005,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Material Request",
+      "slug": "material_request_gradient_modern",
+      "doc_type": "Material Request",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "d7a121ea2e8384ecfce0cac893a0c117466b019a00777306ab544977b6a7bd85",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Material Request",
       "slug": "material_request_gradient_vivid",
       "doc_type": "Material Request",
@@ -9694,6 +10177,30 @@
       "checksum": "07adf375ffe486522fd57fb28b1360bdfdd4bbe45d4f7c5db0939033acb76411"
     },
     {
+      "name": "Modern Colorful Invoice Material Request",
+      "slug": "material_request_modern_colorful",
+      "doc_type": "Material Request",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2f08affb7e1b51a4e17e1e2dafb6af85c9d6ea99ea1e41f8d3b340afa571c645",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Material Request",
       "slug": "material_request_modern_qr",
       "doc_type": "Material Request",
@@ -9721,6 +10228,30 @@
       "status": "stable",
       "checksum": "b8722bf0eb49bad7193da18e2a81d3db73083bf8b5e94bb5da272b8120c7a8c8",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Material Request",
+      "slug": "material_request_modular_box",
+      "doc_type": "Material Request",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "44f95f75f758102bd71072c370d6a33ef4620fe48e2c856ade7ecda1d371ff7a",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Material Request",
@@ -9781,6 +10312,30 @@
       "status": "stable",
       "checksum": "31954b6f66de19b7e5d57ca3da2c4a8fca9543fdcbec9a45287bd6f7ce9b7a3d",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Material Request",
+      "slug": "material_request_premium_boxed",
+      "doc_type": "Material Request",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "19c4364c0c48a738320dc2da0e52badfe3d6a242c44b25549e71aa4948577972",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice Material Request",
@@ -10536,6 +11091,30 @@
       "status": "stable",
       "checksum": "e29cbbbf525e979540ea0d0c4617e41ee3f05907f0202b01054ae6d8e92cbaa2",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Manrope Payment Receipt Payment Entry",
+      "slug": "payment_entry_payment_receipt_manrope",
+      "doc_type": "Payment Entry",
+      "theme": "payment_receipt_manrope",
+      "layout_family": "payment_receipt_manrope",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "payments",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "payment_receipt_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c7b1c4495517d2e3c1194b5661b8b01ce4130ccc7ea95d96963521d047bf3800",
+      "description": "Payment receipt \u2014 Manrope green brand, amount banner, applied invoices table"
     },
     {
       "name": "Premium Payment Entry",
@@ -11680,6 +12259,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Pick List",
+      "slug": "pick_list_gradient_modern",
+      "doc_type": "Pick List",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "4742447854d9d875b8f2fe9fa5d4735fe713ecfc2f8851e743d5145955bc351a",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Pick List",
       "slug": "pick_list_gradient_vivid",
       "doc_type": "Pick List",
@@ -11891,6 +12494,30 @@
       "checksum": "fc827202db0ce043ad22d512ab4643a96e4c5224434dd2c72681826a7a8daeae"
     },
     {
+      "name": "Modern Colorful Invoice Pick List",
+      "slug": "pick_list_modern_colorful",
+      "doc_type": "Pick List",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "693b77f8ef6e162c966bf1925af202d955fa5c6f4d1f42a240255a9989f127b8",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Pick List",
       "slug": "pick_list_modern_qr",
       "doc_type": "Pick List",
@@ -11918,6 +12545,30 @@
       "status": "stable",
       "checksum": "b9713db3a644063f668c3951ea8255321537eb6b2a1e7c98103874ba790e5d6b",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Pick List",
+      "slug": "pick_list_modular_box",
+      "doc_type": "Pick List",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "4c0fc7e2365976136737f44cacc5877bbc861cc5b596fde87d1c4588abb3668e",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Pick List",
@@ -12009,6 +12660,30 @@
       "status": "stable",
       "checksum": "2917e1ee59b247897e6bf8e2ed196fe976eb98b6e93a7167a072f3f921b786ff",
       "description": "Pakistan NTN/STRN sales tax invoice"
+    },
+    {
+      "name": "Premium Boxed Invoice Pick List",
+      "slug": "pick_list_premium_boxed",
+      "doc_type": "Pick List",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "50846859ffa4828c83cf1d49e5e65f0e6a2341061ee2f070f0700cce4d81d6f7",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice Pick List",
@@ -12450,6 +13125,31 @@
       "checksum": "f23464ac0f857c0d176af4fd4ba77fb1961624a0eea3e6777ed026fdbf92d61b"
     },
     {
+      "name": "Bilingual Tax Invoice POS Invoice",
+      "slug": "pos_invoice_bilingual_tax",
+      "doc_type": "POS Invoice",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "bilingual_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "426e8b2410b8ba1ba8838f5aa5f59f5c35bda552da4e787ef5a8cb4d18027637",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+    },
+    {
       "name": "Compact POS Invoice",
       "slug": "pos_invoice_compact",
       "doc_type": "POS Invoice",
@@ -12566,6 +13266,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice POS Invoice",
+      "slug": "pos_invoice_gradient_modern",
+      "doc_type": "POS Invoice",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "6dfb69056e5a3ad1effd3c0095fc6f7efae5aaafef39294c96ee871a442bdb6e",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid POS Invoice",
       "slug": "pos_invoice_gradient_vivid",
       "doc_type": "POS Invoice",
@@ -12660,6 +13384,31 @@
       "description": "India GSTIN, HSN, tax ready"
     },
     {
+      "name": "KSA ZATCA Fatoora Tax Invoice POS Invoice",
+      "slug": "pos_invoice_ksa_zatca_fatoora",
+      "doc_type": "POS Invoice",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ad19f0b0b3025a741446734c9b1beece5cb41b5ec367ddf59672834614968aed",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
+    },
+    {
       "name": "Minimal POS Invoice",
       "slug": "pos_invoice_minimal",
       "doc_type": "POS Invoice",
@@ -12710,6 +13459,30 @@
       "checksum": "3664e3c8d34a983ecb7ba23c6a306f5ccd37dabcd68326496130b87ab66c54f2"
     },
     {
+      "name": "Modern Colorful Invoice POS Invoice",
+      "slug": "pos_invoice_modern_colorful",
+      "doc_type": "POS Invoice",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "74069c37f71aa902a51716cc68a78ec535dfda86b218082d5da1afdc80bb911c",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR POS Invoice",
       "slug": "pos_invoice_modern_qr",
       "doc_type": "POS Invoice",
@@ -12737,6 +13510,30 @@
       "status": "stable",
       "checksum": "b84d0a5a9be9ce146963e606f0d8c01b7e8a53391d607928e1b93d0d9dca0470",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice POS Invoice",
+      "slug": "pos_invoice_modular_box",
+      "doc_type": "POS Invoice",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9c16027cdc320d7c6e65f383841e13de312a86907129e9716ebc249de7abc466",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant POS Invoice",
@@ -12828,6 +13625,30 @@
       "status": "stable",
       "checksum": "020a00dbf2f4c6879b86a78995299abe0f436cbb2926c9d59dea461cd8970923",
       "description": "Pakistan NTN/STRN sales tax invoice"
+    },
+    {
+      "name": "Premium Boxed Invoice POS Invoice",
+      "slug": "pos_invoice_premium_boxed",
+      "doc_type": "POS Invoice",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "17ebb553ddd5dd5ddd3db2e54efa410818bdbad4e8bb321b07b3b3e6a148f55b",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice POS Invoice",
@@ -13241,6 +14062,31 @@
       "status": "stable",
       "checksum": "adc19cf31b43a3be30e0d9a1ad35d12943ff68237e3647d77464737b3d5e9de7",
       "description": "Yellow accent stripe, structured metadata"
+    },
+    {
+      "name": "ZATCA Manrope Tax Invoice POS Invoice",
+      "slug": "pos_invoice_zatca_manrope",
+      "doc_type": "POS Invoice",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ab332901482c781a609ed24bb9c374a437e84ec0266a81480b883fe0f2063ab7",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
     },
     {
       "name": "ZATCA E-Invoice Specimen POS Invoice",
@@ -14458,6 +15304,31 @@
       "description": "Clean blue theme, summary balance box"
     },
     {
+      "name": "Bilingual Tax Invoice Purchase Invoice",
+      "slug": "purchase_invoice_bilingual_tax",
+      "doc_type": "Purchase Invoice",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "bilingual_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "65eb3ff9de6dd9702aa53d04b3ab98b10b84dd79d4fcfe04d59f64c4cc511a45",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+    },
+    {
       "name": "Clean Purchase Invoice",
       "slug": "purchase_invoice_clean",
       "doc_type": "Purchase Invoice",
@@ -14679,6 +15550,30 @@
       "checksum": "8b567caa41d195a0c3ca1f4fcb4995822b7e39876e563bf10fbaec8b387c4088"
     },
     {
+      "name": "Gradient Modern Invoice Purchase Invoice",
+      "slug": "purchase_invoice_gradient_modern",
+      "doc_type": "Purchase Invoice",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "264f318d6b90cec207389399019210941228235ad3bf750768e0eb6f41e93cff",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Purchase Invoice",
       "slug": "purchase_invoice_gradient_vivid",
       "doc_type": "Purchase Invoice",
@@ -14773,6 +15668,31 @@
       "description": "India GSTIN, HSN, tax ready"
     },
     {
+      "name": "KSA ZATCA Fatoora Tax Invoice Purchase Invoice",
+      "slug": "purchase_invoice_ksa_zatca_fatoora",
+      "doc_type": "Purchase Invoice",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "755a9cf25792a1a4b0faaadc4a34fa95ffb75b904836b408dab73ebd3dcd9690",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
+    },
+    {
       "name": "Landscape Purchase Invoice",
       "slug": "purchase_invoice_landscape",
       "doc_type": "Purchase Invoice",
@@ -14852,6 +15772,30 @@
       "checksum": "7e20b1f0bba44d30dee5eeceaf6b6850bdba046d1d25d9db52403248f80ed000"
     },
     {
+      "name": "Modern Colorful Invoice Purchase Invoice",
+      "slug": "purchase_invoice_modern_colorful",
+      "doc_type": "Purchase Invoice",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b7f51e60f10382523e4b8379356d52d1ba896159143da33e187b3f5bf60badf8",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Purchase Invoice",
       "slug": "purchase_invoice_modern_qr",
       "doc_type": "Purchase Invoice",
@@ -14879,6 +15823,30 @@
       "status": "stable",
       "checksum": "a4cd92281030fb3bae1d95b53a8faf03424bf700263e967e20e9e1d5ce58cbc1",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Purchase Invoice",
+      "slug": "purchase_invoice_modular_box",
+      "doc_type": "Purchase Invoice",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b1a1f34054050f0f6326e00695a457756c85a1423beb08cd344f809b5fda77ce",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Purchase Invoice",
@@ -15022,6 +15990,30 @@
       ],
       "status": "draft",
       "checksum": "93e6d1931145805a90ad63d960171d90dfa2a4772d73c38e5d57a9dbb7c98c14"
+    },
+    {
+      "name": "Premium Boxed Invoice Purchase Invoice",
+      "slug": "purchase_invoice_premium_boxed",
+      "doc_type": "Purchase Invoice",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "26191b3f54063a71aaf1568bb0182010c73a6a118190f1c656e9a68fb970e0f1",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Purchase Invoice",
@@ -15459,6 +16451,31 @@
       "description": "Yellow accent stripe, structured metadata"
     },
     {
+      "name": "ZATCA Manrope Tax Invoice Purchase Invoice",
+      "slug": "purchase_invoice_zatca_manrope",
+      "doc_type": "Purchase Invoice",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f1a2a9233dfe9dbcbc08cfd6022d7ace0005d1338ed568b49b13ab52a5e7ffc6",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
+    },
+    {
       "name": "ZATCA E-Invoice Specimen Purchase Invoice",
       "slug": "purchase_invoice_zatca_specimen",
       "doc_type": "Purchase Invoice",
@@ -15736,6 +16753,30 @@
       "checksum": "ba6d5f26b8f959b347d3d61d338722d762ab2784837e4dc3db37d6567d2d06db"
     },
     {
+      "name": "Gradient Modern Invoice Purchase Order",
+      "slug": "purchase_order_gradient_modern",
+      "doc_type": "Purchase Order",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2f7cf29c5ba718e2a17fa8ba780f79b7b26325772122c295a2a7b03a8158019b",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Purchase Order",
       "slug": "purchase_order_gradient_vivid",
       "doc_type": "Purchase Order",
@@ -15906,6 +16947,30 @@
       "checksum": "1b2e8973b9168c77836ab34e633a2c7ffefbac0f3158c6e514b97d1a8c07a45d"
     },
     {
+      "name": "Modern Colorful Invoice Purchase Order",
+      "slug": "purchase_order_modern_colorful",
+      "doc_type": "Purchase Order",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "1deb8914bbcade64ff7fb7723a5e887afbad45f2bf92909a4a47dbaedb5bbfe7",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Purchase Order",
       "slug": "purchase_order_modern_qr",
       "doc_type": "Purchase Order",
@@ -15933,6 +16998,30 @@
       "status": "stable",
       "checksum": "731989cdd6130844346cc5386afe3097ef2870dd1910a140e93eab6d8227639e",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Purchase Order",
+      "slug": "purchase_order_modular_box",
+      "doc_type": "Purchase Order",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "4986252b594c918ca4e024f21de4bc7bc3e0785310e83450cbc2ccdacf5df139",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Purchase Order",
@@ -16074,6 +17163,30 @@
       ],
       "status": "draft",
       "checksum": "4afc5306fe94989c7bcd81eee087bb331cf60b5c07cbc57b8cd65774e9b8cb5e"
+    },
+    {
+      "name": "Premium Boxed Invoice Purchase Order",
+      "slug": "purchase_order_premium_boxed",
+      "doc_type": "Purchase Order",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ce172ae8c1af46fafdc32bc8801e9794939dea81fc6d3158ab8adde16b573655",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Purchase Order",
@@ -16727,6 +17840,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Purchase Receipt",
+      "slug": "purchase_receipt_gradient_modern",
+      "doc_type": "Purchase Receipt",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "5e6eeef862e9ad819ab6923d2eb74e48e4fe028528d8ba1dc4246ddab8c8f36b",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Purchase Receipt",
       "slug": "purchase_receipt_gradient_vivid",
       "doc_type": "Purchase Receipt",
@@ -16892,6 +18029,30 @@
       "checksum": "3f455f5c87a0d428b4d1cd21b3637f15fa455c08e6ba63ac26b1ad8d143d6ced"
     },
     {
+      "name": "Modern Colorful Invoice Purchase Receipt",
+      "slug": "purchase_receipt_modern_colorful",
+      "doc_type": "Purchase Receipt",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c9661265d3b3f4ea7c1199797712c7e90eec8ca41ba3003457e8fa63b671ee6c",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Purchase Receipt",
       "slug": "purchase_receipt_modern_qr",
       "doc_type": "Purchase Receipt",
@@ -16919,6 +18080,30 @@
       "status": "stable",
       "checksum": "f5e2bb5629b991923bf88cb37a16c36e5a39e2d63214d844aab00c951a8119f9",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Purchase Receipt",
+      "slug": "purchase_receipt_modular_box",
+      "doc_type": "Purchase Receipt",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "8d8d9324cfad3e15594ec58b917496167577536df8280854301b7ccc59e3ec88",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Purchase Receipt",
@@ -17056,6 +18241,30 @@
       ],
       "status": "draft",
       "checksum": "e4c4bfb2e7c9db1ebe9ea80a5adf6d80dadc713e934ec99a45ce982a800cca8e"
+    },
+    {
+      "name": "Premium Boxed Invoice Purchase Receipt",
+      "slug": "purchase_receipt_premium_boxed",
+      "doc_type": "Purchase Receipt",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "46c624411d0268be8b6c4a58d4ed984ad98cd791136da90282dec578d08e32c9",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Purchase Receipt",
@@ -17581,6 +18790,31 @@
       "description": "Clean blue theme, summary balance box"
     },
     {
+      "name": "Bilingual Tax Invoice Quotation",
+      "slug": "quotation_bilingual_tax",
+      "doc_type": "Quotation",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "bilingual_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "3ed2ba3c6f9f5bf6c94fe46141caed6333ce5fa7a66a605d140d3fb81de790c4",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+    },
+    {
       "name": "Clean Quotation",
       "slug": "quotation_clean",
       "doc_type": "Quotation",
@@ -17772,6 +19006,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Quotation",
+      "slug": "quotation_gradient_modern",
+      "doc_type": "Quotation",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "80a82bb942ac5d7f2ba9a1fc99a3e88e2b6d53c920245109f8c29cbda9649143",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Quotation",
       "slug": "quotation_gradient_vivid",
       "doc_type": "Quotation",
@@ -17866,6 +19124,31 @@
       "description": "India GSTIN, HSN, tax ready"
     },
     {
+      "name": "KSA ZATCA Fatoora Tax Invoice Quotation",
+      "slug": "quotation_ksa_zatca_fatoora",
+      "doc_type": "Quotation",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2bc53e64fbc80a7d1b5cfe4e64b1199b14c4d8e61f7b7c5f335caaf680b06369",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
+    },
+    {
       "name": "Landscape Quotation",
       "slug": "quotation_landscape",
       "doc_type": "Quotation",
@@ -17942,6 +19225,30 @@
       "checksum": "c4d0e09c14def7f2948bb13acc7c00e527cc2d74f46da75201ea333c1934d84f"
     },
     {
+      "name": "Modern Colorful Invoice Quotation",
+      "slug": "quotation_modern_colorful",
+      "doc_type": "Quotation",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "da6c8ff506387a0496bd05b476517fb69e5ad0531303ea288083e376c0b80735",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Quotation",
       "slug": "quotation_modern_qr",
       "doc_type": "Quotation",
@@ -17969,6 +19276,30 @@
       "status": "stable",
       "checksum": "a22dc31ed81d9cb22634ae57747fd6177dd103765c3dd303ebb6fbd962c86d3c",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Quotation",
+      "slug": "quotation_modular_box",
+      "doc_type": "Quotation",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b2993a180816b1150a2ca64cb3e9cf02dc10fd427193e0b1874903e8b832ca42",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Quotation",
@@ -18110,6 +19441,30 @@
       ],
       "status": "draft",
       "checksum": "9dbcb6f6cfd656eb4a7a28a720132b8014982264ba6c4a5eec01713a4073574f"
+    },
+    {
+      "name": "Premium Boxed Invoice Quotation",
+      "slug": "quotation_premium_boxed",
+      "doc_type": "Quotation",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "61c543cdd1812be09b4278fbfe78f0ce425f5527570bb0a73d97843acbe756e2",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Quotation",
@@ -18643,6 +19998,31 @@
       "description": "Yellow accent stripe, structured metadata"
     },
     {
+      "name": "ZATCA Manrope Tax Invoice Quotation",
+      "slug": "quotation_zatca_manrope",
+      "doc_type": "Quotation",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "87cb69899e53d13aec0a889816036305d1f89a376edb1f1b56325beae4a3cb9f",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
+    },
+    {
       "name": "ZATCA E-Invoice Specimen Quotation",
       "slug": "quotation_zatca_specimen",
       "doc_type": "Quotation",
@@ -18864,6 +20244,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Request for Quotation",
+      "slug": "request_for_quotation_gradient_modern",
+      "doc_type": "Request for Quotation",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f8ea77de0823033eeb1398848eb02989c1f7af73f641fe122fc5932dd6451d9f",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Request for Quotation",
       "slug": "request_for_quotation_gradient_vivid",
       "doc_type": "Request for Quotation",
@@ -19004,6 +20408,30 @@
       "checksum": "a841c820a29cf585f1856f1369dda2a23b1dea56232977fb3359614f015d3bef"
     },
     {
+      "name": "Modern Colorful Invoice Request for Quotation",
+      "slug": "request_for_quotation_modern_colorful",
+      "doc_type": "Request for Quotation",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9dd4f4962573b6fbf728fd8f12bbc3cd4a423d667d3ab80f54597ad2543d90bd",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Request for Quotation",
       "slug": "request_for_quotation_modern_qr",
       "doc_type": "Request for Quotation",
@@ -19031,6 +20459,30 @@
       "status": "stable",
       "checksum": "1141ab64bd9f8f64e67d37068c5bb5dfe7bf114b8f28a9186bfa844ff0db43b5",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Request for Quotation",
+      "slug": "request_for_quotation_modular_box",
+      "doc_type": "Request for Quotation",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "253b426037d616e620a3102fcab87bb1b73599044b20105f3d381be05a2ff065",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Request for Quotation",
@@ -19168,6 +20620,30 @@
       ],
       "status": "draft",
       "checksum": "e883d7a2ab30564eeb435a6fc19d4e6d7d079102150bdd0deb7a0265d184654f"
+    },
+    {
+      "name": "Premium Boxed Invoice Request for Quotation",
+      "slug": "request_for_quotation_premium_boxed",
+      "doc_type": "Request for Quotation",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e33cedbe831dbceb667fc22d8f71f0bfd75719acf1cf8d6375321fa307688b6e",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Request for Quotation",
@@ -19764,6 +21240,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Salary Slip",
+      "slug": "salary_slip_gradient_modern",
+      "doc_type": "Salary Slip",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2dc1df742a3083495e31c53fc6198ba46e655fb7553f9b3b137910c3f79a6e0b",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Salary Slip",
       "slug": "salary_slip_gradient_vivid",
       "doc_type": "Salary Slip",
@@ -19841,6 +21341,30 @@
       "checksum": "85e9812a61e626a78aeef953948457c856762f475ee0ea2334b2c1536e6d6fe4"
     },
     {
+      "name": "Modern Colorful Invoice Salary Slip",
+      "slug": "salary_slip_modern_colorful",
+      "doc_type": "Salary Slip",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c92255c5c90c3b3e92c41f470dce08aafc5d20def3760b579c4cede63bf006be",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Salary Slip",
       "slug": "salary_slip_modern_qr",
       "doc_type": "Salary Slip",
@@ -19868,6 +21392,30 @@
       "status": "stable",
       "checksum": "d41b6666607fe7f2a2648935931cb28fdc221c6490566ec9b0b6c2674fd2e6de",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Salary Slip",
+      "slug": "salary_slip_modular_box",
+      "doc_type": "Salary Slip",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "db1c94e2af3f0402cf6be8f4556b117ad49d0624400fbd41285849bc2aec6584",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Salary Slip",
@@ -19928,6 +21476,30 @@
       "status": "stable",
       "checksum": "50c985fb0b857970b8c28431e3f101797be35d5d5f0c0c091b3ea7b654d4fba4",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Salary Slip",
+      "slug": "salary_slip_premium_boxed",
+      "doc_type": "Salary Slip",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "hr",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "f374bcca1ea1b8920014404b9de7b0aadbeb79c0f7c69014ebfc03701447ba67",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Salary Slip",
@@ -20241,10 +21813,13 @@
       "checksum": "e954434b30e54d4d1d7542307b9bb405bd66e1bf6f8e34475a6ef7c7f17d4762"
     },
     {
-      "name": "Sales Invoice Format",
+      "name": "Bilingual Tax Invoice Sales Invoice",
       "slug": "sales_invoice_bilingual_tax",
       "doc_type": "Sales Invoice",
-      "theme": "bilingual",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
       "category": "sales",
       "orientation": "portrait",
       "paper_size": "A4",
@@ -20253,22 +21828,14 @@
         "ar"
       ],
       "features": [
-        "bilingual",
-        "tax-summary",
-        "amount-in-words",
-        "qr",
-        "signature"
+        "shared-html",
+        "bilingual_tax"
       ],
-      "source_type": "original",
-      "source_url": null,
+      "source_type": "adapted",
       "source_license": "MIT",
-      "attribution_required": false,
-      "erpnext_versions": [
-        "15",
-        "16"
-      ],
       "status": "stable",
-      "checksum": "704d607d979b7d91e8d0d74dbe51288fcda111f8a85fd8b2a38cbc24551feb69"
+      "checksum": "5557ba6a73b4e2416b58192e356ee224acad27284be4b59a8f4f21ccd17ce3d0",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
     },
     {
       "name": "Clean Sales Invoice",
@@ -20622,6 +22189,30 @@
       ]
     },
     {
+      "name": "Gradient Modern Invoice Sales Invoice",
+      "slug": "sales_invoice_gradient_modern",
+      "doc_type": "Sales Invoice",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "a6db79fa840755159497480e811061d960ad65b8fff7259f940e9148b33e9a24",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Sales Invoice",
       "slug": "sales_invoice_gradient_vivid",
       "doc_type": "Sales Invoice",
@@ -20740,6 +22331,31 @@
       ],
       "status": "draft",
       "checksum": "969941b80e61197624bd6a06d80fcdbe367881e5a460e4d42623fa90e4c54c8f"
+    },
+    {
+      "name": "KSA ZATCA Fatoora Tax Invoice Sales Invoice",
+      "slug": "sales_invoice_ksa_zatca_fatoora",
+      "doc_type": "Sales Invoice",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b369b9b51823d01654cf02ffd0eb5336c1466c5b890fb7eaf843c99df1559d28",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
     },
     {
       "name": "Landscape Sales Invoice",
@@ -20873,6 +22489,30 @@
       "checksum": "4f30dac2da0c056f89f6085743d8584f63538a5d170b5d33b5a3b6016464c95e"
     },
     {
+      "name": "Modern Colorful Invoice Sales Invoice",
+      "slug": "sales_invoice_modern_colorful",
+      "doc_type": "Sales Invoice",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "376faf85a274ba85873747c8c6cbc2fe30b096e0c170295cad4d42120752626c",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Sales Invoice",
       "slug": "sales_invoice_modern_qr",
       "doc_type": "Sales Invoice",
@@ -20900,6 +22540,30 @@
       "status": "stable",
       "checksum": "d2e493a51a55b87bd592f3cb6c57be1f2dd6d1626fafb7e35a2b9a7369d3500f",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Sales Invoice",
+      "slug": "sales_invoice_modular_box",
+      "doc_type": "Sales Invoice",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b1c7d71228e19b72787b3b21a0caa65ba9bc18317425e420ee7ae7ccae54c1f2",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Sales Invoice",
@@ -21069,6 +22733,30 @@
       ],
       "status": "draft",
       "checksum": "e996af8ef22ce6fdf95e1a08fdf00fbb3895ac06dbad734c75e6c222a190bcb9"
+    },
+    {
+      "name": "Premium Boxed Invoice Sales Invoice",
+      "slug": "sales_invoice_premium_boxed",
+      "doc_type": "Sales Invoice",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "27936c4cde9e6a36f360cb34718340acb153d1f6da15d4a8a47119bf6fd29d2d",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Sales Invoice",
@@ -21913,6 +23601,31 @@
       "checksum": "87b81b303db90cc5e019282497beab2456aaae08b753b42976f7e79431ab6992"
     },
     {
+      "name": "ZATCA Manrope Tax Invoice Sales Invoice",
+      "slug": "sales_invoice_zatca_manrope",
+      "doc_type": "Sales Invoice",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ac61c4755f74f3a79e63c96264f37d47d3f80c8238a1cbdc0a3f3e2fa2fc21b1",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
+    },
+    {
       "name": "ZATCA E-Invoice Specimen Sales Invoice",
       "slug": "sales_invoice_zatca_specimen",
       "doc_type": "Sales Invoice",
@@ -22004,6 +23717,31 @@
       "status": "stable",
       "checksum": "ddb51c706d5a8956fd06a90c6a4f761b8c5e77051a7667b2e0ec498c00d76342",
       "description": "Clean blue theme, summary balance box"
+    },
+    {
+      "name": "Bilingual Tax Invoice Sales Order",
+      "slug": "sales_order_bilingual_tax",
+      "doc_type": "Sales Order",
+      "theme": "bilingual_tax",
+      "layout_family": "bilingual_tax",
+      "layout_type": "specimen",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "bilingual_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "55b0ddd11f5b8781ac190d9e18a7fc28ab8aef538f3f75cfc7e9e557cccc7765",
+      "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
     },
     {
       "name": "Clean Sales Order",
@@ -22197,6 +23935,30 @@
       "checksum": "83345beda0a5a938fb69314bd4e9cb36cf590928b3a66c615f9061184fea651d"
     },
     {
+      "name": "Gradient Modern Invoice Sales Order",
+      "slug": "sales_order_gradient_modern",
+      "doc_type": "Sales Order",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "6065944291ffb6ccb13f20926237a73d9825701ef0038d0c5fdbc727820d9bfc",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Sales Order",
       "slug": "sales_order_gradient_vivid",
       "doc_type": "Sales Order",
@@ -22291,6 +24053,31 @@
       "description": "India GSTIN, HSN, tax ready"
     },
     {
+      "name": "KSA ZATCA Fatoora Tax Invoice Sales Order",
+      "slug": "sales_order_ksa_zatca_fatoora",
+      "doc_type": "Sales Order",
+      "theme": "ksa_zatca_fatoora",
+      "layout_family": "ksa_zatca_fatoora",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "ksa_zatca_fatoora"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "142aa101cebfb10d78706ee9e503656256bedb764cacc66e360937ce2808f81d",
+      "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
+    },
+    {
       "name": "Landscape Sales Order",
       "slug": "sales_order_landscape",
       "doc_type": "Sales Order",
@@ -22367,6 +24154,30 @@
       "checksum": "5d21309df5edad9729cd956fb821211920aa395d1c0e4d76cd602bf1c8cd578c"
     },
     {
+      "name": "Modern Colorful Invoice Sales Order",
+      "slug": "sales_order_modern_colorful",
+      "doc_type": "Sales Order",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "87f58ccfefeef28fe89188d41c9e225d82b52b106fce937e4087549bb9d4a82d",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Sales Order",
       "slug": "sales_order_modern_qr",
       "doc_type": "Sales Order",
@@ -22394,6 +24205,30 @@
       "status": "stable",
       "checksum": "9cdb0ec3a910aef5159e41c8573daa339d25515aa7628d2172fbbc1b329d5c09",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Sales Order",
+      "slug": "sales_order_modular_box",
+      "doc_type": "Sales Order",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "0dc62a10adc166fe85876262937bcf29babea76d3bad213f170b0130c03b7fa8",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Sales Order",
@@ -22535,6 +24370,30 @@
       ],
       "status": "draft",
       "checksum": "696f2ebd35278915798dfe871a2d9e16c85c736898c16f1c73b3888410832602"
+    },
+    {
+      "name": "Premium Boxed Invoice Sales Order",
+      "slug": "sales_order_premium_boxed",
+      "doc_type": "Sales Order",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "43325f30fb822efd1c282274912a0e992524c0c32bfba73829e55879553e36ae",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Sales Order",
@@ -23066,6 +24925,31 @@
       "status": "stable",
       "checksum": "17d16d4ef621ff776b8423282a558df36e749f7be24879e521dcffbf7a59b15c",
       "description": "Yellow accent stripe, structured metadata"
+    },
+    {
+      "name": "ZATCA Manrope Tax Invoice Sales Order",
+      "slug": "sales_order_zatca_manrope",
+      "doc_type": "Sales Order",
+      "theme": "zatca_manrope",
+      "layout_family": "zatca_manrope",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "shared-html",
+        "zatca_manrope"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "0b82491a0889967881a77e3907631a2f62333acde96ceee5375a7cc7ca1726ad",
+      "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
     },
     {
       "name": "ZATCA E-Invoice Specimen Sales Order",
@@ -23720,6 +25604,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Shipment",
+      "slug": "shipment_gradient_modern",
+      "doc_type": "Shipment",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "02096a77980e454bcef2ec5ef1295c9b26be514f4d51fe62c63ce9ca3de7dba8",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Shipment",
       "slug": "shipment_gradient_vivid",
       "doc_type": "Shipment",
@@ -23843,6 +25751,30 @@
       "checksum": "bc5cf561801eaa4c0762ecba5266a84780c50d1fd89c3fbcef07c9a4107a94af"
     },
     {
+      "name": "Modern Colorful Invoice Shipment",
+      "slug": "shipment_modern_colorful",
+      "doc_type": "Shipment",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ed6d6cea9371c02c25975e2bb558178bc31d66de10d94d9c7ad50bf81f31f2a0",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Shipment",
       "slug": "shipment_modern_qr",
       "doc_type": "Shipment",
@@ -23870,6 +25802,30 @@
       "status": "stable",
       "checksum": "8e5163ffcbbfa080e457960a78cc54ce0cf34875ca900a53968b2c046993d13a",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Shipment",
+      "slug": "shipment_modular_box",
+      "doc_type": "Shipment",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9505a89a8c7df185d3982834c5deeebf1ba3f81cf99def2ff7af7f3b0edc08ef",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Shipment",
@@ -23930,6 +25886,30 @@
       "status": "stable",
       "checksum": "f896f685c436f04acf05a88204725aa8aed450e8758646ba99547377e8bcc5ff",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Shipment",
+      "slug": "shipment_premium_boxed",
+      "doc_type": "Shipment",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "6b37cce515bb9043be6feb49ee2e429d0cad728fbeddf98a2575b546b2e749f2",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice Shipment",
@@ -24300,6 +26280,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Stock Entry",
+      "slug": "stock_entry_gradient_modern",
+      "doc_type": "Stock Entry",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "d0749ec947017a3d2525343bc94587dc12d6d7146633c2cb8b61cb5b203bd9c6",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Stock Entry",
       "slug": "stock_entry_gradient_vivid",
       "doc_type": "Stock Entry",
@@ -24448,6 +26452,30 @@
       "checksum": "4e7d1505a6f48d471d7e33b398b5a4696f8489b46120344b9fb773c003d6adc6"
     },
     {
+      "name": "Modern Colorful Invoice Stock Entry",
+      "slug": "stock_entry_modern_colorful",
+      "doc_type": "Stock Entry",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "7d301c6dd13080aa3d4b2f02210c7014a407e4738012c7f8c6371ccd1da05faf",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Stock Entry",
       "slug": "stock_entry_modern_qr",
       "doc_type": "Stock Entry",
@@ -24475,6 +26503,30 @@
       "status": "stable",
       "checksum": "3b801e7c17da617620e33dcea20702f63d900160c3c19fa8b5af8302b838f286",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Stock Entry",
+      "slug": "stock_entry_modular_box",
+      "doc_type": "Stock Entry",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c88c28a281eef3f8ee7196524353f24d2637ded030082cd7cd0e37503827b3e6",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Stock Entry",
@@ -24535,6 +26587,30 @@
       "status": "stable",
       "checksum": "016a2f2502a160f272df9c4b11e1806ec875d6af1aac99d0ef93af9774b80f3c",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Stock Entry",
+      "slug": "stock_entry_premium_boxed",
+      "doc_type": "Stock Entry",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "stock",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "66e3ed126bd9fbe8e2363e89a319db1c308d67c71ffe1635bdc5e242f4bbde76",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Purple Tax Invoice Stock Entry",
@@ -24976,6 +27052,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Subcontracting Order",
+      "slug": "subcontracting_order_gradient_modern",
+      "doc_type": "Subcontracting Order",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "004ec99dd40062a6fc5c0bdbb4b6bb48394bdd9ab568b89227dd34075d6821cb",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Subcontracting Order",
       "slug": "subcontracting_order_gradient_vivid",
       "doc_type": "Subcontracting Order",
@@ -25053,6 +27153,30 @@
       "checksum": "5f8001787c905c90279ff8dad057b981add84916120f278564c17effa090b278"
     },
     {
+      "name": "Modern Colorful Invoice Subcontracting Order",
+      "slug": "subcontracting_order_modern_colorful",
+      "doc_type": "Subcontracting Order",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e4ca8d1bdaddfa0880fbb5fc66d8df30947557eb6475512e4df48707f4bb259c",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Subcontracting Order",
       "slug": "subcontracting_order_modern_qr",
       "doc_type": "Subcontracting Order",
@@ -25080,6 +27204,30 @@
       "status": "stable",
       "checksum": "d8e44a6cc94020bec82853810bb8e92678a56fad63b3a54b1ef7d42ef3d83bc0",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Subcontracting Order",
+      "slug": "subcontracting_order_modular_box",
+      "doc_type": "Subcontracting Order",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "0426be3922a453ae3f0a2fc6dff2e1bee4b02766665c4ddd89e2f8362ab7e65f",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Subcontracting Order",
@@ -25163,6 +27311,30 @@
       "status": "stable",
       "checksum": "ef3bb557941322d74bf081ce9944bb7fa986904fcb475200d6be093ac693b8ae",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Subcontracting Order",
+      "slug": "subcontracting_order_premium_boxed",
+      "doc_type": "Subcontracting Order",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "b27c063fbf851928586dafd8fbf02123eb9400719fd407b61ce12322b84f8b36",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Subcontracting Order",
@@ -25577,6 +27749,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_gradient_modern",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "8932e97926444ae3ddcebc97dd2d708e1cadd178195a5043e2daa578e2950dd1",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Subcontracting Receipt",
       "slug": "subcontracting_receipt_gradient_vivid",
       "doc_type": "Subcontracting Receipt",
@@ -25654,6 +27850,30 @@
       "checksum": "dbe01c38992904ab9cc29217ab703a0e0f66af25bc08d9a918b19d13df20b156"
     },
     {
+      "name": "Modern Colorful Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_modern_colorful",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ec4b5f89289c33850ffe1a08db666e8e7effb6098549cb9d56deb6a6a260e862",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Subcontracting Receipt",
       "slug": "subcontracting_receipt_modern_qr",
       "doc_type": "Subcontracting Receipt",
@@ -25681,6 +27901,30 @@
       "status": "stable",
       "checksum": "ddfa2a11134ce2cb2c1a02815d94467c2ba5531010dd3581b41b64932e763cdb",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_modular_box",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "8072b095299e67de9e7a8abb320136891b2bd41925c698bc8b673cbe9a29008e",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Subcontracting Receipt",
@@ -25764,6 +28008,30 @@
       "status": "stable",
       "checksum": "a45c1616efa3439f2032101388ff68b59fb40b7e451eea01e0a3aec1d16bce61",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Subcontracting Receipt",
+      "slug": "subcontracting_receipt_premium_boxed",
+      "doc_type": "Subcontracting Receipt",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "manufacturing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "c004ef964a7990ca4262d22ec9b15f1ad7ba0089aee4a11606c296549d1138de",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Subcontracting Receipt",
@@ -26184,6 +28452,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Supplier Quotation",
+      "slug": "supplier_quotation_gradient_modern",
+      "doc_type": "Supplier Quotation",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "ed5e92d96299dd0e70ce2d572547ad96844ec34ca588cbdca0a9cd23d403a54c",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Supplier Quotation",
       "slug": "supplier_quotation_gradient_vivid",
       "doc_type": "Supplier Quotation",
@@ -26328,6 +28620,30 @@
       "checksum": "88aba57284dd18065f15bd32024b6dbadaf661673a9f03c71abfee44dff68ac5"
     },
     {
+      "name": "Modern Colorful Invoice Supplier Quotation",
+      "slug": "supplier_quotation_modern_colorful",
+      "doc_type": "Supplier Quotation",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "2bce24f40c3622bb7f719efc816845ed1562a63c233ff7bd771d7e08fef89726",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Supplier Quotation",
       "slug": "supplier_quotation_modern_qr",
       "doc_type": "Supplier Quotation",
@@ -26355,6 +28671,30 @@
       "status": "stable",
       "checksum": "8ce975931f013766292210388227fe8ce298bb2e362c854381f3e6b4a20a376a",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Supplier Quotation",
+      "slug": "supplier_quotation_modular_box",
+      "doc_type": "Supplier Quotation",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "acf24c7665dcba749feae9de6e1139bf882e2c959fb298d16b92c1874b6de878",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Monochrome Supplier Quotation",
@@ -26496,6 +28836,30 @@
       ],
       "status": "draft",
       "checksum": "7d558629e3b4f1a1a99553a88be21a33535298e637a82c77bb0a94c12fe7f09c"
+    },
+    {
+      "name": "Premium Boxed Invoice Supplier Quotation",
+      "slug": "supplier_quotation_premium_boxed",
+      "doc_type": "Supplier Quotation",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "purchasing",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "bfcf0c18bd0f36718ec3761c0bb07a21680327693341d69c1883ac0d0336f453",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Supplier Quotation",
@@ -27098,6 +29462,30 @@
       "description": "Bright green modern"
     },
     {
+      "name": "Gradient Modern Invoice Timesheet",
+      "slug": "timesheet_gradient_modern",
+      "doc_type": "Timesheet",
+      "theme": "gradient_modern",
+      "layout_family": "gradient_modern",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "gradient_modern"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "9ab923c33e9c7051dce46af860281f813db3d6f0da356fed5aa1e084bb0b4726",
+      "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+    },
+    {
       "name": "Gradient Vivid Timesheet",
       "slug": "timesheet_gradient_vivid",
       "doc_type": "Timesheet",
@@ -27175,6 +29563,30 @@
       "checksum": "67f6cde8a613eaf0a5681ded8f664efd597b0ee4d7fe92338b17d4e1d64fda2d"
     },
     {
+      "name": "Modern Colorful Invoice Timesheet",
+      "slug": "timesheet_modern_colorful",
+      "doc_type": "Timesheet",
+      "theme": "modern_colorful",
+      "layout_family": "modern_colorful",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modern_colorful"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "e62c300f6d158f9d24ad6dc05aa8d813162d655463562c92e910b3a9b835bcc3",
+      "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+    },
+    {
       "name": "Modern QR Timesheet",
       "slug": "timesheet_modern_qr",
       "doc_type": "Timesheet",
@@ -27202,6 +29614,30 @@
       "status": "stable",
       "checksum": "34343e39afc5d8902b9bd77724fafc07b4c71e0d3397b25820f3bfc873975133",
       "description": "Minimal grid, QR payment block"
+    },
+    {
+      "name": "Modular Box Invoice Timesheet",
+      "slug": "timesheet_modular_box",
+      "doc_type": "Timesheet",
+      "theme": "modular_box",
+      "layout_family": "modular_box",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "modular_box"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "427fafee2789d38aedfc88537ee1794016eaa6359e463926c4eea19a8f5565f9",
+      "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
     },
     {
       "name": "Ocean Vibrant Timesheet",
@@ -27262,6 +29698,30 @@
       "status": "stable",
       "checksum": "8ea28e404ff6bbcfdda27ad4a5cb89dcc8f645de3f4652fd8b896afcc20e9b48",
       "description": "Bold orange total bar, signature area"
+    },
+    {
+      "name": "Premium Boxed Invoice Timesheet",
+      "slug": "timesheet_premium_boxed",
+      "doc_type": "Timesheet",
+      "theme": "premium_boxed",
+      "layout_family": "premium_boxed",
+      "layout_type": "colorful",
+      "region": "ALL",
+      "category": "projects",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en"
+      ],
+      "features": [
+        "shared-html",
+        "premium_boxed"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "status": "stable",
+      "checksum": "bf919ff1435c31a9f7d9da114208864e81282ad8c953de7583ff670382b90473",
+      "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
     },
     {
       "name": "Professional Blue Timesheet",

@@ -1,0 +1,25 @@
+{
+  "name": "Bilingual Tax Invoice Purchase Invoice",
+  "slug": "purchase_invoice_bilingual_tax",
+  "doc_type": "Purchase Invoice",
+  "theme": "bilingual_tax",
+  "layout_family": "bilingual_tax",
+  "layout_type": "specimen",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "bilingual_tax"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "65eb3ff9de6dd9702aa53d04b3ab98b10b84dd79d4fcfe04d59f64c4cc511a45",
+  "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+}

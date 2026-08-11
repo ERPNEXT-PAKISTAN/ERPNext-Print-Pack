@@ -1,0 +1,25 @@
+{
+  "name": "Bilingual Tax Invoice Delivery Note",
+  "slug": "delivery_note_bilingual_tax",
+  "doc_type": "Delivery Note",
+  "theme": "bilingual_tax",
+  "layout_family": "bilingual_tax",
+  "layout_type": "specimen",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "bilingual_tax"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "cb7e24614a2c3dc0c2357ba822f8aa637ad71bd22c09f0f7ac992ed5c350157a",
+  "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+}

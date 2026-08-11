@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Bill of Materials",
+  "slug": "bom_modular_box",
+  "doc_type": "BOM",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8752983156599234334c28e79dbf817f642e5e3b9c3bd4d566e79791abd416e1",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

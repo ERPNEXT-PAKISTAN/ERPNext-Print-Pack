@@ -1,0 +1,200 @@
+{# KSA ZATCA Fatoora · Purchase Invoice #}
+{% set date_field = "posting_date" %}
+<style>
+:root{
+--ink:#1a2332;--ink-soft:#5b6675;--line:#e2e6ec;--line-strong:#c7cedb;
+--brand:#0b6e4f;--brand-dark:#074935;--brand-tint:#eaf5f0;--accent:#c9a15a;
+--bg:#f4f6f8;--paper:#ffffff;
+}
+*{box-sizing:border-box;}
+.kf-root{font-family:'Cairo','Segoe UI',Tahoma,Arial,sans-serif;color:var(--ink);font-size:11px;direction:rtl;}
+.kf-sheet{background:var(--paper);padding:0;position:relative;}
+.kf-header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding-bottom:16px;border-bottom:3px solid var(--brand);}
+.kf-company-block{display:flex;gap:14px;align-items:center;}
+.kf-logo{width:64px;height:64px;border-radius:12px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;flex-shrink:0;overflow:hidden;}
+.kf-logo img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px;}
+.kf-company-name-ar{font-weight:800;font-size:19px;color:var(--ink);}
+.kf-company-name-en{font-size:12.5px;color:var(--ink-soft);font-weight:600;letter-spacing:.2px;margin-top:2px;direction:ltr;text-align:left;}
+.kf-company-meta{font-size:11px;color:var(--ink-soft);margin-top:6px;line-height:1.7;}
+.kf-company-meta b{color:var(--ink);font-weight:600;}
+.kf-invoice-tag{text-align:left;direction:ltr;}
+.kf-invoice-tag .type-en{font-size:22px;font-weight:800;color:var(--brand-dark);letter-spacing:.3px;}
+.kf-invoice-tag .type-ar{font-size:16px;font-weight:700;color:var(--ink-soft);direction:rtl;text-align:right;margin-top:2px;}
+.kf-invoice-tag .badge{display:inline-block;margin-top:8px;background:var(--brand-tint);color:var(--brand-dark);font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #cfe6db;}
+.kf-meta-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:18px;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+.kf-meta-cell{padding:10px 14px;border-inline-start:1px solid var(--line);}
+.kf-meta-cell:first-child{border-inline-start:none;}
+.kf-meta-label-ar{font-size:10.5px;color:var(--ink-soft);font-weight:600;}
+.kf-meta-label-en{font-size:9px;color:#8b93a1;text-transform:uppercase;letter-spacing:.5px;direction:ltr;}
+.kf-meta-value{font-size:13px;font-weight:700;color:var(--ink);margin-top:3px;direction:ltr;text-align:left;}
+.kf-parties{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;}
+.kf-party-card{background:#fbfbfc;border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+.kf-party-title{font-size:11px;font-weight:700;color:var(--brand-dark);text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px;display:flex;justify-content:space-between;}
+.kf-party-title .en{direction:ltr;font-size:9.5px;color:var(--ink-soft);font-weight:600;}
+.kf-party-name{font-weight:700;font-size:14px;}
+.kf-party-line{font-size:11.5px;color:var(--ink-soft);margin-top:3px;line-height:1.6;}
+.kf-party-line b{color:var(--ink);}
+table.items{width:100%;border-collapse:collapse;margin-top:20px;font-size:11.5px;}
+table.items thead th{background:var(--brand-dark);color:#fff;padding:9px 10px;font-weight:700;font-size:10.5px;text-align:center;}
+table.items thead th .en{display:block;font-size:8.5px;font-weight:500;opacity:.85;direction:ltr;margin-top:1px;}
+table.items tbody td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:center;vertical-align:top;}
+table.items tbody tr:nth-child(even){background:#fafbfc;}
+table.items td.desc{text-align:right;direction:rtl;}
+table.items td.desc .en-desc{display:block;direction:ltr;text-align:left;font-size:10px;color:var(--ink-soft);margin-top:2px;}
+table.items td.num{direction:ltr;font-variant-numeric:tabular-nums;}
+.kf-totals-wrap{display:flex;justify-content:space-between;margin-top:18px;gap:20px;}
+.kf-qr-block{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:6px;}
+.kf-qr-box{width:110px;height:110px;border:1px solid var(--line-strong);border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--ink-soft);text-align:center;padding:6px;}
+.kf-qr-box img{width:100px;height:100px;}
+.kf-qr-caption{font-size:9.5px;color:var(--ink-soft);text-align:center;max-width:120px;line-height:1.5;}
+.kf-qr-caption b{display:block;color:var(--ink);}
+.kf-totals-table{width:290px;font-size:12px;}
+.kf-totals-table .row{display:flex;justify-content:space-between;padding:7px 12px;border-bottom:1px solid var(--line);}
+.kf-totals-table .row .lbl{color:var(--ink-soft);font-weight:500;}
+.kf-totals-table .row .lbl .ar{font-weight:600;color:var(--ink);display:block;font-size:11.5px;}
+.kf-totals-table .row .val{font-weight:700;direction:ltr;}
+.kf-totals-table .grand{background:var(--brand);color:#fff;border-radius:8px;margin-top:8px;padding:10px 14px;}
+.kf-totals-table .grand .lbl .ar{color:#fff;}
+.kf-totals-table .grand .lbl{color:#eafff2;}
+.kf-totals-table .grand .val{font-size:15px;}
+.kf-notes{margin-top:20px;display:grid;grid-template-columns:1.4fr 1fr;gap:16px;}
+.kf-notes-card{border:1px dashed var(--line-strong);border-radius:10px;padding:12px 14px;font-size:11px;color:var(--ink-soft);}
+.kf-notes-card .title{font-weight:700;color:var(--ink);font-size:11.5px;margin-bottom:5px;}
+.kf-bank-card .row2{display:flex;justify-content:space-between;margin-top:4px;}
+.kf-footer{margin-top:26px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:9.5px;color:#9aa2af;}
+.kf-footer .zatca{display:flex;align-items:center;gap:6px;font-weight:700;color:var(--brand-dark);}
+.kf-footer .dot{width:6px;height:6px;border-radius:50%;background:var(--brand);}
+.epp-sig,.sig,.epp-footer,.footer{display:none;}
+.print-format .items > tbody > tr > td{padding:9px 10px !important;}
+</style>
+<div class="kf-root print-format">
+<div class="kf-sheet">
+<div class="kf-header">
+<div class="kf-company-block">
+<div class="kf-logo">
+{% set logo = frappe.db.get_value("Company", doc.company, "company_logo") if doc.company else "" %}
+{% if logo %}<img src="{{ logo }}">{% else %}شركة{% endif %}
+</div>
+<div>
+<div class="kf-company-name-ar">{{ doc.get("custom_company_name_ar") or doc.company or "" }}</div>
+<div class="kf-company-name-en">{{ doc.company or "" }}</div>
+<div class="kf-company-meta">
+<b>الرقم الضريبي / VAT No:</b> {{ doc.company_tax_id or "" }} &nbsp;•&nbsp;
+<b>السجل التجاري / CR:</b> {{ doc.get("custom_company_cr_number") or "" }}<br>
+{{ doc.company_address_display or "" }}
+</div>
+</div>
+</div>
+<div class="kf-invoice-tag">
+<div class="type-en">TAX INVOICE</div>
+<div class="type-ar">فاتورة ضريبية</div>
+<div class="badge">ZATCA E-Invoicing Compliant</div>
+</div>
+</div>
+<div class="kf-meta-strip">
+<div class="kf-meta-cell"><div class="kf-meta-label-ar">رقم الفاتورة <span class="kf-meta-label-en">Invoice No.</span></div><div class="kf-meta-value">{{ doc.name }}</div></div>
+<div class="kf-meta-cell"><div class="kf-meta-label-ar">تاريخ الإصدار <span class="kf-meta-label-en">Issue Date</span></div><div class="kf-meta-value">{{ frappe.utils.formatdate(doc.get(date_field), "dd/MM/yyyy") if doc.get(date_field) else "" }}</div></div>
+<div class="kf-meta-cell"><div class="kf-meta-label-ar">تاريخ التوريد <span class="kf-meta-label-en">Supply Date</span></div><div class="kf-meta-value">{{ frappe.utils.formatdate(doc.get("delivery_date") or doc.get(date_field), "dd/MM/yyyy") if doc.get("delivery_date") or doc.get(date_field) else "" }}</div></div>
+<div class="kf-meta-cell"><div class="kf-meta-label-ar">طريقة الدفع <span class="kf-meta-label-en">Payment Method</span></div><div class="kf-meta-value">{{ doc.mode_of_payment or doc.payment_terms_template or "" }}</div></div>
+</div>
+<div class="kf-parties">
+<div class="kf-party-card">
+<div class="kf-party-title">البائع <span class="en">Seller</span></div>
+<div class="kf-party-name">{{ doc.get("custom_company_name_ar") or doc.company or "" }}</div>
+<div class="kf-party-line"><b>الرقم الضريبي:</b> {{ doc.company_tax_id or "" }}</div>
+<div class="kf-party-line">{{ doc.company_address_display or "" }}</div>
+</div>
+<div class="kf-party-card">
+<div class="kf-party-title">المورد <span class="en">Supplier</span></div>
+<div class="kf-party-name">{{ doc.supplier_name or doc.supplier or "" }}</div>
+<div class="kf-party-line"><b>الرقم الضريبي:</b> {{ doc.tax_id or doc.supplier_tax_id or "" }}</div>
+<div class="kf-party-line">{{ doc.address_display or doc.supplier_address or "" }}</div>
+</div>
+</div>
+
+{% if doc.items %}
+<table class="items">
+<thead>
+<tr>
+<th style="width:6%">#</th>
+<th style="width:34%">الوصف<span class="en">Description</span></th>
+<th style="width:9%">الكمية<span class="en">Qty</span></th>
+<th style="width:14%">سعر الوحدة<span class="en">Unit Price</span></th>
+<th style="width:10%">الخصم<span class="en">Discount</span></th>
+<th style="width:9%">الضريبة %<span class="en">VAT %</span></th>
+<th style="width:9%">قيمة الضريبة<span class="en">VAT Amt</span></th>
+<th style="width:13%">الإجمالي<span class="en">Total</span></th>
+</tr>
+</thead>
+<tbody>
+{% for row in doc.items %}
+{% set line_net = row.net_amount if row.net_amount is not none else (row.amount or 0) %}
+{% set line_disc = row.discount_amount or 0 %}
+{% set tax_rate = row.item_tax_rate if row.item_tax_rate is not none else "" %}
+{% set line_tax = row.get("tax_amount") or 0 %}
+{% set line_total = (line_net or 0) + (line_tax or 0) %}
+<tr>
+<td>{{ loop.index }}</td>
+<td class="desc">{{ row.item_name or row.item_code or row.description or "" }}{% if row.get("custom_item_name_ar") %}<span class="en-desc">{{ row.custom_item_name_ar }}</span>{% elif row.description and row.description != (row.item_name or row.item_code) %}<span class="en-desc">{{ row.description }}</span>{% endif %}</td>
+<td class="num">{{ row.qty or "" }}</td>
+<td class="num">{{ row.get_formatted("rate", doc) if row.get_formatted is defined else row.rate or "" }}</td>
+<td class="num">{{ row.get_formatted("discount_amount", doc) if row.get_formatted is defined and row.discount_amount else line_disc or "0.00" }}</td>
+<td class="num">{% if tax_rate %}{{ tax_rate }}%{% endif %}</td>
+<td class="num">{{ row.get_formatted("tax_amount", doc) if row.get_formatted is defined and row.tax_amount is defined else line_tax or "" }}</td>
+<td class="num">{{ row.get_formatted("amount", doc) if row.get_formatted is defined else line_total or "" }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<div class="kf-totals-wrap">
+<div class="kf-qr-block epp-qr qr">
+<div class="kf-qr-box">
+{% set qr = doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "" %}
+{% if not qr %}{% set _qrp = frappe.call("erpnext_print_pack.print_barcodes.get_qr_and_barcode_data_uri", value=doc.name) %}{% if _qrp %}{% set qr = _qrp.get("qr") or "" %}{% endif %}{% endif %}
+{% if qr %}<img src="{{ qr }}">{% else %}ZATCA<br>QR CODE{% endif %}
+</div>
+<div class="kf-qr-caption"><b>رمز الاستجابة السريعة</b>Seller, VAT No., Timestamp, Total &amp; VAT amount encoded per ZATCA Phase 2 spec</div>
+</div>
+<div class="kf-totals-table">
+<div class="row"><div class="lbl">Subtotal<span class="ar">المجموع الفرعي</span></div><div class="val">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }} {{ doc.currency or "" }}</div></div>
+<div class="row"><div class="lbl">Discount<span class="ar">إجمالي الخصم</span></div><div class="val">{{ doc.get_formatted("total_discount") if doc.get_formatted is defined and doc.total_discount else doc.discount_amount or "0.00" }} {{ doc.currency or "" }}</div></div>
+<div class="row"><div class="lbl">Taxable Amount<span class="ar">الوعاء الضريبي</span></div><div class="val">{{ doc.get_formatted("net_total") if doc.get_formatted is defined else doc.net_total or "" }} {{ doc.currency or "" }}</div></div>
+
+{% for tax in doc.taxes or [] %}
+<div class="row">
+<div class="lbl">{{ tax.description or "VAT" }}<span class="ar">ضريبة</span></div>
+<div class="val">{{ tax.get_formatted("tax_amount") if tax.get_formatted is defined else tax.tax_amount or "" }} {{ doc.currency or "" }}</div>
+</div>
+{% endfor %}
+<div class="row grand"><div class="lbl">Total Due<span class="ar">الإجمالي المستحق</span></div><div class="val">{{ doc.get_formatted("grand_total") if doc.get_formatted is defined else doc.grand_total or "" }} {{ doc.currency or "" }}</div></div>
+</div>
+</div>
+<div class="kf-notes">
+
+{% if doc.in_words %}
+<div class="notes-card">
+<div class="title">المبلغ كتابةً / Amount in Words</div>
+{% if doc.get("custom_in_words_ar") %}{{ doc.custom_in_words_ar }}<br>{% endif %}
+<span style="direction:ltr;display:block;margin-top:3px;">{{ doc.in_words }}</span>
+</div>
+{% endif %}
+<div class="kf-notes-card kf-bank-card">
+<div class="title">تفاصيل التحويل البنكي / Bank Details</div>
+{% set bank = frappe.get_all("Bank Account", filters={"company": doc.company, "is_company_account": 1}, fields=["account_name","bank","bank_account_no","iban"], limit=1) %}
+{% if bank %}
+<div class="row2"><span>Bank</span><b>{{ bank[0].bank or "" }}</b></div>
+<div class="row2"><span>IBAN</span><b style="direction:ltr">{{ bank[0].iban or bank[0].bank_account_no or "" }}</b></div>
+{% else %}—{% endif %}
+</div>
+</div>
+<div class="kf-footer">
+<div>هذه الفاتورة صادرة إلكترونياً ولا تحتاج إلى ختم أو توقيع · This is a system-generated tax invoice.</div>
+<div class="zatca"><span class="dot"></span>Fatoora / ZATCA Phase 2</div>
+</div>
+
+{% set _epp_doc_bc = get_doc_barcode_data_uri(doc.name) if doc.name and get_doc_barcode_data_uri is defined else "" %}
+{% if _epp_doc_bc %}<div class="epp-voucher-barcode" style="margin-top:6px;text-align:center;max-width:100%;overflow:hidden"><img src="{{ _epp_doc_bc }}" alt="{{ doc.name }}" style="max-width:100%;width:auto;max-height:12mm;height:12mm;object-fit:contain;display:inline-block"></div>{% endif %}
+
+</div>
+</div>

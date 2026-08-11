@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Expense Claim",
+  "slug": "expense_claim_premium_boxed",
+  "doc_type": "Expense Claim",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "36fd2cab0e82b7a6362592f135ad5c662215fa9787fd213ddb834631829817f8",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

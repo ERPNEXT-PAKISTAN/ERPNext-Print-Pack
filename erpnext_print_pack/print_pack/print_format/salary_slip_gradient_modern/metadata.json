@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Salary Slip",
+  "slug": "salary_slip_gradient_modern",
+  "doc_type": "Salary Slip",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2dc1df742a3083495e31c53fc6198ba46e655fb7553f9b3b137910c3f79a6e0b",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

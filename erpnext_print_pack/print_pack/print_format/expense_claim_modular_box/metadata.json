@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Expense Claim",
+  "slug": "expense_claim_modular_box",
+  "doc_type": "Expense Claim",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a09aa61bf54c60267f78edfca0a8aa8e3c6eaac0ccd13696412f68996f25ab6a",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

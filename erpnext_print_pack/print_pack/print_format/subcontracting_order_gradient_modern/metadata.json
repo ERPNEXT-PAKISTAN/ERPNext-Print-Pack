@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Subcontracting Order",
+  "slug": "subcontracting_order_gradient_modern",
+  "doc_type": "Subcontracting Order",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "004ec99dd40062a6fc5c0bdbb4b6bb48394bdd9ab568b89227dd34075d6821cb",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

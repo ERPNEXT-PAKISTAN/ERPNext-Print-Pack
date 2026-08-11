@@ -1,0 +1,25 @@
+{
+  "name": "ZATCA Manrope Tax Invoice Delivery Note",
+  "slug": "delivery_note_zatca_manrope",
+  "doc_type": "Delivery Note",
+  "theme": "zatca_manrope",
+  "layout_family": "zatca_manrope",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "zatca_manrope"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e5540f7142d3511f4e22255b8714425e031cc95ba49d9b35204798f4f436076b",
+  "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
+}

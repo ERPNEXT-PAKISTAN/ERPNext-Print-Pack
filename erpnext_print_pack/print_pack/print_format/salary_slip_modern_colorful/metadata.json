@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Salary Slip",
+  "slug": "salary_slip_modern_colorful",
+  "doc_type": "Salary Slip",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c92255c5c90c3b3e92c41f470dce08aafc5d20def3760b579c4cede63bf006be",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

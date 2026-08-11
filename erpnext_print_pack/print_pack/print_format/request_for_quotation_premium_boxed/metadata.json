@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Request for Quotation",
+  "slug": "request_for_quotation_premium_boxed",
+  "doc_type": "Request for Quotation",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e33cedbe831dbceb667fc22d8f71f0bfd75719acf1cf8d6375321fa307688b6e",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

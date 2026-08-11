@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Timesheet",
+  "slug": "timesheet_modular_box",
+  "doc_type": "Timesheet",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "427fafee2789d38aedfc88537ee1794016eaa6359e463926c4eea19a8f5565f9",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

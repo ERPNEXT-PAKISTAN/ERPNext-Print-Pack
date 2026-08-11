@@ -1,0 +1,25 @@
+{
+  "name": "KSA ZATCA Fatoora Tax Invoice Sales Invoice",
+  "slug": "sales_invoice_ksa_zatca_fatoora",
+  "doc_type": "Sales Invoice",
+  "theme": "ksa_zatca_fatoora",
+  "layout_family": "ksa_zatca_fatoora",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "ksa_zatca_fatoora"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b369b9b51823d01654cf02ffd0eb5336c1466c5b890fb7eaf843c99df1559d28",
+  "description": "Bilingual KSA tax invoice \u2014 ZATCA Fatoora Phase 2 style (Arabic/English, green/gold)"
+}

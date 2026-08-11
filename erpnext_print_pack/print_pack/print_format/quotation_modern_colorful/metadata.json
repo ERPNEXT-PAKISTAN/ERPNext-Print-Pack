@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Quotation",
+  "slug": "quotation_modern_colorful",
+  "doc_type": "Quotation",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "da6c8ff506387a0496bd05b476517fb69e5ad0531303ea288083e376c0b80735",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

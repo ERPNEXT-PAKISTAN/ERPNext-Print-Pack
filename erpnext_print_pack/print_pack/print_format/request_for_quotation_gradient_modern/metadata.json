@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Request for Quotation",
+  "slug": "request_for_quotation_gradient_modern",
+  "doc_type": "Request for Quotation",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f8ea77de0823033eeb1398848eb02989c1f7af73f641fe122fc5932dd6451d9f",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

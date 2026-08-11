@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Material Request",
+  "slug": "material_request_modern_colorful",
+  "doc_type": "Material Request",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2f08affb7e1b51a4e17e1e2dafb6af85c9d6ea99ea1e41f8d3b340afa571c645",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

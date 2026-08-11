@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Bill of Materials",
+  "slug": "bom_modern_colorful",
+  "doc_type": "BOM",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "e66254bce0b2977f902ea59fc48880d2512dda217118da5d3427e359fb6981c2",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

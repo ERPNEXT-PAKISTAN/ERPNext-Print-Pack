@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Material Request",
+  "slug": "material_request_premium_boxed",
+  "doc_type": "Material Request",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "19c4364c0c48a738320dc2da0e52badfe3d6a242c44b25549e71aa4948577972",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

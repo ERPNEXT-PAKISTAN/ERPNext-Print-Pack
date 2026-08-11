@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Shipment",
+  "slug": "shipment_modern_colorful",
+  "doc_type": "Shipment",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "ed6d6cea9371c02c25975e2bb558178bc31d66de10d94d9c7ad50bf81f31f2a0",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

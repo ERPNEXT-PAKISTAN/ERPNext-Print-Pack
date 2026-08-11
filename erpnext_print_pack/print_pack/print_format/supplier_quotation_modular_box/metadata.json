@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Supplier Quotation",
+  "slug": "supplier_quotation_modular_box",
+  "doc_type": "Supplier Quotation",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "acf24c7665dcba749feae9de6e1139bf882e2c959fb298d16b92c1874b6de878",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

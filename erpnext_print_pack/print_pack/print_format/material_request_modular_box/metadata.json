@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Material Request",
+  "slug": "material_request_modular_box",
+  "doc_type": "Material Request",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "44f95f75f758102bd71072c370d6a33ef4620fe48e2c856ade7ecda1d371ff7a",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

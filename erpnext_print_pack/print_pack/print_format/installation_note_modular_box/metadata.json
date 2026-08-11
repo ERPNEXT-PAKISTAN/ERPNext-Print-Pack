@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Installation Note",
+  "slug": "installation_note_modular_box",
+  "doc_type": "Installation Note",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "83d1adf6f3a6a53caf12117d184ba1d164a13646928b84f6bdabde3cf82700c2",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

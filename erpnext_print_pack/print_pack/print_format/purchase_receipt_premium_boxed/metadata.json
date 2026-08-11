@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice Purchase Receipt",
+  "slug": "purchase_receipt_premium_boxed",
+  "doc_type": "Purchase Receipt",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "46c624411d0268be8b6c4a58d4ed984ad98cd791136da90282dec578d08e32c9",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

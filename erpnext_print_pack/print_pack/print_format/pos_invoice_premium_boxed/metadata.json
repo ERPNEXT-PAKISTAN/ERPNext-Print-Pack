@@ -1,0 +1,24 @@
+{
+  "name": "Premium Boxed Invoice POS Invoice",
+  "slug": "pos_invoice_premium_boxed",
+  "doc_type": "POS Invoice",
+  "theme": "premium_boxed",
+  "layout_family": "premium_boxed",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "premium_boxed"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "17ebb553ddd5dd5ddd3db2e54efa410818bdbad4e8bb321b07b3b3e6a148f55b",
+  "description": "Premium boxed grid invoice \u2014 Poppins cards, status badge, gold notes, dark totals"
+}

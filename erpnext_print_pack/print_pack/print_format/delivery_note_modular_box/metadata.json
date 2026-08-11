@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Delivery Note",
+  "slug": "delivery_note_modular_box",
+  "doc_type": "Delivery Note",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "3877820a8760cbc1d68d5aae3d84eacbe99dd9ac6481d82a444a10cb848fd231",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

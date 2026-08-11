@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Expense Claim",
+  "slug": "expense_claim_modern_colorful",
+  "doc_type": "Expense Claim",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "hr",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f739b95e0aa49d80bc9afd90c4a232043b933bba09c6d5d21f3a9b7f1b9911b4",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

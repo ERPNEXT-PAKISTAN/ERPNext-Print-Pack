@@ -1,8 +1,11 @@
 {
-  "name": "Sales Invoice Format",
+  "name": "Bilingual Tax Invoice Sales Invoice",
   "slug": "sales_invoice_bilingual_tax",
   "doc_type": "Sales Invoice",
-  "theme": "bilingual",
+  "theme": "bilingual_tax",
+  "layout_family": "bilingual_tax",
+  "layout_type": "specimen",
+  "region": "ALL",
   "category": "sales",
   "orientation": "portrait",
   "paper_size": "A4",
@@ -11,20 +14,12 @@
     "ar"
   ],
   "features": [
-    "bilingual",
-    "tax-summary",
-    "amount-in-words",
-    "qr",
-    "signature"
+    "shared-html",
+    "bilingual_tax"
   ],
-  "source_type": "original",
-  "source_url": null,
+  "source_type": "adapted",
   "source_license": "MIT",
-  "attribution_required": false,
-  "erpnext_versions": [
-    "15",
-    "16"
-  ],
   "status": "stable",
-  "checksum": "704d607d979b7d91e8d0d74dbe51288fcda111f8a85fd8b2a38cbc24551feb69"
+  "checksum": "5557ba6a73b4e2416b58192e356ee224acad27284be4b59a8f4f21ccd17ce3d0",
+  "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
 }

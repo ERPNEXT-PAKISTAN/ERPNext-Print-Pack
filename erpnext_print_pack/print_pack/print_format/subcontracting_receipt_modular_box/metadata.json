@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Subcontracting Receipt",
+  "slug": "subcontracting_receipt_modular_box",
+  "doc_type": "Subcontracting Receipt",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "manufacturing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "8072b095299e67de9e7a8abb320136891b2bd41925c698bc8b673cbe9a29008e",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

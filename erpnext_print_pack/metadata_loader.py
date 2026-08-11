@@ -16,6 +16,9 @@ REGIONAL_NAME_MARKERS = (
 	"UAE E-Invoice",
 	"ZATCA E-Invoice",
 	"ZATCA Tax Invoice",
+	"KSA ZATCA Fatoora",
+	"ZATCA Manrope Tax Invoice",
+	"Bilingual Tax Invoice",
 	"Regional Tax Invoice",
 	"Pakistan FBR",
 	"Pakistan E-Invoice",
@@ -26,6 +29,11 @@ REGIONAL_NAME_MARKERS = (
 )
 COLORFUL_NAME_MARKERS = (
 	"Gradient Vivid",
+	"Gradient Modern Invoice",
+	"Modern Colorful Invoice",
+	"Modular Box Invoice",
+	"Premium Boxed Invoice",
+	"Manrope Payment Receipt",
 	"Emerald Fresh",
 	"Crimson Shop",
 	"Ocean Vibrant",

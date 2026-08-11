@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Installation Note",
+  "slug": "installation_note_modern_colorful",
+  "doc_type": "Installation Note",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "projects",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f65bfe218f327b59d0990c8db7ccd3f36bfb5760c549352dc7c28843e4c4f694",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Sales Invoice",
+  "slug": "sales_invoice_gradient_modern",
+  "doc_type": "Sales Invoice",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "sales",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "a6db79fa840755159497480e811061d960ad65b8fff7259f940e9148b33e9a24",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}

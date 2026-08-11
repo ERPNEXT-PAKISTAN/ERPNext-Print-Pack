@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Purchase Invoice",
+  "slug": "purchase_invoice_modern_colorful",
+  "doc_type": "Purchase Invoice",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "b7f51e60f10382523e4b8379356d52d1ba896159143da33e187b3f5bf60badf8",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

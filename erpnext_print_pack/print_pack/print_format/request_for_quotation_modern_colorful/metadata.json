@@ -1,0 +1,24 @@
+{
+  "name": "Modern Colorful Invoice Request for Quotation",
+  "slug": "request_for_quotation_modern_colorful",
+  "doc_type": "Request for Quotation",
+  "theme": "modern_colorful",
+  "layout_family": "modern_colorful",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modern_colorful"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "9dd4f4962573b6fbf728fd8f12bbc3cd4a423d667d3ab80f54597ad2543d90bd",
+  "description": "Modern colorful invoice \u2014 gradient header, Bill To / details grid, summary footer"
+}

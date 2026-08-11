@@ -1,0 +1,25 @@
+{
+  "name": "ZATCA Manrope Tax Invoice Purchase Invoice",
+  "slug": "purchase_invoice_zatca_manrope",
+  "doc_type": "Purchase Invoice",
+  "theme": "zatca_manrope",
+  "layout_family": "zatca_manrope",
+  "layout_type": "specimen",
+  "region": "SA",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "features": [
+    "shared-html",
+    "zatca_manrope"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "f1a2a9233dfe9dbcbc08cfd6022d7ace0005d1338ed568b49b13ab52a5e7ffc6",
+  "description": "English ZATCA tax invoice \u2014 Manrope font, meta strip, VAT columns, QR, bank details"
+}

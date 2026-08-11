@@ -1,0 +1,24 @@
+{
+  "name": "Modular Box Invoice Stock Entry",
+  "slug": "stock_entry_modular_box",
+  "doc_type": "Stock Entry",
+  "theme": "modular_box",
+  "layout_family": "modular_box",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "stock",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "modular_box"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "c88c28a281eef3f8ee7196524353f24d2637ded030082cd7cd0e37503827b3e6",
+  "description": "Modular box grid invoice \u2014 Poppins-style cards, indigo header stripe, dark total bar"
+}

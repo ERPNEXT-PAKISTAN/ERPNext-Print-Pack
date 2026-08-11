@@ -1,0 +1,24 @@
+{
+  "name": "Gradient Modern Invoice Purchase Order",
+  "slug": "purchase_order_gradient_modern",
+  "doc_type": "Purchase Order",
+  "theme": "gradient_modern",
+  "layout_family": "gradient_modern",
+  "layout_type": "colorful",
+  "region": "ALL",
+  "category": "purchasing",
+  "orientation": "portrait",
+  "paper_size": "A4",
+  "languages": [
+    "en"
+  ],
+  "features": [
+    "shared-html",
+    "gradient_modern"
+  ],
+  "source_type": "adapted",
+  "source_license": "MIT",
+  "status": "stable",
+  "checksum": "2f7cf29c5ba718e2a17fa8ba780f79b7b26325772122c295a2a7b03a8158019b",
+  "description": "Modern gradient card invoice \u2014 indigo/purple header, clean Inter-style layout"
+}
