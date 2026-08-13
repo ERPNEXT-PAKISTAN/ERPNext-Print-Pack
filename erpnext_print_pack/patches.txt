@@ -1,0 +1,2 @@
+[post_model_sync]
+erpnext_print_pack.patches.move_print_pack_fields_to_tab

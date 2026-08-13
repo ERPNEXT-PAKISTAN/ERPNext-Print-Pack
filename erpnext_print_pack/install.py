@@ -2,6 +2,7 @@ import json
 
 import frappe
 
+from erpnext_print_pack.custom_fields import sync_print_pack_custom_fields
 from erpnext_print_pack.print_format_sync import sync_all
 
 
@@ -33,8 +34,10 @@ def _run_stable_sync(context: str):
 
 def after_install():
 	"""Install stable formats only; never force; never include drafts."""
+	sync_print_pack_custom_fields()
 	_run_stable_sync("after_install")
 
 
 def after_migrate():
+	sync_print_pack_custom_fields()
 	_run_stable_sync("after_migrate")
