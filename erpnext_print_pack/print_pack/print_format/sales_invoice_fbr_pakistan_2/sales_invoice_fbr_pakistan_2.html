@@ -44,10 +44,10 @@ th{background:#f4f4f4;font-weight:bold;}
 .letterhead-title{margin-left:auto;font-size:18px;font-weight:700;text-align:right;}
 
 /* BANK: tight lines */
-.bank-lines{margin-top:6px;}
-.bank-lines .row{display:flex;gap:10px;line-height:1.15;margin:0;padding:0;}
-.bank-lines .lbl{min-width:110px;font-weight:bold;}
-.bank-lines .val{flex:1;}
+.bank-lines{margin:0;padding:0;line-height:1;}
+.bank-lines .bank-row{display:flex;flex-wrap:nowrap;align-items:baseline;gap:6px;line-height:1;margin:0;padding:0;min-height:0;}
+.bank-lines .lbl{min-width:110px;font-weight:bold;line-height:1;margin:0;padding:0;}
+.bank-lines .val{flex:1;line-height:1;margin:0;padding:0;}
 
 /* QR + BARCODE */
 .fbr-qr-row{
@@ -77,7 +77,7 @@ th{background:#f4f4f4;font-weight:bold;}
 {# ============================================================
    TOTALS FROM ITEM CUSTOM FIELDS
    ============================================================ #}
-{% set ns = namespace(taxable_sum=0, tax_sum=0, rate_sum=0, rate_count=0) %}
+{% set ns = namespace(taxable_sum=0, tax_sum=0, rate_sum=0, rate_count=0, wh_sum=0) %}
 {% for item in doc.items %}
   {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
   {% set item_tax = (item.custom_sales_tax or 0) %}
@@ -85,6 +85,7 @@ th{background:#f4f4f4;font-weight:bold;}
 
   {% set ns.taxable_sum = ns.taxable_sum + (taxable or 0) %}
   {% set ns.tax_sum = ns.tax_sum + (item_tax or 0) %}
+  {% set ns.wh_sum = ns.wh_sum + (item.custom_sales_tax_withheld_at_source or 0) %}
 
   {% if item_rate and item_rate > 0 %}
     {% set ns.rate_sum = ns.rate_sum + item_rate %}
@@ -92,6 +93,8 @@ th{background:#f4f4f4;font-weight:bold;}
   {% endif %}
 {% endfor %}
 {% set avg_tax_rate = (ns.rate_sum / ns.rate_count) if ns.rate_count > 0 else 0 %}
+{% set ns.wh_rate = ((ns.wh_sum / ns.taxable_sum) * 100) if (ns.wh_sum or 0) > 0 and (ns.taxable_sum or 0) else 0 %}
+{% set show_wh = (ns.wh_sum or 0) > 0 %}
 
 {# ============================================================
    QR + BARCODE AS DATA URI (PDF SAFE)
@@ -212,6 +215,10 @@ th{background:#f4f4f4;font-weight:bold;}
       <th style="width:80px;">Taxable</th>
       <th style="width:60px;">Tax %</th>
       <th style="width:70px;">Tax</th>
+      {% if show_wh %}
+      <th style="width:55px;">WHT %</th>
+      <th style="width:70px;">WHT</th>
+      {% endif %}
       <th style="width:80px;">Total</th>
     </tr>
   </thead>
@@ -220,6 +227,8 @@ th{background:#f4f4f4;font-weight:bold;}
       {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
       {% set item_tax_rate = (item.custom_sales_tax_rate or 0) %}
       {% set item_tax = (item.custom_sales_tax or 0) %}
+      {% set wh = (item.custom_sales_tax_withheld_at_source or 0) %}
+      {% set wh_rate = ((wh / taxable) * 100) if (wh or 0) > 0 and (taxable or 0) else (item.custom_sales_tax_withheld_rate or 0) %}
       {% set line_total = (taxable or 0) + (item_tax or 0) %}
       {% set uom = (item.uom or "") %}
 
@@ -231,6 +240,10 @@ th{background:#f4f4f4;font-weight:bold;}
         <td class="right">{{ "{:,.2f}".format(taxable or 0) }}</td>
         <td class="right">{{ "{:,.2f}".format(item_tax_rate) }}%</td>
         <td class="right">{{ "{:,.2f}".format(item_tax) }}</td>
+        {% if show_wh %}
+        <td class="right">{{ "{:,.2f}".format(wh_rate or 0) }}%</td>
+        <td class="right">{{ "{:,.2f}".format(wh or 0) }}</td>
+        {% endif %}
         <td class="right">{{ "{:,.2f}".format(line_total) }}</td>
       </tr>
     {% endfor %}
@@ -250,6 +263,12 @@ th{background:#f4f4f4;font-weight:bold;}
         <td>Standard Rate (Avg {{ "{:,.2f}".format(avg_tax_rate) }}%)</td>
         <td class="right">{{ "{:,.2f}".format(ns.tax_sum or 0) }}</td>
       </tr>
+      {% if show_wh %}
+      <tr>
+        <td>ST Withheld ({{ "{:,.2f}".format(ns.wh_rate or 0) }}%)</td>
+        <td class="right">{{ "{:,.2f}".format(ns.wh_sum or 0) }}</td>
+      </tr>
+      {% endif %}
       <tr>
         <td class="bold">Total {{ doc.currency }}</td>
         <td class="right bold">{{ "{:,.2f}".format(doc.grand_total or 0) }}</td>
@@ -275,9 +294,9 @@ th{background:#f4f4f4;font-weight:bold;}
       <div class="bank-side">
         <b>Bank Account for Payment.</b>
         <div class="bank-lines">
-          <div class="row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
-          <div class="row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
-          <div class="row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
+          <div class="bank-row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
+          <div class="bank-row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
+          <div class="bank-row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
         </div>
       </div>
     {% endif %}

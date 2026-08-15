@@ -43,10 +43,10 @@ th{background:#f4f4f4;font-weight:bold;}
 .company-name{font-size:16px;font-weight:bold;line-height:1.2;}
 .trn{margin-top:1px;}
 
-.bank-lines{margin-top:6px;}
-.bank-lines .row{display:flex;gap:10px;line-height:1.15;margin:0;padding:0;}
-.bank-lines .lbl{min-width:110px;font-weight:bold;}
-.bank-lines .val{flex:1;}
+.bank-lines{margin:0;padding:0;line-height:1;}
+.bank-lines .bank-row{display:flex;flex-wrap:nowrap;align-items:baseline;gap:6px;line-height:1;margin:0;padding:0;min-height:0;}
+.bank-lines .lbl{min-width:110px;font-weight:bold;line-height:1;margin:0;padding:0;}
+.bank-lines .val{flex:1;line-height:1;margin:0;padding:0;}
 
 .fbr-qr-row{margin-top:18px;display:flex;align-items:center;gap:20px;}
 .fbr-qr-text{font-size:12px;color:#666;}
@@ -64,7 +64,7 @@ th{background:#f4f4f4;font-weight:bold;}
 {% endif %}
 
 {# Totals + grouped tax #}
-{% set ns = namespace(taxable_sum=0, tax_sum=0) %}
+{% set ns = namespace(taxable_sum=0, tax_sum=0, wh_sum=0) %}
 {% set grp = namespace(rows={}) %}
 {% for item in doc.items %}
   {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
@@ -72,6 +72,7 @@ th{background:#f4f4f4;font-weight:bold;}
   {% set tax = (item.custom_sales_tax or 0) %}
   {% set ns.taxable_sum = ns.taxable_sum + (taxable or 0) %}
   {% set ns.tax_sum = ns.tax_sum + (tax or 0) %}
+  {% set ns.wh_sum = ns.wh_sum + (item.custom_sales_tax_withheld_at_source or 0) %}
 
   {% set key = "{:,.2f}".format(rate) %}
   {% if key not in grp.rows %}
@@ -82,6 +83,8 @@ th{background:#f4f4f4;font-weight:bold;}
       "tax": grp.rows[key]["tax"] + (tax or 0)
   }) %}
 {% endfor %}
+{% set ns.wh_rate = ((ns.wh_sum / ns.taxable_sum) * 100) if (ns.wh_sum or 0) > 0 and (ns.taxable_sum or 0) else 0 %}
+{% set show_wh = (ns.wh_sum or 0) > 0 %}
 
 {# QR + Barcode data URI (tuned) #}
 {% set qr_data_uri = "" %}
@@ -203,6 +206,10 @@ th{background:#f4f4f4;font-weight:bold;}
       <th style="width:90px;">Taxable</th>
       <th style="width:60px;">Tax %</th>
       <th style="width:80px;">Tax</th>
+      {% if show_wh %}
+      <th style="width:55px;">WHT %</th>
+      <th style="width:70px;">WHT</th>
+      {% endif %}
       <th style="width:90px;">Total</th>
     </tr>
   </thead>
@@ -211,6 +218,8 @@ th{background:#f4f4f4;font-weight:bold;}
       {% set taxable = (item.net_amount if item.net_amount is not none else (item.amount or 0)) %}
       {% set rate = (item.custom_sales_tax_rate or 0) %}
       {% set tax = (item.custom_sales_tax or 0) %}
+      {% set wh = (item.custom_sales_tax_withheld_at_source or 0) %}
+      {% set wh_rate = ((wh / taxable) * 100) if (wh or 0) > 0 and (taxable or 0) else (item.custom_sales_tax_withheld_rate or 0) %}
       {% set total = (taxable or 0) + (tax or 0) %}
       <tr>
         <td class="center">{{ loop.index }}</td>
@@ -220,6 +229,10 @@ th{background:#f4f4f4;font-weight:bold;}
         <td class="right">{{ "{:,.2f}".format(taxable or 0) }}</td>
         <td class="right">{{ "{:,.2f}".format(rate) }}%</td>
         <td class="right">{{ "{:,.2f}".format(tax) }}</td>
+        {% if show_wh %}
+        <td class="right">{{ "{:,.2f}".format(wh_rate or 0) }}%</td>
+        <td class="right">{{ "{:,.2f}".format(wh or 0) }}</td>
+        {% endif %}
         <td class="right">{{ "{:,.2f}".format(total) }}</td>
       </tr>
     {% endfor %}
@@ -233,6 +246,9 @@ th{background:#f4f4f4;font-weight:bold;}
     <table>
       <tr><td>Sub Total</td><td class="right">{{ "{:,.2f}".format(ns.taxable_sum or 0) }}</td></tr>
       <tr><td>Sales Tax</td><td class="right">{{ "{:,.2f}".format(ns.tax_sum or 0) }}</td></tr>
+      {% if show_wh %}
+      <tr><td>ST Withheld ({{ "{:,.2f}".format(ns.wh_rate or 0) }}%)</td><td class="right">{{ "{:,.2f}".format(ns.wh_sum or 0) }}</td></tr>
+      {% endif %}
       <tr><td class="bold">Total {{ doc.currency }}</td><td class="right bold">{{ "{:,.2f}".format(doc.grand_total or 0) }}</td></tr>
       <tr><td class="bold">Balance Due {{ doc.currency }}</td><td class="right bold">{{ "{:,.2f}".format(doc.outstanding_amount or doc.grand_total or 0) }}</td></tr>
     </table>
@@ -258,6 +274,13 @@ th{background:#f4f4f4;font-weight:bold;}
           <td class="right">{{ "{:,.2f}".format(v.tax) }}</td>
         </tr>
       {% endfor %}
+      {% if show_wh %}
+        <tr>
+          <td>ST Withheld ({{ "{:,.2f}".format(ns.wh_rate or 0) }}%)</td>
+          <td class="right">{{ "{:,.2f}".format(ns.taxable_sum or 0) }}</td>
+          <td class="right">{{ "{:,.2f}".format(ns.wh_sum or 0) }}</td>
+        </tr>
+      {% endif %}
     </tbody>
   </table>
 </div>
@@ -292,9 +315,9 @@ th{background:#f4f4f4;font-weight:bold;}
       <div style="margin-top:1px;">
         <b>Bank Account for Payment.</b>
         <div class="bank-lines">
-          <div class="row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
-          <div class="row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
-          <div class="row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
+          <div class="bank-row"><div class="lbl">Account Name:</div><div class="val">{{ bank[0].account_name }}</div></div>
+          <div class="bank-row"><div class="lbl">IBAN Number:</div><div class="val">{{ bank[0].iban or bank[0].bank_account_no or "" }}</div></div>
+          <div class="bank-row"><div class="lbl">Bank Name:</div><div class="val">{{ bank[0].bank }}</div></div>
         </div>
       </div>
       {% endif %}
