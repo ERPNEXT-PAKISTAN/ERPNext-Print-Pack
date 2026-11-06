@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-08-12",
-  "total_formats": 1103,
+  "generated_on": "2026-08-14",
+  "total_formats": 1104,
   "formats": [
     {
       "name": "Barcode Enabled Batch Label",
@@ -21836,6 +21836,38 @@
       "status": "stable",
       "checksum": "5557ba6a73b4e2416b58192e356ee224acad27284be4b59a8f4f21ccd17ce3d0",
       "description": "Bilingual tax invoice \u2014 seller/customer info grid, VAT line items, amount in words, footer"
+    },
+    {
+      "name": "Blue Gold Tax Invoice Sales Invoice",
+      "slug": "sales_invoice_blue_gold_tax",
+      "doc_type": "Sales Invoice",
+      "theme": "blue_gold_tax",
+      "layout_family": "blue_gold_tax",
+      "layout_type": "specimen",
+      "region": "SA",
+      "category": "sales",
+      "orientation": "portrait",
+      "paper_size": "A4",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "features": [
+        "bilingual",
+        "qr",
+        "vat",
+        "blue_gold_tax"
+      ],
+      "source_type": "adapted",
+      "source_license": "MIT",
+      "attribution_required": false,
+      "erpnext_versions": [
+        "15",
+        "16"
+      ],
+      "status": "stable",
+      "checksum": "5c3e00dc145f7dc171e61511e332649207bb85483aac32eb112408f2546ec290",
+      "description": "Bilingual KSA tax invoice \u2014 navy/gold Al Zahra style (seller grid, QR, VAT lines, bank, signatures)"
     },
     {
       "name": "Clean Sales Invoice",

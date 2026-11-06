@@ -42,6 +42,7 @@ fixtures = [
 			"Sales Invoice-custom_company_phone_2",
 			"Sales Invoice-custom_company_tel",
 			"Sales Invoice-custom_company_email",
+			"Sales Invoice-custom_company_name_in_arabic",
 			"Sales Invoice-custom_company_name_ar",
 			"Sales Invoice-custom_company_description",
 			"Sales Invoice-custom_company_description_ar",
@@ -75,5 +76,8 @@ jinja = {
 		"erpnext_print_pack.jinja_methods.get_item_last_purchases",
 		"erpnext_print_pack.jinja_methods.get_item_prices",
 		"erpnext_print_pack.jinja_methods.get_doc_barcode_data_uri",
+		"erpnext_print_pack.jinja_methods.get_qr_data_uri",
+		"erpnext_print_pack.jinja_methods.get_item_tax_percent",
+		"erpnext_print_pack.jinja_methods.get_translated_text",
 	],
 }

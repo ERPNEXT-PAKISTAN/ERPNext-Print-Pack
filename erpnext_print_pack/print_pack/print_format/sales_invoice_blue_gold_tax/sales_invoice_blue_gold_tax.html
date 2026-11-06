@@ -1,0 +1,536 @@
+{# Blue Gold Bilingual Tax Invoice · Sales Invoice #}
+{% set date_field = "posting_date" %}
+{% set company_doc = frappe.get_doc("Company", doc.company) if doc.company else none %}
+{% set cust_addr = frappe.get_doc("Address", doc.customer_address) if doc.customer_address else none %}
+{% set comp_addr = frappe.get_doc("Address", doc.company_address) if doc.company_address else none %}
+{% set logo = doc.get("custom_branch_logo") or (frappe.db.get_value("Company", doc.company, "company_logo") if doc.company else "") %}
+{% set watermark = doc.get("custom_watermark_logo") or logo %}
+{% set brands_img = doc.get("custom_brands_footer_image") or "" %}
+{% set company_name_src = doc.get("custom_company_name_in_arabic") or doc.get("custom_company_name_ar") or doc.company or "" %}
+{% set company_ar = (get_translated_text(company_name_src, "ar") if get_translated_text is defined else "") or (get_translated_text(company_name_src, "ur") if get_translated_text is defined else "") or company_name_src %}
+{% set company_desc = doc.get("custom_company_description") or "" %}
+{% set company_desc_ar = doc.get("custom_company_description_ar") or "" %}
+{% set phone1 = doc.get("custom_company_phone") or (company_doc.phone_no if company_doc else "") or "" %}
+{% set phone2 = doc.get("custom_company_phone_2") or "" %}
+{% set tel = doc.get("custom_company_tel") or "" %}
+{% set email = doc.get("custom_company_email") or (company_doc.email if company_doc else "") or "" %}
+{% set vat_no = doc.company_tax_id or (company_doc.tax_id if company_doc else "") or "" %}
+{% set cr_no = doc.get("custom_company_cr_number") or "" %}
+{% set postal = doc.get("custom_company_postal_code") or (comp_addr.pincode if comp_addr else "") or "" %}
+{% set secondary = doc.get("custom_company_additional_number") or (comp_addr.get("custom_additional_number") if comp_addr else "") or "" %}
+{% set building = doc.get("custom_company_building_number") or (comp_addr.get("custom_building_number") if comp_addr else "") or "" %}
+{% set city = doc.get("custom_company_city") or (comp_addr.city if comp_addr else "") or "" %}
+{% set street = doc.get("custom_company_street") or (comp_addr.address_line1 if comp_addr else "") or "" %}
+{% set district = doc.get("custom_company_district") or (comp_addr.get("custom_district") if comp_addr else "") or "" %}
+{% set branch = doc.get("custom_branch_name") or "" %}
+{% set cust_name = doc.get("custom_customer_name_ar") or doc.customer_name or doc.customer or "" %}
+{% set cust_city = cust_addr.city if cust_addr else "" %}
+{% set cust_postal = cust_addr.pincode if cust_addr else "" %}
+{% set cust_additional = cust_addr.get("custom_additional_number") if cust_addr else "" %}
+{% set cust_country = cust_addr.country if cust_addr else "" %}
+{% set cust_contact = doc.get("contact_mobile") or doc.get("contact_phone") or (cust_addr.phone if cust_addr else "") or "" %}
+{% set cust_vat = doc.tax_id or doc.get("customer_tax_id") or "" %}
+{% set cust_id = doc.get("custom_customer_id") or doc.customer or "" %}
+{% set cust_cr = doc.get("custom_customer_cr") or doc.get("custom_customer_cr_number") or (cust_addr.get("custom_cr_number") if cust_addr else "") or "" %}
+{% set cust_building = cust_addr.get("custom_building_number") if cust_addr else "" %}
+{% set cust_street = (cust_addr.address_line1 if cust_addr else "") or "" %}
+{% set cust_district = (cust_addr.get("custom_district") if cust_addr else "") or "" %}
+{% set old_balance = doc.get("custom_old_balance") or 0 %}
+{% set sm = namespace(name="") %}
+{% for st in doc.sales_team or [] %}
+{% if not sm.name and st.sales_person %}{% set sm.name = st.sales_person %}{% endif %}
+{% endfor %}
+{% if not sm.name %}{% set sm.name = doc.get("custom_salesman_name") or "" %}{% endif %}
+{% set mop = doc.mode_of_payment or ("CREDIT" if doc.outstanding_amount and doc.outstanding_amount > 0 else "CASH") %}
+{% set bank_rows = frappe.get_all("Bank Account", filters={"company": doc.company, "is_company_account": 1}, fields=["bank", "bank_account_no", "iban"], limit=1) if doc.company and not (doc.get("custom_bank_account_number") or doc.get("custom_iban")) else [] %}
+{% set bank_name = doc.get("custom_bank_name") or (bank_rows[0].bank if bank_rows else "") %}
+{% set bank_no = doc.get("custom_bank_account_number") or (bank_rows[0].bank_account_no if bank_rows else "") %}
+{% set iban = doc.get("custom_iban") or (bank_rows[0].iban if bank_rows else "") %}
+{% set net_total = doc.net_total or 0 %}
+{% set vat_total = doc.total_taxes_and_charges or 0 %}
+{% set grand = doc.rounded_total if doc.get("rounded_total") else (doc.grand_total or 0) %}
+{% set discount = doc.discount_amount or doc.get("total_discount") or 0 %}
+{% set default_vat = (doc.taxes[0].rate if doc.taxes and doc.taxes[0].rate else 0) %}
+{% set footer_en = doc.get("custom_footer_address_en") or "" %}
+{% set footer_ar = doc.get("custom_footer_address_ar") or "" %}
+{% set ns = namespace(qr=doc.get("ksa_einv_qr") or doc.get("custom_qr_code") or "") %}
+{% if not ns.qr and get_qr_data_uri is defined %}{% set ns.qr = get_qr_data_uri(doc.name) %}{% endif %}
+<style>
+@page { size: A4 portrait; margin: 6mm; }
+.print-format {
+  page-size: A4;
+  orientation: Portrait;
+  margin-top: 6mm;
+  margin-bottom: 6mm;
+  margin-left: 6mm;
+  margin-right: 6mm;
+  display: block !important;
+  box-sizing: border-box !important;
+  background: #fff !important;
+}
+.print-format table td,
+.print-format table th {
+  padding: 3px 4px !important;
+}
+@media screen {
+  .print-format {
+    width: 210mm !important;
+    max-width: 210mm !important;
+    min-height: 297mm !important;
+    padding: 8mm !important;
+    margin: 0 auto !important;
+  }
+  .az-root, .az-sheet { min-height: 280mm; }
+  .az-items-wrap { min-height: 95mm !important; }
+}
+@media print {
+  html, body { width: auto !important; margin: 0 !important; padding: 0 !important; }
+  .print-hide, .action-banner { display: none !important; }
+  .print-format-gutter { padding: 0 !important; margin: 0 !important; background: #fff !important; }
+  .print-format {
+    width: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .az-root, .az-sheet { min-height: 0 !important; width: 100% !important; }
+}
+.print-heading, .epp-sig, .sig, .epp-footer, .footer, .epp-voucher-barcode { display: none !important; }
+.az-root {
+  font-family: Arial, Tahoma, sans-serif;
+  color: #111;
+  font-size: 10px;
+  position: relative;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.az-root *, .az-root *::before, .az-root *::after { box-sizing: border-box; }
+.az-sheet {
+  border: 1px solid #d1d5db;
+  padding: 6px 8px 4px;
+  position: relative;
+  background: #fff;
+  width: 100%;
+}
+.az-blue { color: #004f9f; }
+.az-gold { color: #c48e42; }
+.az-header, .az-info, .az-cust, .az-items, .az-sum, .az-sigs, .az-kv, .az-cust-grid, .az-tot { width: 100% !important; }
+.az-header { border-collapse: collapse; margin-bottom: 6px; }
+.az-header td { vertical-align: top; padding: 0 4px; }
+.az-h-left { width: 34%; }
+.az-h-center { width: 32%; text-align: center; }
+.az-h-right { width: 34%; text-align: right; direction: rtl; }
+.az-co-en { font-size: 20px; font-weight: 700; color: #004f9f; letter-spacing: -0.5px; line-height: 1.15; margin: 0; word-wrap: break-word; }
+.az-co-ar { font-size: 22px; font-weight: 700; color: #004f9f; line-height: 1.15; margin: 0 0 2px; word-wrap: break-word; }
+.az-co-sub { font-size: 11px; font-weight: 700; color: #004f9f; margin: 4px 0 0; }
+.az-logo {
+  width: 72px; height: 72px; margin: 0 auto 4px;
+  border-radius: 50%; overflow: hidden;
+  background: #004f9f; color: #fff;
+  text-align: center; line-height: 72px;
+  font-weight: 700; font-size: 22px;
+}
+.az-logo img { width: 72px; height: 72px; object-fit: cover; max-width: none !important; display: block; }
+.az-branch { font-size: 16px; font-weight: 700; color: #c48e42; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
+.az-info { border-collapse: separate; border-spacing: 6px 0; margin-bottom: 6px; }
+.az-info > tbody > tr > td { width: 33.33%; vertical-align: top; padding: 0 !important; }
+.az-box {
+  border: 2px solid #004f9f;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: #004f9f;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.55;
+  min-height: 78px;
+}
+.az-kv { border-collapse: collapse; }
+.az-kv td { padding: 0 2px !important; vertical-align: top; }
+.az-kv .lbl { width: 38%; white-space: nowrap; }
+.az-kv .val { width: 28%; color: #1f2937; font-weight: 600; }
+.az-kv .ar { width: 34%; text-align: right; direction: rtl; }
+.az-title-box { text-align: center; }
+.az-title-box h3 { margin: 0; font-size: 16px; font-weight: 700; color: #000; text-transform: uppercase; line-height: 1.2; }
+.az-inv-line { font-size: 11px; font-weight: 700; color: #004f9f; text-align: left; margin: 4px 0 0; }
+.az-inv-line .v { color: #000; }
+.az-inv-line .ar { float: right; direction: rtl; }
+.az-cust { border-collapse: separate; border-spacing: 6px 0; margin-bottom: 6px; }
+.az-cust td { vertical-align: top; padding: 0 !important; }
+.az-qr-wrap {
+  width: 132px;
+  border: 2px solid #004f9f;
+  border-radius: 8px;
+  padding: 6px;
+}
+.az-qr-wrap img { width: 118px; height: 118px; object-fit: contain; max-width: none !important; }
+.az-qr-ph {
+  width: 118px; height: 118px;
+  text-align: center; line-height: 118px;
+  color: #004f9f; font-size: 10px; font-weight: 700;
+}
+.az-cust-cell { width: 99%; }
+.az-cust-card {
+  border: 2px solid #004f9f;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+.az-cust-name {
+  border-bottom: 1px solid #004f9f;
+  padding: 6px 8px;
+  background: #e5edf5;
+  font-weight: 700;
+  color: #004f9f;
+}
+.az-cust-name .nm { color: #000; font-size: 15px; }
+.az-cust-name .ar { float: right; direction: rtl; }
+.az-cust-grid { border-collapse: collapse; }
+.az-cust-grid > tbody > tr > td { width: 50%; padding: 6px 8px !important; vertical-align: top; }
+.az-cust-grid > tbody > tr > td:first-child { border-right: 1px solid #004f9f; }
+.az-items-wrap {
+  border: 2px solid #004f9f;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  min-height: 78mm;
+  width: 100%;
+}
+.az-items { width: 100% !important; }
+.az-wm {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  text-align: center;
+  opacity: 0.08; pointer-events: none; z-index: 0;
+}
+.az-wm img { max-width: 260px; max-height: 260px; height: auto; margin-top: 20mm; }
+.az-items { border-collapse: collapse; table-layout: fixed; position: relative; z-index: 1; }
+.az-items th {
+  background: #e5edf5;
+  color: #004f9f;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #004f9f;
+  padding: 6px 3px !important;
+  vertical-align: middle;
+  line-height: 1.25;
+}
+.az-items td {
+  border: 1px solid #004f9f;
+  padding: 6px 4px !important;
+  vertical-align: top;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+}
+.print-format .az-items > tbody > tr > td { padding: 6px 4px !important; }
+.az-items .desc { text-align: left; }
+.az-items .desc .ar { text-align: right; direction: rtl; margin-top: 2px; font-size: 11px; }
+.az-items .num { text-align: right; padding-right: 6px !important; }
+.az-items .tot { font-size: 13px; font-weight: 700; }
+.az-brands { text-align: center; padding: 8px 0; }
+.az-brands img { max-height: 36px; width: auto; opacity: 0.55; }
+.az-sum { border-collapse: separate; border-spacing: 6px 0; margin-top: 6px; }
+.az-sum > tbody > tr > td { vertical-align: top; padding: 0 !important; }
+.az-sum-left { width: 66%; }
+.az-sum-right { width: 34%; }
+.az-words, .az-pay {
+  border: 2px solid #004f9f;
+  border-radius: 8px;
+}
+.az-words { padding: 6px 8px; margin-bottom: 6px; min-height: 44px; }
+.az-words .lbl { color: #004f9f; font-weight: 700; font-size: 11px; }
+.az-words .ar { float: right; direction: rtl; }
+.az-words .txt { color: #000; font-weight: 700; margin: 2px 0 0; }
+.az-pay { padding: 8px 10px; min-height: 64px; }
+.az-pay .mode { font-weight: 700; margin: 0 0 6px; }
+.az-pay .bank { color: #004f9f; font-weight: 700; font-size: 11px; }
+.az-tot { border-collapse: collapse; border: 2px solid #004f9f; border-radius: 8px; margin-bottom: 6px; }
+.az-tot th, .az-tot td {
+  border: 1px solid #004f9f;
+  padding: 6px 8px !important;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+}
+.az-tot th { color: #004f9f; width: 28%; font-size: 11px; line-height: 1.2; }
+.az-tot td { text-align: right; font-size: 14px; }
+.az-tot.net td { font-size: 20px; }
+.az-sigs { border-collapse: collapse; margin-top: 14px; margin-bottom: 8px; }
+.az-sigs td { width: 33.33%; vertical-align: bottom; padding: 0 8px !important; color: #004f9f; font-weight: 700; font-size: 13px; }
+.az-sigs .mid { text-align: center; }
+.az-line {
+  display: inline-block;
+  min-width: 120px;
+  border-bottom: 1px dashed #004f9f;
+  color: #000;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 6px;
+  padding-bottom: 1px;
+}
+.az-footbar {
+  background: #c48e42;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 6px 10px;
+  margin-top: 6px;
+}
+.az-footbar table { width: 100%; border-collapse: collapse; color: #fff; }
+.az-footbar td { font-weight: 700; font-size: 10px; padding: 0 !important; }
+.az-policy { margin-top: 4px; color: #dc2626; font-weight: 700; font-size: 10px; }
+.az-policy .ar { float: right; direction: rtl; }
+.az-notes {
+  margin-top: 4px;
+  color: #004f9f;
+  font-size: 9px;
+  font-weight: 700;
+}
+.az-notes .ar { float: right; direction: rtl; }
+</style>
+<div class="az-root">
+<div class="az-sheet">
+
+<table class="az-header">
+<tr>
+<td class="az-h-left">
+<div class="az-co-en">{{ doc.company or "" }}</div>
+{% if company_desc %}<p class="az-co-sub">{{ company_desc }}</p>{% endif %}
+{% if phone1 or phone2 %}<p class="az-co-sub">Mob: {{ phone1 }}{% if phone2 %} / {{ phone2 }}{% endif %}</p>{% endif %}
+{% if tel %}<p class="az-co-sub">{{ tel }}</p>{% endif %}
+</td>
+<td class="az-h-center">
+<div class="az-logo">
+{% if logo %}<img src="{{ logo }}" alt="">{% else %}{{ (doc.company or "C")[:1] }}{% endif %}
+</div>
+{% if branch %}<p class="az-branch">{{ branch }}</p>{% endif %}
+</td>
+<td class="az-h-right">
+<div class="az-co-ar">{{ company_ar }}</div>
+{% if company_desc_ar %}<p class="az-co-sub">{{ company_desc_ar }}</p>{% endif %}
+{% if phone1 or phone2 %}<p class="az-co-sub">جوال: {{ phone1 }}{% if phone2 %} / {{ phone2 }}{% endif %}</p>{% endif %}
+{% if tel %}<p class="az-co-sub">{{ tel }}</p>{% endif %}
+</td>
+</tr>
+</table>
+
+<table class="az-info">
+<tr>
+<td>
+<div class="az-box">
+<table class="az-kv">
+<tr><td class="lbl">VAT No. :</td><td class="val">{{ vat_no }}</td><td class="ar">الرقم الضريبي :</td></tr>
+<tr><td class="lbl">C.R No. :</td><td class="val">{{ cr_no }}</td><td class="ar">رقم س.ت :</td></tr>
+<tr><td class="lbl">Postal Code :</td><td class="val">{{ postal }}</td><td class="ar">الرمز البريدي :</td></tr>
+<tr><td class="lbl">Secondary No :</td><td class="val">{{ secondary }}</td><td class="ar">الرقم الثانوي :</td></tr>
+</table>
+</div>
+</td>
+<td>
+<div class="az-box az-title-box">
+<h3>TAX INVOICE</h3>
+<h3>فاتورة ضريبية</h3>
+<p class="az-inv-line">Inv. No: <span class="v">{{ doc.name }}</span> <span class="ar">رقم الفاتورة :</span></p>
+<p class="az-inv-line">Date : <span class="v">{% if doc.get(date_field) %}{{ frappe.utils.formatdate(doc.get(date_field), "dd-MM-yyyy") }}{% if doc.get("posting_time") %} {{ doc.posting_time }}{% endif %}{% endif %}</span> <span class="ar">التاريخ:</span></p>
+</div>
+</td>
+<td>
+<div class="az-box">
+<table class="az-kv">
+<tr><td class="lbl">Building No :</td><td class="val">{{ building }}</td><td class="ar">رقم المبنى :</td></tr>
+<tr><td class="lbl">City Name :</td><td class="val">{{ city }}</td><td class="ar">اسم المدينة :</td></tr>
+<tr><td class="lbl">Street Name :</td><td class="val">{{ street }}</td><td class="ar">اسم الشارع :</td></tr>
+<tr><td class="lbl">District Name :</td><td class="val">{{ district }}</td><td class="ar">اسم الحي :</td></tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+
+<table class="az-cust">
+<tr>
+<td class="az-qr-wrap epp-qr qr">
+{% if ns.qr %}<img src="{{ ns.qr }}" alt="QR">{% else %}<div class="az-qr-ph">QR</div>{% endif %}
+</td>
+<td class="az-cust-cell">
+<div class="az-cust-card">
+<div class="az-cust-name">
+Customer Name :
+<span class="nm">{{ cust_name }}</span>
+<span class="ar">اسم العميل :</span>
+</div>
+<table class="az-cust-grid">
+<tr>
+<td>
+<table class="az-kv">
+<tr><td class="lbl">City :</td><td class="val">{{ cust_city }}</td><td class="ar">المدينة :</td></tr>
+<tr><td class="lbl">Postal Code :</td><td class="val">{{ cust_postal }}</td><td class="ar">الرمز البريدي :</td></tr>
+<tr><td class="lbl">Additional No :</td><td class="val">{{ cust_additional }}</td><td class="ar">رقم إضافي :</td></tr>
+<tr><td class="lbl">Country :</td><td class="val">{{ cust_country }}</td><td class="ar">البلد :</td></tr>
+<tr><td class="lbl">Contact No :</td><td class="val">{{ cust_contact }}</td><td class="ar">رقم الاتصال :</td></tr>
+<tr><td class="lbl">Old Balance :</td><td class="val">{{ "%.2f"|format(old_balance|float) }}</td><td class="ar">الرصيد القديم:</td></tr>
+</table>
+</td>
+<td>
+<table class="az-kv">
+<tr><td class="lbl">VAT No :</td><td class="val">{{ cust_vat }}</td><td class="ar">الرقم الضريبي:</td></tr>
+<tr><td class="lbl">Cust ID :</td><td class="val">{{ cust_id }}</td><td class="ar">رقم العميل :</td></tr>
+<tr><td class="lbl">C.R. No :</td><td class="val">{{ cust_cr }}</td><td class="ar">السجل التجاري:</td></tr>
+<tr><td class="lbl">Building No. :</td><td class="val">{{ cust_building }}</td><td class="ar">رقم المبنى :</td></tr>
+<tr><td class="lbl">Street Name :</td><td class="val">{{ cust_street }}</td><td class="ar">اسم الشارع:</td></tr>
+<tr><td class="lbl">District :</td><td class="val">{{ cust_district }}</td><td class="ar">الحي :</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+
+<div class="az-items-wrap">
+{% if watermark %}
+<div class="az-wm"><img src="{{ watermark }}" alt=""></div>
+{% endif %}
+<table class="az-items">
+<thead>
+<tr>
+<th style="width:6%">رقم<br>SI.No.</th>
+<th style="width:28%">Description<br><span dir="rtl">البيـــــــــــــــــان</span></th>
+<th style="width:7%">الوحدة<br>Unit</th>
+<th style="width:8%">الكمية<br>Qty.</th>
+<th style="width:10%">سعر الوحدة<br>Unit Price</th>
+<th style="width:11%">لا تشمل الضريبة<br>Excl. VAT</th>
+<th style="width:7%">الضريبة %<br>VAT%</th>
+<th style="width:10%">الريال الضريبة<br>VAT Rate</th>
+<th style="width:13%">السعر الإجمالي<br>Total Amount</th>
+</tr>
+</thead>
+<tbody>
+{% if doc.items %}
+{% for row in doc.items %}
+{% set line = namespace(excl=0, vat_pct=default_vat, vat_amt=0, total=0) %}
+{% set line.excl = (row.net_amount if row.net_amount is not none else (row.amount or 0))|float %}
+{% if get_item_tax_percent is defined %}
+{% set line.vat_pct = get_item_tax_percent(row.item_tax_rate, default_vat) %}
+{% elif row.item_tax_rate is number %}
+{% set line.vat_pct = row.item_tax_rate|float %}
+{% endif %}
+{% if row.get("tax_amount") %}
+{% set line.vat_amt = row.tax_amount|float %}
+{% else %}
+{% set line.vat_amt = line.excl * (line.vat_pct or 0) / 100 %}
+{% endif %}
+{% set line.total = line.excl + line.vat_amt %}
+<tr>
+<td>{{ loop.index }}</td>
+<td class="desc">
+{{ row.item_name or row.item_code or "" }}
+{% if row.get("custom_item_name_ar") or row.get("custom_description_ar") %}
+<div class="ar">{{ row.get("custom_item_name_ar") or row.get("custom_description_ar") }}</div>
+{% endif %}
+</td>
+<td>{{ row.uom or "" }}</td>
+<td class="num">{{ "%.2f"|format((row.qty or 0)|float) }}</td>
+<td class="num">{{ "%.2f"|format((row.rate or 0)|float) }}</td>
+<td class="num">{{ "%.2f"|format(line.excl) }}</td>
+<td>{{ "%.0f"|format((line.vat_pct or 0)|float) if line.vat_pct else "" }}</td>
+<td class="num">{{ "%.2f"|format(line.vat_amt) }}</td>
+<td class="num tot">{{ "%.2f"|format(line.total) }}</td>
+</tr>
+{% endfor %}
+{% endif %}
+{% set empty_rows = 8 - ((doc.items or [])|length) %}
+{% if empty_rows > 0 %}
+{% for _ in range(empty_rows) %}
+<tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+{% endfor %}
+{% endif %}
+{% if brands_img %}
+<tr>
+<td></td>
+<td colspan="8" class="az-brands"><img src="{{ brands_img }}" alt=""></td>
+</tr>
+{% endif %}
+</tbody>
+</table>
+</div>
+
+<table class="az-sum">
+<tr>
+<td class="az-sum-left">
+<div class="az-words">
+<span class="lbl">Amt. In Words</span>
+<span class="lbl ar">المبلغ في الكلمات</span>
+<div class="txt">{{ doc.in_words or "" }}</div>
+{% if doc.get("custom_in_words_ar") %}<div class="txt" dir="rtl">{{ doc.custom_in_words_ar }}</div>{% endif %}
+</div>
+<div class="az-pay">
+<p class="mode">Mode Of Payment: {{ mop }}</p>
+<div class="bank">
+{% if bank_name %}<span>{{ bank_name }}</span> &nbsp;{% endif %}
+{% if bank_no %}AC No.: {{ bank_no }} &nbsp;{% endif %}
+{% if iban %}IBAN No.: {{ iban }}{% endif %}
+</div>
+</div>
+</td>
+<td class="az-sum-right">
+<table class="az-tot">
+<tr>
+<th>الإجمالي<br>Total</th>
+<td>{{ "%.2f"|format(net_total|float) }}</td>
+<td>{{ "%.2f"|format(vat_total|float) }}</td>
+<td>{{ "%.2f"|format(grand|float) }}</td>
+</tr>
+</table>
+<table class="az-tot">
+<tr>
+<th>الخـصــــم<br>Discount</th>
+<td>{{ "%.2f"|format(discount|float) }}</td>
+</tr>
+</table>
+<table class="az-tot net">
+<tr>
+<th>الصـــافي<br>Net Total</th>
+<td>{{ "%.2f"|format(grand|float) }}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class="az-sigs">
+<tr>
+<td>Salesman <span class="az-line">{{ sm.name }}</span> <span dir="rtl">إسم المندوب</span></td>
+<td class="mid">Seal &nbsp; <span dir="rtl">الختم</span></td>
+<td>Received By <span class="az-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span dir="rtl">إستلمت من قبل</span></td>
+</tr>
+</table>
+
+<div class="az-footbar">
+<table>
+<tr>
+<td>{{ footer_en }}{% if not footer_en %}{{ city }}{% if street %}{{ ", " ~ street }}{% endif %}{% if tel %} - Tel. : {{ tel }}{% endif %}{% if phone1 %} - Mobile : {{ phone1 }}{% if phone2 %} / {{ phone2 }}{% endif %}{% endif %}{% endif %}</td>
+<td style="text-align:center">{{ email }}</td>
+<td style="text-align:right;direction:rtl">{{ footer_ar }}</td>
+</tr>
+</table>
+</div>
+<div class="az-policy">
+View Our Return and Exchanges Policy on the Back Side.
+<span class="ar">أنظر للخلف لسياسة الإرجاع والإستبدال</span>
+</div>
+<div class="az-notes">
+Note : Compressor and motor are not under warranty
+<span class="ar">لا يرد بعد اللحام والتركيب</span>
+</div>
+
+</div>
+</div>

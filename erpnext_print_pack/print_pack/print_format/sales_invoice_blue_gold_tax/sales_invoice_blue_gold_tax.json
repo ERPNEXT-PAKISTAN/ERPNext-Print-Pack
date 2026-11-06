@@ -1,0 +1,18 @@
+{
+ "doctype": "Print Format",
+ "name": "Blue Gold Tax Invoice Sales Invoice",
+ "doc_type": "Sales Invoice",
+ "module": "Print Pack",
+ "custom_format": 1,
+ "print_format_type": "Jinja",
+ "standard": "No",
+ "disabled": 0,
+ "default_print_language": "en",
+ "margin_top": 6.0,
+ "margin_bottom": 6.0,
+ "margin_left": 6.0,
+ "margin_right": 6.0,
+ "page_number": "Hide",
+ "pdf_generator": "wkhtmltopdf",
+ "css": ".print-format { page-size: A4; orientation: Portrait; margin-top: 6mm; margin-bottom: 6mm; margin-left: 6mm; margin-right: 6mm; display: block; }"
+}

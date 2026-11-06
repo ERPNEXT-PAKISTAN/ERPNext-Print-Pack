@@ -1,24 +1,24 @@
 # Format Catalog
 
-Generated formats: **1001**
+Generated formats: **1104**
 
 ## Summary
 
-- Stable: 762
+- Stable: 865
 - Draft: 239
 - DocTypes: 39
-- Themes: 65
+- Themes: 74
 
 ## By DocType
 
-- BOM: 18
+- BOM: 22
 - Batch: 17
-- Delivery Note: 38
+- Delivery Note: 45
 - Delivery Trip: 16
 - Dunning: 18
 - Employee Advance: 18
-- Expense Claim: 20
-- Installation Note: 22
+- Expense Claim: 24
+- Installation Note: 26
 - Issue: 18
 - Item: 39
 - Job Card: 20
@@ -27,35 +27,37 @@ Generated formats: **1001**
 - Leave Application: 18
 - Maintenance Schedule: 15
 - Maintenance Visit: 18
-- Material Request: 24
-- POS Invoice: 31
-- Payment Entry: 31
+- Material Request: 28
+- POS Invoice: 38
+- Payment Entry: 32
 - Payment Request: 22
-- Pick List: 30
+- Pick List: 34
 - Production Plan: 23
 - Project: 18
-- Purchase Invoice: 37
-- Purchase Order: 37
-- Purchase Receipt: 36
-- Quotation: 39
-- Request for Quotation: 32
-- Salary Slip: 20
-- Sales Invoice: 64
-- Sales Order: 39
+- Purchase Invoice: 44
+- Purchase Order: 41
+- Purchase Receipt: 40
+- Quotation: 46
+- Request for Quotation: 36
+- Salary Slip: 24
+- Sales Invoice: 71
+- Sales Order: 46
 - Serial No: 17
-- Shipment: 20
-- Stock Entry: 24
-- Subcontracting Order: 22
-- Subcontracting Receipt: 22
-- Supplier Quotation: 32
-- Timesheet: 20
+- Shipment: 24
+- Stock Entry: 28
+- Subcontracting Order: 26
+- Subcontracting Receipt: 26
+- Supplier Quotation: 36
+- Timesheet: 24
 - Work Order: 21
 
 ## By Theme
 
 - agency_modern: 1
 - barcode_enabled: 6
-- bilingual: 2
+- bilingual: 1
+- bilingual_tax: 6
+- blue_gold_tax: 1
 - clean: 25
 - compact: 38
 - corporate: 26
@@ -65,24 +67,30 @@ Generated formats: **1001**
 - emerald_fresh: 40
 - executive: 8
 - executive_corporate: 1
+- gradient_modern: 21
 - gradient_vivid: 40
 - gulf_gold: 11
 - india_gst: 11
 - industrial: 8
 - item_detail_classic: 1
 - item_detail_professional: 1
+- ksa_zatca_fatoora: 6
 - landscape: 16
 - manufacturing: 10
 - material: 1
 - minimal: 40
 - modern: 37
+- modern_colorful: 21
 - modern_qr: 40
+- modular_box: 21
 - monochrome: 16
 - ocean_vibrant: 40
 - orange_accent: 40
 - pakistan_einvoice_specimen: 1
 - pakistan_fbr: 11
+- payment_receipt_manrope: 1
 - premium: 11
+- premium_boxed: 21
 - professional_blue: 26
 - professional_green: 1
 - proforma_classic: 3
@@ -115,6 +123,7 @@ Generated formats: **1001**
 - wholesale: 1
 - yellow_sidebar: 40
 - zatca_einvoice_specimen: 1
+- zatca_manrope: 6
 - zatca_specimen: 16
 - zatca_thermal: 5
 - zoho_professional: 40
@@ -126,13 +135,17 @@ Generated formats: **1001**
 | Crimson Shop Bill of Materials | BOM | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Bill of Materials | BOM | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Bill of Materials | BOM | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Bill of Materials | BOM | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Bill of Materials | BOM | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Manufacturing Bill of Materials | BOM | manufacturing | draft |  |
 | Minimal Bill of Materials | BOM | minimal | stable |  |
 | Modern Bill of Materials | BOM | modern | stable |  |
+| Modern Colorful Invoice Bill of Materials | BOM | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Bill of Materials | BOM | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Bill of Materials | BOM | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Bill of Materials | BOM | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Bill of Materials | BOM | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Bill of Materials | BOM | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice Bill of Materials | BOM | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Bill of Materials | BOM | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Stripe Clean Bill of Materials | BOM | stripe_clean | stable | premium-layout, stripe_clean, field-rich |
@@ -158,24 +171,30 @@ Generated formats: **1001**
 | Vertex Classic Batch Label | Batch | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Batch Label | Batch | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | Zoho Professional Batch Label | Batch | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
+| Bilingual Tax Invoice Delivery Note | Delivery Note | bilingual_tax | stable | shared-html, bilingual_tax |
 | Clean Delivery Note | Delivery Note | clean | draft |  |
 | Compact Delivery Note | Delivery Note | compact | draft |  |
 | Corporate Delivery Note | Delivery Note | corporate | stable |  |
 | Crimson Shop Delivery Note | Delivery Note | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Delivery Note | Delivery Note | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Delivery Note | Delivery Note | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Delivery Note | Delivery Note | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Delivery Note | Delivery Note | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Delivery Note | Delivery Note | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Delivery Note | Delivery Note | india_gst | stable | premium-layout, india_gst, regional |
+| KSA ZATCA Fatoora Tax Invoice Delivery Note | Delivery Note | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Landscape Delivery Note | Delivery Note | landscape | draft | landscape |
 | Manufacturing Delivery Note | Delivery Note | manufacturing | draft |  |
 | Minimal Delivery Note | Delivery Note | minimal | stable |  |
+| Modern Colorful Invoice Delivery Note | Delivery Note | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Delivery Note | Delivery Note | modern | stable |  |
 | Modern QR Delivery Note | Delivery Note | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Delivery Note | Delivery Note | modular_box | stable | shared-html, modular_box |
 | Monochrome Delivery Note | Delivery Note | monochrome | draft |  |
 | Ocean Vibrant Delivery Note | Delivery Note | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Delivery Note | Delivery Note | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Delivery Note | Delivery Note | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Delivery Note | Delivery Note | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Delivery Note | Delivery Note | premium | draft |  |
 | Professional Blue Delivery Note | Delivery Note | professional_blue | draft |  |
 | Purple Tax Invoice Delivery Note | Delivery Note | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -193,6 +212,7 @@ Generated formats: **1001**
 | Vertex Classic Delivery Note | Delivery Note | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Delivery Note | Delivery Note | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen Delivery Note | Delivery Note | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice Delivery Note | Delivery Note | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice Delivery Note | Delivery Note | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | ZATCA Thermal Receipt Delivery Note | Delivery Note | zatca_thermal | stable | specimen, zatca_thermal, thermal |
 | Zoho Professional Delivery Note | Delivery Note | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
@@ -254,12 +274,16 @@ Generated formats: **1001**
 | Crimson Shop Expense Claim | Expense Claim | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Expense Claim | Expense Claim | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Expense Claim | Expense Claim | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Expense Claim | Expense Claim | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Expense Claim | Expense Claim | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Expense Claim | Expense Claim | minimal | stable |  |
+| Modern Colorful Invoice Expense Claim | Expense Claim | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Expense Claim | Expense Claim | modern | stable |  |
 | Modern QR Expense Claim | Expense Claim | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Expense Claim | Expense Claim | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Expense Claim | Expense Claim | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Expense Claim | Expense Claim | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Expense Claim | Expense Claim | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Expense Claim | Expense Claim | professional_blue | draft |  |
 | Purple Tax Invoice Expense Claim | Expense Claim | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Expense Claim | Expense Claim | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -274,13 +298,17 @@ Generated formats: **1001**
 | Crimson Shop Installation Note | Installation Note | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Installation Note | Installation Note | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Installation Note | Installation Note | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Installation Note | Installation Note | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Installation Note | Installation Note | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Installation Note | Installation Note | minimal | stable |  |
+| Modern Colorful Invoice Installation Note | Installation Note | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Installation Note | Installation Note | modern | stable |  |
 | Modern QR Installation Note | Installation Note | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Installation Note | Installation Note | modular_box | stable | shared-html, modular_box |
 | Monochrome Installation Note | Installation Note | monochrome | draft |  |
 | Ocean Vibrant Installation Note | Installation Note | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Installation Note | Installation Note | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Installation Note | Installation Note | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Installation Note | Installation Note | professional_blue | draft |  |
 | Purple Tax Invoice Installation Note | Installation Note | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Installation Note | Installation Note | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -467,15 +495,19 @@ Generated formats: **1001**
 | Crimson Shop Material Request | Material Request | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Material Request | Material Request | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Material Request | Material Request | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Material Request | Material Request | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Material Request | Material Request | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Industrial Material Request | Material Request | industrial | draft |  |
 | Landscape Material Request | Material Request | landscape | draft | landscape |
 | Manufacturing Material Request | Material Request | manufacturing | draft |  |
 | Minimal Material Request | Material Request | minimal | stable |  |
+| Modern Colorful Invoice Material Request | Material Request | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Material Request | Material Request | modern | stable |  |
 | Modern QR Material Request | Material Request | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Material Request | Material Request | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Material Request | Material Request | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Material Request | Material Request | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Material Request | Material Request | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice Material Request | Material Request | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Material Request | Material Request | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Stripe Clean Material Request | Material Request | stripe_clean | stable | premium-layout, stripe_clean, field-rich |
@@ -488,19 +520,25 @@ Generated formats: **1001**
 | ZATCA Tax Invoice Material Request | Material Request | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | Zoho Professional Material Request | Material Request | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
 | Barcode Enabled POS Invoice | POS Invoice | barcode_enabled | draft | tax-summary, barcode |
+| Bilingual Tax Invoice POS Invoice | POS Invoice | bilingual_tax | stable | shared-html, bilingual_tax |
 | Compact POS Invoice | POS Invoice | compact | stable | tax-summary |
 | Crimson Shop POS Invoice | POS Invoice | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro POS Invoice | POS Invoice | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh POS Invoice | POS Invoice | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice POS Invoice | POS Invoice | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid POS Invoice | POS Invoice | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold POS Invoice | POS Invoice | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST POS Invoice | POS Invoice | india_gst | stable | premium-layout, india_gst, regional |
+| KSA ZATCA Fatoora Tax Invoice POS Invoice | POS Invoice | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Minimal POS Invoice | POS Invoice | minimal | stable | tax-summary |
+| Modern Colorful Invoice POS Invoice | POS Invoice | modern_colorful | stable | shared-html, modern_colorful |
 | Modern POS Invoice | POS Invoice | modern | draft | tax-summary |
 | Modern QR POS Invoice | POS Invoice | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice POS Invoice | POS Invoice | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant POS Invoice | POS Invoice | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent POS Invoice | POS Invoice | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR POS Invoice | POS Invoice | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice POS Invoice | POS Invoice | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice POS Invoice | POS Invoice | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | QR Enabled POS Invoice | POS Invoice | qr_enabled | draft | tax-summary, qr |
 | Regional Tax Invoice POS Invoice | POS Invoice | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -515,6 +553,7 @@ Generated formats: **1001**
 | Vertex Classic POS Invoice | POS Invoice | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar POS Invoice | POS Invoice | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen POS Invoice | POS Invoice | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice POS Invoice | POS Invoice | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice POS Invoice | POS Invoice | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | ZATCA Thermal Receipt POS Invoice | POS Invoice | zatca_thermal | stable | specimen, zatca_thermal, thermal |
 | Zoho Professional POS Invoice | POS Invoice | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
@@ -528,6 +567,7 @@ Generated formats: **1001**
 | Executive Payment Entry | Payment Entry | executive | draft | amount-in-words |
 | Gradient Vivid Payment Entry | Payment Entry | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Landscape Payment Entry | Payment Entry | landscape | draft | amount-in-words, landscape |
+| Manrope Payment Receipt Payment Entry | Payment Entry | payment_receipt_manrope | stable | shared-html, payment_receipt_manrope |
 | Minimal Payment Entry | Payment Entry | minimal | stable | amount-in-words |
 | Modern Payment Entry | Payment Entry | modern | stable | amount-in-words |
 | Modern QR Payment Entry | Payment Entry | modern_qr | stable | premium-layout, modern_qr, field-rich |
@@ -575,6 +615,7 @@ Generated formats: **1001**
 | Crimson Shop Pick List | Pick List | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Pick List | Pick List | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Pick List | Pick List | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Pick List | Pick List | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Pick List | Pick List | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Pick List | Pick List | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Pick List | Pick List | india_gst | stable | premium-layout, india_gst, regional |
@@ -582,11 +623,14 @@ Generated formats: **1001**
 | Landscape Pick List | Pick List | landscape | draft | landscape |
 | Manufacturing Pick List | Pick List | manufacturing | draft |  |
 | Minimal Pick List | Pick List | minimal | stable |  |
+| Modern Colorful Invoice Pick List | Pick List | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Pick List | Pick List | modern | stable |  |
 | Modern QR Pick List | Pick List | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Pick List | Pick List | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Pick List | Pick List | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Pick List | Pick List | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Pick List | Pick List | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Pick List | Pick List | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice Pick List | Pick List | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Pick List | Pick List | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Saudi ZATCA Pick List | Pick List | saudi_zatca | stable | premium-layout, saudi_zatca, regional |
@@ -642,6 +686,7 @@ Generated formats: **1001**
 | Vertex Classic Project | Project | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Project | Project | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | Zoho Professional Project | Project | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
+| Bilingual Tax Invoice Purchase Invoice | Purchase Invoice | bilingual_tax | stable | shared-html, bilingual_tax |
 | Clean Purchase Invoice | Purchase Invoice | clean | draft | tax-summary, amount-in-words |
 | Compact Purchase Invoice | Purchase Invoice | compact | draft | tax-summary, amount-in-words |
 | Corporate Purchase Invoice | Purchase Invoice | corporate | stable | tax-summary, amount-in-words |
@@ -650,17 +695,22 @@ Generated formats: **1001**
 | Elegant Purchase Invoice | Purchase Invoice | elegant | draft | tax-summary, amount-in-words |
 | Emerald Fresh Purchase Invoice | Purchase Invoice | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
 | Executive Purchase Invoice | Purchase Invoice | executive | draft | tax-summary, amount-in-words |
+| Gradient Modern Invoice Purchase Invoice | Purchase Invoice | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Purchase Invoice | Purchase Invoice | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Purchase Invoice | Purchase Invoice | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Purchase Invoice | Purchase Invoice | india_gst | stable | premium-layout, india_gst, regional |
+| KSA ZATCA Fatoora Tax Invoice Purchase Invoice | Purchase Invoice | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Landscape Purchase Invoice | Purchase Invoice | landscape | draft | tax-summary, amount-in-words, landscape |
 | Minimal Purchase Invoice | Purchase Invoice | minimal | stable | tax-summary, amount-in-words |
+| Modern Colorful Invoice Purchase Invoice | Purchase Invoice | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Purchase Invoice | Purchase Invoice | modern | stable | tax-summary, amount-in-words |
 | Modern QR Purchase Invoice | Purchase Invoice | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Purchase Invoice | Purchase Invoice | modular_box | stable | shared-html, modular_box |
 | Monochrome Purchase Invoice | Purchase Invoice | monochrome | draft | tax-summary, amount-in-words |
 | Ocean Vibrant Purchase Invoice | Purchase Invoice | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Purchase Invoice | Purchase Invoice | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Purchase Invoice | Purchase Invoice | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Purchase Invoice | Purchase Invoice | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Purchase Invoice | Purchase Invoice | premium | draft | tax-summary, amount-in-words |
 | Professional Blue Purchase Invoice | Purchase Invoice | professional_blue | draft | tax-summary, amount-in-words |
 | Purple Tax Invoice Purchase Invoice | Purchase Invoice | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -677,6 +727,7 @@ Generated formats: **1001**
 | Vertex Classic Purchase Invoice | Purchase Invoice | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Purchase Invoice | Purchase Invoice | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen Purchase Invoice | Purchase Invoice | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice Purchase Invoice | Purchase Invoice | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice Purchase Invoice | Purchase Invoice | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | Zoho Professional Purchase Invoice | Purchase Invoice | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
 | Clean Purchase Order | Purchase Order | clean | draft | tax-summary |
@@ -687,17 +738,21 @@ Generated formats: **1001**
 | Elegant Purchase Order | Purchase Order | elegant | draft | tax-summary |
 | Emerald Fresh Purchase Order | Purchase Order | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
 | Executive Purchase Order | Purchase Order | executive | draft | tax-summary |
+| Gradient Modern Invoice Purchase Order | Purchase Order | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Purchase Order | Purchase Order | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Purchase Order | Purchase Order | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Purchase Order | Purchase Order | india_gst | stable | premium-layout, india_gst, regional |
 | Landscape Purchase Order | Purchase Order | landscape | draft | tax-summary, landscape |
 | Minimal Purchase Order | Purchase Order | minimal | stable | tax-summary |
+| Modern Colorful Invoice Purchase Order | Purchase Order | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Purchase Order | Purchase Order | modern | stable | tax-summary |
 | Modern QR Purchase Order | Purchase Order | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Purchase Order | Purchase Order | modular_box | stable | shared-html, modular_box |
 | Monochrome Purchase Order | Purchase Order | monochrome | draft | tax-summary |
 | Ocean Vibrant Purchase Order | Purchase Order | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Purchase Order | Purchase Order | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Purchase Order | Purchase Order | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Purchase Order | Purchase Order | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Purchase Order | Purchase Order | premium | draft | tax-summary |
 | Professional Blue Purchase Order | Purchase Order | professional_blue | draft | tax-summary |
 | Purple Tax Invoice Purchase Order | Purchase Order | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -722,17 +777,21 @@ Generated formats: **1001**
 | Crimson Shop Purchase Receipt | Purchase Receipt | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Purchase Receipt | Purchase Receipt | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Purchase Receipt | Purchase Receipt | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Purchase Receipt | Purchase Receipt | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Purchase Receipt | Purchase Receipt | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Purchase Receipt | Purchase Receipt | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Purchase Receipt | Purchase Receipt | india_gst | stable | premium-layout, india_gst, regional |
 | Landscape Purchase Receipt | Purchase Receipt | landscape | draft | landscape |
 | Minimal Purchase Receipt | Purchase Receipt | minimal | stable |  |
+| Modern Colorful Invoice Purchase Receipt | Purchase Receipt | modern_colorful | stable | shared-html, modern_colorful |
 | Modern Purchase Receipt | Purchase Receipt | modern | stable |  |
 | Modern QR Purchase Receipt | Purchase Receipt | modern_qr | stable | premium-layout, modern_qr, field-rich |
+| Modular Box Invoice Purchase Receipt | Purchase Receipt | modular_box | stable | shared-html, modular_box |
 | Monochrome Purchase Receipt | Purchase Receipt | monochrome | draft |  |
 | Ocean Vibrant Purchase Receipt | Purchase Receipt | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Purchase Receipt | Purchase Receipt | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Purchase Receipt | Purchase Receipt | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Purchase Receipt | Purchase Receipt | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Purchase Receipt | Purchase Receipt | premium | draft |  |
 | Professional Blue Purchase Receipt | Purchase Receipt | professional_blue | draft |  |
 | Purple Tax Invoice Purchase Receipt | Purchase Receipt | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -752,6 +811,7 @@ Generated formats: **1001**
 | ZATCA Tax Invoice Purchase Receipt | Purchase Receipt | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | ZATCA Thermal Receipt Purchase Receipt | Purchase Receipt | zatca_thermal | stable | specimen, zatca_thermal, thermal |
 | Zoho Professional Purchase Receipt | Purchase Receipt | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
+| Bilingual Tax Invoice Quotation | Quotation | bilingual_tax | stable | shared-html, bilingual_tax |
 | Clean Quotation | Quotation | clean | draft | tax-summary |
 | Compact Quotation | Quotation | compact | draft | tax-summary |
 | Corporate Quotation | Quotation | corporate | stable | tax-summary |
@@ -759,17 +819,22 @@ Generated formats: **1001**
 | Dark Header Pro Quotation | Quotation | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Elegant Quotation | Quotation | elegant | draft | tax-summary |
 | Emerald Fresh Quotation | Quotation | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Quotation | Quotation | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Quotation | Quotation | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Quotation | Quotation | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Quotation | Quotation | india_gst | stable | premium-layout, india_gst, regional |
+| KSA ZATCA Fatoora Tax Invoice Quotation | Quotation | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Landscape Quotation | Quotation | landscape | draft | tax-summary, landscape |
 | Minimal Quotation | Quotation | minimal | stable | tax-summary |
+| Modern Colorful Invoice Quotation | Quotation | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Quotation | Quotation | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Quotation | Quotation | modern | stable | tax-summary |
+| Modular Box Invoice Quotation | Quotation | modular_box | stable | shared-html, modular_box |
 | Monochrome Quotation | Quotation | monochrome | draft | tax-summary |
 | Ocean Vibrant Quotation | Quotation | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Quotation | Quotation | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Quotation | Quotation | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Quotation | Quotation | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Quotation | Quotation | premium | draft | tax-summary |
 | Professional Blue Quotation | Quotation | professional_blue | draft | tax-summary |
 | Proforma Classic Quotation | Quotation | proforma_classic | stable | specimen, proforma_classic, proforma |
@@ -789,6 +854,7 @@ Generated formats: **1001**
 | Vertex Classic Quotation | Quotation | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Quotation | Quotation | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen Quotation | Quotation | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice Quotation | Quotation | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice Quotation | Quotation | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | Zoho Professional Quotation | Quotation | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
 | Clean Request for Quotation | Request for Quotation | clean | draft |  |
@@ -797,16 +863,20 @@ Generated formats: **1001**
 | Crimson Shop Request for Quotation | Request for Quotation | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Request for Quotation | Request for Quotation | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Request for Quotation | Request for Quotation | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Request for Quotation | Request for Quotation | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Request for Quotation | Request for Quotation | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Request for Quotation | Request for Quotation | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Request for Quotation | Request for Quotation | india_gst | stable | premium-layout, india_gst, regional |
 | Minimal Request for Quotation | Request for Quotation | minimal | stable |  |
+| Modern Colorful Invoice Request for Quotation | Request for Quotation | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Request for Quotation | Request for Quotation | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Request for Quotation | Request for Quotation | modern | stable |  |
+| Modular Box Invoice Request for Quotation | Request for Quotation | modular_box | stable | shared-html, modular_box |
 | Monochrome Request for Quotation | Request for Quotation | monochrome | draft |  |
 | Ocean Vibrant Request for Quotation | Request for Quotation | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Request for Quotation | Request for Quotation | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Request for Quotation | Request for Quotation | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Request for Quotation | Request for Quotation | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Request for Quotation | Request for Quotation | premium | draft |  |
 | Professional Blue Request for Quotation | Request for Quotation | professional_blue | draft |  |
 | Purple Tax Invoice Request for Quotation | Request for Quotation | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -829,12 +899,16 @@ Generated formats: **1001**
 | Crimson Shop Salary Slip | Salary Slip | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Salary Slip | Salary Slip | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Salary Slip | Salary Slip | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Salary Slip | Salary Slip | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Salary Slip | Salary Slip | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Salary Slip | Salary Slip | minimal | stable |  |
+| Modern Colorful Invoice Salary Slip | Salary Slip | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Salary Slip | Salary Slip | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Salary Slip | Salary Slip | modern | stable |  |
+| Modular Box Invoice Salary Slip | Salary Slip | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Salary Slip | Salary Slip | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Salary Slip | Salary Slip | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Salary Slip | Salary Slip | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Salary Slip | Salary Slip | professional_blue | draft |  |
 | Purple Tax Invoice Salary Slip | Salary Slip | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Salary Slip | Salary Slip | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -846,6 +920,8 @@ Generated formats: **1001**
 | Agency Modern Sales Invoice | Sales Invoice | agency_modern | stable | modern, minimal-grid |
 | Barcode Enabled Sales Invoice | Sales Invoice | barcode_enabled | draft | tax-summary, amount-in-words, barcode |
 | Bilingual Sales Invoice | Sales Invoice | bilingual | draft | tax-summary, amount-in-words, bilingual |
+| Bilingual Tax Invoice Sales Invoice | Sales Invoice | bilingual_tax | stable | shared-html, bilingual_tax |
+| Blue Gold Tax Invoice Sales Invoice | Sales Invoice | blue_gold_tax | stable | bilingual, qr, vat, blue_gold_tax |
 | Clean Sales Invoice | Sales Invoice | clean | stable | tax-summary, amount-in-words |
 | Compact Sales Invoice | Sales Invoice | compact | stable | tax-summary, amount-in-words |
 | Corporate Sales Invoice | Sales Invoice | corporate | stable | tax-summary, amount-in-words |
@@ -858,21 +934,26 @@ Generated formats: **1001**
 | FBR Pakistan-1 Sales Invoice | Sales Invoice | sales_invoice_fbr_pakistan_1 | stable | fbr, pakistan, sales-tax, qr, barcode |
 | FBR Pakistan-2 Sales Invoice | Sales Invoice | sales_invoice_fbr_pakistan_2 | stable | fbr, pakistan, sales-tax, qr, barcode |
 | FBR Pakistan-3 Sales Invoice | Sales Invoice | sales_invoice_fbr_pakistan_3 | stable | fbr, pakistan, sales-tax, qr, barcode |
+| Gradient Modern Invoice Sales Invoice | Sales Invoice | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Sales Invoice | Sales Invoice | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Sales Invoice | Sales Invoice | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Sales Invoice | Sales Invoice | india_gst | stable | premium-layout, india_gst, regional |
 | Industrial Sales Invoice | Sales Invoice | industrial | draft | tax-summary, amount-in-words |
+| KSA ZATCA Fatoora Tax Invoice Sales Invoice | Sales Invoice | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Landscape Sales Invoice | Sales Invoice | landscape | draft | tax-summary, amount-in-words, landscape |
 | Manufacturing Sales Invoice | Sales Invoice | manufacturing | draft | tax-summary, amount-in-words |
 | Material Sales Invoice | Sales Invoice | material | stable | tax-summary, amount-in-words |
 | Minimal Sales Invoice | Sales Invoice | minimal | stable | tax-summary, amount-in-words |
+| Modern Colorful Invoice Sales Invoice | Sales Invoice | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Sales Invoice | Sales Invoice | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Sales Invoice | Sales Invoice | modern | stable | tax-summary, amount-in-words |
+| Modular Box Invoice Sales Invoice | Sales Invoice | modular_box | stable | shared-html, modular_box |
 | Monochrome Sales Invoice | Sales Invoice | monochrome | stable | tax-summary, amount-in-words |
 | Ocean Vibrant Sales Invoice | Sales Invoice | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Sales Invoice | Sales Invoice | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan E-Invoice Specimen | Sales Invoice | pakistan_einvoice_specimen | stable |  |
 | Pakistan FBR Sales Invoice | Sales Invoice | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Sales Invoice | Sales Invoice | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Sales Invoice | Sales Invoice | premium | draft | tax-summary, amount-in-words |
 | Professional Blue Sales Invoice | Sales Invoice | professional_blue | stable | tax-summary, amount-in-words |
 | Professional Green Sales Invoice | Sales Invoice | professional_green | stable | tax-summary, amount-in-words |
@@ -885,7 +966,6 @@ Generated formats: **1001**
 | Regional Tax Invoice Sales Invoice | Sales Invoice | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Retail Sales Invoice | Sales Invoice | retail | draft | tax-summary, amount-in-words |
 | Retail Shop Sales Invoice | Sales Invoice | retail_shop | stable | receipt-style, bold-total |
-| Sales Invoice Format | Sales Invoice | bilingual | stable | bilingual, tax-summary, amount-in-words, qr, signature |
 | Saudi ZATCA Sales Invoice | Sales Invoice | saudi_zatca | stable | premium-layout, saudi_zatca, regional |
 | Soft Gray Sales Invoice | Sales Invoice | soft_gray | draft | tax-summary, amount-in-words |
 | SparkSuite Classic Sales Invoice | Sales Invoice | sparksuite_classic | stable | tax-summary, amount-in-words, clean-lines |
@@ -904,9 +984,11 @@ Generated formats: **1001**
 | Yellow Sidebar Sales Invoice | Sales Invoice | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen | Sales Invoice | zatca_einvoice_specimen | stable | zatca, qr, e-invoice, premium-layout, specimen |
 | ZATCA E-Invoice Specimen Sales Invoice | Sales Invoice | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice Sales Invoice | Sales Invoice | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice Sales Invoice | Sales Invoice | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | ZATCA Thermal Receipt Sales Invoice | Sales Invoice | zatca_thermal | stable | specimen, zatca_thermal, thermal |
 | Zoho Professional Sales Invoice | Sales Invoice | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
+| Bilingual Tax Invoice Sales Order | Sales Order | bilingual_tax | stable | shared-html, bilingual_tax |
 | Clean Sales Order | Sales Order | clean | draft | tax-summary |
 | Compact Sales Order | Sales Order | compact | draft | tax-summary |
 | Corporate Sales Order | Sales Order | corporate | stable | tax-summary |
@@ -914,17 +996,22 @@ Generated formats: **1001**
 | Dark Header Pro Sales Order | Sales Order | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Sales Order | Sales Order | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
 | Executive Sales Order | Sales Order | executive | draft | tax-summary |
+| Gradient Modern Invoice Sales Order | Sales Order | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Sales Order | Sales Order | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Sales Order | Sales Order | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Sales Order | Sales Order | india_gst | stable | premium-layout, india_gst, regional |
+| KSA ZATCA Fatoora Tax Invoice Sales Order | Sales Order | ksa_zatca_fatoora | stable | shared-html, ksa_zatca_fatoora |
 | Landscape Sales Order | Sales Order | landscape | draft | tax-summary, landscape |
 | Minimal Sales Order | Sales Order | minimal | stable | tax-summary |
+| Modern Colorful Invoice Sales Order | Sales Order | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Sales Order | Sales Order | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Sales Order | Sales Order | modern | stable | tax-summary |
+| Modular Box Invoice Sales Order | Sales Order | modular_box | stable | shared-html, modular_box |
 | Monochrome Sales Order | Sales Order | monochrome | draft | tax-summary |
 | Ocean Vibrant Sales Order | Sales Order | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Sales Order | Sales Order | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Sales Order | Sales Order | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Sales Order | Sales Order | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Sales Order | Sales Order | premium | draft | tax-summary |
 | Professional Blue Sales Order | Sales Order | professional_blue | draft | tax-summary |
 | Proforma Classic Sales Order | Sales Order | proforma_classic | stable | specimen, proforma_classic, proforma |
@@ -944,6 +1031,7 @@ Generated formats: **1001**
 | Vertex Classic Sales Order | Sales Order | vertex_classic | stable | premium-layout, vertex_classic, field-rich |
 | Yellow Sidebar Sales Order | Sales Order | yellow_sidebar | stable | premium-layout, yellow_sidebar, field-rich |
 | ZATCA E-Invoice Specimen Sales Order | Sales Order | zatca_specimen | stable | specimen, zatca_specimen, specimen |
+| ZATCA Manrope Tax Invoice Sales Order | Sales Order | zatca_manrope | stable | shared-html, zatca_manrope |
 | ZATCA Tax Invoice Sales Order | Sales Order | readme_zatca_tax | stable | readme-preview, readme_zatca_tax, premium-layout |
 | Zoho Professional Sales Order | Sales Order | zoho_professional | stable | premium-layout, zoho_professional, field-rich |
 | Barcode Enabled Serial Label | Serial No | barcode_enabled | draft | barcode |
@@ -967,14 +1055,18 @@ Generated formats: **1001**
 | Crimson Shop Shipment | Shipment | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Shipment | Shipment | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Shipment | Shipment | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Shipment | Shipment | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Shipment | Shipment | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Industrial Shipment | Shipment | industrial | draft |  |
 | Manufacturing Shipment | Shipment | manufacturing | draft |  |
 | Minimal Shipment | Shipment | minimal | stable |  |
+| Modern Colorful Invoice Shipment | Shipment | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Shipment | Shipment | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Shipment | Shipment | modern | stable |  |
+| Modular Box Invoice Shipment | Shipment | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Shipment | Shipment | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Shipment | Shipment | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Shipment | Shipment | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice Shipment | Shipment | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Shipment | Shipment | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
 | Stripe Clean Shipment | Shipment | stripe_clean | stable | premium-layout, stripe_clean, field-rich |
@@ -988,15 +1080,19 @@ Generated formats: **1001**
 | Crimson Shop Stock Entry | Stock Entry | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Stock Entry | Stock Entry | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Stock Entry | Stock Entry | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Stock Entry | Stock Entry | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Stock Entry | Stock Entry | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Industrial Stock Entry | Stock Entry | industrial | draft |  |
 | Landscape Stock Entry | Stock Entry | landscape | draft | landscape |
 | Manufacturing Stock Entry | Stock Entry | manufacturing | draft |  |
 | Minimal Stock Entry | Stock Entry | minimal | stable |  |
+| Modern Colorful Invoice Stock Entry | Stock Entry | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Stock Entry | Stock Entry | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Stock Entry | Stock Entry | modern | stable |  |
+| Modular Box Invoice Stock Entry | Stock Entry | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Stock Entry | Stock Entry | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Stock Entry | Stock Entry | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Stock Entry | Stock Entry | premium_boxed | stable | shared-html, premium_boxed |
 | Purple Tax Invoice Stock Entry | Stock Entry | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | QR Enabled Stock Entry | Stock Entry | qr_enabled | draft | qr |
 | Regional Tax Invoice Stock Entry | Stock Entry | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -1013,13 +1109,17 @@ Generated formats: **1001**
 | Crimson Shop Subcontracting Order | Subcontracting Order | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Subcontracting Order | Subcontracting Order | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Subcontracting Order | Subcontracting Order | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Subcontracting Order | Subcontracting Order | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Subcontracting Order | Subcontracting Order | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Subcontracting Order | Subcontracting Order | minimal | stable |  |
+| Modern Colorful Invoice Subcontracting Order | Subcontracting Order | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Subcontracting Order | Subcontracting Order | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Subcontracting Order | Subcontracting Order | modern | stable |  |
+| Modular Box Invoice Subcontracting Order | Subcontracting Order | modular_box | stable | shared-html, modular_box |
 | Monochrome Subcontracting Order | Subcontracting Order | monochrome | draft |  |
 | Ocean Vibrant Subcontracting Order | Subcontracting Order | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Subcontracting Order | Subcontracting Order | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Subcontracting Order | Subcontracting Order | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Subcontracting Order | Subcontracting Order | professional_blue | draft |  |
 | Purple Tax Invoice Subcontracting Order | Subcontracting Order | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Subcontracting Order | Subcontracting Order | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -1035,13 +1135,17 @@ Generated formats: **1001**
 | Crimson Shop Subcontracting Receipt | Subcontracting Receipt | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Subcontracting Receipt | Subcontracting Receipt | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Subcontracting Receipt | Subcontracting Receipt | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Subcontracting Receipt | Subcontracting Receipt | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Subcontracting Receipt | Subcontracting Receipt | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Subcontracting Receipt | Subcontracting Receipt | minimal | stable |  |
+| Modern Colorful Invoice Subcontracting Receipt | Subcontracting Receipt | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Subcontracting Receipt | Subcontracting Receipt | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Subcontracting Receipt | Subcontracting Receipt | modern | stable |  |
+| Modular Box Invoice Subcontracting Receipt | Subcontracting Receipt | modular_box | stable | shared-html, modular_box |
 | Monochrome Subcontracting Receipt | Subcontracting Receipt | monochrome | draft |  |
 | Ocean Vibrant Subcontracting Receipt | Subcontracting Receipt | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Subcontracting Receipt | Subcontracting Receipt | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Subcontracting Receipt | Subcontracting Receipt | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Subcontracting Receipt | Subcontracting Receipt | professional_blue | draft |  |
 | Purple Tax Invoice Subcontracting Receipt | Subcontracting Receipt | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Subcontracting Receipt | Subcontracting Receipt | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |
@@ -1057,16 +1161,20 @@ Generated formats: **1001**
 | Crimson Shop Supplier Quotation | Supplier Quotation | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Supplier Quotation | Supplier Quotation | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Supplier Quotation | Supplier Quotation | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Supplier Quotation | Supplier Quotation | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Supplier Quotation | Supplier Quotation | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Gulf Gold Supplier Quotation | Supplier Quotation | gulf_gold | stable | premium-layout, gulf_gold, regional |
 | India GST Supplier Quotation | Supplier Quotation | india_gst | stable | premium-layout, india_gst, regional |
 | Minimal Supplier Quotation | Supplier Quotation | minimal | stable | tax-summary |
+| Modern Colorful Invoice Supplier Quotation | Supplier Quotation | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Supplier Quotation | Supplier Quotation | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Supplier Quotation | Supplier Quotation | modern | stable | tax-summary |
+| Modular Box Invoice Supplier Quotation | Supplier Quotation | modular_box | stable | shared-html, modular_box |
 | Monochrome Supplier Quotation | Supplier Quotation | monochrome | draft | tax-summary |
 | Ocean Vibrant Supplier Quotation | Supplier Quotation | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Supplier Quotation | Supplier Quotation | orange_accent | stable | premium-layout, orange_accent, field-rich |
 | Pakistan FBR Supplier Quotation | Supplier Quotation | pakistan_fbr | stable | premium-layout, pakistan_fbr, regional |
+| Premium Boxed Invoice Supplier Quotation | Supplier Quotation | premium_boxed | stable | shared-html, premium_boxed |
 | Premium Supplier Quotation | Supplier Quotation | premium | draft | tax-summary |
 | Professional Blue Supplier Quotation | Supplier Quotation | professional_blue | draft | tax-summary |
 | Purple Tax Invoice Supplier Quotation | Supplier Quotation | purple_tax | stable | premium-layout, purple_tax, field-rich |
@@ -1089,12 +1197,16 @@ Generated formats: **1001**
 | Crimson Shop Timesheet | Timesheet | crimson_shop | stable | premium-layout, crimson_shop, regional |
 | Dark Header Pro Timesheet | Timesheet | dark_header_pro | stable | premium-layout, dark_header_pro, field-rich |
 | Emerald Fresh Timesheet | Timesheet | emerald_fresh | stable | premium-layout, emerald_fresh, regional |
+| Gradient Modern Invoice Timesheet | Timesheet | gradient_modern | stable | shared-html, gradient_modern |
 | Gradient Vivid Timesheet | Timesheet | gradient_vivid | stable | premium-layout, gradient_vivid, regional |
 | Minimal Timesheet | Timesheet | minimal | stable |  |
+| Modern Colorful Invoice Timesheet | Timesheet | modern_colorful | stable | shared-html, modern_colorful |
 | Modern QR Timesheet | Timesheet | modern_qr | stable | premium-layout, modern_qr, field-rich |
 | Modern Timesheet | Timesheet | modern | stable |  |
+| Modular Box Invoice Timesheet | Timesheet | modular_box | stable | shared-html, modular_box |
 | Ocean Vibrant Timesheet | Timesheet | ocean_vibrant | stable | premium-layout, ocean_vibrant, regional |
 | Orange Accent Timesheet | Timesheet | orange_accent | stable | premium-layout, orange_accent, field-rich |
+| Premium Boxed Invoice Timesheet | Timesheet | premium_boxed | stable | shared-html, premium_boxed |
 | Professional Blue Timesheet | Timesheet | professional_blue | draft |  |
 | Purple Tax Invoice Timesheet | Timesheet | purple_tax | stable | premium-layout, purple_tax, field-rich |
 | Regional Tax Invoice Timesheet | Timesheet | readme_regional_tax | stable | readme-preview, readme_regional_tax, premium-layout |

@@ -19,6 +19,7 @@ REGIONAL_NAME_MARKERS = (
 	"KSA ZATCA Fatoora",
 	"ZATCA Manrope Tax Invoice",
 	"Bilingual Tax Invoice",
+	"Blue Gold Tax Invoice",
 	"Regional Tax Invoice",
 	"Pakistan FBR",
 	"Pakistan E-Invoice",

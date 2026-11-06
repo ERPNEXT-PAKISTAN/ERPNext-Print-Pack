@@ -9,7 +9,34 @@ def print_helpers():
 	return {
 		"safe": _safe,
 		"money": _money,
+		"translated": get_translated_text,
 	}
+
+
+def get_translated_text(source, language="ar"):
+	"""Return Translation DocType / gettext value for a language (ar, ur, …).
+
+	Used by bilingual prints so Translation Data (globe icon) works even when
+	print language stays English. Returns empty string when no translation exists.
+	"""
+	source = (source or "").strip()
+	if not source:
+		return ""
+	language = (language or "ar").strip()
+	try:
+		translated = frappe.db.get_value(
+			"Translation",
+			{"source_text": source, "language": language},
+			"translated_text",
+		)
+		if translated:
+			return translated
+		result = frappe._(source, lang=language)
+		if result and result != source:
+			return result
+	except Exception:
+		frappe.log_error(title="erpnext_print_pack translation lookup failed")
+	return ""
 
 
 def get_item_last_purchases(item_code: str, limit: int = 2):
@@ -73,6 +100,44 @@ def get_doc_barcode_data_uri(
 	except Exception:
 		frappe.log_error(title="erpnext_print_pack barcode render failed")
 		return ""
+
+
+def get_qr_data_uri(value: str = ""):
+	"""Jinja-safe QR image (avoids frappe.call/request dependency)."""
+	try:
+		from erpnext_print_pack.print_barcodes import get_qr_and_barcode_data_uri as _impl
+
+		payload = _impl(value=value) or {}
+		return payload.get("qr") or ""
+	except Exception:
+		frappe.log_error(title="erpnext_print_pack qr render failed")
+		return ""
+
+
+def get_item_tax_percent(item_tax_rate, default=0):
+	"""First tax % from item_tax_rate (dict or JSON string). Safe for print Jinja."""
+	import json
+
+	if item_tax_rate in (None, "", {}, []):
+		return default
+	data = item_tax_rate
+	if isinstance(data, str):
+		try:
+			data = json.loads(data)
+		except Exception:
+			return default
+	if isinstance(data, dict):
+		for value in data.values():
+			try:
+				if value is not None and float(value):
+					return float(value)
+			except (TypeError, ValueError):
+				continue
+		return default
+	try:
+		return float(data)
+	except (TypeError, ValueError):
+		return default
 
 
 def _safe(value, default=""):

@@ -25,10 +25,18 @@ PRINT_PACK_FIELDS = {
 			"insert_after": "custom_print_pack_tab",
 		},
 		{
+			"fieldname": "custom_company_name_in_arabic",
+			"label": "Company Name in Arabic",
+			"fieldtype": "Data",
+			"insert_after": "custom_print_pack_company_section",
+			"translatable": 1,
+			"description": "Arabic or Urdu company name shown on bilingual prints. Type it here, or enter the English name and use the globe icon (Translation Data) to add ar / ur.",
+		},
+		{
 			"fieldname": "custom_company_name_ar",
 			"label": "Company Name (AR)",
 			"fieldtype": "Data",
-			"insert_after": "custom_print_pack_company_section",
+			"insert_after": "custom_company_name_in_arabic",
 		},
 		{
 			"fieldname": "custom_company_description",
@@ -293,6 +301,10 @@ def sync_print_pack_custom_fields():
 				values["options"] = spec["options"]
 			if "collapsible" in spec:
 				values["collapsible"] = spec["collapsible"]
+			if "translatable" in spec:
+				values["translatable"] = spec["translatable"]
+			if spec.get("description"):
+				values["description"] = spec["description"]
 			frappe.db.set_value("Custom Field", name, values, update_modified=False)
 	frappe.clear_cache(doctype="Sales Invoice")
 	frappe.clear_cache(doctype="Sales Invoice Item")
